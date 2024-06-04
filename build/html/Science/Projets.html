@@ -55,8 +55,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
-
-                        <!--<script>
+                        
+                        <script>
+                            
                             function createA(att, url, nom){
                                 const a= document.createElement("a");
                                 a.setAttribute("class", att);
@@ -89,16 +90,14 @@
                                         if (typeof values !== 'object') {
    
                                             const li_sous_menu = document.createElement("li");
-                                            console.log(values);
-                                            const nouv_val = `$(values)`;
-                                            console.log(nouv_val);
-                                            if(values === "#"){
+
+                                            if(values === "#"){ 
                                                 const a_sous_titre = createA("dropdown-item", values , key);
                                                 ul_titre.append(li_sous_menu);
                                                 li_sous_menu.append(a_sous_titre);
                                             }
                                             else{
-                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                const a_sous_titre = createA("dropdown-item", values, key);
                                                 ul_titre.append(li_sous_menu);
                                                 li_sous_menu.append(a_sous_titre);
                                             }
@@ -130,9 +129,9 @@
                                     }
                                 });
                             })
-                        </script>-->
+                        </script>
                         
-                        <li class="nav-item dropdown">
+                        <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
@@ -157,24 +156,24 @@
                             </div>
                         </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
-                                <li><a class="dropdown-item" href="../Informations/Arrets.html">Les arrêts prévus</a></li>
-                                <li><a class="dropdown-item" href="../Informations/Absences.html">Les absences des opérateurs</a></li>
-                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
-                                <li><a class="dropdown-item" href="../Informations/Calendrier.html">Calendrier des évolutions</a></li>
-                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
-                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
-                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
-                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
-                            </ul>   
-                        </div>
-                    </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                    <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                </ul>   
+                            </div>
+                        </li> 
                     
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
@@ -282,7 +281,7 @@
                                 <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
                             </ul>   
                         </div>
-                        </li>
+                        </li>-->
                           
                     </ul>
                 </div>
@@ -398,9 +397,7 @@
 </ul>
 <p>Élucider les secrets de la formation de la croûte des planètes.
 La faible densité de la croûte continentale de la planète pourrait avoir donné naissance à la tectonique des plaques, à savoir les mouvements de la lithosphère de la Terre. Des études ont révélé que cette faible densité trouve son origine dans des processus qui ont affecté la répartition des matériaux à travers les continents. Cependant, il existe encore des lacunes dans nos connaissances concernant les caractéristiques de la croûte sur d’autres planètes telluriques et la manière dont elle s’est formée. Plus particulièrement, des processus physiques analogues pourraient-ils se produire sur d’autres planètes dépourvues de tectonique des plaques? Le projet CRUSLID, financé par l’UE, cherche à combler ces lacunes en développant un modèle révolutionnaire qui permettra de déterminer les caractéristiques de la croûte d’autres planètes. Pour ce faire, il tirera parti de recherches multidisciplinaires et de nouvelles observations planétaires susceptibles de fournir de précieuses informations sur la formation de la croûte des corps telluriques primitifs.</p>
-<blockquote>
-<div><p>ERC-COG - Consolidator Grant</p>
-</div></blockquote>
+<p>ERC-COG - Consolidator Grant</p>
 <p>Coordination : (Lauréate) Chloé MICHAUT (LGL-TPE)</p>
 <p><strong>ERC PODCAST - Predictions and Observations for Discs: Planetary Cores and dust Aggregates from
 non-ideal MHD Simulations with radiative Transfer (2020-2025)</strong></p>
@@ -470,13 +467,9 @@ We employ a multiscale approach to bridge the gap between atomic, geological sam
 <section id="contrats-europeens">
 <h2>Contrats Européens<a class="headerlink" href="#contrats-europeens" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Puma Mind (2012-2015)</strong></p>
-<div class="d-flex docutils container">
-<img alt="Image Puma Mind" src="../_images/pumamind.jpg" />
-<div class="docutils container">
+<img alt="Image Puma Mind" class="img-fluid img-float pe-2" src="../_images/pumamind.jpg" />
 <p><a class="reference internal" href="Projets/Pumamind.html#pumamind"><span class="std std-ref">International R&amp;D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs)</span></a> <br>
 Coordination ENS de Lyon : (Lauréat David Loffreda)</p>
-</div>
-</div>
 </section>
 <section id="collaborations-industrielles">
 <h2>Collaborations Industrielles<a class="headerlink" href="#collaborations-industrielles" title="Lien vers cette rubrique">¶</a></h2>
@@ -487,28 +480,20 @@ Coordination ENS de Lyon : (Lauréat David Loffreda)</p>
 <p><strong>Collaboration ENS-Solvay-Rhodia (2018-2022)</strong></p>
 <p>Coordination ENS de Lyon : Carine Michel</p>
 <p id="ens-total"><strong>Collaboration ENS-Total</strong></p>
-<div class="d-flex docutils container">
-<img alt="Logo Total" src="../_images/total.jpg" />
-<div class="docutils container">
+<img alt="Logo Total" class="img-fluid img-float pe-2" src="../_images/total.jpg" />
 <p><strong>Développement d’un outil d’évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM
 Développement d’un modèle mésoscale des phénomènes d’adhésion à l’interface des systèmes Silicone-Silane-Métal</strong> <br>
 Coordination ENS de Lyon : Philippe Sautet &amp; Carine Michel</p>
-</div>
-</div>
 <p id="ens-solvay"><strong>Collaboration ENS-Solvay</strong></p>
-<div class="d-flex docutils container">
-<img alt="Logo Solvay" src="../_images/solvay.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/Solvay.html#collab-solvay"><span class="std std-ref">Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo.</span></a> <br>
-Coordination ENS de Lyon : Philippe Sautet &amp; Carine Michel</p>
-</div>
-</div>
+<img alt="Logo Solvay" class="img-fluid img-float pe-2" src="../_images/solvay.png" />
+<p><a class="reference internal" href="Projets/Solvay.html#collab-solvay"><span class="std std-ref">Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo.</span></a></p>
+<p>Coordination ENS de Lyon : Philippe Sautet &amp; Carine Michel</p>
 <p><strong>FUI LaBS (2009-2013)</strong></p>
 <div class="d-flex docutils container">
 <img alt="Logo LaBS" src="../_images/labs.png" />
 <div class="docutils container">
-<p><a class="reference internal" href="Projets/LaBS.html#labs"><span class="std std-ref">Lattice Boltzmann solver</span></a> <br>
-Coordination ENS de Lyon : Emmanuel Lévêque</p>
+<p><a class="reference internal" href="Projets/LaBS.html#labs"><span class="std std-ref">Lattice Boltzmann solver</span></a></p>
+<p>Coordination ENS de Lyon : Emmanuel Lévêque</p>
 </div>
 </div>
 </section>
@@ -550,16 +535,16 @@ Coordination ENS de Lyon : Emmanuel Lévêque</p>
 <div class="d-flex marg mb-3 docutils container">
 <img alt="Logo FSCF" src="../_images/fscf.png" />
 <div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRFscf.html#anrfscfm"><span class="std std-ref">Fluctuations in Structured Coulomb Fluids</span></a> <br>
-Coordination ENS de Lyon : Ralf Everaers</p>
+<p><a class="reference internal" href="Projets/ANRFscf.html#anrfscfm"><span class="std std-ref">Fluctuations in Structured Coulomb Fluids</span></a></p>
+<p>Coordination ENS de Lyon : Ralf Everaers</p>
 </div>
 </div>
 <p><strong>ANR RIDEPORPH (2012-2015)</strong></p>
 <div class="d-flex marg mb-3 docutils container">
 <img alt="Image porphyrin" src="../_images/porphyrin.png" />
 <div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRRideporph.html#anrrideporph"><span class="std std-ref">Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach.</span></a> <br>
-Coordination : Marie-Laure Bocquet</p>
+<p><a class="reference internal" href="Projets/ANRRideporph.html#anrrideporph"><span class="std std-ref">Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach.</span></a> <br></p>
+<p>Coordination : Marie-Laure Bocquet</p>
 </div>
 </div>
 <p><strong>ANR Galac (2011-2015)</strong></p>
@@ -572,7 +557,7 @@ Coordination ENS de Lyon : Philippe Sautet &amp; Carine Michel</p>
 </div>
 <p><strong>ANR CADENCED (2009-2014)</strong></p>
 <div class="d-flex marg mb-3 docutils container">
-<img alt="Image wgps3_ok" src="../_images/wgps3_ok.png" />
+<a class="reference internal image-reference" href="../_images/wgps3_ok.png"><img alt="Image wgps3_ok" src="../_images/wgps3_ok.png" style="width: 100px;" /></a>
 <div class="docutils container">
 <p><a class="reference internal" href="Projets/ANRCadenced.html#cadenced"><span class="std std-ref">Computer Assisted Discovery and Elucidation of Novel Catalysts for Economic Development of Saudi Arabia</span></a> <br>
 Coordination ENS de Lyon : Philippe Sautet</p>
@@ -1311,7 +1296,7 @@ Coordination : Arezki Boudaoud</p>
 </div>
 <p><strong>CADENCED (2009-2014)</strong></p>
 <div class="d-flex marg mb-3 docutils container">
-<img alt="Image wgps3_ok" src="../_images/wgps3_ok.png" />
+<a class="reference internal image-reference" href="../_images/wgps3_ok.png"><img alt="Image wgps3_ok" src="../_images/wgps3_ok.png" style="width: 100px;" /></a>
 <div class="docutils container">
 <p><a class="reference internal" href="Projets/ANRCadenced.html#cadenced"><span class="std std-ref">Computer Assisted Discovery and Elucidation of Novel Catalysts for Economic Development of Saudi Arabia</span></a> <br>
 Coordination ENS : Philippe Sautet</p>
@@ -1404,28 +1389,14 @@ Ralf Everaers</p>
     </div>
 <div class="orange-border right"></div>
   <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
-    <div class="row rows-cols-2">
-    <div class="col">
-        <p class="txt_footer">
-        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
-        <br>Téléphone : +33 (0)4 72 72 83 67
-        </p>
-    </div>
-    <div class="col">
-        <p class="txt_footer">
-            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
-            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
-        </p> 
-    </div>
-</div>
-
-    <div class="footer" role="contentinfo">
+    <p class="txt_footer mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+</p>
       <p class="fs-13">
     &#169; Copyright 2024, PSMN&#39;s Staff.
           Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
       </p>
-    
-    </div>
   </footer>
   <script src="../_static/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

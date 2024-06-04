@@ -13,7 +13,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
             <div class="row ">
                 <div class="col ">
                     <div class="mb-2">
-                        <label for="inputSurname" >Nom*</label>
+                        <label for="inputSurname">Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-2">
@@ -47,7 +47,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="text-center">
-                <button type="submit" class="btn mb-4" style="border-color: #E69645;">Soumettre</button>
+                <button type="submit" class="btn mb-4" onclick=sendmail() style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   
 

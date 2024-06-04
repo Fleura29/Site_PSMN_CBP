@@ -198,3 +198,18 @@ document.addEventListener('DOMContentLoaded', function() {
         insertStatut();
     }
 });
+
+function sendEmail() {
+    let nom= document.querySelector("#inputSurname").value;
+    Email.send({
+        Host : "smtp.yourisp.com",
+        Username : nom,
+        Password : "password",
+        To : 'charlotte.ruiz@hotmail.fr',
+        From : "you@isp.com",
+        Subject : "ceci est l'objet",
+        Body : "Et ceci est le message"
+    }).then(
+    message => alert(message)
+    );
+}

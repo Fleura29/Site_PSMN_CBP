@@ -55,8 +55,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
-
-                        <!--<script>
+                        
+                        <script>
+                            
                             function createA(att, url, nom){
                                 const a= document.createElement("a");
                                 a.setAttribute("class", att);
@@ -89,16 +90,14 @@
                                         if (typeof values !== 'object') {
    
                                             const li_sous_menu = document.createElement("li");
-                                            console.log(values);
-                                            const nouv_val = `$(values)`;
-                                            console.log(nouv_val);
-                                            if(values === "#"){
+
+                                            if(values === "#"){ 
                                                 const a_sous_titre = createA("dropdown-item", values , key);
                                                 ul_titre.append(li_sous_menu);
                                                 li_sous_menu.append(a_sous_titre);
                                             }
                                             else{
-                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                const a_sous_titre = createA("dropdown-item", values, key);
                                                 ul_titre.append(li_sous_menu);
                                                 li_sous_menu.append(a_sous_titre);
                                             }
@@ -130,9 +129,9 @@
                                     }
                                 });
                             })
-                        </script>-->
+                        </script>
                         
-                        <li class="nav-item dropdown">
+                        <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
@@ -157,24 +156,24 @@
                             </div>
                         </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
-                                <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
-                                <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
-                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
-                                <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
-                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
-                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
-                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
-                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
-                            </ul>   
-                        </div>
-                    </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                    <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                </ul>   
+                            </div>
+                        </li> 
                     
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
@@ -282,7 +281,7 @@
                                 <li><a class="dropdown-item" href="../Formulaires.html">Formulaires</a></li>
                             </ul>   
                         </div>
-                        </li>
+                        </li>-->
                           
                     </ul>
                 </div>
@@ -459,28 +458,14 @@
     </div>
 <div class="orange-border right"></div>
   <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
-    <div class="row rows-cols-2">
-    <div class="col">
-        <p class="txt_footer">
-        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
-        <br>Téléphone : +33 (0)4 72 72 83 67
-        </p>
-    </div>
-    <div class="col">
-        <p class="txt_footer">
-            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
-            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
-        </p> 
-    </div>
-</div>
-
-    <div class="footer" role="contentinfo">
+    <p class="txt_footer mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+</p>
       <p class="fs-13">
     &#169; Copyright 2024, PSMN&#39;s Staff.
           Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
       </p>
-    
-    </div>
   </footer>
   <script src="../../_static/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

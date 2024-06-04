@@ -10,6 +10,7 @@ Actualités
 .. container:: text-center
 
     .. image:: ../_static/actualites.png
+        :class: img-fluid
         :alt: image salle des machines
     
 Actualités du Pôle Scientifique de Modélisation Numérique
@@ -34,7 +35,7 @@ Les formations
 
 Voir `la page dédiée aux formations <formations>`_
 
-.. container:: text-center 
+.. container:: text-center mb-2
 
     .. container:: w-75 d-inline-block bg-danger-subtle pt-3 rounded fs-13
 

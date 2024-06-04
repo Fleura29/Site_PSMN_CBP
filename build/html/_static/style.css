@@ -168,17 +168,17 @@ a:hover{
 
 h1{
     font-size: 2rem;
-    display: none;
+ 
 }
 
 h2{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid #E69645;
     margin-bottom: 0.9rem;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: underline;
 }
 
@@ -191,7 +191,7 @@ h5{
 }
 
 .txt_footer{
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .h4-border{
@@ -289,4 +289,8 @@ th, td{
 
 .highlighted{
     background-color: #E69645;
+}
+
+a.headerlink{
+    display: none;
 }

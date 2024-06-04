@@ -79,7 +79,7 @@ Les thèses sont listées "en vrac" par années.
 2017
 ----
 
-* **Guilhem Poy** : ` <https://tel.archives-ouvertes.fr/tel-01769995>`_|Sur la pertinence du modèle thermomécanique dans la rotation Lehmann des gouttes cholestériques et nématiques **Patrick Oswald**. 
+* **Guilhem Poy** : `Sur la pertinence du modèle thermomécanique dans la rotation Lehmann des gouttes cholestériques et nématiques Patrick Oswald. <https://tel.archives-ouvertes.fr/tel-01769995>`_
 
 * **Loic Barnes** : `Étude théorique des saccharides : structures et spectres infrarouges <http://www.theses.fr/2017LYSE1152>`_, directeur de thèse **Abdul-Rahman Allouche**. 
 
@@ -153,7 +153,7 @@ Les thèses sont listées "en vrac" par années.
 2013
 ----
 
-* **Barkahem Anak** : //Etude des propriétés magnétiques et optiques des agrégats de platine et d’argent//, directeurs de thèse **F. Rabilloud** et **M. Bencharif**.
+* **Barkahem Anak** : *Etude des propriétés magnétiques et optiques des agrégats de platine et d’argent*, directeurs de thèse **F. Rabilloud** et **M. Bencharif**.
 
 * **Romain Ramozzi** : `Etude expérimentale et théorique des couplages de type Ugi et nouvelles réactions de post condensations <http://theses.fr/2013ENSL0837>`_, directeur de thèse **P. Fleurat-Lessard**.
 

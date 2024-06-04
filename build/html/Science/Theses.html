@@ -55,8 +55,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
-
-                        <!--<script>
+                        
+                        <script>
+                            
                             function createA(att, url, nom){
                                 const a= document.createElement("a");
                                 a.setAttribute("class", att);
@@ -89,16 +90,14 @@
                                         if (typeof values !== 'object') {
    
                                             const li_sous_menu = document.createElement("li");
-                                            console.log(values);
-                                            const nouv_val = `$(values)`;
-                                            console.log(nouv_val);
-                                            if(values === "#"){
+
+                                            if(values === "#"){ 
                                                 const a_sous_titre = createA("dropdown-item", values , key);
                                                 ul_titre.append(li_sous_menu);
                                                 li_sous_menu.append(a_sous_titre);
                                             }
                                             else{
-                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                const a_sous_titre = createA("dropdown-item", values, key);
                                                 ul_titre.append(li_sous_menu);
                                                 li_sous_menu.append(a_sous_titre);
                                             }
@@ -130,9 +129,9 @@
                                     }
                                 });
                             })
-                        </script>-->
+                        </script>
                         
-                        <li class="nav-item dropdown">
+                        <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
@@ -157,24 +156,24 @@
                             </div>
                         </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
-                                <li><a class="dropdown-item" href="../Informations/Arrets.html">Les arrêts prévus</a></li>
-                                <li><a class="dropdown-item" href="../Informations/Absences.html">Les absences des opérateurs</a></li>
-                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
-                                <li><a class="dropdown-item" href="../Informations/Calendrier.html">Calendrier des évolutions</a></li>
-                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
-                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
-                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
-                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
-                            </ul>   
-                        </div>
-                    </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                    <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                </ul>   
+                            </div>
+                        </li> 
                     
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
@@ -282,7 +281,7 @@
                                 <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
                             </ul>   
                         </div>
-                        </li>
+                        </li>-->
                           
                     </ul>
                 </div>
@@ -365,7 +364,7 @@ Les publications et les thèses sont souvent disponible dans les archives ouvert
 <section id="id6">
 <h2>2017<a class="headerlink" href="#id6" title="Lien vers cette rubrique">¶</a></h2>
 <ul class="simple">
-<li><p><strong>Guilhem Poy</strong> : ` &lt;<a class="reference external" href="https://tel.archives-ouvertes.fr/tel-01769995">https://tel.archives-ouvertes.fr/tel-01769995</a>&gt;`_|Sur la pertinence du modèle thermomécanique dans la rotation Lehmann des gouttes cholestériques et nématiques <strong>Patrick Oswald</strong>.</p></li>
+<li><p><strong>Guilhem Poy</strong> : <a class="reference external" href="https://tel.archives-ouvertes.fr/tel-01769995">Sur la pertinence du modèle thermomécanique dans la rotation Lehmann des gouttes cholestériques et nématiques Patrick Oswald.</a></p></li>
 <li><p><strong>Loic Barnes</strong> : <a class="reference external" href="http://www.theses.fr/2017LYSE1152">Étude théorique des saccharides : structures et spectres infrarouges</a>, directeur de thèse <strong>Abdul-Rahman Allouche</strong>.</p></li>
 <li><p><strong>Paco Maurer</strong> : <a class="reference external" href="http://theses.fr/2017LYSEN014">Approche expérimentale de la dynamique non-linéaire d’ondes internes en rotation</a>, directeurs de thèse <strong>P. Odier</strong> et <strong>S. Joubaud</strong>.</p></li>
 <li><p><strong>Coraline Petit</strong> : <a class="reference external" href="http://www.theses.fr/2017LYSEN009">Évolution et Développement d’un organe sériel : la molaire. Transcriptomique comparée des bourgeons de molaires chez les rongeurs</a>, directeurs de thèse <strong>M. Sémon</strong> et <strong>S. Pantalacci</strong>.</p></li>
@@ -416,7 +415,7 @@ Les publications et les thèses sont souvent disponible dans les archives ouvert
 <section id="id10">
 <h2>2013<a class="headerlink" href="#id10" title="Lien vers cette rubrique">¶</a></h2>
 <ul class="simple">
-<li><p><strong>Barkahem Anak</strong> : //Etude des propriétés magnétiques et optiques des agrégats de platine et d’argent//, directeurs de thèse <strong>F. Rabilloud</strong> et <strong>M. Bencharif</strong>.</p></li>
+<li><p><strong>Barkahem Anak</strong> : <em>Etude des propriétés magnétiques et optiques des agrégats de platine et d’argent</em>, directeurs de thèse <strong>F. Rabilloud</strong> et <strong>M. Bencharif</strong>.</p></li>
 <li><p><strong>Romain Ramozzi</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0837">Etude expérimentale et théorique des couplages de type Ugi et nouvelles réactions de post condensations</a>, directeur de thèse <strong>P. Fleurat-Lessard</strong>.</p></li>
 <li><p><strong>Martin Vérot</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0822">Phénomènes de transport : contribution de l’approche //ab initio// et applications</a>, directeur de thèse <strong>V. Robert</strong>.</p></li>
 <li><p><strong>Chandan Patel</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0835">Hybrid molecular simulations of oxidative complex lesions</a>, directeur de thèse <strong>E. Dumont</strong>.</p></li>
@@ -507,28 +506,14 @@ Les publications et les thèses sont souvent disponible dans les archives ouvert
     </div>
 <div class="orange-border right"></div>
   <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
-    <div class="row rows-cols-2">
-    <div class="col">
-        <p class="txt_footer">
-        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
-        <br>Téléphone : +33 (0)4 72 72 83 67
-        </p>
-    </div>
-    <div class="col">
-        <p class="txt_footer">
-            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
-            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
-        </p> 
-    </div>
-</div>
-
-    <div class="footer" role="contentinfo">
+    <p class="txt_footer mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+</p>
       <p class="fs-13">
     &#169; Copyright 2024, PSMN&#39;s Staff.
           Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
       </p>
-    
-    </div>
   </footer>
   <script src="../_static/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

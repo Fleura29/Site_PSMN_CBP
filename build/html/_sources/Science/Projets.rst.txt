@@ -104,7 +104,7 @@ Projets ERC
 Élucider les secrets de la formation de la croûte des planètes.
 La faible densité de la croûte continentale de la planète pourrait avoir donné naissance à la tectonique des plaques, à savoir les mouvements de la lithosphère de la Terre. Des études ont révélé que cette faible densité trouve son origine dans des processus qui ont affecté la répartition des matériaux à travers les continents. Cependant, il existe encore des lacunes dans nos connaissances concernant les caractéristiques de la croûte sur d’autres planètes telluriques et la manière dont elle s’est formée. Plus particulièrement, des processus physiques analogues pourraient-ils se produire sur d’autres planètes dépourvues de tectonique des plaques? Le projet CRUSLID, financé par l’UE, cherche à combler ces lacunes en développant un modèle révolutionnaire qui permettra de déterminer les caractéristiques de la croûte d’autres planètes. Pour ce faire, il tirera parti de recherches multidisciplinaires et de nouvelles observations planétaires susceptibles de fournir de précieuses informations sur la formation de la croûte des corps telluriques primitifs.
 
-    ERC-COG - Consolidator Grant
+ERC-COG - Consolidator Grant
 
 Coordination : (Lauréate) Chloé MICHAUT (LGL-TPE)
 
@@ -205,15 +205,12 @@ Contrats Européens
 
 **Puma Mind (2012-2015)**
 
-.. container:: d-flex 
+.. image:: ../_static/img_projets/pumamind.jpg
+    :class: img-fluid img-float pe-2
+    :alt: Image Puma Mind
 
-    .. image:: ../_static/img_projets/pumamind.jpg
-        :alt: Image Puma Mind
-
-    .. container::
-
-        :ref:`International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs) <pumamind>` |br|
-        Coordination ENS de Lyon : (Lauréat David Loffreda)
+:ref:`International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs) <pumamind>` |br|
+Coordination ENS de Lyon : (Lauréat David Loffreda)
 
 Collaborations Industrielles
 ----------------------------
@@ -234,30 +231,25 @@ Coordination ENS de Lyon : Carine Michel
 
 **Collaboration ENS-Total**
 
-.. container:: d-flex 
+.. image:: ../_static/img_projets/total.jpg
+    :class: img-fluid img-float pe-2
+    :alt: Logo Total
 
-    .. image:: ../_static/img_projets/total.jpg
-        :alt: Logo Total
-
-    .. container::
-
-        **Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
-        Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
-        Coordination ENS de Lyon : Philippe Sautet & Carine Michel
+**Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
+Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
+Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
 .. _ens-solvay:
 
 **Collaboration ENS-Solvay**
 
-.. container:: d-flex  
+.. image:: ../_static/img_projets/solvay.png
+    :class: img-fluid img-float pe-2
+    :alt: Logo Solvay
 
-    .. image:: ../_static/img_projets/solvay.png
-        :alt: Logo Solvay
+:ref:`Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo. <collab-solvay>`
 
-    .. container::
-
-        :ref:`Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo. <collab-solvay>` |br|
-        Coordination ENS de Lyon : Philippe Sautet & Carine Michel
+Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
 **FUI LaBS (2009-2013)**
 
@@ -268,7 +260,8 @@ Coordination ENS de Lyon : Carine Michel
 
     .. container::
 
-        :ref:`Lattice Boltzmann solver <labs>` |br|
+        :ref:`Lattice Boltzmann solver <labs>`
+
         Coordination ENS de Lyon : Emmanuel Lévêque  
 
 Projets ANR
@@ -353,7 +346,8 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
     .. container::
 
-        :ref:`Fluctuations in Structured Coulomb Fluids <anrfscfm>` |br|
+        :ref:`Fluctuations in Structured Coulomb Fluids <anrfscfm>` 
+
         Coordination ENS de Lyon : Ralf Everaers 
 
 **ANR RIDEPORPH (2012-2015)**
@@ -366,6 +360,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
     .. container::
 
         :ref:`Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach. <anrrideporph>` |br|
+        
         Coordination : Marie-Laure Bocquet 
 
 **ANR Galac (2011-2015)**
@@ -385,6 +380,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 .. container:: d-flex marg  mb-3
 
     .. image:: ../_static/img_projets/wgps3_ok.png
+        :width: 100px
         :alt: Image wgps3_ok
 
     .. container::
@@ -1444,6 +1440,7 @@ Directeur de Thèse : Wei Dong
 .. container:: d-flex marg  mb-3
 
     .. image:: ../_static/img_projets/wgps3_ok.png
+        :width: 100px
         :alt: Image wgps3_ok
 
     .. container::

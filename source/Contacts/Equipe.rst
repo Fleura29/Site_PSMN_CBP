@@ -66,8 +66,6 @@ Gestionnaire
         Téléphone: +33 (0)4 26 23 38 01 |br| 
         Langues: français, anglais
 
-        .. image:: ../_static/equipe/eqltlanguages.png
-
     .. container:: col
 
         :underline:`Contact pour :` |br|
