@@ -1,0 +1,70 @@
+Workshop 2017
+=============
+
+Workshop 2017
+-------------
+
+.. |br| raw:: html
+
+   <br>
+
+.. container:: d-flex
+
+    .. image:: ../../_static/cbp_ens.jpeg
+        :class: img-fluid pe-3
+        :alt: Logo CBP
+
+    **30/03/2017** |br|
+    `Journées CBP&PSMN - cycle de rencontres thématiques : Utilisation de la bibliotheque MUMPS <https://cbppsmndays.sciencesconf.org/resource/page/id/1>`_ |br|
+    CBP, ENS de Lyon  
+
+.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/genome.jpeg
+        :class: img-fluid pe-3
+        :alt: Image Ecam
+
+    **02-07/04/2017** |br|
+    `Multiscale Modeling and Experimental Approaches to Genome Organization <#>`_ |br|
+    Ecole de Physique, Les Houches 
+
+.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/biomembrane.jpg
+        :class: img-fluid pe-3
+        :alt: Image biomembrane
+
+    **06-09/06/2017** |br|
+    `The future of biomembrane simulations: hidden pitfalls and future challenges <#>`_ |br|
+    CBP, ENS de Lyon 
+
+.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/cbp_ens.jpeg
+        :class: img-fluid pe-3
+        :alt: Image biomembrane
+
+    **12/06/2017** |br|
+    `Journées CBP&PSMN - cycle de rencontres thématiques : Utilisation du logiciel ABINIT <https://cbppsmndays.sciencesconf.org/resource/page/id/2>`_ |br|
+    CBP, ENS de Lyon  
+
+.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/rheology.png
+        :class: img-fluid pe-3
+        :alt: Image biomembrane
+
+    **21-23/06/2017** |br|
+    `Rheology on gel networks: combining experimental, computational and theoretical insights <#>`_ |br|
+    CBP, ENS de Lyon
+
+.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/chromatin.png
+        :class: img-fluid pe-3
+        :alt: Image chromatin
+
+    **18/12/2017** |br|
+    `Chromatin dynamics at nano-scale resolution and long-range correlation within the nucleus during transcription <#>`_ |br|
+    Speaker : Haitham A. Shaban, LBME/CBI-CNRS, University of Toulouse |br|
+    CBP, ENS de Lyon  

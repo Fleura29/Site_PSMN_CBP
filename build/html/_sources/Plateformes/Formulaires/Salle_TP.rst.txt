@@ -1,0 +1,10 @@
+.. _Salle_TP:
+
+Réservation salle de TP
+=======================
+
+    .. toctree::
+        :maxdepth: 1
+        :caption: Réservation
+
+    Réservations

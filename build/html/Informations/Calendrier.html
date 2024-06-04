@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Calendrier prévisionnel des Évolutions &#8212; Documentation PSMN-CBP </title>
+    <script src="../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=bf059b8c"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="../_static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/style.css">
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Data Center" href="../Plateformes/DataCenter.html" />
+    <link rel="prev" title="Les Arrêts prévus" href="Arrets.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="w-25 pt-3">
+            <a href="../index.html">
+                <img class="img-fluid" src="../_static/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="w-25">
+            <div class="d-flex justify-content-end w-25" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../_static/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../_static/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../_static/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <!--<script>
+                            function createA(att, url, nom){
+                                const a= document.createElement("a");
+                                a.setAttribute("class", att);
+                                a.href= url ;
+                                a.textContent= nom;
+                                return a;
+                            };
+
+                            fetch("../_static/Liens.html")
+                            .then((response) => response.json())
+                            .then((json) => {
+                                
+                                json.Menu.titre.forEach((element) => {
+                                    const li_menu = document.createElement("li");
+                                    li_menu.setAttribute("class", "nav-item dropdown");
+                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
+
+                                    menu.append(li_menu);
+                                    li_menu.append(a_titre);
+
+                                    const div_menu = document.createElement("div");
+                                    div_menu.setAttribute("class", "dropdown-menu");
+                                    li_menu.append(div_menu);
+
+                                    const ul_titre = document.createElement("ul");
+                                    div_menu.append(ul_titre);
+                                    const obj= Object.entries(json.Menu[element]);
+
+                                    for (const [key,values] of obj){
+                                        if (typeof values !== 'object') {
+   
+                                            const li_sous_menu = document.createElement("li");
+                                            console.log(values);
+                                            const nouv_val = `$(values)`;
+                                            console.log(nouv_val);
+                                            if(values === "#"){
+                                                const a_sous_titre = createA("dropdown-item", values , key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            else{
+                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            
+                                        } else {     
+                                            const li_sous_menu = document.createElement("li");
+                                            li_sous_menu.setAttribute("class", "nav-item dropend");
+                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
+
+                                            ul_titre.append(li_sous_menu);
+                                            li_sous_menu.append(a_sous_titre);
+
+                                            const div_sous_menu = document.createElement("div");
+                                            div_sous_menu.setAttribute("class", "dropdown-menu");
+                                            li_sous_menu.append(div_sous_menu);
+
+                                            const ul_ss_titre = document.createElement("ul");
+                                            div_sous_menu.append(ul_ss_titre);
+                                            const obj2 = Object.entries(json.Menu[element][key]);
+                                            
+                                            for (let [keys, val] of obj2) {
+                                                const li_ss_menu = document.createElement("li");
+                                                const a_ss_titre = createA("dropdown-item", val, keys);
+
+                                                ul_ss_titre.append(li_ss_menu);
+                                                li_ss_menu.append(a_ss_titre);
+                                            }
+                                        }
+                                    }
+                                });
+                            })
+                        </script>-->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                <li><a class="dropdown-item" href="Arrets.html">Les arrêts prévus</a></li>
+                                <li><a class="dropdown-item" href="Absences.html">Les absences des opérateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="#">Calendrier des évolutions</a></li>
+                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                            </ul>   
+                        </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../Plateformes/DataCenter.html">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                             </ul>   
+                        </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                        <div class="dropdown-menu menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../Formation/Formation.html">Formation</a></li>
+                                <li><a class="dropdown-item" href="../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../Formation/Stage.html">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="../Science/Publications2024.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="../Science/Theses.html">Thèses</a></li>
+                                <li><a class="dropdown-item" href="../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                <li><a class="dropdown-item" href="../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="#">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../Contacts/Acces.html ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                          
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex ms-auto" style="height: 35px;" action="../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+    
+</search>
+
+                </div>
+                
+                
+                <div></div>
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary fs-15" id="contenu">
+                
+  <section id="calendrier-previsionnel-des-evolutions">
+<span id="calendrier-prev"></span><h1>Calendrier prévisionnel des Évolutions<a class="headerlink" href="#calendrier-previsionnel-des-evolutions" title="Lien vers cette rubrique">¶</a></h1>
+<section id="evolutions-2023">
+<h2>Évolutions 2023<a class="headerlink" href="#evolutions-2023" title="Lien vers cette rubrique">¶</a></h2>
+<section id="infrastructures">
+<h3>Infrastructures<a class="headerlink" href="#infrastructures" title="Lien vers cette rubrique">¶</a></h3>
+<p><strong>Automne 2023</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Cluster Cascade, tranche 3</dt><dd><ul>
+<li><p>nouveaux noeuds Cascade ⇒ <strong>OK</strong></p></li>
+<li><p>nouveau scratch/Cascade ⇒ <strong>OK</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Printemps 2023</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Cluster Cascade, tranche 3</dt><dd><ul>
+<li><p>nouveaux noeuds Cascade ⇒ <strong>IN PROGRESS</strong></p></li>
+<li><p>nouveau scratch/Cascade ⇒ <strong>IN PROGRESS</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>website migration (by DUNES) ⇒ <strong>OK</strong></dt><dd><ul>
+<li><p>new URL for Documentation <a class="reference external" href="http://www.ens-lyon.fr/PSMN/Documentation/">http://www.ens-lyon.fr/PSMN/Documentation/</a> ⇒ <strong>OK</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+<section id="id1">
+<h2>Évolutions 2023<a class="headerlink" href="#id1" title="Lien vers cette rubrique">¶</a></h2>
+<section id="id2">
+<h3>Infrastructures<a class="headerlink" href="#id2" title="Lien vers cette rubrique">¶</a></h3>
+<p><strong>Automne 2022</strong></p>
+<div class="text-center d-inline-block bg-danger-subtle pt-3 rounded fs-13 mb-2 docutils container">
+<p><strong>IMPORTANT NEWS</strong>
+Debian9/SGE has been shutdown definitely Friday 21th of October 2022</p>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Nouvelle infrastructure système</strong></dt><dd><ul>
+<li><p>migration debian 9 -&gt; <strong>debian 11</strong> (LTS) ⇒ <strong>DONE</strong></p></li>
+<li><p>migration GridEngine -&gt; <strong>slurm</strong> ⇒ <strong>DONE</strong></p></li>
+<li><p>nouveau système d’installation des logiciels (easybuild)  ⇒ <strong>DONE</strong></p></li>
+<li><p>remise à zéro des scratchs (lors de la migration)  ⇒ <strong>DONE</strong></p></li>
+<li><p><strong>All deb9 scratchs emptied and erased for migration</strong></p></li>
+<li><p>E5N, Lake, Chimie, Bio, Themiss</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Partitions slurm <strong>ouvertes</strong> tests + <strong>PRODUCTION</strong> ⇒ <strong>DONE</strong></p></li>
+<li><p>New Documentation ⇒ <strong>READY</strong>, <a class="reference external" href="https://meso-centres-lyon.pages.in2p3.fr/psmn-rtd/index.html">https://meso-centres-lyon.pages.in2p3.fr/psmn-rtd/index.html</a></p></li>
+</ul>
+<p><strong>Printemps 2022</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Nouvelle infrastructure système</strong></dt><dd><ul>
+<li><p>migration debian 9 -&gt; <strong>debian 11</strong> (LTS) ⇒ <strong>READY</strong></p></li>
+<li><p>migration GridEngine -&gt; <strong>slurm</strong> ⇒ <strong>READY</strong></p></li>
+<li><p>nouveau système d’installation des logiciels (easybuild)  ⇒ <strong>READY</strong></p></li>
+<li><p>remise à zéro des scratchs (lors de la migration)  ⇒ <strong>AWAITING</strong></p></li>
+<li><p>New Documentation (<strong>READY</strong>) <a class="reference external" href="https://meso-centres-lyon.pages.in2p3.fr/psmn-rtd/index.html">https://meso-centres-lyon.pages.in2p3.fr/psmn-rtd/index.html</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Cluster Cascade <strong>ouvert</strong> aux béta-tests ⇒ <strong>OPEN / IN PRODUCTION</strong> (<a class="reference internal" href="../Contacts/Formulaires/Probleme.html#probleme"><span class="std std-ref">use web forms for access</span></a>)</p></li>
+</ul>
+</section>
+<section id="clusters">
+<h3>Clusters<a class="headerlink" href="#clusters" title="Lien vers cette rubrique">¶</a></h3>
+<p><strong>Automne 2022</strong></p>
+<ul class="simple">
+<li><p>cluster Cascade : <span class="line">Déménagement et</span> doublement de la capacité (7k -&gt; 14k cores) ⇒ <strong>IN PROGRESS</strong></p></li>
+<li><p>cluster E5 : <span class="line">Déménagement et</span> réduction de la capacité (4k -&gt; 2k cores) ⇒ <strong>IN PROGRESS</strong></p></li>
+</ul>
+<p><strong>Printemps 2022</strong></p>
+<ul class="simple">
+<li><p>cluster Cascade : Déménagement et doublement de la capacité (7k -&gt; 14k cores) ⇒ <strong>AWAITING</strong></p></li>
+<li><p>cluster E5 : Déménagement et réduction de la capacité (4k -&gt; 2k cores) ⇒ <strong>IN PROGRESS</strong></p></li>
+</ul>
+<p><strong>2022-ish</strong></p>
+<ul class="simple">
+<li><p>Extension du cluster Epyc</p></li>
+</ul>
+</section>
+</section>
+<section id="evolutions-2021">
+<h2>Évolutions 2021<a class="headerlink" href="#evolutions-2021" title="Lien vers cette rubrique">¶</a></h2>
+<section id="id4">
+<h3>Infrastructures<a class="headerlink" href="#id4" title="Lien vers cette rubrique">¶</a></h3>
+<p><strong>Automne 2021</strong></p>
+<ul class="simple">
+<li><p>migration debian 9 -&gt; <strong>debian 11</strong> (LTS)</p></li>
+<li><p>migration GridEngine -&gt; <strong>slurm</strong></p></li>
+<li><p>nouveau système d’installation des logiciels</p></li>
+<li><p>modifications sur le réseau backbone (100G, 40G, 10G)  &lt;- <strong>OK</strong></p></li>
+<li><dl class="simple">
+<dt>remise à zéro des scratchs</dt><dd><ul>
+<li><p><strong>/scratch/Chimie (cluster Lake) -&gt; pendant la coupure du 23/10/2021</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>nouveau serveur de bases de données &lt;- <strong>OK le 08/10/2021</strong></dt><dd><ul>
+<li><p><strong>r640database</strong></p></li>
+<li><p><span class="line">postgresql</span> OK</p></li>
+<li><p><span class="line">mysql</span> OK</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="id5">
+<h3>Clusters<a class="headerlink" href="#id5" title="Lien vers cette rubrique">¶</a></h3>
+<p><strong>Décembre 2021</strong></p>
+<ul class="simple">
+<li><p>Extension du cluster Epyc</p></li>
+</ul>
+<p><strong>Septembre/Octobre 2021</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Nouveau cluster Cascade</strong></dt><dd><ul>
+<li><p>96 serveurs bi-socket équipés de processeurs Cascade Lake 9242 et 384 GiB de mémoire (48 coeurs à 2,3Ghz, 71,5 MiB de cache).</p></li>
+<li><p>Infinband HDR 100.</p></li>
+<li><p>Environ 9000 coeurs Cascade Lake 9242.</p></li>
+<li><p>Une unique file d’attente parallèle avec 6912 coeurs disponibles.</p></li>
+<li><p>Stockage /scratch dédié.</p></li>
+<li><p><span class="line">Compilateurs dédiés.</span> -&gt; s92node01, cl6242comp2</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Janvier 2021</strong></p>
+<p><strong>Nouvelles files d’attente:</strong></p>
+<ul class="simple">
+<li><p>CLG6226Rdeb1500 32 coeurs 6226R et 1,5 TiB de mémoire accès avec autorisation <strong>créée le 11/01/2021</strong></p></li>
+</ul>
+<p><strong>Stockage:</strong></p>
+<ul class="simple">
+<li><p>nouveau scratch « /scratch/Cral » sur les clusters « Lake » et « Epyc » (réservé au CRAL)</p></li>
+</ul>
+</section>
+</section>
+<section id="evolutions-2020">
+<h2>Évolutions 2020<a class="headerlink" href="#evolutions-2020" title="Lien vers cette rubrique">¶</a></h2>
+<section id="id6">
+<h3>Clusters<a class="headerlink" href="#id6" title="Lien vers cette rubrique">¶</a></h3>
+<p><strong>Automne 2020 : Nouveau cluster « Epyc » sur base de processeurs AMD Epyc</strong></p>
+<p><strong>Nouvelles files d’attente:</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Epyc7702deb512, Infiniband EDR (2048 coeurs disponibles 4Go/coeur) <strong>créée le 16/12/2020</strong></dt><dd><ul>
+<li><p>liaison au « /scratch/Lake » <strong>OK le 16/12/2020</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><span class="line">Le matériel étant trés récent et notre système un peu ancien, nous avons quelques difficultés…</span></p>
+<p><strong>Automne 2020 : Extension cluster « Lake »</strong></p>
+<p><strong>Nouveaux compilateurs:</strong></p>
+<ul class="simple">
+<li><p>cl6226comp1 et 2 <strong>mis en service le 09/12/2020</strong></p></li>
+</ul>
+<p><strong>Nouvelles files d’attente:</strong></p>
+<ul class="simple">
+<li><p>Matlab (32 coeurs disponibles 8Go/coeur) <strong>créee le 07/09/2020</strong></p></li>
+<li><p>monointeldeb96 (192 coeurs disponibles 4Go/coeur) <strong>créee le 11/09/2020</strong></p></li>
+<li><p>Queue CLG5218deb182Themiss renommée CLG5218deb182Th <strong>créee le 18/09/2020</strong></p></li>
+<li><p>Queue CLG5218deb182Themiss renommée CLG5218deb182Th <strong>Ajout de 12 serveurs 384 coeurs le 16/11/2020</strong></p></li>
+<li><p>CLG6226Rdeb192A Infiniband FDR (768 coeurs disponibles 6Go/coeur) <strong>Créée le 27/11/2020</strong></p></li>
+<li><p>CLG6226Rdeb192B Infiniband FDR (768 coeurs disponibles 6Go/coeur) <strong>Créée le 30/11/2020</strong></p></li>
+<li><p>CLG6226Rdeb192C Infiniband FDR (768 coeurs disponibles 6Go/coeur) <strong>Créée le 04/12/2020</strong></p></li>
+<li><p>CLG6226Rdeb192D Infiniband FDR (768 coeurs disponibles 6Go/coeur) <strong>Créée le 04/12/2020</strong></p></li>
+<li><p>h48-CLG6226Rdeb192 Infiniband FDR (384 coeurs disponibles 6Go/coeur limitée à 48h) <strong>Créée le 04/12/2020</strong></p></li>
+</ul>
+<p><strong>Stockage:</strong></p>
+<ul class="simple">
+<li><p>migration Chimie (data et homes, data2 -&gt; data10), finalisation pendant coupure d’octobre</p></li>
+<li><p>migration Geol (data et homes, data3 -&gt; data9), finalisation pendant coupure d’octobre</p></li>
+</ul>
+<p><strong>Automne 2020 : Extinction cluster « X5 »</strong></p>
+<p>À partir du 01/09/2020, les serveurs les plus anciens vont être arrêtés (et de nouveaux serveurs installés). Files d’attentes qui seront arrêtées et remplacées :</p>
+<ul class="simple">
+<li><p><span class="line">matlab</span> <strong>Définitivement arrêtée le 03/09/2020</strong></p></li>
+<li><p><span class="line">matlabbig</span> <strong>Définitivement arrêtée le 03/09/2020</strong></p></li>
+<li><p><span class="line">monointeldeb24</span> <strong>Définitivement arrêtée le 03/09/2020</strong></p></li>
+<li><p><span class="line">monointeldeb48</span> <strong>Définitivement arrêtée le 03/09/2020</strong></p></li>
+<li><p><span class="line">r815lin128ib</span> <strong>Définitivement arrêtée le 03/09/2020</strong></p></li>
+<li><p><span class="line">x5570deb48</span> <strong>Définitivement arrêtée le 01/09/2020</strong></p></li>
+<li><p><span class="line">x5650deb24</span> <strong>Définitivement arrêtée le 03/09/2020</strong></p></li>
+<li><p><span class="line">x5650comp1 et x5650comp3</span> <strong>Définitivement arrêtée le 07/10/2020</strong></p></li>
+<li><p>x5570comp1, x5570comp2 et scratch X5 : <strong>Définitivement arrêtée le 23/10/2020</strong></p></li>
+</ul>
+<p>Les frontales correspondantes (x5570comp1, x5570comp2, x5650comp1, x5650comp3) ainsi que le scratch « X5 » seront aussi arrêtés trés prochainement.</p>
+<p>Par ailleurs, la file d’attente <strong>r820deb768</strong> est en panne (et hors garantie).</p>
+<p><strong>Printemps 2020 : Nouveau cluster « Lake »</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>modification ou nouvelles files d’attente :</dt><dd><ul>
+<li><p>nouvelle file CLG6242deb384B comprenant 768 coeurs CL 6242 <strong>Fait le 13/04/2020</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Nouveau scratch « Lake » :</p>
+<dl class="simple">
+<dt>/scratch/</dt><dd><p>├── Lake/        (Opérationnel le 13 mars 2020)
+├── disk/        (local to some servers)
+├── Chimie       (reserved to chimie usage)
+├── Bio          (reserved to biologie usage)
+…
+└── Project_name (reserved to some servers, with dedicated hardware)</p>
+</dd>
+</dl>
+<p><strong>Opérations en cours sur le cluster X5:</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>serveurs r422:</dt><dd><ul>
+<li><p>la queue x5570deb48 a été créée <strong>Fait le 13/01/2020</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>serveurs sl390:</dt><dd><ul>
+<li><p>la queue x5650deb24 a été créée <strong>Fait le 13/01/2020</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>arrêt des serveurs r815:</dt><dd><ul>
+<li><p>la queue r815lin128ib a été arrêtée définitivement <strong>Fait le 11/09/2020</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+<section id="evolutions-2019">
+<h2>Évolutions 2019<a class="headerlink" href="#evolutions-2019" title="Lien vers cette rubrique">¶</a></h2>
+<section id="id7">
+<h3>Clusters<a class="headerlink" href="#id7" title="Lien vers cette rubrique">¶</a></h3>
+<p>Novembre à Décembre 2019 :</p>
+<p><strong>Opérations en cours sur le cluster X5:</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>arrêt des serveurs r422:</dt><dd><ul>
+<li><p><span class="line">les queues x5570deb24A, x5570deb48A, x5570deb48B et x5570deb48C sont bloquées et seront arrêtées définitivement.</span> <strong>Fait le 16/12/2019</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>arrêt des serveurs sl390:</dt><dd><ul>
+<li><p><span class="line">les queues x5650lin24B et x5650lin24C sont bloquées depuis le 17/12/2019 et seront arrêtées définitivement.</span> <strong>Fait le 07/01/2020</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><span class="line">arrêt des queues matlab et matlabbig du 20/12/2019 jusqu’à début 2020.</span> <strong>Fait le 20/12/2019 de nouveau up</strong></p></li>
+<li><p><span class="line">arrêt des queues piv_debianA, B et C et regroupement en une seule queue piv_debian début 2020.</span> <strong>Fait le 20/12/2019 piv_debian up</strong></p></li>
+<li><dl class="simple">
+<dt>arrêt des serveurs r815:</dt><dd><ul>
+<li><p>la queue r815lin128ib sera arrêtée définitivement début 2020.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Opérations en cours sur le cluster E5:</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>déplacement physique des R730 GPU (E5 vers Lake)</dt><dd><ul>
+<li><p><span class="line">La Queue r730gpuRTX2080ti est arrêtée pour déplacement des serveurs jusqu’au 15/11/2019</span> <strong>Fait le 16/12/2019</strong></p></li>
+<li><p><strong>r730gpuRTX2080ti back online, NO SCRATCH</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>déplacement physique de chassis C82 (E5)</dt><dd><ul>
+<li><p>Les Queues E5-2667v2deb128 et E5-2667v2deb128nl <span class="line">sont arrêtées pour déplacement des serveurs jusqu’au 19/11/2019</span> <strong>sont de nouveau opérationnelles (Mardi 19/11/2019)</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>déplacement physique des scratch Chimie (E5 vers Lake) et Themiss (Lake)</dt><dd><ul>
+<li><p><span class="line">arrêt des serveurs pour déplacement le 19/11/2019</span></p></li>
+<li><p>scratch <strong>Themiss</strong> et <strong>Chimie</strong> sur <strong>Lake</strong> : <strong>OK (28/11/2019)</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>arrêt pour déplacement dans la semaine du 18 au 22/11/2019 :</dt><dd><ul>
+<li><p><span class="line">des files d’attente M6142 C et D</span> <strong>OK le 26/11/2019</strong></p></li>
+<li><p><span class="line">des compilateurs e5-2670comp[1-2]</span> <strong>OK le 27/11/2019</strong></p></li>
+<li><p><span class="line">des files d’attente h48-E5 (partiel) et E5-2670 F (partiel)</span> <strong>OK le 28/11/2019</strong></p></li>
+<li><p><span class="line">des compilateurs m6142comp[1-2] vers **Lake**</span> <strong>OK le 02/12/2019</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>nouveau scratch <strong>Bio</strong> sur <strong>Lake</strong> : <strong>OK (28/11/2019)</strong></p></li>
+<li><p>nouvelles frontales, <strong>cl6242comp1</strong> et <strong>cl6242comp2</strong> : <strong>OK (27/11/2019)</strong></p></li>
+<li><p>arrêt/redémarrage des serveurs de visualisation pour changement de carte infiniband (dual connect)</p></li>
+</ul>
+<p><strong>Nouveau cluster « Lake » (en cours d’installation)</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>modification ou nouvelles files d’attente :</dt><dd><ul>
+<li><p>les files M6142deb384A, B, C et D seront renommées SLG6142deb384A, B, C et D (1920 coeurs)</p></li>
+<li><p>M6142deb384A et B, renommées en SLG6142deb384A et B <strong>OK (09/12/2019)</strong></p></li>
+<li><p><span class="line">arrêt pour déplacement des serveurs de la file M6142deb384A du 28/11 au 07/12</span> <strong>OK (04/12/2019)</strong></p></li>
+<li><p><span class="line">arrêt pour déplacement des serveurs de la file M6142deb384B du 07/12 au 16/12</span> <strong>OK (04/12/2019)</strong></p></li>
+<li><p>nouvelle file CLG6242deb384A comprenant 768 coeurs CL 6242 <strong>OK le 28/11/2019</strong></p></li>
+<li><p>nouvelle file CLG6242deb384C comprenant 320 coeurs CL 6242 <strong>OK le 28/11/2019</strong></p></li>
+<li><p>nouvelles files CLG5218deb192A, B, C et D comprenant 768 coeurs CL 5218 chacune (soit 3072 coeurs)</p></li>
+<li><p>nouvelle file CLG5218deb192A <span class="line">online bientôt</span> <strong>OK (29/11/2019)</strong></p></li>
+<li><p>nouvelle file CLG5218deb192B <span class="line">online bientôt</span> <strong>OK (29/11/2019)</strong></p></li>
+<li><p>nouvelle file CLG5218deb192C <span class="line">online bientôt</span> <strong>OK (05/12/2019)</strong></p></li>
+<li><p>nouvelle file CLG5218deb192D <span class="line">online bientôt</span> <strong>OK (04/12/2019)</strong></p></li>
+<li><p>nouvelle file CLG5218deb192Themiss comprenant 320 coeurs CL 5218 <span class="line">online bientôt</span> <strong>OK (05/12/2019)</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Nouveau scratch « Lake » :</p>
+<dl class="simple">
+<dt>/scratch/</dt><dd><p>├── Lake/        (à venir, common to Lake cluster)
+├── disk/        (local to some servers)
+├── Chimie       (reserved to chimie usage)
+├── Bio          (reserved to biologie usage)
+…
+└── Project_name (reserved to some servers, with dedicated hardware)</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><dl class="simple">
+<dt>modification sur le cluster E5 (à venir, fin 2019)</dt><dd><ul>
+<li><p>nouveau scratch E5 (sur cluster E5)</p></li>
+<li><p>nouvelles frontales de compilation (E5 <span class="line">et Lake</span>)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Arrêt du cluster X5</strong> (à venir, fin 2019)</dt><dd><ul>
+<li><p>les files monointeldeb48, x55*, x56* et r815lin128ib seront supprimées</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Avril 2019 :</p>
+<ul class="simple">
+<li><p>files d’attentes M6142 renommées en SG6142</p></li>
+<li><p>upgrade système, passage en Debian 9.8 [coupure du 20/04/2019] <strong>OK</strong></p></li>
+<li><p>upgrade CUDA (driver 418 et CUDA 9.0 + 9.2) [coupure du 20/04/2019] <strong>OK</strong></p></li>
+<li><p>« Unified scratch », new scratchs hierarchy, enabling easy inclusions of upcoming hardware <strong>OK</strong></p></li>
+</ul>
+<p>Here’s the new scratch :</p>
+<dl class="simple">
+<dt>/scratch/</dt><dd><p>├── E5/        (existing E5 scratch, available to E5 cluster)
+├── nvme/      (local to some servers)
+├── ssd/       (local to some servers)
+├── Project_name (local to some servers, with dedicated hardware)
+…
+└── X5/        (existing X5 scratch, available to X5 cluster)</p>
+</dd>
+</dl>
+</section>
+<section id="stockage">
+<h3>Stockage<a class="headerlink" href="#stockage" title="Lien vers cette rubrique">¶</a></h3>
+<p>2019 :</p>
+<ul class="simple">
+<li><p>mise en production data9 (transfert geol, +600To brut)</p></li>
+<li><p>migration home du cral sur data8  <strong>OK</strong></p></li>
+<li><p>achat serveur de bases de données (hors garantie)</p></li>
+<li><p>achat data10, renouvellement chimie (hors garantie)</p></li>
+</ul>
+</section>
+</section>
+<section id="evolutions-2018">
+<h2>Évolutions 2018<a class="headerlink" href="#evolutions-2018" title="Lien vers cette rubrique">¶</a></h2>
+<section id="id8">
+<h3>Clusters<a class="headerlink" href="#id8" title="Lien vers cette rubrique">¶</a></h3>
+<p>Juillet - août 2018</p>
+<ul class="simple">
+<li><p>Nouvelle queue x5570deb48C 80 coeurs Intel x5570 à 2,9Ghz et 6Go par coeur  ⇒ <strong>OK 15/07</strong></p></li>
+<li><p>Nouvelle queue x5570deb24A 112 coeurs Intel x5570 à 2,9Ghz et 3Go par coeur  ⇒ <strong>OK 23/07</strong></p></li>
+</ul>
+<p>Mai - juin 2018</p>
+<ul class="simple">
+<li><p>Suppression de la queue E5-2667v4deb128nl  ⇒ <strong>OK 07/05</strong></p></li>
+<li><p>Remplacement de la queue E5-2667v4deb128nl  par la queue E5-2667v2deb128nl  ⇒   <strong>OK 09/05</strong></p></li>
+<li><p>Suppression de la queue E5-2667v2h6deb128  ⇒  <strong>OK 07/05</strong></p></li>
+<li><p>Remplacement de la queue E5-2667v2h6deb128  par la queue E5-2667v4h6deb128  ⇒  <strong>OK 07/05</strong></p></li>
+<li><p>Nouvelle queue x5570deb48A 192 coeurs Intel x5570 à 2,9Ghz et 6Go par coeur  ⇒ <strong>OK 15/05</strong></p></li>
+<li><p>Nouvelle queue x5570deb48B 192 coeurs Intel x5570 à 2,9Ghz et 6Go par coeur  ⇒ <strong>OK 15/05</strong></p></li>
+<li><p>Nouvelle queue privée PhotoChimieB, 8 serveurs 192 coeurs Intel 6142 à 2,6Ghz, 16Go par coeur et 2To de /ssdscratch par serveur   ⇒ <strong>OK 31/05</strong></p></li>
+<li><p>Remise en service de la queue x5650lin24ibA  ⇒ <strong>OK 15/05</strong></p></li>
+<li><p>Remise en service de la queue x5650lin24ibB  ⇒ <strong>OK 15/05</strong></p></li>
+</ul>
+<p>Mars - avril 2018</p>
+<ul class="simple">
+<li><p>Suppression de la queue piv_debian  ⇒ en cours.</p></li>
+<li><p>Suppression de la queue x5570deb24A 192 coeurs Intel x5570 à 2,9Ghz et 3Go par coeur  ⇒ <strong>OK 30/03</strong></p></li>
+<li><p>Suppression de la queue x5570deb24E 192 coeurs Intel x5570 à 2,9Ghz et 3Go par coeur  ⇒ <strong>OK 23/03</strong></p></li>
+<li><p>Suppression des queues privées E5-2670deb256A ⇒  <strong>OK 30/04</strong></p></li>
+<li><p>Suppression des queues privées E5-2670deb256B et E5-2670deb256C  ⇒ en cours.</p></li>
+<li><p>Suppression de la queue M6142deb384C 384 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒ en cours.</p></li>
+<li><p>Nouvelles queues privées piv_debianA et piv_debianB  ⇒ en cours d’installation.</p></li>
+<li><p>Nouvelle queue x5570deb48A 192 coeurs Intel x5570 à 2,9Ghz et 6Go par coeur  ⇒ en cours d’installation.</p></li>
+<li><p>Nouvelle queue x5570deb48B 192 coeurs Intel x5570 à 2,9Ghz et 6Go par coeur  ⇒ en cours d’installation.</p></li>
+<li><p>Nouvelle queue E5-2670deb256 256 coeurs E5-2670 à 2,6Ghz et 16Go par coeur  ⇒ <strong>OK 16/03</strong></p></li>
+<li><p>Nouvelle queue M6142deb384B 768 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒  <strong>OK 30/04</strong></p></li>
+<li><p>Nouvelle queue privée PhotoChimieA 8 serveurs 192 coeurs Intel 6142 à 2,6Ghz, 16Go par coeur et 2TO de /ssdscratch par serveur   ⇒   <strong>OK 30/04</strong></p></li>
+<li><p>Nouveau serveur de compilation M6142comp2 32 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒   <strong>OK 30/04</strong></p></li>
+</ul>
+<p>Janvier - février 2018</p>
+<ul class="simple">
+<li><p>re-démarrage dans le nouveau datacenter ⇒ bientôt terminé (il reste des x5nnn à ré-installer)</p></li>
+<li><p>Nouvelle queue M6142deb384A 768 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒ <strong>OK 13/02</strong></p></li>
+<li><p>Nouvelle queue M6142deb384B 768 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒ en cours d’installation.</p></li>
+<li><p>Nouvelle queue M6142deb384C 384 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒ <strong>OK 13/02</strong></p></li>
+<li><p>Nouveau serveur de compilation M6142comp1 32 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒ <strong>OK 13/02</strong></p></li>
+<li><p>Nouveau serveur de compilation M6142comp2 32 coeurs Intel 6142 à 2,6Ghz et 12Go par coeur  ⇒ bientôt.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>Stockage<a class="headerlink" href="#id9" title="Lien vers cette rubrique">¶</a></h3>
+<p>Q3 2018</p>
+<ul class="simple">
+<li><p>Mise en production de r740data9 ⇒ en attente installation.</p></li>
+<li><p>Mise en production stockage de 240TB ⇒ en attente installation.</p></li>
+</ul>
+<p>Q2 2018</p>
+<ul class="simple">
+<li><p>Mise en production de r730data8 (+2x stockage de 240TB) ⇒ <strong>OK</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="evolutions-2017">
+<h2>Évolutions 2017<a class="headerlink" href="#evolutions-2017" title="Lien vers cette rubrique">¶</a></h2>
+<p>novembre-décembre 2017</p>
+<ul class="simple">
+<li><p>déménagement vers le nouveau datacenter</p></li>
+<li><p>refonte architecture réseau</p></li>
+<li><p>upgrade OS en version Debian 9</p></li>
+<li><p>upgrade des scratch</p></li>
+<li><p>authentification sur annuaire FLMSN</p></li>
+</ul>
+<p>mai 2017</p>
+<ul class="simple">
+<li><p>Évolution à 384 coeurs de la queue E5-2667v4deb256A  ⇒ <strong>OK 31/01</strong></p></li>
+</ul>
+<p>avril 2017</p>
+<ul class="simple">
+<li><p>Évolution à 384 coeurs de la queue E5-2697Av4deb256  ⇒ <strong>OK 05/02</strong></p></li>
+<li><p>Installation de deux serveurs de compilation E5-2667v4comp1 et comp2  ⇒ <strong>OK 26/04</strong></p></li>
+<li><p>Suppression de deux serveurs de compilation E5-2670comp3 et comp4  ⇒ <strong>OK 25/04</strong></p></li>
+<li><p>Reprise à zéro du scratch E5</p></li>
+</ul>
+<p>janvier 2017</p>
+<ul class="simple">
+<li><p>Retour à 384 coeurs de la queue E5-2670deb128A  en cours  ⇒ 31/01 ⇒ <strong>OK 01/01</strong></p></li>
+<li><p>Retour à 384 coeurs de la queue E5-2670deb128B  en cours  ⇒ 31/01 ⇒ <strong>OK 01/01</strong></p></li>
+<li><p>Retour à 384 coeurs de la queue E5-2670deb128C  en cours  ⇒ 31/01 ⇒ <strong>OK 01/01</strong></p></li>
+<li><p>Retour à 384 coeurs de la queue E5-2670deb128D  en cours  ⇒ 31/01 ⇒ <strong>OK 01/01</strong></p></li>
+</ul>
+<section id="id10">
+<h3>Stockage<a class="headerlink" href="#id10" title="Lien vers cette rubrique">¶</a></h3>
+<p>Q2 2017</p>
+<ul class="simple">
+<li><p>Test du réseau Intel OmniPath ⇒ 31/10 <strong>OK</strong></p></li>
+</ul>
+<p>Q1 2017</p>
+<ul class="simple">
+<li><p>Remise en service de r720data5 (+stockage de 240TB)  ⇒ 31/10 <strong>OK</strong></p></li>
+<li><p>Mise en production de r720visucral (+stockage de 24TB) ⇒ 31/10 <strong>OK</strong></p></li>
+</ul>
+</section>
+<section id="annuaire-utilisateurs">
+<h3>Annuaire utilisateurs<a class="headerlink" href="#annuaire-utilisateurs" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Authentification/ base de comptes</p></li>
+</ul>
+<p>Dans le cadre du CPER CIDRA (contrat de plan état-région), obtenu via la FLMSN
+(Fédération Lyonnaise de Modélisation et Sciences Numériques), un annuaire unique
+des utilisateurs (des ressources de la FLMSN) va être mis en place. Dès déblocage du financement,
+le système d’authentification du PSMN sera lourdement modifié pour s’appuyer sur cet annuaire unique.</p>
+</section>
+</section>
+<section id="evolutions-2016">
+<h2>Évolutions 2016<a class="headerlink" href="#evolutions-2016" title="Lien vers cette rubrique">¶</a></h2>
+<section id="id11">
+<h3>Clusters<a class="headerlink" href="#id11" title="Lien vers cette rubrique">¶</a></h3>
+<p>décembre 2016</p>
+<ul class="simple">
+<li><p>Suppression de la queue E5-2670_test ⇒ <strong>OK</strong></p></li>
+<li><p>Suppression de la queue x5650_ib_test ⇒ <strong>OK</strong></p></li>
+<li><p>Suppression de la queue x5570_ib_test ⇒ <strong>OK</strong></p></li>
+<li><p>Création de la queue E5-test ⇒ <strong>OK</strong></p></li>
+<li><p>Création de la queue E5-2667v4deb128nl ⇒ <strong>OK</strong></p></li>
+<li><p>Suppression de la queue E5-2667v2deb128nl ⇒ <strong>OK</strong></p></li>
+<li><p>Création de la queue E5-2667v2deb128nlspe ⇒ <strong>OK</strong></p></li>
+<li><p>Suppression de la queue E5-2667v2deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Création de la queue E5-2667v2d2deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Création de la queue E5-2667v2h6deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Suppression de la queue E5-2670h3deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Suppression de la queue E5-2670d3deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Suppression de la queue E5-2670deb128bio ⇒ <strong>OK</strong></p></li>
+<li><p>Queue E5-2670deb128F portée à 384 coeurs ⇒ <strong>OK</strong></p></li>
+</ul>
+<p>novembre 2016</p>
+<ul class="simple">
+<li><p>Queue E5-2670gpuM2070deb64 transformée en  E5-2670gpuM2070deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Queue E5-2670gpuM2090deb64 transformée en  E5-2670gpuM2090deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Queue E5-2670gpuK20deb64 transformée en  E5-2670gpuK20deb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Queue monointeldeb64 supprimée au profit de monointeldeb128 ⇒ <strong>OK</strong></p></li>
+<li><p>Acquisition et installation de nouveaux serveurs</p></li>
+<li><p>24 serveurs bi-sockzt E5-2667v4 128GO de mémoire ⇒ <strong>OK</strong></p></li>
+<li><p>16 serveurs bi-sockzt E5-2667v4 256GO de mémoire ⇒  <strong>OK</strong></p></li>
+</ul>
+<p>octobre 2016</p>
+<ul class="simple">
+<li><p>Création queue E5-2697Av4deb256 ⇒ <strong>OK</strong></p></li>
+<li><p>Acquisition et installation de nouveaux serveurs</p></li>
+<li><p>8 serveurs bi-socket E5-2697Av4 256Go de mémoire ⇒ <strong>OK</strong></p></li>
+</ul>
+<p>septembre 2016</p>
+<ul class="simple">
+<li><p>Transformation de la queue E5-2670deb128E en E5-2670deb128F ⇒ <strong>OK</strong></p></li>
+<li><p>Transformation de la queue E5-2670deb64A en E5-2670deb128E ⇒ <strong>OK</strong></p></li>
+<li><p>Transformation de la queue E5-2670deb64nl en E5-2670deb128nl ⇒ <strong>OK</strong></p></li>
+</ul>
+<p>Août 2016</p>
+<ul class="simple">
+<li><p>Transformation de la queue E5-2670deb128RNO en E5-2670deb128D ⇒ <strong>OK</strong></p></li>
+</ul>
+<p>Juillet 2016</p>
+<ul class="simple">
+<li><p>Transformation de la queue E5-2670deb64B en E5-2670deb128B ⇒ <strong>OK</strong></p></li>
+<li><p>Transformation de la queue E5-2670deb64C en E5-2670deb128C ⇒ <strong>OK</strong></p></li>
+<li><p>Création de la queue E5-2670deb128E ⇒ <strong>OK</strong></p></li>
+</ul>
+<p>Juin 2016</p>
+<ul class="simple">
+<li><p>Transformation de la queue E5-2670deb64E en E5-2670deb128A ⇒ <strong>OK</strong></p></li>
+<li><p>Transformation de la queue E5-2670deb128 en E5-2670deb128B ⇒ <strong>OK</strong></p></li>
+<li><p>Transformation de la queue E5-2670deb64D en E5-2670deb128RNO (avec autorisation) ⇒ <strong>OK</strong></p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>Stockage<a class="headerlink" href="#id12" title="Lien vers cette rubrique">¶</a></h3>
+<p>Q1 2017</p>
+<ul class="simple">
+<li><p>Test du réseau Intel OmniPath</p></li>
+<li><p>Mise en production de r730data8 (+stockage de 240TB)</p></li>
+<li><p>Remise en service de r720data5 (+stockage de 240TB)</p></li>
+<li><p>Mise en production de r720visucral (+stockage de 24TB)</p></li>
+</ul>
+<p>Septembre 2016</p>
+<ul class="simple">
+<li><p>Mise à jour du GlusterFS de /scratch E5</p></li>
+<li><p>Mise à jour du GlusterFS de /scratch x55</p></li>
+<li><p>Mise en production de r730gpgpu3</p></li>
+<li><p>Mise en production de r730gpgpu4</p></li>
+</ul>
+<p>Août 2016</p>
+<ul class="simple">
+<li><p>Mise en production de r730datacs ⇒ <strong>16/08 -&gt; 26/08</strong></p></li>
+</ul>
+<p>Juin 2016</p>
+<ul class="simple">
+<li><p>Les données des groupes « biologie » (igfl,lbmc,ciri,rdp) transférées de r720data1 vers r730data7 (+stockage de 240TB)</p></li>
+<li><p>Groupe collision transféré de r720data1 vers r730data6</p></li>
+</ul>
+</section>
+<section id="autres">
+<h3>Autres<a class="headerlink" href="#autres" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Stockage (/home, /Xnfs/site) :</p></li>
+</ul>
+<p>Avec l’augmentation constante des volumétries de stockage demandées au PSMN, nous atteignons
+les limites physiques nous permettant de dupliquer (sauvegarder) vos données dans une fenêtre de 24h.</p>
+<p>Nous allons donc arrêter le système automatique actuel de sauvegarde de l’intégralité des volumes
+et vous proposer un espace de sauvegarde individuel et manuel, soumis à quota.</p>
+<p>Le système de snapshots étant propre à chaque volume, il fonctionnera toujours et nous serons
+en mesure de récupérer les erreurs datant de moins d’une semaine.</p>
+</section>
+</section>
+<section id="evolutions-2015">
+<h2>Évolutions 2015<a class="headerlink" href="#evolutions-2015" title="Lien vers cette rubrique">¶</a></h2>
+<section id="id13">
+<h3>Clusters<a class="headerlink" href="#id13" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>arrêt définitif des m600 au second trimestre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>arrêt définitif des r410 (Centos5) en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>arrêt définitif des dl165 en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>arrêt définitif des r610 en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>arrêt des frontales correspondantes ⇒ <strong>OK</strong></p></li>
+<li><p>refonte des r815 (accès au scratch global x56) ⇒ <strong>OK</strong></p></li>
+<li><p>redémarrage des sl390-48 en (fin) octobre 2015 ⇒ <strong>dédié mono</strong></p></li>
+<li><p>extension à 384 coeurs de la queue E5-2667v2deb128 en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>extension à 384 coeurs et ouverture à tous de la queue E5-2670deb64nl en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>extension à 256 coeurs de la queue E5-2667v2deb128nl (avec autorisation) en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>retour à 384 coeurs de la queue E5-2670deb64A en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>retour à 384 coeurs de la queue E5-2670deb64B en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>retour à 384 coeurs de la queue E5-2670deb64C en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p><span class="line">passage à 192 coeurs des queues x5570deb24A,B,C,D et E en septembre 2015</span></p></li>
+<li><p><span class="line">passage à 288 coeurs de la queue monointeldeb24 en septembre 2015</span></p></li>
+<li><p><span class="line">passage à 102 coeurs de la queue monointeldeb48 en septembre 2015</span></p></li>
+<li><p>création de la queue E5-2670deb256D (128 coeurs avec autorisation) en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>création de la queue r730deb128 (40 coeurs) en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><p>création de la queue r7x0deb128gpu (20 slots avec autorisation) en septembre 2015 ⇒ <strong>OK</strong></p></li>
+<li><dl class="simple">
+<dt>refonte des queues monointel suite aux problèmes de scratch :</dt><dd><ul>
+<li><p>arrêt de monointeldeb24 fin octobre 2015 ⇒ réserve x56</p></li>
+<li><p>remplacement du groupe r410lin48 par sl390lin48 (128+ cores, plus de Ghz, accès au scratch global x55) ⇒ <strong>OK</strong></p></li>
+<li><p>regroupement de r720deb128 et r730deb128 en monointeldeb128 (60 cores, 3.5Ghz, accès au scratch global E5) ⇒ <strong>OK</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="id14">
+<h3>Autres<a class="headerlink" href="#id14" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Stockage (/home, /Xnfs/site) :</p></li>
+</ul>
+<p>Avec l’augmentation constante des volumétries de stockage demandées au PSMN, nous atteignons
+les limites physiques nous permettant de dupliquer (sauvegarder) vos données dans une fenêtre de 24h.</p>
+<p>Nous allons donc arrêter le système automatique actuel de sauvegarde de l’intégralité des volumes
+et vous proposer un espace de sauvegarde individuel et manuel, soumis à quota.</p>
+<p>Le système de snapshots étant propre à chaque volume, il fonctionnera toujours et nous serons
+en mesure de récupérer les erreurs datant de moins d’une semaine.</p>
+<ul class="simple">
+<li><p>Authentification/ base de comptes</p></li>
+</ul>
+<p>Dans le cadre du CPER CIDRA (contrat de plan état-région), obtenu via la FLMSN
+(Fédération Lyonnaise de Modélisation et Sciences Numériques), un annuaire unique
+des utilisateurs (des ressources de la FLMSN) va être mis en place. Début 2016,
+le système d’authentification du PSMN sera lourdement modifié pour s’appuyer sur cet annuaire unique.</p>
+<ul class="simple">
+<li><p>Gestionnaire de jobs</p></li>
+</ul>
+<p>Le PSMN envisage, en remplacement du vieillissant SGE (qui n’évolue plus), de changer de gestionnaire
+de jobs. Le logiciel slurm sera testé prochainement (déjà utilisé au P2CHPD-Lyon1 et au CBP).</p>
+</section>
+</section>
+<section id="evolutions-2014">
+<h2>Évolutions 2014<a class="headerlink" href="#evolutions-2014" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>bascule des sl390-48 en Debian 7 ⇒ reporté à 2015</p></li>
+<li><p>bascule des r815 en Debian 7 <strong>⇒ OK</strong></p></li>
+</ul>
+</section>
+<section id="evolutions-2013">
+<h2>Évolutions 2013<a class="headerlink" href="#evolutions-2013" title="Lien vers cette rubrique">¶</a></h2>
+<p>Afin de préparer le matériel <strong>Équip&#64;méso</strong> dont la livraison est terminée, les clusters actuels vont être réorganisés par petits blocs.</p>
+<p><strong>Semaine 27/2013</strong></p>
+<ul class="simple">
+<li><p>À partir du lundi premier juillet, démarrage progressif des serveurs <strong>Equip&#64;meso</strong>.</p></li>
+</ul>
+<p><strong>Semaine 26/2013</strong></p>
+<ul class="simple">
+<li><p>Lundi 24 juin et mardi 25 juin 2013, intervention électrique sur les diffuseurs de froid.</p></li>
+<li><p>À partir du mardi 25 juin au soir, re-démarrage progressif de tous les clusters.</p></li>
+</ul>
+<p><strong>Semaine 25/2013</strong></p>
+<ul class="simple">
+<li><p>Lundi 17 juin 2013, arrêt des serveurs <strong>dl165</strong> <span class="line">et **r410 séquentiels** (r410lin100 à 106)</span>.</p></li>
+<li><p>Lundi 17 juin 2013, arrêt des serveurs <strong>x41z</strong> et de <strong>x41zcomp</strong>.</p></li>
+<li><p>Mardi 18 juin 2013, re-démarrage des <strong>dl165</strong> si tout se passe bien.</p></li>
+<li><p>Mardi 18 juin 2013, re-démarrage d’une dizaine de serveurs <strong>x41z</strong> si tout va bien.</p></li>
+<li><p>Vendredi 21 juin au matin, arrêt de tous les serveurs sous <strong>OS Debian</strong> (sl230, dl165, dl175, m600) et de tous les serveurs <strong>sl390</strong> et <strong>c6100</strong>.</p></li>
+<li><p>Vendredi 21 juin dans la journée arrêt de tous les <strong>autres serveurs</strong> et de <strong>tous les services</strong> du PSMN.</p></li>
+<li><p>Vendredi 21 juin en fin d’après-midi, <strong>arrêt électrique total</strong>.</p></li>
+<li><p>Samedi 22 juin coupure générale de l’alimentation électrique pour maintenance.</p></li>
+</ul>
+<p><strong>Semaine 20~22/2013</strong></p>
+<ul class="simple">
+<li><p><span class="line">Re-organisation des interconnexions infiniband des queues **sl390** et **c6100**</span>.</p></li>
+<li><p>Installation du second cube « allée chaude » = arrêt des <strong>sl390</strong>, <strong>c6100</strong> et <strong>sl230</strong>.</p></li>
+<li><p><span class="line">Déplacement physique des **dl165**</span>.</p></li>
+<li><p><span class="line">Déplacement physique des **r410-48** (séquentiel)</span>.</p></li>
+</ul>
+<p><strong>Semaine(s) 16~24/2013</strong></p>
+<ul class="simple">
+<li><p>Changement des plus anciens serveurs de /home dans la seconde quinzaine du mois d’avril 2013 : Des interruptions de service sont à prévoir par groupe d’utilisateurs,</p></li>
+<li><p>Re-organisation des interconnexions infiniband des queues sl390 et c6100.</p></li>
+</ul>
+<p><strong>Semaine 12/2013</strong></p>
+<p>Certains serveurs dl165 (4) sont devenu 100% séquentiels, vous pouvez y accéder via la queue <strong>monoamd_debian24</strong>.
+Les autres serveurs dl165 (23) sont maintenant accessible via la queue <strong>dl165_debian24</strong>.
+Voir <a class="reference external" href="https://www.ens-lyon.fr/PSMN/Documentation/clusters_usage/index.html">les détails sur la page suivante</a>.</p>
+<p>Les serveurs dl175 sont maintenant 100% parallèles, et accessible via la queue <strong>dl175_debian32_ib</strong>.
+Voir <a class="reference external" href="https://www.ens-lyon.fr/PSMN/Documentation/clusters_usage/index.html">les détails sur la page suivante</a>.</p>
+<p><strong>NOTA BENE</strong> : Tous ces serveurs fonctionnent maintenant avec le nouveau système d’exploitation du PSMN (Debian 7).</p>
+<p>PS: <span class="line">Le compilateur dl175comp-pub reste encore à re-installer en Debian 7</span>. Le compilateur dl175comp-pub a aussi été installé en Debian 7, voir [[newsfeed:20130402|20130402 / dl175comp-pub]].</p>
+<p>Les nouveaux serveurs à bases de processeurs Intel Sandy-bridge sont dans une période de test. Ils seront ouverts petit à petit à certains utilisateurs contactés personnellement (Ces utilisateurs essuyant les plâtres). Lorsque les tests seront terminés, vous en serez informés, et les noms des nouvelles queues seront officialisés.</p>
+<p><strong>Semaine 11/2013</strong></p>
+<p>Les serveurs « dl165 » vont devenir 100% séquentiels, et inversement, les « dl175 » vont récupérer l’interconnexion InfiniBand, pour devenir 100% parallèles.
+Pour ce faire, nous allons arrêter ces serveurs afin de tranférer les cartes d’interconnexion et certains disques.</p>
+<p>Les queues:</p>
+<ul class="simple">
+<li><p>dl165_debian_ib</p></li>
+<li><p>dl175lin32gb</p></li>
+</ul>
+<p>vont donc être bloquées dimanche 3 mars 2013 afin que les jobs soient terminés lundi 11 mars 2013.</p>
+<p>Dès que l’opération sera terminée, les serveurs seront re-démarrés et vous serez avertis des éventuelles modifications apportées.</p>
+<p>La même semaine, si tout va bien, 16 nouveaux serveurs à bases de processeurs Intel Sandy-bridge seront accessibles. La version d’OS sera la même que pour les futurs serveurs Équip&#64;méso (Debian 7).</p>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div>
+    <h4>Sujet précédent</h4>
+    <p class="topless"><a href="Arrets.html"
+                          title="Chapitre précédent">Les Arrêts prévus</a></p>
+  </div>
+  <div>
+    <h4>Sujet suivant</h4>
+    <p class="topless"><a href="../Plateformes/DataCenter.html"
+                          title="Chapitre suivant">Data Center</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Informations/Calendrier.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
+    <div class="row rows-cols-2">
+    <div class="col">
+        <p class="txt_footer">
+        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+        <br>Téléphone : +33 (0)4 72 72 83 67
+        </p>
+    </div>
+    <div class="col">
+        <p class="txt_footer">
+            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+        </p> 
+    </div>
+</div>
+
+    <div class="footer" role="contentinfo">
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+    
+    </div>
+  </footer>
+  <script src="../_static/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="../_static/bootstrap_bundle.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>-->
+  <script src="../_static/bootstrap_popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../_static/bootstrap.min.js"></script>
+  </body>
+</html>

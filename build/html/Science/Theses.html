@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Thèses de doctorat &#8212; Documentation PSMN-CBP </title>
+    <script src="../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=bf059b8c"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="../_static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/style.css">
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Créations Scientifiques Multimédia" href="CreationsMulti.html" />
+    <link rel="prev" title="Publications 2008" href="Publications/Publications2008.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="w-25 pt-3">
+            <a href="../index.html">
+                <img class="img-fluid" src="../_static/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="w-25">
+            <div class="d-flex justify-content-end w-25" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../_static/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../_static/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../_static/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <!--<script>
+                            function createA(att, url, nom){
+                                const a= document.createElement("a");
+                                a.setAttribute("class", att);
+                                a.href= url ;
+                                a.textContent= nom;
+                                return a;
+                            };
+
+                            fetch("../_static/Liens.html")
+                            .then((response) => response.json())
+                            .then((json) => {
+                                
+                                json.Menu.titre.forEach((element) => {
+                                    const li_menu = document.createElement("li");
+                                    li_menu.setAttribute("class", "nav-item dropdown");
+                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
+
+                                    menu.append(li_menu);
+                                    li_menu.append(a_titre);
+
+                                    const div_menu = document.createElement("div");
+                                    div_menu.setAttribute("class", "dropdown-menu");
+                                    li_menu.append(div_menu);
+
+                                    const ul_titre = document.createElement("ul");
+                                    div_menu.append(ul_titre);
+                                    const obj= Object.entries(json.Menu[element]);
+
+                                    for (const [key,values] of obj){
+                                        if (typeof values !== 'object') {
+   
+                                            const li_sous_menu = document.createElement("li");
+                                            console.log(values);
+                                            const nouv_val = `$(values)`;
+                                            console.log(nouv_val);
+                                            if(values === "#"){
+                                                const a_sous_titre = createA("dropdown-item", values , key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            else{
+                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            
+                                        } else {     
+                                            const li_sous_menu = document.createElement("li");
+                                            li_sous_menu.setAttribute("class", "nav-item dropend");
+                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
+
+                                            ul_titre.append(li_sous_menu);
+                                            li_sous_menu.append(a_sous_titre);
+
+                                            const div_sous_menu = document.createElement("div");
+                                            div_sous_menu.setAttribute("class", "dropdown-menu");
+                                            li_sous_menu.append(div_sous_menu);
+
+                                            const ul_ss_titre = document.createElement("ul");
+                                            div_sous_menu.append(ul_ss_titre);
+                                            const obj2 = Object.entries(json.Menu[element][key]);
+                                            
+                                            for (let [keys, val] of obj2) {
+                                                const li_ss_menu = document.createElement("li");
+                                                const a_ss_titre = createA("dropdown-item", val, keys);
+
+                                                ul_ss_titre.append(li_ss_menu);
+                                                li_ss_menu.append(a_ss_titre);
+                                            }
+                                        }
+                                    }
+                                });
+                            })
+                        </script>-->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                <li><a class="dropdown-item" href="../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                <li><a class="dropdown-item" href="../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                            </ul>   
+                        </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../Plateformes/DataCenter.html">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                             </ul>   
+                        </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                        <div class="dropdown-menu menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../Formation/Formation.html">Formation</a></li>
+                                <li><a class="dropdown-item" href="../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../Formation/Stage.html">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="Publications2024.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="#">Thèses</a></li>
+                                <li><a class="dropdown-item" href="CreationsMulti.html">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="Chercheurs.html">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                <li><a class="dropdown-item" href="../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="#">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../Contacts/Acces.html ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                          
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex ms-auto" style="height: 35px;" action="../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+    
+</search>
+
+                </div>
+                
+                
+                <div></div>
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary fs-15" id="contenu">
+                
+  <section id="theses-de-doctorat">
+<h1>Thèses de doctorat<a class="headerlink" href="#theses-de-doctorat" title="Lien vers cette rubrique">¶</a></h1>
+<p>Le site <a class="reference external" href="http://theses.fr/">theses.fr</a> référence les thèses soutenues et en préparation (à partir du moment où les informations les concernants sont rendues  publiques).
+Les publications et les thèses sont souvent disponible dans les archives ouvertes (<a class="reference external" href="http://hal.archives-ouvertes.fr/">Hyper Articles en Ligne (HAL)</a> et/ou <a class="reference external" href="http://arxiv.org/">arXiv</a>).</p>
+<p>Les thèses sont listées « en vrac » par années.</p>
+<section id="id1">
+<h2>2022<a class="headerlink" href="#id1" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>P Colinet</strong>, Tenebrescent minerals by in silico modelling, Directeur de thèse <strong>Tangui Le Bahers</strong>.</p></li>
+<li><p><strong>Arthur Charlet</strong>, Simulation de jets relativistes dans les microquasars à haute masse, Directeurs de thèse <strong>Alexandre Marcowith et Rolf Walder</strong>.</p></li>
+<li><p><strong>Marion Farcy</strong>, Cosmological simulations of cosmic rays and the epoch of reionisation, Directeurs de thèse <strong>Jérémy Blaizot et Joakim Rosdahl</strong>.</p></li>
+<li><p><strong>Maxime Rey</strong>, Simulations of the circum-galactic medium - a comparative study of subgrid models for star formation and their feedback, Directeurs de thèse <strong>Jérémy Blaizot</strong>.</p></li>
+<li><p><strong>Amith Zafal Abdulla</strong>, Painters in Chromatin : Theoretical models for 3D propagation of epigenetic marks, Directeurs de thèse <strong>Daniel Jost</strong>.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>2021<a class="headerlink" href="#id2" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Kateryna Goloviznina</strong>, Développement et application de modèles d’interactions moléculaires avec polarisation explicite pour liquides ioniques et solvants eutectiques, Directeurs de thèse <strong>Agilio Padua et Margarida Costa Gomes</strong>.</p></li>
+<li><p><strong>Sarah Blanck</strong>, Modélisation du comportement d’additifs aux interfaces pour guider la formulation de lubrifiants, Directeur de thèse <strong>Carine Michel</strong>.</p></li>
+<li><p><strong>Paul Clabaut</strong>, Solvation and adsorptions at the solid / water interface : developments and applications », Directeur de thèse <strong>Carine Michel</strong>.</p></li>
+<li><p><strong>Ruben Staub</strong>, Développement d’outils de modélisation des surfaces d’alliages et leur application à la cinétique en catalyse hétérogène, Directeur de thèse <strong>Stephan N. Steinmann.</strong>.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>2020<a class="headerlink" href="#id3" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Anais Kobsch</strong>, Behavior of feldspars during the Giant Impact, Directeur de thèse <strong>Razvan Caracas</strong>.</p></li>
+<li><p><strong>Samuel Boury</strong>, Energy and Buoyancy Transport by Inertia-Gravity Waves in Non-Linear Stratifications. Application to the Ocean », Directeurs de Thèse: <strong>Philippe Odier et Thomas Peacock (MIT, USA)</strong>.</p></li>
+<li><p><strong>Benjamin Ourri</strong>, <a class="reference external" href="http://www.icbms.fr/agenda/300-soutenance-de-these-benjamin-ourri#.XiVuty0lCfU">Complex molecular architectures for the recognition of therapeutic bio(macro)molecules</a>, Directeur de thèse <strong>Elise Dumont</strong>.</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>2019<a class="headerlink" href="#id4" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Jason Reneuve</strong> : Modélisation de la structure fine de la turbulence quantique et classique, Directeurs de Thèse: <strong>Laurent Chevillard</strong>.</p></li>
+<li><p><strong>Pauline Husseini</strong> : Interactions non-linéaires d’ondes internes de gravité et mélange en milieu stratifié, Directeurs de Thèse: <strong>Philippe Odier et Thierry Dauxois</strong>.</p></li>
+<li><p><strong>Mathilde Chopy</strong> : <a class="reference external" href="http://www.theses.fr/2019LYSEN038">Towards a better understanding of the molecular basis of floral development in Petunia x hybrida</a>, directeur de thèse <strong>Michiel Vandenbussche</strong>.</p></li>
+<li><p><strong>Nicolas Doll</strong> : <a class="reference external" href="https://www.theses.fr/2019LYSEN029">De la rose sauvage à la rose domestiquée : caractérisation du rôle d’APETALA2L dans la formation de la fleur double chez le rosier</a>, directeur de thèse <strong>Thomas Widiez</strong>.</p></li>
+<li><p><strong>Léa François</strong> : <a class="reference external" href="http://www.theses.fr/2019LYSEN015">Insights into the embryo/endosperm interface in Zea Mays and Arabidopsis thaliana</a>, directeur de thèse <strong>Mohammed Bendahmane</strong>.</p></li>
+<li><p><strong>Jazmín Adriana Argüello Velazquez</strong> : <a class="reference external" href="https://www.theses.fr/2019LYSEN040">Implementing Ecosystem Natural Capital Accounting Methodology to the Rhone watershed: the proof-of-concept</a>, directeur de thèse <strong>Ioan Negrutiu</strong>.</p></li>
+<li><p><strong>Antton Curutchet</strong> : <a class="reference external" href="https://hal.archives-ouvertes.fr/tel-02308459">Etude par DFT de photocatalyseurs pour des applications en photodissociation de l’eau.</a>, directeur de thèse <strong>Tangui Le Bahers</strong>.</p></li>
+<li><p><strong>LAURENS Gaétan</strong> : <a class="reference external" href="https://www.theses.fr/2019LYSE1161">Génération de nanoparticules par ablation laser en liquide : vers un meilleur contrôle de la phase cristalline et de la stabilité colloïdale</a>, directeur de thèse <strong>David AMANS</strong>.</p></li>
+<li><p><strong>Géraldine Davis</strong> : <a class="reference external" href="http://www.ens-lyon.fr/PHYSIQUE/presentation/soutenances/soutenance-geraldine-davis">Attracteurs d’ondes internes de gravité: des résonances en cascade</a>, directeurs de thèse <strong>S. Joubaud et T. Dauxois</strong>.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>2018<a class="headerlink" href="#id5" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Antoine Renaud</strong> : <a class="reference external" href="https://www.researchgate.net/publication/332292746_On_wave-mean_flow_interaction_in_stratified_fluids">On wave-mean flow interactions in stratified fluids</a>, directeur de thèse <strong>Antoine Venaille</strong>.</p></li>
+<li><p><strong>Eric Woillez</strong> : <a class="reference external" href="http://www.ens-lyon.fr/evenement/recherche/stochastic-description-rare-events-complex-dynamics-solar-system">Stochastic description of rare events for complex dynamics in the Solar System</a>, directeur de thèse <strong>Freddy Bouchet</strong>.</p></li>
+<li><p><strong>Thibault Lestang</strong> : <a class="reference external" href="https://hal.inria.fr/tel-01974316v1">Numerical simulation and rare events algorithms for the study of extreme fluctuations of the drag force acting on an obstacle immersed in a turbulent flow</a>, directeur de thèse <strong>Emmanuel Levêque</strong>.</p></li>
+<li><p><strong>Grimaud Pillet</strong> : <a class="reference external" href="https://tel.archives-ouvertes.fr/tel-01868186">Attracteurs d’ondes internes à trois dimensions : Analyse par tracés de rayons et étude expérimentale</a>, directeur de thèse <strong>T. Dauxois</strong>.</p></li>
+<li><p><strong>Benjamin Schweitzer</strong> : <a class="reference external" href="http://www.theses.fr/2018LYSEN019">Modélisation d’effets de solvant pour des réseaux réactionnels étendus de la biomasse en catalyse hétérogène</a>, directeur de thèse <strong>Carine Michel</strong>.</p></li>
+<li><p><strong>Romain Schira</strong> : <a class="reference external" href="http://www.theses.fr/2018LYSE1162">Réponse optique d’agrégats d’argent : excitations plasmoniques et effets de l’environnement</a>, directeur de thèse <strong>Franck Rabilloud</strong>.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>2017<a class="headerlink" href="#id6" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Guilhem Poy</strong> : ` &lt;<a class="reference external" href="https://tel.archives-ouvertes.fr/tel-01769995">https://tel.archives-ouvertes.fr/tel-01769995</a>&gt;`_|Sur la pertinence du modèle thermomécanique dans la rotation Lehmann des gouttes cholestériques et nématiques <strong>Patrick Oswald</strong>.</p></li>
+<li><p><strong>Loic Barnes</strong> : <a class="reference external" href="http://www.theses.fr/2017LYSE1152">Étude théorique des saccharides : structures et spectres infrarouges</a>, directeur de thèse <strong>Abdul-Rahman Allouche</strong>.</p></li>
+<li><p><strong>Paco Maurer</strong> : <a class="reference external" href="http://theses.fr/2017LYSEN014">Approche expérimentale de la dynamique non-linéaire d’ondes internes en rotation</a>, directeurs de thèse <strong>P. Odier</strong> et <strong>S. Joubaud</strong>.</p></li>
+<li><p><strong>Coraline Petit</strong> : <a class="reference external" href="http://www.theses.fr/2017LYSEN009">Évolution et Développement d’un organe sériel : la molaire. Transcriptomique comparée des bourgeons de molaires chez les rongeurs</a>, directeurs de thèse <strong>M. Sémon</strong> et <strong>S. Pantalacci</strong>.</p></li>
+<li><p><strong>Emmanuelle Bignon</strong> : <a class="reference external" href="http://www.theses.fr/s120491">Etude théorique de la formation de lésions des bases de l’ADN</a>, directeurs de thèse <strong>Christophe Morell</strong> et <strong>Elise Dumont</strong>.</p></li>
+<li><p><strong>Romain Réocreux</strong> : <a class="reference external" href="http://www.theses.fr/2017LYSEN019">Biomass derivatives in heterogeneous catalysis : adsorption, reactivity and support from first principles</a>, directeur de thèse <strong>Ph. Sautet.</strong>.</p></li>
+</ul>
+</section>
+<section id="id7">
+<h2>2016<a class="headerlink" href="#id7" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Aurore Loisy</strong> : <a class="reference external" href="http://theses.fr/2016LYSE1142">Direct numerical simulation of bubbly flows: coupling with scalar transport and turbulence</a>, Université Claude-Bernard Lyon 1, directeurs de thèse <strong>A. Naso</strong> et <strong>P. Spelt</strong></p></li>
+<li><p><strong>Adrien Licari</strong> : <a class="reference external" href="http://theses.fr/2016LYSEN022">Modélisation microscopique des étoiles et planètes compactes</a>, ENS de Lyon , directeurs de thèse <strong>G. Chabrier</strong> et <strong>S. Mazevet</strong></p></li>
+<li><p><strong>Salvatore Flavio Altavilla</strong> : <a class="reference external" href="http://amsdottorato.unibo.it/7628/1/Salvatore_Altavilla_XXVII_ciclo_Scienze_Chimiche.pdf">Modelling Photoinduced Events in Solvated Bio-Cromophores by Hybrid QM/MM Approaches</a>, directeurs de thèse <strong>M. Garavelli</strong> et <strong>I. Rivalta</strong>.</p></li>
+<li><p><strong>Mathilde Iachella</strong> : <a class="reference external" href="http://theses.fr/2016LYSEN034">Nucléation, Croissance et Morphologie de Nanoparticules d’Or et d’Or-Cuivre sur Support Rutile par la Théorie de la Fonctionnelle de la Densité</a>, directeur de thèse <strong>D. Loffreda</strong>.</p></li>
+<li><p><strong>Alexandre Dumon</strong> : <a class="reference external" href="http://theses.fr/2016LYSEN020">Selective Alcohol Amination : theoretical Study for the Design of Innovative Heterogenerous Catalysts</a>, ENS de Lyon,directeur de thèse <strong>P. Sautet</strong>.</p></li>
+<li><p><strong>Christophe Brouzet</strong> : <a class="reference external" href="http://theses.fr/2016LYSEN012">Internal wave attractors: from geometrical focusing to non-linear energy cascade and mixing</a>, ENS de Lyon, directeurs de thèse <strong>S. Joubaud</strong> et <strong>T. Dauxois</strong>.</p></li>
+<li><p><strong>Baptiste Schindler</strong> : <a class="reference external" href="http://theses.fr/2016LYSE1313">Caractérisation structurale et séquençage de carbohydrates par spectroscopie IR intégrée</a>, directeur de thèse <strong>I. Compagnon</strong>.</p></li>
+</ul>
+</section>
+<section id="id8">
+<h2>2015<a class="headerlink" href="#id8" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Julien Lam</strong> : <a class="reference external" href="http://www.theses.fr/2015LYO10137">Pulsed Laser Ablation in Liquid : towards the comprehension of growth processes.</a>, directeurs de thèse <strong>G. Ledoux</strong> et <strong>D. Amans</strong>.</p></li>
+<li><p><strong>Simon Gravelle</strong> : <a class="reference external" href="http://theses.fr/s147823">Nanofluidics: a theoretical and numerical investigation of fluid transport in nano channels</a>, directeurs de thèse <strong>C. Ybert</strong>  et <strong>L. Bocquet</strong>.</p></li>
+<li><p><strong>Catherine Sempéré</strong> : <a class="reference external" href="http://www.theses.fr/2015LYO10200">Nanofluidic insight into energy harvesting and desalination</a>, directeurs de thèse <strong>L. Bocquet</strong> et <strong>A. Siria</strong>.</p></li>
+<li><p><strong>Sarah Gautier</strong> : <a class="reference external" href="http://theses.fr/2015ENSL1015">Réactivité catalytique à haut recouvrement : une approche théorique</a>, directeur de thèse <strong>P. Sautet</strong>.</p></li>
+<li><p><strong>Falin Tian</strong> : <a class="reference external" href="http://theses.fr/2015ENSL1002">Interaction between Nanoparticles and Aggregates of Amphiphile Molecules</a>, directeurs de thèse <strong>W. Dong</strong> et <strong>X. Zhang</strong>.</p></li>
+<li><p><strong>Georg Daniel Forster</strong> : <a class="reference external" href="http://theses.fr/2015LYO10150">Modélisation atomique de nanoparticules métalliques sur substrats carbonés et graphène épitaxié sur métaux</a>, directeurs de thèse <strong>F. Calvo</strong> et <strong>F. Rabilloud</strong>.</p></li>
+<li><p><strong>David Lopes Cardozo</strong> : <a class="reference external" href="http://theses.fr/2015ENSL1025">Finite size scaling and the critical Casimir force : ising magnets and binary fluids</a>, directeur de thèse <strong>P. Holdsworth</strong>.</p></li>
+<li><p><strong>Ernesto Horne</strong> : <a class="reference external" href="http://theses.fr/2015ENSL1027">Transport properties of internal gravity waves</a>, directeurs de thèse ** S. Joubaud** et <strong>Ph. Odier</strong>.</p></li>
+<li><p><strong>Guillaume Holzer</strong> : <a class="reference external" href="http://theses.fr/2015ENSL1062">Origine de la signalisation thyroïdienne chez les métazoaires et implication dans leur métamorphose</a>, directeur de thèse <strong>V. Laudet</strong>.</p></li>
+<li><p><strong>Tomás Tangarife</strong> : <a class="reference external" href="http://theses.fr/2015ENSL1037">Kinetic theory and large deviations for the dynamics of geophysical flows</a>, directeur de thèse <strong>F. Bouchet</strong>.</p></li>
+<li><p><strong>Jonathan Bertolaccini</strong> :  <a class="reference external" href="http://theses.fr/2015ENSL1063">Modélisation et simulation des écoulements de contre-courant de l’hélium superfluide par la méthode Boltzmann sur réseau</a>, directeurs de thèse <strong>E. Lévêque</strong> et <strong>P-E Roche</strong>.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2>2014<a class="headerlink" href="#id9" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Julien Lombard</strong> : <a class="reference external" href="http://theses.fr/2014LYO10233">Nanothermique aux interfaces</a>, directeurs de thèse <strong>S. Merabia</strong> et <strong>T. Biben</strong>.</p></li>
+<li><p><strong>Yuemei Sun</strong> : <a class="reference external" href="http://theses.fr/2014ENSL0923">Simulation de réactions chimiques en catalyse hétérogène : l’hydrogène sur la surface (111) du palladium</a>, directeur de thèse <strong>W. Dong</strong>.</p></li>
+<li><p><strong>Raymond Grüber</strong> : <a class="reference external" href="http://theses.fr/2014ENSL0906">Etude théorique de réactions de Heck intramoléculaires</a>, directeur de thèse <strong>P. Fleurat-Lessard</strong>.</p></li>
+<li><p><strong>Torsten Houwaart</strong> : <a class="reference external" href="http://theses.fr/2014ENSL0927">Cobalt porphyrins on coinage metal surfaces - adsorption and template properties</a>, directeur de thèse <strong>M.L. Bocquet</strong>.</p></li>
+<li><p><strong>Peter Nagui Refki Khalil</strong> : <a class="reference external" href="http://theses.fr/2014LYO10288">Hox genes and the evolution of adaptive phenotypes.</a>, directeur de thèse <strong>A. Khila</strong>.</p></li>
+<li><p><strong>Baptiste Bourget</strong> : <a class="reference external" href="http://theses.fr/2014ENSL0912">Ondes internes, de l’instabilité au mélange. Approche expérimentale</a>, directeurs de thèse ** T. Dauxois** et <strong>P. Odier</strong>.</p></li>
+<li><p><strong>Jérémie Zaffran</strong> : <a class="reference external" href="http://theses.fr/2014ENSL0891">Linear energy relations for biomass transformation under heterogeneous catalysis: A fast prediction of polyalcohol dehydrogenation on transition metals</a>, directeur de thèse <strong>P. Sautet</strong>.</p></li>
+</ul>
+</section>
+<section id="id10">
+<h2>2013<a class="headerlink" href="#id10" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Barkahem Anak</strong> : //Etude des propriétés magnétiques et optiques des agrégats de platine et d’argent//, directeurs de thèse <strong>F. Rabilloud</strong> et <strong>M. Bencharif</strong>.</p></li>
+<li><p><strong>Romain Ramozzi</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0837">Etude expérimentale et théorique des couplages de type Ugi et nouvelles réactions de post condensations</a>, directeur de thèse <strong>P. Fleurat-Lessard</strong>.</p></li>
+<li><p><strong>Martin Vérot</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0822">Phénomènes de transport : contribution de l’approche //ab initio// et applications</a>, directeur de thèse <strong>V. Robert</strong>.</p></li>
+<li><p><strong>Chandan Patel</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0835">Hybrid molecular simulations of oxidative complex lesions</a>, directeur de thèse <strong>E. Dumont</strong>.</p></li>
+<li><p><strong>Shiri Burema</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0821">Inelastic Electron Tunneling Spectroscopy with the Scanning Tunneling Microscope : a combined theory-experiment approach</a>, directeur de thèse <strong>M.L. Bocquet</strong>.</p></li>
+<li><p><strong>Michel Voßkuhle</strong> : <a class="reference external" href="http://theses.fr/2013ENSL0872">Particle collisions in turbulent flows</a>, directeurs de thèse <strong>A. Pumir</strong> et <strong>E. Leveque</strong>.</p></li>
+<li><p><strong>Cesare Nardini</strong> :  « <a class="reference external" href="http://theses.fr/2013ENSL0804">Energy landscapes, equilibrium and out of equilibrium physics of long and short range interacting systems</a>, directeurs de thèse <strong>T. Dauxois</strong> et <strong>L. Casetti</strong>.</p></li>
+</ul>
+</section>
+<section id="id11">
+<h2>2012<a class="headerlink" href="#id11" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Jinshan Xu</strong> : <a class="reference external" href="http://theses.fr/2012ENSL0775">Dynamics and synchronisation in biological excitable media</a>, directeurs de thèse <strong>A. Pumir</strong> et <strong>N. Garnier</strong>.</p></li>
+<li><p><strong>Guilhem Bordes</strong> : <a class="reference external" href="http://theses.fr/2012ENSL0731">Nonlinear interactions of waves and vortices in stratified or rotating fluid</a>, directeur de thèse <strong>T. Dauxois</strong>.</p></li>
+<li><p><strong>Sam Meyer</strong> : <a class="reference external" href="http://theses.fr/2012ENSL0744">Multiscale modeling of DNA, from double-helix to chromatin</a>, directeurs de thèse <strong>R. Everaers</strong> et <strong>R. Lavery</strong>.</p></li>
+<li><p><strong>Adrien Cahuzac</strong> : <a class="reference external" href="http://theses.fr/2012ECDL0017">Aspects cinétiques et acoustiques en simulation numérique des grandes échelles, application à l’étude du contrôle de l’écoulement de jeu en turbomachines</a>, directeurs de thèse <strong>J. Boudet</strong> , <strong>M. Jacob</strong> et  <strong>E. Leveque</strong>.</p></li>
+<li><p><strong>Sophie Villerot</strong> : <a class="reference external" href="http://theses.fr/2012ENSL0774">Structure microscopique et dynamique des vortex dans un superfluide dense</a>, directeurs de thèse <strong>B. Castaing</strong> et <strong>L. Chevillard</strong>.</p></li>
+<li><p><strong>Xiangjian Shen</strong> : <a class="reference external" href="http://theses.fr/2012ENSL0757">Etude théorique de la dissociation de H2 et de CH4 sur surfaces métalliques</a>, directeur de thèse <strong>W. Dong</strong>  et  <strong>X. Yan</strong>.</p></li>
+<li><p><strong>Martina Ulvrova</strong> : <a class="reference external" href="http://theses.fr/2012ENSL0750">Dynamique des fluides et des transports appliquée à la Terre primitive</a>, directeurs de thèse <strong>S. Labrosse</strong> et <strong>N. Coltice</strong>.</p></li>
+<li><p><strong>Marianne Corvelec</strong> : <a class="reference external" href="http://theses.fr/2012ENSL0705">Transitions de phase en turbulence bidimensionnelle et géophysique</a>, directeur de thèse <strong>F. Bouchet</strong>.</p></li>
+</ul>
+</section>
+<section id="id12">
+<h2>2011<a class="headerlink" href="#id12" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Rodrigo Ferreira de Morais</strong> : <a class="reference external" href="http://theses.fr/2011ENSL0694">Study of the stability and the reactivity of Pt and Pt3Ni model catalyst for PEM fuel cells : an ab-initio based multiscale modeling approach</a>, directeurs de thèse <strong>P. Sautet</strong> et <strong>D. Loffreda</strong>.</p></li>
+<li><p><strong>Nicolas Chéron</strong> : <a class="reference external" href="http://theses.fr/2011ENSL0688">Approche théorique de la réactivité des isonitriles en chimie organique</a>, directeur de thèse <strong>P. Fleurat-Lessard</strong>.</p></li>
+<li><p><strong>Florian Auneau</strong> : <a class="reference external" href="http://theses.fr/2011LYO10189">Transformation du glycérol par catalyse hétérogène : aspects théoriques et expérimentaux</a>, directeurs de thèse <strong>F. Delbecq</strong> et <strong>C. Pinel</strong>.</p></li>
+<li><p><strong>Wei Chen</strong> : <a class="reference external" href="http://theses.fr/2011ENSL0624">Theoretical study of multi-component fluids confined in porous media</a>, directeur de thèse <strong>W. Dong</strong>.</p></li>
+<li><p><strong>Zeinab Atieh</strong> : <a class="reference external" href="http://theses.fr/2011LYO10185">Détermination théorique des paramètres RMN de métabolites et protéines</a>, directeur de thèse <strong>A.-R. Allouche</strong>.</p></li>
+<li><p><strong>Jean-Nicolas Dumez</strong> : <a class="reference external" href="http://theses.fr/2011ENSL0625">Many-body dynamics in nuclear spin diffusion</a>, directeur de thèse <strong>L. Emsley</strong>.</p></li>
+</ul>
+</section>
+<section id="id13">
+<h2>2010<a class="headerlink" href="#id13" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Raphael Wischert</strong> : <a class="reference external" href="http://theses.fr/2010ENSL0590">Theoretical and experimental study of defect sites on partially hydrated gamma-alumina: stability, reactivity towards small molecules and implications for single-site catalysts</a>, directeur de thèse <strong>P. Sautet</strong>.</p></li>
+<li><p><strong>Guillaume Paulin</strong> : <a class="reference external" href="https://tel.archives-ouvertes.fr/tel-00556836/document">Transport Électronique et Verres de Spins</a>, directeur de thèse <strong>D. Carpentier</strong>.</p></li>
+<li><p><strong>Elodie Salager</strong> : <a class="reference external" href="http://theses.fr/2010ENSL0592">High-Resolution Solid-State Nuclear Magnetic Resonance for Powder Crystallography</a>, directeur de thèse <strong>L. Emsley</strong>.</p></li>
+<li><p><strong>Daniel Jost</strong> : <a class="reference external" href="http://theses.fr/2010ENSL0571">Physique statistique du repliement et de la dénaturation des acides nucléiques</a>, directeur de thèse <strong>R. Everaers</strong>.</p></li>
+</ul>
+</section>
+<section id="id14">
+<h2>2009<a class="headerlink" href="#id14" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Johannes-Geert Hagmann</strong> : <em>On the thermodynamics and dynamics of coarse-grained protein models</em>, directeur de thèse <strong>M. Peyrard</strong>.</p></li>
+</ul>
+</section>
+<section id="id15">
+<h2>2008<a class="headerlink" href="#id15" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Julian Garrec</strong> : <a class="reference external" href="http://theses.fr/2008ENSL0497">Modeling of HIV protease reactivity and interactions with amino-aldehyde inhibitors</a>, directeurs de thèse <strong>P. Sautet</strong> et <strong>P. Fleurat-Lessard</strong>.</p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div>
+    <h4>Sujet précédent</h4>
+    <p class="topless"><a href="Publications/Publications2008.html"
+                          title="Chapitre précédent">Publications 2008</a></p>
+  </div>
+  <div>
+    <h4>Sujet suivant</h4>
+    <p class="topless"><a href="CreationsMulti.html"
+                          title="Chapitre suivant">Créations Scientifiques Multimédia</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Science/Theses.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
+    <div class="row rows-cols-2">
+    <div class="col">
+        <p class="txt_footer">
+        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+        <br>Téléphone : +33 (0)4 72 72 83 67
+        </p>
+    </div>
+    <div class="col">
+        <p class="txt_footer">
+            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+        </p> 
+    </div>
+</div>
+
+    <div class="footer" role="contentinfo">
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+    
+    </div>
+  </footer>
+  <script src="../_static/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="../_static/bootstrap_bundle.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>-->
+  <script src="../_static/bootstrap_popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../_static/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Support et recherche en informatique scientifique &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="../../_static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Support en humanités numériques" href="HN.html" />
+    <link rel="prev" title="Support et recherche en calcul scientifique" href="RCS.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="w-25 pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="w-25">
+            <div class="d-flex justify-content-end w-25" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <!--<script>
+                            function createA(att, url, nom){
+                                const a= document.createElement("a");
+                                a.setAttribute("class", att);
+                                a.href= url ;
+                                a.textContent= nom;
+                                return a;
+                            };
+
+                            fetch("../../_static/Liens.html")
+                            .then((response) => response.json())
+                            .then((json) => {
+                                
+                                json.Menu.titre.forEach((element) => {
+                                    const li_menu = document.createElement("li");
+                                    li_menu.setAttribute("class", "nav-item dropdown");
+                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
+
+                                    menu.append(li_menu);
+                                    li_menu.append(a_titre);
+
+                                    const div_menu = document.createElement("div");
+                                    div_menu.setAttribute("class", "dropdown-menu");
+                                    li_menu.append(div_menu);
+
+                                    const ul_titre = document.createElement("ul");
+                                    div_menu.append(ul_titre);
+                                    const obj= Object.entries(json.Menu[element]);
+
+                                    for (const [key,values] of obj){
+                                        if (typeof values !== 'object') {
+   
+                                            const li_sous_menu = document.createElement("li");
+                                            console.log(values);
+                                            const nouv_val = `$(values)`;
+                                            console.log(nouv_val);
+                                            if(values === "#"){
+                                                const a_sous_titre = createA("dropdown-item", values , key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            else{
+                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            
+                                        } else {     
+                                            const li_sous_menu = document.createElement("li");
+                                            li_sous_menu.setAttribute("class", "nav-item dropend");
+                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
+
+                                            ul_titre.append(li_sous_menu);
+                                            li_sous_menu.append(a_sous_titre);
+
+                                            const div_sous_menu = document.createElement("div");
+                                            div_sous_menu.setAttribute("class", "dropdown-menu");
+                                            li_sous_menu.append(div_sous_menu);
+
+                                            const ul_ss_titre = document.createElement("ul");
+                                            div_sous_menu.append(ul_ss_titre);
+                                            const obj2 = Object.entries(json.Menu[element][key]);
+                                            
+                                            for (let [keys, val] of obj2) {
+                                                const li_ss_menu = document.createElement("li");
+                                                const a_ss_titre = createA("dropdown-item", val, keys);
+
+                                                ul_ss_titre.append(li_ss_menu);
+                                                li_ss_menu.append(a_ss_titre);
+                                            }
+                                        }
+                                    }
+                                });
+                            })
+                        </script>-->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                            </ul>   
+                        </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="../ProjetInfra.html">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                            <li><a class="dropdown-item" href="RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="#">Support et recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="HN.html">Support en humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="AFJ.html">Support administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                             </ul>   
+                        </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                        <div class="dropdown-menu menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="#">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                          
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex ms-auto" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+    
+</search>
+
+                </div>
+                
+                
+                <div></div>
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary fs-15" id="contenu">
+                
+  <section id="support-et-recherche-en-informatique-scientifique">
+<h1>Support et recherche en informatique scientifique<a class="headerlink" href="#support-et-recherche-en-informatique-scientifique" title="Lien vers cette rubrique">¶</a></h1>
+<ul class="simple">
+<li><p><strong>Emmanuel QUEMENER</strong></p></li>
+</ul>
+<div class="d-flex docutils container">
+<a class="reference internal image-reference" href="../../_images/quemener.png"><img alt="Image Emmanuel QUEMENER" src="../../_images/quemener.png" style="width: 100px;" /></a>
+<div class="docutils container">
+<p>Centre Blaise Pascal <br>
+École normale supérieure de Lyon <br>
+Ingénieur de Recherche - Pilote d’essais informatiques <br>
+Courriel : Emmanuel.Quemener &#64; ens-lyon.fr <br>
+Téléphone : (+33) 4 72 72 86 33</p>
+</div>
+</div>
+<img alt="../../_images/eqltlanguages.png" src="../../_images/eqltlanguages.png" />
+<p><span class="underline">Contact pour :</span></p>
+<ul class="simple">
+<li><p>exploitation des <a class="reference external" href="#">plateaux techniques en service du CBP</a></p></li>
+<li><p>librification de codes scientifiques</p></li>
+<li><p>conception, déploiement et administration de nouveaux plateaux techniques ;</p></li>
+<li><p>expertise pour résoudre un problème en informatique scientifique ;</p></li>
+<li><p>qualification de logiciels et matériels (banc d’essai en calcul scientifique).</p></li>
+</ul>
+<p>L’informatique scientifique exige une polyvalence accrue. Les missions et les activités suivantes sont issues de <a class="reference external" href="http://referens.univ-poitiers.fr/version/men/dcp.asp">REFERENS</a> :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://referens.univ-poitiers.fr/version/men/emploi.asp?ID=E1C23&amp;BAP=X&amp;F=08">Expert en systèmes informatiques, réseaux &amp; télécommunications</a></p></li>
+<li><p><a class="reference external" href="http://referens.univ-poitiers.fr/version/men/emploi.asp?ID=E1E25&amp;BAP=X&amp;F=10">Expert en calcul scientifique</a></p></li>
+</ul>
+<section id="activites-principales">
+<h2>Activités principales<a class="headerlink" href="#activites-principales" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Spécification des architectures matérielles et logicielles en prenant en compte les besoins des partenaires</p></li>
+<li><p>Conception et mise en oeuvre des codes scientifiques, services, systèmes, réseaux et télécommunications</p></li>
+<li><p>Définition des moyens et les procédures pour garantir les performances et la disponibilité des systèmes informatiques</p></li>
+<li><p>Aide au chercheur à formaliser un problème scientifique, pour sa modélisation, sa représentation, et son traitement</p></li>
+<li><p>Conception, développement ou adaptation des méthodes d’analyse ou de codes existants : calcul numérique, statistique, traitement du signal, traitement d’images, modélisation …</p></li>
+<li><p>Organisation des données et suivi de leur exploitation jusqu’à leur visualisation</p></li>
+<li><p>Gestion de projet technique pour la résolution d’une problématique scientifique dans toutes ses dimensions</p></li>
+</ul>
+</section>
+<section id="activites-associees">
+<h2>Activités associées<a class="headerlink" href="#activites-associees" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Veille technologique polyvalente avec expérimentation</p></li>
+<li><p>Intervention en qualité d’expert dans des groupes de travail externes</p></li>
+<li><p>Participation à l’organisation et à l’animation de réseaux métiers</p></li>
+<li><p>Former et assurer le transfert des connaissances et des savoir-faire</p></li>
+<li><p>Participation à la formation des utilisateurs du calcul numérique intensif, diffuser et valoriser les méthodes et outils développés</p></li>
+<li><p>Choix, à l’acquisition, et à l’exploitation des calculateurs haute performance</p></li>
+<li><p>Représenter son organisme auprès de différents publics nationaux ou internationaux</p></li>
+</ul>
+</section>
+<section id="projets-realises">
+<h2>Projets réalisés<a class="headerlink" href="#projets-realises" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Migration de l’infrastructure du Cecam France sur architecture virtualisée sous Xen (2009Q4)</p></li>
+<li><p>Conception, mise en place et administration de plateaux techniques informatiques :</p></li>
+<li><p>pour le <strong>calcul parallèle multi-noeuds</strong> : disposer de plus de 1000 coeurs pour jusqu’à 64 noeuds</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>cluster de 64 noeuds 16-coeurs en IB FDR (2022Q3)</p></li>
+<li><p>cluster de 12 noeuds 96-coeurs en IB QDR (2021Q3)</p></li>
+<li><p>cluster de 64 noeuds octo-coeurs en IB QDR (2020Q4)</p></li>
+<li><p>cluster de 8 noeuds octo-coeurs en IB FDR (2018Q1)</p></li>
+<li><p>cluster de 4 noeuds bi-coeurs en IB SDR et 48 HD (2018Q1)</p></li>
+<li><p>cluster de 2 noeuds bi-coeurs en IB DDR (2018Q1)</p></li>
+<li><p>cluster de 2 noeuds mono-coeurs en IB SDR (2018Q1)</p></li>
+<li><p>cluster de 64 noeuds octo-coeurs en IB QDR (2015Q4)</p></li>
+<li><p>cluster de 48 noeuds octo-coeurs en IB QDR (2014Q1)</p></li>
+<li><p>cluster de 48 et 24 noeuds en IB (2013Q3)</p></li>
+<li><p>cluster de 12 noeuds mixtes quadri-processeur (2012Q2)</p></li>
+<li><p>cluster de 50 noeuds en IB à base de noeuds déclassés (2011Q3)</p></li>
+<li><p>cluster de 24 noeuds à base de noeuds déclassés du PSMN (2010Q1)</p></li>
+<li><p>cluster de 8 noeuds à base de stations de travail (2009Q4)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>pour le <strong>calcul parallèle multi-coeurs</strong> : disposer de 2 à 128 coeurs</p></li>
+<li><p>pour le <strong>calcul parallèle sur GPU</strong> : disposer du plus large panel</p></li>
+<li><p>pour les <strong>architectures « exotiques »</strong></p></li>
+<li><p>pour les <strong>formations en environnement contraint</strong></p></li>
+<li><p>pour le <strong>calcul « à la demande »</strong> : COMOD (Compute On My Own Device)</p></li>
+<li><p>pour les humanités numériques : plateau technique AHN</p></li>
+<li><p>pour le pôle de diffusion des savoirs : Envemedis (2013Q2)</p></li>
+<li><p>pour la visualisation scientifique :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>vidéoprojecteurs haute définition dont 2 à capacités 3D (2013Q4)</p></li>
+<li><p>station de travail/écran/vidéoprojecteur NVision 3D (2013Q4)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>pour les écoles des Houches <em>Computational Physics</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>éditions 2011, 2012, 2013, 2014, 2015 et 2016</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>[[developpement:activites:qualification|Qualification matérielle]]</p></li>
+<li><p>[[developpement:activites:qualification|Qualification logicielle]]</p></li>
+</ul>
+</section>
+<section id="livrables-communications-formations-articles">
+<h2>Livrables, Communications, Formations, articles<a class="headerlink" href="#livrables-communications-formations-articles" title="Lien vers cette rubrique">¶</a></h2>
+<p><strong>Année 2024</strong></p>
+<ul class="simple">
+<li><p>Présentation à <a class="reference external" href="https://www.ens-lyon.fr/evenement/lecole/calcul-scientifique-et-chaleur-fatale-quelle-empreinte-environnementale-du?ctx=contexte">Empreinte Numérique à l’ENS de Lyon</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/TransitionEcologique_240514_EQ.pdf">retour d’expérience des actions du CBP</a></p></li>
+</ul>
+<p><strong>Année 2023</strong></p>
+<ul class="simple">
+<li><p>Présentations à <a class="reference external" href="https://indico.mathrice.fr/event/420/">journée JoSy sur ZFS</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JoSy2023_HDD2ZFS_EQ.pdf">du HDD à ZFS</a> et <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JoSy2023_HDDSurvey_EQ.pdf">Survey sur les HDD</a></p></li>
+<li><p>Présentation aux L3 Physique-Chimie des <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2023-2024.pdf">ressources du CBP</a></p></li>
+<li><p>Journée <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ITrium_Meeting_25_mai_2023-ENS_de_Lyon.pdf">Immersion Cooling</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Immersion2023_0525_EQ.pdf">Retour d’expérience</a></p></li>
+<li><ul>
+<li><p>Présentation à <a class="reference external" href="https://aramis.resinfo.org/doku.php?id=pleniaires:pleniere23mai2023">Aramis 2023</a> : <a class="reference external" href="https://webcast.in2p3.fr/video/strategie-de-consommation-moins-ou-mieux">video</a> et <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis2023-20230523_EQ.pdf">présentation</a></p></li>
+</ul>
+</li>
+<li><p>Présentation sur l”<em>Immersion Cooling</em> à l’ENS-Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Immersion2023_0322_EQ.pdf">Retour d’expérience</a></p></li>
+</ul>
+<p><strong>Année 2022</strong></p>
+<ul class="simple">
+<li><p>Présentation <a class="reference external" href="https://asnum2022.sciencesconf.org/">ASNUM 2022</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ASNUM2022-221214_EQ.pdf">Portage d’un vieux code sur GPU</a></p></li>
+<li><p>Cours INSA Lyon M2 <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/INSA2022-GPU-221209.pdf">les GPU</a></p></li>
+<li><p>Cours INSA Lyon M2 <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/INSA2022-CPU-221204.pdf">les CPU</a></p></li>
+<li><p>Présentation JCAD 2022 <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Presentation_longue_Orateur_Quemener_Emmanuel_RefroidissementImmersionServeurs_v2.pdf">Retour d’expérience sur l’immersion de serveurs</a></p></li>
+<li><p>Présentation aux L3 Physique-Chimie des <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2022-2023.pdf">ressources du CBP</a></p></li>
+<li><p>Travaux pratiques <a class="reference external" href="https://conferences.cirm-math.fr/2842.html">ETSN 2022</a> au CIRM : <a class="reference external" href="#">sessions</a></p></li>
+<li><p>Cours 1 &amp; 2 de <a class="reference external" href="https://conferences.cirm-math.fr/2842.html">ETSN 2022</a> au CIRM : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ETSN_IntroductionGPU_Cours12.pdf">Les GPU : technologie disruptive du 21e siècle</a></p></li>
+<li><p>Cours 3 de <a class="reference external" href="https://conferences.cirm-math.fr/2842.html">ETSN 2022</a> au CIRM : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ETSN_PortageEtMetrologie_Cours3.pdf">Portage d’un code et métrologie</a></p></li>
+<li><p>Cours 4 de <a class="reference external" href="https://conferences.cirm-math.fr/2842.html">ETSN 2022</a> au CIRM : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ETSN_MetrologieGPU_Cours4.pdf">Métrologie d’applications</a></p></li>
+<li><p>Cours 5 de <a class="reference external" href="https://conferences.cirm-math.fr/2842.html">ETSN 2022</a> au CIRM : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ETSN_CodesMatrices_Cours5.pdf">Codes « Matrices »</a></p></li>
+<li><p>Présentation à <a class="reference external" href="https://teratec.eu/gb/forum/atelier_7.html">Teratec 2022</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Teratec-EQ-20220610.pdf">Préparation de machines et immersion de GPU</a></p></li>
+<li><p>Présentation sur l”<em>Immersion Cooling</em> à l’ENS-Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/OIL4ENS03.pdf">Préparation de machines et immersion de GPU</a></p></li>
+<li><p>Présentation à <a class="reference external" href="https://aramis.resinfo.org/doku.php?id=pleniaires:pleniere1fevrier2022">Aramis 2022</a> : <a class="reference external" href="https://webcast.in2p3.fr/video/retour-dexperience-du-centre-blaise-pascal-sur-ses-services-de-visualisation">video</a> et <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis2022_Visualisation_EQ.pdf">présentation</a></p></li>
+</ul>
+<p><strong>Année 2021</strong></p>
+<ul class="simple">
+<li><p>Présentation <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationBio-2021-2022.pdf">ressources du CBP</a> au département de biologie</p></li>
+<li><p>Présentation JCAD 2021 &lt;del&gt; <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf">Digital Staging</a> &lt;/del&gt; ou <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf">Digital re-* and de-*</a></p></li>
+<li><p>Cours INSA Lyon 3ème année <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/INSA2021-GPU-211203.pdf">les GPU</a></p></li>
+<li><p>Cours INSA Lyon 3ème année <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/INSA2021-CPU-211129.pdf">les CPU</a></p></li>
+<li><p>Présentation CEA <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CEA-20211117.pdf">Parallélisation et Portage d’une application sur GPU</a></p></li>
+<li><p>Présentation <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2021-2022.pdf">ressources du CBP</a></p></li>
+<li><p>Fête de la science: <a class="reference external" href="http://www.ens-lyon.fr/evenement/savoirs/informatique-voyage-au-pays-des-ordinateurs-0">Voyage au pays des ordinateurs</a></p></li>
+</ul>
+<p><strong>Année 2020</strong></p>
+<ul class="simple">
+<li><p>Présentation JoSy 2020 : SIDUS: outil diskless de reproductibilité <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JoSy2020_SIDUS_20201110.pdf">présentation</a> et <a class="reference external" href="https://webcast.in2p3.fr/video/sidus-1">vidéo</a></p></li>
+<li><p>Article LinkedIn <a class="reference external" href="https://www.linkedin.com/pulse/amber-exploitons-la-super-en-attendant-amp%25C3%25A8re-emmanuel-quemener/?trackingId=%2FTHDoI9dt0k7Zy9DNyR%2B1w%3D%3D">AMBER : métrologie GPU</a></p></li>
+<li><p>Article LinkedIn <a class="reference external" href="https://www.linkedin.com/pulse/epyc-rome-la-fin-de-lh%C3%A9g%C3%A9monie-nvidia-v100-ou-dintel-quemener/">Epyc Rome : la fin de l’hégémonie de la Nvidia V100 (ou d’Intel) ?</a></p></li>
+<li><p>Conférence au CRAL : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CRAL-200131.pdf">Simuler un trou noir : de la parallélisation à la gépufication d’un (vieux) code</a></p></li>
+<li><p>TP pour l’INSA-Lyon en Master 2 : <a class="reference external" href="#">TP INSA 2019-2020 : le GPU par la pratique</a></p></li>
+</ul>
+<p><strong>Année 2019</strong></p>
+<ul class="simple">
+<li><p>Article LinkedIn <a class="reference external" href="https://www.linkedin.com/pulse/episode-3-la-g%C3%A9pufication-dun-code-pour-simuler-un-trou-quemener/">Episode 3 - la GéPUfication d’un code pour simuler un trou noir</a></p></li>
+<li><p>Article LinkedIn <a class="reference external" href="https://www.linkedin.com/pulse/acte-2-simuler-un-trou-noir-du-processeur-%C3%A0-la-carte-quemener/">Acte 2 - Simuler un trou noir : la parallélisation du code</a></p></li>
+<li><p>Article LinkedIn <a class="reference external" href="https://www.linkedin.com/pulse/simuler-un-trou-noir-du-processeur-%C3%A0-la-carte-emmanuel-quemener/">Simuler un trou noir : du processeur à la carte graphique</a></p></li>
+<li><p>TP pour l’INSA-Lyon en Master 2 : <a class="reference external" href="#">TP INSA 2019-2020 : le GPU par la pratique</a></p></li>
+<li><p>Cours à l’INSA-Lyon en Master 2 : Les <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CoursINSA_GPU_191209.pdf">GPU</a> et leurs performances</p></li>
+<li><p>Présentation JRES 2019 sur <a class="reference external" href="#">Elapsed Time, pertinent pour la facturation ?</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRES2019_Elapsed_20191203.pdf">présentation</a>, <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRES2019_Elapsed_Article.pdf">article</a> et <a class="reference external" href="https://replay.jres.org/videos/watch/73775f03-8383-42a0-bb7d-65379a49f9da">vidéo</a> décembre 2019</p></li>
+<li><p>Présentation <a class="reference external" href="http://www.ens-lyon.fr/LIP/index.php/uncategorized/531-journee-calcul-du-lip-autour-des-gpus">LIP : Autour des GPUs</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/NvidiaLIP-191114.pdf">Simuler un trou noir</a></p></li>
+<li><p>Présentation « Genome spatial organization modeling day » : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/MatrixCodes_191113.pdf">Matrix codes</a></p></li>
+<li><p>Formation à l’usage du CBP : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/FormationCBP_191107.pdf">transparents</a></p></li>
+<li><p>Fête de la science: <a class="reference external" href="http://www.ens-lyon.fr/evenement/savoirs/informatique-voyage-au-pays-des-ordinateurs">Voyage au pays des ordinateurs</a></p></li>
+<li><p>Article LinkedIn <a class="reference external" href="https://www.linkedin.com/pulse/le-c4140-la-puissance-de-1-baie-dans-1u-et-quoi-effacer-quemener/">Le C4140 : la puissance de 1 baie dans 1U, et de quoi effacer les autres C41</a></p></li>
+<li><p>Journée thématique FLMSN &amp; CBP « <a class="reference external" href="#">Le GPU par la pratique</a> » avec son <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationGPU_190606_EQ.pdf">cours associé</a></p></li>
+<li><p>Présentation <a class="reference external" href="https://aramis.resinfo.org/wiki/doku.php?id=pleniaires:pleniere23mai2019">ARAMIS 2019</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis2019_SIDUS_20190523.pdf">SIDUS : outil de reproductibilité</a> avec la <a class="reference external" href="https://webcast.in2p3.fr/video/sidus">vidéo</a></p></li>
+<li><p>Cours à <a class="reference external" href="http://lyoncalcul.univ-lyon1.fr/">Lyon Calcul</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/LyonCalcul2019_190516.pdf">Des architectures parallèles aux applications parallélisées</a></p></li>
+<li><p>Conférence à ESDW 2019 : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ESDW_Benchmarking_20190404.pdf">Benchmarking of GPU</a></p></li>
+<li><p>Citation dans <a class="reference external" href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz374/5494734">Nucleic Acids Research, gkz374</a></p></li>
+<li><p>Citation dans <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0960982219301393?via%3Dihub">Naville et al., 2019, Current Biology 29, 1161–1168</a></p></li>
+</ul>
+<p><strong>Année 2018</strong></p>
+<ul class="simple">
+<li><p>TP pour l’INSA-Lyon en Master 2 : Le GPU par la pratique</p></li>
+<li><p>Cours à l’INSA-Lyon en Master 2 : Les <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CoursINSA_GPU_181112.pdf">GPU</a> et leurs performances</p></li>
+<li><p>Présentation à <a class="reference external" href="http://www.france-grilles.fr/jcad-journees-calcul-donnees-24-26-octobre-2018/">JCAD 2018</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/HPDA&#64;TheEdge_1023_EQ.pdf">HPDA&#64;TheEdge</a></p></li>
+<li><p>Poster à <a class="reference external" href="http://www.france-grilles.fr/jcad-journees-calcul-donnees-24-26-octobre-2018/">JCAD 2018</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CBP_CentreDEssais.pdf">Le centre d’essais du CBP</a></p></li>
+<li><p>Fête de la science: <a class="reference external" href="http://www.ens-lyon.fr/evenement/savoirs/visite-labo-voyage-au-pays-des-ordinateurs">Voyage au pays des ordinateurs</a></p></li>
+<li><p>Présentation à <a class="reference external" href="https://astrosimconf.sciencesconf.org/">Astrosim 2018</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Astrosim2018_1010.pdf">Portage sur GPU : le compilateur peut-il « vraiment » tout faire ?</a></p></li>
+<li><p>Formation à l’usage du CBP : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/FormationCBP_180921.pdf">transparents</a></p></li>
+<li><p>Présentation aux étudiants de Licence ENS-Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2018-2019.pdf">transparents</a></p></li>
+<li><p>Citation dans <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6292600/">Plos One</a></p></li>
+<li><p>Citation dans <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0945053X17301555?via%3Dihub">Elsevier</a></p></li>
+<li><p>Citation dans <a class="reference external" href="https://www.nature.com/articles/s41598-018-30918-4">Nature</a></p></li>
+<li><p>Cours à <a class="reference external" href="http://calcul.math.cnrs.fr/spip.php?article292">Journées GPGPU</a> de LyonCalcul : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/LyonCalcul_GPU_180613_EQ.pdf">Applications pour la physique &amp; Analyse de performances</a></p></li>
+<li><p>Un CPU vs GPU : <a class="reference external" href="https://www.linkedin.com/pulse/cpu-vs-gpu-comment-les-comparer-ou-encore-osciller-sur-quemener/">Les comparer par l’exemple</a> vs GPU : <a class="reference external" href="https://www.linkedin.com/pulse/cpu-vs-gpu-comment-les-comparer-ou-encore-osciller-sur-quemener/">Les comparer par l’exemple</a></p></li>
+<li><p>Présentation au club des développeurs de Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ClubDev_20180309.pdf">Le GPU à l’épreuve de la métrologie</a></p></li>
+<li><p>Présentation au club des développeurs de Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ClubDev_20180209.pdf">Disruptif or not disruptif : le GPU</a></p></li>
+</ul>
+<p><strong>Année 2017</strong></p>
+<ul class="simple">
+<li><p>Cours à <a class="reference external" href="http://lyoncalcul.univ-lyon1.fr/">Lyon Calcul</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/LyonCalcul2017_EQ.pdf">Des architectures parallèles aux applications parallélisées</a></p></li>
+<li><p>Présentation aux <a class="reference external" href="https://succes2017.sciencesconf.org/resource/page/id/8">Journées Succes 2017</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Succes2017_Galaxy_EQ.pdf">Installation Portail Galaxy</a></p></li>
+<li><p>Présentation aux <a class="reference external" href="http://calcul.math.cnrs.fr/spip.php?article285">10emes journées Mésocentres</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Mesocentres2017_EQ.pdf">Métrologie comparée du PSMN &amp; CBP</a></p></li>
+<li><p>Présentation au colloque HPC CEA/ENS-Cachan : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Cargese2017_EQ.pdf">présentation CBP et usage des GPU</a></p></li>
+<li><p>Ateliers <a class="reference external" href="http://www.ens-lyon.fr/agenda-30-ans/">30 ans de l’ENS-Lyon</a>, Atelier <a class="reference external" href="http://www.ens-lyon.fr/agenda-30-ans/voyage-au-pays-des-ordinateurs-a-la-decouverte-de-leurs-composants-et-de-leurs-evolutions-348203.kjsp?RH=1497335464208">Voyage aux pays des ordinateurs</a></p></li>
+<li><p>Présentation aux étudiants de Licence ENS-Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2017.pdf">transparents</a></p></li>
+<li><p>Cours <a class="reference external" href="https://astrosim.sciencesconf.org/program">Astrosim 2017</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_Parallelism.pdf">Pragmatic Parallelism</a> and <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_GPU.pdf">Introduction to GPU</a> et Travaux pratiques [[formation:astrosim2017gpu4dummies|GPU4dummies]] et [[formation:astrosim2017para4dummies|para4dummies]]</p></li>
+<li><p><a class="reference external" href="https://cbppsmndays.sciencesconf.org/resource/page/id/2">Journée thématique ABinit</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Abinit_20170612.pdf">Ressources Informatiques du CBP : le centre d’essais</a></p></li>
+<li><p>Workshop à l”<a class="reference external" href="https://isa-lyon.fr/">ISA</a> <a class="reference external" href="https://isa-lyon.fr/?p=3751">modelisation and computational biology</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ISA_20170609.pdf">From multicores to Myrialus</a></p></li>
+<li><p>Club des décideurs HPE <em>L’hétérogénéité des clusters de calcul</em> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SimulHub_20170308-EQ.pdf">Hétérogénéité de l’hôtel à projets au méso-centre</a></p></li>
+</ul>
+<p><strong>Année 2016</strong></p>
+<ul class="simple">
+<li><p>Formation <a class="reference external" href="https://indico.mathrice.fr/event/5/">ANF 2016 : des données au BigData : exploitez le stockage distribué</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ANF2016_GlusterFS.pdf">Retour d’expérience sur GlusterFS</a> et [[formation:anfbigdata|Travaux pratiques sur GlusterFS]]</p></li>
+<li><p>Présentation <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Annonce_2016_10_14_final.pdf">Simulation Hub</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SimulationHub_20161014.pdf">Architectures multi-coeurs &amp; myri-alus</a></p></li>
+<li><p>Présentation <a class="reference external" href="http://calcul.math.cnrs.fr/spip.php?article270">9èmes Journées Méso-centres</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Mesocentre2016.pdf">Retour d’expérience GlusterFS</a></p></li>
+<li><p>Formation ISA 2016 (1 semaine) : SIDUS, de son exploitation locale à son déploiement sur cluster</p></li>
+<li><p>Cours <a class="reference external" href="http://comp-phys-2016.sciencesconf.org/">Houches 2016</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/H2016_Parallelism_20160523.pdf">Pragmatic Parallelism</a> and <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/H2016_GPU_20160524.pdf">Introduction to GPU</a></p></li>
+<li><p>Présentation <a class="reference external" href="https://webcast.in2p3.fr/events-tutojres_le_stockage_distribue">TutoJres 18</a> : retour d’expérérience GlusterFS, <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/TutoJres18_GlusterFS_20160504.pdf">transparents</a> et <a class="reference external" href="https://webcast.in2p3.fr/videos-retour_d_experience_glusterfs">video</a></p></li>
+<li><p>Présentation <a class="reference external" href="http://www.france-bioinformatique.fr/fr/groupes-de-travail/grisbi">Grisbi 29</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Grisbi29_SIDUS.pdf">SIDUS, une approche de la machine à discrétion</a></p></li>
+<li><p>Présentation <a class="reference external" href="http://aramis.resinfo.org/wiki/doku.php?id=pleniaires:pleniere7avril2016">ARAMIS 2016</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis2016-160406.pdf">Stockage : des besoins aux outils</a></p></li>
+</ul>
+<p><strong>Année 2015</strong></p>
+<ul class="simple">
+<li><p>Présentation aux étudiants de Licence ENS-Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2015-0916.pdf">transparents</a></p></li>
+<li><p>Présentation à <a class="reference external" href="https://france.debian.net/events/minidebconf2015/">MiniDebConf Lyon 2015</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/MiniDebConf2015.pdf">SIDUS : a swiss knife for reproducibility</a></p></li>
+<li><p>Présentation à <a class="reference external" href="https://2015.rmll.info/?lang=fr">RMLL 2015</a> : <a class="reference external" href="https://2015.rmll.info/extreme-deduplication-using-sidus?lang=fr">SIDUS : déduplication extrême d’OS</a>, <a class="reference external" href="https://rmll.ubicast.tv/permalink/v1253b419f03evhhgojm">vidéo</a> et <a class="reference external" href="https://2015.rmll.info/IMG/pdf/06_rmll2015_0708-sidus.pdf">support</a></p></li>
+<li><p>Rapport la mise à disposition d’un portail Galaxy pour les laboratoires de biologie : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/RapportGalaxy_v1.pdf">Rapport 6 mois</a></p></li>
+</ul>
+<p><strong>Année 2014</strong></p>
+<ul class="simple">
+<li><p>Présentation à <a class="reference external" href="http://www.pycon.fr/2014/">PyConFR 2014</a> : <a class="reference external" href="http://www.pycon.fr/2014/schedule/presentation/40/">De la gestion de clusters à l’examen in silico des processeurs : la polyvalence de Python</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PyCon2014.pdf">Présentation</a> (avec la partie la plus intéressante non évoquée)…</p></li>
+<li><p>Présentation à l’ISA</p></li>
+<li><p>Présentation à <a class="reference external" href="http://lyoncalcul.univ-lyon1.fr/spip.php?article3">Lyon Calcul</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/LyonCalcul2014.pdf">SIDUS outil de reproductibilité</a>, <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PiMPI.avi">exemple vidéo</a></p></li>
+<li><p>Présentation au laboratoire de chimie : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ChimieParallelisme2014-0613.pdf">Parallelisme 4 Dummies</a></p></li>
+<li><p>Poster à Compas 2014 sur <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Compas2014_SIDUS.pdf">article Compas</a>, <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Realis2014_SIDUS.pdf">article Realis</a>, <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Compas2014_Poster.pdf">poster</a></p></li>
+<li><p>Présentation au LIP sur <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/LIP-20140127-EQ.pdf">presentation</a>, janvier 2014</p></li>
+</ul>
+<p><strong>Année 2013</strong></p>
+<ul class="simple">
+<li><p>Poster JRES 2013 sur <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRes2013-SIDUS-1121.pdf">article</a>, <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRes-Poster-SIDUS.pdf">poster</a>, décembre 2013</p></li>
+<li><p>Présentation JRES 2013 sur <a class="reference external" href="#">Architectures mobiles et GPU</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRes2013-GPU-1118.pdf">article</a>, <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRes2013-GPU-20131211-EQ.pdf">présentation</a> et <a class="reference external" href="http://video.renater.fr/jres/2013/index.php?aid=86">video</a> décembre 2013</p></li>
+<li><p>Présentation <a class="reference external" href="http://succes2013.sciencesconf.org/">Succes 2013</a> sur <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a> avec <a class="reference external" href="http://succes2013.sciencesconf.org/24312/document">article</a>, <a class="reference external" href="http://succes2013.sciencesconf.org/conference/succes2013/Succes_20131114_EQ.pdf">présentation</a> et <a class="reference external" href="http://webcast.in2p3.fr/videos-JSFG2013_sidius">video</a> : novembre 2013</p></li>
+<li><p>Article <a class="reference external" href="http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration">Linux Journal</a> sur <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a> : novembre 2013</p></li>
+<li><p>Formation <a class="reference external" href="http://lyoncalcul.univ-lyon1.fr/spip.php?article8">A la découverte du calcul</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/DecouverteCalcul-130906-EQ.pdf">Performances de Codes</a></p></li>
+<li><p>Présentation <a class="reference external" href="http://conference.scipy.org/scipy2013/presentation_detail.php?id=199">SciPy 2013</a> sur <a class="reference external" href="http://www.youtube.com/watch?v=J5myH0y_bks">SIDUS</a></p></li>
+<li><p>Citation dans ACS Nano, 2013, 7 (6), pp 5273–5281</p></li>
+<li><p>Présentation <a class="reference external" href="http://aramis.resinfo.org/wiki/doku.php?id=pleniaires:pleniere11avril2013">Aramis</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ARAMIS-2013_EQ.pdf">Processeurs de mobile : le futur du HPC ?</a></p></li>
+</ul>
+<p><strong>Année 2012</strong></p>
+<ul class="simple">
+<li><p>Présentation <a class="reference external" href="http://aramis.resinfo.org/wiki/doku.php?id=pleniaires:pleniaire14juin2012">Aramis</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ARAMIS-20120614_EQ.pdf">Virtualisation de ressources dans un contexte Open Source</a></p></li>
+<li><p>Présentation Séminaire Chimie Théorique ENS-Lyon : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ChimieTheo2012.pdf">SIDUS &amp; Loi d’Amdahl</a></p></li>
+<li><p>Présentation Ecole de Physique aux Houches : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/H2012-20120619_EQ.pdf">Ressources proposées</a></p></li>
+<li><p>Présentation <a class="reference external" href="http://www.esrf.eu/events/conferences/debian-for-scientific-facilities-days-1/debian-for-scientific-facilities-days">Debian Facilitaties Days</a> : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/DSFD2012_4.pdf">From Workstations to HPC with Debian</a>.</p></li>
+</ul>
+<p><strong>Année 2011</strong></p>
+<ul class="simple">
+<li><p>Présentation PyPhy 2011 : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PyPhy-110829.pdf">Multi-(cores|nodes|shaders) on Python for dummies</a></p></li>
+<li><p>Formation CIRA du 7/11 : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CIRA-GPU-2011-Presentation-1128-4all.pdf">Comment GPU faire cela ?</a></p></li>
+<li><p>Formation CIRA du 7/11 : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CIRA-GPU-2011-Integration-1128.pdf">Approche intégrateur</a></p></li>
+<li><p>JRES 2011 : le projet Distonet pour « Distributed Storage Network » <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Distonet-Article.pdf">article</a> et <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Distonet-Presentation.pdf">présentation</a></p></li>
+<li><p>JRES 2011 : Stockage des laboratoires : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SSA-Article.pdf">article</a> et <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SSA-Presentation.pdf">présentation</a></p></li>
+</ul>
+<p><strong>Année 2010</strong></p>
+<ul>
+<li><p>Enquêtes sur les besoins de stockage :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="#">Site Monod</a></p></li>
+<li><p><a class="reference external" href="#">Site Descartes et Pôle de diffusion des savoirs</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Présentation ARAMIS : <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis-GPU-100520-4all.pdf">GPU = un supercalculateur : du Mythe à la Réalité !</a></p></li>
+<li><p><strong>Activités passées pré-CBP</strong> <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Past/">de 1993 à 2006</a></p></li>
+</ul>
+<p>&lt;hidden&gt; Centre Blaise Pascal, Maison de la modélisation de Lyon, Maison de la simulation de Lyon, Hôtel à projets &lt;/hidden&gt;</p>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div>
+    <h4>Sujet précédent</h4>
+    <p class="topless"><a href="RCS.html"
+                          title="Chapitre précédent">Support et recherche en calcul scientifique</a></p>
+  </div>
+  <div>
+    <h4>Sujet suivant</h4>
+    <p class="topless"><a href="HN.html"
+                          title="Chapitre suivant">Support en humanités numériques</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Supports/RIS.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
+    <div class="row rows-cols-2">
+    <div class="col">
+        <p class="txt_footer">
+        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+        <br>Téléphone : +33 (0)4 72 72 83 67
+        </p>
+    </div>
+    <div class="col">
+        <p class="txt_footer">
+            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+        </p> 
+    </div>
+</div>
+
+    <div class="footer" role="contentinfo">
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+    
+    </div>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="../../_static/bootstrap_bundle.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>-->
+  <script src="../../_static/bootstrap_popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../../_static/bootstrap.min.js"></script>
+  </body>
+</html>

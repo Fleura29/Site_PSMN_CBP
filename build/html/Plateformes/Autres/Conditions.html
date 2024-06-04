@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Salles de formation &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="../../_static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Support et recherche en calcul scientifique" href="../Supports/RCS.html" />
+    <link rel="prev" title="Plus de 50 machines pour se connecter à x2go ou SSH !" href="listex2go.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="w-25 pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="w-25">
+            <div class="d-flex justify-content-end w-25" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <!--<script>
+                            function createA(att, url, nom){
+                                const a= document.createElement("a");
+                                a.setAttribute("class", att);
+                                a.href= url ;
+                                a.textContent= nom;
+                                return a;
+                            };
+
+                            fetch("../../_static/Liens.html")
+                            .then((response) => response.json())
+                            .then((json) => {
+                                
+                                json.Menu.titre.forEach((element) => {
+                                    const li_menu = document.createElement("li");
+                                    li_menu.setAttribute("class", "nav-item dropdown");
+                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
+
+                                    menu.append(li_menu);
+                                    li_menu.append(a_titre);
+
+                                    const div_menu = document.createElement("div");
+                                    div_menu.setAttribute("class", "dropdown-menu");
+                                    li_menu.append(div_menu);
+
+                                    const ul_titre = document.createElement("ul");
+                                    div_menu.append(ul_titre);
+                                    const obj= Object.entries(json.Menu[element]);
+
+                                    for (const [key,values] of obj){
+                                        if (typeof values !== 'object') {
+   
+                                            const li_sous_menu = document.createElement("li");
+                                            console.log(values);
+                                            const nouv_val = `$(values)`;
+                                            console.log(nouv_val);
+                                            if(values === "#"){
+                                                const a_sous_titre = createA("dropdown-item", values , key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            else{
+                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            
+                                        } else {     
+                                            const li_sous_menu = document.createElement("li");
+                                            li_sous_menu.setAttribute("class", "nav-item dropend");
+                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
+
+                                            ul_titre.append(li_sous_menu);
+                                            li_sous_menu.append(a_sous_titre);
+
+                                            const div_sous_menu = document.createElement("div");
+                                            div_sous_menu.setAttribute("class", "dropdown-menu");
+                                            li_sous_menu.append(div_sous_menu);
+
+                                            const ul_ss_titre = document.createElement("ul");
+                                            div_sous_menu.append(ul_ss_titre);
+                                            const obj2 = Object.entries(json.Menu[element][key]);
+                                            
+                                            for (let [keys, val] of obj2) {
+                                                const li_ss_menu = document.createElement("li");
+                                                const a_ss_titre = createA("dropdown-item", val, keys);
+
+                                                ul_ss_titre.append(li_ss_menu);
+                                                li_ss_menu.append(a_ss_titre);
+                                            }
+                                        }
+                                    }
+                                });
+                            })
+                        </script>-->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                            </ul>   
+                        </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="../ProjetInfra.html">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                            <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                             </ul>   
+                        </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                        <div class="dropdown-menu menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="#">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                          
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex ms-auto" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+    
+</search>
+
+                </div>
+                
+                
+                <div></div>
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary fs-15" id="contenu">
+                
+  <section id="salles-de-formation">
+<span id="conditions"></span><h1>Salles de formation<a class="headerlink" href="#salles-de-formation" title="Lien vers cette rubrique">¶</a></h1>
+<section id="de-son-origine-a-son-usage-courant">
+<h2>De son origine à son usage courant<a class="headerlink" href="#de-son-origine-a-son-usage-courant" title="Lien vers cette rubrique">¶</a></h2>
+<p>A l’origine, la salle de travaux pratiques du Centre Blaise Pascal était destinée à des opérations de formation continue ou des formations internationales de calcul scientifique (formation ATOSIM).</p>
+<p>Ces 10 dernières années, l’usage de la salle s’est largement diversifiée, les professeurs appréciant la disponibilité de ses équipements. Cette salle supporte désormais de plus en plus de formations initiales de physique, chimie, géologie et biologie en L3, M1 et M2. Une autre salle a été mise en place en septembre 2022.</p>
+<p>Deux autres salles de formation multimédia, celle du département de biologie et celle de bachelor, partagent la même gestion administrative permettant l’accès aux ressources.</p>
+<div class="container text-center w-75">
+    <p class="d-inline-block bg-warning-subtle p-3 rounded fs-13">
+        Les salles de travaux pratiques du CBP n'ont <B>aucun lien</B> avec les salles libre-service gérées par la DSI (salles 0014, 106 et 109 du site Monod) !
+    </p>
+</div></section>
+<section id="sa-composition">
+<h2>Sa composition<a class="headerlink" href="#sa-composition" title="Lien vers cette rubrique">¶</a></h2>
+<dl class="simple">
+<dt>Il existe depuis la rentrée 2022 deux salles de formation au CBP :</dt><dd><ul class="simple">
+<li><p>grande salle de formation de 30 places <strong>M7-1H04</strong></p></li>
+<li><p>salle collaborative et <em>Machine Learning</em> de 12+1 places <strong>M7-1H19</strong></p></li>
+</ul>
+</dd>
+<dt>Deux autres salles de formation sont sous la tutelle du CBP :</dt><dd><ul class="simple">
+<li><p>salle multimédia du département de biologie <strong>MGN-102</strong></p></li>
+<li><p>salle de formation information Bachelor <strong>MLE7.11</strong></p></li>
+</ul>
+</dd>
+</dl>
+<p>Pour l’accès aux machines, les mêmes règles de déclaration des adresses « &#64;ens-lyon.fr » s’appliquent que pour les salles principales du CBP.</p>
+<dl class="simple">
+<dt>Les stations de travail qui s’y trouvent sont listées en temps réel dans <a class="reference external" href="http://www.cbp.ens-lyon.fr/python/forms/CloudCBP">Cloud&#64;CBP</a> :</dt><dd><ul class="simple">
+<li><p>machines préfixées par <strong>ml</strong> (par exemple <strong>mlc4</strong>) : salle <strong>M7-1H19</strong></p></li>
+<li><p>machines préfixées par <strong>biosalle</strong> (par exemple <strong>biosalle2</strong>) : salle <strong>MGN-102</strong></p></li>
+<li><p>machines préfixées par <strong>bachelor</strong> (par exemple <strong>bachelor1</strong>) : salle <strong>MLE7.11</strong></p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="ses-regles-d-acces">
+<h2>Ses règles d’accès<a class="headerlink" href="#ses-regles-d-acces" title="Lien vers cette rubrique">¶</a></h2>
+<dl class="simple">
+<dt>L’accès électronique aux machines de la salle requiert :</dt><dd><ul class="simple">
+<li><p>un couple identifiant &amp; mot de passe ENS valide</p>
+<ul>
+<li><p>soit un compte « normal » d’une personne disposant d’un compte « &#64;ens-lyon.fr »</p></li>
+<li><p>soit un compte invité temporaire de la forme « z123456 »</p></li>
+</ul>
+</li>
+<li><p>une demande spécifique en remplissant le <a class="reference internal" href="../../Contacts/Formulaires/DemandeEis.html#demande-eis"><span class="std std-ref">formulaire suivant</span></a>.</p></li>
+</ul>
+</dd>
+<dt>L’accès physique à la salle requiert</dt><dd><ul class="simple">
+<li><p>un badge izly (bleu) valide et déclaré comme ayant droit pour l’accès à l’enceinte de l’ENS-Lyon.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Si la porte est fermée et que le badge Izly ne fonctionne pas, il faut demander au secrétariat (porte M7-1H22) une clé permettant l’accès. La seconde porte peut être déverrouillée durant la journée pour permettre un accès sans badge.</p>
+</section>
+<section id="ses-regles-generales-d-utilisation">
+<h2>Ses règles générales d’utilisation<a class="headerlink" href="#ses-regles-generales-d-utilisation" title="Lien vers cette rubrique">¶</a></h2>
+<dl>
+<dt>Partie émergée de toutes les <a class="reference external" href="http://www.cbp.ens-lyon.fr/python/forms/CloudCBP">ressources</a>, l’utilisation de cette salle suppose l’acceptation des règles suivantes :</dt><dd><ul class="simple">
+<li><p>Les <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/10_commandements.pdf">10+10 commandements</a> du RSSI*, tu appliques !</p></li>
+<li><p>Les ressources limitées des outils informatiques, tu appréhendes !</p></li>
+<li><p>Jamais sur le poste de travail, tu ne t’abreuves ni ne manges !</p></li>
+<li><p>Jamais le poste de travail, après son exploitation, tu n’éteins !</p></li>
+<li><p>La session, après utilisation, tu clôtures !</p></li>
+<li><p>L’usage de l’espace <em>/local</em>, sur les gros volumes, tu préfères !</p></li>
+<li><p>Sur l’espace <em>projects</em>, le travail en groupe, tu développes !</p></li>
+<li><p>Les données temporaires, régulièrement, tu nettoies !</p></li>
+<li><p>De manière raisonnée l’espace utilisateurs “”$HOME””, tu exploites !</p></li>
+<li><p>Les dysfonctionnements, au BOFH*, tu remontes !</p></li>
+</ul>
+<ul class="simple">
+<li><p>RSSI : <em>Responsable en Securité des Systèmes d’Information</em></p></li>
+<li><p>BOFH : <em>Bastard Operator From Hell</em>, le gestionnaire de la salle, Emmanuel Quémener</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="ses-regles-particulieres-d-utilisation">
+<h2>Ses règles particulières d’utilisation<a class="headerlink" href="#ses-regles-particulieres-d-utilisation" title="Lien vers cette rubrique">¶</a></h2>
+<section id="pour-les-professeurs">
+<h3>Pour les professeurs<a class="headerlink" href="#pour-les-professeurs" title="Lien vers cette rubrique">¶</a></h3>
+<dl class="simple">
+<dt>L’intervenant se doit :</dt><dd><ul class="simple">
+<li><p>de fournir les adresses électroniques &#64;ens-lyon.fr via le <a class="reference internal" href="../../Contacts/Formulaires/DemandeEis.html#demande-eis"><span class="std std-ref">formulaire</span></a> <strong>une semaine à l’avance</strong>;</p></li>
+<li><p>de se déplacer pour vérifier son accès à la salle et à ses machines ;</p></li>
+<li><p>de se familiariser avec l’environnement logiciel (Linux Debian Bookworm) ;</p></li>
+<li><p>de préciser au moins 15 jours à l’avance ses besoins spécifiques ;</p></li>
+<li><p>d’accepter que des produits ne puissent être installés ;</p></li>
+<li><p>d’apporter ses adaptateurs pour écran (seuls les connectiques VGA et HDMI sont disponibles) ;</p></li>
+<li><p>de permettre l’accès d’étudiants ou chercheurs (hors examen) désirant exploiter une station libre.</p></li>
+<li><p>de veiller au bon respect des <em>10 commandements</em> durant son cours.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="container text-center w-75">
+    <p class="d-inline-block bg-warning-subtle p-3 rounded fs-14">
+        Aucun logiciel ne sera installé la semaine voire le jour de la formation !
+    </p>
+</div></section>
+<section id="pour-un-acces-distant">
+<h3>Pour un accès distant<a class="headerlink" href="#pour-un-acces-distant" title="Lien vers cette rubrique">¶</a></h3>
+<dl class="simple">
+<dt>De manière à simplifier l’accès aux ressources de la salle, deux accès distants sont possibles :</dt><dd><ul class="simple">
+<li><p>via le client SSH traditionnel avec la commande « ssh &lt;login&gt;&#64;&lt;machine&gt;.cbp.ens-lyon.fr »</p></li>
+<li><p>via le client <a class="reference external" href="http://wiki.x2go.org/doku.php">x2go</a> permettant le déport complet du bureau de connexion</p>
+<ul>
+<li><p>suivre la <a class="reference internal" href="x2go.html#x2go"><span class="std std-ref">documentation d’installation</span></a></p></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt>Pour se connecter de l’extérieur de l’établissement via x2go ou SSH, il est nécessaire d’avoir :</dt><dd><ul class="simple">
+<li><p>activé son accès SSH sur son compte personnel</p></li>
+<li><p>paramétré son client SSH ou son client x2go pour passer via la passerelle <strong>ssh.ens-lyon.fr</strong></p></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div>
+    <h4>Sujet précédent</h4>
+    <p class="topless"><a href="listex2go.html"
+                          title="Chapitre précédent">Plus de 50 machines pour se connecter à x2go ou SSH !</a></p>
+  </div>
+  <div>
+    <h4>Sujet suivant</h4>
+    <p class="topless"><a href="../Supports/RCS.html"
+                          title="Chapitre suivant">Support et recherche en calcul scientifique</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Autres/Conditions.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
+    <div class="row rows-cols-2">
+    <div class="col">
+        <p class="txt_footer">
+        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+        <br>Téléphone : +33 (0)4 72 72 83 67
+        </p>
+    </div>
+    <div class="col">
+        <p class="txt_footer">
+            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+        </p> 
+    </div>
+</div>
+
+    <div class="footer" role="contentinfo">
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+    
+    </div>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="../../_static/bootstrap_bundle.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>-->
+  <script src="../../_static/bootstrap_popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../../_static/bootstrap.min.js"></script>
+  </body>
+</html>

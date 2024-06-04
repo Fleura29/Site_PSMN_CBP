@@ -1,0 +1,30 @@
+Workshop 2016
+=============
+
+Workshop 2016
+-------------
+
+.. |br| raw:: html
+
+   <br>
+
+.. container:: d-flex
+
+    .. image:: ../../_static/Animations/WS/mutec.png
+        :class: img-fluid pe-3
+        :alt: Logo CBP
+
+    `Conférence MutEC à l'ENS de Lyon: Un arbre... pour classer des idées ? <#>`_ |br|
+    **mardi 19 janvier 2016 - 14h30-17h** 
+
+* intervenante : Marie FISLER, LabEx COMOD 
+* discutant : Pierre-Edouard PORTIER, LIRIS, équipe DRIM
+
+.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/cecam_logo.png
+        :class: img-fluid pe-3
+        :alt: Logo Ecam
+
+    `The flow of amorphous solids: from atomistic simulations to Earth Science applications ? <#>`_ |br|
+    **du 15 au 17 juin 2016** 

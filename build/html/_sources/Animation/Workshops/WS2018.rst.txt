@@ -1,0 +1,104 @@
+Workshop 2018
+=============
+
+Workshop 2018
+-------------
+
+.. image:: ../../_static/cbp_ens.jpeg
+    :class: img-fluid img-float pe-3
+    :alt: Logo CBP
+
+**09/02/2018 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+`CP2K for atomic et molecular simulations : from development to applications <https://cp2k.sciencesconf.org>`_ 
+
+* Carine Michel, CNRS, Ecole Normale Supérieure de Lyon, France
+* Stephane Steinemman, CNRS, Ecole Normale Supérieure de Lyon, France
+* Cerasela Calugaru(CBP), Ecole Normale Supérieure de Lyon, France
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
+        :class: img-fluid img-float pe-3
+        :alt: Logo Ecam
+
+    **14-15/05/2018 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+    `E-CAM Scoping Workshop. Solubility prediction <https://www.cecam.org/workshop-1497.html>`_ 
+
+* Carine Michel, CNRS, Ecole Normale Supérieure de Lyon, France
+* Daan Frenkel, University of Cambridge, United Kingdom
+* Eduardo Sanz, Physical Chemistry Department, Chemistry Faculty, University Complutense of Madrid, Spain
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
+        :class: img-fluid img-float pe-3
+        :alt: Logo Ecam
+
+    **27/05-01/06/2018 - Les Houches**
+
+    `TSRC Protein Dynamics Workshop <https://www.cecam.org/workshop-1630.html>`_ 
+
+* Paul Schanda, Institut de Biologie Structurale , France
+* Martin Weik, CEA, France
+* Matthias Heyden, Max-Planck-Institut für Kohlenforschung, Germany
+* James Fraser, UCSF, USA
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/colloids.png
+        :class: img-fluid img-float pe-3
+        :alt: Logo Ecam
+
+    **11-13/06/2018 - ENS de Lyon, Site Descartes, D2 128** 
+
+    `Hot Colloids <https://www.cecam.org/workshop-1564.html>`_ 
+
+* Samy Merabia, University of Lyon I, France
+* Thierry Biben, Université Lyon 1, France
+* Pietro Asinari, Politecnico di Torino, Italy
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/cbp_ens.jpeg
+        :class: img-fluid img-float pe-3
+        :alt: Logo Ecam
+
+    **26/06/2018 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+    `LAMMPS(Large-scale Atomic/Molecular Massively Parallel Simulator) for molecular dynamics simulations: from development to applications <https://lammps.sciencesconf.org>`_
+    
+* Ralf Everaers, CBP, ENS de Lyon, Ecole Normale Supérieure de Lyon, France
+* Florent Calvo, LiPhy Grenoble, UGA, France
+* Cerasela Calugaru(CBP), Ecole Normale Supérieure de Lyon, France
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/bandeau_nanofluidics_web2018_3.png
+        :class: img-fluid img-float pe-3
+        :alt: Logo Ecam
+
+    **9-12/07/2018 - ENS de Lyon, IFE - Site Buisson** 
+
+    `Nanofluidics in physics and biology <https://nanofluidics.sciencesconf.org/>`_ 
+
+* F. Montel, ENS Lyon, France
+* C. Cottin-Bizonne, Lyon Univ., France
+* A.L. Biance, Lyon Univ., France
+* J. Mathé, Evry Univ., France
+* M. Winterhalter, Jacobs Univ., Germany
+* A. Zilman, Toronto Univ., Canada
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
+        :class: img-fluid img-float pe-3
+        :alt: Logo Cecam
+
+    **3-5/12/2018 - CECAM-FR-RA**
+
+    `Modeling metal-based nanoparticles: environment and dynamical effects <https://www.cecam.org/workshop-0-1589.html>`_ 
+    
+* Florent Calvo, CNRS and University of Grenoble, France
+* Magali Benoit, CEMES-CNRS, Toulouse, France
+* Nathalie Tarrat, CEMES-CNRS, France

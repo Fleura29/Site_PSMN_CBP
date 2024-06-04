@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ENS &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="../../_static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Statistiques" href="Statistiques/Statistiques.html" />
+    <link rel="prev" title="Partenaires" href="../Partenaires.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="w-25 pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="w-25">
+            <div class="d-flex justify-content-end w-25" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <!--<script>
+                            function createA(att, url, nom){
+                                const a= document.createElement("a");
+                                a.setAttribute("class", att);
+                                a.href= url ;
+                                a.textContent= nom;
+                                return a;
+                            };
+
+                            fetch("../../_static/Liens.html")
+                            .then((response) => response.json())
+                            .then((json) => {
+                                
+                                json.Menu.titre.forEach((element) => {
+                                    const li_menu = document.createElement("li");
+                                    li_menu.setAttribute("class", "nav-item dropdown");
+                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
+
+                                    menu.append(li_menu);
+                                    li_menu.append(a_titre);
+
+                                    const div_menu = document.createElement("div");
+                                    div_menu.setAttribute("class", "dropdown-menu");
+                                    li_menu.append(div_menu);
+
+                                    const ul_titre = document.createElement("ul");
+                                    div_menu.append(ul_titre);
+                                    const obj= Object.entries(json.Menu[element]);
+
+                                    for (const [key,values] of obj){
+                                        if (typeof values !== 'object') {
+   
+                                            const li_sous_menu = document.createElement("li");
+                                            console.log(values);
+                                            const nouv_val = `$(values)`;
+                                            console.log(nouv_val);
+                                            if(values === "#"){
+                                                const a_sous_titre = createA("dropdown-item", values , key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            else{
+                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            
+                                        } else {     
+                                            const li_sous_menu = document.createElement("li");
+                                            li_sous_menu.setAttribute("class", "nav-item dropend");
+                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
+
+                                            ul_titre.append(li_sous_menu);
+                                            li_sous_menu.append(a_sous_titre);
+
+                                            const div_sous_menu = document.createElement("div");
+                                            div_sous_menu.setAttribute("class", "dropdown-menu");
+                                            li_sous_menu.append(div_sous_menu);
+
+                                            const ul_ss_titre = document.createElement("ul");
+                                            div_sous_menu.append(ul_ss_titre);
+                                            const obj2 = Object.entries(json.Menu[element][key]);
+                                            
+                                            for (let [keys, val] of obj2) {
+                                                const li_ss_menu = document.createElement("li");
+                                                const a_ss_titre = createA("dropdown-item", val, keys);
+
+                                                ul_ss_titre.append(li_ss_menu);
+                                                li_ss_menu.append(a_ss_titre);
+                                            }
+                                        }
+                                    }
+                                });
+                            })
+                        </script>-->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                    <li><a class="dropdown-item" href="#">Les laboratoires ENS Lyon</a></li> 
+                                                    <li><a class="dropdown-item" href="Udl.html">Les laboratoires Udl</a></li>
+                                                    <li><a class="dropdown-item" href="AURA.html">Les laboratoires région AURA</a></li>
+                                                    <li><a class="dropdown-item" href="CdC.html">Les Centres de Calculs</a></li>
+                                                    <li><a class="dropdown-item" href="PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                            </ul>   
+                        </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Plateformes/DataCenter.html">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                            <li><a class="dropdown-item" href="../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                             </ul>   
+                        </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                        <div class="dropdown-menu menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="#">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                          
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex ms-auto" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+    
+</search>
+
+                </div>
+                
+                
+                <div></div>
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary fs-15" id="contenu">
+                
+  <section id="ens">
+<span id="id1"></span><h1>ENS<a class="headerlink" href="#ens" title="Lien vers cette rubrique">¶</a></h1>
+<div class="disp docutils container">
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Table des matières</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/Statistiques.html">Statistiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/cbp.html">Centre Blaise Pascal (CBP)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/ciri.html">Centre International de Recherche en Infectiologie (CIRI - UMR5308 - U1111)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/cral.html">Laboratoire de Chimie (LCH - UMR 5182)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/crmn.html">Centre de Resonance Magnetique Nucléaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/evs.html">Environnement Ville Société (EVS - UMR 5600)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/icbms.html">Institut de Chimie et Biochimie Moléculaires et Supramoléculaires (ICBMS - UMR 5246)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/igfl.html">Institut de Génomique Fonstionnelle de Lyon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/ilm.html">Institut Lumière Matière (ILM - UMR 5306 )</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/ihrim.html">Institut d’Histoire des Représentations et des Idées dans les Modernités (IHRIM - UMR5317)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/isa.html">Institut des Sciences Analytiques (ISA -UMR 5280)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/ixxi.html">Institut Rhônalpin des Systèmes Complexes (IXXI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/lbmc.html">Laboratoire de Biologie Moléculaire de la Cellule (LBMC - UMR 5239)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/lch.html">Laboratoire de Chimie (LCH - UMR 5182)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/lgltpe.html">Laboratoire de Géologie de Lyon : Terre, Planète, Environnement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/lip.html">Laboratoire d’Informatique du Parallélisme (LIP - UMR 5668)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/lmfa.html">Laboratoire de Mécanique des Fluides et d’Acoustique (LMFA - UMR 5509)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/ppcsu.html">Partenaires Privés : Collaborations Start-Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/rdp.html">Laboratoire d’Informatique du Parallélisme (LIP - UMR 5668)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/ssi.html">Sociétés de service informatique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/umr.html">Laboratoire de Physique (UMR 5672)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Statistiques/upma.html">Unité de Mathématiques Pures et Appliquées (UMPA - UMR 5669)</a></li>
+</ul>
+</div>
+</div>
+<section id="les-laboratoires-de-l-ens-de-lyon">
+<h2>Les laboratoires de l’ENS de Lyon<a class="headerlink" href="#les-laboratoires-de-l-ens-de-lyon" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.ens-lyon.fr/CHIMIE">Laboratoire de Chimie</a> (LCH - UMR 5182) CNRS, ENS-Lyon, UCBL <a class="reference internal" href="Statistiques/lch.html#lch"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www.ens-lyon.fr/LBMC/">Laboratoire de Biologie Moléculaire de la Cellule</a> (LBMC - UMR 5239) ENS-Lyon, UCBL, CNRS, INSERM <a class="reference internal" href="Statistiques/lbmc.html#lbmc"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://igfl.ens-lyon.fr/">Institut de Génomique Fonstionnelle de Lyon</a> (IGFL - UMR 5242) ENS-Lyon, CNRS, UCBL, INRA <a class="reference internal" href="Statistiques/igfl.html#igfl"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://lgltpe.ens-lyon.fr/">Laboratoire de Géologie de Lyon : Terre, Planète, Environnement</a> (LGL-TPE - UMR 5276) CNRS, UCBL ENS-Lyon  <a class="reference internal" href="Statistiques/lgltpe.html#lgltpe"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www.ens-lyon.fr/crmn/crmn/index.html">Centre de Resonance Magnetique Nucléaire</a> - <a class="reference external" href="https://isa-lyon.fr/">Intitut des Sciences Analytiques</a> (CRMN-ISA- UMR 5280) <a class="reference internal" href="Statistiques/crmn.html#crmn"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://ciri.inserm.fr/">Centre International de Recherche en Infectiologie</a> (CIRI-U1111-UMR5308) INSERM, CNRS, ENS, UCBL <a class="reference internal" href="Statistiques/ciri.html#ciri"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://ihrim.ens-lyon.fr/">Institut d’Histoire des Représentations et des Idées dans les Modernités</a> (IHRIM - UMR5317) CNRS, ENS-Lyon, Univ Lyon2, Univ Jean Monnet, Univ Jean Moulin, Univ Blaise Pascal <a class="reference internal" href="Statistiques/ihrim.html#ihrim"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www-obs.univ-lyon1.fr/">Centre de Recherche Astrophysique de Lyon</a> (CRAL - UMR5574) ENS-Lyon, UCBL, CNRS <a class="reference internal" href="Statistiques/cral.html#cral"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www.ens-lyon.fr/LIP">Laboratoire d’Informatique du Parallélisme</a> (LIP - UMR 5668) ENS-Lyon, CNRS, INRIA, UCBL <a class="reference internal" href="Statistiques/lip.html#lip"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www.umpa.ens-lyon.fr/">Unité de Mathématiques Pures et Appliquées</a> (UMPA - UMR 5669)  CNRS, ENS-Lyon, INRIA <a class="reference internal" href="Statistiques/upma.html#umpa"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www.ens-lyon.fr/PHYSIQUE">Laboratoire de Physique</a> (UMR 5672) CNRS, ENS-Lyon <a class="reference internal" href="Statistiques/umr.html#umr"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www.ens-lyon.fr/RDP/">Laboratoire Reproduction et Développement des Plantes</a> (RDP - UMR 5667) ENS-Lyon, CNRS, UCBL, INRA <a class="reference internal" href="Statistiques/rdp.html#rdp"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="index">Centre Blaise Pascal</a> (CBP) ENS-Lyon <a class="reference internal" href="Statistiques/cbp.html#cbp"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://www.ixxi.fr/">Insitut Rhônalpin des Systèmes Complexes</a> (IXXI) CNRS, INRIA, ENS-Lyon, UCBL, Univ.  Lyon 2, INSA-Lyon, enssib, Univ. Joseph Fourier <a class="reference internal" href="Statistiques/ixxi.html#ixxi"><span class="std std-ref">statistiques</span></a></p></li>
+<li><p><a class="reference external" href="http://umr5600.ish-lyon.cnrs.fr/">Environnement Ville Société</a> (EVS - UMR 5600) CNRS, Univ. Jean Moulin Lyon 3, Lumière Lyon 2, Jean Monnet Saint-Etienne, Ecole des Mines de Saint-Etienne, ENS-Lyon, ENSAL, ENTPE, INSA-Lyon <a class="reference internal" href="Statistiques/evs.html#evs"><span class="std std-ref">statistiques</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div>
+    <h4>Sujet précédent</h4>
+    <p class="topless"><a href="../Partenaires.html"
+                          title="Chapitre précédent">Partenaires</a></p>
+  </div>
+  <div>
+    <h4>Sujet suivant</h4>
+    <p class="topless"><a href="Statistiques/Statistiques.html"
+                          title="Chapitre suivant">Statistiques</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Accueil/Laboratoires/ENS.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
+    <div class="row rows-cols-2">
+    <div class="col">
+        <p class="txt_footer">
+        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+        <br>Téléphone : +33 (0)4 72 72 83 67
+        </p>
+    </div>
+    <div class="col">
+        <p class="txt_footer">
+            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+        </p> 
+    </div>
+</div>
+
+    <div class="footer" role="contentinfo">
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+    
+    </div>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="../../_static/bootstrap_bundle.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>-->
+  <script src="../../_static/bootstrap_popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../../_static/bootstrap.min.js"></script>
+  </body>
+</html>

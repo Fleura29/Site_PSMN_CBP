@@ -1,0 +1,21 @@
+{
+    "Menu": {
+        "titre": [
+            "Accueil"
+        ],
+        "Accueil": {
+            "Actualités": "{{pathto(Accueil/Actualites) }}",
+            "Bureau des Correspondants": "{{pathto(Accueil/Bureau) }}",
+            "Evènements CBP": "{{pathto('Accueil/Evenements', 1) }}",
+            "Liens": "{{pathto('Accueil/Liens', 1) }}",
+            "Services": "#",
+            "Partenaires": {
+                "Les laboratoires ENS Lyon": "{{pathto('Accueil/Laboratoires/ENS', 1) }}",
+                "Les laboratoires Udl": "{{pathto('Accueil/Laboratoires/Udl', 1) }}",
+                "Les laboratoires région AURA": "{{pathto('Accueil/Laboratoires/AURA', 1) }}",
+                "Les Centres de Calculs": "{{pathto('Accueil/Laboratoires/CdC', 1) }}",
+                "Les partenaires privés": "{{pathto('Accueil/Laboratoires/PP', 1) }}"
+            }
+        }
+    }
+}

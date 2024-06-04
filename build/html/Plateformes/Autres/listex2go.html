@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Plus de 50 machines pour se connecter à x2go ou SSH ! &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="../../_static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Salles de formation" href="Conditions.html" />
+    <link rel="prev" title="Utilisation de x2go au Centre Blaise Pascal" href="x2go.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="w-25 pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="w-25">
+            <div class="d-flex justify-content-end w-25" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <!--<script>
+                            function createA(att, url, nom){
+                                const a= document.createElement("a");
+                                a.setAttribute("class", att);
+                                a.href= url ;
+                                a.textContent= nom;
+                                return a;
+                            };
+
+                            fetch("../../_static/Liens.html")
+                            .then((response) => response.json())
+                            .then((json) => {
+                                
+                                json.Menu.titre.forEach((element) => {
+                                    const li_menu = document.createElement("li");
+                                    li_menu.setAttribute("class", "nav-item dropdown");
+                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
+
+                                    menu.append(li_menu);
+                                    li_menu.append(a_titre);
+
+                                    const div_menu = document.createElement("div");
+                                    div_menu.setAttribute("class", "dropdown-menu");
+                                    li_menu.append(div_menu);
+
+                                    const ul_titre = document.createElement("ul");
+                                    div_menu.append(ul_titre);
+                                    const obj= Object.entries(json.Menu[element]);
+
+                                    for (const [key,values] of obj){
+                                        if (typeof values !== 'object') {
+   
+                                            const li_sous_menu = document.createElement("li");
+                                            console.log(values);
+                                            const nouv_val = `$(values)`;
+                                            console.log(nouv_val);
+                                            if(values === "#"){
+                                                const a_sous_titre = createA("dropdown-item", values , key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            else{
+                                                const a_sous_titre = createA("dropdown-item",  nouv_val, key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            
+                                        } else {     
+                                            const li_sous_menu = document.createElement("li");
+                                            li_sous_menu.setAttribute("class", "nav-item dropend");
+                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
+
+                                            ul_titre.append(li_sous_menu);
+                                            li_sous_menu.append(a_sous_titre);
+
+                                            const div_sous_menu = document.createElement("div");
+                                            div_sous_menu.setAttribute("class", "dropdown-menu");
+                                            li_sous_menu.append(div_sous_menu);
+
+                                            const ul_ss_titre = document.createElement("ul");
+                                            div_sous_menu.append(ul_ss_titre);
+                                            const obj2 = Object.entries(json.Menu[element][key]);
+                                            
+                                            for (let [keys, val] of obj2) {
+                                                const li_ss_menu = document.createElement("li");
+                                                const a_ss_titre = createA("dropdown-item", val, keys);
+
+                                                ul_ss_titre.append(li_ss_menu);
+                                                li_ss_menu.append(a_ss_titre);
+                                            }
+                                        }
+                                    }
+                                });
+                            })
+                        </script>-->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                            </ul>   
+                        </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="../ProjetInfra.html">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                            <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                             </ul>   
+                        </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                        <div class="dropdown-menu menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="#">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                          
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex ms-auto" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+    
+</search>
+
+                </div>
+                
+                
+                <div></div>
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary fs-15" id="contenu">
+                
+  <section id="plus-de-50-machines-pour-se-connecter-a-x2go-ou-ssh">
+<span id="listex2go"></span><h1>Plus de 50 machines pour se connecter à x2go ou SSH !<a class="headerlink" href="#plus-de-50-machines-pour-se-connecter-a-x2go-ou-ssh" title="Lien vers cette rubrique">¶</a></h1>
+<div class="container text-center w-75">
+    <p class="d-inline-block bg-warning-subtle p-3 rounded fs-14">
+        L'analyse les logs de connexion aux stations de travail a montré que beaucoup de personnes
+        se connectaient sur les mêmes stations. Voici la liste détaillant toutes les machines
+        exploitables à distance
+    </p>
+</div><p>Ces machines sont accessibles par SSH et <a class="reference internal" href="x2go.html#x2go"><span class="std std-ref">x2go</span></a> : “&lt;nom&gt;.cbp.ens-lyon.fr”</p>
+<section id="stations-de-travail-en-salle-de-formation">
+<h2>28 stations de travail en salle de formation<a class="headerlink" href="#stations-de-travail-en-salle-de-formation" title="Lien vers cette rubrique">¶</a></h2>
+<section id="stations-avec-1-processeur-6-coeurs-a-2ghz-32go-de-ram">
+<h3>Stations avec 1 processeur 6 coeurs à 2GHz, 32Go de RAM<a class="headerlink" href="#stations-avec-1-processeur-6-coeurs-a-2ghz-32go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>gtx690</strong> : Nvidia GTX 690 avec 2x2Go</p></li>
+<li><p><strong>gtx680</strong> : Nvidia GTX 680 avec 2Go, Nvidia GT1030 avec 2Go</p></li>
+<li><p><strong>gtx980</strong> : Nvidia GTX 980 avec 4Go, Nvidia GT1030 avec 2Go</p></li>
+<li><p><strong>gtxtitan</strong> : Nvidia GTX Titan avec 6Go, Nvidia K420 avec 2Go</p></li>
+<li><p><strong>gtx780ti</strong> : Nvidia GTX 780Ti avec 3Go, Nvidia K2000 avec 2Go</p></li>
+<li><p><strong>q4000alpha</strong> : Nvidia K4000 avec 3Go et capacité 3D</p></li>
+<li><p><strong>gtx960</strong> : Nvidia GTX 960 avec 2Go, Nvidia GT710 avec 2Go</p></li>
+<li><p><strong>gtx970</strong> : Nvidia GTX 970 avec 2Go, Nvidia GT1030 avec 2Go</p></li>
+<li><p><strong>gtx980tialpha</strong> : Nvidia GTX 980Ti avec 6Go, Nvidia GTX 750Ti avec 2Go</p></li>
+<li><p><strong>gtx980tibeta</strong> : Nvidia GTX 980Ti avec 6Go, Nvidia P600 avec 2Go</p></li>
+<li><p><strong>gtx980tidelta</strong> : Nvidia GTX 980Ti avec 6Go, Nvidia K420 avec 1Go</p></li>
+<li><p><strong>gt730</strong> : Nvidia GT 730 avec 2Go, Nvidia RTX 2080 avec 8Go</p></li>
+</ul>
+</section>
+<section id="stations-avec-2-processeurs-a-4-coeurs-a-2-5ghz-64go-de-ram">
+<h3>Stations avec 2 processeurs à 4 coeurs à 2.5GHz, 64Go de RAM<a class="headerlink" href="#stations-avec-2-processeurs-a-4-coeurs-a-2-5ghz-64go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>gtx980beta</strong> : Nvidia GTX 980 avec 4Go, Nvidia GT 1030 avec 2Go</p></li>
+<li><p><strong>gtx980tigamma</strong> : Nvidia GTX980Ti avec 6Go,  Nvidia GTX 750 avec 2Go</p></li>
+<li><p><strong>k40</strong> : Nvidia K2000 avec 2Go, Nvidia Tesla K40 avec 12Go</p></li>
+<li><p><strong>gt640</strong> : Nvidia GT 640 avec 2Go, Nvidia RTX 2070 avec 8Go</p></li>
+</ul>
+</section>
+<section id="stations-avec-2-processeurs-a-8-coeurs-a-2-4ghz-32go-de-ram">
+<h3>Stations avec 2 processeurs à 8 coeurs à 2.4GHz, 32Go de RAM<a class="headerlink" href="#stations-avec-2-processeurs-a-8-coeurs-a-2-4ghz-32go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>gtx780beta</strong> : Nvidia GTX 780 avec 3Go, Nvidia K420 avec 2Go</p></li>
+<li><p><strong>gtx780gamma</strong> : Nvidia GTX 780 avec 3Go, Nvidia K420 avec 2Go</p></li>
+<li><p><strong>gtx780delta</strong> : Nvidia GTX 780 avec 3Go, Nvidia GT1030 avec 2Go</p></li>
+<li><p><strong>gtx1050ti</strong> : Nvidia GTX 1050Ti avec 4Go, Nvidia P600 avec 2Go</p></li>
+</ul>
+</section>
+<section id="stations-avec-2-processeurs-a-10-coeurs-a-2-2ghz-64go-de-ram">
+<h3>Stations avec 2 processeurs à 10 coeurs à 2.2GHz, 64Go de RAM<a class="headerlink" href="#stations-avec-2-processeurs-a-10-coeurs-a-2-2ghz-64go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>p600alpha</strong> : Nvidia P600 avec 2Go, Nvidia GTX 1080 avec 8Go</p></li>
+<li><p><strong>p600beta</strong> : Nvidia P600 avec 2Go, Nvidia GTX 780 avec 8Go</p></li>
+</ul>
+</section>
+<section id="stations-avec-2-processeurs-a-2-coeurs-a-3-3ghz-16go-de-ram">
+<h3>Stations avec 2 processeurs à 2 coeurs à 3.3GHz, 16Go de RAM<a class="headerlink" href="#stations-avec-2-processeurs-a-2-coeurs-a-3-3ghz-16go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>o790alpha</strong> : Nvidia NVS 315 avec 1Go</p></li>
+<li><p><strong>o790beta</strong> : Nvidia GT620 avec 1Go</p></li>
+</ul>
+</section>
+<section id="stations-avec-2-processeurs-de-2-a-4-coeurs-8go-de-ram">
+<h3>Stations avec 2 processeurs de 2 à 4 coeurs, 8Go de RAM<a class="headerlink" href="#stations-avec-2-processeurs-de-2-a-4-coeurs-8go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>o760alpha</strong> : Nvidia GT 620 avec 1Go, Intel Q6600</p></li>
+<li><p><strong>o760beta</strong> : Nvidia GT 620 avec 1Go, Intel E7500</p></li>
+<li><p><strong>o760gamma</strong> : Nvidia GT 430 avec 1Go, Intel E5200</p></li>
+<li><p><strong>o760delta</strong> : Nvidia GT 620 avec 1Go, Intel E5400</p></li>
+</ul>
+</section>
+</section>
+<section id="machines-ouvertes">
+<h2>3 Machines ouvertes<a class="headerlink" href="#machines-ouvertes" title="Lien vers cette rubrique">¶</a></h2>
+<section id="stations-avec-1-processeur-a-8-coeurs-a-4ghz-64go-de-ram">
+<h3>Stations avec 1 processeur à 8 coeurs à 4GHz, 64Go de RAM<a class="headerlink" href="#stations-avec-1-processeur-a-8-coeurs-a-4ghz-64go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>i9900ks</strong> : Intel i9900KS, Nvidia RTX 2080Ti avec 12Go</p></li>
+<li><p><strong>ryzen3800</strong> : AMD Ryzen 3900X, Nvidia RTX 2080Ti avec 12Go</p></li>
+</ul>
+</section>
+<section id="station-avec-1-processeur-a-64-coeurs-a-1-3ghz-96go-de-ram">
+<h3>Station avec 1 processeur à 64 coeurs à 1.3GHz, 96Go de RAM<a class="headerlink" href="#station-avec-1-processeur-a-64-coeurs-a-1-3ghz-96go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>phi7210</strong> : Intel Xeon Phi 7210 à 64 coeurs</p></li>
+</ul>
+</section>
+</section>
+<section id="machines-virtuelles-a-accelerateur">
+<h2>13 Machines virtuelles à accélérateur<a class="headerlink" href="#machines-virtuelles-a-accelerateur" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>k40m</strong> : Nvidia Tesla K40m avec 12GB</p></li>
+<li><p><strong>k80alpha</strong> : 1/2 de Tesla K80 - 1GPU avec 12GB</p></li>
+<li><p><strong>k80beta</strong> : 1/2 de Tesla K80 - 1GPU avec 12GB</p></li>
+<li><p><strong>k80gamma</strong> : Tesla K80 - 2GPU avec 12GB</p></li>
+<li><p><strong>gtx1080alpha</strong> : Nvidia GTX 1080 avec 8GB</p></li>
+<li><p><strong>gtx1080beta</strong> : Nvidia GTX 1080 avec 8GB</p></li>
+<li><p><strong>gtx1080gamma</strong> : Nvidia GTX 1080 avec 8GB</p></li>
+<li><p><strong>gtx1080delta</strong> : Nvidia GTX 1080 avec 8GB</p></li>
+<li><p><strong>p100alpha</strong> : Nvidia Tesla P100 avec 16GB</p></li>
+<li><p><strong>p100beta</strong> : Nvidia Tesla P100 avec 16GB</p></li>
+<li><p><strong>p100gamma</strong> : 2x Nvidia Tesla P100 avec 16GB</p></li>
+<li><p><strong>v100alpha</strong> : Nvidia Tesla V100 avec 16GB</p></li>
+<li><p><strong>v100beta</strong> : Nvidia Tesla V100 avec 16GB</p></li>
+</ul>
+</section>
+<section id="stations-deep-learning-a-accelerateur">
+<h2>6 Stations Deep Learning à accélérateur<a class="headerlink" href="#stations-deep-learning-a-accelerateur" title="Lien vers cette rubrique">¶</a></h2>
+<section id="stations-avec-1-processeur-a-4-coeurs-a-3-3ghz-16go-de-ram">
+<h3>Stations avec 1 processeur à 4 coeurs à 3.3GHz, 16Go de RAM<a class="headerlink" href="#stations-avec-1-processeur-a-4-coeurs-a-3-3ghz-16go-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>openstation5</strong> : 2 Nvidia GTX 780 avec 3GB, espace de stockage de 4TB en SSHD</p></li>
+<li><p><strong>openstation4</strong> : 1 Nvidia GTX 780 avec 3GB, espace de stockage de 4TB</p></li>
+</ul>
+</section>
+<section id="stations-avec-1-processeur-a-4-coeurs-a-3-5ghz-32gb-de-ram">
+<h3>Stations avec 1 processeur à 4 coeurs à 3.5GHz, 32GB de RAM<a class="headerlink" href="#stations-avec-1-processeur-a-4-coeurs-a-3-5ghz-32gb-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>openstation6</strong> : 1 RTX 2080 Super avec 8GB, 1 GTX 1080 avec 8GB, espace de stockage de 4TB en SSHD</p></li>
+<li><p><strong>openstation7</strong> : 1 RTX 2080 Super avec 8GB, 1 GTX 1080 avec 8GB, espace de stockage de 4TB en SSHD</p></li>
+<li><p><strong>openstation8</strong> : 1 RTX 2080 Super avec 8GB, 1 GTX 1080 avec 8GB, espace de stockage de 4TB en SSHD</p></li>
+<li><p><strong>openstation9</strong> : 1 RTX 2080 Super avec 8GB, 1 GTX 1080 avec 8GB, espace de stockage de 4TB en SSHD</p></li>
+</ul>
+</section>
+</section>
+<section id="stations-rackables-a-accelerateur">
+<h2>3 Stations rackables à accélérateur<a class="headerlink" href="#stations-rackables-a-accelerateur" title="Lien vers cette rubrique">¶</a></h2>
+<section id="stations-avec-1-processeur-a-4-coeurs-a-2-66ghz-32gb-de-ram">
+<h3>Stations avec 1 processeur à 4 coeurs à 2.66GHz, 32GB de RAM<a class="headerlink" href="#stations-avec-1-processeur-a-4-coeurs-a-2-66ghz-32gb-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>r5400alpha</strong> : Nvidia GTX 980 avec 6GB, espace de stockage de 1TB en Raid1</p></li>
+<li><p><strong>r5400beta</strong>  : Nvidia GTX 780 avec 3GB, espace de stockage de 1TB en Raid1</p></li>
+</ul>
+</section>
+<section id="stations-avec-processeurs-amd-epyc-rome">
+<h3>Stations avec processeurs AMD Epyc Rome<a class="headerlink" href="#stations-avec-processeurs-amd-epyc-rome" title="Lien vers cette rubrique">¶</a></h3>
+<ul>
+<li><p><strong>rome4gpu</strong>   : 1x Epyc 7302 à 16 coeurs, 128 GB de RAM</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>4x Nvidia RTX 2080 Super avec 8GB</p></li>
+<li><p>espace de stockage de 3TB</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>epyc1</strong> : 2x Epyc 7502 à 32 coeurs, 256 GB de RAM</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>1x Nvidia RTX 2080 Super avec 8GB</p></li>
+<li><p>espace de stockage de 10TB</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>epyc2</strong> : 2x Epyc 7702 à 64 coeurs, 256 GB de RAM</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>1x Nvidia RTX 2080 Super avec 8GB</p></li>
+<li><p>espace de stockage de 10TB</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+<section id="noeuds-de-cluster-rackables-recents">
+<h2>6 noeuds de cluster rackables récents<a class="headerlink" href="#noeuds-de-cluster-rackables-recents" title="Lien vers cette rubrique">¶</a></h2>
+<section id="noeuds-avec-4-processeurs-de-8-a-12-coeurs-a-2-3-ghz">
+<h3>Noeuds avec 4 processeurs de 8 à 12 coeurs à 2.3 GHz<a class="headerlink" href="#noeuds-avec-4-processeurs-de-8-a-12-coeurs-a-2-3-ghz" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>r815cores32</strong> : 32 coeurs, 128 GB de RAM, 2.2 TB d’espace disque</p></li>
+<li><p><strong>r815cores32</strong> : 48 coeurs, 192 GB de RAM, 4.4 TB d’espace disque</p></li>
+</ul>
+</section>
+<section id="noeuds-avec-2-processeurs-a-16-coeurs-a-2-3ghz-de-192-gb-a-2-tb-de-ram">
+<h3>Noeuds avec 2 processeurs à 16 coeurs à 2.3GHz, de 192 GB à 2 TB de RAM<a class="headerlink" href="#noeuds-avec-2-processeurs-a-16-coeurs-a-2-3ghz-de-192-gb-a-2-tb-de-ram" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>apollo192g1</strong> : 192 GB de RAM, 2 TB d’espace disque</p></li>
+<li><p><strong>apollo192g2</strong> : 192 GB de RAM, 2 TB d’espace disque</p></li>
+<li><p><strong>apollo1024g</strong> : 1024 GB de DCPMM, 192 GB de RAM cache, 2 TB d’espace disque</p></li>
+<li><p><strong>apollo2048g</strong> : 2048 GB de DCPMM, 192 GB de RAM cache, 2 TB d’espace disque</p></li>
+</ul>
+</section>
+</section>
+<section id="modalites-d-acces">
+<h2>Modalités d’accès<a class="headerlink" href="#modalites-d-acces" title="Lien vers cette rubrique">¶</a></h2>
+<p>Ces machines sont accessibles par SSH et <a class="reference internal" href="x2go.html#x2go"><span class="std std-ref">x2go</span></a>: “&lt;nom&gt;.cbp.ens-lyon.fr”</p>
+<p>Une vision d’ensemble de l”<a class="reference external" href="http://styx.cbp.ens-lyon.fr/ganglia/?r=hour&amp;c=Workstations">état des stations de travail</a> sous <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a> est accessible seulement de l’intérieur de l’ENS-Lyon.</p>
+</section>
+<section id="espaces-de-stockage">
+<h2>Espaces de stockage<a class="headerlink" href="#espaces-de-stockage" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’utilisateur dispose sur ces machines de 5 espaces de stockage :</p>
+<ul class="simple">
+<li><p>son compte utilisateur « $HOME » : monté avec le protocole SMB, il ne doit pas être trop sollicité pour des calculs nécessitant de gros transferts. Un archivage (permettant de revenir sur l’état du volume dans le passé) est réalisé chaque nuit.</p></li>
+<li><p>l’espace temporaire « /tmp » : ce dossier est en mémoire vive. Rapide, il est raisonnable de ne pas trop le solliciter pour les gros volumes. Une fois la mémoire vive remplie, des dysfonctionnements peuvent apparaître.</p></li>
+<li><p>l’espace local « /local » : ce dossier correspond à un disque dur interne. La vitesse d’accès est d’une centaine de MB/s. Il n’est ni partagé, ni sauvegardé. Pour l’exploiter, créer un dossier correspondant à son identifiant : « mkdir /local/$USER »</p></li>
+<li><p>l’espace vrac « /scratch »: ce dossier, partagé mais non sauvegardé entre toutes les machines, dispose d’un accès rapide sur le réseau de la salle et très rapide sur le réseau du cluster. Pour l’exploiter, créer un dossier correspondant à son identifiant : « mkdir /scratch/$USER »</p></li>
+<li><p>l’espace projets « /projects »: ce dossier, archivé mais non sauvegardé entre toutes les machines, dispose d’un accès rapide sur le réseau de la salle et sur le réseau du cluster. Pour l’exploiter, créer un dossier correspondant à son identifiant : « mkdir /projects/users/$USER »</p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div>
+    <h4>Sujet précédent</h4>
+    <p class="topless"><a href="x2go.html"
+                          title="Chapitre précédent">Utilisation de x2go au Centre Blaise Pascal</a></p>
+  </div>
+  <div>
+    <h4>Sujet suivant</h4>
+    <p class="topless"><a href="Conditions.html"
+                          title="Chapitre suivant">Salles de formation</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Autres/listex2go.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5 mb-2" style="text-align: center;">
+    <div class="row rows-cols-2">
+    <div class="col">
+        <p class="txt_footer">
+        Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+        <br>Téléphone : +33 (0)4 72 72 83 67
+        </p>
+    </div>
+    <div class="col">
+        <p class="txt_footer">
+            Centre Blaise Pascal, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France
+            <br>Téléphone : +33 (0)4 72 72 86 37 - Email : cbp @ ens-lyon.fr 
+        </p> 
+    </div>
+</div>
+
+    <div class="footer" role="contentinfo">
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+    
+    </div>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="../../_static/bootstrap_bundle.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>-->
+  <script src="../../_static/bootstrap_popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../../_static/bootstrap.min.js"></script>
+  </body>
+</html>
