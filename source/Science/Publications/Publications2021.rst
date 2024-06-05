@@ -3,8 +3,8 @@
 Publications 2021
 =================
 
-Publications 2021 PSMN
-----------------------
+PSMN
+----
 
 * **Evelyne Manet, Hélène Polvèche, Fabrice Mure, Paulina Mrozek-Gorska, Florian Roisné-Hamelin, Wolfgang Hammerschmidt, Didier Auboeuf, Henri Gruffat**, Modulation of alternative splicing during early infection of human primary B lymphocytes with Epstein-Barr virus (EBV) \: a novel function for the viral EBNA-LP protein, *Nucleic Acids Research*, 16 sept. 2021 ( doi: 10.1093/nar/gkab787 )
 

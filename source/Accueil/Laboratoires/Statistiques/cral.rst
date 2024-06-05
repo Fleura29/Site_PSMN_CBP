@@ -45,7 +45,7 @@ Représentant et responsable de l'ouverture des comptes: Rolf WALDER
     .. container:: text-center
 
         .. image:: ../../../_static/statistiques/plot_by_labs_cral.png
-            :class: img-max-width
+            :class: img-fluid
             :alt: Graphique chimie
 
 ERC

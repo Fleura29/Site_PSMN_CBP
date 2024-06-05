@@ -20,6 +20,7 @@ Une utilisation toujours croissante
 .. container:: text-center
 
     .. image:: ../_static/Plateformes/utilisateurscbp2019.png
+        :class: img-max-width
         :alt: Graphique utilisateurs cbp 2019
 
 Un ensemble de plateaux techniques
@@ -82,11 +83,11 @@ Un certain nombre d'applications scientifiques complémentaires (OpenSource ou p
 Équipements informatiques matériels
 -----------------------------------
 
-.. container:: text-center
+.. container:: text-center w-75
 
-    .. container:: 
-
-<note tip>Les équipements suivants forment le `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ : plus de 150 machines directement accessibles avec le même environnement</note>
+    .. container:: bg-success-subtle pt-2 pb-1 mb-3 rounded fs-13
+        
+        Les équipements suivants forment le `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ : plus de 150 machines directement accessibles avec le même environnement
 
 Équipements généraux
 --------------------

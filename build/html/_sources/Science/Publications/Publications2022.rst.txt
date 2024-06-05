@@ -3,11 +3,8 @@
 Publications 2022
 =================
 
-Publications 2022 
------------------
-
 PSMN
-~~~~
+----
 
 *   **Guillaume Le Breton, Oriane Bonhomme, Emmanuel Benichou, Claire Loison** , FROG: Exploiting all-atom 
     molecular dynamics trajectories to calculate linear and non-linear optical responses of molecular 
@@ -115,14 +112,14 @@ PSMN
 Liste des journaux PSMN
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-    *  ACS Journal of Physical Chemistry C
-    *  International Journal of Mass Spectrometry
-    *  Journal of Chemical Physics
-    *  Nature Comm
-    *  The Plant Cell
-    *  eLIFE
-    *  Trends in Genetics : Genome of the month
+*  ACS Journal of Physical Chemistry C
+*  International Journal of Mass Spectrometry
+*  Journal of Chemical Physics
+*  Nature Comm
+*  The Plant Cell
+*  eLIFE
+*  Trends in Genetics : Genome of the month
 
-    La liste des journaux sera mise à jour fin 2020 lorsque toutes les informations nous aurons été transmises.
+La liste des journaux sera mise à jour fin 2020 lorsque toutes les informations nous aurons été transmises.
+
     
-        

@@ -13,32 +13,29 @@ Publications 2013
       Sidus/SidusFR
       Sidus/SidusEN
 
-Publications 2013 
------------------
-
 PSMN
-~~~~
+----
 
 Statistiques des journaux
-'''''''''''''''''''''''''
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. container:: d-flex
+.. container:: row rows-cols-3
 
-    .. container::
+    .. container:: col cols-1
 
         * `H index des journaux <http://www.scimagojr.com/help.php#rank_journals>`_
 
         .. image:: ../../_static/img_publications/plot_2013_hindex-1.png
             :alt: Graphique plot_2013_hindex-1
 
-    .. container::
+    .. container:: col cols-1
 
         * `Facteur d'impact des journaux. <https://www.scijournal.org/>`_
 
         .. image:: ../../_static/img_publications/plot_2013_if-1.png
             :alt: Graphique plot_2013_if-1
 
-    .. container::
+    .. container:: col cols-1
 
         * `Scientific Journal Ranking. <http://www.scimagojr.com/help.php#rank_journals>`_
 
@@ -46,7 +43,7 @@ Statistiques des journaux
             :alt: Graphique plot_2013_sjr-1
 
 Liste des publications
-''''''''''''''''''''''
+~~~~~~~~~~~~~~~~~~~~~~
 
 * **Fehrmann, S., Bottin‐Duplus, H., Leonidou, A., Mollereau, E., Barthelaix, A., Wei, W., Steinmetz, L.M. and Yvert, G.**, 2013. Natural sequence variants of yeast environmental sensors confer cell‐to‐cell expression variability. *Molecular systems biology*, 9(1), p.695. `DOI:10.1038/msb.2013.53 <http://msb.embopress.org/content/9/1/695.short>`_, [ImpactFactor: 11.34 | H index: 102 | SJR 2012: 7.899]
 
@@ -91,7 +88,7 @@ Liste des publications
 * **Neves, V., Bonfils, X., Santos, N.C., Delfosse, X., Forveille, T., Allard, F. and Udry, S.**, 2013. Metallicity of M dwarfs-III. Planet-metallicity and planet-stellar mass correlations of the HARPS GTO M dwarf sample. *Astronomy & Astrophysics*, 551, p.A36. `DOI:10.1051/0004-6361/201220574 <http://www.aanda.org/articles/aa/full_html/2013/03/aa20574-12/aa20574-12.html>`_, [ImpactFactor: 5.084 | H index: 214 | SJR 2012: 2.223]
 
 Liste des journaux
-''''''''''''''''''
+~~~~~~~~~~~~~~~~~~
 
 * 3 Astronomy & Astrophysics
 * 1 Astrophysical Journal Letters
@@ -131,27 +128,23 @@ CBP
 
 * **M. Potters, T. Vaillant, F. Bouchet**, *Sampling microcanonical measures of the 2D Euler equations using Creutz’s algorithm: a phase transition from disorder to order when energy is increased*, in press J. Stat. Mech.  2013
 
-.. container:: d-flex mb-3
 
-    .. image:: ../../_static/sidus.png
-        :class: w-25 img-fluid
-        :alt: Image sidus
+.. |br| raw:: html
 
-    .. container:: m-2
+   <br>
 
-        `Journées Succes 2013 - Présentation de SIDUS : outil de reproductibilité <http://succes2013.sciencesconf.org/>`_
+.. image:: ../../_static/sidus.png
+    :class: img-float pe-3
+    :alt: Image sidus
 
-        **November 14, 2013**, à l'`INPG <http://www.ipgp.fr/>`_ par `Emmanuel Quemener <#>`_
+`Journées Succes 2013 - Présentation de SIDUS : outil de reproductibilité <http://succes2013.sciencesconf.org/>`_
 
-        `article <http://succes2013.sciencesconf.org/24312/document>`_, `transparents <http://succes2013.sciencesconf.org/conference/succes2013/Succes_20131114_EQ.pdf>`_ et `vidéo <http://webcast.in2p3.fr/videos-JSFG2013_sidius>`_
+**November 14, 2013**, à l'`INPG <http://www.ipgp.fr/>`_ par `Emmanuel Quemener <#>`_ |br|
+`article <http://succes2013.sciencesconf.org/24312/document>`_, `transparents <http://succes2013.sciencesconf.org/conference/succes2013/Succes_20131114_EQ.pdf>`_ et `vidéo <http://webcast.in2p3.fr/videos-JSFG2013_sidius>`_
 
-.. container:: d-flex mb-3
+.. image:: ../../_static/cover235linuxmag.jpg
+    :class: img-float pe-3
+    :alt: Image cover235linuxmag
 
-    .. image:: ../../_static/cover235linuxmag.jpg
-        :class: w-25 img-fluid
-        :alt: Image cover235linuxmag
-
-    .. container::
-
-        First international publication on SIDUS in `Linux Journal <http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration>`_  by E. Quemener & M. Corvellec: SIDUS, a unique system that drastically reduces maintenance and installation time for new computer workstations. Tiny errata available in :ref:`French <sidusfr>` & :ref:`English <sidusen>`.
+First international publication on SIDUS in `Linux Journal <http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration>`_  by E. Quemener & M. Corvellec: SIDUS, a unique system that drastically reduces maintenance and installation time for new computer workstations. Tiny errata available in :ref:`French <sidusfr>` & :ref:`English <sidusen>`.
 

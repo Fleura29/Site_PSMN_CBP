@@ -41,7 +41,7 @@ Représentant et responsable de l'ouverture des comptes: Ralf EVERAERS.
 .. container:: text-center
 
     .. image:: ../../../_static/statistiques/plot_by_labs_cbp.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique CBP
 
 Autres Projets

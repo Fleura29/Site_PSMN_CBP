@@ -3,8 +3,8 @@
 Publications 2009
 =================
 
-Publications 2009 PSMN
-----------------------
+PSMN
+----
 
 * **Allard, F.** - 2009. *The MARCS model atmosphere code's first publication. Commentary on: Gustafsson B., Bell R. A., Eriksson K., and Nordlund*, 1975, A&A, 42, 407. Astronomy and Astrophysics 500, 93-94.
 

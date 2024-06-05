@@ -25,7 +25,7 @@ Informations
 CARPACCIO (2012-2016) 
 
 .. image:: ../../../_static/img_projets/carpacciologo.png
-    :class: img-max-width img-float me-3
+    :class: img-fluid img-float me-3
     :alt: Image carpacciologo
 
 

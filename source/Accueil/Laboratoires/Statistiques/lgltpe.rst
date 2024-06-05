@@ -43,7 +43,7 @@ Représentant et responsable de l'ouverture des comptes: Razvan CARACAS.
 .. container:: text-center
 
     .. image:: ../../../_static/statistiques/plot_by_labs_geol.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique geol
 
 ERC

@@ -43,7 +43,7 @@ Représentant et responsable de l'ouverture des comptes: Gaël YVERT.
 .. container:: text-center
 
   .. image:: ../../../_static/statistiques/plot_by_labs_lbmc.png
-    :class: img-max-width
+    :class: img-fluid
     :alt: Graphique chimie
 
 Autres Projets

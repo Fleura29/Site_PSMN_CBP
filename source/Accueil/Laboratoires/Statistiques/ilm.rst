@@ -43,6 +43,6 @@ Représentants et responsables de l'ouverture des comptes: Thierry BIBEN et Fran
 .. container:: text-center
 
     .. image:: ../../../_static/statistiques/plot_by_labs_ilm.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique ILM
 

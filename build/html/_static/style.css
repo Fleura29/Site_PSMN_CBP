@@ -11,20 +11,28 @@ body{
     flex-direction: column;
 }
 
-body, html{
+.orange-border {
+    background-color: #E69645;
     height: 100%;
+    width: 30px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
 }
 
-.contenu{
-    flex-grow: 1;
+.orange-border.right {
+    left: auto;
+    right: 0;
 }
+
+/*---------- Menu ----------*/
 
 .dropdown .dropdown-menu{
     display: none;
 }
 
-
-@media screen and (min-width:992px){
+@media screen and (min-width:993px){
     .dropdown:hover > .dropdown-menu{
         display: block;
         left: 50% !important;
@@ -43,13 +51,9 @@ body, html{
         border-color: #a5a5a5;
         border-radius: 0;
     }
-}
-.navbar{
-    background-color: white;
-}
-
-.cursor{
-    cursor: pointer;
+    .wid-header{
+        width: 25%;
+    }
 }
 
 .dropdown-item{
@@ -73,34 +77,6 @@ a:hover{
     vertical-align: .125em;
 }
 
-.menu{
-    border-radius: 0;
-}
-
-.orange-border {
-    background-color: #E69645;
-    height: 100%;
-    width: 30px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
-}
-
-.orange-border.right {
-    left: auto;
-    right: 0;
-}
-
-
-.btn-search{
-    border-color: #bdbdbd; 
-}
-
-.input-search{
-    border-color: #E69645;
-}
-
 @media screen and (max-width: 576px) {
     .contenu {
         width: 98%;
@@ -122,14 +98,22 @@ a:hover{
     }
 }
 
-@media screen and (max-width:769px){
+@media screen and (max-width:767px){
     .orange-border {
-    width: 10px; 
+        width: 10px; 
     }
     .navbar-collapse{
         text-align: center;
     }
-    
+    .wid-header{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width:992px){
+    .wid-header{
+        width: 35%;
+    }
 }
 
 @media screen and (max-width:992px){
@@ -159,6 +143,7 @@ a:hover{
     .dropdown-menu{
         border: none;
     }
+    
 }
 
 @media screen and (min-width:992) and (max-width:1058px){
@@ -167,38 +152,31 @@ a:hover{
     }
 }
 
+/*---------- Titre ----------*/
+
 h1{
     font-size: 1.7rem;
-    border-bottom: 1px solid #E69645;
-    margin-bottom: 0.9rem;
-    
+    text-decoration: underline; 
 }
 
 h2{
     font-size: 1.5rem;
-    text-decoration: underline;
-}
-
-h3{
-    font-size: 1.2rem;
-    text-decoration: underline dotted;
-}
-
-.btn:hover{
-    background-color: #f5f5f5;
-}
-
-.txt_footer{
-    font-size: 11px;
-}
-
-.h4-border{
     border-bottom: 1px solid #E69645;
     margin-bottom: 0.9rem;
 }
 
-.content{
-    font-size: 15px;
+h3{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.btn:hover{
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+}
+
+.txt_footer{
+    font-size: 11px;
 }
 
 .fs-12{
@@ -217,23 +195,12 @@ h3{
     font-size: 15px;
 }
 
-.form-style{
-    height: 23px;
-    border-color: #E69645;
-    font-size: 13px;
-}
-
 .header{
     margin: 0;
     background-color: orange;
 }
 
-.flags-style{
-    display: flex;
-    justify-content: end;
-    width: 25%;
-    margin-left: 74%;
-}
+/*---------- Tableau ----------*/
 
 table{
     margin: 0 auto 10px;
@@ -251,18 +218,12 @@ th, td{
     padding-right: 5px;
 }
 
-.marg{
-    margin-left: 5px;
-}
+/*---------- Formulaires ----------*/
 
-.disp{
-    display: none;
-}
-
-.border-dashed{
-    border: dashed #E69645 1px;
-    overflow-x: auto;
-    white-space: nowrap;
+.form-style{
+    height: 23px;
+    border-color: #E69645;
+    font-size: 13px;
 }
 
 .textarea{
@@ -273,6 +234,18 @@ th, td{
     border: solid #E69645 1px;
     cursor: pointer;
 }
+
+/*---------- Recherche ----------*/
+
+.btn-search{
+    border-color: #bdbdbd; 
+}
+
+.input-search{
+    border-color: #E69645;
+}
+
+/*---------- role RST ----------*/
 
 .underline {
     text-decoration: underline;
@@ -291,6 +264,8 @@ th, td{
     float: left;
 }
 
+/*---------- Ajouts Sphinx ----------*/
+
 .highlighted{
     background-color: #E69645;
 }
@@ -299,6 +274,19 @@ a.headerlink{
     display: none;
 }
 
-.img-max-width{
-    max-width: 100%;
+.disp{
+    display: none;
 }
+
+/*---------- Autres ----------*/
+
+.border-dashed{
+    border: dashed #E69645 1px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.cursor{
+    cursor: pointer;
+}
+

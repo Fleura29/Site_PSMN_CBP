@@ -61,6 +61,7 @@ le “Tier-0”.
 .. container:: text-center mb-3
 
    .. image:: _static/tier_schema.png
+      :class: img-fluid
       :alt: Schéma
 
 Le Centre Blaise Pascal - CBP

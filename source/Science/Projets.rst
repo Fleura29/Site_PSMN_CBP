@@ -88,9 +88,7 @@ Projets
         Autre/OMANI
         Autre/forge
 
-.. raw:: html
-
-    <h3>PSMN</h3>
+**PSMN**
 
 Projets ERC
 -----------
@@ -206,7 +204,7 @@ Contrats Européens
 **Puma Mind (2012-2015)**
 
 .. image:: ../_static/img_projets/pumamind.jpg
-    :class: img-fluid img-float pe-2
+    :class: img-fluid img-float pe-3
     :alt: Image Puma Mind
 
 :ref:`International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs) <pumamind>` |br|
@@ -243,19 +241,24 @@ Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
 **Collaboration ENS-Solvay**
 
-.. image:: ../_static/img_projets/solvay.png
-    :class: img-fluid img-float pe-2
-    :alt: Logo Solvay
+.. container:: d-flex
 
-:ref:`Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo. <collab-solvay>`
+    .. image:: ../_static/img_projets/solvay.png
+        :class: img-fluid pe-2
+        :alt: Logo Solvay
 
-Coordination ENS de Lyon : Philippe Sautet & Carine Michel
+    .. container::
+
+        :ref:`Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo. <collab-solvay>`
+
+        Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
 **FUI LaBS (2009-2013)**
 
 .. container:: d-flex 
 
     .. image:: ../_static/img_projets/labs.png
+        :class: img-fluid
         :alt: Logo LaBS
 
     .. container::
@@ -339,9 +342,10 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR FSCF (2012-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/fscf.png
+        :class: img-fluid
         :alt: Logo FSCF
 
     .. container::
@@ -352,7 +356,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR RIDEPORPH (2012-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/porphyrin.png
         :alt: Image porphyrin
@@ -365,7 +369,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR Galac (2011-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/acide_lactique.png
         :alt: Image acide lactique
@@ -377,7 +381,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR CADENCED (2009-2014)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/wgps3_ok.png
         :width: 100px
@@ -390,7 +394,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR LORIS (2010-2013)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/anr_loris.png
         :alt: Image anr loris
@@ -402,7 +406,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR ChimiGraphN (2010-2013)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/graphene.png
         :alt: Image graphene
@@ -414,7 +418,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR Dyquma (2010-2013)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/dyquma.png
         :alt: Image dyquma
@@ -426,7 +430,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR STATOCEAN (2009-2012)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/statocean.jpg
         :alt: Logo FSCF
@@ -438,7 +442,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
 **ANR Muse (2008-2012)**
 
-.. container:: d-flex marg   mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/ugi-smiles-reaction.png
         :alt: Image ugi smiles reaction
@@ -474,7 +478,7 @@ Autres projets
 
 **Dissipation des courants océaniques par radiation d'ondes internes (2016-2018)** 
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/illustration_internalwaves.png
         :alt: Illustration internalwaves
@@ -486,7 +490,7 @@ Autres projets
 
 **Convection dans le manteau et océans de magma (2015-2018)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/labrosse.png
         :alt: Image labrosse 
@@ -498,7 +502,7 @@ Autres projets
 
 **Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)** 
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/freddy1.png
         :width: 100px
@@ -511,7 +515,7 @@ Autres projets
 
 **SIB_CP (2013-2016)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/sib1.png
         :alt: Image sib1
@@ -523,7 +527,7 @@ Autres projets
 
 **SIMBIO (2013-2018)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/simbio.png
         :alt: Image simbio
@@ -535,7 +539,7 @@ Autres projets
 
 **WURM**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/wurm.png
         :alt: Image wurm
@@ -549,7 +553,7 @@ Autres projets
 
 **PHOENIX Simulator**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/phy.jpg
         :alt: Image phy
@@ -575,7 +579,7 @@ Collaborations Start-Up
 
 **CARPACCIO (2012-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/carpacciologo.png
         :alt: Image carpacciologo
@@ -600,7 +604,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu'au sein des lunes de glace**
 
-.. container:: d-flex marg mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/cbp_ens.jpeg
         :alt: Logo CBP
@@ -613,7 +617,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Hydrologic signals of floating wood in rivers. Case study: Monitoring floating large woods in the Ain River, France**
 
-.. container:: d-flex marg mb-3 
+.. container:: d-flex mb-3 
 
     .. image:: ../_static/img_projets/cbp_ens_400.png
         :alt: Logo CBP
@@ -626,7 +630,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Circumstellar environments reconstruction with deep learning**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/rhapsodie.png
         :alt: Image rhapsodie
@@ -639,7 +643,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Resolving Morbilliviruses phylogeny**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/virus-4937553_1280.jpg
         :alt: Image virus-4937553_1280
@@ -652,7 +656,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Ab initio molecular dynamics and metadynamics simulations**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/cbp_ens.jpeg
         :alt: Logo CBP
@@ -665,7 +669,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Etude des phénomènes de vaporisation de mélange d’oxydes**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/lammps4geol2021.jpg
         :alt: Image lammps4geol2021
@@ -678,7 +682,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Moteur de Recherche en Langue des Signes par Sentence Embeddings**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/sentenceembeddings2021.png
         :alt: Image sentenceembeddings2021
@@ -691,7 +695,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **SMOLU ou la coagulation de petits solides en agrégats**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/smolu2021.png
         :alt: Image smolu2021
@@ -704,7 +708,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Approche computationnelle du changement linguistique sur Twitter**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/accltwitter2021.png
         :alt: Image accltwitter2021
@@ -720,7 +724,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Approche des Données par Annotations (Lyon)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/iao.jpg
         :alt: Image iao
@@ -733,7 +737,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Wave Resonance and Multistability in Atmospheric Jet Dynamics (2019-2022)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/cbp_ens.jpeg
         :alt: Logo CBP
@@ -747,7 +751,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Aide au diagnostic pulmonaire chez le carnivore domestique**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/adpccd2020.png
         :alt: Image adpccd2020
@@ -760,7 +764,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **To be a planet, or not to be, that is the question**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/phantommcfost.png
         :alt: Image phantommcfost
@@ -773,7 +777,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **SimEmiFlu3D**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/simemiflu3d.png
         :alt: Image simemiflu3d
@@ -786,7 +790,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **FSL4GE**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/fsl4ge.png
         :alt: Image fsl4ge
@@ -799,7 +803,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **DYN4DRUGS**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/dyn4drugs2020.png
         :alt: Image dyn4drugs2020
@@ -812,7 +816,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **FAuST**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/faust.png
         :alt: Image faust
@@ -825,7 +829,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Academics**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/cbp_ens.jpeg
         :alt: Logo CBP
@@ -841,7 +845,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Réseaux neuronaux convolutifs pour la segmentation de texture.**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/pustelnik_2019.png
         :alt: Image pustelnik_2019
@@ -854,7 +858,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Etude numérique de l'influence des particules puits sur la formation des disques protostellaires.**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/commercon_2019.png
         :alt: Image commercon_2019
@@ -867,7 +871,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Modélisation de l'organisation des chromosomes lors de la spermatogénèse du grillon**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/jost2019.png
         :alt: Image jost2019
@@ -880,7 +884,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Evolution spectrale d’une supernova 1A à double détonation**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/allegre2019.png
         :alt: Image allegre2019
@@ -893,7 +897,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/roux2019.jpg
         :alt: Image roux2019
@@ -906,7 +910,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Modélisation de l’atmosphère des étoiles et des planètes (2019-2022)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/phoenix.png
         :alt: Image phoenix
@@ -919,7 +923,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/vacfca.png
         :alt: Image vacfca
@@ -933,7 +937,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Portage du code CESM sur le calculateur du CINES (OCCIGEN) (2019)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/cesm.png
         :alt: Image cesm
@@ -951,7 +955,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Projet Wave Topology in Fluids - ANR 2018-2021**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/diapositive1.png
         :alt: Image cesm
@@ -965,7 +969,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Projet LIAISON**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/liaison.png
         :alt: Image liaison
@@ -979,7 +983,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Projet IMPACT (L'impact géant et la formation de la Terre et de la Lune) -ERC 2016-2021**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/wurm1.jpg
         :alt: Image wurm1
@@ -993,7 +997,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Simulation numérique des ondes topologiques dans les eaux peu profondes**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/illustration_internalwaves.png
         :alt: Image illustration_internalwaves
@@ -1007,7 +1011,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Optimisation non lisse des matrices de transfert pour la géographie électorale**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/kszxo8.png
         :alt: Image kszxo8
@@ -1020,7 +1024,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Waves in the radiative zones of rotating magnetized stars**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/wavesstars.png
         :alt: Image wavesstars
@@ -1033,7 +1037,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Analyse de données biomédicales par réseaux de neurones sur GPU**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/bioneurongpu.png
         :alt: Image bioneurongpu
@@ -1049,7 +1053,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **AHN : Atelier des Humanités Numériques**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/ahn_logo.png
         :alt: Logo AHN
@@ -1062,7 +1066,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Deciphering the developmental modules using closely related non model species**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/illustration_microbat.png
         :alt: Image illustration_microbat
@@ -1075,7 +1079,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Dissipation des courants océaniques par radiation d'ondes internes (2016-2018)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/illustration_internalwaves.png
         :alt: Image illustration_internalwaves
@@ -1091,7 +1095,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Caractérisation par LIDAR de la végétation des rives de la Drome (2015-2018)** 
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/evs.png
         :alt: Image evs
@@ -1104,7 +1108,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Convection dans le manteau et océans de magma (2015-2018/ 2020-2021)** 
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/test_t00250.png
         :alt: Image test_t00250
@@ -1120,7 +1124,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Thèse École doctorale de Chimie (2014-2017)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/molecular_dynamics.png
         :alt: Image molecular_dynamics
@@ -1133,7 +1137,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Thèse École doctorale de Chimie (2014-2017)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/fluides.png
         :alt: Image fluides
@@ -1146,7 +1150,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Post-doc Solvay (2013-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/co2.png
         :alt: Image co2
@@ -1171,7 +1175,7 @@ Etudiant : Typhaine Moreau
 
 **Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/zonal_velocity.png
         :alt: Image zonal_velocity
@@ -1184,7 +1188,7 @@ Etudiant : Typhaine Moreau
 
 **Epifly (2014-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/epiflyfig-1.jpg
         :alt: Image epiflyfig-1
@@ -1196,7 +1200,7 @@ Etudiant : Typhaine Moreau
 
 **Structure et Dynamique de membranes lipidiques à l'échelle moléculaire  (2014)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/dilipimol.jpg
         :alt: Image dilipimol
@@ -1211,7 +1215,7 @@ Etudiant : Typhaine Moreau
 
 **SIB_CP (2013-2016)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/stage_rdp.png
         :alt: Image stage_rdp
@@ -1223,7 +1227,7 @@ Etudiant : Typhaine Moreau
 
 **Fishin'TE (2013-2014)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/fishinte.jpg
         :alt: Image fishinte
@@ -1235,7 +1239,7 @@ Etudiant : Typhaine Moreau
 
 **SIMBIO (2013-2018)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/simbio.png
         :alt: Image simbio
@@ -1250,7 +1254,7 @@ Etudiant : Typhaine Moreau
 
 **Humanités numériques (2012-20xx)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/ahn_logo.png
         :alt: Logo AHN
@@ -1262,7 +1266,7 @@ Etudiant : Typhaine Moreau
 
 **ANR FSCF (2012-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/proteins.png
         :alt: Image proteins
@@ -1276,7 +1280,7 @@ Etudiant : Typhaine Moreau
 
 **CARPACCIO (2012-20xx)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/carpacciologo.png
         :alt: Image carpacciologo
@@ -1288,7 +1292,7 @@ Etudiant : Typhaine Moreau
 
 **WURM project (2012-20xx)**
 
-.. container:: d-flex marg mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/wurm1.jpg
         :alt: Image wurm1
@@ -1301,7 +1305,7 @@ Etudiant : Typhaine Moreau
 
 **ANR Rideporph (2012-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/porphyrin.png
         :alt: Image porphyrin
@@ -1314,7 +1318,7 @@ Etudiant : Typhaine Moreau
 
 **Puma Mind (2012-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/pumamind.jpg
         :alt: Image pumamind
@@ -1326,7 +1330,7 @@ Etudiant : Typhaine Moreau
 
 **Bourse Eiffel (2012-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/campusfrance.jpg
         :alt: Image campusfrance
@@ -1344,7 +1348,7 @@ Directeur de Thèse : Wei Dong
 
 **ANR Galac (2011-2015)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/acide_lactique.png
         :alt: Image acide_lactique
@@ -1357,7 +1361,7 @@ Directeur de Thèse : Wei Dong
 
 **Collaboration ENS - Total**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/total.jpg
         :alt: Logo total
@@ -1370,7 +1374,7 @@ Directeur de Thèse : Wei Dong
 
 **Collaboration ENS - Solvay**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/solvay.png
         :alt: Image solvay
@@ -1386,7 +1390,7 @@ Directeur de Thèse : Wei Dong
 
 **ANR Dyquma (2010-2013)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/dyquma.png
         :alt: Image dyquma
@@ -1398,7 +1402,7 @@ Directeur de Thèse : Wei Dong
 
 **ANR ChimigraphN (2010-2013)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/graphene.png
         :alt: Image graphene
@@ -1410,7 +1414,7 @@ Directeur de Thèse : Wei Dong
 
 **ANR LORIS (2010-2013)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/anr_loris.png
         :alt: Image anr_loris
@@ -1425,7 +1429,7 @@ Directeur de Thèse : Wei Dong
 
 **Biophysique et développement (2009-2017)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/vasculature.png
         :alt: Image vasculature
@@ -1437,7 +1441,7 @@ Directeur de Thèse : Wei Dong
 
 **CADENCED (2009-2014)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/wgps3_ok.png
         :width: 100px
@@ -1450,7 +1454,7 @@ Directeur de Thèse : Wei Dong
 
 **LaBS (2009-2013)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/labs.png
         :alt: Image labs
@@ -1463,7 +1467,7 @@ Directeur de Thèse : Wei Dong
 
 **ANR STATOCEAN (2009-2012)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex  mb-3
 
     .. image:: ../_static/img_projets/statocean.jpg
         :alt: Image statocean
@@ -1478,7 +1482,7 @@ Directeur de Thèse : Wei Dong
 
 **ANR Muse (2008-2012)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/ugi-smiles-reaction.png
         :alt: Image ugi-smiles-reaction
@@ -1493,7 +1497,7 @@ Directeur de Thèse : Wei Dong
 
 **Marie Curie Early Stage Training (EST) EuroSim (2006-2010)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/cordis-logo.gif
         :alt: Logo Cordis
@@ -1505,7 +1509,7 @@ Directeur de Thèse : Wei Dong
 
 **CompPhysSoftBioMat (2005-20xx)**
 
-.. container:: d-flex marg  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/sofmatter.jpg
         :alt: Image sofmatter

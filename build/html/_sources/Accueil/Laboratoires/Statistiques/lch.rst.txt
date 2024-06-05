@@ -45,7 +45,7 @@ Représentants et responsables de l'ouverture des comptes: David LOFFREDA et Tao
 .. container:: text-center
 
     .. image:: ../../../_static/plot_by_labs_chimie.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique chimie
 
 Collaborations Industrielles

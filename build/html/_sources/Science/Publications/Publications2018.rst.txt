@@ -9,23 +9,23 @@ Publications 2018 PSMN et CBP
 Statistiques des journaux
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. container:: d-flex
+.. container:: row rows-cols-3
 
-    .. container::
+    .. container:: col
 
         * `H index des journaux <http://www.scimagojr.com/help.php#rank_journals>`_
 
         .. image:: ../../_static/img_publications/h_index2018.png
             :alt: Graphique h_index2018
 
-    .. container::
+    .. container:: col
 
         * `Facteur d'impact des journaux. <https://www.scijournal.org/>`_
 
         .. image:: ../../_static/img_publications/impactfactor2018.png
             :alt: Graphique impactfactor2018
 
-    .. container::
+    .. container:: col
 
         * `Scientific Journal Ranking. <http://www.scimagojr.com/help.php#rank_journals>`_
 

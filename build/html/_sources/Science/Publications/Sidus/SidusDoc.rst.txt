@@ -6,12 +6,11 @@ SIDUS : "avec SIDUS, n'installe plus, démarre seulement tes machines !"
 .. container:: text-center
 
         .. image:: ../../../_static/sidus-800.png
+            :class: img-max-width
             :alt: Logo Sidus
 
-
-.. raw:: html
-
-    <h4 class="h4-border">Démonstrateur SIDUS sous VirtualBox</h4>
+Démonstrateur SIDUS sous VirtualBox
+-----------------------------------
 
 Pendant 7 ans, le Centre Blaise Pascal mettait à disposition toute la documentation permettant à un administrateur système de déployer son propre SIDUS. Trop compliqué pour beaucoup, il leur était impossible d'avoir rapidement quelque chose de fonctionnel.
 
@@ -24,12 +23,10 @@ Pour simplifier la compréhension et la prise en main de SIDUS, le démonstrateu
 
 Ces 3 distributions proposent pour chaque client SIDUS au moins un bureau graphique complet, dont le "léger" XFCE. 
 
+Récupération des archives VirtualBox
+------------------------------------
 
-.. raw:: html
-
-    <h4 class="h4-border">Récupération des archives VirtualBox</h4>
-
-Pour déployer ce SIDUS, il est donc indispensable d'installer préalablement l'application [[https://www.virtualbox.org/wiki/Downloads|VirtualBox]] sur son équipement. VirtualBox existant sur la majorité des systèmes d'exploitation, rien ne s'oppose au déploiement de ce démonstrateur SIDUS sous la majorité des distributions GNU/Linux, Windows ou MacOSX. 
+Pour déployer ce SIDUS, il est donc indispensable d'installer préalablement l'application `VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_ sur son équipement. VirtualBox existant sur la majorité des systèmes d'exploitation, rien ne s'oppose au déploiement de ce démonstrateur SIDUS sous la majorité des distributions GNU/Linux, Windows ou MacOSX. 
 
 * `serveur Sidus4Labs <https://www.cbp.ens-lyon.fr/sidus/sidus4labs.ova>`_ : le système **"maître"** portant les 3 arbres SIDUS
 * `client Sidus4Labs BIOS <https://www.cbp.ens-lyon.fr/sidus/sidus4labs_client_bios.ova>`_ : le système "client" exploitant un BIOS au démarrage
@@ -39,9 +36,8 @@ Pour déployer ce SIDUS, il est donc indispensable d'installer préalablement l'
 * Le client **Sidus4Labs BIOS** intègre simplement une machine virtuelle "vide" de disque et une interface réseau démarrant avec un BIOS standard.
 * Le client **Sidus4Labs UEFI** intègre simplement une machine virtuelle avec une mini-partition UEFI et une interface réseau. Cette machine illustre le fonctionnement de SIDUS sur des machines récentes disposant d'un environnement de démarrage UEFI.
 
-.. raw:: html
-
-    <h4 class="h4-border">Installation du serveur et des clients</h4>
+Installation du serveur et des clients
+--------------------------------------
 
 Avant d'installer les images, vérifiez que vous disposez d'au moins 48GB d'espace de stockage (en plus de l'archive **Sidus4Labs** de 10GB).
 
@@ -49,9 +45,8 @@ Une fois téléchargées, il suffit généralement de double-cliquer sur l'icôn
 
 L'espace total (maximal) occupé par **Sidus4Labs** est de 48GB d'espace disque. Le serveur **Sidus4Labs** et les clients **BIOS** et **UEFI** sont paramétrés pour occuper 2GB de RAM.
 
-.. raw:: html
-
-    <h4 class="h4-border">Démarrage du serveur et des clients</h4>
+Démarrage du serveur et des clients
+-----------------------------------
 
 Le démarrage du serveur **Sidus4Labs** s'effectue en quelques secondes. Une fois l'invite du terminal disponible, le serveur **Sidus4Labs** est prêt à démarrer un client **Sidus4Labs**.
 
@@ -62,9 +57,8 @@ Le démarrage d'un client **Sidus4Labs** est alors possible, issu des 3 distribu
 * Démarrage d'une SIDUS **Ubuntu 20.04** en `BIOS <https://www.cbp.ens-lyon.fr/sidus/sidus4labs_client_bios_Ubuntu.webm>`_ et `UEFI <https://www.cbp.ens-lyon.fr/sidus/sidus4labs_client_uefi_Ubuntu.webm>`_
 * Démarrage d'une SIDUS **CentOS 8** en `BIOS <https://www.cbp.ens-lyon.fr/sidus/sidus4labs_client_bios_CentOS.webm>`_ et `UEFI <https://www.cbp.ens-lyon.fr/sidus/sidus4labs_client_uefi_CentOS.webm>`_
 
-.. raw:: html
-
-    <h4 class="h4-border">Quelques remarques fondamentales</h4>
+Quelques remarques fondamentales
+--------------------------------
 
 Par défaut, le mot de passe **root** du serveur **sidus4labs** est **Sidus4LABS** (pas très original donc à changer par vos soins).
 
@@ -81,17 +75,15 @@ Les deux interfaces réseau du serveurs **sidus4labs** sont NATés. Pour accéde
 
 Chacun des systèmes proposés au démarrage dispose d'un environnement graphique comparable, XFCE, plutôt léger. D'autres environnements sont proposés, mais ils requièrent un matériel graphique conséquent. Il se peut donc que GNOME3, choisi comme environnement par défaut par certaines distributions, ne fonctionne pas correctement. XFCE fonctionne dans tous les cas.
 
-.. container:: text-center
+.. container:: text-center w-50
     
-    .. raw:: html
+    .. container:: bg-danger-subtle pt-2 pb-1 rounded fs-13
+        
+        Pour en savoir plus sur SIDUS, c'est là-dessous
+        
 
-        <p class="d-inline-block bg-danger-subtle p-3 rounded fs-13">
-            Pour en savoir plus sur SIDUS, c'est là-dessous
-        </p>
-
-.. raw:: html
-
-    <h4 class="h4-border">SIDUS en quelques phrases</h4>
+SIDUS en quelques phrases
+-------------------------
 
 **SIDUS** est l'acronyme de *Single Instance Distributing Universal System* et se propose de simplifier à l'extrême l'administration de machines. 
 
@@ -106,40 +98,32 @@ Son `origine latine <http://fr.wiktionary.org/wiki/sidus>`_ *d'ensemble de corps
 * **ni FAI** pour *Fully Automatic Installation* : FAI ou Kickstart proposent une installation complète simplifiée permettant de limiter voire d'éliminer toute action de l'administrateur. A contrario, SIDUS propose un système unique dans un arbre intégrant à la fois le système de base et toutes les applications installées manuellement.
 * **ni un LiveCD** sur réseau : un LiveCD démarre un système minimaliste, nécessairement figé. Il est toujours possible de créer son propre LiveCD mais c'est une opération assez lourde. Avec SIDUS, il est possible d'installer à la volée sur tous ses clients un logiciel instantanément, de le reconfigurer. 
 
-.. raw:: html
-
-    <h4 class="h4-border">CQQCOQP : les 7 questions sur SIDUS</h4>
-
-
+CQQCOQP : les 7 questions sur SIDUS
+-----------------------------------
 
 `CQQCOQP <http://fr.wikipedia.org/wiki/QQOQCCP>`_ est une démarche analytique simple vous permettant, simplement en lisant les réponses aux questions élémentaires *Pourquoi ? Quoi ? Qui ? Où ? Quand ? Combien ? et Comment ?* les tenants et les aboutissants de SIDUS.
 
-.. raw:: html
-
-    <h3>Pourquoi ?</h3>
+Pourquoi ?
+~~~~~~~~~~
 
 Le temps d'administration système des équipements informatiques (noeud de calcul, poste personnel ou station de travail, machine virtuelle d'expérimentation) augmente avec leur nombre et leur diversité. Ainsi, tous ces matériels partagent essentiellement les mêmes fichiers, mais chacun sur son propre disque. Comment limiter le temps d'installation et d'administration des machines tout en conservant la flexibilité liée à leur destination ?
 
 C'est le défi relevé par SIDUS (pour Single Instance Distributing Universal System), développée au Centre Blaise Pascal à l'origine essentiellement pour simplifier la tâche de l'unique administrateur système face à la gestion de centaines de machines de toutes natures pour toutes destinations (plateaux techniques multi-noeuds, multi-coeurs, GPU, etc).
 
-.. raw:: html
-
-        <h3>Quoi ?</h3>
+Quoi ?
+~~~~~~
 
 Une approche permettant le démarrage en réseau et l'offre d'un système parfaitement générique pour toutes les machines.
 
-.. raw:: html
-
-        <h3>Quand ?</h3>
+Quand ?
+~~~~~~~
 
 La première version de Sidus date de février 2010, elle était à l'origine sur Debian Etch. Elle a suivi toutes les évolutions de la distribution Debian, socle essentiel (voire exclusif) du Centre Blaise Pascal.
 
 Mi 2015, SIDUS sert 76 noeuds permanents de cluster au CBP (jusqu'à 120 simultanés en fonction des prêts), des serveurs de GPGPU, des stations de travail multi-coeurs et des postes *COMOD* (pour *Compute On My Own Device*).
 
-.. raw:: html
-
-    <h3>Pour Qui ?</h3>
-
+Pour Qui ?
+~~~~~~~~~~
 
 SIDUS s'adresse à tous ceux qui veulent se simplifier la tâche et qui :
 * disposent de groupes de machines ayant toute la même destination :
@@ -150,9 +134,8 @@ SIDUS s'adresse à tous ceux qui veulent se simplifier la tâche et qui :
     
 * veulent analyser des équipements sans jamais toucher au système
 
-.. raw:: html
-
-    <h3>Où ?</h3>
+Où ?
+~~~~
 
 Le Centre Blaise Pascal, hôtel à projets de l'ENS-Lyon dans le domaine du calcul et de l'informatique scientifiques, utilise SIDUS pour tous ses équipements dont l'uniformité doit être conservée le plus possible : un simple redémarrage doit suffire à replacer le système dans son état d'origine.
 
@@ -164,9 +147,8 @@ Les laboratoires de l'IGFL, du LBMC et du LJC utilisent "COMOD" : un cluster de 
 
 L'université Joseph Fourier, dans le cadre de ses écoles thématiques sur le calcul scientifique, utilise depuis 2011 SIDUS pour l'infrastructure de travaux pratiques des auditeurs.
 
-.. raw:: html
-
-    <h3>Combien ?</h3>
+Combien ?
+~~~~~~~~~
 
 De 8 clients légers Neoware gonflés en CPU et mémoire et détournés début 2010 de leur vocation originelle, nous approchons les 120 machines au CBP utilisant ce système. 
 
@@ -178,19 +160,19 @@ Lors des école thématiques des Houches sur le calcul scientifique, SIDUS étai
 
 Quant au prix du logiciel (question posée au dernier Scipy 2013), tous les composants qu'il utilise étant Open Source, SIDUS l'est aussi, ainsi que toutes les documentations associées ! SIDUS est donc sous licence CeCILL.
 
-Si vous utilisez SIDUS, informez l'[[emmanuel.quemener@ens-lyon.fr|auteur]] et faites en la promotion !
+Si vous utilisez SIDUS, informez l'`auteur <emmanuel.quemener@ens-lyon.fr>`_ et faites en la promotion !
 
-Si vous voulez déployer SIDUS sur vos installations et vous faire aider, vous pouvez contacter l'[[emmanuel.quemener@ens-lyon.fr|auteur]].
+Si vous voulez déployer SIDUS sur vos installations et vous faire aider, vous pouvez contacter l'`auteur <emmanuel.quemener@ens-lyon.fr>`_.
 
-.. raw:: html
-
-    <h3>Comment ?</h3>
+Comment ?
+~~~~~~~~~
 
 SIDUS se base sur une majorité de composants simples et éprouvés, disponible sur la majorité des distributions GNU/Linux.
 
 Dans les pages des années précédentes sous SIDUS, une documentation d'installation pour Debian était détaillée... Malheureusement, le prérequis d'installation rendait son appropriation inaccessible aux débutants.
 
 Il a donc été choisi de proposer une machine virtuelle complète sous VirtualBox permettant de démarrer les 3 distributions les plus courantes avec SIDUS :
+
 * la `Debian 10 "Buster" <https://www.debian.org/releases/buster/>`_
 * la `Ubuntu 20.04 "Focal Fossa" <https://releases.ubuntu.com/20.04/>`_
 * la `CentOS version 8 <https://www.centos.org/>`_

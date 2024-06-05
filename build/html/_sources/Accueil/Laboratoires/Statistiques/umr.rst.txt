@@ -43,7 +43,7 @@ Représentant et responsable de l'ouverture des comptes: Tommaso ROSCILDE
 .. container:: text-center
 
     .. image:: ../../../_static/statistiques/plot_by_labs_phys.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique chimie
 
 ERC

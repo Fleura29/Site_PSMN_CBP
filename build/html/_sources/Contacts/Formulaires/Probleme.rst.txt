@@ -5,8 +5,6 @@ Signaler un problème
 
 ou poser une question...
 
-.. raw:: html
-
 .. container:: text-center w-75
 
     .. container:: d-inline-block bg-warning-subtle pt-3 rounded fs-13
@@ -30,8 +28,8 @@ ou poser une question...
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-2">
-                        <label for="inputPrenom">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputPrenom" aria-describedby="emailHelp">
+                        <label for="inputName">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputName" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>

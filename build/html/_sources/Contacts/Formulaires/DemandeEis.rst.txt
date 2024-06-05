@@ -21,8 +21,8 @@ Demande d'expertise en informatique scientifique
                         <input type="text" class="form-control form-style" id="inputSurname" >
                     </div>
                     <div class="mb-2">
-                        <label for="inputPrenom">Prénom(s)*</label>
-                        <input type="text" class="form-control form-style" id="inputPrenom">
+                        <label for="inputName">Prénom(s)*</label>
+                        <input type="text" class="form-control form-style" id="inputName">
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>

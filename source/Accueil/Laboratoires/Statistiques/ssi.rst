@@ -25,5 +25,5 @@ Informations
 .. container:: text-center
 
     .. image:: ../../../_static/statistiques/plot_by_labs_private.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique Sociétés de service informatique

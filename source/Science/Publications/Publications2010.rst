@@ -3,8 +3,8 @@
 Publications 2010
 =================
 
-Publications 2010 PSMN
-----------------------
+PSMN
+----
 
 * **Freytag, B., Allard, F., Ludwig, H.-G., Homeier, D., Steffen, M.** - 2010. *The role of convection, overshoot, and gravity waves for the transport of dust in M dwarf and brown dwarf atmospheres.* Astronomy and Astrophysics 513, A19.
 

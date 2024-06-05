@@ -3,11 +3,8 @@
 Publications 2011
 =================
 
-Publications 2011 
------------------
-
 PSMN
-~~~~
+----
 
 * **Allard, F., Homeier, D. and Freytag, B.**, 2011. Stellar to Substellar Model Atmospheres. *Proceedings of the International Astronomical Union*, 7(S282), pp.235-242. `DOI:10.1017/S1743921311027438 <https://www.cambridge.org/core/journals/proceedings-of-the-international-astronomical-union/article/stellar-to-substellar-model-atmospheres/BC56FA01E24B8F51CD0214E891FA685E>`_, [ImpactFactor : 0.03 | H index 8 | SJR 2011 : 0.106] 
 
@@ -90,7 +87,7 @@ PSMN
 * **M. Harb, F. Rabilloud, D. Simon,** `Optical response of silver nanoclusters complexed with aromatic thiol molecules: a time-dependent density-functional study <http://iopscience.iop.org/0953-4075/44/3/035101>`_, J. Phys. B: At. Mol. Opt. Phys., 44, 035101 (2011)
 
 CBP
-~~~
+---
 
 * **Anne Verjus et Denise Davidson**, *Le roman conjugal. Chroniques de la vie familiale à l'époque de la Révolution et de l'Empire*, Seyssel, Champ Vallon, 2011.
 

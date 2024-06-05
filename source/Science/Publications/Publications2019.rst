@@ -3,8 +3,8 @@
 Publications 2019
 =================
 
-Publications 2019 PSMN
-----------------------
+PSMN
+----
 
 *   **S. Boury, T. Peacock, and P. Odier**, Excitation and resonant enhancement of axisymmetric internal waves,  Physical Review Fluids, 4:034802  (2019)
 
@@ -123,9 +123,8 @@ CBP
 
 *   **Davis G., Dauxois T., Jamin T., Joubaud S.**, Energy budget in internal wave attractor experiments,  Journal of Fluid Mechanics. 880, 743-763 , 2019, https://doi.org/10.1017/jfm.2019.741 [ImpactFactor: 1.885 | H index:  64 | SJR 2017: 0.51]
 
-.. raw:: html
-
-    <h4 class="mt-3"><B>Liste des journaux PSMN</B></h4>
+Liste des journaux PSMN
+~~~~~~~~~~~~~~~~~~~~~~~
 
 *  1 Catalysis Today
 *  3 RSC Physical Chemistry Chemical Physics

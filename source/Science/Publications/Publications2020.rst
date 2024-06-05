@@ -3,8 +3,8 @@
 Publications 2020
 =================
 
-Publications 2020 PSMN
-----------------------
+PSMN
+----
 
 *   **F.Besnard, J.Picao-Osorio, C.Dubois, and M.-A. Félix**, A broad mutational target explains a fast rate of phenotypic evolution,  *C. R. Landry, Ed.*, eLife 9: e54928., `https://doi.org/10.7554/eLife.54928 <https://doi.org/10.7554/eLife.54928>`_, (2020)
 
@@ -44,7 +44,7 @@ Publications 2020 PSMN
 
 *   **C Panaritis, C Michel, M Couillard, EA Baranova, SN Steinmann**, Check Elucidating the role of electrochemical polarization on the selectivity of the CO 2 hydrogenation reaction over Ru, *ELECTROCHIMICA ACTA  Volume: 350* Article Number: 136405  DOI: 10.1016/j.electacta.2020.136405  Published: AUG 1 2020  
 
-*   **N Abidi, A Bonduelle-Skrzypczak, SN Steinmann**, Revisiting the Active Sites at the MoS2/H2O Interface via Grand-Canonical DFT: The Role of Water Dissociation, *ACS APPLIED MATERIALS & INTERFACES  Volume: 12  Issue: 28 * Pages: 31401-31410  DOI: 10.1021/acsami.0c06489  Published: JUL 15 2020  
+*   **N Abidi, A Bonduelle-Skrzypczak, SN Steinmann**, Revisiting the Active Sites at the MoS2/H2O Interface via Grand-Canonical DFT: The Role of Water Dissociation, *ACS APPLIED MATERIALS & INTERFACES  Volume: 12  Issue: 28 * Pages: 31401-31410  DOI: 10.1021/acsami.0c06489  Published: JUL 15 2020
 
 *   **A Curutchet, P Colinet, C Michel, SN Steinmann, T Le Bahers**, Two-sites are better than one: revisiting the OER mechanism on CoOOH by DFT with electrode polarization, *PHYSICAL CHEMISTRY CHEMICAL PHYSICS  Volume: 22  Issue: 13* Pages: 7031-7038  DOI: 10.1039/d0cp00281j  Published: APR 7 2020  
 

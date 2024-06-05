@@ -43,5 +43,5 @@ Représentant et responsable de l'ouverture des comptes: à déterminer.
 .. container:: text-center
 
     .. image:: ../../../_static/statistiques/plot_by_labs_lmfa.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique LMFA

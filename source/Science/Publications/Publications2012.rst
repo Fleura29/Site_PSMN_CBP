@@ -3,29 +3,29 @@
 Publications 2012
 =================
 
-Publications 2012 PSMN
-----------------------
+PSMN
+----
 
 Statistiques des journaux
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. container:: d-flex
+.. container:: row rows-cols-3
 
-    .. container::
+    .. container:: col
 
         * `H index des journaux <http://www.scimagojr.com/help.php#rank_journals>`_
 
         .. image:: ../../_static/img_publications/plot_2012_hindex-1.png
             :alt: Graphique plot_2012_hindex-1
 
-    .. container::
+    .. container:: col
 
         * `Facteur d'impact des journaux. <https://www.scijournal.org/>`_
 
         .. image:: ../../_static/img_publications/plot_2012_if-1.png
             :alt: Graphique plot_2012_if-1
 
-    .. container::
+    .. container:: col
 
         * `Scientific Journal Ranking. <http://www.scimagojr.com/help.php#rank_journals>`_
 

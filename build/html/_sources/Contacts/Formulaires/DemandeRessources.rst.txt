@@ -32,8 +32,8 @@ Demande d'accès aux ressources du PSMN
                         <input type="text" class="form-control form-style" id="inputSurname" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputPrenom">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputPrenom" required>
+                        <label for="inputName">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputName" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputDateNaiss">Date de naissance*</label>

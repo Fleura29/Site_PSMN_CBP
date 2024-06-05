@@ -3,8 +3,8 @@
 Publications 2008
 =================
 
-Publications 2008 CBP
----------------------
+CBP
+---
     
 * **Rosa, Angelo; Everaers, Ralf**, `Structure and Dynamics of Interphase Chromosomes <http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000153>`_ , PLOS COMPUTATIONAL BIOLOGY  Volume: 4   Issue: 8 Article Number: e1000153 DOI: 10.1371/journal.pcbi.1000153, August 22,  2008 
 
