@@ -1,0 +1,273 @@
+<header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="w-25 pt-3">
+            <a href="{{ pathto('index') }}">
+                <img class="img-fluid" src="{{ pathto('_static/cbpsmn_logo.png', 1) }}" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="w-25">
+            <div class="d-flex justify-content-end w-25" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="{{ pathto('_static/fr.png', 1) }}" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="{{ pathto('_static/en.png', 1) }}" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="{{ pathto('_static/Logo_ENS_Lyon.png', 1) }}" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+                                             
+                        <!--<script>
+                            
+                            function createA(att, url, nom){
+                                const a= document.createElement("a");
+                                a.setAttribute("class", att);
+                                a.href= url ;
+                                a.textContent= nom;
+                                return a;
+                            };
+
+                            fetch("{{ pathto('_static/Liens')}}")
+                            .then((response) => response.json())
+                            .then((json) => {
+                                
+                                json.Menu.titre.forEach((element) => {
+                                    const li_menu = document.createElement("li");
+                                    li_menu.setAttribute("class", "nav-item dropdown");
+                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
+
+                                    menu.append(li_menu);
+                                    li_menu.append(a_titre);
+
+                                    const div_menu = document.createElement("div");
+                                    div_menu.setAttribute("class", "dropdown-menu");
+                                    li_menu.append(div_menu);
+
+                                    const ul_titre = document.createElement("ul");
+                                    div_menu.append(ul_titre);
+                                    const obj= Object.entries(json.Menu[element]);
+
+                                    for (const [key,values] of obj){
+                                        if (typeof values !== 'object') {
+   
+                                            const li_sous_menu = document.createElement("li");
+
+                                            if(values === "#"){ 
+                                                const a_sous_titre = createA("dropdown-item", values , key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            else{
+                                                const a_sous_titre = createA("dropdown-item", values, key);
+                                                ul_titre.append(li_sous_menu);
+                                                li_sous_menu.append(a_sous_titre);
+                                            }
+                                            
+                                        } else {     
+                                            const li_sous_menu = document.createElement("li");
+                                            li_sous_menu.setAttribute("class", "nav-item dropend");
+                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
+
+                                            ul_titre.append(li_sous_menu);
+                                            li_sous_menu.append(a_sous_titre);
+
+                                            const div_sous_menu = document.createElement("div");
+                                            div_sous_menu.setAttribute("class", "dropdown-menu");
+                                            li_sous_menu.append(div_sous_menu);
+
+                                            const ul_ss_titre = document.createElement("ul");
+                                            div_sous_menu.append(ul_ss_titre);
+                                            const obj2 = Object.entries(json.Menu[element][key]);
+                                            
+                                            for (let [keys, val] of obj2) {
+                                                const li_ss_menu = document.createElement("li");
+                                                const a_ss_titre = createA("dropdown-item", val, keys);
+
+                                                ul_ss_titre.append(li_ss_menu);
+                                                li_ss_menu.append(a_ss_titre);
+                                            }
+                                        }
+                                    }
+                                });
+                            })
+                        </script>-->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Actualites') }}">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Bureau') }}">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Evenements') }}">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Liens') }}">Liens</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Services') }}">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Laboratoires/ENS') }}">Les laboratoires ENS Lyon</a></li> 
+                                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Laboratoires/Udl') }}">Les laboratoires Udl</a></li>
+                                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Laboratoires/AURA') }}">Les laboratoires région AURA</a></li>
+                                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Laboratoires/CdC') }}">Les Centres de Calculs</a></li>
+                                                    <li><a class="dropdown-item" href="{{ pathto('Accueil/Laboratoires/PP') }}">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Informations/Arrets') }}">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Informations/Absences') }}">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Informations/Calendrier') }}">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                    <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
+                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
+                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/DataCenter')}}">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/ClustersServeurs')}}">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/EquipInfo')}}">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/ProjetInfra')}}">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                            <li><a class="dropdown-item" href="{{ pathto('Plateformes/Supports/RCS')}}">Support et recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="{{ pathto('Plateformes/Supports/RIS')}}">Support et recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="{{ pathto('Plateformes/Supports/HN')}}">Support en humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="{{ pathto('Plateformes/Supports/AFJ')}}">Support administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                             </ul>   
+                        </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                        <div class="dropdown-menu menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="{{ pathto('Formation/Formation')}}">Formation</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Formation/Master/MEMA')}}">Master Erasmus (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Formation/Master/MNPC')}}">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Formation/Stage')}}">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="{{ pathto('Science/Publications2024') }}">Publications</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Science/Theses') }}">Thèses</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Science/CreationsMulti') }}">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Science/Chercheurs') }}">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Science/Projets') }}">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Animation/EvenementsScient') }}">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="#">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            
+                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="{{ pathto('Contacts/Acces') }} ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Contacts/Equipe') }}">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="{{ pathto('Contacts/Calendrier') }}">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Contacts/Formulaires') }}">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                        </li>
+                          
+                    </ul>
+                </div>
+
+                {%- block sidebarsearch %}
+                <div class="container w-25">
+                    {%- include "searchbox.html" %}
+                </div>
+                
+                {%- endblock %}
+                
+                
+                <div>{{ contenu_liens }}</div>
+            </div>
+        </nav>
+</header>

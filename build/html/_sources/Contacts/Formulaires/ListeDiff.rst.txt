@@ -19,8 +19,8 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
                         <input type="text" class="form-control form-style" id="Surname">
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="Name">
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom">
                     </div>
                 </div>
                 <div class="col">

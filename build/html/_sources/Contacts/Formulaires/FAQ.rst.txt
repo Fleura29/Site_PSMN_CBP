@@ -13,8 +13,8 @@ Suggérer une entrée de F.A.Q.
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName" aria-describedby="emailHelp" required>
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>

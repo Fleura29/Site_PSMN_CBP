@@ -21,8 +21,8 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
                         <input type="text" class="form-control form-style" id="inputSurname" >
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom(s)*</label>
-                        <input type="text" class="form-control form-style" id="inputName">
+                        <label for="inputPrenom">Prénom(s)*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom">
                     </div>
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>

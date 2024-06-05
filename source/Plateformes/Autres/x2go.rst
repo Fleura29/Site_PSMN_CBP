@@ -15,6 +15,7 @@ Introduction
 ------------
 
 Le Centre Blaise Pascal dispose de plateaux techniques, notamment  des noeuds de clusters, destinés :
+
   * à l'initiation au calcul scientifique, notamment `MPI <http://en.wikipedia.org/wiki/Message_Passing_Interface>`_, `OpenMP <http://en.wikipedia.org/wiki/OpenMP>`_, `CUDA <http://en.wikipedia.org/wiki/CUDA>`_ `OpenCL <http://en.wikipedia.org/wiki/Opencl>`_
   * au développement d'applications dans le domaine du calcul scientifique
   * à l'intégration de démonstrateurs agrégeant des technologies matures dans un ensemble original

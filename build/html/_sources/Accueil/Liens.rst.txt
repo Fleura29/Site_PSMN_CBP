@@ -1,8 +1,12 @@
 Liens
 =====
 
+.. |br| raw:: html
+
+   <br>
+
 Principaux partenaires
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 * `Fédération Lyonnaise de Modélisation et Sciences Numériques (FLMSN) <http://www.flchp.univ-lyon1.fr>`_
 * `Pôle Scientifique de Modélisation Numérique (PSMN) <http://www.ens-lyon.fr/PSMN/doku.php>`_
@@ -16,7 +20,7 @@ Principaux partenaires
 * `LyonCalcul <http://lyoncalcul.univ-lyon1.fr/spip.php>`_
 
 Centres de calcul
------------------
+~~~~~~~~~~~~~~~~~
 
 * `Pôle de Compétence en Calcul Haute Performance Dédié (PCCHPD) <http://www.p2chpd.univ-lyon1.fr/>`_
 * `Pôle de Modélisation et de Calcul en Sciences de l'Ingénieur et de l'Information (PMCSII) <http://www.ec-lyon.fr/47342913/0/fiche___pagelibre/&RH=>`_
@@ -26,16 +30,13 @@ Centres de calcul
 * `PRACE (Partnership for Advanced Computing in Europe) <http://www.prace-ri.eu/?lang=en>`_
 
 Laboratoires
-------------
+~~~~~~~~~~~~
 
-.. container:: d-flex
+.. image:: ../_static/Liens.jpg
+    :class: img-fluid img-float pe-2
+    :alt: Lyon
 
-    .. container:: text-align-start
-
-        .. image:: ../_static/Liens.jpg
-            :alt: Lyon
-
-    La région Rhône-Alpes est le 2e pôle français de R&D. L'aglomération lyonnaise à elle seule compte 120 000 étudiants (dont 15 000 en 3e cycle), plus de 300 laboratoires de recherche publique et 7 sites scientifiques et technologiques, cinq pôles de compétitivité dont un pôle "mondial", Lyon BioPôle, et un pôle "à vocation mondiale", AXELERA. Le Pôle Universitaire de Lyon (PUL) regroupe 16 établissements (dont l’Université Claude Bernard Lyon 1, l’Ecole Normale Supérieure de Lyon, l’Ecole Centrale de Lyon, l’INSA de Lyon et l' Institut Polytechnique de Lyon comprenant le CPE Lyon, l’ECAM Lyon, l'ISARA Lyon et l'ITECH Lyon). L’université de Lyon a identifié dans sa stratégie de recherche la modélisation et le calcul scientifiques comme une thématique forte et transverse à l’ensemble des établissements.
+La région Rhône-Alpes est le 2e pôle français de R&D. L'aglomération lyonnaise à elle seule compte 120 000 étudiants (dont 15 000 en 3e cycle), plus de 300 laboratoires de recherche publique et 7 sites scientifiques et technologiques, cinq pôles de compétitivité dont un pôle "mondial", Lyon BioPôle, et un pôle "à vocation mondiale", AXELERA. Le Pôle Universitaire de Lyon (PUL) regroupe 16 établissements (dont l’Université Claude Bernard Lyon 1, l’Ecole Normale Supérieure de Lyon, l’Ecole Centrale de Lyon, l’INSA de Lyon et l' Institut Polytechnique de Lyon comprenant le CPE Lyon, l’ECAM Lyon, l'ISARA Lyon et l'ITECH Lyon). L’université de Lyon a identifié dans sa stratégie de recherche la modélisation et le calcul scientifiques comme une thématique forte et transverse à l’ensemble des établissements. |br| |br|
 
 * `Institut Camile Jordan <http://math.univ-lyon1.fr/>`_
 * `Laboratoire de Physique de la Matière Condensée et Nanostructure <http://www-lpmcn.univ-lyon1.fr/site/>`_
@@ -63,7 +64,7 @@ Laboratoires
 * `Le groupe Calcul <http://calcul.math.cnrs.fr/>`_
 
 Écoles doctorales
------------------
+~~~~~~~~~~~~~~~~~
 
 * `École doctorale Informatique et Mathématiques (InfoMaths) <http://math.univ-lyon1.fr/~kellendonk/MathIf/>`_
 * `École doctorale Physique et Astrophysique (PHAST) <http://phast.univ-lyon1.fr/>`_

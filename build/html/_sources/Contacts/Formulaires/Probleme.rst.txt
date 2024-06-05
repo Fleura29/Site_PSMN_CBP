@@ -7,17 +7,16 @@ ou poser une question...
 
 .. raw:: html
 
-    <div class="container text-center">
-        <p class="d-inline-block bg-warning-subtle p-3 rounded fs-13">
-           Seuls les emails <B>professionnels</B>, en relation avec les laboratoires membres, sont acceptés (pas de gmail, hotmail, yahoo…). 
-        </p>
-    </div>
+.. container:: text-center w-75
 
-    <div class="container text-center">
-        <p class="d-inline-block bg-body-secondary p-3 rounded fs-13">
-           <B>N'oubliez pas de préciser, quand vous les connaissez, le job_id, le nom de la machine, du cluster et tout ce qui est pertinent pour régler votre problème.</B>
-        </p>
-    </div>
+    .. container:: d-inline-block bg-warning-subtle pt-3 rounded fs-13
+
+        Seuls les emails **professionnels**, en relation avec les laboratoires membres, sont acceptés (pas de gmail, hotmail, yahoo…). 
+
+    .. container:: d-inline-block bg-body-secondary pt-3 my-3 rounded fs-13
+          
+        **N'oubliez pas de préciser, quand vous les connaissez, le job_id, le nom de la machine, du cluster et tout ce qui est pertinent pour régler votre problème.**
+
 
 .. container:: pt-2 border border-secondary-subtle 
 
@@ -31,8 +30,8 @@ ou poser une question...
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName" aria-describedby="emailHelp">
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>

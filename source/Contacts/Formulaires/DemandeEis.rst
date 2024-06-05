@@ -1,17 +1,13 @@
 .. _demande-eis:
 
 Demande d'expertise en informatique scientifique
-=================================================
+================================================
 
-.. container:: text-center
+.. container:: text-center w-75 
     
-    .. raw:: html
+    .. container:: d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13
 
-        <div class="container text-center w-75">
-            <p class="d-inline-block bg-warning-subtle p-3 rounded fs-13">
-                Toutes les personnes non permanentes (étudiantes, stagiaires, doctorantes, …) doivent IMPERATIVEMENT être parrainées par une personne permanente de l'établissement, soit dans votre laboratoire de recherche, soit dans votre département d'einseignement. 
-            </p>
-        </div>
+        Toutes les personnes non permanentes (étudiantes, stagiaires, doctorantes, …) doivent IMPERATIVEMENT être parrainées par une personne permanente de l'établissement, soit dans votre laboratoire de recherche, soit dans votre département d'enseignement. 
 
 .. container:: pt-2 border border-secondary-subtle 
 
@@ -25,8 +21,8 @@ Demande d'expertise en informatique scientifique
                         <input type="text" class="form-control form-style" id="inputSurname" >
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom(s)*</label>
-                        <input type="text" class="form-control form-style" id="inputName">
+                        <label for="inputPrenom">Prénom(s)*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom">
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>

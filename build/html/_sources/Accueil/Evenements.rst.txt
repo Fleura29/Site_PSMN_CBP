@@ -3,6 +3,12 @@
 Evènements
 ==========
 
+.. role:: line-bold
+    :class: line-bold
+
+.. role:: line
+    :class: line
+
 Evènements 2024 du Centre Blaise Pascal
 ---------------------------------------
 
@@ -35,9 +41,7 @@ Evénements 2023 du Centre Blaise Pascal
 
     **03/04/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #6
 
-    .. raw:: html
-
-        <p><s><B>27/03/2023 - Formation GPU par la pratique</B> : M7-1H04 de 11h30 à 13h00, séance #6</s></p>
+    :line-bold:`27/03/2023 - Formation GPU par la pratique` :line:`: M7-1H04 de 11h30 à 13h00, séance #6`
 
     **23/03/2023 - Journée Immersion Cooling** : Amphithéâtre A
 
@@ -60,13 +64,11 @@ Un coup d'oeil sur les machines accessibles ? Le réflexe `Cloud@CBP <http://www
     
 .. container:: text-center
 
-    .. raw:: html
-
-        <p class="d-inline-block bg-warning-subtle p-3 rounded fs-13">
-            Les machines de <a href="http://www.cbp.ens-lyon.fr/python/forms/CloudCBP">Cloud@CBP </a> présentes dans les 
-            salles M7-1H04, M7-1H19 et M-GN-102 sont éteintes de 19h30 à 7h30 du matin. 
-            Elles sont rallumées automatiquement. Les autres machines restent allumées H24
-        </p>
+    .. container:: d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13
+            
+        Les machines de `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ présentes dans les 
+        salles M7-1H04, M7-1H19 et M-GN-102 sont éteintes de 19h30 à 7h30 du matin. 
+        Elles sont rallumées automatiquement. Les autres machines restent allumées H24
     
 Documentations pour bien utiliser les espaces de stockage du CBP ? Les `$HOME et /projects <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Qreuil_stockages1.jpg>`_ et `/local et /scratch <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Qreuil_stockages2.jpg>`_  
 

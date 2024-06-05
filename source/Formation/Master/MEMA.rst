@@ -27,7 +27,7 @@ Master Erasmus Mundus AtoSiM
 * l'Ecole normale supérieure de Lyon, France
 * Universiteit van Amsterdam, Pays-Bas
 * Vrije Universiteit Amsterdam, Pays-Bas
-* Università degli studi di Roma, "la Sapienza", Italie 
+* Università degli studi di Roma, "la Sapienza", Italie  
 
 ..  container:: text-center
 

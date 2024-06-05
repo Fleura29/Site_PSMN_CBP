@@ -1,21 +1,17 @@
 Demande d'installation ou de mise à jour d'un logiciel
 ======================================================
 
-.. raw:: html
+.. |br| raw:: html
 
-    <div class="container text-center">
-        <p class="d-inline-block bg-warning-subtle p-3 rounded fs-13">
-        <B>IMPORTANT NOTICE</B>
+   <br>
 
-        We (psmn administrators) <B>DO NOT</B> register for softwares.
+.. container:: text-center d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13
 
-        But, of course, we agree to set whatever permissions, if asked to.
-
-        If a user want a registered software, he has to register himself, obtain the software (Linux x86_64 version, or sources, if avalaible), then give it to PSMN admins in order to install it.
-
-        Please let us know when, and where (your /home@psmn, for example), the software you want will be available.
-        </p>
-    </div>
+    **IMPORTANT NOTICE** |br|
+    We (psmn administrators) **DO NOT** register for softwares. |br|
+    But, of course, we agree to set whatever permissions, if asked to. |br|
+    If a user want a registered software, he has to register himself, obtain the software (Linux x86_64 version, or sources, if avalaible), then give it to PSMN admins in order to install it. |br|
+    Please let us know when, and where (your /home@psmn, for example), the software you want will be available.
 
 Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, d'obtenir les droits d'usage du logiciel (achat ou inscription, et téléchargement). 
 
@@ -31,8 +27,8 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName" aria-describedby="emailHelp" required>
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>

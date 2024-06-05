@@ -129,6 +129,7 @@ a:hover{
     .navbar-collapse{
         text-align: center;
     }
+    
 }
 
 @media screen and (max-width:992px){
@@ -167,23 +168,20 @@ a:hover{
 }
 
 h1{
-    font-size: 2rem;
- 
+    font-size: 1.7rem;
+    border-bottom: 1px solid #E69645;
+    margin-bottom: 0.9rem;
+    
 }
 
 h2{
     font-size: 1.5rem;
-    border-bottom: 1px solid #E69645;
-    margin-bottom: 0.9rem;
+    text-decoration: underline;
 }
 
 h3{
     font-size: 1.2rem;
-    text-decoration: underline;
-}
-
-h5{
-    text-decoration: underline;
+    text-decoration: underline dotted;
 }
 
 .btn:hover{
@@ -239,6 +237,7 @@ h5{
 
 table{
     margin: 0 auto 10px;
+    width: 100%;
 }
 
 th{
@@ -283,6 +282,11 @@ th, td{
     text-decoration: line-through;
 }
 
+.line-bold{
+    text-decoration: line-through;
+    font-weight: bolder;
+}
+
 .img-float{
     float: left;
 }
@@ -293,4 +297,8 @@ th, td{
 
 a.headerlink{
     display: none;
+}
+
+.img-max-width{
+    max-width: 100%;
 }

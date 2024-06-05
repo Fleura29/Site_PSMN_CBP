@@ -1,28 +1,24 @@
 Demande d'accès aux ressources du PSMN
 ======================================
 
-.. raw:: html
-    
-    <div class="container text-center w-75">
-        <p class="d-inline-block bg-danger-subtle p-3 rounded fs-13">
-            Les ressources du PSMN ne sont pas ouvertes au grand public. Vous devez justifier d'une 
-            appartenance, ou collaboration, à un laboratoire membre ou partenaire du PSMN.
-            Seuls les emails <B>professionnels</B>, en relation avec les laboratoires membres, sont acceptés 
-            (les adresses en gmail, hotmail, yahoo… <B>SERONT REFUSÉES !!</B>). 
-        </p>
-    </div>
-    <div class="container text-center w-75">
-        <p class="d-inline-block bg-warning-subtle p-3 rounded fs-13">
-            Les comptes sont effacés régulièrement, <B>sans avertissements</B>, lorsque nous n'avons plus de moyens 
-            de contacts avec l'utilisateur (email, collaboration). 
-        </p>
-    </div>
-    <div class="container text-center w-75">
-        <p class="d-inline-block bg-success-subtle p-3 rounded fs-13">
-            Fermeture pour raison de sécurité : Un compte peut être bloqué, fermé ou banni, à tout moment et 
-            sans préavis sur décision de la Direction du PSMN et/ou du RSSI de l'ENS de Lyon. 
-        </p>
-    </div>
+.. container:: text-center w-75
+
+    .. container:: bg-danger-subtle pt-2 pb-1 mb-3 rounded fs-13
+
+        Les ressources du PSMN ne sont pas ouvertes au grand public. Vous devez justifier d'une 
+        appartenance, ou collaboration, à un laboratoire membre ou partenaire du PSMN.
+        Seuls les emails **professionnels**, en relation avec les laboratoires membres, sont acceptés 
+        (les adresses en gmail, hotmail, yahoo… **SERONT REFUSÉES !!**).
+
+    .. container:: bg-warning-subtle pt-2 pb-1 mb-3 rounded fs-13
+
+        Les comptes sont effacés régulièrement, **sans avertissements**, lorsque nous n'avons plus de moyens 
+        de contacts avec l'utilisateur (email, collaboration).
+
+    .. container:: bg-success-subtle pt-2 pb-1 mb-3 rounded fs-13
+
+        Fermeture pour raison de sécurité : Un compte peut être bloqué, fermé ou banni, à tout moment et 
+        sans préavis sur décision de la Direction du PSMN et/ou du RSSI de l'ENS de Lyon. 
 
 .. container:: pt-2 border border-secondary-subtle 
 
@@ -36,12 +32,12 @@ Demande d'accès aux ressources du PSMN
                         <input type="text" class="form-control form-style" id="inputSurname" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName" required>
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputBirthDate">Date de naissance*</label>
-                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputBirthDate"  value="" required>
+                        <label for="inputDateNaiss">Date de naissance*</label>
+                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputDateNaiss"  value="" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>

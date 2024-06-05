@@ -1,9 +1,6 @@
 Data Center
 ===========
 
-Data Center
------------
-
 Sécurité
 ~~~~~~~~
 

@@ -5,13 +5,11 @@ Formulaire de réservation de la salle de TP numériques du CBP
 
 `Calendrier de disponibilité de la salle de TP numériques du CBP <calendrier>`_ 
 
-.. raw:: html
+.. container:: text-center w-75
 
-    <div class="container text-center w-75">
-        <p class="d-inline-block bg-body-secondary p-3 rounded fs-13">
-            N'oubliez pas de consulter le <a href="#">calendrier de disponibilité de la salle</a> avant de réserver
-        </p>
-    </div>
+    .. container:: d-inline-block bg-body-secondary p-3 rounded fs-13
+
+        N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
 
 .. container:: pt-2 border border-secondary-subtle 
     
@@ -25,8 +23,8 @@ Formulaire de réservation de la salle de TP numériques du CBP
                         <input type="text" class="form-control form-style" id="exampleInputEmail1">
                     </div>
                     <div class="mb-2">
-                        <label for="exampleInputEmail1">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="exampleInputEmail1">
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom">
                     </div>
                     <div class="mb-2">
                         <label for="exampleInputEmail1">Laboratoire*</label>

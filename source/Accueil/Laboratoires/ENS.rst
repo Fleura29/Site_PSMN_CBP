@@ -1,7 +1,7 @@
 .. _ens:
 
-ENS
-===
+Les laboratoires de l'ENS de Lyon
+=================================
 
 .. container:: disp
    
@@ -31,10 +31,6 @@ ENS
         Statistiques/ssi
         Statistiques/umr
         Statistiques/upma
-
-   
-Les laboratoires de l'ENS de Lyon
----------------------------------
 
 * `Laboratoire de Chimie <http://www.ens-lyon.fr/CHIMIE>`_ (LCH - UMR 5182) CNRS, ENS-Lyon, UCBL :ref:`statistiques <lch>`
 
