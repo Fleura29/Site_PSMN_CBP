@@ -13,7 +13,7 @@
 Directeur, responsable administratif
 ------------------------------------
 
-.. container:: row border-bottom border-secondary-subtle my-3 py-1 
+.. container:: row border-bottom border-secondary-subtle mb-3 
 
     .. container:: col-12 col-md-6
 
@@ -72,7 +72,7 @@ Gestionnaire
 Équipe technique
 ----------------
 
-.. container:: row border-bottom border-secondary-subtle my-3 pt-1
+.. container:: row border-bottom border-secondary-subtle mt-3 pt-1
 
     .. container:: col-12 col-md-6
 
@@ -93,7 +93,7 @@ Gestionnaire
         - Outils du Calcul Scientifique |br|
         - Bases de données 
 
-.. container:: row border-bottom border-secondary-subtle my-3 pt-1
+.. container:: row border-bottom border-secondary-subtle mt-3 pb-2
 
     .. container:: col-12 col-md-6
 
@@ -118,7 +118,7 @@ Gestionnaire
         - Aide au calcul scientifique (intégration logicielle, portage de codes, …) |br|
         - Veille technologique sur des domaines innovants
 
-.. container:: row border-bottom border-secondary-subtle my-3 pt-1
+.. container:: row border-bottom border-secondary-subtle mt-3
 
     .. container:: col-12 col-md-6
 
@@ -143,7 +143,7 @@ Gestionnaire
         - Outils du Calcul Scientifique (installation compilateurs/bibliothèques scientifiques, intégration logicielle, portage de codes) |br|
         - Site Internet PSMN
 
-.. container:: row border-bottom border-secondary-subtle my-3 pt-1
+.. container:: row border-bottom border-secondary-subtle py-3
 
     .. container:: col-12 col-md-6
         
@@ -162,7 +162,7 @@ Gestionnaire
 
         :underline:`Contact pour :` PSMN-Cloud
 
-.. container:: row border-bottom border-secondary-subtle my-3 pb-1
+.. container:: row border-bottom border-secondary-subtle py-3 mb-3
   
     .. container:: col-12 col-md-6
 

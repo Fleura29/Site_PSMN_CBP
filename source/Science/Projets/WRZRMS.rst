@@ -3,27 +3,20 @@
 Waves in the radiative zones of rotating magnetized stars
 =========================================================
 
-.. |br| raw:: html
+.. image:: ../../_static/img_projets/wavesstars.png
+    :class: img-float pe-2
+    :width: 150px
+    :alt: Image wavesstars
 
-   <br>
+Service AstroPhysique (Sap), IRFU, CEA Saclay : A.Valade, V.Prat, S.Mathis, K.Augustson 
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/wavesstars.png
-        :class: img-fluid
-        :width: 200px
-        :alt: Image wavesstars
+Centre Blaise Pascal : Emmanuel Quémener
 
-    .. container::
-
-        Service AstroPhysique (Sap), IRFU, CEA Saclay : A.Valade, V.Prat, S.Mathis, K.Augustson |br|
-        Centre Blaise Pascal : Emmanuel Quémener
-
-        To have a full understanding of the dynamics of stellar and planetary systems, 
-        we cannot consider them as only interacting rotating solid bodies. Indeed, a 
-        more nuanced approach includes the interactions through processes such as 
-        internal energy dissipation due to tidal coupling between the star and its 
-        planets, and even between the planets themselves. 
+To have a full understanding of the dynamics of stellar and planetary systems, 
+we cannot consider them as only interacting rotating solid bodies. Indeed, a 
+more nuanced approach includes the interactions through processes such as 
+internal energy dissipation due to tidal coupling between the star and its 
+planets, and even between the planets themselves. 
 
 The studies of these internal waves have now reached a level of
 accuracy that leads us to consider low amplitude but complex magnetic

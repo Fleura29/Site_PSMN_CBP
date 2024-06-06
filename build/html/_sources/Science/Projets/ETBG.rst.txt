@@ -6,20 +6,17 @@ Ecoulements turbulents bidimensionnels et géophysiques
 .. role:: underline
     :class: underline
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/freddy1.png
-        :class: img-fluid
-        :width: 200px
-        :alt: Image freddy1
 
-    .. container::
+.. image:: ../../_static/img_projets/freddy1.png
+    :class: img-float pe-2
+    :width: 120px
+    :alt: Image freddy1
 
-        Coordination : Freddy Bouchet
+Coordination : Freddy Bouchet
 
-        Partenaires : Tomás Tangarife, Cezare Nardini, Antoine Venaille 
+Partenaires : Tomás Tangarife, Cezare Nardini, Antoine Venaille 
 
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru  
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru  
 
 Dans ce travail on s'interesse à l'étude de l’équation barotrope 2D avec un forçage aléatoire (bruit gaussien décorrélé en temps et corrélé en espace). Un code de simulation est développé par T. Tangarife dans le cadre de sa thèse.
 

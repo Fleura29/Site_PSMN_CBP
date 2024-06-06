@@ -1,5 +1,5 @@
-Formulaire de demande d'ouverture de compte sur les équipements du CBP
-======================================================================
+Demande d'ouverture de compte sur les équipements du CBP
+========================================================
 
 Le Centre Blaise Pascal dispose de plusieurs équipements en libre-service, leur accès nécessite d'être connu du système d'information de l'école donc d'être rattaché à un laboratoire de l'établissement ou le CBP lui même.
 

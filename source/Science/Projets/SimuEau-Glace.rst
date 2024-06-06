@@ -7,15 +7,13 @@ Simulations hautes performances des écoulements océaniques et des interactions
 
    <br>
 
-.. container:: d-flex pb-2
+.. image:: ../../_static/img_projets/cbp_ens.jpeg
+    :class: img-float pe-2
+    :alt: Logo CBP
 
-    .. image:: ../../_static/img_projets/cbp_ens.jpeg
-        :alt: Logo CBP
+Chercheurs : Louis-Alexandre Couston, Clément de la Salle (ENS de Lyon) 
 
-    .. container::
-
-        Chercheurs : Louis-Alexandre Couston, Clément de la Salle (ENS de Lyon) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN) 
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN) 
         
 Le projet de recherche ci-dessus nécessite la réalisation de calculs massivement parallèles des équations de Navier-Stokes. 
 

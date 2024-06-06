@@ -7,19 +7,14 @@ A landscape of transposable elements in fish
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/fishinte.jpg
-        :class: img-fluid
-        :width: 150px
-        :alt: Image fishinte
+.. image:: ../../_static/img_projets/fishinte.jpg
+    :class: img-float pe-2
+    :alt: Image fishinte
 
-    .. container::
+Equipe Volff (IGFL/UMR 5242) : Domitille Chalopin, Magali Naville
 
-        Equipe Volff (IGFL/UMR 5242) : Domitille Chalopin, Magali Naville
-        
-        Centre Blaise Pascal : Emmanuel Quémener
-       
+Centre Blaise Pascal : Emmanuel Quémener
+
 Les éléments transposables (ETs) sont des éléments génétiques mobiles
 capables de s'exciser et de s'insérer dans l'ADN. Ce mouvement de
 matériel ADN peut dans certains cas avoir des conséquences néfastes pour

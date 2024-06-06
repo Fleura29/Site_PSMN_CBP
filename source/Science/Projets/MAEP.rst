@@ -3,20 +3,15 @@
 Modélisation de l’atmosphère des étoiles et des planètes
 ========================================================
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/phoenix.png
-        :class: img-fluid
-        :width: 150px
-        :alt: Image phoenix
+.. image:: ../../_static/img_projets/phoenix.png
+    :class: img-float pe-2
+    :alt: Image phoenix
 
-    .. container::
+Coordination : France Allard (ENS de Lyon, CRAL)
 
-        Coordination : France Allard (ENS de Lyon, CRAL)
+Parteners : l'equipe de F.Allard (ENS de Lyon, CRAL)
 
-        Parteners : l'equipe de F.Allard (ENS de Lyon, CRAL)
-
-        Centre Blaise Pascal : Cerasela Calugaru
+Centre Blaise Pascal : Cerasela Calugaru
 
 Dans ce projet on s’intéresse à la construction des modèles numériques pour décrire l’atmosphère des étoiles de faible masse, des naines brunes et des planètes extrasolaires. Ces travaux nécessitent des simulations numériques intensifs qui sont calibrées avec les données d’observation (de nature électromagnétique). Pour ce faire, des codes de calcul sont utilisés, dont PHOENIX et CO5BOLD.  Le code PHOENIX est un code complexe développé par F. Allard en collaboration avec l’Observatoire de Hambourg. Il est principalement écrit en Fortran 95, avec certaines parties en C (pour les I/O) et C++ (pour une haute précision arithmétique utilisant la librairie QD) et il est parallélisé avec MPI (et en partie avec OpenMP). 
 

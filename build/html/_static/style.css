@@ -106,7 +106,7 @@ a:hover{
         text-align: center;
     }
     .wid-header{
-        width: 45%;
+        width: 90%;
     }
 }
 
@@ -129,13 +129,8 @@ a:hover{
         position: absolute;
         right: 50px;
     }
-    .dropdown > .dropdown-menu.show{
+    .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
         display: block;
-    }
-    
-    .dropend > .dropdown-menu.show{
-        display: block;
-        position: absolute;
     }
     .nav-link.dropdown-toggle{
         font-size: 17px !important;
@@ -143,7 +138,6 @@ a:hover{
     .dropdown-menu{
         border: none;
     }
-    
 }
 
 @media screen and (min-width:992) and (max-width:1058px){
@@ -260,8 +254,9 @@ th, td{
     font-weight: bolder;
 }
 
-.img-float{
-    float: left;
+.it-bold{
+    font-style: italic;
+    font-weight: bolder;
 }
 
 /*---------- Ajouts Sphinx ----------*/
@@ -288,5 +283,13 @@ a.headerlink{
 
 .cursor{
     cursor: pointer;
+}
+
+.img-float{
+    float: left;
+}
+
+.img-float-r{
+    float: right;
 }
 

@@ -3,20 +3,15 @@
 Convection dans le manteau et océans de magma
 =============================================
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/labrosse.png
-        :class: img-fluid
-        :width: 130px
-        :alt: Image labrosse
+.. image:: ../../_static/img_projets/labrosse.png
+    :class: img-float pe-2
+    :alt: Image labrosse
 
-    .. container::
+Coordination : Stephane Labrosse
 
-        Coordination : Stephane Labrosse
+Partenaires : Adrien Morison, Mathieu Bouffard, Renaud Deguen, Fabien Dubuffet, Thierry Alboussière 
 
-        Partenaires : Adrien Morison, Mathieu Bouffard, Renaud Deguen, Fabien Dubuffet, Thierry Alboussière 
-        
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru 	
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru 	
 
 Intervention of PSMN/CBP
 ------------------------

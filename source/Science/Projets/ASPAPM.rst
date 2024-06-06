@@ -6,22 +6,19 @@ Apprentissage statistique profond (deep learning) pour l’analyse de processus 
 .. |br| raw:: html
 
    <br>
+   
+.. image:: ../../_static/img_projets/roux2019.jpg
+    :class: img-float pe-2
+    :alt: Image roux2019
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/roux2019.jpg
-        :class: img-fluid
-        :width: 200px
-        :alt: Image roux2019
+Stéphane Gaëtan (Physique, ENS-Lyon), 
 
-    .. container::
+Centre Blaise Pascal : Emmanuel Quémener
 
-        Stéphane Gaëtan (Physique, ENS-Lyon), |br|
-        Centre Blaise Pascal : Emmanuel Quémener
+**Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales.**
 
-        Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales.
-        L’objet de ce travail est d’étudier les techniques de deep learning sur des processus à invariance d’échelle. D’une part, il s’agit d’étudier comment des outils de type Generative Adversarial Network permettent la génération de signaux artificiels qui reproduisent les statistiques clés des processus. 
-        D’autre part, on s’intéressera à la classification automatique de textures multifractales par deep learning (réseaux CNN) et on cherchera à étudier les caractéristiques choisies par ces réseaux.
+L’objet de ce travail est d’étudier les techniques de deep learning sur des processus à invariance d’échelle. D’une part, il s’agit d’étudier comment des outils de type Generative Adversarial Network permettent la génération de signaux artificiels qui reproduisent les statistiques clés des processus. 
+D’autre part, on s’intéressera à la classification automatique de textures multifractales par deep learning (réseaux CNN) et on cherchera à étudier les caractéristiques choisies par ces réseaux.
 
 Contribution du CBP
 -------------------

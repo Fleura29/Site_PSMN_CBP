@@ -10,16 +10,14 @@ ANR GALAC
 .. role:: underline
     :class: underline
 
-.. container:: d-flex 
+.. image:: ../../_static/img_projets/acide_lactique.png
+    :class: img-float pe-2
+    :alt: Image acide_lactique
 
-    .. image:: ../../_static/img_projets/acide_lactique.png
-        :alt: Image acide_lactique
+**Synthèse d'acide acrylique à partir du glycérol via l'acide lactique** 
 
-    .. container::
-
-        **Synthèse d'acide acrylique à partir du glycérol via l'acide lactique** |br|
-        Coordination ENS : Philippe Sautet & Carine Michel |br|
-        Doctorant : Jérémie Zaffran
+Coordination ENS : Philippe Sautet & Carine Michel |br|
+Doctorant : Jérémie Zaffran
 
 :underline:`Partenaires`: 
 

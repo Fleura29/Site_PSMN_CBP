@@ -604,107 +604,86 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu'au sein des lunes de glace**
 
-.. container:: d-flex mb-3
+.. image:: ../_static/img_projets/cbp_ens.jpeg
+    :class: img-float pe-2
+    :alt: Logo CBP
 
-    .. image:: ../_static/img_projets/cbp_ens.jpeg
-        :alt: Logo CBP
-
-    .. container::
-
-        :ref:`Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu'au sein des lunes de glace <simueauglace>` |br|
-        Chercheurs : Louis-Alexandre Couston, Clément de la Salle  (ENS de Lyon) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
+:ref:`Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu'au sein des lunes de glace <simueauglace>` |br|
+Chercheurs : Louis-Alexandre Couston, Clément de la Salle  (ENS de Lyon) |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
 **Hydrologic signals of floating wood in rivers. Case study: Monitoring floating large woods in the Ain River, France**
 
-.. container:: d-flex mb-3 
+.. image:: ../_static/img_projets/cbp_ens_400.png
+    :class: img-float pe-2
+    :alt: Logo CBP
 
-    .. image:: ../_static/img_projets/cbp_ens_400.png
-        :alt: Logo CBP
-
-    .. container::
-
-        :ref:`Hydrologic signals of floating wood in rivers. Case study:Monitoring floating large woods in the Ain River, France <hydrowood>` |br|
-        Chercheurs : Hossein Ghaffarian (Post-doc, EVS), Samuel Dunesme (PhD, EVS), Herve Piégay (DR, EVS) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Hydrologic signals of floating wood in rivers. Case study:Monitoring floating large woods in the Ain River, France <hydrowood>` |br|
+Chercheurs : Hossein Ghaffarian (Post-doc, EVS), Samuel Dunesme (PhD, EVS), Herve Piégay (DR, EVS) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Circumstellar environments reconstruction with deep learning**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/rhapsodie.png
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Image rhapsodie
 
-    .. image:: ../_static/img_projets/rhapsodie.png
-        :alt: Image rhapsodie
-
-    .. container::
-
-        :ref:`Circumstellar environments reconstruction with deep learning <cerdl>` |br|
-        Chercheuses : Assia Chahid (stagiaire, LabPhys, ENS-Lyon), Nelly Pustelnik (DR, LabPhys, ENS-Lyon) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Circumstellar environments reconstruction with deep learning <cerdl>` |br|
+Chercheuses : Assia Chahid (stagiaire, LabPhys, ENS-Lyon), Nelly Pustelnik (DR, LabPhys, ENS-Lyon) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Resolving Morbilliviruses phylogeny**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/virus-4937553_1280.jpg
+    :class: img-float pe-2
+    :width: 120px
+    :alt: Image virus-4937553_1280
 
-    .. image:: ../_static/img_projets/virus-4937553_1280.jpg
-        :alt: Image virus-4937553_1280
-
-    .. container::
-
-        :ref:`Resolving Morbilliviruses Phylogeny <rmp>` |br|
-        Chercheurs : Augustin Clessin (M1, ENS-Lyon), François Roudier (ENS-Lyon), ? (Université de Copenhague) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Resolving Morbilliviruses Phylogeny <rmp>` |br|
+Chercheurs : Augustin Clessin (M1, ENS-Lyon), François Roudier (ENS-Lyon), ? (Université de Copenhague) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Ab initio molecular dynamics and metadynamics simulations**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/cbp_ens.jpeg
+    :class: img-float pe-2
+    :alt: Logo CBP
 
-    .. image:: ../_static/img_projets/cbp_ens.jpeg
-        :alt: Logo CBP
-
-    .. container::
-
-        :ref:`Ab initio molecular dynamics and metadynamics simulations <aimdms>` |br|
-        Chercheurs : Pierre-Adrien Payard, Lionel Perrin, Ludmilla Verrieux, Jordan Rio (ICBMS) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
+:ref:`Ab initio molecular dynamics and metadynamics simulations <aimdms>` |br|
+Chercheurs : Pierre-Adrien Payard, Lionel Perrin, Ludmilla Verrieux, Jordan Rio (ICBMS) |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
 **Etude des phénomènes de vaporisation de mélange d’oxydes**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/lammps4geol2021.jpg
+    :class: img-float pe-2
+    :alt: Image lammps4geol2021
 
-    .. image:: ../_static/img_projets/lammps4geol2021.jpg
-        :alt: Image lammps4geol2021
-
-    .. container::
-
-        :ref:`Etude des phénomènes de vaporisation de mélange d’oxydes <epvmo>` |br|
-        Chercheurs : Marwane Mokhtari (M2 au LGL, ENS-Lyon), Bernard Bourdon (LGL, ENS-Lyon) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Etude des phénomènes de vaporisation de mélange d’oxydes <epvmo>` |br|
+Chercheurs : Marwane Mokhtari (M2 au LGL, ENS-Lyon), Bernard Bourdon (LGL, ENS-Lyon) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Moteur de Recherche en Langue des Signes par Sentence Embeddings**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/sentenceembeddings2021.png
+    :class: img-float pe-2
+    :alt: Image sentenceembeddings2021
 
-    .. image:: ../_static/img_projets/sentenceembeddings2021.png
-        :alt: Image sentenceembeddings2021
-
-    .. container::
-
-        :ref:`Moteur de Recherche en Langue des Signes par Sentence Embeddings <mrlsse>` |br|
-        Chercheuses : Coline Petit-Jean, Michèle Gouiffès (LISN, Université Paris-Saclay) et Hannah Bull (LISN, Université Paris-Saclay), |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Moteur de Recherche en Langue des Signes par Sentence Embeddings <mrlsse>` |br|
+Chercheuses : Coline Petit-Jean, Michèle Gouiffès (LISN, Université Paris-Saclay) et Hannah Bull (LISN, Université Paris-Saclay), |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **SMOLU ou la coagulation de petits solides en agrégats**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/smolu2021.png
+    :class: img-float pe-2
+    :width: 120px
+    :alt: Image smolu2021
 
-    .. image:: ../_static/img_projets/smolu2021.png
-        :alt: Image smolu2021
-
-    .. container::
-
-        :ref:`SMOLU ou la coagulation de petits solides en agrégats <smolu>` |br|
-        Chercheurs : Guillaume Laibe (CRAL, ENS-Lyon), Maxime Lombart (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon), Timothee Davis-Clery (CRAL- ENS-Lyon) |br|
-        Expertise IT, portage GPU : Emmanuel Quemener (CBP)
+:ref:`SMOLU ou la coagulation de petits solides en agrégats <smolu>` |br|
+Chercheurs : Guillaume Laibe (CRAL, ENS-Lyon), Maxime Lombart (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon), Timothee Davis-Clery (CRAL- ENS-Lyon) |br|
+Expertise IT, portage GPU : Emmanuel Quemener (CBP)
 
 **Approche computationnelle du changement linguistique sur Twitter**
 
@@ -724,43 +703,36 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Approche des Données par Annotations (Lyon)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/iao2.jpeg
+    :class: img-float pe-2
+    :width: 150px
+    :alt: Image iao
 
-    .. image:: ../_static/img_projets/iao.jpg
-        :alt: Image iao
-
-    .. container::
-
-        :ref:`Adal <adal>` |br|
-        Chercheurs : Bruno Morandière (IAO, ENS-Lyon), Peter Cornwell (Data-Futures) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Adal <adal>` |br|
+Chercheurs : Bruno Morandière (IAO, ENS-Lyon), Peter Cornwell (Data-Futures) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Wave Resonance and Multistability in Atmospheric Jet Dynamics (2019-2022)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/cbp_ens.jpeg
+    :class: img-float pe-2
+    :alt: Logo CBP
 
-    .. image:: ../_static/img_projets/cbp_ens.jpeg
-        :alt: Logo CBP
-
-    .. container::
-
-        :ref:`Projet Wave Resonance and Multistability in Atmospheric Jet Dynamics <wrmajd>` |br|
-        Coordination : Corentin Herbert (ENS-Lyon, Laboratoire de Physique) |br|
-        Partners : un doctorant et plusieurs étudiants en master au Laboratoire de Physique (à recruter) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
+:ref:`Projet Wave Resonance and Multistability in Atmospheric Jet Dynamics <wrmajd>` |br|
+Coordination : Corentin Herbert (ENS-Lyon, Laboratoire de Physique) |br|
+Partners : un doctorant et plusieurs étudiants en master au Laboratoire de Physique (à recruter) |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
 **Aide au diagnostic pulmonaire chez le carnivore domestique**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/adpccd2020.png
+    :class: img-float pe-2
+    :alt: Image adpccd2020
 
-    .. image:: ../_static/img_projets/adpccd2020.png
-        :alt: Image adpccd2020
+:ref:`Aide au diagnostic pulmonaire chez le carnivore domestique <apcd>` 
 
-    .. container::
-
-        :ref:`Aide au diagnostic pulmonaire chez le carnivore domestique <apcd>` |br|
-        Chercheurs : Thomas Grenier (INSA-Lyon), Carolie Boulocher (VetagroSup), Léo Dumortier (VetagroSup) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+Chercheurs : Thomas Grenier (INSA-Lyon), Carolie Boulocher (VetagroSup), Léo Dumortier (VetagroSup) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **To be a planet, or not to be, that is the question**
 
@@ -803,110 +775,92 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **DYN4DRUGS**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/dyn4drugs2020.png
+    :class: img-float pe-2
+    :alt: Image dyn4drugs2020
 
-    .. image:: ../_static/img_projets/dyn4drugs2020.png
-        :alt: Image dyn4drugs2020
-
-    .. container::
-
-        :ref:`Dyn4Drugs <dyn4drugs>` |br|
-        Chercheurs : Elisa Rioual (M2 Student), Claire Loison (ILM UMR5306/UCBL), Jérôme Boisbouvier (IBS UMR5075/CEA/UJF) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Dyn4Drugs <dyn4drugs>` |br|
+Chercheurs : Elisa Rioual (M2 Student), Claire Loison (ILM UMR5306/UCBL), Jérôme Boisbouvier (IBS UMR5075/CEA/UJF) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **FAuST**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/faust.png
+    :class: img-float pe-2
+    :alt: Image faust
 
-    .. image:: ../_static/img_projets/faust.png
-        :alt: Image faust
+:ref:`FAuST <famst>` 
 
-    .. container::
+Chercheurs : Hakim Hadj-Djilani (IXXI) 
 
-        :ref:`FAuST <famst>` |br|
-        Chercheurs : Hakim Hadj-Djilani (IXXI) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Academics**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/cbp_ens.jpeg
+    :class: img-float pe-2
+    :alt: Logo CBP
 
-    .. image:: ../_static/img_projets/cbp_ens.jpeg
-        :alt: Logo CBP
-
-    .. container::
-
-        :ref:`Academics <academics>` |br|
-        Chercheurs : Patrice Abry, Pienne Borgnat, Freddy Bouchet (Laboratoire de Physique, ENS-Lyon) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Academics <academics>` |br|
+Chercheurs : Patrice Abry, Pienne Borgnat, Freddy Bouchet (Laboratoire de Physique, ENS-Lyon) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 2019
 ----
 
 **Réseaux neuronaux convolutifs pour la segmentation de texture.**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/pustelnik_2019.png
+    :class: img-float pe-2
+    :alt: Image pustelnik_2019
 
-    .. image:: ../_static/img_projets/pustelnik_2019.png
-        :alt: Image pustelnik_2019
+:ref:`Réseaux neuronaux convolutifs pour la segmentation de texture <rncst>` 
 
-    .. container::
+Chercheurs : Barbara Pascal, Nelly Pustelnik, Patrice Abry (Laboratoire de Physique, ENS-Lyon)
 
-        :ref:`Réseaux neuronaux convolutifs pour la segmentation de texture <rncst>` |br|
-        Chercheurs : Barbara Pascal, Nelly Pustelnik, Patrice Abry (Laboratoire de Physique, ENS-Lyon) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Etude numérique de l'influence des particules puits sur la formation des disques protostellaires.**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/commercon_2019.png
+    :class: img-float pe-2
+    :alt: Image commercon_2019
 
-    .. image:: ../_static/img_projets/commercon_2019.png
-        :alt: Image commercon_2019
-
-    .. container::
-
-        :ref:`Etude numérique de l'influence des particules puits sur la formation des disques protostellaires. <enippfdp>` |br|
-        Chercheurs :  Benoit Gay (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Etude numérique de l'influence des particules puits sur la formation des disques protostellaires. <enippfdp>` |br|
+Chercheurs :  Benoit Gay (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Modélisation de l'organisation des chromosomes lors de la spermatogénèse du grillon**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/jost2019.png
+    :class: img-float pe-2
+    :alt: Image jost2019
 
-    .. image:: ../_static/img_projets/jost2019.png
-        :alt: Image jost2019
-
-    .. container::
-
-        :ref:`Modélisation de l'organisation des chromosomes lors de la spermatogénèse du grillon <mocsg>` |br|
-        Chercheurs : Daniel Jost (LBMC, ENS-Lyon), Maxime Tortora (LBMC, ENS-Lyon) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Modélisation de l'organisation des chromosomes lors de la spermatogénèse du grillon <mocsg>` |br|
+Chercheurs : Daniel Jost (LBMC, ENS-Lyon), Maxime Tortora (LBMC, ENS-Lyon) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Evolution spectrale d’une supernova 1A à double détonation**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/allegre2019.png
+    :class: img-float pe-2
+    :alt: Image allegre2019
 
-    .. image:: ../_static/img_projets/allegre2019.png
-        :alt: Image allegre2019
-
-    .. container::
-
-        :ref:`Calcul de l’évolution spectrale d’une supernova 1A à double détonation avant son pic de luminosité à l’aide du code de transfert radiatif 1D CMFGEN <cess>` |br|
-        Chercheurs : Stéphane Blondin (LAM), Jules Allègre (ENS-Lyon, stagiaire) |br|
-        Expertise IT : Emmanuel Quemener (CBP)
+:ref:`Calcul de l’évolution spectrale d’une supernova 1A à double détonation avant son pic de luminosité à l’aide du code de transfert radiatif 1D CMFGEN <cess>` |br|
+Chercheurs : Stéphane Blondin (LAM), Jules Allègre (ENS-Lyon, stagiaire) |br|
+Expertise IT : Emmanuel Quemener (CBP)
 
 **Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/roux2019.jpg
+    :class: img-float pe-2
+    :alt: Image roux2019
 
-    .. image:: ../_static/img_projets/roux2019.jpg
-        :alt: Image roux2019
+:ref:`Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales. <aspapm>` 
 
-    .. container::
+Chercheurs : Stéphane Gaëtan Roux (ENS-Lyon, Physique) 
 
-        :ref:`Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales. <aspapm>` |br|
-        Chercheurs : Stéphane Gaëtan Roux (ENS-Lyon, Physique) |br|
-        Expertise GPU & IT : Emmanuel Quemener (CBP)
+Expertise GPU & IT : Emmanuel Quemener (CBP)
 
 **Modélisation de l’atmosphère des étoiles et des planètes (2019-2022)**
 
@@ -923,31 +877,28 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/vacfca.png
+    :class: img-float pe-2
+    :alt: Image vacfca
 
-    .. image:: ../_static/img_projets/vacfca.png
-        :alt: Image vacfca
+:ref:`Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes <pvacfca>` 
 
-    .. container::
+Direction : Hervé Piegay (ENS-Lyon, UdL), Sébastien Mustière (IGN, ENSG) 
 
-        :ref:`Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes <pvacfca>` |br|
-        Direction : Hervé Piegay (ENS-Lyon, UdL), Sébastien Mustière (IGN, ENSG) |br|
-        Partners : Samuel Dumesne (ENS-Lyon) |br|
-        Expertise GPU & IT : Emmanuel Quemener (CBP)
+Partners : Samuel Dumesne (ENS-Lyon) 
+
+Expertise GPU & IT : Emmanuel Quemener (CBP)
 
 **Portage du code CESM sur le calculateur du CINES (OCCIGEN) (2019)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/cesm.png
+    :class: img-float pe-2
+    :alt: Image cesm
 
-    .. image:: ../_static/img_projets/cesm.png
-        :alt: Image cesm
-
-    .. container::
-
-        :ref:`Projet Portage du code CESM sur le calculateur du CINES (OCCIGEN) <pccesm>` |br|
-        Coordination : Freddy Bouchet (ENS-Lyon, Laboratoire de Physique) |br|
-        Partners : Francesco Ragone  (ENS-Lyon, Laboratoire de Physique) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
+:ref:`Projet Portage du code CESM sur le calculateur du CINES (OCCIGEN) <pccesm>` |br|
+Coordination : Freddy Bouchet (ENS-Lyon, Laboratoire de Physique) |br|
+Partners : Francesco Ragone  (ENS-Lyon, Laboratoire de Physique) |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
 
 2018
@@ -955,89 +906,84 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **Projet Wave Topology in Fluids - ANR 2018-2021**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/diapositive1.png
+    :class: img-float pe-2
+    :width: 180px
+    :alt: Image cesm
 
-    .. image:: ../_static/img_projets/diapositive1.png
-        :alt: Image cesm
+:ref:`Projet WTF (Wave Topology in Fluids) <wtf>` 
 
-    .. container::
+Coordination : Antoine Venaille
 
-        :ref:`Projet WTF (Wave Topology in Fluids) <wtf>` |br|
-        Coordination : Antoine Venaille |br|
-        Partenaires ENS de Lyon : Denis Bartolo, Pierre Delplace, David Carpentier (Laboratoire de Physique) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
+Partenaires ENS de Lyon : Denis Bartolo, Pierre Delplace, David Carpentier (Laboratoire de Physique) 
+
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
 **Projet LIAISON**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/liaison.png
+    :class: img-float pe-2
+    :alt: Image liaison
 
-    .. image:: ../_static/img_projets/liaison.png
-        :alt: Image liaison
+:ref:`Projet LIAISON (Deep Learning for Linguistic & Social Network) <pliaison>` 
 
-    .. container::
+Coordination : Márton Karsai (IXXI, LIP, ENSL) 
 
-        :ref:`Projet LIAISON (Deep Learning for Linguistic & Social Network) <pliaison>` |br|
-        Coordination : Márton Karsai (IXXI, LIP, ENSL) |br|
-        Partners : Sébastien Lerique, Jacobo Levy-Abitbol |br|
-        Expertise GPU & IT : Emmanuel Quemener (CBP)
+Partners : Sébastien Lerique, Jacobo Levy-Abitbol |br|
+Expertise GPU & IT : Emmanuel Quemener (CBP)
 
 **Projet IMPACT (L'impact géant et la formation de la Terre et de la Lune) -ERC 2016-2021**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/wurm1.jpg
+    :class: img-float pe-2
+    :width: 160px
+    :alt: Image wurm1
 
-    .. image:: ../_static/img_projets/wurm1.jpg
-        :alt: Image wurm1
+:ref:`Projet IMPACT (L’impact géant et la formation de la Terre et de la Lune) <impact>` 
 
-    .. container::
+Coordination : Razvan Caracas (Laboratoire de Géologie, ENSL) 
 
-        :ref:`Projet IMPACT (L’impact géant et la formation de la Terre et de la Lune) <impact>` |br|
-        Coordination : Razvan Caracas (Laboratoire de Géologie, ENSL) |br|
-        Parteners : Natalia Solomatova, Ema Bobocioiu, Anais Kobsch, Zhi Li, Helene Plihon, Sarah H. Stewart, Francois Soubiran |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru
+Parteners : Natalia Solomatova, Ema Bobocioiu, Anais Kobsch, Zhi Li, Helene Plihon, Sarah H. Stewart, Francois Soubiran 
+
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 **Simulation numérique des ondes topologiques dans les eaux peu profondes**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/illustration_internalwaves.png
+    :class: img-float pe-2
+    :alt: Image illustration_internalwaves
 
-    .. image:: ../_static/img_projets/illustration_internalwaves.png
-        :alt: Image illustration_internalwaves
-
-    .. container::
-
-        `Simulation numérique des ondes topologiques dans les eaux peu profondes <#>`_ **(2018-2020)** |br|
-        Coordination : Antoine Venaille (Laboratoire de Physique, ENSL) |br|
-        Parteners : Denis Bartolo, Pierre Delplace, David Carpentier, Antoine Renaud (Laboratoire de Physique, ENSL) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (CBP)
+`Simulation numérique des ondes topologiques dans les eaux peu profondes <#>`_ **(2018-2020)** |br|
+Coordination : Antoine Venaille (Laboratoire de Physique, ENSL) |br|
+Parteners : Denis Bartolo, Pierre Delplace, David Carpentier, Antoine Renaud (Laboratoire de Physique, ENSL) |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (CBP)
 
 **Optimisation non lisse des matrices de transfert pour la géographie électorale**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/kszxo8.png
+    :class: img-float pe-2
+    :width: 75px
+    :alt: Image kszxo8
 
-    .. image:: ../_static/img_projets/kszxo8.png
-        :alt: Image kszxo8
+:ref:`Optimisation non lisse des matrices de transfert pour la géographie électorale <onlmtge>` 
 
-    .. container::
+Auteurs : Pablo Jensen, Nelly Pustelnik, Marion Foare, Yacouba Kalouga (équipe Sysiphe, Laboratoire de Physique, ENSL) 
 
-        :ref:`Optimisation non lisse des matrices de transfert pour la géographie électorale <onlmtge>` |br|
-        Auteurs : Pablo Jensen, Nelly Pustelnik, Marion Foare, Yacouba Kalouga (équipe Sysiphe, Laboratoire de Physique, ENSL) |br|
-        Expertise GPU & IT : Emmanuel Quemener (CBP) |br|
+Expertise GPU & IT : Emmanuel Quemener (CBP) |br|
 
 **Waves in the radiative zones of rotating magnetized stars**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/wavesstars.png
+    :class: img-float pe-2
+    :alt: Image wavesstars
 
-    .. image:: ../_static/img_projets/wavesstars.png
-        :alt: Image wavesstars
-
-    .. container::
-
-        :ref:`Waves in the radiative zones of rotating magnetized stars <wrzrms>` |br|
-        Auteurs : A.Valade, V.Prat, S.Mathis, K.Augustson (ENS de Lyon et Master AMS UPSaclay,Service AstroPhysique (Sap), IRFU, CEA Saclay) |br|
-        Expertise GPU & IT : Emmanuel Quemener (CBP)
+:ref:`Waves in the radiative zones of rotating magnetized stars <wrzrms>` |br|
+Auteurs : A.Valade, V.Prat, S.Mathis, K.Augustson (ENS de Lyon et Master AMS UPSaclay,Service AstroPhysique (Sap), IRFU, CEA Saclay) |br|
+Expertise GPU & IT : Emmanuel Quemener (CBP)
 
 **Analyse de données biomédicales par réseaux de neurones sur GPU**
 
-.. container:: d-flex  mb-3
+.. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/bioneurongpu.png
         :alt: Image bioneurongpu
@@ -1053,113 +999,104 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 
 **AHN : Atelier des Humanités Numériques**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/ahn_logo.png
+    :class: img-float pe-2
+    :alt: Logo AHN
 
-    .. image:: ../_static/img_projets/ahn_logo.png
-        :alt: Logo AHN
+`Liste des projets AHN <https://ahnenslyon.hypotheses.org>`_ 
 
-    .. container::
+Coordination : Nathalie Arlin 
 
-        `Liste des projets AHN <https://ahnenslyon.hypotheses.org>`_ |br|
-        Coordination : Nathalie Arlin |br|
-        Responsable : Pierre-Yves Jallud |br|
+Responsable : Pierre-Yves Jallud |br|
 
 **Deciphering the developmental modules using closely related non model species**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/illustration_microbat.png
+    :class: img-float pe-2
+    :alt: Image illustration_microbat
 
-    .. image:: ../_static/img_projets/illustration_microbat.png
-        :alt: Image illustration_microbat
+:ref:`Deciphering the developmental modules using closely related non model species <ddmnms>` 
 
-    .. container::
+Functional Manager: Alexa Sadier 
 
-        :ref:`Deciphering the developmental modules using closely related non model species <ddmnms>` |br|
-        Functional Manager: Alexa Sadier |br|
-        IT Manager : Emmanuel Quemener
+IT Manager : Emmanuel Quemener
 
 **Dissipation des courants océaniques par radiation d'ondes internes (2016-2018)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/illustration_internalwaves.png
+    :class: img-float pe-2
+    :alt: Image illustration_internalwaves
 
-    .. image:: ../_static/img_projets/illustration_internalwaves.png
-        :alt: Image illustration_internalwaves
-
-    .. container::
-
-        :ref:`Dissipation des courants océaniques par radiation d'ondes internes <dcoroi>` **(2016-2018)** |br|
-        Coordination : Antoine Venaille |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru
+:ref:`Dissipation des courants océaniques par radiation d'ondes internes <dcoroi>` **(2016-2018)** |br|
+Coordination : Antoine Venaille |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 2015
 ----
 
 **Caractérisation par LIDAR de la végétation des rives de la Drome (2015-2018)** 
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/evs.png
+    :class: img-float pe-2
+    :width: 100px
+    :alt: Image evs
 
-    .. image:: ../_static/img_projets/evs.png
-        :alt: Image evs
+:ref:`Pioneer riparian vegetation characterization on the Drome River <clidar>` 
 
-    .. container::
+Responsables fonctionnels : Hervé Piégay, Kristell Michel (EVS, UMR 5600) 
 
-        :ref:`Pioneer riparian vegetation characterization on the Drome River <clidar>` |br|
-        Responsables fonctionnels : Hervé Piégay, Kristell Michel (EVS, UMR 5600) |br|
-        Expert infrastructure informatique scientifique : Emmanuel Quemener
+Expert infrastructure informatique scientifique : Emmanuel Quemener
 
 **Convection dans le manteau et océans de magma (2015-2018/ 2020-2021)** 
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/test_t00250.png
+    :class: img-float pe-2
+    :alt: Image test_t00250
 
-    .. image:: ../_static/img_projets/test_t00250.png
-        :alt: Image test_t00250
+:ref:`Convection dans le manteau et océans de magma <cmom>` 
 
-    .. container::
+Coordination : Stephane Labrosse 
 
-        :ref:`Convection dans le manteau et océans de magma <cmom>` |br|
-        Coordination : Stephane Labrosse |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 2014
 ----
 
 **Thèse École doctorale de Chimie (2014-2017)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/molecular_dynamics.png
+    :class: img-float pe-2
+    :alt: Image molecular_dynamics
 
-    .. image:: ../_static/img_projets/molecular_dynamics.png
-        :alt: Image molecular_dynamics
+:ref:`Conception de molécules électro-chromiques pour des encres électroniques en couleur : une approche computationnelle <cmeceec>` 
 
-    .. container::
+Coordination : Marco Garavelli 
 
-        :ref:`Conception de molécules électro-chromiques pour des encres électroniques en couleur : une approche computationnelle <cmeceec>`  |br|
-        Coordination : Marco Garavelli |br|
-        Thésard : Baptiste Demoulin
+Thésard : Baptiste Demoulin
 
 **Thèse École doctorale de Chimie (2014-2017)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/fluides.png
+    :class: img-float pe-2
+    :alt: Image fluides
 
-    .. image:: ../_static/img_projets/fluides.png
-        :alt: Image fluides
+:ref:`Dynamique de fluides dans des environnements désordonnés <dfed>` 
 
-    .. container::
+Coordination : Wei Dong, Vincent Krakoviack 
 
-        :ref:`Dynamique de fluides dans des environnements désordonnés <dfed>`  |br|
-        Coordination : Wei Dong, Vincent Krakoviack |br|
-        Thésard : Thomas Konincks
+Thésard : Thomas Konincks
 
 **Post-doc Solvay (2013-2015)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/co2.png
+    :class: img-float pe-2
+    :alt: Image co2
 
-    .. image:: ../_static/img_projets/co2.png
-        :alt: Image co2
+:ref:`Activation electrocatalytique du CO2 <aeco2>`  
 
-    .. container::
+Coordination : Carine Michel 
 
-        :ref:`Activation electrocatalytique du CO2 <aeco2>`  |br|
-        Coordination : Carine Michel |br|
-        Post-doc : Stephan Steinmann
+Post-doc : Stephan Steinmann
 
 **Thèse CNRS-Solvay (2013-2016)**
 
@@ -1175,28 +1112,25 @@ Etudiant : Typhaine Moreau
 
 **Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/zonal_velocity.png
+    :class: img-float pe-2
+    :alt: Image zonal_velocity
 
-    .. image:: ../_static/img_projets/zonal_velocity.png
-        :alt: Image zonal_velocity
+:ref:`Equation barotrope stochastique 2D <etbg>` 
 
-    .. container::
+Coordination : Freddy Bouchet 
 
-        :ref:`Equation barotrope stochastique 2D <etbg>` |br|
-        Coordination : Freddy Bouchet |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 **Epifly (2014-2015)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/epiflyfig-1.jpg
+    :class: img-float pe-2
+    :alt: Image epiflyfig-1
 
-    .. image:: ../_static/img_projets/epiflyfig-1.jpg
-        :alt: Image epiflyfig-1
+:ref:`Base de données et interfaçage pour le traitement, la visualisation et la modélisation de l'épigénome de la mouche D. melanogaster <epifly>` 
 
-    .. container::
-
-        :ref:`Base de données et interfaçage pour le traitement, la visualisation et la modélisation de l'épigénome de la mouche D. melanogaster <epifly>` |br|
-        Coordination : Cédric Vaillant, Emmanuel Quemener 
+Coordination : Cédric Vaillant, Emmanuel Quemener 
 
 **Structure et Dynamique de membranes lipidiques à l'échelle moléculaire  (2014)**
 
@@ -1227,15 +1161,13 @@ Etudiant : Typhaine Moreau
 
 **Fishin'TE (2013-2014)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/fishinte.jpg
+    :class: img-float pe-2
+    :alt: Image fishinte
 
-    .. image:: ../_static/img_projets/fishinte.jpg
-        :alt: Image fishinte
+:ref:`A landscape of transposable elements in fish <ltef>` 
 
-    .. container::
-
-        :ref:`A landscape of transposable elements in fish <ltef>` |br|
-        Coordination : Domitile Chalopin, Magali Naville, Emmanuel Quemener 
+Coordination : Domitile Chalopin, Magali Naville, Emmanuel Quemener 
 
 **SIMBIO (2013-2018)**
 
@@ -1266,78 +1198,66 @@ Etudiant : Typhaine Moreau
 
 **ANR FSCF (2012-2015)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/proteins.png
+    :class: img-float pe-2
+    :alt: Image proteins
 
-    .. image:: ../_static/img_projets/proteins.png
-        :alt: Image proteins
-
-    .. container::
-
-        :ref:`Fluctuations in Structured Coulomb Fluids <anrfscf2>` |br|
-        Coordination : Ralf Everaers |br|
-        Post-doc : Sam Meyer |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru
+:ref:`Fluctuations in Structured Coulomb Fluids <anrfscf2>` |br|
+Coordination : Ralf Everaers |br|
+Post-doc : Sam Meyer |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 **CARPACCIO (2012-20xx)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/carpacciologo.png
+    :class: img-float pe-2
+    :alt: Image carpacciologo
 
-    .. image:: ../_static/img_projets/carpacciologo.png
-        :alt: Image carpacciologo
+:ref:`Program for muscle analysis enabling global, unbiased and multi-parametric characterization of fiber populations in muscle cross-sections <carpaccio>` 
 
-    .. container::
-
-        :ref:`Program for muscle analysis enabling global, unbiased and multi-parametric characterization of fiber populations in muscle cross-sections <carpaccio>` |br|
-        Coordination : Brian B. Rudkin
+Coordination : Brian B. Rudkin
 
 **WURM project (2012-20xx)**
 
-.. container:: d-flex mb-3
+.. image:: ../_static/img_projets/wurm1.jpg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Image wurm1
 
-    .. image:: ../_static/img_projets/wurm1.jpg
-        :alt: Image wurm1
+:ref:`A database of computed physical properties of minerals <wurm2>` 
 
-    .. container::
+Coordination : Razvan Caracas 
 
-        :ref:`A database of computed physical properties of minerals <wurm2>` |br|
-        Coordination : Razvan Caracas |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 **ANR Rideporph (2012-2015)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/porphyrin.png
+    :class: img-float pe-2
+    :alt: Image porphyrin
 
-    .. image:: ../_static/img_projets/porphyrin.png
-        :alt: Image porphyrin
+:ref:`Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach. <anrrideporph>` 
 
-    .. container::
+Coordination : Marie-Laure Bocquet 
 
-        :ref:`Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach. <anrrideporph>` |br|
-        Coordination : Marie-Laure Bocquet |br|
-        Post-doc : Marie Lattelais
+Post-doc : Marie Lattelais
 
 **Puma Mind (2012-2015)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/pumamind.jpg
+    :class: img-float pe-2
+    :alt: Image pumamind
 
-    .. image:: ../_static/img_projets/pumamind.jpg
-        :alt: Image pumamind
-
-    .. container::
-
-        :ref:`International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs) <pumamind2>` |br|
-        Coordination ENS : David Loffreda |br|
+:ref:`International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs) <pumamind2>` |br|
+Coordination ENS : David Loffreda |br|
 
 **Bourse Eiffel (2012-2015)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/campusfrance.jpg
+    :class: img-float pe-2
+    :alt: Image campusfrance
 
-    .. image:: ../_static/img_projets/campusfrance.jpg
-        :alt: Image campusfrance
-
-    .. container::
-
-        Ce programme de prestige récompense les étudiants étrangers présentés par l'établissement français dans lequel ils poursuivront leurs études, et retenus par un jury d'évaluateurs.
+Ce programme de prestige récompense les étudiants étrangers présentés par l'établissement français dans lequel ils poursuivront leurs études, et retenus par un jury d'évaluateurs.
 
 **Étude de fluides complexes d'intérêt biologique et de fluides confinés dans des matériaux nano-poreux** |br|
 Lauréat : Falin Tian |br|
@@ -1348,69 +1268,60 @@ Directeur de Thèse : Wei Dong
 
 **ANR Galac (2011-2015)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/acide_lactique.png
+    :class: img-float pe-2
+    :alt: Image acide_lactique
 
-    .. image:: ../_static/img_projets/acide_lactique.png
-        :alt: Image acide_lactique
+:ref:`Synthèse d'acide acrylique à partir du glycérol via l'acide lactique <anrgalac2>` 
 
-    .. container::
-
-        :ref:`Synthèse d'acide acrylique à partir du glycérol via l'acide lactique <anrgalac2>` |br|
-        Coordination ENS : Philippe Sautet & Carine Michel |br|
-        Doctorant : Jérémie Zaffran
+Coordination ENS : Philippe Sautet & Carine Michel |br|
+Doctorant : Jérémie Zaffran
 
 **Collaboration ENS - Total**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/total.jpg
+    :class: img-float pe-2
+    :alt: Logo total
 
-    .. image:: ../_static/img_projets/total.jpg
-        :alt: Logo total
-
-    .. container::
-
-        **Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
-        Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
-        Coordination ENS : Philippe Sautet
+**Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
+Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
+Coordination ENS : Philippe Sautet
 
 **Collaboration ENS - Solvay**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/solvay.png
+    :class: img-float pe-2
+    :alt: Image solvay
 
-    .. image:: ../_static/img_projets/solvay.png
-        :alt: Image solvay
+:ref:`Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo. <collab-solvay>` 
 
-    .. container::
+Coordination ENS : Philippe Sautet & Carine Michel
 
-        :ref:`Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo. <collab-solvay>` |br|
-        Coordination ENS : Philippe Sautet & Carine Michel |br|
-        Post-doc : Prokopis Andrikopoulos 
+Post-doc : Prokopis Andrikopoulos 
 
 2010
 ----
 
 **ANR Dyquma (2010-2013)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/dyquma.png
+    :class: img-float pe-2
+    :alt: Image dyquma
 
-    .. image:: ../_static/img_projets/dyquma.png
-        :alt: Image dyquma
+:ref:`Études théoriques de la dynamique quantique de molécules absorbées <anrdyquma>` 
 
-    .. container::
-
-        :ref:`Études théoriques de la dynamique quantique de molécules absorbées <anrdyquma>` |br|
-        Coordination ENS : Philippe Sautet, Wei Dong & David Loffreda 
+Coordination ENS : Philippe Sautet, Wei Dong & David Loffreda
 
 **ANR ChimigraphN (2010-2013)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/graphene.png
+    :class: img-float pe-2
+    :width: 90px
+    :alt: Image graphene
 
-    .. image:: ../_static/img_projets/graphene.png
-        :alt: Image graphene
+:ref:`Chemisorption, reactivity and defects on graphene <anrchimigraphN>` 
 
-    .. container::
-
-        :ref:`Chemisorption, reactivity and defects on graphene <anrchimigraphN>` |br|
-        Coordination ENS : Marie-Laure Bocquet
+Coordination ENS : Marie-Laure Bocquet
 
 **ANR LORIS (2010-2013)**
 
@@ -1467,30 +1378,27 @@ Directeur de Thèse : Wei Dong
 
 **ANR STATOCEAN (2009-2012)**
 
-.. container:: d-flex  mb-3
+.. image:: ../_static/img_projets/statocean.jpg
+    :class: img-float pe-2
+    :width: 90px
+    :alt: Image statocean
 
-    .. image:: ../_static/img_projets/statocean.jpg
-        :alt: Image statocean
+:ref:`Out of equilibrium statistical mechanics of geophysical flows and applications to the Kuroshio current (east of Japan) and to the Zapiola anticyclone (east of Argentina) <anrstatocean>` 
 
-    .. container::
-
-        :ref:`Out of equilibrium statistical mechanics of geophysical flows and applications to the Kuroshio current (east of Japan) and to the Zapiola anticyclone (east of Argentina) <anrstatocean>` |br|
-        Coordination : Freddy Bouchet
+Coordination : Freddy Bouchet
 
 2008
 ----
 
 **ANR Muse (2008-2012)**
 
-.. container:: d-flex mb-3
+.. image:: ../_static/img_projets/ugi-smiles-reaction.png
+    :class: img-float pe-2
+    :alt: Image ugi-smiles-reaction
 
-    .. image:: ../_static/img_projets/ugi-smiles-reaction.png
-        :alt: Image ugi-smiles-reaction
+:ref:`Couplage Ugi-Smiles : de l'accès éco-compatible à des produits pharmaceutiques à la synthèse de nouveaux ligands pour les métaux lourds <anrmuse>`
 
-    .. container::
-
-        :ref:`Couplage Ugi-Smiles : de l'accès éco-compatible à des produits pharmaceutiques à la synthèse de nouveaux ligands pour les métaux lourds <anrmuse>` |br|
-        Coordination ENS : Paul Fleurat-Lessard
+Coordination ENS : Paul Fleurat-Lessard
 
 2007
 ----
@@ -1509,14 +1417,11 @@ Directeur de Thèse : Wei Dong
 
 **CompPhysSoftBioMat (2005-20xx)**
 
-.. container:: d-flex mb-3
-
     .. image:: ../_static/img_projets/sofmatter.jpg
+        :class: img-float pe-2
         :alt: Image sofmatter
 
-    .. container::
-
-        :ref:`Computational Physics of Soft and Biological Matter <cpsbm>` |br|
-        Coordination : Ralf Everaers |br|
-        :ref:`Chaire d'excellence ANR <ceanr>` |br|
-        Ralf Everaers
+:ref:`Computational Physics of Soft and Biological Matter <cpsbm>` |br|
+Coordination : Ralf Everaers |br|
+:ref:`Chaire d'excellence ANR <ceanr>` |br|
+Ralf Everaers

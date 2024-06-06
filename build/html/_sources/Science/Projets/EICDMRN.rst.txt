@@ -7,17 +7,14 @@ Etude comparative de GPU pour l'analyse par réseaux de neurones d'images biomé
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/bioneurongpu.png
-        :class: img-fluid
-        :alt: Image bioneurongpu
+.. image:: ../../_static/img_projets/bioneurongpu.png
+    :class: img-float pe-2
+    :width: 80px
+    :alt: Image bioneurongpu
 
-    .. container::
+Laboratoire CREATIS, Unité CNRS UMR 5220 – INSERM U1206 – Université Lyon 1 – INSA Lyon - Université Jean Monnet Saint-Etienne : Thomas Grenier
 
-        Laboratoire CREATIS, Unité CNRS UMR 5220 – INSERM U1206 – Université Lyon 1 – INSA Lyon - Université Jean Monnet Saint-Etienne : Thomas Grenier
-        
-        Centre Blaise Pascal : Emmanuel Quémener
+Centre Blaise Pascal : Emmanuel Quémener
 
 Etude des infrastructures de calculs GPU haute performances pour l'analyse de données médicales par réseaux de neurones: solutions pour optimiser le compromis entre robustesses, vitesse et reproductibilité
 

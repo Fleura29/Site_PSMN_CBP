@@ -6,17 +6,16 @@ ANR DYQUMA
 .. role:: underline
     :class: underline
 
-.. container:: d-flex mb-3
+.. |br| raw:: html
 
-    .. image:: ../../_static/img_projets/dyquma.png
-        :class: w-25 img-fluid
-        :alt: Image dyquma
+   <br>
 
-    .. container::
+.. image:: ../../_static/img_projets/dyquma.png
+    :class: img-fluid img-float pe-2
+    :alt: Image dyquma
 
-        **Études théoriques de la dynamique quantique de molécules absorbées** 
-
-        Coordination ENS : Philippe Sautet, Wei Dong & David Loffreda 
+**Études théoriques de la dynamique quantique de molécules absorbées** |br|
+Coordination ENS : Philippe Sautet, Wei Dong & David Loffreda 
 
 :underline:`Partenaires` :
 

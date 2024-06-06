@@ -54,84 +54,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
-                                             
-                        <!--<script>
-                            
-                            function createA(att, url, nom){
-                                const a= document.createElement("a");
-                                a.setAttribute("class", att);
-                                a.href= url ;
-                                a.textContent= nom;
-                                return a;
-                            };
 
-                            fetch("../_static/Liens.html")
-                            .then((response) => response.json())
-                            .then((json) => {
-                                
-                                json.Menu.titre.forEach((element) => {
-                                    const li_menu = document.createElement("li");
-                                    li_menu.setAttribute("class", "nav-item dropdown");
-                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
-
-                                    menu.append(li_menu);
-                                    li_menu.append(a_titre);
-
-                                    const div_menu = document.createElement("div");
-                                    div_menu.setAttribute("class", "dropdown-menu");
-                                    li_menu.append(div_menu);
-
-                                    const ul_titre = document.createElement("ul");
-                                    div_menu.append(ul_titre);
-                                    const obj= Object.entries(json.Menu[element]);
-
-                                    for (const [key,values] of obj){
-                                        if (typeof values !== 'object') {
-   
-                                            const li_sous_menu = document.createElement("li");
-
-                                            if(values === "#"){ 
-                                                const a_sous_titre = createA("dropdown-item", values , key);
-                                                ul_titre.append(li_sous_menu);
-                                                li_sous_menu.append(a_sous_titre);
-                                            }
-                                            else{
-                                                const a_sous_titre = createA("dropdown-item", values, key);
-                                                ul_titre.append(li_sous_menu);
-                                                li_sous_menu.append(a_sous_titre);
-                                            }
-                                            
-                                        } else {     
-                                            const li_sous_menu = document.createElement("li");
-                                            li_sous_menu.setAttribute("class", "nav-item dropend");
-                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
-
-                                            ul_titre.append(li_sous_menu);
-                                            li_sous_menu.append(a_sous_titre);
-
-                                            const div_sous_menu = document.createElement("div");
-                                            div_sous_menu.setAttribute("class", "dropdown-menu");
-                                            li_sous_menu.append(div_sous_menu);
-
-                                            const ul_ss_titre = document.createElement("ul");
-                                            div_sous_menu.append(ul_ss_titre);
-                                            const obj2 = Object.entries(json.Menu[element][key]);
-                                            
-                                            for (let [keys, val] of obj2) {
-                                                const li_ss_menu = document.createElement("li");
-                                                const a_ss_titre = createA("dropdown-item", val, keys);
-
-                                                ul_ss_titre.append(li_ss_menu);
-                                                li_ss_menu.append(a_ss_titre);
-                                            }
-                                        }
-                                    }
-                                });
-                            })
-                        </script>-->
-                        
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
                                     <li><a class="dropdown-item" href="../Accueil/Actualites.html">Actualités PSMN</a></li>
@@ -140,14 +65,14 @@
                                     <li><a class="dropdown-item" href="../Accueil/Liens.html">Liens</a></li>
                                     <li><a class="dropdown-item" href="../Accueil/Services.html">Services</a></li>
                                     <li class="nav-item dropend">
-                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
                                         <div class="dropdown-menu">
                                             <ul>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -177,111 +102,107 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
                             <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../Plateformes/DataCenter.html">Data Center</a></li>
-                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
-                                <li><a class="dropdown-item" href="../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
-                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
-                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../Plateformes/EquipInfo.html">Equipements informatique</a></li>
-                                <li><a class="dropdown-item" href="../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
-                                <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
-                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
-                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
-                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
-                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
-                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
-                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
-                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
-                                        </ul>
-                                    </div>
-                                
-                                </li>
-                                <li class="nav-item dropend">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            
-                                            <li><a class="dropdown-item" href="../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
-                                            <li><a class="dropdown-item" href="../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
-                                            <li><a class="dropdown-item" href="../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
-                                            <li><a class="dropdown-item" href="../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
-                                        </ul>                                        
-                                    </div>
-                                </li>  
-                             </ul>   
-                        </div>
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                    <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                                <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                                <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                                <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                                <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                                <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                                <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                                <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
                         </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../Formation/Formation.html">Formation</a></li>
-                                <li><a class="dropdown-item" href="../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../Formation/Stage.html">Propositions de stage</a></li>
-                            </ul>   
-                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../Formation/Master/MNPC.html">Master 2- MNPC (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
                         </li>
                         
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
-                        <div class="dropdown-menu">
-                            <ul> 
-                                <li><a class="dropdown-item" href="Publications2024.html">Publications</a></li>
-                                <li><a class="dropdown-item" href="Theses.html">Thèses</a></li>
-                                <li><a class="dropdown-item" href="CreationsMulti.html">Créations multimédia</a></li>
-                                <li><a class="dropdown-item" href="Chercheurs.html">Chercheurs associés</a></li>
-                                <li><a class="dropdown-item" href="#">Projets scientifiques + Projets utilisateurs</a></li>
-                            </ul>   
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
                         </li>
                       
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
-                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
-                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
-                                <li><a class="dropdown-item" href="../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
-                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
-                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
-                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
-                                <li><a class="dropdown-item" href="#">Médias</a></li>
-                                <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            
-                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
-                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
-                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
-                                        </ul>
-                                        
-                                    </div>
-                                </li>
-                            </ul>   
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                    <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                    <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                    <li><a class="dropdown-item" href="../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="#">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                
+                                                    <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                    <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
                         </li>
                         
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../Contacts/Acces.html ">Accès aux sites</a></li>
-                                <li><a class="dropdown-item" href="../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
-                                <li><a class="dropdown-item" href="../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
-                                <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
-                            </ul>   
-                        </div>
-                        </li>
-                          
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
                     </ul>
                 </div>
                 <div class="container w-25">
@@ -295,9 +216,7 @@
 </search>
 
                 </div>
-                
-                
-                <div></div>
+
             </div>
         </nav>
 </header>
@@ -712,77 +631,45 @@ Coordination ENS de Lyon : Brian B. Rudkin</p>
 <section id="id16">
 <h2>2021<a class="headerlink" href="#id16" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu’au sein des lunes de glace</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Logo CBP" src="../_images/cbp_ens1.jpeg" />
-<div class="docutils container">
+<img alt="Logo CBP" class="img-float pe-2" src="../_images/cbp_ens1.jpeg" />
 <p><a class="reference internal" href="Projets/SimuEau-Glace.html#simueauglace"><span class="std std-ref">Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu’au sein des lunes de glace</span></a> <br>
 Chercheurs : Louis-Alexandre Couston, Clément de la Salle  (ENS de Lyon) <br>
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)</p>
-</div>
-</div>
 <p><strong>Hydrologic signals of floating wood in rivers. Case study: Monitoring floating large woods in the Ain River, France</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Logo CBP" src="../_images/cbp_ens_400.png" />
-<div class="docutils container">
+<img alt="Logo CBP" class="img-float pe-2" src="../_images/cbp_ens_400.png" />
 <p><a class="reference internal" href="Projets/HydroWood.html#hydrowood"><span class="std std-ref">Hydrologic signals of floating wood in rivers. Case study:Monitoring floating large woods in the Ain River, France</span></a> <br>
 Chercheurs : Hossein Ghaffarian (Post-doc, EVS), Samuel Dunesme (PhD, EVS), Herve Piégay (DR, EVS) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Circumstellar environments reconstruction with deep learning</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image rhapsodie" src="../_images/rhapsodie.png" />
-<div class="docutils container">
+<a class="img-float pe-2 reference internal image-reference" href="../_images/rhapsodie.png"><img alt="Image rhapsodie" class="img-float pe-2" src="../_images/rhapsodie.png" style="width: 140px;" /></a>
 <p><a class="reference internal" href="Projets/CERDL.html#cerdl"><span class="std std-ref">Circumstellar environments reconstruction with deep learning</span></a> <br>
 Chercheuses : Assia Chahid (stagiaire, LabPhys, ENS-Lyon), Nelly Pustelnik (DR, LabPhys, ENS-Lyon) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Resolving Morbilliviruses phylogeny</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image virus-4937553_1280" src="../_images/virus-4937553_1280.jpg" />
-<div class="docutils container">
+<a class="img-float pe-2 reference internal image-reference" href="../_images/virus-4937553_1280.jpg"><img alt="Image virus-4937553_1280" class="img-float pe-2" src="../_images/virus-4937553_1280.jpg" style="width: 120px;" /></a>
 <p><a class="reference internal" href="Projets/RMP.html#rmp"><span class="std std-ref">Resolving Morbilliviruses Phylogeny</span></a> <br>
 Chercheurs : Augustin Clessin (M1, ENS-Lyon), François Roudier (ENS-Lyon), ? (Université de Copenhague) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Ab initio molecular dynamics and metadynamics simulations</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Logo CBP" src="../_images/cbp_ens1.jpeg" />
-<div class="docutils container">
+<img alt="Logo CBP" class="img-float pe-2" src="../_images/cbp_ens1.jpeg" />
 <p><a class="reference internal" href="Projets/AIMDMS.html#aimdms"><span class="std std-ref">Ab initio molecular dynamics and metadynamics simulations</span></a> <br>
 Chercheurs : Pierre-Adrien Payard, Lionel Perrin, Ludmilla Verrieux, Jordan Rio (ICBMS) <br>
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)</p>
-</div>
-</div>
 <p><strong>Etude des phénomènes de vaporisation de mélange d’oxydes</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image lammps4geol2021" src="../_images/lammps4geol2021.jpg" />
-<div class="docutils container">
+<img alt="Image lammps4geol2021" class="img-float pe-2" src="../_images/lammps4geol2021.jpg" />
 <p><a class="reference internal" href="Projets/EPVMO.html#epvmo"><span class="std std-ref">Etude des phénomènes de vaporisation de mélange d’oxydes</span></a> <br>
 Chercheurs : Marwane Mokhtari (M2 au LGL, ENS-Lyon), Bernard Bourdon (LGL, ENS-Lyon) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Moteur de Recherche en Langue des Signes par Sentence Embeddings</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image sentenceembeddings2021" src="../_images/sentenceembeddings2021.png" />
-<div class="docutils container">
+<img alt="Image sentenceembeddings2021" class="img-float pe-2" src="../_images/sentenceembeddings2021.png" />
 <p><a class="reference internal" href="Projets/MRLSSE.html#mrlsse"><span class="std std-ref">Moteur de Recherche en Langue des Signes par Sentence Embeddings</span></a> <br>
 Chercheuses : Coline Petit-Jean, Michèle Gouiffès (LISN, Université Paris-Saclay) et Hannah Bull (LISN, Université Paris-Saclay), <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>SMOLU ou la coagulation de petits solides en agrégats</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image smolu2021" src="../_images/smolu2021.png" />
-<div class="docutils container">
+<a class="img-float pe-2 reference internal image-reference" href="../_images/smolu2021.png"><img alt="Image smolu2021" class="img-float pe-2" src="../_images/smolu2021.png" style="width: 120px;" /></a>
 <p><a class="reference internal" href="Projets/SMOLU.html#smolu"><span class="std std-ref">SMOLU ou la coagulation de petits solides en agrégats</span></a> <br>
 Chercheurs : Guillaume Laibe (CRAL, ENS-Lyon), Maxime Lombart (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon), Timothee Davis-Clery (CRAL- ENS-Lyon) <br>
 Expertise IT, portage GPU : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Approche computationnelle du changement linguistique sur Twitter</strong></p>
 <div class="d-flex mb-3 docutils container">
 <img alt="Image accltwitter2021" src="../_images/accltwitter2021.png" />
@@ -796,33 +683,21 @@ Expertise IT : Emmanuel Quemener (CBP)</p>
 <section id="id17">
 <h2>2020<a class="headerlink" href="#id17" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Approche des Données par Annotations (Lyon)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image iao" src="../_images/iao.jpg" />
-<div class="docutils container">
+<a class="img-float pe-2 reference internal image-reference" href="../_images/iao2.jpeg"><img alt="Image iao" class="img-float pe-2" src="../_images/iao2.jpeg" style="width: 150px;" /></a>
 <p><a class="reference internal" href="Projets/ADAL.html#adal"><span class="std std-ref">Adal</span></a> <br>
 Chercheurs : Bruno Morandière (IAO, ENS-Lyon), Peter Cornwell (Data-Futures) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Wave Resonance and Multistability in Atmospheric Jet Dynamics (2019-2022)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Logo CBP" src="../_images/cbp_ens1.jpeg" />
-<div class="docutils container">
+<img alt="Logo CBP" class="img-float pe-2" src="../_images/cbp_ens1.jpeg" />
 <p><a class="reference internal" href="Projets/WRMAJD.html#wrmajd"><span class="std std-ref">Projet Wave Resonance and Multistability in Atmospheric Jet Dynamics</span></a> <br>
 Coordination : Corentin Herbert (ENS-Lyon, Laboratoire de Physique) <br>
 Partners : un doctorant et plusieurs étudiants en master au Laboratoire de Physique (à recruter) <br>
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)</p>
-</div>
-</div>
 <p><strong>Aide au diagnostic pulmonaire chez le carnivore domestique</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image adpccd2020" src="../_images/adpccd2020.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/APCD.html#apcd"><span class="std std-ref">Aide au diagnostic pulmonaire chez le carnivore domestique</span></a> <br>
-Chercheurs : Thomas Grenier (INSA-Lyon), Carolie Boulocher (VetagroSup), Léo Dumortier (VetagroSup) <br>
+<img alt="Image adpccd2020" class="img-float pe-2" src="../_images/adpccd2020.png" />
+<p><a class="reference internal" href="Projets/APCD.html#apcd"><span class="std std-ref">Aide au diagnostic pulmonaire chez le carnivore domestique</span></a></p>
+<p>Chercheurs : Thomas Grenier (INSA-Lyon), Carolie Boulocher (VetagroSup), Léo Dumortier (VetagroSup) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>To be a planet, or not to be, that is the question</strong></p>
 <div class="d-flex mb-3 docutils container">
 <img alt="Image phantommcfost" src="../_images/phantommcfost.png" />
@@ -851,80 +726,48 @@ Expertise IT : Emmanuel Quemener (CBP)</p>
 </div>
 </div>
 <p><strong>DYN4DRUGS</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image dyn4drugs2020" src="../_images/dyn4drugs2020.png" />
-<div class="docutils container">
+<img alt="Image dyn4drugs2020" class="img-float pe-2" src="../_images/dyn4drugs2020.png" />
 <p><a class="reference internal" href="Projets/DYN4DRUGS.html#dyn4drugs"><span class="std std-ref">Dyn4Drugs</span></a> <br>
 Chercheurs : Elisa Rioual (M2 Student), Claire Loison (ILM UMR5306/UCBL), Jérôme Boisbouvier (IBS UMR5075/CEA/UJF) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>FAuST</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image faust" src="../_images/faust.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/FAMST.html#famst"><span class="std std-ref">FAuST</span></a> <br>
-Chercheurs : Hakim Hadj-Djilani (IXXI) <br>
-Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
+<img alt="Image faust" class="img-float pe-2" src="../_images/faust.png" />
+<p><a class="reference internal" href="Projets/FAMST.html#famst"><span class="std std-ref">FAuST</span></a></p>
+<p>Chercheurs : Hakim Hadj-Djilani (IXXI)</p>
+<p>Expertise IT : Emmanuel Quemener (CBP)</p>
 <p><strong>Academics</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Logo CBP" src="../_images/cbp_ens1.jpeg" />
-<div class="docutils container">
+<img alt="Logo CBP" class="img-float pe-2" src="../_images/cbp_ens1.jpeg" />
 <p><a class="reference internal" href="Projets/Academics.html#academics"><span class="std std-ref">Academics</span></a> <br>
 Chercheurs : Patrice Abry, Pienne Borgnat, Freddy Bouchet (Laboratoire de Physique, ENS-Lyon) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 </section>
 <section id="id18">
 <h2>2019<a class="headerlink" href="#id18" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Réseaux neuronaux convolutifs pour la segmentation de texture.</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image pustelnik_2019" src="../_images/pustelnik_2019.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/RNCST.html#rncst"><span class="std std-ref">Réseaux neuronaux convolutifs pour la segmentation de texture</span></a> <br>
-Chercheurs : Barbara Pascal, Nelly Pustelnik, Patrice Abry (Laboratoire de Physique, ENS-Lyon) <br>
-Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
+<img alt="Image pustelnik_2019" class="img-float pe-2" src="../_images/pustelnik_2019.png" />
+<p><a class="reference internal" href="Projets/RNCST.html#rncst"><span class="std std-ref">Réseaux neuronaux convolutifs pour la segmentation de texture</span></a></p>
+<p>Chercheurs : Barbara Pascal, Nelly Pustelnik, Patrice Abry (Laboratoire de Physique, ENS-Lyon)</p>
+<p>Expertise IT : Emmanuel Quemener (CBP)</p>
 <p><strong>Etude numérique de l’influence des particules puits sur la formation des disques protostellaires.</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image commercon_2019" src="../_images/commercon_2019.png" />
-<div class="docutils container">
+<img alt="Image commercon_2019" class="img-float pe-2" src="../_images/commercon_2019.png" />
 <p><a class="reference internal" href="Projets/ENIPPFDP.html#enippfdp"><span class="std std-ref">Etude numérique de l’influence des particules puits sur la formation des disques protostellaires.</span></a> <br>
 Chercheurs :  Benoit Gay (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Modélisation de l’organisation des chromosomes lors de la spermatogénèse du grillon</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image jost2019" src="../_images/jost2019.png" />
-<div class="docutils container">
+<img alt="Image jost2019" class="img-float pe-2" src="../_images/jost2019.png" />
 <p><a class="reference internal" href="Projets/MOCSG.html#mocsg"><span class="std std-ref">Modélisation de l’organisation des chromosomes lors de la spermatogénèse du grillon</span></a> <br>
 Chercheurs : Daniel Jost (LBMC, ENS-Lyon), Maxime Tortora (LBMC, ENS-Lyon) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Evolution spectrale d’une supernova 1A à double détonation</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image allegre2019" src="../_images/allegre2019.png" />
-<div class="docutils container">
+<img alt="Image allegre2019" class="img-float pe-2" src="../_images/allegre2019.png" />
 <p><a class="reference internal" href="Projets/CESS.html#cess"><span class="std std-ref">Calcul de l’évolution spectrale d’une supernova 1A à double détonation avant son pic de luminosité à l’aide du code de transfert radiatif 1D CMFGEN</span></a> <br>
 Chercheurs : Stéphane Blondin (LAM), Jules Allègre (ENS-Lyon, stagiaire) <br>
 Expertise IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image roux2019" src="../_images/roux2019.jpg" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ASPAPM.html#aspapm"><span class="std std-ref">Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales.</span></a> <br>
-Chercheurs : Stéphane Gaëtan Roux (ENS-Lyon, Physique) <br>
-Expertise GPU &amp; IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
+<img alt="Image roux2019" class="img-float pe-2" src="../_images/roux2019.jpg" />
+<p><a class="reference internal" href="Projets/ASPAPM.html#aspapm"><span class="std std-ref">Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales.</span></a></p>
+<p>Chercheurs : Stéphane Gaëtan Roux (ENS-Lyon, Physique)</p>
+<p>Expertise GPU &amp; IT : Emmanuel Quemener (CBP)</p>
 <p><strong>Modélisation de l’atmosphère des étoiles et des planètes (2019-2022)</strong></p>
 <div class="d-flex mb-3 docutils container">
 <img alt="Image phoenix" src="../_images/phoenix.png" />
@@ -935,86 +778,54 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représent
 </div>
 </div>
 <p><strong>Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image vacfca" src="../_images/vacfca.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/PVACFCA.html#pvacfca"><span class="std std-ref">Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes</span></a> <br>
-Direction : Hervé Piegay (ENS-Lyon, UdL), Sébastien Mustière (IGN, ENSG) <br>
-Partners : Samuel Dumesne (ENS-Lyon) <br>
-Expertise GPU &amp; IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
+<img alt="Image vacfca" class="img-float pe-2" src="../_images/vacfca.png" />
+<p><a class="reference internal" href="Projets/PVACFCA.html#pvacfca"><span class="std std-ref">Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes</span></a></p>
+<p>Direction : Hervé Piegay (ENS-Lyon, UdL), Sébastien Mustière (IGN, ENSG)</p>
+<p>Partners : Samuel Dumesne (ENS-Lyon)</p>
+<p>Expertise GPU &amp; IT : Emmanuel Quemener (CBP)</p>
 <p><strong>Portage du code CESM sur le calculateur du CINES (OCCIGEN) (2019)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image cesm" src="../_images/cesm.png" />
-<div class="docutils container">
+<img alt="Image cesm" class="img-float pe-2" src="../_images/cesm.png" />
 <p><a class="reference internal" href="Projets/PCCESM.html#pccesm"><span class="std std-ref">Projet Portage du code CESM sur le calculateur du CINES (OCCIGEN)</span></a> <br>
 Coordination : Freddy Bouchet (ENS-Lyon, Laboratoire de Physique) <br>
 Partners : Francesco Ragone  (ENS-Lyon, Laboratoire de Physique) <br>
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)</p>
-</div>
-</div>
 </section>
 <section id="id19">
 <h2>2018<a class="headerlink" href="#id19" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Projet Wave Topology in Fluids - ANR 2018-2021</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image cesm" src="../_images/diapositive1.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/WTF.html#wtf"><span class="std std-ref">Projet WTF (Wave Topology in Fluids)</span></a> <br>
-Coordination : Antoine Venaille <br>
-Partenaires ENS de Lyon : Denis Bartolo, Pierre Delplace, David Carpentier (Laboratoire de Physique) <br>
-Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)</p>
-</div>
-</div>
+<a class="img-float pe-2 reference internal image-reference" href="../_images/diapositive1.png"><img alt="Image cesm" class="img-float pe-2" src="../_images/diapositive1.png" style="width: 180px;" /></a>
+<p><a class="reference internal" href="Projets/WTF.html#wtf"><span class="std std-ref">Projet WTF (Wave Topology in Fluids)</span></a></p>
+<p>Coordination : Antoine Venaille</p>
+<p>Partenaires ENS de Lyon : Denis Bartolo, Pierre Delplace, David Carpentier (Laboratoire de Physique)</p>
+<p>Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)</p>
 <p><strong>Projet LIAISON</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image liaison" src="../_images/liaison.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/PLIAISON.html#pliaison"><span class="std std-ref">Projet LIAISON (Deep Learning for Linguistic &amp; Social Network)</span></a> <br>
-Coordination : Márton Karsai (IXXI, LIP, ENSL) <br>
-Partners : Sébastien Lerique, Jacobo Levy-Abitbol <br>
+<img alt="Image liaison" class="img-float pe-2" src="../_images/liaison.png" />
+<p><a class="reference internal" href="Projets/PLIAISON.html#pliaison"><span class="std std-ref">Projet LIAISON (Deep Learning for Linguistic &amp; Social Network)</span></a></p>
+<p>Coordination : Márton Karsai (IXXI, LIP, ENSL)</p>
+<p>Partners : Sébastien Lerique, Jacobo Levy-Abitbol <br>
 Expertise GPU &amp; IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Projet IMPACT (L’impact géant et la formation de la Terre et de la Lune) -ERC 2016-2021</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image wurm1" src="../_images/wurm1.jpg" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/IMPACT.html#impact"><span class="std std-ref">Projet IMPACT (L’impact géant et la formation de la Terre et de la Lune)</span></a> <br>
-Coordination : Razvan Caracas (Laboratoire de Géologie, ENSL) <br>
-Parteners : Natalia Solomatova, Ema Bobocioiu, Anais Kobsch, Zhi Li, Helene Plihon, Sarah H. Stewart, Francois Soubiran <br>
-Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
-</div>
-</div>
+<a class="img-float pe-2 reference internal image-reference" href="../_images/wurm1.jpg"><img alt="Image wurm1" class="img-float pe-2" src="../_images/wurm1.jpg" style="width: 160px;" /></a>
+<p><a class="reference internal" href="Projets/IMPACT.html#impact"><span class="std std-ref">Projet IMPACT (L’impact géant et la formation de la Terre et de la Lune)</span></a></p>
+<p>Coordination : Razvan Caracas (Laboratoire de Géologie, ENSL)</p>
+<p>Parteners : Natalia Solomatova, Ema Bobocioiu, Anais Kobsch, Zhi Li, Helene Plihon, Sarah H. Stewart, Francois Soubiran</p>
+<p>Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
 <p><strong>Simulation numérique des ondes topologiques dans les eaux peu profondes</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image illustration_internalwaves" src="../_images/illustration_internalwaves.png" />
-<div class="docutils container">
+<img alt="Image illustration_internalwaves" class="img-float pe-2" src="../_images/illustration_internalwaves.png" />
 <p><a class="reference external" href="#">Simulation numérique des ondes topologiques dans les eaux peu profondes</a> <strong>(2018-2020)</strong> <br>
 Coordination : Antoine Venaille (Laboratoire de Physique, ENSL) <br>
 Parteners : Denis Bartolo, Pierre Delplace, David Carpentier, Antoine Renaud (Laboratoire de Physique, ENSL) <br>
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (CBP)</p>
-</div>
-</div>
 <p><strong>Optimisation non lisse des matrices de transfert pour la géographie électorale</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image kszxo8" src="../_images/kszxo8.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ONLMTGE.html#onlmtge"><span class="std std-ref">Optimisation non lisse des matrices de transfert pour la géographie électorale</span></a> <br>
-Auteurs : Pablo Jensen, Nelly Pustelnik, Marion Foare, Yacouba Kalouga (équipe Sysiphe, Laboratoire de Physique, ENSL) <br>
-Expertise GPU &amp; IT : Emmanuel Quemener (CBP) <br></p>
-</div>
-</div>
+<a class="img-float pe-2 reference internal image-reference" href="../_images/kszxo8.png"><img alt="Image kszxo8" class="img-float pe-2" src="../_images/kszxo8.png" style="width: 75px;" /></a>
+<p><a class="reference internal" href="Projets/ONLMTGE.html#onlmtge"><span class="std std-ref">Optimisation non lisse des matrices de transfert pour la géographie électorale</span></a></p>
+<p>Auteurs : Pablo Jensen, Nelly Pustelnik, Marion Foare, Yacouba Kalouga (équipe Sysiphe, Laboratoire de Physique, ENSL)</p>
+<p>Expertise GPU &amp; IT : Emmanuel Quemener (CBP) <br></p>
 <p><strong>Waves in the radiative zones of rotating magnetized stars</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image wavesstars" src="../_images/wavesstars.png" />
-<div class="docutils container">
+<img alt="Image wavesstars" class="img-float pe-2" src="../_images/wavesstars.png" />
 <p><a class="reference internal" href="Projets/WRZRMS.html#wrzrms"><span class="std std-ref">Waves in the radiative zones of rotating magnetized stars</span></a> <br>
 Auteurs : A.Valade, V.Prat, S.Mathis, K.Augustson (ENS de Lyon et Master AMS UPSaclay,Service AstroPhysique (Sap), IRFU, CEA Saclay) <br>
 Expertise GPU &amp; IT : Emmanuel Quemener (CBP)</p>
-</div>
-</div>
 <p><strong>Analyse de données biomédicales par réseaux de neurones sur GPU</strong></p>
 <div class="d-flex mb-3 docutils container">
 <img alt="Image bioneurongpu" src="../_images/bioneurongpu.png" />
@@ -1028,83 +839,51 @@ Expertise GPU &amp; IT : Emmanuel Quemener (CBP)</p>
 <section id="id20">
 <h2>2016<a class="headerlink" href="#id20" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>AHN : Atelier des Humanités Numériques</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Logo AHN" src="../_images/ahn_logo.png" />
-<div class="docutils container">
-<p><a class="reference external" href="https://ahnenslyon.hypotheses.org">Liste des projets AHN</a> <br>
-Coordination : Nathalie Arlin <br>
-Responsable : Pierre-Yves Jallud <br></p>
-</div>
-</div>
+<img alt="Logo AHN" class="img-float pe-2" src="../_images/ahn_logo.png" />
+<p><a class="reference external" href="https://ahnenslyon.hypotheses.org">Liste des projets AHN</a></p>
+<p>Coordination : Nathalie Arlin</p>
+<p>Responsable : Pierre-Yves Jallud <br></p>
 <p><strong>Deciphering the developmental modules using closely related non model species</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image illustration_microbat" src="../_images/illustration_microbat.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/DDMNMS.html#ddmnms"><span class="std std-ref">Deciphering the developmental modules using closely related non model species</span></a> <br>
-Functional Manager: Alexa Sadier <br>
-IT Manager : Emmanuel Quemener</p>
-</div>
-</div>
+<img alt="Image illustration_microbat" class="img-float pe-2" src="../_images/illustration_microbat.png" />
+<p><a class="reference internal" href="Projets/DDMNMS.html#ddmnms"><span class="std std-ref">Deciphering the developmental modules using closely related non model species</span></a></p>
+<p>Functional Manager: Alexa Sadier</p>
+<p>IT Manager : Emmanuel Quemener</p>
 <p><strong>Dissipation des courants océaniques par radiation d’ondes internes (2016-2018)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image illustration_internalwaves" src="../_images/illustration_internalwaves.png" />
-<div class="docutils container">
+<img alt="Image illustration_internalwaves" class="img-float pe-2" src="../_images/illustration_internalwaves.png" />
 <p><a class="reference internal" href="Projets/DCOROI.html#dcoroi"><span class="std std-ref">Dissipation des courants océaniques par radiation d’ondes internes</span></a> <strong>(2016-2018)</strong> <br>
 Coordination : Antoine Venaille <br>
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
-</div>
-</div>
 </section>
 <section id="id21">
 <h2>2015<a class="headerlink" href="#id21" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Caractérisation par LIDAR de la végétation des rives de la Drome (2015-2018)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image evs" src="../_images/evs.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/CLIDAR.html#clidar"><span class="std std-ref">Pioneer riparian vegetation characterization on the Drome River</span></a> <br>
-Responsables fonctionnels : Hervé Piégay, Kristell Michel (EVS, UMR 5600) <br>
-Expert infrastructure informatique scientifique : Emmanuel Quemener</p>
-</div>
-</div>
+<a class="img-float pe-2 reference internal image-reference" href="../_images/evs.png"><img alt="Image evs" class="img-float pe-2" src="../_images/evs.png" style="width: 100px;" /></a>
+<p><a class="reference internal" href="Projets/CLIDAR.html#clidar"><span class="std std-ref">Pioneer riparian vegetation characterization on the Drome River</span></a></p>
+<p>Responsables fonctionnels : Hervé Piégay, Kristell Michel (EVS, UMR 5600)</p>
+<p>Expert infrastructure informatique scientifique : Emmanuel Quemener</p>
 <p><strong>Convection dans le manteau et océans de magma (2015-2018/ 2020-2021)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image test_t00250" src="../_images/test_t00250.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/CMOM.html#cmom"><span class="std std-ref">Convection dans le manteau et océans de magma</span></a> <br>
-Coordination : Stephane Labrosse <br>
-Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
-</div>
-</div>
+<img alt="Image test_t00250" class="img-float pe-2" src="../_images/test_t00250.png" />
+<p><a class="reference internal" href="Projets/CMOM.html#cmom"><span class="std std-ref">Convection dans le manteau et océans de magma</span></a></p>
+<p>Coordination : Stephane Labrosse</p>
+<p>Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
 </section>
 <section id="id22">
 <h2>2014<a class="headerlink" href="#id22" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Thèse École doctorale de Chimie (2014-2017)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image molecular_dynamics" src="../_images/molecular_dynamics.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/CMECEEC.html#cmeceec"><span class="std std-ref">Conception de molécules électro-chromiques pour des encres électroniques en couleur : une approche computationnelle</span></a>  <br>
-Coordination : Marco Garavelli <br>
-Thésard : Baptiste Demoulin</p>
-</div>
-</div>
+<img alt="Image molecular_dynamics" class="img-float pe-2" src="../_images/molecular_dynamics.png" />
+<p><a class="reference internal" href="Projets/CMECEEC.html#cmeceec"><span class="std std-ref">Conception de molécules électro-chromiques pour des encres électroniques en couleur : une approche computationnelle</span></a></p>
+<p>Coordination : Marco Garavelli</p>
+<p>Thésard : Baptiste Demoulin</p>
 <p><strong>Thèse École doctorale de Chimie (2014-2017)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image fluides" src="../_images/fluides.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/DFED.html#dfed"><span class="std std-ref">Dynamique de fluides dans des environnements désordonnés</span></a>  <br>
-Coordination : Wei Dong, Vincent Krakoviack <br>
-Thésard : Thomas Konincks</p>
-</div>
-</div>
+<img alt="Image fluides" class="img-float pe-2" src="../_images/fluides.png" />
+<p><a class="reference internal" href="Projets/DFED.html#dfed"><span class="std std-ref">Dynamique de fluides dans des environnements désordonnés</span></a></p>
+<p>Coordination : Wei Dong, Vincent Krakoviack</p>
+<p>Thésard : Thomas Konincks</p>
 <p><strong>Post-doc Solvay (2013-2015)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image co2" src="../_images/co2.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/AECO2.html#aeco2"><span class="std std-ref">Activation electrocatalytique du CO2</span></a>  <br>
-Coordination : Carine Michel <br>
-Post-doc : Stephan Steinmann</p>
-</div>
-</div>
+<img alt="Image co2" class="img-float pe-2" src="../_images/co2.png" />
+<p><a class="reference internal" href="Projets/AECO2.html#aeco2"><span class="std std-ref">Activation electrocatalytique du CO2</span></a></p>
+<p>Coordination : Carine Michel</p>
+<p>Post-doc : Stephan Steinmann</p>
 <p><strong>Thèse CNRS-Solvay (2013-2016)</strong></p>
 <p><a class="reference internal" href="Projets/NPASSMB.html#npassmb"><span class="std std-ref">Nouveaux procédés d’amination sélective pour la synthèse de monomères biosourcés</span></a> <br>
 Coordination : Carine Michel <br>
@@ -1114,22 +893,14 @@ Thésard : Alexandre Dumon</p>
 Coordination : Annamaria Kiss et Cerasela Calugaru <br>
 Etudiant : Typhaine Moreau</p>
 <p><strong>Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image zonal_velocity" src="../_images/zonal_velocity.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ETBG.html#etbg"><span class="std std-ref">Equation barotrope stochastique 2D</span></a> <br>
-Coordination : Freddy Bouchet <br>
-Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
-</div>
-</div>
+<img alt="Image zonal_velocity" class="img-float pe-2" src="../_images/zonal_velocity.png" />
+<p><a class="reference internal" href="Projets/ETBG.html#etbg"><span class="std std-ref">Equation barotrope stochastique 2D</span></a></p>
+<p>Coordination : Freddy Bouchet</p>
+<p>Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
 <p><strong>Epifly (2014-2015)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image epiflyfig-1" src="../_images/epiflyfig-1.jpg" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/Epifly.html#epifly"><span class="std std-ref">Base de données et interfaçage pour le traitement, la visualisation et la modélisation de l’épigénome de la mouche D. melanogaster</span></a> <br>
-Coordination : Cédric Vaillant, Emmanuel Quemener</p>
-</div>
-</div>
+<img alt="Image epiflyfig-1" class="img-float pe-2" src="../_images/epiflyfig-1.jpg" />
+<p><a class="reference internal" href="Projets/Epifly.html#epifly"><span class="std std-ref">Base de données et interfaçage pour le traitement, la visualisation et la modélisation de l’épigénome de la mouche D. melanogaster</span></a></p>
+<p>Coordination : Cédric Vaillant, Emmanuel Quemener</p>
 <p><strong>Structure et Dynamique de membranes lipidiques à l’échelle moléculaire  (2014)</strong></p>
 <div class="d-flex mb-3 docutils container">
 <img alt="Image dilipimol" src="../_images/dilipimol.jpg" />
@@ -1150,13 +921,9 @@ Coordination : Cerasela Calugaru et Annamaria Kiss</p>
 </div>
 </div>
 <p><strong>Fishin’TE (2013-2014)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image fishinte" src="../_images/fishinte.jpg" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/LTEF.html#ltef"><span class="std std-ref">A landscape of transposable elements in fish</span></a> <br>
-Coordination : Domitile Chalopin, Magali Naville, Emmanuel Quemener</p>
-</div>
-</div>
+<img alt="Image fishinte" class="img-float pe-2" src="../_images/fishinte.jpg" />
+<p><a class="reference internal" href="Projets/LTEF.html#ltef"><span class="std std-ref">A landscape of transposable elements in fish</span></a></p>
+<p>Coordination : Domitile Chalopin, Magali Naville, Emmanuel Quemener</p>
 <p><strong>SIMBIO (2013-2018)</strong></p>
 <div class="d-flex mb-3 docutils container">
 <img alt="Image simbio" src="../_images/simbio.png" />
@@ -1177,56 +944,32 @@ Coordination : Jean-Philippe Magué</p>
 </div>
 </div>
 <p><strong>ANR FSCF (2012-2015)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image proteins" src="../_images/proteins.png" />
-<div class="docutils container">
+<img alt="Image proteins" class="img-float pe-2" src="../_images/proteins.png" />
 <p><a class="reference internal" href="Projets/ANRFscf2.html#anrfscf2"><span class="std std-ref">Fluctuations in Structured Coulomb Fluids</span></a> <br>
 Coordination : Ralf Everaers <br>
 Post-doc : Sam Meyer <br>
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
-</div>
-</div>
 <p><strong>CARPACCIO (2012-20xx)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image carpacciologo" src="../_images/carpacciologo.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/Carpaccio.html#carpaccio"><span class="std std-ref">Program for muscle analysis enabling global, unbiased and multi-parametric characterization of fiber populations in muscle cross-sections</span></a> <br>
-Coordination : Brian B. Rudkin</p>
-</div>
-</div>
+<img alt="Image carpacciologo" class="img-float pe-2" src="../_images/carpacciologo.png" />
+<p><a class="reference internal" href="Projets/Carpaccio.html#carpaccio"><span class="std std-ref">Program for muscle analysis enabling global, unbiased and multi-parametric characterization of fiber populations in muscle cross-sections</span></a></p>
+<p>Coordination : Brian B. Rudkin</p>
 <p><strong>WURM project (2012-20xx)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image wurm1" src="../_images/wurm1.jpg" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/WURM2.html#wurm2"><span class="std std-ref">A database of computed physical properties of minerals</span></a> <br>
-Coordination : Razvan Caracas <br>
-Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
-</div>
-</div>
+<a class="img-float pe-2 reference internal image-reference" href="../_images/wurm1.jpg"><img alt="Image wurm1" class="img-float pe-2" src="../_images/wurm1.jpg" style="width: 140px;" /></a>
+<p><a class="reference internal" href="Projets/WURM2.html#wurm2"><span class="std std-ref">A database of computed physical properties of minerals</span></a></p>
+<p>Coordination : Razvan Caracas</p>
+<p>Expert analyse numérique et calcul scientifique : Cerasela Calugaru</p>
 <p><strong>ANR Rideporph (2012-2015)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image porphyrin" src="../_images/porphyrin.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRRideporph.html#anrrideporph"><span class="std std-ref">Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach.</span></a> <br>
-Coordination : Marie-Laure Bocquet <br>
-Post-doc : Marie Lattelais</p>
-</div>
-</div>
+<img alt="Image porphyrin" class="img-float pe-2" src="../_images/porphyrin.png" />
+<p><a class="reference internal" href="Projets/ANRRideporph.html#anrrideporph"><span class="std std-ref">Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach.</span></a></p>
+<p>Coordination : Marie-Laure Bocquet</p>
+<p>Post-doc : Marie Lattelais</p>
 <p><strong>Puma Mind (2012-2015)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image pumamind" src="../_images/pumamind.jpg" />
-<div class="docutils container">
+<img alt="Image pumamind" class="img-float pe-2" src="../_images/pumamind.jpg" />
 <p><a class="reference internal" href="Projets/Pumamind2.html#pumamind2"><span class="std std-ref">International R&amp;D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs)</span></a> <br>
 Coordination ENS : David Loffreda <br></p>
-</div>
-</div>
 <p><strong>Bourse Eiffel (2012-2015)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image campusfrance" src="../_images/campusfrance.jpg" />
-<div class="docutils container">
+<img alt="Image campusfrance" class="img-float pe-2" src="../_images/campusfrance.jpg" />
 <p>Ce programme de prestige récompense les étudiants étrangers présentés par l’établissement français dans lequel ils poursuivront leurs études, et retenus par un jury d’évaluateurs.</p>
-</div>
-</div>
 <p><strong>Étude de fluides complexes d’intérêt biologique et de fluides confinés dans des matériaux nano-poreux</strong> <br>
 Lauréat : Falin Tian <br>
 Directeur de Thèse : Wei Dong</p>
@@ -1234,51 +977,31 @@ Directeur de Thèse : Wei Dong</p>
 <section id="id25">
 <h2>2011<a class="headerlink" href="#id25" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>ANR Galac (2011-2015)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image acide_lactique" src="../_images/acide_lactique.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRGalac2.html#anrgalac2"><span class="std std-ref">Synthèse d’acide acrylique à partir du glycérol via l’acide lactique</span></a> <br>
-Coordination ENS : Philippe Sautet &amp; Carine Michel <br>
+<img alt="Image acide_lactique" class="img-float pe-2" src="../_images/acide_lactique.png" />
+<p><a class="reference internal" href="Projets/ANRGalac2.html#anrgalac2"><span class="std std-ref">Synthèse d’acide acrylique à partir du glycérol via l’acide lactique</span></a></p>
+<p>Coordination ENS : Philippe Sautet &amp; Carine Michel <br>
 Doctorant : Jérémie Zaffran</p>
-</div>
-</div>
 <p><strong>Collaboration ENS - Total</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Logo total" src="../_images/total.jpg" />
-<div class="docutils container">
+<img alt="Logo total" class="img-float pe-2" src="../_images/total.jpg" />
 <p><strong>Développement d’un outil d’évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM
 Développement d’un modèle mésoscale des phénomènes d’adhésion à l’interface des systèmes Silicone-Silane-Métal</strong> <br>
 Coordination ENS : Philippe Sautet</p>
-</div>
-</div>
 <p><strong>Collaboration ENS - Solvay</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image solvay" src="../_images/solvay.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/Solvay.html#collab-solvay"><span class="std std-ref">Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo.</span></a> <br>
-Coordination ENS : Philippe Sautet &amp; Carine Michel <br>
-Post-doc : Prokopis Andrikopoulos</p>
-</div>
-</div>
+<img alt="Image solvay" class="img-float pe-2" src="../_images/solvay.png" />
+<p><a class="reference internal" href="Projets/Solvay.html#collab-solvay"><span class="std std-ref">Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type métal-oxo.</span></a></p>
+<p>Coordination ENS : Philippe Sautet &amp; Carine Michel</p>
+<p>Post-doc : Prokopis Andrikopoulos</p>
 </section>
 <section id="id26">
 <h2>2010<a class="headerlink" href="#id26" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>ANR Dyquma (2010-2013)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image dyquma" src="../_images/dyquma.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRDyquma.html#anrdyquma"><span class="std std-ref">Études théoriques de la dynamique quantique de molécules absorbées</span></a> <br>
-Coordination ENS : Philippe Sautet, Wei Dong &amp; David Loffreda</p>
-</div>
-</div>
+<img alt="Image dyquma" class="img-float pe-2" src="../_images/dyquma.png" />
+<p><a class="reference internal" href="Projets/ANRDyquma.html#anrdyquma"><span class="std std-ref">Études théoriques de la dynamique quantique de molécules absorbées</span></a></p>
+<p>Coordination ENS : Philippe Sautet, Wei Dong &amp; David Loffreda</p>
 <p><strong>ANR ChimigraphN (2010-2013)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image graphene" src="../_images/graphene.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRChimi.html#anrchimigraphn"><span class="std std-ref">Chemisorption, reactivity and defects on graphene</span></a> <br>
-Coordination ENS : Marie-Laure Bocquet</p>
-</div>
-</div>
+<a class="img-float pe-2 reference internal image-reference" href="../_images/graphene.png"><img alt="Image graphene" class="img-float pe-2" src="../_images/graphene.png" style="width: 90px;" /></a>
+<p><a class="reference internal" href="Projets/ANRChimi.html#anrchimigraphn"><span class="std std-ref">Chemisorption, reactivity and defects on graphene</span></a></p>
+<p>Coordination ENS : Marie-Laure Bocquet</p>
 <p><strong>ANR LORIS (2010-2013)</strong></p>
 <div class="d-flex mb-3 docutils container">
 <img alt="Image anr_loris" src="../_images/anr_loris.png" />
@@ -1316,24 +1039,16 @@ Post-doc : Hatem Touil</p>
 </div>
 </div>
 <p><strong>ANR STATOCEAN (2009-2012)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image statocean" src="../_images/statocean.jpg" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRStatocean.html#anrstatocean"><span class="std std-ref">Out of equilibrium statistical mechanics of geophysical flows and applications to the Kuroshio current (east of Japan) and to the Zapiola anticyclone (east of Argentina)</span></a> <br>
-Coordination : Freddy Bouchet</p>
-</div>
-</div>
+<a class="img-float pe-2 reference internal image-reference" href="../_images/statocean.jpg"><img alt="Image statocean" class="img-float pe-2" src="../_images/statocean.jpg" style="width: 90px;" /></a>
+<p><a class="reference internal" href="Projets/ANRStatocean.html#anrstatocean"><span class="std std-ref">Out of equilibrium statistical mechanics of geophysical flows and applications to the Kuroshio current (east of Japan) and to the Zapiola anticyclone (east of Argentina)</span></a></p>
+<p>Coordination : Freddy Bouchet</p>
 </section>
 <section id="id28">
 <h2>2008<a class="headerlink" href="#id28" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>ANR Muse (2008-2012)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image ugi-smiles-reaction" src="../_images/ugi-smiles-reaction.png" />
-<div class="docutils container">
-<p><a class="reference internal" href="Projets/ANRMuse.html#anrmuse"><span class="std std-ref">Couplage Ugi-Smiles : de l’accès éco-compatible à des produits pharmaceutiques à la synthèse de nouveaux ligands pour les métaux lourds</span></a> <br>
-Coordination ENS : Paul Fleurat-Lessard</p>
-</div>
-</div>
+<img alt="Image ugi-smiles-reaction" class="img-float pe-2" src="../_images/ugi-smiles-reaction.png" />
+<p><a class="reference internal" href="Projets/ANRMuse.html#anrmuse"><span class="std std-ref">Couplage Ugi-Smiles : de l’accès éco-compatible à des produits pharmaceutiques à la synthèse de nouveaux ligands pour les métaux lourds</span></a></p>
+<p>Coordination ENS : Paul Fleurat-Lessard</p>
 </section>
 <section id="id29">
 <h2>2007<a class="headerlink" href="#id29" title="Lien vers cette rubrique">¶</a></h2>
@@ -1346,15 +1061,13 @@ Coordination : Ralf Everaers</p>
 </div>
 </div>
 <p><strong>CompPhysSoftBioMat (2005-20xx)</strong></p>
-<div class="d-flex mb-3 docutils container">
-<img alt="Image sofmatter" src="../_images/sofmatter.jpg" />
-<div class="docutils container">
+<blockquote>
+<div><img alt="Image sofmatter" class="img-float pe-2" src="../_images/sofmatter.jpg" />
+</div></blockquote>
 <p><a class="reference internal" href="Projets/CPSBM.html#cpsbm"><span class="std std-ref">Computational Physics of Soft and Biological Matter</span></a> <br>
 Coordination : Ralf Everaers <br>
 <a class="reference internal" href="Projets/CEANR.html#ceanr"><span class="std std-ref">Chaire d’excellence ANR</span></a> <br>
 Ralf Everaers</p>
-</div>
-</div>
 </section>
 </section>
 
@@ -1403,10 +1116,10 @@ Ralf Everaers</p>
       </p>
   </footer>
   <script src="../_static/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="../_static/jquery.min.js"></script>
   <script src="../_static/bootstrap_bundle.min.js"></script>
   <script src="../_static/bootstrap_popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../_static/bootstrap_cdn.min.js"></script>
   <script src="../_static/bootstrap.min.js"></script>
   </body>
 </html>

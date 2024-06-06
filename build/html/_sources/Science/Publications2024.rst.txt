@@ -6,7 +6,6 @@ Publications 2023-2024
    .. toctree::
       :maxdepth: 1
       :caption: Table des matières
-
       
       Publications/Publications2022
       Publications/Publications2021

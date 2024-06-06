@@ -1,11 +1,8 @@
 Workshop 2020
 =============
 
-Workshop 2020
--------------
-
 .. image:: ../../_static/Animations/WS/ecam.png
-    :class: img-fluid img-float pe-3
+    :class: img-float pe-3
     :alt: Image Ecam
 
 **20/02/2020 au 21/02/2020 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**

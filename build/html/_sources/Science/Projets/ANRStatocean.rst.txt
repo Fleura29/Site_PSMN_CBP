@@ -8,17 +8,14 @@ ANR STATOCEAN
 
 **Numerical Computation of Large Deviations and out-of-equilibrium Statistical Mechanics of Turbulent Flows**
 
-.. container:: d-flex mb-3
+.. image:: ../../_static/img_projets/kuroshio_current.jpg
+    :class: img-float pe-2
+    :width: 170px
+    :alt: Image kuroshio current
 
-    .. image:: ../../_static/img_projets/kuroshio_current.jpg
-        :class: w-25 img-fluid
-        :alt: Image kuroshio current
+**Out of equilibrium statistical mechanics of geophysical flows and applications to the Kuroshio current (east of Japan) and to the Zapiola anticyclone (east of Argentina)**
 
-    .. container::
-
-        **Out of equilibrium statistical mechanics of geophysical flows and applications to the Kuroshio current (east of Japan) and to the Zapiola anticyclone (east of Argentina)**
-
-        **Directed by: Freddy BOUCHET, ENS-Lyon and CNRS** 
+**Directed by: Freddy BOUCHET, ENS-Lyon and CNRS** 
 
 :underline:`Contact :` Freddy.Bouchet @ ens-lyon.fr 
 
@@ -49,7 +46,7 @@ We will study several important phenomena for the large scale dynamics of oceans
 .. container:: text-center
 
     .. image:: ../../_static/img_projets/rings-southern-ocean-high-resolution.jpg
-        :class: w-25 img-fluid
+        :class: img-fluid
         :alt: Image rings-southern-ocean
 
 *[From Hallberg-Gnanadesikan - JPO 2006.]  A large part of ocean mesoscale variability is explained by vortices (rings) of size 100 - 200 km.  These rings are present everywhere in the ocean. There are for instance visible here south of South Africa and all along the Antarctic circumpolar current.*
@@ -57,7 +54,7 @@ We will study several important phenomena for the large scale dynamics of oceans
 .. container:: text-center
 
     .. image:: ../../_static/img_projets/rings-psi-vitesse.jpg
-        :class: w-25 img-fluid
+        :class: img-fluid
         :alt: Image rings-psi-vitesse
 
 *Streamfunction and velocity statistical equilibria, explaining the structure and drift velocity of ocean rings.*

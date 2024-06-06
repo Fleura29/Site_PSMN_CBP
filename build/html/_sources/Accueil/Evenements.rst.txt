@@ -9,6 +9,9 @@ Evènements
 .. role:: line
     :class: line
 
+.. role:: it-bold
+    :class: it-bold
+
 Evènements 2024 du Centre Blaise Pascal
 ---------------------------------------
 
@@ -74,15 +77,15 @@ Documentations pour bien utiliser les espaces de stockage du CBP ? Les `$HOME et
 
 **06/04/2024 - Arrêt, mise à jour et redémarrage de** `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_
 
-**23/02/2024 - Remise en service de** *dgx*, **machine disposant de 4 GPGPU Nvidia A100 avec NVlink**
+**23/02/2024 - Remise en service de** :it-bold:`dgx`, **machine disposant de 4 GPGPU Nvidia A100 avec NVlink**
 
-**22/02/2024 - Mise en service de** *hopper*, **machine à architecture** `Grace Hopper <https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/>`_ **de Nvidia**
+**22/02/2024 - Mise en service de** :it-bold:`hopper`, **machine à architecture** `Grace Hopper <https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/>`_ **de Nvidia**
 
-**20/02/2024 - Installation dans** *epyc3* **d'une carte GPU Nvidia RTX 6000 Ada à 48GB de RAM**
+**20/02/2024 - Installation dans** :it-bold:`epyc3` **d'une carte GPU Nvidia RTX 6000 Ada à 48GB de RAM**
 
-**11/02/2024 - Installation dans** *threadripper* **d'une carte GPU Nvidia RTX 4090 à 24GB de RAM**
+**11/02/2024 - Installation dans** :it-bold:`threadripper` **d'une carte GPU Nvidia RTX 4090 à 24GB de RAM**
 
-**10/01/2024 - Mise en service de** *fatmem*, **machine disposant de 8 TB d'équivalent RAM**
+**10/01/2024 - Mise en service de** :it-bold:`fatmem`, **machine disposant de 8 TB d'équivalent RAM**
 
 **29/11/2023 - Démarrage du déploiement des machines du projet** `AnchIAle <developpement:projets:anchiale>`_
 

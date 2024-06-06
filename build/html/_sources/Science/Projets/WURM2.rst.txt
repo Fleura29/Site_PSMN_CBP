@@ -10,19 +10,17 @@ WURM project
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/wurm1.jpg
-        :class: img-fluid
-        :alt: Image wurm
+.. image:: ../../_static/img_projets/wurm1.jpg
+    :class: img-float pe-2
+    :alt: Image wurm
 
-    .. container::
+Coordinator : Razvan Caracas
 
-        Coordinator : Razvan Caracas |br|
-        ENS Researcher: Ema Bobocioiu |br|
-        Contact: Razvan Caracas & Cerasela Calugaru 
+ENS Researcher: Ema Bobocioiu 
 
-        `Website of the project <http://www.wurm.info>`_
+Contact: Razvan Caracas & Cerasela Calugaru 
+
+`Website of the project <http://www.wurm.info>`_
 
 **A database of computed physical properties of minerals** 
 
@@ -57,13 +55,13 @@ Creative Commons License: The WURM project is licensed under a `Creative Commons
 
 :underline:`Associated publications :`
 
-* R. Caracas, E. Bobocioiu, **The WURM project – a freely available web-based repository of computed physical data for minerals**, American Mineralogist, 96, 437–443 (2011).
+* R . Caracas, E. Bobocioiu, **The WURM project – a freely available web-based repository of computed physical data for minerals**, American Mineralogist, 96, 437–443 (2011).
 
 * Jin Liu, Razvan Caracas, Dawei Fan, Ema Bobocioiu, Dongzhou Zhang, Wendy L. Mao, **High-pressure compressibility and vibrational properties of (Ca,Mn)CO3**, American Mineralogist, 101, 2723-2730 (2016).
 
-* E. Bobocioiu, R. Caracas, **Stability and spectroscopy of Mg sulfate minerals: Role of hydration on sulfur isotope partitioning**, American Mineralogist, 99, 1216-1220 (2014).
+* E . Bobocioiu, R. Caracas, **Stability and spectroscopy of Mg sulfate minerals: Role of hydration on sulfur isotope partitioning**, American Mineralogist, 99, 1216-1220 (2014).
 
-* G. Montagnac, R. Caracas, E. Bobocioiu, F. Vittoz, B. Reynard, **Anharmonicity of graphite at high temperature**, Carbon, 54, 68-75 (2013). 
+* G . Montagnac, R. Caracas, E. Bobocioiu, F. Vittoz, B. Reynard, **Anharmonicity of graphite at high temperature**, Carbon, 54, 68-75 (2013). 
 
 * Avril, C., Malavergne, V., Caracas, R., Zanda, B., Reynard, B., Charon, E., Bobocioiu, E., Brunet, F., Borensztajn, S., Pont, S., Tarrida, M., Guyot, F., **Raman spectroscopic properties and Raman identification of CaS-MgS-MnS-FeS-Cr2FeS4 sulfides in meteorites and reduced sulfur-rich systems**. Meteoritics & Planetary Science, 48, 1415–1426 (2013). 
 

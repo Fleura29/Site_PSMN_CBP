@@ -7,18 +7,13 @@ Atelier des Humanités Numériques
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/ahn_logo.png
-        :class: img-fluid
-        :width: 200px
-        :alt: Logo AHN
+.. image:: ../../_static/img_projets/ahn_logo.png
+    :class: img-float pe-2
+    :alt: Logo AHN
 
-    .. container::
+Coordination : Pierre-Yves Jallud et Nathalie Arlin 
 
-        Coordination : Pierre-Yves Jallud et Nathalie Arlin 
-
-        L’usage de technologies numériques en Sciences Humaines et Sociales a établi un nouveau rapport entre le chercheur et ses sources. Si ces usages ne sont pas nouveaux, ils sont longtemps restés le fait d'une communauté minoritaire au sein des SHS. Mais depuis une dizaine d'années, on assiste à une appropriation généralisée de ces technologies, induisant de nouvelles pratiques et, de fait, un profond renouvellement méthodologique.
+L’usage de technologies numériques en Sciences Humaines et Sociales a établi un nouveau rapport entre le chercheur et ses sources. Si ces usages ne sont pas nouveaux, ils sont longtemps restés le fait d'une communauté minoritaire au sein des SHS. Mais depuis une dizaine d'années, on assiste à une appropriation généralisée de ces technologies, induisant de nouvelles pratiques et, de fait, un profond renouvellement méthodologique.
 
 A l'ENS de Lyon, les différents laboratoires de SHS investissent ces nouvelles pratiques. Afin de mener des analyses et des expérimentations fédérées et de proposer des méthodes génériques et maîtrisées, l'Atelier des Humanités Numériques (AHN) regroupe un réseau d'ingénieurs et de chercheurs travaillant sur différents projets de corpus numériques. De plus, l'AHN, notamment dans sa contribution au projet MuTEC, propose des formations aux technologies intervenant dans l'édition numérique de corpus. 
 

@@ -10,11 +10,9 @@ Descriptive and predictive cell-based models for the emergence of shape in plant
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/vasculature.png
-        :class: img-fluid
-        :alt: A dynamical model for leaf vasculature
+.. image:: ../../_static/img_projets/vasculature.png
+    :class: img-fluid mb-2
+    :alt: A dynamical model for leaf vasculature
 
 :underline:`Coordination :` Arezki Boudaoud 
 

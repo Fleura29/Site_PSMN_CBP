@@ -52,84 +52,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
-                                             
-                        <!--<script>
-                            
-                            function createA(att, url, nom){
-                                const a= document.createElement("a");
-                                a.setAttribute("class", att);
-                                a.href= url ;
-                                a.textContent= nom;
-                                return a;
-                            };
 
-                            fetch("../_static/Liens.html")
-                            .then((response) => response.json())
-                            .then((json) => {
-                                
-                                json.Menu.titre.forEach((element) => {
-                                    const li_menu = document.createElement("li");
-                                    li_menu.setAttribute("class", "nav-item dropdown");
-                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
-
-                                    menu.append(li_menu);
-                                    li_menu.append(a_titre);
-
-                                    const div_menu = document.createElement("div");
-                                    div_menu.setAttribute("class", "dropdown-menu");
-                                    li_menu.append(div_menu);
-
-                                    const ul_titre = document.createElement("ul");
-                                    div_menu.append(ul_titre);
-                                    const obj= Object.entries(json.Menu[element]);
-
-                                    for (const [key,values] of obj){
-                                        if (typeof values !== 'object') {
-   
-                                            const li_sous_menu = document.createElement("li");
-
-                                            if(values === "#"){ 
-                                                const a_sous_titre = createA("dropdown-item", values , key);
-                                                ul_titre.append(li_sous_menu);
-                                                li_sous_menu.append(a_sous_titre);
-                                            }
-                                            else{
-                                                const a_sous_titre = createA("dropdown-item", values, key);
-                                                ul_titre.append(li_sous_menu);
-                                                li_sous_menu.append(a_sous_titre);
-                                            }
-                                            
-                                        } else {     
-                                            const li_sous_menu = document.createElement("li");
-                                            li_sous_menu.setAttribute("class", "nav-item dropend");
-                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
-
-                                            ul_titre.append(li_sous_menu);
-                                            li_sous_menu.append(a_sous_titre);
-
-                                            const div_sous_menu = document.createElement("div");
-                                            div_sous_menu.setAttribute("class", "dropdown-menu");
-                                            li_sous_menu.append(div_sous_menu);
-
-                                            const ul_ss_titre = document.createElement("ul");
-                                            div_sous_menu.append(ul_ss_titre);
-                                            const obj2 = Object.entries(json.Menu[element][key]);
-                                            
-                                            for (let [keys, val] of obj2) {
-                                                const li_ss_menu = document.createElement("li");
-                                                const a_ss_titre = createA("dropdown-item", val, keys);
-
-                                                ul_ss_titre.append(li_ss_menu);
-                                                li_ss_menu.append(a_ss_titre);
-                                            }
-                                        }
-                                    }
-                                });
-                            })
-                        </script>-->
-                        
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
                                     <li><a class="dropdown-item" href="../Accueil/Actualites.html">Actualités PSMN</a></li>
@@ -138,14 +63,14 @@
                                     <li><a class="dropdown-item" href="../Accueil/Liens.html">Liens</a></li>
                                     <li><a class="dropdown-item" href="../Accueil/Services.html">Services</a></li>
                                     <li class="nav-item dropend">
-                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
                                         <div class="dropdown-menu">
                                             <ul>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
-                                                    <li><a class="dropdown-item" href="../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -175,111 +100,107 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
                             <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="DataCenter.html">Data Center</a></li>
-                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
-                                <li><a class="dropdown-item" href="ClustersServeurs.html">Les clusters et les serveurs</a></li>
-                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
-                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
-                                <li><a class="dropdown-item" href="ProjetInfra.html">Projets d'infrastructure</a></li>
-                                <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
-                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
-                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
-                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
-                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
-                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
-                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
-                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
-                                        </ul>
-                                    </div>
-                                
-                                </li>
-                                <li class="nav-item dropend">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            
-                                            <li><a class="dropdown-item" href="Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
-                                            <li><a class="dropdown-item" href="Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
-                                            <li><a class="dropdown-item" href="Supports/HN.html">Support en humanités numériques</a></li>
-                                            <li><a class="dropdown-item" href="Supports/AFJ.html">Support administratif, financier et juridique</a></li>
-                                        </ul>                                        
-                                    </div>
-                                </li>  
-                             </ul>   
-                        </div>
+                                <ul>
+                                    <li><a class="dropdown-item" href="DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                    <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="#">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                                <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                                <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                                <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                                <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                                <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                                <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                                <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
                         </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../Formation/Formation.html">Formation</a></li>
-                                <li><a class="dropdown-item" href="../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../Formation/Stage.html">Propositions de stage</a></li>
-                            </ul>   
-                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../Formation/Master/MNPC.html">Master 2- MNPC (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
                         </li>
                         
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
-                        <div class="dropdown-menu">
-                            <ul> 
-                                <li><a class="dropdown-item" href="../Science/Publications2024.html">Publications</a></li>
-                                <li><a class="dropdown-item" href="../Science/Theses.html">Thèses</a></li>
-                                <li><a class="dropdown-item" href="../Science/CreationsMulti.html">Créations multimédia</a></li>
-                                <li><a class="dropdown-item" href="../Science/Chercheurs.html">Chercheurs associés</a></li>
-                                <li><a class="dropdown-item" href="../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
-                            </ul>   
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
                         </li>
                       
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
-                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
-                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
-                                <li><a class="dropdown-item" href="../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
-                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
-                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
-                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
-                                <li><a class="dropdown-item" href="#">Médias</a></li>
-                                <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            
-                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
-                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
-                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
-                                        </ul>
-                                        
-                                    </div>
-                                </li>
-                            </ul>   
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                    <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                    <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                    <li><a class="dropdown-item" href="../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="#">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                
+                                                    <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                    <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
                         </li>
                         
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../Contacts/Acces.html ">Accès aux sites</a></li>
-                                <li><a class="dropdown-item" href="../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
-                                <li><a class="dropdown-item" href="../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
-                                <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
-                            </ul>   
-                        </div>
-                        </li>
-                          
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
                     </ul>
                 </div>
                 <div class="container w-25">
@@ -293,9 +214,7 @@
 </search>
 
                 </div>
-                
-                
-                <div></div>
+
             </div>
         </nav>
 </header>
@@ -311,13 +230,13 @@
 <section id="une-utilisation-toujours-croissante">
 <h2>Une utilisation toujours croissante<a class="headerlink" href="#une-utilisation-toujours-croissante" title="Lien vers cette rubrique">¶</a></h2>
 <div class="text-center docutils container">
-<img alt="Graphique utilisateurs cbp 2019" class="img-max-width" src="../_images/utilisateurscbp2019.png" />
+<img alt="Graphique utilisateurs cbp 2019" class="img-fluid" src="../_images/utilisateurscbp2019.png" />
 </div>
 </section>
 <section id="un-ensemble-de-plateaux-techniques">
 <h2>Un ensemble de plateaux techniques<a class="headerlink" href="#un-ensemble-de-plateaux-techniques" title="Lien vers cette rubrique">¶</a></h2>
 <p>A l’origine, les ressources informatiques du Centre Blaise Pascal étaient celles du Cecam, essentiellement cantonnées à la salle informatique.</p>
-<p>Maintenant, le Centre Blaise Pascal dispose d’un ensemble de [[developpement:productions:plateaux|plateaux techniques]] destinés à la formation, l’étude (de l’expérience au prototypage), le développement ou la qualification dans tous les segments de l’informatique scientifique :</p>
+<p>Maintenant, le Centre Blaise Pascal dispose d’un ensemble de <a class="reference external" href="#">plateaux techniques</a> destinés à la formation, l’étude (de l’expérience au prototypage), le développement ou la qualification dans tous les segments de l’informatique scientifique :</p>
 <ul class="simple">
 <li><p>plateau multi-noeuds : 2 clusters de 64 noeuds r410 et r422, 1 cluster de 16 noeuds c6100, 1 cluster de 12 noeuds s9200</p></li>
 <li><p>plateau multi-coeurs : près de 250 machines disposant de 2 à 128 coeurs physiques dans 48 modèles différents</p></li>
@@ -339,11 +258,11 @@
 <ul class="simple">
 <li><p>une infrastructure logicielle cohérente</p></li>
 <li><p>des équipements matériels génériques</p></li>
-<li><p>une [[ressources:salledeformation|salle de formation]] correctement équipée</p></li>
+<li><p>une <a class="reference external" href="#">salle de formation</a> correctement équipée</p></li>
 <li><p>des clusters hétérogènes de récupération</p></li>
 <li><p>un environnement d’administration simplifié <a class="reference internal" href="../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a></p></li>
 </ul>
-<p>L”[[gridengine4cbp|utilisation]] des clusters (plateaux multi-noeuds &amp; multi-coeurs) se base sur GridEngine.</p>
+<p>L”<a class="reference external" href="#">utilisation</a> des clusters (plateaux multi-noeuds &amp; multi-coeurs) se base sur GridEngine.</p>
 </section>
 <section id="espaces-de-stockage-du-cbp">
 <h2>Espaces de stockage du CBP<a class="headerlink" href="#espaces-de-stockage-du-cbp" title="Lien vers cette rubrique">¶</a></h2>
@@ -367,7 +286,7 @@ L’intérêt de disposer de la même distribution, dans la même version, perme
 </section>
 <section id="equipements-informatiques-materiels">
 <h2>Équipements informatiques matériels<a class="headerlink" href="#equipements-informatiques-materiels" title="Lien vers cette rubrique">¶</a></h2>
-<div class="text-center w-75 docutils container">
+<div class="text-center docutils container">
 <div class="bg-success-subtle pt-2 pb-1 mb-3 rounded fs-13 docutils container">
 <p>Les équipements suivants forment le <a class="reference external" href="https://www.cbp.ens-lyon.fr/python/forms/CloudCBP">Cloud&#64;CBP</a> : plus de 150 machines directement accessibles avec le même environnement</p>
 </div>
@@ -477,7 +396,7 @@ L’intérêt de disposer de la même distribution, dans la même version, perme
 </ul>
 </div></blockquote>
 <p>Ces machines sont accessibles par SSH ou x2go : “”&lt;nom&gt;.cbp.ens-lyon.fr””</p>
-<p>Une vision d’ensemble de l”<a class="reference external" href="http://www.cbp.ens-lyon.fr/python/forms/CloudCBP">état des stations de travail</a> sous [[developpement:productions:sidus|SIDUS]].</p>
+<p>Une vision d’ensemble de l”<a class="reference external" href="http://www.cbp.ens-lyon.fr/python/forms/CloudCBP">état des stations de travail</a> sous <a class="reference internal" href="../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a>.</p>
 </section>
 <section id="machines-ouvertes-en-salle-3ip-a-accelerateur-amd-ou-nvidia">
 <h2>Machines ouvertes en salle 3IP à accélérateur AMD ou Nvidia<a class="headerlink" href="#machines-ouvertes-en-salle-3ip-a-accelerateur-amd-ou-nvidia" title="Lien vers cette rubrique">¶</a></h2>
@@ -537,11 +456,11 @@ L’intérêt de disposer de la même distribution, dans la même version, perme
 <section id="equipements-specifiques">
 <h2>Équipements spécifiques<a class="headerlink" href="#equipements-specifiques" title="Lien vers cette rubrique">¶</a></h2>
 <div class="text-center docutils container">
-<img alt="Image cimg0039" src="../_images/cimg0039.jpg" />
+<img alt="Image cimg0039" class="img-fluid" src="../_images/cimg0039.jpg" />
 </div>
 <ul class="simple">
 <li><p><strong>un cluster 64 bits</strong> de 156 noeuds permanents et sa frontale</p></li>
-<li><p>accès par <strong>cocyte.cbp.ens-lyon.fr</strong> avec soumission par [[ressources:slurm4cbp|Slurm]]</p></li>
+<li><p>accès par <strong>cocyte.cbp.ens-lyon.fr</strong> avec soumission par <a class="reference external" href="#">Slurm</a></p></li>
 <li><p><strong>24 stations d’intégration :</strong></p></li>
 <li><p><strong>lenny32</strong> &amp; <strong>lenny64</strong> : distributions Debian Lenny 32/64 bits</p></li>
 <li><p><strong>squeeze32</strong> &amp; <strong>squeeze64</strong> : distributions Debian Squeeze 32/64 bits</p></li>
@@ -703,10 +622,10 @@ L’intérêt de disposer de la même distribution, dans la même version, perme
       </p>
   </footer>
   <script src="../_static/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="../_static/jquery.min.js"></script>
   <script src="../_static/bootstrap_bundle.min.js"></script>
   <script src="../_static/bootstrap_popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../_static/bootstrap_cdn.min.js"></script>
   <script src="../_static/bootstrap.min.js"></script>
   </body>
 </html>

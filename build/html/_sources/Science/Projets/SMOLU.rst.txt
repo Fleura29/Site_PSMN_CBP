@@ -6,19 +6,16 @@ SMOLU ou la coagulation de petits solides en agrégats
 .. |br| raw:: html
 
    <br>
+ 
+.. image:: ../../_static/img_projets/smolu2021.png
+    :class: img-float pe-2
+    :width: 180px
+    :alt: Image smolu2021
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/sentenceembeddings2021.png
-        :class: img-fluid
-        :alt: Image sentenceembeddings2021
-
-    .. container::
-
-        **Guillaume Laibe (CRAL, ENS-Lyon), Maxime Lombart (CRAL, ENS-Lyon),** |br|
-        **Benoit Commerçon (CRAL, ENS-Lyon),** |br|
-        **Timothee Davis-Clery (CRAL- ENS-Lyon)** |br|
-        **Portage GPU : Emmanuel Quémener (CBP, ENS-Lyon)**
+**Guillaume Laibe (CRAL, ENS-Lyon), Maxime Lombart (CRAL, ENS-Lyon),** |br|
+**Benoit Commerçon (CRAL, ENS-Lyon),** |br|
+**Timothee Davis-Clery (CRAL- ENS-Lyon)** |br|
+**Portage GPU : Emmanuel Quémener (CBP, ENS-Lyon)**
 
 On retrouve le processus de coagulation de petits solides en agrégats plus gros dans la physique des nuages et des aérosols, dans les problèmes de combustion, de croissance de protéines, de fabrication du café solube… et bien sûr au centre de la formation des planètes. Comment des solides de taille micronique issus du milieu interstellaire peuvent-ils croître sur 30 ordres de grandeurs en moins d’un million d’années ? Attaquer ce problème par le biais de simulations numériques globales requiert le déploiement d'une nouvelle génération d’algorithmes de coagulation ultra-performants sur les architectures émergentes de calcul, poussées à leur capacités maximales.
 

@@ -7,17 +7,15 @@ Approche des Données par Annotations (Lyon)
 
    <br>
 
-.. container:: d-flex mb-3
     
-    .. image:: ../../_static/img_projets/iao.jpg
-        :class: img-fluid
-        :alt: Image iao
+.. image:: ../../_static/img_projets/iao2.jpeg
+    :class: img-float pe-2
+    :width: 200px
+    :alt: Logo Institut d'Asie Ortientale
 
-    .. container::
-
-        **Institut d'Asie Orientale :** Bruno Morandière |br|
-        **Data-Futures :** Peter Cornwell |br|
-        **Centre Blaise Pascal :** Emmanuel Quémener
+**Institut d'Asie Orientale :** Bruno Morandière |br|
+**Data-Futures :** Peter Cornwell |br|
+**Centre Blaise Pascal :** Emmanuel Quémener
 
 Le projet ADAL “Approche des Données par Annotations (Lyon)“ développé au sein de l'IAO est une solution modulaire qui permet de gérer de larges corpus images (de la numérisation à la conservation) et permet de construire une articulation innovante avec les questions de recherche en prenant appui sur des mécanismes d'annotations. Un des modules repose sur un serveur IIIF.
 

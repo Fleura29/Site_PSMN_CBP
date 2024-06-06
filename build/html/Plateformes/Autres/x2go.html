@@ -54,84 +54,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
-                                             
-                        <!--<script>
-                            
-                            function createA(att, url, nom){
-                                const a= document.createElement("a");
-                                a.setAttribute("class", att);
-                                a.href= url ;
-                                a.textContent= nom;
-                                return a;
-                            };
 
-                            fetch("../../_static/Liens.html")
-                            .then((response) => response.json())
-                            .then((json) => {
-                                
-                                json.Menu.titre.forEach((element) => {
-                                    const li_menu = document.createElement("li");
-                                    li_menu.setAttribute("class", "nav-item dropdown");
-                                    const a_titre = createA("nav-link dropdown-toggle", "#", element);
-
-                                    menu.append(li_menu);
-                                    li_menu.append(a_titre);
-
-                                    const div_menu = document.createElement("div");
-                                    div_menu.setAttribute("class", "dropdown-menu");
-                                    li_menu.append(div_menu);
-
-                                    const ul_titre = document.createElement("ul");
-                                    div_menu.append(ul_titre);
-                                    const obj= Object.entries(json.Menu[element]);
-
-                                    for (const [key,values] of obj){
-                                        if (typeof values !== 'object') {
-   
-                                            const li_sous_menu = document.createElement("li");
-
-                                            if(values === "#"){ 
-                                                const a_sous_titre = createA("dropdown-item", values , key);
-                                                ul_titre.append(li_sous_menu);
-                                                li_sous_menu.append(a_sous_titre);
-                                            }
-                                            else{
-                                                const a_sous_titre = createA("dropdown-item", values, key);
-                                                ul_titre.append(li_sous_menu);
-                                                li_sous_menu.append(a_sous_titre);
-                                            }
-                                            
-                                        } else {     
-                                            const li_sous_menu = document.createElement("li");
-                                            li_sous_menu.setAttribute("class", "nav-item dropend");
-                                            const a_sous_titre = createA("dropdown-toggle dropdown-item", "#", key);
-
-                                            ul_titre.append(li_sous_menu);
-                                            li_sous_menu.append(a_sous_titre);
-
-                                            const div_sous_menu = document.createElement("div");
-                                            div_sous_menu.setAttribute("class", "dropdown-menu");
-                                            li_sous_menu.append(div_sous_menu);
-
-                                            const ul_ss_titre = document.createElement("ul");
-                                            div_sous_menu.append(ul_ss_titre);
-                                            const obj2 = Object.entries(json.Menu[element][key]);
-                                            
-                                            for (let [keys, val] of obj2) {
-                                                const li_ss_menu = document.createElement("li");
-                                                const a_ss_titre = createA("dropdown-item", val, keys);
-
-                                                ul_ss_titre.append(li_ss_menu);
-                                                li_ss_menu.append(a_ss_titre);
-                                            }
-                                        }
-                                    }
-                                });
-                            })
-                        </script>-->
-                        
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
                                     <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
@@ -140,14 +65,14 @@
                                     <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
                                     <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
                                     <li class="nav-item dropend">
-                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
                                         <div class="dropdown-menu">
                                             <ul>
-                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
-                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
-                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
-                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
-                                                    <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -177,111 +102,107 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
                             <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
-                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
-                                <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
-                                <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
-                                <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
-                                <li><a class="dropdown-item" href="../ProjetInfra.html">Projets d'infrastructure</a></li>
-                                <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
-                                            <li><a class="dropdown-item" href="#">FLMSN</a></li>
-                                            <li><a class="dropdown-item" href="#">IXXI</a></li>
-                                            <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
-                                            <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
-                                            <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
-                                            <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
-                                            <li><a class="dropdown-item" href="#">Sierra</a></li>
-                                        </ul>
-                                    </div>
-                                
-                                </li>
-                                <li class="nav-item dropend">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            
-                                            <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
-                                            <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
-                                            <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
-                                            <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
-                                        </ul>                                        
-                                    </div>
-                                </li>  
-                             </ul>   
-                        </div>
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
+                                    <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
+                                                <li><a class="dropdown-item" href="#">FLMSN</a></li>
+                                                <li><a class="dropdown-item" href="#">IXXI</a></li>
+                                                <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
+                                                <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                                <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
+                                                <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
+                                                <li><a class="dropdown-item" href="#">Sierra</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
                         </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
-                                <li><a class="dropdown-item" href="../../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../../Formation/Master/MNPC.html">Master 2- Modélisation numérique en physique et chimie (à enlever)</a></li>
-                                <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
-                            </ul>   
-                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Master/MNPC.html">Master 2- MNPC (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
                         </li>
                         
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
-                        <div class="dropdown-menu">
-                            <ul> 
-                                <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
-                                <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
-                                <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
-                                <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
-                                <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
-                            </ul>   
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
                         </li>
                       
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
-                                <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
-                                <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
-                                <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
-                                <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
-                                <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
-                                <li><a class="dropdown-item" href="#">Appel à projets</a></li>
-                                <li><a class="dropdown-item" href="#">Médias</a></li>
-                                <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            
-                                                <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
-                                                <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
-                                                <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
-                                        </ul>
-                                        
-                                    </div>
-                                </li>
-                            </ul>   
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
+                                    <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
+                                    <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="#">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="#">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                
+                                                    <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
+                                                    <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
                         </li>
                         
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
-                                <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
-                                <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
-                                <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
-                            </ul>   
-                        </div>
-                        </li>
-                          
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
                     </ul>
                 </div>
                 <div class="container w-25">
@@ -295,9 +216,7 @@
 </search>
 
                 </div>
-                
-                
-                <div></div>
+
             </div>
         </nav>
 </header>
@@ -335,60 +254,67 @@
 <li><p>Se connecter sur <a class="reference external" href="http://ent.ens-lyon.fr">L’Espace Numérique de Travail</a> de l’ENS-Lyon</p></li>
 </ul>
 <div class="text-center docutils container">
-<img alt="Image ent-ssh-1" class="img-fluid" src="../../_images/ent-ssh-1.png" />
+<img alt="Image ent-ssh-1" class="img-fluid pb-2" src="../../_images/ent-ssh-1.png" />
 </div>
 <ul class="simple">
 <li><p>Cliquer sur <strong>Accès SSH</strong> pour <em>Activer votre accès à la passerelle SSH</em></p></li>
 </ul>
 <div class="text-center docutils container">
-<img alt="Image ent-ssh-2" class="img-fluid" src="../../_images/ent-ssh-2.png" />
+<img alt="Image ent-ssh-2" class="img-fluid pb-2" src="../../_images/ent-ssh-2.png" />
 </div>
 <ul class="simple">
 <li><p>Cliquer sur le bouton <strong>Je demande l’activation de mon accès SSH</strong></p></li>
 <li><p>Une notification d’activation ou un message comme le suivant apparait</p></li>
 </ul>
 <div class="text-center docutils container">
-<img alt="Image ent-ssh-3" class="img-fluid" src="../../_images/ent-ssh-3.png" />
+<img alt="Image ent-ssh-3" class="img-fluid pb-2" src="../../_images/ent-ssh-3.png" />
 </div>
 </section>
 <section id="choix-d-un-poste-de-travail-distant">
 <h2>Choix d’un poste de travail distant<a class="headerlink" href="#choix-d-un-poste-de-travail-distant" title="Lien vers cette rubrique">¶</a></h2>
 <p>Les 28 postes de la salle de formation sont accessibles par x2go.</p>
 <p>A ces machines s’ajoutent 40 autres machines : consultez donc la <a class="reference internal" href="listex2go.html#listex2go"><span class="std std-ref">liste</span></a>.</p>
-<dl class="simple">
-<dt>Pour résumer, les machines qui ne sont pas dans la salle disposent :</dt><dd><ul class="simple">
+<p>Pour résumer, les machines qui ne sont pas dans la salle disposent :</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>d’une mémoire de 16 GB à 2 TB de RAM ou équivalent</p></li>
 <li><p>de 8 coeurs à 128 coeurs physiques</p></li>
 <li><p>de 8 threads à 256 threads logiques</p></li>
 <li><p>de 500 GB à 12 TB d’espace local</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </section>
 <section id="installation-du-client-x2go">
 <h2>Installation du client x2go<a class="headerlink" href="#installation-du-client-x2go" title="Lien vers cette rubrique">¶</a></h2>
 <p>La <a class="reference external" href="http://wiki.x2go.org/doku.php/doc:installation:x2goclient">X2GoClient</a> offre tout le nécessaire pour l’installation</p>
-<dl class="simple">
-<dt>Voici quelques liens pour les platesformes les plus courantes :</dt><dd><ul class="simple">
+<p>Voici quelques liens pour les platesformes les plus courantes :</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>pour Debian <a class="reference external" href="https://packages.debian.org/stable/x2goclient">x2goclient</a> fait partie de l’archive standard depuis Jessie</p></li>
-<li><p>Pour toutes les versions <a class="reference external" href="http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe">Windows depuis XP</a>
-* <strong>Attention !</strong> Un redémarrage COMPLET de Windows semble nécessaire.</p></li>
-<li><p>Pour MacOSX <a class="reference external" href="https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_9.dmg">version 10.9</a>, <a class="reference external" href="https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_11.dmg">version 10.11</a> et <a class="reference external" href="https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_13.dmg">version 10.13</a>.
-* l’installation de la dernière version de <a class="reference external" href="https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg">XQuartz</a> est indispensable
-* <strong>Attention !</strong> Un redémarrage COMPLET de MacOSX semble nécessaire pour XQuartz</p></li>
+<li><p>Pour toutes les versions <a class="reference external" href="http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe">Windows depuis XP</a></p>
+<ul>
+<li><p><strong>Attention !</strong> Un redémarrage COMPLET de Windows semble nécessaire.</p></li>
 </ul>
-</dd>
-</dl>
+</li>
+<li><p>Pour MacOSX <a class="reference external" href="https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_9.dmg">version 10.9</a>, <a class="reference external" href="https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_11.dmg">version 10.11</a> et <a class="reference external" href="https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_13.dmg">version 10.13</a>.</p>
+<ul>
+<li><p>l’installation de la dernière version de <a class="reference external" href="https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg">XQuartz</a> est indispensable</p></li>
+<li><p><strong>Attention !</strong> Un redémarrage COMPLET de MacOSX semble nécessaire pour XQuartz</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
 </section>
 <section id="parametrage-du-client-x2go">
 <h2>Paramétrage du client x2go<a class="headerlink" href="#parametrage-du-client-x2go" title="Lien vers cette rubrique">¶</a></h2>
-<div class="container text-center w-75">
-    <p class="d-inline-block bg-warning-subtle p-3 rounded fs-14">
-        Le nom de machine, illustré par <B>mastation</B> doit être remplacé impérativement par le nom de la
-        machine. La liste des machines de la salle de formation est disponible sur
-        <a href="listex2go.html">machines2xgo</a>
-    </p>
-</div><p>Lors de la création d’une nouvelle session cliente x2go, les éléments suivants doivent être définis :</p>
+<div class="text-center docutils container">
+<div class="bg-warning-subtle pt-2 pb-1 mb-2 rounded fs-14 docutils container">
+<p>Le nom de machine, illustré par <strong>mastation</strong> doit être remplacé impérativement par le nom de la
+machine. La liste des machines de la salle de formation est disponible sur
+<a class="reference internal" href="listex2go.html#listex2go"><span class="std std-ref">machines2xgo</span></a></p>
+</div>
+</div>
+<p>Lors de la création d’une nouvelle session cliente x2go, les éléments suivants doivent être définis :</p>
 <ul>
 <li><p><strong>Session Name</strong> ou <strong>Nom de la session</strong> : nom de la session, plutôt de la forme <em>MaStation au CBP</em></p></li>
 <li><p><strong>Host</strong> ou <strong>Hôte</strong> : le nom de la machine destination,</p>
@@ -426,32 +352,37 @@
 <li><p><strong>Session type</strong> ou <strong>Type de session</strong>, sélectionner « XFCE »</p></li>
 </ul>
 <div class="text-center docutils container">
-<img alt="Image x2go_session_preferences-monaccesgalaxy_014" class="img-fluid" src="../../_images/x2go_session_preferences-monaccesgalaxy_014.png" />
+<img alt="Image x2go_session_preferences-monaccesgalaxy_014" class="img-fluid pb-2" src="../../_images/x2go_session_preferences-monaccesgalaxy_014.png" />
 </div>
-<p>Sur le deuxième onglet, <strong>Connection</strong> ou <strong>Connexion</strong>
-* Pour <strong>Connection speed</strong> ou <strong>Vitesse de connexion</strong>, sélectionner <strong>LAN</strong></p>
-<div class="text-center docutils container">
-<img alt="Image x2go_session_preferences-monaccesgalaxy_015" class="img-fluid" src="../../_images/x2go_session_preferences-monaccesgalaxy_015.png" />
-</div>
-<dl class="simple">
-<dt>Sur le troisième onglet, <strong>Input/Output</strong> ou <strong>Entrées/Sorties</strong></dt><dd><ul class="simple">
-<li><p>Pour <strong>Display</strong>, sélectionner <strong>Custom</strong> ou <strong>Personnalisé</strong>
-* avec <strong>Width</strong> mis à « 1024 » et <strong>Height</strong> mis à « 768 »</p></li>
+<p>Sur le deuxième onglet, <strong>Connection</strong> ou <strong>Connexion</strong></p>
+<ul class="simple">
+<li><p>Pour <strong>Connection speed</strong> ou <strong>Vitesse de connexion</strong>, sélectionner <strong>LAN</strong></p></li>
 </ul>
-</dd>
-</dl>
+<div class="text-center docutils container">
+<img alt="Image x2go_session_preferences-monaccesgalaxy_015" class="img-fluid pb-2" src="../../_images/x2go_session_preferences-monaccesgalaxy_015.png" />
+</div>
+<p>Sur le troisième onglet, <strong>Input/Output</strong> ou <strong>Entrées/Sorties</strong></p>
+<ul>
+<li><p>Pour <strong>Display</strong>, sélectionner <strong>Custom</strong> ou <strong>Personnalisé</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>avec <strong>Width</strong> mis à « 1024 » et <strong>Height</strong> mis à « 768 »</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
 <div class="text-center docutils container">
 <img alt="Image x2go_session_preferences-monaccesgalaxy_016" class="img-fluid" src="../../_images/x2go_session_preferences-monaccesgalaxy_016.png" />
 </div>
-<dl class="simple">
-<dt>Sur le quatrième onglet, <strong>Media</strong></dt><dd><ul class="simple">
+<p>Sur le quatrième onglet, <strong>Media</strong></p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Désactiver <strong>Enable sound support</strong> ou <strong>Activer le son</strong></p></li>
 <li><p>Désactiver <strong>Client side printing support</strong> ou <strong>Gestion de l’impression côté client</strong></p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 <div class="text-center docutils container">
-<img alt="Image x2go_session_preferences-monaccesgalaxy_014" class="img-fluid" src="../../_images/x2go_session_preferences-monaccesgalaxy_014.png" />
+<img alt="Image x2go_session_preferences-monaccesgalaxy_014" class="img-fluid pb-2" src="../../_images/x2go_session_preferences-monaccesgalaxy_014.png" />
 </div>
 </section>
 <section id="lancement-d-une-session-x2go">
@@ -463,21 +394,23 @@
 </section>
 <section id="usages-particuliers">
 <h2>Usages particuliers<a class="headerlink" href="#usages-particuliers" title="Lien vers cette rubrique">¶</a></h2>
-<blockquote>
-<div><p>&lt;h5&gt;Export d’un dossier local&lt;/h5&gt;</p>
-</div></blockquote>
+<section id="export-d-un-dossier-local">
+<h3>Export d’un dossier local<a class="headerlink" href="#export-d-un-dossier-local" title="Lien vers cette rubrique">¶</a></h3>
 <div class="text-center docutils container">
 <img alt="Image x2go_session_preferences-monaccesgalaxy_019" class="img-fluid" src="../../_images/x2go_session_preferences-monaccesgalaxy_019.png" />
 <img alt="Image x2go_session_preferences-monaccesgalaxy_020" class="img-fluid" src="../../_images/x2go_session_preferences-monaccesgalaxy_020.png" />
 <img alt="Image x2go_partage" class="img-fluid" src="../../_images/x2go_partage.png" />
 </div>
-<h5>Lancement d'une application OpenGL</h5><p>Certaines applications graphiques (comme matlab ou vmd) peuvent exiger un affichage graphique accéléré.</p>
+</section>
+<section id="lancement-d-une-application-opengl">
+<h3>Lancement d’une application OpenGL<a class="headerlink" href="#lancement-d-une-application-opengl" title="Lien vers cette rubrique">¶</a></h3>
+<p>Certaines applications graphiques (comme matlab ou vmd) peuvent exiger un affichage graphique accéléré.</p>
 <p><a class="reference external" href="https://www.virtualgl.org/">VirtualGL</a> permet d’exploiter le circuit graphique embarqué sur la machine distante pour accélérer le rendu.</p>
 <p>Pour lancer son application graphique en utilisant cet outil VirtualGL, il suffit de préfixer dans un terminal la commande de lancement de l’application avec « vglrun ».</p>
 <p><strong>Exemple pour le logiciel VMD</strong></p>
 <p>Par exemple, pour lancer l’application de visualisation <a class="reference external" href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a>, dans un terminal : « vglrun vmd »</p>
 <div class="text-center docutils container">
-<img alt="Image vglrun1" class="img-fluid" src="../../_images/vglrun1.png" />
+<img alt="Image vglrun1" class="img-fluid pb-2" src="../../_images/vglrun1.png" />
 </div>
 <p>Le résultat apparaît. En bas à droite, vous pouvez voir que cette application VMD exploite le GPU pour les calculs (les « C » pour la colonne « Type ») mais aussi pour l’affichage (le « C+G »).</p>
 <div class="text-center docutils container">
@@ -486,12 +419,13 @@
 <p><strong>Exemple pour le pachyderme Matlab</strong></p>
 <p>Par exemple, pour lancer l’application de visualisation <a class="reference external" href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a>, dans un terminal : « vglrun /opt/MatLab/R1017B/bin/matlab »</p>
 <div class="text-center docutils container">
-<img alt="Image vglrun3" class="img-fluid" src="../../_images/vglrun3.png" />
+<img alt="Image vglrun3" class="img-fluid pb-2" src="../../_images/vglrun3.png" />
 </div>
 <p>Le résultat apparaît. En bas à droite, vous pouvez voir que Matlab exploite le GPU pour (le « G »).</p>
 <div class="text-center docutils container">
 <img alt="Image vglrun4" class="img-fluid" src="../../_images/vglrun4.png" />
 </div>
+</section>
 </section>
 </section>
 
@@ -540,10 +474,10 @@
       </p>
   </footer>
   <script src="../../_static/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
   <script src="../../_static/bootstrap_bundle.min.js"></script>
   <script src="../../_static/bootstrap_popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../../_static/bootstrap_cdn.min.js"></script>
   <script src="../../_static/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,11 +1,8 @@
 Workshop 2018
 =============
 
-Workshop 2018
--------------
-
 .. image:: ../../_static/cbp_ens.jpeg
-    :class: img-fluid img-float pe-3
+    :class: img-float pe-3
     :alt: Logo CBP
 
 **09/02/2018 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
@@ -18,7 +15,7 @@ Workshop 2018
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Ecam
 
     **14-15/05/2018 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
@@ -32,7 +29,7 @@ Workshop 2018
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Ecam
 
     **27/05-01/06/2018 - Les Houches**
@@ -47,7 +44,7 @@ Workshop 2018
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/colloids.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Ecam
 
     **11-13/06/2018 - ENS de Lyon, Site Descartes, D2 128** 
@@ -61,7 +58,7 @@ Workshop 2018
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/cbp_ens.jpeg
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Ecam
 
     **26/06/2018 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
@@ -75,24 +72,24 @@ Workshop 2018
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/bandeau_nanofluidics_web2018_3.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Ecam
 
     **9-12/07/2018 - ENS de Lyon, IFE - Site Buisson** 
 
     `Nanofluidics in physics and biology <https://nanofluidics.sciencesconf.org/>`_ 
 
-* F. Montel, ENS Lyon, France
-* C. Cottin-Bizonne, Lyon Univ., France
-* A.L. Biance, Lyon Univ., France
-* J. Mathé, Evry Univ., France
-* M. Winterhalter, Jacobs Univ., Germany
-* A. Zilman, Toronto Univ., Canada
+* F . Montel, ENS Lyon, France
+* C . Cottin-Bizonne, Lyon Univ., France
+* A .L. Biance, Lyon Univ., France
+* J . Mathé, Evry Univ., France
+* M . Winterhalter, Jacobs Univ., Germany
+* A . Zilman, Toronto Univ., Canada
 
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Cecam
 
     **3-5/12/2018 - CECAM-FR-RA**

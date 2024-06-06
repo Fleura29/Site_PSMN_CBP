@@ -7,18 +7,14 @@ DYN4DRUGS
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/dyn4drugs2020.png
-        :class: img-fluid
-        :alt: Image dyn4drugs2020
+.. image:: ../../_static/img_projets/dyn4drugs2020.png
+    :class: img-float pe-2
+    :alt: Image dyn4drugs2020
 
-    .. container::
-
-        **Institut Lumière Matière UMR 5306/UCBL** : Claire Loison |br|
-        **Institut de Biologie Structurale UMR 5075/CEA/UJF** : Jérôme Boisbouvier |br|
-        **Formation M2** : Elisa Rioual |br|
-        **Centre Blaise Pascal :** Emmanuel Quémener
+**Institut Lumière Matière UMR 5306/UCBL** : Claire Loison |br|
+**Institut de Biologie Structurale UMR 5075/CEA/UJF** : Jérôme Boisbouvier |br|
+**Formation M2** : Elisa Rioual |br|
+**Centre Blaise Pascal :** Emmanuel Quémener
 
 Proteins are not frozen : their conformation evolve in time, for instance after the interaction with a  ligand, or during a catalytic cycle. Conformational dynamics of protein may even become essential to biological phenomena, such as the recognition of physiological partners. Nevertheless, rational Drug Design rarely consider these conformational plasticity. Nuclear Magnetic Resonance (NMR), and molecular dynamics simulation are complementary techniques which provide information on protein dynamics at various timescales (ns, ps, ms).  The objective of the  Dyn4Drugs project is to bring new tools, based on liquid NMR spectroscopy, to improve the success of rational Drug Design by incorporating in the protocol a better  knowledge of protein conformational dynamics. 
 

@@ -3,20 +3,16 @@
 Caractérisation par LIDAR de la végétation de la rivière Drôme
 ==============================================================
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/evs.png
-        :class: img-fluid
-        :width: 150px
-        :alt: Image evs
 
-    .. container::
+.. image:: ../../_static/img_projets/evs.png
+    :class: img-float pe-2
+    :alt: Image evs
 
-        Laboratoire EVS, UMR 5600 : Hervé Piégay, Kristell Michel 
+Laboratoire EVS, UMR 5600 : Hervé Piégay, Kristell Michel 
 
-        Centre Blaise Pascal : Emmanuel Quémener
+Centre Blaise Pascal : Emmanuel Quémener
 
-        L'objectif est de caractériser la végétation de la rivière Drôme sur la période 2005-2015 à partir de mesures photos aériennes et de données LiDAR. 
+L'objectif est de caractériser la végétation de la rivière Drôme sur la période 2005-2015 à partir de mesures photos aériennes et de données LiDAR. 
 
 Contribution du CBP
 -------------------

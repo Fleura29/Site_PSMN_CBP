@@ -3,9 +3,9 @@
 Demande d'expertise en informatique scientifique
 ================================================
 
-.. container:: text-center w-75 
+.. container:: text-center
     
-    .. container:: d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13
+    .. container:: bg-warning-subtle pt-2 pb-1 mb-3 rounded fs-13
 
         Toutes les personnes non permanentes (étudiantes, stagiaires, doctorantes, …) doivent IMPERATIVEMENT être parrainées par une personne permanente de l'établissement, soit dans votre laboratoire de recherche, soit dans votre département d'enseignement. 
 

@@ -5,7 +5,7 @@ Vous pouvez réserver la salle de réunion CBP en utilisant ce lien :
 
 `Réservation d'une salle de discussions/réunions <https://resa.physique.ens-lyon.fr/>`_ 
 
-.. container:: text-center w-75
+.. container:: text-center
 
     .. container:: d-inline-block bg-warning-subtle pt-3 rounded fs-13
 

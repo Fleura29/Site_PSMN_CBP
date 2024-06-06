@@ -9,7 +9,7 @@ Workshops
    <br>
 
 .. image:: ../_static/seminaire2.jpg
-    :class: img-fluid img-float pe-3
+    :class: img-float pe-3
     :alt: Logo CBP
 
 .. toctree::

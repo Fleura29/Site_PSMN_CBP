@@ -1,11 +1,8 @@
 Workshop 2019
 =============
 
-Workshop 2019
--------------
-
 .. image:: ../../_static/Animations/WS/ecam.png
-    :class: img-fluid img-float pe-3
+    :class: img-float pe-3
     :alt: Image Ecam
 
 **13/11/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
@@ -19,7 +16,7 @@ Workshop 2019
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/ecam.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Image Ecam
 
     **03/04/2019 au 05/04/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
@@ -32,7 +29,7 @@ Workshop 2019
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Cecam-seul
 
     **03/04/2019 au 05/04/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
@@ -63,7 +60,7 @@ Workshop 2019
 .. container:: mt-2 pt-2 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
-        :class: img-fluid img-float pe-3
+        :class: img-float pe-3
         :alt: Logo Cecam-seul
 
     **17/06/2019 au 21/06/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**

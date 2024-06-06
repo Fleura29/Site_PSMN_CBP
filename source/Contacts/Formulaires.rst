@@ -7,14 +7,16 @@ Formulaires
     :maxdepth: 1
     :caption: Liste des formulaires: 
 
-    Formulaires/SalleTP
-    Formulaires/SalleDisc
-    Formulaires/ListeDiff
-    Formulaires/DemandeOuverture
+    Formulaires/DemandeRessources
     Formulaires/DemandeEcs
     Formulaires/DemandeEis
-    Formulaires/Probleme
     Formulaires/Installation
-    Formulaires/Cafe
+    Formulaires/DemandeOuverture
+    Formulaires/ListeDiff
+    Formulaires/SalleTP
+    Formulaires/SalleDisc
+    Formulaires/Probleme
     Formulaires/FAQ
-    Formulaires/DemandeRessources
+    Formulaires/Cafe
+    
+    

@@ -12,20 +12,15 @@ ANR LORIS
 
 **Numerical Computation of Large Deviations and out-of-equilibrium Statistical Mechanics of Turbulent Flows**
 
-.. container:: d-flex mb-3
+.. image:: ../../_static/img_projets/anr_loris.png
+    :class: img-float pe-2
+    :alt: Image loris
 
-    .. image:: ../../_static/img_projets/anr_loris.png
-        :class: w-25 img-fluid
-        :alt: Image loris
+**Directed by : Stefano Ruffo, ENS de Lyon** |br|
+Stefano.Ruffo [at] ens-lyon.fr |br|
+Funded by ANR-LORIS 
 
-    .. container::
-
-        **Directed by : Stefano Ruffo, ENS de Lyon** |br|
-        Stefano.Ruffo [at] ens-lyon.fr |br|
-        Funded by ANR-LORIS 
-        
-        `ANR-LORIS Website <http://perso.ens-lyon.fr/stefano.ruffo/loris.html>`_
-
+`ANR-LORIS Website <http://perso.ens-lyon.fr/stefano.ruffo/loris.html>`_
 
 :underline:`Members of the group:`
 

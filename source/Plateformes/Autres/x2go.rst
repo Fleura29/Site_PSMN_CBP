@@ -33,7 +33,7 @@ Ouverture de son accès SSH
 .. container:: text-center
 
     .. image:: ../../_static/x2go/ent-ssh-1.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image ent-ssh-1
 
 - Cliquer sur **Accès SSH** pour *Activer votre accès à la passerelle SSH*
@@ -41,7 +41,7 @@ Ouverture de son accès SSH
 .. container:: text-center
 
     .. image:: ../../_static/x2go/ent-ssh-2.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image ent-ssh-2
 
 - Cliquer sur le bouton **Je demande l'activation de mon accès SSH**
@@ -50,7 +50,7 @@ Ouverture de son accès SSH
 .. container:: text-center
 
     .. image:: ../../_static/x2go/ent-ssh-3.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image ent-ssh-3
 
 Choix d'un poste de travail distant
@@ -61,6 +61,7 @@ Les 28 postes de la salle de formation sont accessibles par x2go.
 A ces machines s'ajoutent 40 autres machines : consultez donc la :ref:`liste <listex2go>`.
 
 Pour résumer, les machines qui ne sont pas dans la salle disposent :
+  
   * d'une mémoire de 16 GB à 2 TB de RAM ou équivalent
   * de 8 coeurs à 128 coeurs physiques
   * de 8 threads à 256 threads logiques
@@ -72,25 +73,27 @@ Installation du client x2go
 La `X2GoClient <http://wiki.x2go.org/doku.php/doc:installation:x2goclient>`_ offre tout le nécessaire pour l'installation
 
 Voici quelques liens pour les platesformes les plus courantes :
+
   * pour Debian `x2goclient <https://packages.debian.org/stable/x2goclient>`_ fait partie de l'archive standard depuis Jessie
   * Pour toutes les versions `Windows depuis XP <http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe>`_
+    
     * **Attention !** Un redémarrage COMPLET de Windows semble nécessaire.
+  
   * Pour MacOSX `version 10.9 <https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_9.dmg>`_, `version 10.11 <https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_11.dmg>`_ et `version 10.13 <https://code.x2go.org/releases/binary-macosx/x2goclient/main/4.1.2.2/x2goclient-4.1.2.2.20200213.OSX_10_13.dmg>`_.
+    
     * l'installation de la dernière version de `XQuartz <https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg>`_ est indispensable
     * **Attention !** Un redémarrage COMPLET de MacOSX semble nécessaire pour XQuartz
 
 Paramétrage du client x2go
 --------------------------
 
-.. raw:: html
+.. container:: text-center
 
-    <div class="container text-center w-75">
-        <p class="d-inline-block bg-warning-subtle p-3 rounded fs-14">
-            Le nom de machine, illustré par <B>mastation</B> doit être remplacé impérativement par le nom de la 
-            machine. La liste des machines de la salle de formation est disponible sur 
-            <a href="listex2go.html">machines2xgo</a>
-        </p>
-    </div>
+    .. container:: bg-warning-subtle pt-2 pb-1 mb-2 rounded fs-14
+
+        Le nom de machine, illustré par **mastation** doit être remplacé impérativement par le nom de la 
+        machine. La liste des machines de la salle de formation est disponible sur 
+        :ref:`machines2xgo <listex2go>`
 
 Lors de la création d'une nouvelle session cliente x2go, les éléments suivants doivent être définis :
 
@@ -106,32 +109,37 @@ Lors de la création d'une nouvelle session cliente x2go, les éléments suivant
 
         * soit sur **Use Proxy server for SSH connection**
         * soit sur **Utiliser un serveur mandataire pour la connexion SSH**
+
 * **Type** : SSH
 * **Host** ou **Hôte** : "ssh.ens-lyon.fr"
 * Pour définir l'identifiant et le mot de passe sur le serveur Proxy, cliquer :
 
     * soit **Même identifiant que sur le serveur X2Go** et **Même mot de passe que sur le serveur X2Go**
     * soit **Same login as on X2Go Server** et **Same password on X2Go Server**
+
 * **Session type** ou **Type de session**, sélectionner "XFCE" 
 
 .. container:: text-center
 
     .. image:: ../../_static/x2go/x2go_session_preferences-monaccesgalaxy_014.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image x2go_session_preferences-monaccesgalaxy_014
 
 
 Sur le deuxième onglet, **Connection** ou **Connexion**
+
 * Pour **Connection speed** ou **Vitesse de connexion**, sélectionner **LAN**
 
 .. container:: text-center
 
     .. image:: ../../_static/x2go/x2go_session_preferences-monaccesgalaxy_015.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image x2go_session_preferences-monaccesgalaxy_015
 
 Sur le troisième onglet, **Input/Output** ou **Entrées/Sorties**
-  * Pour **Display**, sélectionner **Custom** ou **Personnalisé** 
+
+* Pour **Display**, sélectionner **Custom** ou **Personnalisé** 
+    
     * avec **Width** mis à "1024" et **Height** mis à "768"
 
 .. container:: text-center
@@ -142,13 +150,14 @@ Sur le troisième onglet, **Input/Output** ou **Entrées/Sorties**
 
 
 Sur le quatrième onglet, **Media**
+
   * Désactiver **Enable sound support** ou **Activer le son**
   * Désactiver **Client side printing support** ou **Gestion de l'impression côté client**
 
 .. container:: text-center
         
     .. image:: ../../_static/x2go/x2go_session_preferences-monaccesgalaxy_014.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image x2go_session_preferences-monaccesgalaxy_014
 
 
@@ -168,12 +177,13 @@ Lancement d'une session x2go
 Usages particuliers
 -------------------
 
-    <h5>Export d'un dossier local</h5>
+Export d'un dossier local
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: text-center
         
     .. image:: ../../_static/x2go/x2go_session_preferences-monaccesgalaxy_019.png
-        :class: img-fluid
+        :class: img-fluid 
         :alt: Image x2go_session_preferences-monaccesgalaxy_019
 
     .. image:: ../../_static/x2go/x2go_session_preferences-monaccesgalaxy_020.png
@@ -184,10 +194,8 @@ Usages particuliers
         :class: img-fluid
         :alt: Image x2go_partage
 
-.. raw:: html
-
-    <h5>Lancement d'une application OpenGL</h5>
-
+Lancement d'une application OpenGL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Certaines applications graphiques (comme matlab ou vmd) peuvent exiger un affichage graphique accéléré. 
 
@@ -202,7 +210,7 @@ Par exemple, pour lancer l'application de visualisation `VMD <https://www.ks.uiu
 .. container:: text-center
         
     .. image:: ../../_static/x2go/vglrun1.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image vglrun1
 
 Le résultat apparaît. En bas à droite, vous pouvez voir que cette application VMD exploite le GPU pour les calculs (les "C" pour la colonne "Type") mais aussi pour l'affichage (le "C+G").
@@ -220,7 +228,7 @@ Par exemple, pour lancer l'application de visualisation `VMD <https://www.ks.uiu
 .. container:: text-center
         
     .. image:: ../../_static/x2go/vglrun3.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Image vglrun3
 
 Le résultat apparaît. En bas à droite, vous pouvez voir que Matlab exploite le GPU pour (le "G").

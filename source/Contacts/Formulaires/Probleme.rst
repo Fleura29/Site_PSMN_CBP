@@ -5,7 +5,7 @@ Signaler un problème
 
 ou poser une question...
 
-.. container:: text-center w-75
+.. container:: text-center
 
     .. container:: d-inline-block bg-warning-subtle pt-3 rounded fs-13
 

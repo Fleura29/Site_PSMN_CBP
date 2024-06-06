@@ -7,21 +7,17 @@ Structure and interactions of molecules with biological activity
 
    <br>
 
-.. container:: d-flex pb-2
+.. image:: ../../_static/img_projets/simbio.png
+    :class: img-float pe-2
+    :width: 150px
+    :alt: Image SIMBIO
 
-    .. image:: ../../_static/img_projets/simbio.png
-        :class: img-fluid
-        :width: 200px
-        :alt: Image SIMBIO
-
-    .. container::
-
-        Team SIMBIO |br|
-        Laboratoire de Biologie Moléculaire de la Cellule (LBMC/UMR 5239) |br|
-        Ecole Normale Supérieure de Lyon |br|
-        46, allée d'Italie |br|
-        69364 Lyon cedex 07 |br|
-        France  
+Team SIMBIO |br|
+Laboratoire de Biologie Moléculaire de la Cellule (LBMC/UMR 5239) |br|
+Ecole Normale Supérieure de Lyon |br|
+46, allée d'Italie |br|
+69364 Lyon cedex 07 |br|
+France  
 
 We apply atomic-level computer simulations to gain insights into the dynamic structure of biomolecules and their interactions. In collaboration with experimental biologists of the Laboratoire de Biologie Moléculaire de la Cellule (LBMC/ENS de Lyon) we aim to understand how the structure and interactions of biomolecules influence their biological function in living cells. One of our project focuses on the design of photosensitive proteins, i.e., enzymes that can be activated and deactivated through light. A difficult task to overcome in the design of photosensitive proteins is to find the correct balance of stability between the inactive structure and the light-activated structure (see Figure). We use free-energy calculations based on molecular dynamics simulations to identify the crucial factors of this balance and use this information to aid the design of photosensors prior to their costly biotechnological construction and testing in living cells.
 

@@ -1,73 +1,57 @@
 Workshop 2015
 =============
 
-Workshop 2015
--------------
+.. image:: ../../_static/Animations/WS/dna.png
+    :class: img-float pe-3
+    :alt: Image dna
 
-.. container:: d-flex
+`DNA damages: modeling & rationalize structure & reactivity <#>`_ 
 
-    .. image:: ../../_static/Animations/WS/dna.png
-        :class: img-fluid pe-3
-        :alt: Image dna
-
-    .. container::
-
-        `DNA damages: modeling & rationalize structure & reactivity <#>`_ 
-
-        **November 3-6, 2015**  - CBP, ENS Lyon, France
+**November 3-6, 2015**  - CBP, ENS Lyon, France
 
 * Antonio Monari, Université de Lorraine, FR
 * Elise Dumont, ENS de Lyon, FR
 * Filip Lankas, Institut of Organic Chemistry, CZ
 * Celia Fonseca Guerra, VU Amsterdam, NL
 
-
-.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+.. container:: mt-3 pt-3 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/imagegenphyschrom.png
-        :class: img-fluid  pe-3
+        :class: img-float pe-3
         :alt: Image Genphyschrom
 
-    .. container::
+    `Integrating genomics with hierarchical physical models of DNA and chromosomes <#>`_
 
-        `Integrating genomics with hierarchical physical models of DNA and chromosomes <#>`_
-
-        **June 22-26, 2015** - CBP, ENS Lyon, France 
+    **June 22-26, 2015** - CBP, ENS Lyon, France 
 
 * Ralf Everaers, ENS de Lyon
 * Sarah Harris, University of Leeds, UK
 * Cedric Vaillant, ENS de Lyon
 
-
-.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+.. container:: mt-3 pt-3 border-top border-dark-subtle
 
     .. image:: ../../_static/img_projets/fscf.png
-        :class: img-fluid  pe-3
+        :class: img-float pe-3
         :alt: Image fscf
 
-    .. container::
+    `Fluctuations in Structured Coulomb fluids <#>`_ 
 
-        `Fluctuations in Structured Coulomb fluids <#>`_ 
-
-        **June 11-12, 2015** - CBP, ENS Lyon, France 
+    **June 11-12, 2015** - CBP, ENS Lyon, France 
 
 * Ralf Blossey, IRI, Lille
 * Henri Orland, CEA, Paris-Saclay
 * Anthony C. Maggs, ESPCI Paris
 * Ralf Everaers, ENS Lyon
 
-
-.. container:: d-flex mt-2 pt-2 border-top border-dark-subtle
+.. container:: mt-3 pt-3 border-top border-dark-subtle
 
     .. image:: ../../_static/Animations/WS/memosim.png
-        :class: img-fluid pe-3
+        :class: img-float pe-3
         :alt: Image memosim
 
-    .. container::
+    `MemoSim: Méthodes de modélisation et simulation multiéchelles <#>`_ 
 
-        `MemoSim: Méthodes de modélisation et simulation multiéchelles <#>`_ 
-
-        **March 30-April 2, 2015** - CBP, ENS Lyon, France 
+    **March 30-April 2, 2015** - CBP, ENS Lyon, France 
 
 * Xavier Assfeld, Université de Lorraine
 * Anne Boutin, ENS Paris

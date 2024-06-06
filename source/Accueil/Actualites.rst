@@ -35,9 +35,9 @@ Les formations
 
 Voir `la page dédiée aux formations <formations>`_
 
-.. container:: text-center mb-2
+.. container:: text-center mb-3
 
-    .. container:: w-75 d-inline-block bg-danger-subtle pt-3 rounded fs-13
+    .. container:: d-inline-block bg-danger-subtle pt-3 rounded fs-13
 
         Les formations PSMN sont proposées en présentiel (ou visioconférence), en général, le mardi après-midi ou le jeudi après-midi, à la demande des utilisateurs. |br|
         **Inscriptions** : `Cerasela Calugaru <mailto:cerasela.iliana.calugaru@ens-lyon.fr>`_

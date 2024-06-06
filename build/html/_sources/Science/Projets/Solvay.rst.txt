@@ -7,20 +7,17 @@ Collaboration ENS - Solvay
 
    <br>
 
-.. container:: d-flex 
+.. image:: ../../_static/img_projets/solvay.png
+    :class: img-float pe-2
+    :alt: Logo Solvay
 
-    .. image:: ../../_static/img_projets/solvay.png
-        :alt: Logo Solvay
+**Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type 
+métal-oxo.**
 
-    .. container::
+Coordination ENS : Philippe Sautet & Carine Michel |br|
+Post-doc : Prokopis Andrikopoulos
 
-        **Étude théorique au niveau DFT du mécanisme d’oxydation du cyclohexane par des catalyseurs de type 
-        métal-oxo.**
-        
-        Coordination ENS : Philippe Sautet & Carine Michel |br|
-        Post-doc : Prokopis Andrikopoulos
-
-        `Site du Centre de Recherche et de Technologie de Lyon (CRTL) <http://www.rhodia.com/fr/innovation/worldwide_network/r_and_d_centers/europe.tcm>`_
+`Site du Centre de Recherche et de Technologie de Lyon (CRTL) <http://www.rhodia.com/fr/innovation/worldwide_network/r_and_d_centers/europe.tcm>`_
         
 Design de catalyseur in silico
 ------------------------------

@@ -1,20 +1,19 @@
 Workshop 2023
 =============
 
-Workshop 2023
--------------
-
 **04/01/2023 au 05/01/2023 - Workshop around the mitotic chromosome, CECAM-FR-RA et ENS Lyon**
 
-https://indico.in2p3.fr/event/28533/
+* https://indico.in2p3.fr/event/28533/
 
 **19/06/2023 au 21/06/2023 - Journées Nationales des Carburants Solaires 2023, CECAM-FR-RA**
 
-https://solarfuels.cnrs.fr/evenement/7iemes-journees-des-carburants-solaires/
+* https://solarfuels.cnrs.fr/evenement/7iemes-journees-des-carburants-solaires/
 
 **10/07/2023 au 13/07/2023 - Nanofluidics in physics and biology, CECAM-FR-RA,ENS Lyon**
-https://www.cecam.org/workshop-details/1217/
+
+* https://www.cecam.org/workshop-details/1217/
 
 **11/12/2023 au 13/12/2023 - Chemical Concepts from Theory and Computation, CECAM-FR-RA, UCBL**
-https://www.cecam.org/workshop-details/1219
+
+* https://www.cecam.org/workshop-details/1219
 

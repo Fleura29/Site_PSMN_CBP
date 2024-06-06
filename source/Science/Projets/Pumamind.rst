@@ -10,16 +10,12 @@ PUMA MIND
 .. role:: underline
     :class: underline
 
-.. container:: d-flex mb-3
+.. image:: ../../_static/img_projets/pumamind.jpg
+    :class: img-float pe-2
+    :alt: Logo Puma mind
 
-    .. image:: ../../_static/img_projets/pumamind.jpg
-        :class: img-fluid 
-        :alt: Logo Puma mind
-
-    .. container::
-
-        **International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs)** |br|
-        Coordination ENS : David Loffreda 
+**International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs)** |br|
+Coordination ENS : David Loffreda 
         
 `Website of the project <http://www.pumamind.eu/>`_
 

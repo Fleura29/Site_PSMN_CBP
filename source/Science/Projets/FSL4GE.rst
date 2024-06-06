@@ -7,19 +7,17 @@ FSL4GE
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/fsl4ge.png
-        :class: img-fluid
-        :alt: Image fsl4ge
+.. image:: ../../_static/img_projets/fsl4ge.png
+    :class: img-float pe-2
+    :alt: Image fsl4ge
 
-    .. container::
+**INSA Lyon Electrical Engineerng Department** : Thomas GRENIER 
 
-        **INSA Lyon Electrical Engineerng Department** : Thomas GRENIER |br|
-        **formation 4GE PRT** : Soufian Targaoui, Yacine Youcef |br|
-        **Centre Blaise Pascal :** Emmanuel Quémener
+**formation 4GE PRT** : Soufian Targaoui, Yacine Youcef 
 
-        Many deaf people use sign language to communicate. This language involves hand gestures, body movements and facial expressions to convey the meaning of words and sentences.
+**Centre Blaise Pascal :** Emmanuel Quémener
+
+Many deaf people use sign language to communicate. This language involves hand gestures, body movements and facial expressions to convey the meaning of words and sentences.
 
 In France, for a long time, sign language was repressed and therefore not promoted. Recently, its use has evolved in a positive way but, for the French language, many words are devoid of signs and more particularly the words of modern science. A second impact of this policy is that few people who are not deaf or dumb understand this language.
 

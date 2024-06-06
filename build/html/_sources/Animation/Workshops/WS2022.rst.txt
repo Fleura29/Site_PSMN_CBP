@@ -1,16 +1,18 @@
 Workshop 2022
 =============
 
-Workshop 2022
--------------
+**10/10/2022 au 12/10/2022 - Charting large materials dataspaces: AI methods and scalability, CECAM-FR-RA**
 
-**10/10/2022 au 12/10/2022 - Charting large materials dataspaces: AI methods and scalability, CECAM-FR-RA**\\
-https://www.cecam.org/workshop-details/1167
+* https://www.cecam.org/workshop-details/1167
 
-**12/06/2022 au 23/06/2022 - Interdisciplinary workshop on the theoretical study of periodic systems, CECAM-FR-RA**\\
-https://www.cecam.org/workshop-details/1137
+**12/06/2022 au 23/06/2022 - Interdisciplinary workshop on the theoretical study of periodic systems, CECAM-FR-RA**
 
-**22/05/2022 au 27/05/2022 - Les Houches - TSRC Workshop on Protein Dynamics, CECAM-FR-RA**\\
-https://www.cecam.org/workshop-details/54
+* https://www.cecam.org/workshop-details/1137
 
-**14/11/2022 au 16/11/2022 - Development of coarse-grained models** https://www.cecam.org/workshop-details/1041
+**22/05/2022 au 27/05/2022 - Les Houches - TSRC Workshop on Protein Dynamics, CECAM-FR-RA**
+
+* https://www.cecam.org/workshop-details/54
+
+**14/11/2022 au 16/11/2022 - Development of coarse-grained models** 
+
+* https://www.cecam.org/workshop-details/1041

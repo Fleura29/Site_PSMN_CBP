@@ -188,13 +188,16 @@ Coordination : Cerasela Calugaru / Assistance : Samantha Barendson
 
 **Enquêtes Stockages ENS**
 
-.. image:: ../_static/img_projets/stockageens.png
-    :class: img-float pe-3
-    :alt: Image stockageens
+.. container:: d-flex mb-3
 
-`Enquêtes sur les Besoins de Stockage de l'ENS-Lyon <#>`_
+    .. image:: ../_static/img_projets/stockageens.png
+        :alt: Image stockageens
 
-Maitrise d'oeuvre : Emmanuel Quemener
+    .. container::
+
+        `Enquêtes sur les Besoins de Stockage de l'ENS-Lyon <#>`_
+
+        Maitrise d'oeuvre : Emmanuel Quemener
 
 **SIDUS 2010-2021**
 

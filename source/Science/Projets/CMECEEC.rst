@@ -7,22 +7,17 @@ Conception de molécules électro-chromiques pour des encres électroniques en c
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/molecular_dynamics.png
-        :class: img-fluid
-        :width: 200px
-        :alt: Image molecular_dynamics
+.. image:: ../../_static/img_projets/molecular_dynamics.png
+    :class: img-float pe-2
+    :alt: Image molecular_dynamics
 
-    .. container::
+Coordination : Marco Garavelli |br|
+Thésard : Baptiste Demoulin	
 
-        Coordination : Marco Garavelli |br|
-        Thésard : Baptiste Demoulin	
-
-        La famille des opsines regroupe des protéines qui contiennent une molécule de rétinal liée de façon covalente à une lysine, formant
-        une base de Schiff. L'environnement du chromophore influe considérablement sur la photochimie du système, en modulant son énergie
-        d'absorption et sa vitesse d'isomérisation. Nous essayons, par l'application de champs électriques, de reproduire artificiellement cet
-        effet.
+La famille des opsines regroupe des protéines qui contiennent une molécule de rétinal liée de façon covalente à une lysine, formant
+une base de Schiff. L'environnement du chromophore influe considérablement sur la photochimie du système, en modulant son énergie
+d'absorption et sa vitesse d'isomérisation. Nous essayons, par l'application de champs électriques, de reproduire artificiellement cet
+effet.
 
 *Image : Protéine modifiée (hCRBPII), modélisée en QM/MM (rétinal en rouge).*
 

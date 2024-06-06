@@ -50,17 +50,13 @@ PUMA MIND
 Project
 -------
 
-.. container:: d-flex 
-
-    .. container::
-
-        PUMA MIND is an international R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs). 
-
-        PEMFCs are complex nonlinear systems and the project derives power mathematical models in order to improve their durability, efficiency and to reduce the cost and development time.
-
-    .. image:: ../../_static/img_projets/puma_mind2.jpg
-        :class: img-fluid 
+.. image:: ../../_static/img_projets/puma_mind2.jpg
+    :class: img-float-r ps-2
         :alt: Image puma mind
+
+PUMA MIND is an international R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs). 
+
+PEMFCs are complex nonlinear systems and the project derives power mathematical models in order to improve their durability, efficiency and to reduce the cost and development time.
 
 The mathematical models are used for command and control and offer predictive capabilities, and therefore their robustness is crucial. 
 

@@ -10,19 +10,15 @@ Hydrologic signals of floating wood in rivers. Case study: Monitoring floating l
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/cbp_ens_400.png
-        :class: img-fluid
-        :width: 200px
-        :alt: Image cbp_ens_400
+.. image:: ../../_static/img_projets/cbp_ens_400.png
+    :class: img-float pe-2
+    :width: 200px
+    :alt: Image cbp_ens_400
 
-    .. container::
-
-        **Hossein Ghaffarian** (Post-doc, ENS Lyon, EVS), |br|
-        **Samuel Dunesme** (PhD, ENS Lyon, EVS), |br|
-        **Herve Piégay** (Directeur de Recherche CNRS, ENS Lyon, EVS) |br|
-        Expertise IT : **Emmanuel Quémener** (CBP, ENS-Lyon)
+**Hossein Ghaffarian** (Post-doc, ENS Lyon, EVS), |br|
+**Samuel Dunesme** (PhD, ENS Lyon, EVS), |br|
+**Herve Piégay** (Directeur de Recherche CNRS, ENS Lyon, EVS) |br|
+Expertise IT : **Emmanuel Quémener** (CBP, ENS-Lyon)
 
 Wood flux (piece number per time interval) is a key parameter for understanding wood budgeting, determining the controlling factors, and managing flood risk in a river basin. Quantitative wood flux data is critically needed to improve the understanding of wood dynamics and estimate wood discharge in rivers. In this study, the streamside videography technique was applied to detect wood passage and measure instantaneous rates of wood transport. The goal was to better understand how wood flux responds to flood and wind events and then predict wood flux. To do so, the river surface on the Ain River, France has been recorded using a streamside video camera since 2007. We introduce new software for the automatic detection of wood pieces in rivers, and apply different image analysis techniques such as static and dynamic masks, object tracking, and object characterization to minimize false positive and missed detections. The high precision of the software shows that it can be used to massively increase the quantity of wood flux data in rivers around the world, potentially in real time. The data set is then used to develop a random forest regression model to predict wood frequency as a function of three input variables that are derived from the flow hydrograph. The model calculates the total wood volume either during day or night based on the video monitoring technique for the first time, which expands its utility for wood budgeting in a watershed.
 

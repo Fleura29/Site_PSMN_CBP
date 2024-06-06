@@ -3,15 +3,13 @@
 Plus de 50 machines pour se connecter à x2go ou SSH !
 =====================================================
 
-.. raw:: html
+.. container:: text-center 
 
-    <div class="container text-center w-75">
-        <p class="d-inline-block bg-warning-subtle p-3 rounded fs-14">
-            L'analyse les logs de connexion aux stations de travail a montré que beaucoup de personnes 
-            se connectaient sur les mêmes stations. Voici la liste détaillant toutes les machines 
-            exploitables à distance
-        </p>
-    </div>
+    .. container:: bg-warning-subtle pt-2 pb-1 mb-2 rounded fs-14
+        
+        L'analyse les logs de connexion aux stations de travail a montré que beaucoup de personnes 
+        se connectaient sur les mêmes stations. Voici la liste détaillant toutes les machines 
+        exploitables à distance
 
 Ces machines sont accessibles par SSH et :ref:`x2go <x2go>` : '<nom>.cbp.ens-lyon.fr'
 

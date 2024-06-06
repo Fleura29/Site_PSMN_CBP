@@ -8,18 +8,16 @@ CADENCED
 
 **Computer Assisted Discovery and Elucidation of Novel Catalysts for Economic Development of Saudi Arabia**
 
-.. container:: d-flex mb-3
-
-    .. image:: ../../_static/img_projets/kaust.jpg
-        :alt: Image kaust
-
-    .. container:: 
+.. image:: ../../_static/img_projets/kaust.jpg
+    :class: img-float pe-2
+    :width: 160px
+    :alt: Image kaust
         
-        **Directed by: Philippe Sautet, ENS de Lyon** 
+**Directed by: Philippe Sautet, ENS de Lyon** 
 
-        Contact: Philippe.Sautet @ ens-lyon.fr 
+Contact: Philippe.Sautet @ ens-lyon.fr 
 
-        `KAUST catalysis Center Website <http://kcc.kaust.edu.sa/Pages/Home.aspx>`_ 
+`KAUST catalysis Center Website <http://kcc.kaust.edu.sa/Pages/Home.aspx>`_ 
 
 :underline:`Associated Members :` 
 
@@ -31,17 +29,14 @@ CADENCED
 Research project
 ----------------
 
-.. container:: d-flex mb-3
+.. image:: ../../_static/img_projets/wgps3_ok.png
+    :class: img-float pe-2
+    :alt: Image wgps3_ok
 
-    .. image:: ../../_static/img_projets/wgps3_ok.png
-        :alt: Image wgps3_ok
-
-    .. container::
-
-        CADENCED is a joint research project between IFP, CNRS and ENS de Lyon in relation with the KCRC (KAUST Research Center For Catalysis).
-        In the 2009-2014 it will address one challenging target in chemistry/petrochemistry, namely designing a new catalyst and process for higher alpha-olefin production from ethylene (1- hexene, 1-octene) and one challenging target in hydrogen production from water by
-        photocatalysis using an approach combining computational and experimental methods to speed up the discovery process. In support of these two practical subprojects, and in view of the extensive use of computing required, another specific and challenging subproject on
-        accelerated high performance computing (HPC) applied to catalysis is proposed.
+CADENCED is a joint research project between IFP, CNRS and ENS de Lyon in relation with the KCRC (KAUST Research Center For Catalysis).
+In the 2009-2014 it will address one challenging target in chemistry/petrochemistry, namely designing a new catalyst and process for higher alpha-olefin production from ethylene (1- hexene, 1-octene) and one challenging target in hydrogen production from water by
+photocatalysis using an approach combining computational and experimental methods to speed up the discovery process. In support of these two practical subprojects, and in view of the extensive use of computing required, another specific and challenging subproject on
+accelerated high performance computing (HPC) applied to catalysis is proposed.
 
 The goal of this subproject is to develop and optimize a hybrid computing system by coupling a high performance computer with graphic microprocessors (GPU) or accelerators such as CELL processor and then to develop and implement algorithms improving performances of the
 quantum calculation software code (software enhancement) running on this hybrid system. These developments should provide an expected gain from 5 to 10 times in computing speed for applications in catalysis. Once implemented in KAUST these improvements should provide users in KCRC with enhanced HPC resources necessary to deploy “Computer Assisted Discoveries” methodologies applied to catalysis and materials sciences.
@@ -49,6 +44,7 @@ quantum calculation software code (software enhancement) running on this hybrid 
 .. container:: text-center 
 
     .. image:: ../../_static/img_projets/toc.jpg
+        :class: img-fluid
         :alt: Image toc
 
 References

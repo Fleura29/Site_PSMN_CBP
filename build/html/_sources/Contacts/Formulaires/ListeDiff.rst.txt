@@ -26,11 +26,11 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
                 <div class="col">
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>
-                        <input type="email" class="form-control form-style" id="Email">
+                        <input type="email" class="form-control form-style" id="inputEmail">
                     </div>
                     <div class="mb-2">
                         <label for="inputLaboratory">Laboratoire*</label>
-                        <input type="text" class="form-control form-style" id="Laboratory">
+                        <input type="text" class="form-control form-style" id="inputLaboratory">
                     </div>
                 </div>
             </div>

@@ -7,21 +7,21 @@ IMPACT : L’impact géant et la formation de la Terre et de la Lune
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/wurm1.jpg
-        :class: img-fluid
-        :alt: Image wurm1
+.. image:: ../../_static/img_projets/wurm1.jpg
+    :class: img-float 
+    :width: 170px
+    :alt: Image wurm1
 
-    .. container::
+Coordination : Razvan Caracas (Laboratoire de Géologie, ENSL) 
 
-        Coordination : Razvan Caracas (Laboratoire de Géologie, ENSL) |br|
-        Parteners : Natalia Solomatova, Ema Bobocioiu, Anais Kobsch, Zhi Li, Helene Plihon, Sarah H. Stewart, Francois Soubiran |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru 
-        
-        `Website of the project <https://moonimpact.eu/home/>`_
+Parteners : Natalia Solomatova, Ema Bobocioiu, Anais Kobsch, Zhi Li, Helene Plihon, Sarah H. Stewart, Francois Soubiran 
 
-**L’impact géant et la formation de la Terre et de la Lune** |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru 
+
+`Website of the project <https://moonimpact.eu/home/>`_
+
+**L’impact géant et la formation de la Terre et de la Lune** 
+
 Ce projet ERC est porté par l’équipe de Razvan Caracas (Laboratoire de Géologie) et propose d’étudier le modèle de formation et d’évolution du disque proto-lunaire en utilisant une combinaison de simulations abinitio atomistiques (théorie de la fonctionnelle densité DFT à grande échelle couplée avec les fonctions Green GWet les techniques DFT dépendant du temps). L’objectif est de contraindre les scénarios d’impact plausibles et les caractéristiques de l’impacteur et de la proto-Terre dans un algorithme de convergence minimisant l’écart entre les prédictions des compositions finales Terre-Lune et les observations.  
 
 Contribution of CBP/PSMN

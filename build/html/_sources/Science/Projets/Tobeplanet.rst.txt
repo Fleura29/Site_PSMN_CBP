@@ -6,18 +6,14 @@ To be a planet, or not to be, that is the question
 .. |br| raw:: html
 
    <br>
+ 
+.. image:: ../../_static/img_projets/phantommcfost.png
+    :class: img-float pe-2
+    :alt: Image phantommcfost
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/phantommcfost.png
-        :class: img-fluid
-        :alt: Image phantommcfost
-
-    .. container::
-
-        **CRAL, ENS-Lyon** : Guillaume Laibe |br|
-        **CRAL, ENS-Lyon** : Guillaume Brochier |br|
-        **Centre Blaise Pascal :** Emmanuel Quémener
+**CRAL, ENS-Lyon** : Guillaume Laibe |br|
+**CRAL, ENS-Lyon** : Guillaume Brochier |br|
+**Centre Blaise Pascal :** Emmanuel Quémener
 
 La formation des planètes dans des systèmes stellaires tels que notre système solaire reste relativement mystérieuse. Une des voies possible de leur formation serait la fragmentation des disques protoplanétaires.
 Dans ce but, nous réalisons des simulations de "Smoothed Hydrodynamics Particles" (SPH), grâce au code PHANTOM. C'est-à-dire que nous résolvons les équations de l'hydrodynamique, pour déterminer l'évolution du disque. Nous faisons en sorte que celui-ci soit gravitationnellement instable. Ainsi, au bout de nombreuses orbites des "fragments" se forment. Sur la vidéo ci-contre, réalisées avec 5 millions de particules, cela correspond aux de fortes densités qui se développent. 

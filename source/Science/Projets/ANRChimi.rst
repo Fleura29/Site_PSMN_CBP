@@ -6,16 +6,19 @@ ANR ChimigraphN
 .. role:: underline
     :class: underline
 
+.. |br| raw:: html
+
+   <br>
+
 .. container:: d-flex mb-3
 
     .. image:: ../../_static/img_projets/graphene.png
-        :class: w-25 img-fluid
+        :class: img-fluid
         :alt: Image graphene
 
     .. container::
 
-        **Chemisorption, reactivity and defects on graphene** 
-
+        **Chemisorption, reactivity and defects on graphene** |br|
         Coordination ENS : Marie-Laure Bocquet 
 
 :underline:`Partenaires` : 

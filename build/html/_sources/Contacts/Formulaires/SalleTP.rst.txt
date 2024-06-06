@@ -1,13 +1,13 @@
 .. _salle-tp:
 
-Formulaire de réservation de la salle de TP numériques du CBP
-=============================================================
+Réservation de la salle de TP numériques du CBP
+===============================================
 
 `Calendrier de disponibilité de la salle de TP numériques du CBP <calendrier>`_ 
 
-.. container:: text-center w-75
+.. container:: text-center
 
-    .. container:: bg-body-secondary p-3 rounded fs-13
+    .. container:: d-inline-block bg-body-secondary pt-3 mb-3 rounded fs-13
 
         N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
 
@@ -82,8 +82,8 @@ Formulaire de réservation de la salle de TP numériques du CBP
                 <label for="floatingTextarea2">Autres renseignements</label>
             </div>
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
-            <div class="container text-center w-75">
-                <p class="d-inline-block bg-warning-subtle p-3 rounded fs-13">
+            <div class="container text-center">
+                <p class=" bg-warning-subtle pt-3 pb-3 rounded fs-13">
                     Toute réservation dans la salle de formation suppose l'acceptation et le respect 
                     des <a href="../../Plateformes/Autres/Conditions.html">Conditions Générales d'Utilisation</a>.
                 </p>

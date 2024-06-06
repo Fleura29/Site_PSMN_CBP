@@ -20,7 +20,7 @@ Une utilisation toujours croissante
 .. container:: text-center
 
     .. image:: ../_static/Plateformes/utilisateurscbp2019.png
-        :class: img-max-width
+        :class: img-fluid
         :alt: Graphique utilisateurs cbp 2019
 
 Un ensemble de plateaux techniques
@@ -28,7 +28,7 @@ Un ensemble de plateaux techniques
 
 A l'origine, les ressources informatiques du Centre Blaise Pascal étaient celles du Cecam, essentiellement cantonnées à la salle informatique.
 
-Maintenant, le Centre Blaise Pascal dispose d'un ensemble de [[developpement:productions:plateaux|plateaux techniques]] destinés à la formation, l'étude (de l'expérience au prototypage), le développement ou la qualification dans tous les segments de l'informatique scientifique :
+Maintenant, le Centre Blaise Pascal dispose d'un ensemble de `plateaux techniques <#>`_ destinés à la formation, l'étude (de l'expérience au prototypage), le développement ou la qualification dans tous les segments de l'informatique scientifique :
 
 * plateau multi-noeuds : 2 clusters de 64 noeuds r410 et r422, 1 cluster de 16 noeuds c6100, 1 cluster de 12 noeuds s9200
 * plateau multi-coeurs : près de 250 machines disposant de 2 à 128 coeurs physiques dans 48 modèles différents
@@ -50,11 +50,11 @@ Ces plateaux reposent essentiellement sur :
   
 * une infrastructure logicielle cohérente
 * des équipements matériels génériques 
-* une [[ressources:salledeformation|salle de formation]] correctement équipée
+* une `salle de formation <#>`_ correctement équipée
 * des clusters hétérogènes de récupération
 * un environnement d'administration simplifié :ref:`SIDUS <sidusdoc>`
 
-L'[[gridengine4cbp|utilisation]] des clusters (plateaux multi-noeuds & multi-coeurs) se base sur GridEngine. 
+L'`utilisation <#>`_ des clusters (plateaux multi-noeuds & multi-coeurs) se base sur GridEngine. 
 
 Espaces de stockage du CBP
 --------------------------
@@ -83,7 +83,7 @@ Un certain nombre d'applications scientifiques complémentaires (OpenSource ou p
 Équipements informatiques matériels
 -----------------------------------
 
-.. container:: text-center w-75
+.. container:: text-center 
 
     .. container:: bg-success-subtle pt-2 pb-1 mb-3 rounded fs-13
         
@@ -171,7 +171,7 @@ La salle collaborative M7-1H19 de travaux pratiques comprend :
 
 Ces machines sont accessibles par SSH ou x2go : ''<nom>.cbp.ens-lyon.fr'' 
 
-Une vision d'ensemble de l'`état des stations de travail <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ sous [[developpement:productions:sidus|SIDUS]].
+Une vision d'ensemble de l'`état des stations de travail <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ sous :ref:`SIDUS <sidusdoc>`.
 
 Machines ouvertes en salle 3IP à accélérateur AMD ou Nvidia
 -----------------------------------------------------------
@@ -220,11 +220,12 @@ Bureau M7-1H07 avec capacité 3D
 .. container:: text-center
 
     .. image:: ../_static/Plateformes/cimg0039.jpg
+        :class: img-fluid
         :alt: Image cimg0039
 
 * **un cluster 64 bits** de 156 noeuds permanents et sa frontale
 
-* accès par **cocyte.cbp.ens-lyon.fr** avec soumission par [[ressources:slurm4cbp|Slurm]]
+* accès par **cocyte.cbp.ens-lyon.fr** avec soumission par `Slurm <#>`_
 
 * **24 stations d'intégration :**
 

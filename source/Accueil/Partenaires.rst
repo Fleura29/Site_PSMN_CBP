@@ -1,12 +1,14 @@
 Partenaires
 ===========
 
-.. toctree::
-    :maxdepth: 3
+.. container:: disp
 
-    Laboratoires/ENS
-    Laboratoires/Udl
-    Laboratoires/AURA
-    Laboratoires/CdC
-    Laboratoires/PP
+    .. toctree::
+        :maxdepth: 1
+
+        Laboratoires/ENS
+        Laboratoires/Udl
+        Laboratoires/AURA
+        Laboratoires/CdC
+        Laboratoires/PP
 

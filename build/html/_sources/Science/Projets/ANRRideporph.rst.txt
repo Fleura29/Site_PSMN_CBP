@@ -7,16 +7,15 @@ ANR Rideporph
 
    <br>
 
-.. container:: d-flex mb-3
+.. image:: ../../_static/img_projets/porphyrin.png
+    :class: img-float pe-2
+    :alt: Image porphyrin
 
-    .. image:: ../../_static/img_projets/porphyrin.png
-        :alt: Image porphyrin
+**Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach.** 
 
-    .. container::
+Coordination : Marie-Laure Bocquet 
 
-        **Exploring the RIDEr ligation at supported PORPHyrins using a combined theory and experiment atomic-sacle approach.** |br|
-        Coordination : Marie-Laure Bocquet |br|
-        Post-doc : Marie Lattelais
+Post-doc : Marie Lattelais
 
 Project
 -------

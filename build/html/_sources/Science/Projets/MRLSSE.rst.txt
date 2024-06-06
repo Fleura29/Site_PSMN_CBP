@@ -6,19 +6,16 @@ Moteur de Recherche en Langue des Signes par Sentence Embeddings
 .. |br| raw:: html
 
    <br>
-
-.. container:: d-flex mb-3
     
-    .. image:: ../../_static/img_projets/sentenceembeddings2021.png
-        :class: img-fluid
-        :alt: Image sentenceembeddings2021
+.. image:: ../../_static/img_projets/sentenceembeddings2021.png
+    :class: img-float pe-2
+    :width: 150px
+    :alt: Image sentenceembeddings2021
 
-    .. container::
-
-        **Coline Petit-Jean (M2, ENS-Lyon),** |br|
-        **Michèle Gouiffès (LISN, Université Paris-Saclay),** |br|
-        **Hannah Bull (LISN, Université Paris-Saclay),** |br|
-        **Expertise IT : Emmanuel Quémener (CBP, ENS-Lyon)**
+**Coline Petit-Jean (M2, ENS-Lyon),** |br|
+**Michèle Gouiffès (LISN, Université Paris-Saclay),** |br|
+**Hannah Bull (LISN, Université Paris-Saclay),** |br|
+**Expertise IT : Emmanuel Quémener (CBP, ENS-Lyon)**
 
 La recherche sur le traitement automatique des langues des signes (LS) est loin derrière la
 recherche sur les langues vocales. Des outils qui existent depuis des années pour le français —

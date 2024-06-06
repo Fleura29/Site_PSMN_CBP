@@ -3,17 +3,13 @@
 Projet LIAISON: Deep Learning for Linguistic & Social Network
 =============================================================
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/liaison.png
-        :class: img-fluid
-        :alt: Image liaison
+.. image:: ../../_static/img_projets/liaison.png
+    :class: img-float pe-2
+    :alt: Image liaison
 
-    .. container::
+Márton Karsai (IXXI, LIP, ENSL), Sébastien Lerique, Jacobo Levy-Abitbol
 
-        Márton Karsai (IXXI, LIP, ENSL), Sébastien Lerique, Jacobo Levy-Abitbol
-
-        Centre Blaise Pascal : Emmanuel Quémener
+Centre Blaise Pascal : Emmanuel Quémener
 
 Le projet LIAISON met en œuvre des approches d’apprentissage profond non supervisé pour inférer des corrélations/motifs qui existent entre des variables linguistiques dynamiques, la structure mésoscopique et dynamique d'un réseau social et leurs attributs socio-économiques. Il se positionne à la croisée du Traitement Automatique du Langage (TAL), de la science des réseaux, de la science des données et de l’apprentissage automatique.
 

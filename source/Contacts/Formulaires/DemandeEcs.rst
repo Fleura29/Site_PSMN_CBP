@@ -45,12 +45,12 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control textarea" placeholder="Leave a comment here" id="floatingTextarea1" required></textarea>
-                <label for="floatingTextarea1">Projet de recherche :*</label>
+                <textarea class="form-control textarea" placeholder="Leave a comment here" id="textAreaProject" required></textarea>
+                <label for="textAreaProject">Projet de recherche :*</label>
             </div>
             <div class="form-floating mt-3"> 
-                <textarea class="form-control textarea" placeholder="Leave a comment here" id="floatingTextarea2" required></textarea>     
-                <label for="floatingTextarea2">Description de l'expertise sollicitée :*</label>
+                <textarea class="form-control textarea" placeholder="Leave a comment here" id="textAreaDesc" required></textarea>     
+                <label for="textAreaDesc">Description de l'expertise sollicitée :*</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>

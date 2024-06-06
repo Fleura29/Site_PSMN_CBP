@@ -10,17 +10,14 @@ Wave Resonance and Multistability in Atmospheric Jet Dynamics
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/cbp_ens.jpeg
-        :class: img-fluid
-        :alt: Image cbp_ens
+.. image:: ../../_static/img_projets/cbp_ens.jpeg
+    :class: img-float pe-2
+    :alt: Image cbp_ens
 
-    .. container::
+Coordination : Corentin Herbert, Chiabrando Nicolas (ENS-Lyon, Laboratoire de Physique) 
 
-        Coordination : Corentin Herbert, Chiabrando Nicolas (ENS-Lyon, Laboratoire de Physique) |br|
-        Partners : un doctorant et plusieurs étudiants en master du Laboratoire de Physique (à recruter) |br|
-        Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
+Partners : un doctorant et plusieurs étudiants en master du Laboratoire de Physique (à recruter) |br|
+Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
 
 Abrupt transitions of the climate of the Earth are believed to have occurred in the past,

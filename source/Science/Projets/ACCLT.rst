@@ -6,19 +6,15 @@ Approche computationnelle du changement linguistique sur Twitter
 .. |br| raw:: html
 
    <br>
-
-.. container:: d-flex mb-3
     
-    .. image:: ../../_static/img_projets/accltwitter2021.png
-        :class: img-fluid
-        :alt: Image accltwitter2021
+.. image:: ../../_static/img_projets/accltwitter2021.png
+    :class: img-float pe-3
+    :alt: Image accltwitter2021
 
-    .. container::
-
-        **ENS-Lyon - ICAR** : Jean-Philippe Magué |br|
-        **ENS-Lyon - ICAR** : Louise Tarrade |br|
-        **ENS-Lyon - ICAR** : Mélanie Veloso |br|
-        **Centre Blaise Pascal :** Emmanuel Quémener
+**ENS-Lyon - ICAR** : Jean-Philippe Magué |br|
+**ENS-Lyon - ICAR** : Louise Tarrade |br|
+**ENS-Lyon - ICAR** : Mélanie Veloso |br|
+**Centre Blaise Pascal :** Emmanuel Quémener
 
 Les données massives produites par des médias sociaux comme Twitter permettent l’observation d’une variété de français qui se distingue du français normé, et qui se caractérise entre autres par un fort taux d’innovations. 
 

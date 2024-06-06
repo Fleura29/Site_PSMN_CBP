@@ -4,19 +4,17 @@ Accès aux sites
 Adresse
 -------
 
-.. container::
+**PSMN** et **CBP**
 
-    **PSMN** et **CBP**
+Pôle Scientifique de Modélisation Numérique (PSMN)
+ENS de Lyon
+46, allée d'Italie
+69364 Lyon Cedex 07
+France 
 
-    Pôle Scientifique de Modélisation Numérique (PSMN)
-    ENS de Lyon
-    46, allée d'Italie
-    69364 Lyon Cedex 07
-    France 
-
-    Le Centre Blaise Pascal se situe sur le Campus “Monod”.
-        
-    Les bureaux du PSMN se situent sur le Campus “Monod”, batiment M7 (étage 1H). 
+Le Centre Blaise Pascal se situe sur le Campus “Monod”.
+    
+Les bureaux du PSMN se situent sur le Campus “Monod”, batiment M7 (étage 1H). 
 
 Accès
 -----
@@ -26,31 +24,30 @@ Plan d'accès:
 .. container:: text-center
 
     .. image:: ../_static/map.png
+        :class: img-fluid
         :alt: Plan d'accès
 
 Pour se rendre à l'ENS-Lyon
 ---------------------------
 
-.. container::
+**De l'aéroport de Lyon-Saint Exupéry :**
 
-    **De l'aéroport de Lyon-Saint Exupéry :**
+* Prenez le train Rhônexpress jusqu'à la gare de Lyon Part-Dieu.
 
-    * Prenez le train Rhônexpress jusqu'à la gare de Lyon Part-Dieu.
+**Depuis la gare de Lyon Part-Dieu :**
 
-    **Depuis la gare de Lyon Part-Dieu :**
+* Prenez la sortie “Vivier Merle”,
+* puis prenez le Métro ligne B, direction “Gare d'Oullins”.
+* Descendez à la station “Debourg” ou “Stade de Gerland”.
 
-    * Prenez la sortie “Vivier Merle”,
-    * puis prenez le Métro ligne B, direction “Gare d'Oullins”.
-    * Descendez à la station “Debourg” ou “Stade de Gerland”.
+**Depuis la gare de Lyon Perrache :**
 
-    **Depuis la gare de Lyon Perrache :**
+* prenez le Tram T1 direction “Debourg”,
+* Descendez à la station “ENS Lyon”.
 
-    * prenez le Tram T1 direction “Debourg”,
-    * Descendez à la station “ENS Lyon”.
+`Plan d'accès (pdf) <../_static/psmn_map.pdf>`_ 
 
-    `Plan d'accès (pdf) <../_static/psmn_map.pdf>`_ 
-    
-    `Plan Métro-Tram-Bus (pdf) <../_static/plan_tcl_2024.pdf>`_
+`Plan Métro-Tram-Bus (pdf) <../_static/plan_tcl_2024.pdf>`_
 
 Hôtels
 ------

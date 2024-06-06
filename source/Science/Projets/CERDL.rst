@@ -10,17 +10,14 @@ Circumstellar environments reconstruction with deep learning
 
    <br>
 
-.. container:: d-flex mb-3
-    
-    .. image:: ../../_static/img_projets/rhapsodie.png
-        :class: img-fluid
-        :alt: Image rhapsodie
+.. image:: ../../_static/img_projets/rhapsodie.png
+    :class: img-float pe-2
+    :width: 150px
+    :alt: Image rhapsodie
 
-    .. container::
-
-        **Assia Chahid** (stagiaire, LabPhys, ENS-Lyon), |br|
-        **Nelly Pustelnik** (CR, LabPhys, ENS-Lyon) |br|
-        Expertise IT : **Emmanuel Quémener** (CBP, ENS-Lyon)
+**Assia Chahid** (stagiaire, LabPhys, ENS-Lyon), |br|
+**Nelly Pustelnik** (CR, LabPhys, ENS-Lyon) |br|
+Expertise IT : **Emmanuel Quémener** (CBP, ENS-Lyon)
 
 Polarimetric imaging is one of the most effective techniques for high-contrast imaging and characterization of circumstellar environments.These environments can be characterized through direct-imaging polarimetry at near-infrared wavelengths. The Spectro-Polarimetric High-contrast Exoplanet REsearch (SPHERE)/IRDIS instrument installed on the Very Large Telescope in its dual-beam polarimetric imaging (DPI) mode, offers the capability to acquire polarimetric images at high contrast and high angular resolution. However dedicated image processing is needed to get rid of the contamination by the stellar light, of instrumental polarization effects and of the blurring by the instrumental point spread function. In [1] we propose a reconstruction strategy to deconvolve the near-infrared polarization signal from circumstellar environments. This reconstruction method relies on variational techniques including weighted data fidelity term, smooth penalization, and additional constraints. The method improves the overall performances in particular for low SNR/small polarized flux compared to standard methods.
 
