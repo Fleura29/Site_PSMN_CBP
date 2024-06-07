@@ -17,7 +17,7 @@ Réservation de la salle de TP numériques du CBP
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="InputName" >Nom*</label>
                         <input type="text" class="form-control form-style" id="exampleInputEmail1">
@@ -47,7 +47,7 @@ Réservation de la salle de TP numériques du CBP
                         </select>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="exampleInputEmail1">Date de début</label>
                         <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputStartDate"  value="">

@@ -1,5 +1,5 @@
-Workshop 2018
-=============
+Workshops 2018
+==============
 
 .. image:: ../../_static/cbp_ens.jpeg
     :class: img-float pe-3

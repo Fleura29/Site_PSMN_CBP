@@ -1,0 +1,51 @@
+Workshops 2009
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. container:: 
+
+    .. image:: ../../_static/Animations/WS/turbulence.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image turbulence
+
+    `Turbulence, rotation et MHD <#>`_ 
+
+    Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+    **December 15, 2009**
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/topological_invariant.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image topological_invariant
+
+    **Mini-school on topological insulators and Quantum spin hall effect** |br|
+    Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+    **December 09 - December 11, 2009** |br|
+    `Website of the Workshop <http://www.ens-lyon.fr/CBP/topiso/Home.html>`_
+
+    * David Carpentier, Ecole normale supérieure de Lyon, France
+    * Jérôme Cayssol,  Laboratoire Ondes et Matière d'Aquitaine, Université Bordeaux 1, France
+    * L. Lévy
+    * R. Moessner
+    * G. Montambaux
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/ln3m.jpeg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image ln3m
+
+    `Développements et applications de méthodes de simulation pour la modélisation des matériaux <#>`_ |br|
+    Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+    **September 28 - September 30, 2009**
+
+    * François Jollet, CEA DIF, Arpajon, France
+    * Nicolas Richard, CEA DIF, Arpajon, France
+    * Tristan Albaret, LPMCN Université Lyon 1, LYON, France

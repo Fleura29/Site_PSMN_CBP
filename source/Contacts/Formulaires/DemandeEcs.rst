@@ -15,7 +15,7 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputSurname" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" >
@@ -31,7 +31,7 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
                         </select>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputOther">Autre</label>
                         <input type="text" class="form-control form-style" id="inputOther">

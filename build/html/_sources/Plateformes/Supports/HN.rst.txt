@@ -10,19 +10,16 @@ Support en humanités numériques
 
 * **Nathalie Arlin**
 
-.. container:: d-flex
+.. image:: ../../_static/equipe/arlin.jpg
+    :class: img-float pe-1
+    :width: 100px
+    :alt: Image Nathalie Arlin
 
-    .. image:: ../../_static/equipe/arlin.jpg
-        :width: 100px
-        :alt: Image Nathalie Arlin
-
-    .. container::
-
-        Centre Blaise Pascal |br|
-        Atelier des Humanités Numériques |br|
-        Ingénieur d'études |br|
-        Courriel : nathalie.arlin @ ens-lyon.fr |br|
-        Téléphone : (+33) 4 72 72 86 33
+Centre Blaise Pascal |br|
+Atelier des Humanités Numériques |br|
+Ingénieur d'études |br|
+Courriel : nathalie.arlin @ ens-lyon.fr |br|
+Téléphone : (+33) 4 72 72 86 33
 
 .. image:: ../../_static/equipe/nalanguages.png
 

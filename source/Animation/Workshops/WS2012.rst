@@ -1,0 +1,87 @@
+Workshops 2012
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. container:: 
+
+    .. image:: ../../_static/Animations/WS/superfluid.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image superfluid
+
+    `European Workshop on Superfluid turbulence from the perspective of numerics: modeling, methods and challenges <#>`_ |br|
+    Centre Blaise Pascal, ENS de Lyon, France |br|
+    **November 26-28, 2012** 
+
+    * Emmanuel Lévêque, Laboratoire de Physique, ENS de Lyon, France
+    * Philippe-Emmanuel Roche, Institut Neel, Grenoble, France
+    * Laurent Chevillard, Laboratoire de Physique, ENS de Lyon, France
+    * Bernard Castaing, Laboratoire de Physique, ENS de Lyon, France 
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/jcbp.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image jcbp
+
+    `Journées du Centre Blaise Pascal : Exploring (Free) Energy Landscapes <#>`_ |br|
+    Centre Blaise Pascal, ENS de Lyon, France |br|
+    **20 Novembre, 2012** 
+
+    * Paul Fleurat-Lessard, Laboratoire de Chimie, ENS de Lyon, France
+    * Claire Loison, Laboratoire de Spectrométrie Ionique et Moléculaire, Université de Lyon / CNRS, France
+    * Cerasela Calugaru, CBP/PSMN, ENS de Lyon, France 
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/longrange.jpeg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image longrange
+
+    `Equilibrium and out-of-equilibrium properties of systems with long-range interactions <#>`_
+    Centre Blaise Pascal, ENS Lyon, France |br|
+    **August 27-31, 2012** 
+
+    * Stefano Ruffo ,ENS de Lyon, France
+    * Thierry Dauxois, ENS de Lyon, France
+    * Yan Levin, Instituto de Fisica UFRGS, Porto Alegre
+    * David Mukamel, The Weizmann Institute of Science, Rehovot 
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/rareevents.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image rareevents
+
+    `Computation of transition trajectories and rare events in non-equilibrium systems <#>`_ |br|
+    Centre Blaise Pascal, ENS de Lyon, France |br|
+    **June 11-15, 2012** 
+
+    * Freddy Bouchet, ENS de Lyon, France
+    * Arnaud Guyader, Université Rennes 2, Inria Rennes, France
+    * Hugo Touchette, Queen Mary, University of London, United Kingdom
+    * Frédéric Cerou, Inria Rennes Bretagne Atlantique, France
+    * Marianne Corvellec, ENS de Lyon, France 
+    
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/qmmm.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image qmmm
+
+    `New QM/MM opportunities for in silico macromolecular photochemistry <#>`_ |br|
+    Centre Blaise Pascal, ENS de Lyon, France |br|
+    **February 28, 2012 to March 2, 2012** 
+
+    * Antonio Monari, Equipe de Chimie et Biochimie Théoriques SRSMC Université de Lorraine-Nancy, France
+    * Elise Dumont, École Normale Supérieure de Lyon, France
+    * Jean Yohann Moreau, Université de Grenoble, France
+    * Nicolas Ferré, Institut de Chimie Radicalaire, Université d'Aix-Marseille, France 

@@ -26,5 +26,6 @@ Transferts technologiques
         Les configurations du système d'exploitation, ainsi que sa diffusion (SIDUS) sur les noeuds ont profité des travaux préparatoires, recettes et intégrations réalisés sur la plate-forme expérimentale du CBP.
 
     .. image:: ../_static/Plateformes/salle_des_machines_4.png
-        :alt: Image salle des machines
+      :class: img-fluid
+      :alt: Image salle des machines
 

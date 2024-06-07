@@ -26,7 +26,7 @@ Demande d'accès aux ressources du PSMN
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputSurname" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" required>
@@ -54,7 +54,7 @@ Demande d'accès aux ressources du PSMN
                         <input type="text" class="form-control form-style"  id="inputOther">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     
                     <div class="mb-2">
                         <label for="inputTeam">Équipe (ou Groupe, Projet)</label>
@@ -92,9 +92,10 @@ Demande d'accès aux ressources du PSMN
                 <textarea class="form-control" placeholder="Leave a comment here" id="textAreaDscr" style="height: 100px; border-color: #E69645;"></textarea>
                 <label for="textAreaDscr">Descriptif du domaine scientifique :</label>
             </div>
-            <div class="form-floating mt-3"> 
+            <p class="mt-2" style="margin-bottom: 0;">Pour les membres des laboratoires hors du site de Gerland: </p>
+            <div class="form-floating " style="overflow-x: auto;"> 
                 <textarea class="form-control" placeholder="Leave a comment here" id="textAreaJust" style="height: 100px; border-color: #E69645;"></textarea>     
-                <label for="textAreaJust">Pour les membres des laboratoires hors du site de Gerland, justifier cette demande :</label>
+                <label for="textAreaJust">justifier cette demande</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>

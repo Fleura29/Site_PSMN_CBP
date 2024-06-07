@@ -21,21 +21,21 @@ Statistiques des journaux
 
 .. container:: row rows-cols-3
 
-    .. container:: col cols-1
+    .. container:: col col-lg-4 text-center
 
         * `H index des journaux <http://www.scimagojr.com/help.php#rank_journals>`_
 
         .. image:: ../../_static/img_publications/plot_2013_hindex-1.png
             :alt: Graphique plot_2013_hindex-1
 
-    .. container:: col cols-1
+    .. container:: col col-lg-4 text-center
 
         * `Facteur d'impact des journaux. <https://www.scijournal.org/>`_
 
         .. image:: ../../_static/img_publications/plot_2013_if-1.png
             :alt: Graphique plot_2013_if-1
 
-    .. container:: col cols-1
+    .. container:: col col-lg-4 text-center
 
         * `Scientific Journal Ranking. <http://www.scimagojr.com/help.php#rank_journals>`_
 

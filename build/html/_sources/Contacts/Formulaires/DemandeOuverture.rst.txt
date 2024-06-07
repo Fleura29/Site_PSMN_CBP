@@ -11,7 +11,7 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputSurname" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp">
@@ -29,7 +29,7 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
                         <input type="text" class="form-control form-style" id="inputLaboratory">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputEmail">Email*</label>
                         <input type="email" class="form-control form-style" id="inputEmail">

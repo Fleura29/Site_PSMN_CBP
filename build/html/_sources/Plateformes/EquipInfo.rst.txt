@@ -7,7 +7,7 @@ Equipements informatique
 .. role:: line
     :class: line
 
-La nouveauté, le portail Cloud@CBP
+La nouveauté, le portail Cloud\@CBP
 ----------------------------------
 
 Pour simplifier l'accès aux ressources du Centre Blaise Pascal, le portail `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ permet de **visualiser** et **sélectionner** les ressources disponibles.
@@ -20,7 +20,7 @@ Une utilisation toujours croissante
 .. container:: text-center
 
     .. image:: ../_static/Plateformes/utilisateurscbp2019.png
-        :class: img-fluid
+        :class: img-fluid pb-2
         :alt: Graphique utilisateurs cbp 2019
 
 Un ensemble de plateaux techniques
@@ -63,21 +63,25 @@ L'utilisateur dispose sur les machines `Cloud@CBP <https://www.cbp.ens-lyon.fr/p
 
 * son compte utilisateur **$HOME** : **partagé entre les machines**. Chaque utilisateur dispose d'un quota de **20 GB**. Il ne doit pas être trop sollicité pour des calculs nécessitant de gros transferts. Un archivage (permettant de revenir sur l'état du volume dans le passé) est réalisé chaque nuit.
 * l'espace temporaire **/tmp** : ce dossier est en mémoire vive. Rapide, il est raisonnable de ne pas trop le solliciter pour les gros volumes. Une fois la mémoire vive remplie, des dysfonctionnements peuvent apparaître.
-* l'espace local **/local** : ce dossier correspond à un disque dur interne, d'un volume de **500 GB** à **50 TB**. La vitesse d'accès est d'une centaine de MB/s. Il n'est ni partagé, ni sauvegardé. Pour l'exploiter, créer un dossier correspondant à son identifiant : ''mkdir /local/$USER''
-* l'espace vrac **/scratch** : **partagé entre les machines**, de **120 TB**, ni archivé, ni sauvegardé. Il dispose d'un accès rapide (autour de 100 MB/s) sur le réseau de la salle et très rapide (autour de 300 MB/s) sur le réseau du cluster. Pour l'exploiter, créer un dossier correspondant à son identifiant : ''mkdir /scratch/$USER''
-* l'espace vrac récent **/distonet**: **partagé entre les machines**, de **120 TB**, ni archivé mais sauvegardé. Il dispose d'un accès rapide sur le réseau de la salle (autour de 100 MB/s) et très très rapide sur le réseau du cluster (autour de 2 GB/s). Ne JAMAIS l'exploiter pour des traitements générant ou traitant au delà de 10000 fichiers ! Pour l'exploiter, créer un dossier correspondant à son identifiant : ''mkdir /distonet/$USER''
-* l'espace projets **/projects**: **partagé entre les machines**, de **12 TB**, archivé mais non sauvegardé. C'est un espace collaboratif. Il dispose d'un accès rapide sur le réseau de la salle et sur le réseau du cluster. Pour l'exploiter, créer un dossier correspondant à son identifiant : ''mkdir /projects/users/$USER''
+* l'espace local **/local** : ce dossier correspond à un disque dur interne, d'un volume de **500 GB** à **50 TB**. La vitesse d'accès est d'une centaine de MB/s. Il n'est ni partagé, ni sauvegardé. Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /local/$USER"
+* l'espace vrac **/scratch** : **partagé entre les machines**, de **120 TB**, ni archivé, ni sauvegardé. Il dispose d'un accès rapide (autour de 100 MB/s) sur le réseau de la salle et très rapide (autour de 300 MB/s) sur le réseau du cluster. Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /scratch/$USER"
+* l'espace vrac récent **/distonet**: **partagé entre les machines**, de **120 TB**, ni archivé mais sauvegardé. Il dispose d'un accès rapide sur le réseau de la salle (autour de 100 MB/s) et très très rapide sur le réseau du cluster (autour de 2 GB/s). Ne JAMAIS l'exploiter pour des traitements générant ou traitant au delà de 10000 fichiers ! Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /distonet/$USER"
+* l'espace projets **/projects**: **partagé entre les machines**, de **12 TB**, archivé mais non sauvegardé. C'est un espace collaboratif. Il dispose d'un accès rapide sur le réseau de la salle et sur le réseau du cluster. Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /projects/users/$USER"
 
-<note important>La règle la plus importante pour le stockage est : "On ne travaille PAS dans son $HOME"</note>
+.. container:: text-center 
+
+    .. container:: d-inline-block bg-warning-subtle pt-2 mb-2 rounded fs-13
+
+        La règle la plus importante pour le stockage est : "On ne travaille PAS dans son $HOME"
 
 Infrastructure logicielle cohérente
 -----------------------------------
 
 La totalité des serveurs, des stations de travail et des postes de travail fonctionnent sous le système d'exploitation GNU/Linux, intégré au sein de la distribution `Debian <http://www.debian.org/>`_.
-Tous les postes à destination des utilisateurs sont équipés en standard d'un certain nombre de paquets exploités dans les générations précédentes de systèmes. L'installation de sous les paquets ''science'' n'est plus systématique sur la version Stretch actuellement en service.
+Tous les postes à destination des utilisateurs sont équipés en standard d'un certain nombre de paquets exploités dans les générations précédentes de systèmes. L'installation de sous les paquets "science" n'est plus systématique sur la version Stretch actuellement en service.
 L'intérêt de disposer de la même distribution, dans la même version, permet de faciliter au maximum la portabilité d'un équipement à l'autre, et donc limiter les temps d'intégration : un outil développé sur un poste de travail pourra être compilé voire exécuté sans difficulté sur un autre équipement.
 
-Un certain nombre d'applications scientifiques complémentaires (OpenSource ou propriétaires) ont été installées. Elles sont accessibles dans ''/opt'' ou listables via la commande ''module avail''.
+Un certain nombre d'applications scientifiques complémentaires (OpenSource ou propriétaires) ont été installées. Elles sont accessibles dans "/opt" ou listables via la commande "module avail".
 
 
 Équipements informatiques matériels
@@ -85,7 +89,7 @@ Un certain nombre d'applications scientifiques complémentaires (OpenSource ou p
 
 .. container:: text-center 
 
-    .. container:: bg-success-subtle pt-2 pb-1 mb-3 rounded fs-13
+    .. container:: d-inline-block bg-success-subtle pt-2 mb-2 rounded fs-13
         
         Les équipements suivants forment le `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ : plus de 150 machines directement accessibles avec le même environnement
 
@@ -141,7 +145,7 @@ La salle informatique M7-1H04 de travaux pratiques comprend :
     * **o790alpha** : Nvidia NVS 315 avec 1Go
     * **o790beta** : Nvidia GT620 avec 1Go
 
-Ces machines sont accessibles par SSH ou x2go : ''<nom>.cbp.ens-lyon.fr'' 
+Ces machines sont accessibles par SSH ou x2go : "<nom>.cbp.ens-lyon.fr" 
 
 Une vision d'ensemble de l'`état des stations de travail <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ sous :ref:`SIDUS <sidusdoc>`.
 
@@ -169,7 +173,7 @@ La salle collaborative M7-1H19 de travaux pratiques comprend :
 
     * **mld** : Nvidia P2200 avec 5 Go 
 
-Ces machines sont accessibles par SSH ou x2go : ''<nom>.cbp.ens-lyon.fr'' 
+Ces machines sont accessibles par SSH ou x2go : "<nom>.cbp.ens-lyon.fr" 
 
 Une vision d'ensemble de l'`état des stations de travail <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ sous :ref:`SIDUS <sidusdoc>`.
 
@@ -205,7 +209,7 @@ Machines ouvertes en salle 3IP à accélérateur AMD ou Nvidia
       * AMD Radeon Vega 64
 
   
-Ces machines sont accessibles en salle 3IP et par SSH et :ref:`x2go <x2go>` : ''<nom>.cbp.ens-lyon.fr''
+Ces machines sont accessibles en salle 3IP et par SSH et :ref:`x2go <x2go>` : "<nom>.cbp.ens-lyon.fr"
 
 Bureau M7-1H07 avec capacité 3D
 -------------------------------
@@ -262,7 +266,7 @@ Machines virtuelles à accélérateur
 * **v100alpha** : Nvidia Tesla V100 avec 16GB
 * :line-bold:`v100beta` :line:`: Nvidia Tesla V100 avec 16GB`
 
-Ces machines sont accessibles par SSH et :ref:`x2go <x2go>` : ''<nom>.cbp.ens-lyon.fr''
+Ces machines sont accessibles par SSH et :ref:`x2go <x2go>` : "<nom>.cbp.ens-lyon.fr"
 
 Stations Deep Learning à accélérateur
 -------------------------------------
@@ -288,7 +292,7 @@ Stations Deep Learning à accélérateur
     * **epyc4** : 2 Nvidia RTX 6000 Super avec 24GB, espace de stockage de 11TB en Raid5
     * **c4140** : 2 Nvidia Tesla V100 Super avec 16GB, espace de stockage de 50TB en Raid5
 
-Ces machines sont accessibles par SSH et :ref:`x2go <x2go>` : ''<nom>.cbp.ens-lyon.fr''
+Ces machines sont accessibles par SSH et :ref:`x2go <x2go>` : "<nom>.cbp.ens-lyon.fr"
 
 Serveurs "historiques" et récents, multicoeurs
 ----------------------------------------------

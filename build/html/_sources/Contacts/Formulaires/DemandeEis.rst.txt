@@ -15,7 +15,7 @@ Demande d'expertise en informatique scientifique
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputSurname" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" >
@@ -34,7 +34,7 @@ Demande d'expertise en informatique scientifique
                     </div>
                     
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputDem">Demande*</label>
                         <select class="form-select form-style" id="inputDem" style="padding: 0 0 0 10px;">

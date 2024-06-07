@@ -9,6 +9,7 @@ DYN4DRUGS
 
 .. image:: ../../_static/img_projets/dyn4drugs2020.png
     :class: img-float pe-2
+    :width: 140px
     :alt: Image dyn4drugs2020
 
 **Institut Lumière Matière UMR 5306/UCBL** : Claire Loison |br|

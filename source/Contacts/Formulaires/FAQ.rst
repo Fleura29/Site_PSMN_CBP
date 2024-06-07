@@ -7,7 +7,7 @@ Suggérer une entrée de F.A.Q.
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputSurname" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp" required>
@@ -21,7 +21,7 @@ Suggérer une entrée de F.A.Q.
                         <input type="email" class="form-control form-style" id="inputEmail" required>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
                         <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" required>
@@ -36,15 +36,15 @@ Suggérer une entrée de F.A.Q.
             </div>
 
             <div class="border-top border-secondary-subtle mt-1 pt-1">
-                Problème:
+                <u>Problème:</u>
                 <div class="row mt-1">
-                    <div class="col ">
+                    <div class="col col-12 col-sm-6">
                         <div class="mb-2">
                             <label for="inputEmail">Catégorie*</label>
                             <input type="text" class="form-control form-style" id="inputEmail" required>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col col-12 col-sm-6">
                         <div class="mb-2" >
                             <label for="inputTeam">Problème*</label>
                             <input type="text" class="form-control form-style"  id="inputTeam" required>

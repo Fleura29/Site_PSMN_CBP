@@ -1,5 +1,5 @@
-Workshop 2016
-=============
+Workshops 2016
+==============
 
 .. |br| raw:: html
 
@@ -7,6 +7,7 @@ Workshop 2016
 
 .. image:: ../../_static/Animations/WS/mutec.png
     :class: img-float pe-3
+    :width: 170px
     :alt: Logo CBP
 
 `Conférence MutEC à l'ENS de Lyon: Un arbre... pour classer des idées ? <#>`_ 
@@ -20,6 +21,7 @@ Workshop 2016
 
     .. image:: ../../_static/Animations/WS/cecam_logo.png
         :class: img-float pe-3
+        :width: 170px
         :alt: Logo Ecam
 
     `The flow of amorphous solids: from atomistic simulations to Earth Science applications ? <#>`_ |br|

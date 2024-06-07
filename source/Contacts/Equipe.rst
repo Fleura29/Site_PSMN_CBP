@@ -20,7 +20,7 @@ Directeur, responsable administratif
         *  **Ralf EVERAERS - CBPsmn, ENS de Lyon, Laboratoire de Physique UMR 5672**
 
         .. image:: ../_static/equipe/everaers.jpg
-            :class: img-float pe-3
+            :class: img-float pe-2
             :alt: Image Ralf EVERAERS
 
         Professeur des universités, Directeur du CBPsmn & du CFCAM-RA |br|
@@ -100,7 +100,7 @@ Gestionnaire
         * **Emmanuel QUEMENER - CBP/ENS de Lyon**
 
         .. image:: ../_static/equipe/quemener.png
-            :class: img-float pe-3
+            :class: img-float pe-2
             :alt: Image Emmanuel QUEMENER
 
         Ingénieur de Recherche - Pilote d'essai informatique |br|
@@ -125,7 +125,7 @@ Gestionnaire
         * **Cerasela Iliana CALUGARU - CBPsmn, ENS de Lyon**
 
         .. image:: ../_static/equipe/calugaru.jpg
-            :class: img-float pe-3
+            :class: img-float pe-2
             :alt: Image Cerasela Iliana CALUGARU
 
         Ingénieur de Recherche en Calcul Scientifique |br|
@@ -150,7 +150,7 @@ Gestionnaire
         * **Micaël CALVAS - CBP/ENS de Lyon**
 
         .. image:: ../_static/equipe/calvas.jpg
-            :class: img-float pe-3
+            :class: img-float pe-2
             :alt: Image Micaël CALVAS 
 
         Courriel : :ref:`Merci d'utiliser les formulaires de contact <formulaires>` ou micael.calvas@ens-lyon.fr |br|
@@ -169,7 +169,7 @@ Gestionnaire
         * **Nathalie ARLIN - CBP/AHN/ENS de Lyon**
 
         .. image:: ../_static/equipe/arlin.jpg
-            :class: img-float pe-3
+            :class: img-float pe-2
             :alt: Image Nathalie ARLIN 
 
         Ingénieur d'études  |br|
@@ -187,7 +187,6 @@ Gestionnaire
         - Formation / aide à la prise en main d'outils |br|
         - Conseil et recommandations sur la politique éditoriale des éditions critiques et corpus numériques |br|
         - Conseil en lexicologie et terminologie
-
 
 .. container:: row
   

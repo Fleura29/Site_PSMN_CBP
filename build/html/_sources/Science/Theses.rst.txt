@@ -4,7 +4,6 @@ Thèses de doctorat
 Le site `theses.fr <http://theses.fr/>`_ référence les thèses soutenues et en préparation (à partir du moment où les informations les concernants sont rendues  publiques). 
 Les publications et les thèses sont souvent disponible dans les archives ouvertes (`Hyper Articles en Ligne (HAL) <http://hal.archives-ouvertes.fr/>`_ et/ou `arXiv <http://arxiv.org/>`_). 
 
-
 Les thèses sont listées "en vrac" par années.
 
 2022

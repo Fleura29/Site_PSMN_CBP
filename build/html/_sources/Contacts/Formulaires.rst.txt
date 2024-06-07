@@ -5,7 +5,6 @@ Formulaires
 
 .. toctree::
     :maxdepth: 1
-    :caption: Liste des formulaires: 
 
     Formulaires/DemandeRessources
     Formulaires/DemandeEcs

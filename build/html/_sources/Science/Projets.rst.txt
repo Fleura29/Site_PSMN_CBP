@@ -5,6 +5,9 @@ Projets
 
    <br>
 
+.. role:: underline-bold
+    :class: underline-bold
+
 .. container:: disp
    
     .. toctree::
@@ -95,7 +98,7 @@ Projets ERC
 
 .. _erc:
 
-**ERC CRUSLID Formation, magmatic evolution and present-day structure of the CRUsts of Stagnant-LID planets (2021-2026)**
+:underline-bold:`ERC CRUSLID Formation, magmatic evolution and present-day structure of the CRUsts of Stagnant-LID planets (2021-2026)`
 
 * `https://cordis.europa.eu/project/id/101001689/fr <https://cordis.europa.eu/project/id/101001689/fr>`_
 
@@ -106,8 +109,8 @@ ERC-COG - Consolidator Grant
 
 Coordination : (Lauréate) Chloé MICHAUT (LGL-TPE)
 
-**ERC PODCAST - Predictions and Observations for Discs: Planetary Cores and dust Aggregates from 
-non-ideal MHD Simulations with radiative Transfer (2020-2025)**
+:underline-bold:`ERC PODCAST - Predictions and Observations for Discs: Planetary Cores and dust Aggregates from 
+non-ideal MHD Simulations with radiative Transfer (2020-2025)`
 
 * `https://cordis.europa.eu/project/id/864965/fr <https://cordis.europa.eu/project/id/864965/fr>`_
 
@@ -117,7 +120,7 @@ ERC Consolidator Grant
 
 Coordination  : (Lauréat) Guillaume LAIBE (CRAL)
 
-**ERC SENECA - Shape-Shifting Ultrathin 2D Colloidal NanoPlatelets (2020-2025)**
+:underline-bold:`ERC SENECA - Shape-Shifting Ultrathin 2D Colloidal NanoPlatelets (2020-2025)`
 
 Mechanical instabilities of thin sheets has long been exploited in Nature to create patterns and ensure vital functions such as stimuli responsiveness. By applying forces at the surface of thin objects, it is possible to create a wide variety of chiral 3D shapes such as helices, twists and rolls. Moreover, minute changes on these forces can induce dramatic shape-shifting between different geometries. Our goal is to use this general principle to establish a new class of chiral and addressable nanostructures that current synthetic strategies can not afford. Building on our pioneering results, i will use organic ligands at the surface of two dimensional colloidal nanoplatelets to bend and twist ultrathin nanosheets into complex shapes. We first aim at establishing generic synthetic principles for colloidal 2D materials. To do so, we will develop in situ scattering methods to get atomistic insight on their formation mechanism. We will then determine the link between surface chemistry, interfacial stress and conformation in a set of model systems. Based on these insights, we will design stimuli responsive surface ligands whose conformational change upon excitation by an external stimuli will impact the nanoparticle shape. Finally, understanding the nanoscale colloidal forces and geometric frustration between these new building blocks will enable the design of nanostructured solids made by out-of-equilibrium assembly. This research program will advance our fundamental knowledge on mechanics at the nanoscale and provide a mechanistic framework for synthetic chemistry of 2D materials. The nanoparticles that we will synthesize are expected to have broad applications due to their chiroptical properties and their stimuli responsive character in fields as diverse as nano-swimmers, detection of chiral bio-coumpounds, photo-catalysis, soft-robotic or sensors/actuators..
 
@@ -127,7 +130,7 @@ Coordination  : (Lauréat) Benjamin Abécassis (LCH)
 
 .. _ercimpact:
 
-**ERC IMPACT The Giant Impact and the Earth and Moon Formation Consolidator Grant (2016-2021)**
+:underline-bold:`ERC IMPACT The Giant Impact and the Earth and Moon Formation Consolidator Grant (2016-2021)`
 
 * `The Giant Impact and the Earth and Moon Formation <https://moonimpact.eu/home/>`_ 
 
@@ -138,7 +141,7 @@ Coordination  : (Lauréat) Razvan Caracas
 
 .. _mesoprobio:
 
-**ERC MESOPROBIO (2015-2020)**
+:underline-bold:`ERC MESOPROBIO (2015-2020)`
 
 * `Mesoscopic models for propagation in biology <http://www.dr7.cnrs.fr/IMG/pdf/erc_starting_vincent-calvez.pdf>`_, représente non seulement un défi mathématique, c’est aussi un réel apport pour mieux appréhender les mouvements collectifs. Des bactéries aux espaces invasives, il s'agit de décrire le vivant par des équations.
 
@@ -146,7 +149,7 @@ Coordination  : (Lauréat) Vincent Calvez
 
 .. _transition:
 
-**ERC TRANSITION (2013-2018)**
+:underline-bold:`ERC TRANSITION (2013-2018)`
 
 * "Large Deviations and Non Equilibrium Phase Transitions for Turbulent Flows, Climate and the Solar System", en français "Théorie des grandes déviations et prédiction d'événements rares et leur application à des écoulements turbulents, des changements abrupts de climat, et la dynamique du système solaire"
 
@@ -154,7 +157,7 @@ Coordination ENS de Lyon : (Lauréat) Freddy Bouchet
 
 .. _tofu:
 
-**ERC TOFU (2012-2018)**
+:underline-bold:`ERC TOFU (2012-2018)`
 
 * "Toward a new generation of multi-dimensional stellar evolution models : the TOol of the FUture", en français " Vers une nouvelle génération de modèles multi-dimensionnels d'évolution stellaire: l'outil d'avenir"
 
@@ -162,7 +165,7 @@ Coordination ENS de Lyon : Rolf Walder (Lauréate : Isabelle Baraffe)
 
 .. _multidisciplinary:
 
-**Multidisciplinary ERC (2012-2016)**
+:underline-bold:`Multidisciplinary ERC (2012-2016)`
 
 * "Structure and dynamics of biomolecules by two-dimensional ultraviolet spectroscopy". Multidisciplinary.
 
@@ -177,7 +180,7 @@ IUF Elise Dumont (2019-2024)
 Chaire industrielle IDEXLYON ENSL IFPEN
 ---------------------------------------
 
-**Chaire industrielle Road4cat (2018-2022)**
+:underline-bold:`Chaire industrielle Road4cat (2018-2022)`
 
 Laureat Pascal Raybaud:
 
@@ -187,21 +190,21 @@ Laureat Pascal Raybaud:
 IDEX Lyon FELLOWSHIPS
 ---------------------
 
-**Molecular Thermodynamics of Ionic Liquids (2018-2021)**
+:underline-bold:`Molecular Thermodynamics of Ionic Liquids (2018-2021)`
 
 Lauréate ENS de Lyon Margarida Costa Gomes: (`description <http://www.ens-lyon.fr/actualite/recherche/appel-projets-idexlyon-fellowships-resultats-de-ledition-2018?ctx=contexte>`_)
 
 IDEX Lyon ELAN ERC
 ------------------
 
-**(2018-2020)**
+:underline-bold:`(2018-2020)`
 
 Lauréate ENS de Lyon Elise Dumont: `description <#>`_
 
 Contrats Européens
 ------------------
 
-**Puma Mind (2012-2015)**
+:underline-bold:`Puma Mind (2012-2015)`
 
 .. image:: ../_static/img_projets/pumamind.jpg
     :class: img-fluid img-float pe-3
@@ -213,33 +216,33 @@ Coordination ENS de Lyon : (Lauréat David Loffreda)
 Collaborations Industrielles
 ----------------------------
 
-**Collaboration ENS-IFP EN (2021-2025)**
+:underline-bold:`Collaboration ENS-IFP EN (2021-2025)`
 
 Coordination ENS de Lyon : Stephan Steimann
 
-**Collaboration ENS-IFP EN (2019-2023)**
+:underline-bold:`Collaboration ENS-IFP EN (2019-2023)`
 
 Coordination ENS de Lyon : Carine Michel
 
-**Collaboration ENS-Solvay-Rhodia (2018-2022)**
+:underline-bold:`Collaboration ENS-Solvay-Rhodia (2018-2022)`
 
 Coordination ENS de Lyon : Carine Michel
 
 .. _ens-total:
 
-**Collaboration ENS-Total**
+:underline-bold:`Collaboration ENS-Total`
 
 .. image:: ../_static/img_projets/total.jpg
     :class: img-fluid img-float pe-2
     :alt: Logo Total
 
-**Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
-Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
+`Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
+Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal` |br|
 Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
 .. _ens-solvay:
 
-**Collaboration ENS-Solvay**
+:underline-bold:`Collaboration ENS-Solvay`
 
 .. container:: d-flex
 
@@ -253,7 +256,7 @@ Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
         Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
-**FUI LaBS (2009-2013)**
+:underline-bold:`FUI LaBS (2009-2013)`
 
 .. container:: d-flex 
 
@@ -270,77 +273,77 @@ Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 Projets ANR
 -----------
     
-**ANR VPflows (2021-2024)**
+:underline-bold:`ANR VPflows (2021-2024)`
 
 * Partenaire ENS de Lyon Laboratoire de Mathématiques (UMPA): `description <#>`_
 
-**ANR FRAMA (2021-2024)**
+:underline-bold:`ANR FRAMA (2021-2024)`
 
 Partenaire ENS de Lyon Laboratoire de Physique (PHYS): `description <#>`_
 
-**ANR INGENCAT (2021-2024)**
+:underline-bold:`ANR INGENCAT (2021-2024)`
 
 Partenaire ENS de Lyon Laboratoire de Chimie (LCH): `description <#>`_
 
-**ANR NucleoMAP (2020-2025)**
+:underline-bold:`ANR NucleoMAP (2020-2025)`
 
 Partenaire ENS de Lyon Laboratoire de Chimie (LCH): `description <#>`_
 
-**ANR DYCAT (2019-2023)**
+:underline-bold:`ANR DYCAT (2019-2023)`
 
 Partenaire ENS de Lyon Laboratoire de Chimie (LCH): `description <#>`_
 
-**ANR CryoGrad (2018-2022)**
+:underline-bold:`ANR CryoGrad (2018-2022)`
 
 Partenaire ENS de Lyon Julien Salort: `description <https://anr.fr/Projet-ANR-18-CE30-0007>`_
 
-**ANR LIQUID2 (2018-2023)**
+:underline-bold:`ANR LIQUID2 (2018-2023)`
 
 Partenaire ENS de Lyon Agilio Padua: `description <https://anr.fr/Projet-ANR-18-CE09-0018>`_
 
-**ANR Photochromics (2018-2023)**
+:underline-bold:`ANR Photochromics (2018-2023)`
 
 Partenaire ENS de Lyon Carine Michel: `description <https://anr.fr/Project-ANR-18-CE29-0012>`_
 
-**ANR TeneMod (2017-2022)**
+:underline-bold:`ANR TeneMod (2017-2022)`
 
 Partenaire ENS de Lyon Tangui Le Bahers: `description <https://anr.fr/Project-ANR-17-CE29-0007>`_
 
-**ANR TANOPOL (2015-2019)**
+:underline-bold:`ANR TANOPOL (2015-2019)`
 
 Partenaire ENS de Lyon Carine Michel: `description <https://anr.fr/Project-ANR-15-CE07-0011>`_
 
 .. _anr-azap:
 
-**ANR AZAP (2014-2019)**
+:underline-bold:`ANR AZAP (2014-2019)`
 
 Partenaire ENS de Lyon Paul Fleurat-Lessard: `description <http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-14-CE06-0018>`_
 
 .. _anr-mascat:
 
-**ANR MASCAT (2014-2018)**
+:underline-bold:`ANR MASCAT (2014-2018)`
 
 Coordination ENS de Lyon : Carine Michel
 
 .. _anr-music:
 
-**ANR MuSiC (2014-2018)**
+:underline-bold:`ANR MuSiC (2014-2018)`
 
 Coordination ENS de Lyon : Philippe Sautet: `description <http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-14-CE06-0030>`_
 
 .. _anr-shapes:
 
-**ANR SHAPes (2013-2017)**
+:underline-bold:`ANR SHAPes (2013-2017)`
 
 Coordination ENS de Lyon : Philippe Sautet, Carine Michel, Paul Fleurat-Lessard `description <http://www.agence-nationale-recherche.fr/?Projet=ANR-13-CDII-0004>`_
 
 .. _anr-ln23:
 
-**ANR Ln23 (2014-2017)**
+:underline-bold:`ANR Ln23 (2014-2017)`
 
 Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-13-BS07-0007>`_
 
-**ANR FSCF (2012-2015)**
+:underline-bold:`ANR FSCF (2012-2015)`
 
 .. container:: d-flex mb-3
 
@@ -354,7 +357,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 
         Coordination ENS de Lyon : Ralf Everaers 
 
-**ANR RIDEPORPH (2012-2015)**
+:underline-bold:`ANR RIDEPORPH (2012-2015)`
 
 .. container:: d-flex mb-3
 
@@ -367,7 +370,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
         
         Coordination : Marie-Laure Bocquet 
 
-**ANR Galac (2011-2015)**
+:underline-bold:`ANR Galac (2011-2015)`
 
 .. container:: d-flex mb-3
 
@@ -379,7 +382,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
         :ref:`Synthèse d'acide acrylique à partir du glycérol via l'acide lactique <anrgalac>` |br|
         Coordination ENS de Lyon : Philippe Sautet & Carine Michel 
 
-**ANR CADENCED (2009-2014)**
+:underline-bold:`ANR CADENCED (2009-2014)`
 
 .. container:: d-flex mb-3
 
@@ -392,7 +395,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
         :ref:`Computer Assisted Discovery and Elucidation of Novel Catalysts for Economic Development of Saudi Arabia <cadenced>` |br|
         Coordination ENS de Lyon : Philippe Sautet 
 
-**ANR LORIS (2010-2013)**
+:underline-bold:`ANR LORIS (2010-2013)`
 
 .. container:: d-flex mb-3
 
@@ -404,7 +407,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
         :ref:`Numerical Computation of Large Deviations and out-of-equilibrium Statistical Mechanics of Turbulent Flows <anrloris>` |br|
         Coordination ENS de Lyon : Stefano Ruffo
 
-**ANR ChimiGraphN (2010-2013)**
+:underline-bold:`ANR ChimiGraphN (2010-2013)`
 
 .. container:: d-flex mb-3
 
@@ -416,7 +419,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
         :ref:`Chemisorption, reactivity and defects on graphene <anrchimigraphN>` |br|
         Coordination ENS de Lyon : Marie-Laure Bocquet
 
-**ANR Dyquma (2010-2013)**
+:underline-bold:`ANR Dyquma (2010-2013)`
 
 .. container:: d-flex mb-3
 
@@ -428,7 +431,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
         :ref:`Études théoriques de la dynamique quantique de molécules absorbées <anrdyquma>` |br|
         Coordination ENS de Lyon : Philippe Sautet, Wei Dong & David Loffreda
 
-**ANR STATOCEAN (2009-2012)**
+:underline-bold:`ANR STATOCEAN (2009-2012)`
 
 .. container:: d-flex mb-3
 
@@ -440,7 +443,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
         :ref:`Out of equilibrium statistical mechanics of geophysical flows and applications to the Kuroshio current (east of Japan) and to the Zapiola anticyclone (east of Argentina) <anrstatocean>`  |br|
         Coordination ENS de Lyon : Freddy Bouchet
 
-**ANR Muse (2008-2012)**
+:underline-bold:`ANR Muse (2008-2012)`
 
 .. container:: d-flex  mb-3
 
@@ -455,28 +458,28 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 Labex
 -----
 
-**Labex Z-project iMust (2022-2023)** 
+:underline-bold:`Labex Z-project iMust (2022-2023)` 
 
 Scientific coordination : S. Steimann :  
 
-**Labex iMust (2021-2022)**  
+:underline-bold:`Labex iMust (2021-2022)`  
 
 Scientific coordination : S. Steimann :  
 
-**Labex LIO (2020-2021)**  
+:underline-bold:`Labex LIO (2020-2021)`  
 
-**Upgrade of the Common Computing Facility (CCF) Cluster, phase 2 (Q1 2021)**
+:underline-bold:`Upgrade of the Common Computing Facility (CCF) Cluster, phase 2 (Q1 2021)`
 Scientific coordination : J. Blaizot & E. Debayle :  \\
 Technical coordination : F. Dubuffet & L. Michel-Dansac
 
-**Upgrade of the Common Computing Facility (CCF) Cluster, phase 1 (Q1 2020)**
+:underline-bold:`Upgrade of the Common Computing Facility (CCF) Cluster, phase 1 (Q1 2020)`
 Scientific coordination : J. Blaizot & E. Debayle :  \\
 Technical coordination : F. Dubuffet & L. Michel-Dansac
 
 Autres projets
 --------------
 
-**Dissipation des courants océaniques par radiation d'ondes internes (2016-2018)** 
+:underline-bold:`Dissipation des courants océaniques par radiation d'ondes internes (2016-2018)` 
 
 .. container:: d-flex mb-3
 
@@ -488,7 +491,7 @@ Autres projets
         :ref:`Dissipation des courants océaniques par radiation d'ondes internes <dcoroi>` |br|
         Coordination : Antoine Venaille 
 
-**Convection dans le manteau et océans de magma (2015-2018)**
+:underline-bold:`Convection dans le manteau et océans de magma (2015-2018)`
 
 .. container:: d-flex mb-3
 
@@ -500,7 +503,7 @@ Autres projets
         :ref:`Convection dans le manteau et océans de magma <cmom>` |br|
         Coordination ENS de Lyon: Stephane Labrosse 
 
-**Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)** 
+:underline-bold:`Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)` 
 
 .. container:: d-flex mb-3
 
@@ -513,7 +516,7 @@ Autres projets
         :ref:`Equation barotrope stochastique 2D <etbg>` |br|
         Coordination ENS de Lyon : Freddy Bouchet 
 
-**SIB_CP (2013-2016)**
+:underline-bold:`SIB_CP (2013-2016)`
 
 .. container:: d-flex mb-3
 
@@ -525,7 +528,7 @@ Autres projets
         :ref:`Développement d’une bibliothèque parallèle dans le domaine de la biologie cellulaire et du traitement d’images <sibcp>` |br|
         Coordination ENS de Lyon : Cerasela Calugaru et Annamaria Kiss 
 
-**SIMBIO (2013-2018)**
+:underline-bold:`SIMBIO (2013-2018)`
 
 .. container:: d-flex mb-3
 
@@ -537,7 +540,7 @@ Autres projets
         :ref:`Structure and interactions of molecules with biological activity <simbio>` |br|
         Coordination ENS de Lyon : Martin Spichty
 
-**WURM**
+:underline-bold:`WURM`
 
 .. container:: d-flex mb-3
 
@@ -551,7 +554,7 @@ Autres projets
 
 .. _phoenix:    
 
-**PHOENIX Simulator**
+:underline-bold:`PHOENIX Simulator`
 
 .. container:: d-flex mb-3
 
@@ -568,16 +571,16 @@ Projets Master
 
 .. _masterbio:
 
-**Master BioSciences ENS de Lyon (2014-2015)**
+:underline-bold:`Master BioSciences ENS de Lyon (2014-2015)`
 
-**Image processing : Anisotropic lter & Level-Set Method for segmentation on 3D biological images**
+:underline-bold:`Image processing : Anisotropic lter & Level-Set Method for segmentation on 3D biological images`
 (:ref:`Level Set Method <lsm>` & :ref:`Anisotropic Blur <ipab>`)
 Coordination ENS de Lyon : Annamaria Kiss et Cerasela Calugaru
 
 Collaborations Start-Up
 -----------------------
 
-**CARPACCIO (2012-2015)**
+:underline-bold:`CARPACCIO (2012-2015)`
 
 .. container:: d-flex mb-3
 
@@ -602,7 +605,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 2021
 ----
 
-**Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu'au sein des lunes de glace**
+:underline-bold:`Simulations hautes performances des écoulements océaniques et des interactions eau-glace sur Terre ainsi qu'au sein des lunes de glace`
 
 .. image:: ../_static/img_projets/cbp_ens.jpeg
     :class: img-float pe-2
@@ -612,7 +615,7 @@ Le CBP soutient ou a soutenu les projets scientifiques suivants :
 Chercheurs : Louis-Alexandre Couston, Clément de la Salle  (ENS de Lyon) |br|
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
-**Hydrologic signals of floating wood in rivers. Case study: Monitoring floating large woods in the Ain River, France**
+:underline-bold:`Hydrologic signals of floating wood in rivers. Case study: Monitoring floating large woods in the Ain River, France`
 
 .. image:: ../_static/img_projets/cbp_ens_400.png
     :class: img-float pe-2
@@ -622,7 +625,7 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représent
 Chercheurs : Hossein Ghaffarian (Post-doc, EVS), Samuel Dunesme (PhD, EVS), Herve Piégay (DR, EVS) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Circumstellar environments reconstruction with deep learning**
+:underline-bold:`Circumstellar environments reconstruction with deep learning`
 
 .. image:: ../_static/img_projets/rhapsodie.png
     :class: img-float pe-2
@@ -633,7 +636,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheuses : Assia Chahid (stagiaire, LabPhys, ENS-Lyon), Nelly Pustelnik (DR, LabPhys, ENS-Lyon) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Resolving Morbilliviruses phylogeny**
+:underline-bold:`Resolving Morbilliviruses phylogeny`
 
 .. image:: ../_static/img_projets/virus-4937553_1280.jpg
     :class: img-float pe-2
@@ -644,7 +647,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheurs : Augustin Clessin (M1, ENS-Lyon), François Roudier (ENS-Lyon), ? (Université de Copenhague) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Ab initio molecular dynamics and metadynamics simulations**
+:underline-bold:`Ab initio molecular dynamics and metadynamics simulations`
 
 .. image:: ../_static/img_projets/cbp_ens.jpeg
     :class: img-float pe-2
@@ -654,7 +657,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheurs : Pierre-Adrien Payard, Lionel Perrin, Ludmilla Verrieux, Jordan Rio (ICBMS) |br|
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
-**Etude des phénomènes de vaporisation de mélange d’oxydes**
+:underline-bold:`Etude des phénomènes de vaporisation de mélange d’oxydes`
 
 .. image:: ../_static/img_projets/lammps4geol2021.jpg
     :class: img-float pe-2
@@ -664,7 +667,7 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représent
 Chercheurs : Marwane Mokhtari (M2 au LGL, ENS-Lyon), Bernard Bourdon (LGL, ENS-Lyon) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Moteur de Recherche en Langue des Signes par Sentence Embeddings**
+:underline-bold:`Moteur de Recherche en Langue des Signes par Sentence Embeddings`
 
 .. image:: ../_static/img_projets/sentenceembeddings2021.png
     :class: img-float pe-2
@@ -674,7 +677,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheuses : Coline Petit-Jean, Michèle Gouiffès (LISN, Université Paris-Saclay) et Hannah Bull (LISN, Université Paris-Saclay), |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**SMOLU ou la coagulation de petits solides en agrégats**
+:underline-bold:`SMOLU ou la coagulation de petits solides en agrégats`
 
 .. image:: ../_static/img_projets/smolu2021.png
     :class: img-float pe-2
@@ -685,7 +688,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheurs : Guillaume Laibe (CRAL, ENS-Lyon), Maxime Lombart (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon), Timothee Davis-Clery (CRAL- ENS-Lyon) |br|
 Expertise IT, portage GPU : Emmanuel Quemener (CBP)
 
-**Approche computationnelle du changement linguistique sur Twitter**
+:underline-bold:`Approche computationnelle du changement linguistique sur Twitter`
 
 .. container:: d-flex  mb-3
 
@@ -701,7 +704,7 @@ Expertise IT, portage GPU : Emmanuel Quemener (CBP)
 2020
 ----
 
-**Approche des Données par Annotations (Lyon)**
+:underline-bold:`Approche des Données par Annotations (Lyon)`
 
 .. image:: ../_static/img_projets/iao2.jpeg
     :class: img-float pe-2
@@ -712,7 +715,7 @@ Expertise IT, portage GPU : Emmanuel Quemener (CBP)
 Chercheurs : Bruno Morandière (IAO, ENS-Lyon), Peter Cornwell (Data-Futures) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Wave Resonance and Multistability in Atmospheric Jet Dynamics (2019-2022)**
+:underline-bold:`Wave Resonance and Multistability in Atmospheric Jet Dynamics (2019-2022)`
 
 .. image:: ../_static/img_projets/cbp_ens.jpeg
     :class: img-float pe-2
@@ -723,7 +726,7 @@ Coordination : Corentin Herbert (ENS-Lyon, Laboratoire de Physique) |br|
 Partners : un doctorant et plusieurs étudiants en master au Laboratoire de Physique (à recruter) |br|
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
-**Aide au diagnostic pulmonaire chez le carnivore domestique**
+:underline-bold:`Aide au diagnostic pulmonaire chez le carnivore domestique`
 
 .. image:: ../_static/img_projets/adpccd2020.png
     :class: img-float pe-2
@@ -734,7 +737,7 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représent
 Chercheurs : Thomas Grenier (INSA-Lyon), Carolie Boulocher (VetagroSup), Léo Dumortier (VetagroSup) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**To be a planet, or not to be, that is the question**
+:underline-bold:`To be a planet, or not to be, that is the question`
 
 .. container:: d-flex  mb-3
 
@@ -747,7 +750,7 @@ Expertise IT : Emmanuel Quemener (CBP)
         Chercheurs : Guillaume Laibe (CRAL, ENS-Lyon), Guillaume Brochier (CRAL) |br|
         Expertise IT : Emmanuel Quemener (CBP)
 
-**SimEmiFlu3D**
+:underline-bold:`SimEmiFlu3D`
 
 .. container:: d-flex  mb-3
 
@@ -760,7 +763,7 @@ Expertise IT : Emmanuel Quemener (CBP)
         Chercheurs : Eric Freyssingeas (Laboratoire de physique, ENS-Lyon), Etienne Pinard (M1) |br|
         Expertise IT : Emmanuel Quemener (CBP)
 
-**FSL4GE**
+:underline-bold:`FSL4GE`
 
 .. container:: d-flex  mb-3
 
@@ -773,7 +776,7 @@ Expertise IT : Emmanuel Quemener (CBP)
         Chercheurs : Thomas GRENIER (INSA Lyon), Soufian Targaoui, Yacine Youcef |br|
         Expertise IT : Emmanuel Quemener (CBP)
 
-**DYN4DRUGS**
+:underline-bold:`DYN4DRUGS`
 
 .. image:: ../_static/img_projets/dyn4drugs2020.png
     :class: img-float pe-2
@@ -783,7 +786,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheurs : Elisa Rioual (M2 Student), Claire Loison (ILM UMR5306/UCBL), Jérôme Boisbouvier (IBS UMR5075/CEA/UJF) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**FAuST**
+:underline-bold:`FAuST`
 
 .. image:: ../_static/img_projets/faust.png
     :class: img-float pe-2
@@ -795,7 +798,7 @@ Chercheurs : Hakim Hadj-Djilani (IXXI)
 
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Academics**
+:underline-bold:`Academics`
 
 .. image:: ../_static/img_projets/cbp_ens.jpeg
     :class: img-float pe-2
@@ -808,7 +811,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 2019
 ----
 
-**Réseaux neuronaux convolutifs pour la segmentation de texture.**
+:underline-bold:`Réseaux neuronaux convolutifs pour la segmentation de texture.`
 
 .. image:: ../_static/img_projets/pustelnik_2019.png
     :class: img-float pe-2
@@ -820,7 +823,7 @@ Chercheurs : Barbara Pascal, Nelly Pustelnik, Patrice Abry (Laboratoire de Physi
 
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Etude numérique de l'influence des particules puits sur la formation des disques protostellaires.**
+:underline-bold:`Etude numérique de l'influence des particules puits sur la formation des disques protostellaires.`
 
 .. image:: ../_static/img_projets/commercon_2019.png
     :class: img-float pe-2
@@ -830,7 +833,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheurs :  Benoit Gay (CRAL, ENS-Lyon), Benoit Commerçon (CRAL, ENS-Lyon) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Modélisation de l'organisation des chromosomes lors de la spermatogénèse du grillon**
+:underline-bold:`Modélisation de l'organisation des chromosomes lors de la spermatogénèse du grillon`
 
 .. image:: ../_static/img_projets/jost2019.png
     :class: img-float pe-2
@@ -840,7 +843,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheurs : Daniel Jost (LBMC, ENS-Lyon), Maxime Tortora (LBMC, ENS-Lyon) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Evolution spectrale d’une supernova 1A à double détonation**
+:underline-bold:`Evolution spectrale d’une supernova 1A à double détonation`
 
 .. image:: ../_static/img_projets/allegre2019.png
     :class: img-float pe-2
@@ -850,7 +853,7 @@ Expertise IT : Emmanuel Quemener (CBP)
 Chercheurs : Stéphane Blondin (LAM), Jules Allègre (ENS-Lyon, stagiaire) |br|
 Expertise IT : Emmanuel Quemener (CBP)
 
-**Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales**
+:underline-bold:`Apprentissage statistique profond (deep learning) pour l’analyse de processus multifractales`
 
 .. image:: ../_static/img_projets/roux2019.jpg
     :class: img-float pe-2
@@ -862,7 +865,7 @@ Chercheurs : Stéphane Gaëtan Roux (ENS-Lyon, Physique)
 
 Expertise GPU & IT : Emmanuel Quemener (CBP)
 
-**Modélisation de l’atmosphère des étoiles et des planètes (2019-2022)**
+:underline-bold:`Modélisation de l’atmosphère des étoiles et des planètes (2019-2022)`
 
 .. container:: d-flex  mb-3
 
@@ -875,7 +878,7 @@ Expertise GPU & IT : Emmanuel Quemener (CBP)
         Coordination : France Allard  (ENS-Lyon, CRAL) |br|
         Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
-**Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes**
+:underline-bold:`Projet Vectorisation automatique de corridors fluviaux sur des cartes anciennes`
 
 .. image:: ../_static/img_projets/vacfca.png
     :class: img-float pe-2
@@ -889,7 +892,7 @@ Partners : Samuel Dumesne (ENS-Lyon)
 
 Expertise GPU & IT : Emmanuel Quemener (CBP)
 
-**Portage du code CESM sur le calculateur du CINES (OCCIGEN) (2019)**
+:underline-bold:`Portage du code CESM sur le calculateur du CINES (OCCIGEN) (2019)`
 
 .. image:: ../_static/img_projets/cesm.png
     :class: img-float pe-2
@@ -904,7 +907,7 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représent
 2018
 ----
 
-**Projet Wave Topology in Fluids - ANR 2018-2021**
+:underline-bold:`Projet Wave Topology in Fluids - ANR 2018-2021`
 
 .. image:: ../_static/img_projets/diapositive1.png
     :class: img-float pe-2
@@ -919,7 +922,7 @@ Partenaires ENS de Lyon : Denis Bartolo, Pierre Delplace, David Carpentier (Labo
 
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (représentant CBP/PSMN)
 
-**Projet LIAISON**
+:underline-bold:`Projet LIAISON`
 
 .. image:: ../_static/img_projets/liaison.png
     :class: img-float pe-2
@@ -932,7 +935,7 @@ Coordination : Márton Karsai (IXXI, LIP, ENSL)
 Partners : Sébastien Lerique, Jacobo Levy-Abitbol |br|
 Expertise GPU & IT : Emmanuel Quemener (CBP)
 
-**Projet IMPACT (L'impact géant et la formation de la Terre et de la Lune) -ERC 2016-2021**
+:underline-bold:`Projet IMPACT (L'impact géant et la formation de la Terre et de la Lune) -ERC 2016-2021`
 
 .. image:: ../_static/img_projets/wurm1.jpg
     :class: img-float pe-2
@@ -947,18 +950,18 @@ Parteners : Natalia Solomatova, Ema Bobocioiu, Anais Kobsch, Zhi Li, Helene Plih
 
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
-**Simulation numérique des ondes topologiques dans les eaux peu profondes**
+:underline-bold:`Simulation numérique des ondes topologiques dans les eaux peu profondes`
 
 .. image:: ../_static/img_projets/illustration_internalwaves.png
     :class: img-float pe-2
     :alt: Image illustration_internalwaves
 
-`Simulation numérique des ondes topologiques dans les eaux peu profondes <#>`_ **(2018-2020)** |br|
+`Simulation numérique des ondes topologiques dans les eaux peu profondes <#>`_ :underline-bold:`(2018-2020)` |br|
 Coordination : Antoine Venaille (Laboratoire de Physique, ENSL) |br|
 Parteners : Denis Bartolo, Pierre Delplace, David Carpentier, Antoine Renaud (Laboratoire de Physique, ENSL) |br|
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru (CBP)
 
-**Optimisation non lisse des matrices de transfert pour la géographie électorale**
+:underline-bold:`Optimisation non lisse des matrices de transfert pour la géographie électorale`
 
 .. image:: ../_static/img_projets/kszxo8.png
     :class: img-float pe-2
@@ -971,7 +974,7 @@ Auteurs : Pablo Jensen, Nelly Pustelnik, Marion Foare, Yacouba Kalouga (équipe 
 
 Expertise GPU & IT : Emmanuel Quemener (CBP) |br|
 
-**Waves in the radiative zones of rotating magnetized stars**
+:underline-bold:`Waves in the radiative zones of rotating magnetized stars`
 
 .. image:: ../_static/img_projets/wavesstars.png
     :class: img-float pe-2
@@ -981,7 +984,7 @@ Expertise GPU & IT : Emmanuel Quemener (CBP) |br|
 Auteurs : A.Valade, V.Prat, S.Mathis, K.Augustson (ENS de Lyon et Master AMS UPSaclay,Service AstroPhysique (Sap), IRFU, CEA Saclay) |br|
 Expertise GPU & IT : Emmanuel Quemener (CBP)
 
-**Analyse de données biomédicales par réseaux de neurones sur GPU**
+:underline-bold:`Analyse de données biomédicales par réseaux de neurones sur GPU`
 
 .. container:: d-flex mb-3
 
@@ -997,7 +1000,7 @@ Expertise GPU & IT : Emmanuel Quemener (CBP)
 2016
 ----
 
-**AHN : Atelier des Humanités Numériques**
+:underline-bold:`AHN : Atelier des Humanités Numériques`
 
 .. image:: ../_static/img_projets/ahn_logo.png
     :class: img-float pe-2
@@ -1009,7 +1012,7 @@ Coordination : Nathalie Arlin
 
 Responsable : Pierre-Yves Jallud |br|
 
-**Deciphering the developmental modules using closely related non model species**
+:underline-bold:`Deciphering the developmental modules using closely related non model species`
 
 .. image:: ../_static/img_projets/illustration_microbat.png
     :class: img-float pe-2
@@ -1021,20 +1024,20 @@ Functional Manager: Alexa Sadier
 
 IT Manager : Emmanuel Quemener
 
-**Dissipation des courants océaniques par radiation d'ondes internes (2016-2018)**
+:underline-bold:`Dissipation des courants océaniques par radiation d'ondes internes (2016-2018)`
 
 .. image:: ../_static/img_projets/illustration_internalwaves.png
     :class: img-float pe-2
     :alt: Image illustration_internalwaves
 
-:ref:`Dissipation des courants océaniques par radiation d'ondes internes <dcoroi>` **(2016-2018)** |br|
+:ref:`Dissipation des courants océaniques par radiation d'ondes internes <dcoroi>` :underline-bold:`(2016-2018)` |br|
 Coordination : Antoine Venaille |br|
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 2015
 ----
 
-**Caractérisation par LIDAR de la végétation des rives de la Drome (2015-2018)** 
+:underline-bold:`Caractérisation par LIDAR de la végétation des rives de la Drome (2015-2018)` 
 
 .. image:: ../_static/img_projets/evs.png
     :class: img-float pe-2
@@ -1047,7 +1050,7 @@ Responsables fonctionnels : Hervé Piégay, Kristell Michel (EVS, UMR 5600)
 
 Expert infrastructure informatique scientifique : Emmanuel Quemener
 
-**Convection dans le manteau et océans de magma (2015-2018/ 2020-2021)** 
+:underline-bold:`Convection dans le manteau et océans de magma (2015-2018/ 2020-2021)` 
 
 .. image:: ../_static/img_projets/test_t00250.png
     :class: img-float pe-2
@@ -1062,7 +1065,7 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 2014
 ----
 
-**Thèse École doctorale de Chimie (2014-2017)**
+:underline-bold:`Thèse École doctorale de Chimie (2014-2017)`
 
 .. image:: ../_static/img_projets/molecular_dynamics.png
     :class: img-float pe-2
@@ -1074,7 +1077,7 @@ Coordination : Marco Garavelli
 
 Thésard : Baptiste Demoulin
 
-**Thèse École doctorale de Chimie (2014-2017)**
+:underline-bold:`Thèse École doctorale de Chimie (2014-2017)`
 
 .. image:: ../_static/img_projets/fluides.png
     :class: img-float pe-2
@@ -1086,7 +1089,7 @@ Coordination : Wei Dong, Vincent Krakoviack
 
 Thésard : Thomas Konincks
 
-**Post-doc Solvay (2013-2015)**
+:underline-bold:`Post-doc Solvay (2013-2015)`
 
 .. image:: ../_static/img_projets/co2.png
     :class: img-float pe-2
@@ -1098,19 +1101,19 @@ Coordination : Carine Michel
 
 Post-doc : Stephan Steinmann
 
-**Thèse CNRS-Solvay (2013-2016)**
+:underline-bold:`Thèse CNRS-Solvay (2013-2016)`
 
 :ref:`Nouveaux procédés d’amination sélective pour la synthèse de monomères biosourcés <npassmb>` |br|
 Coordination : Carine Michel |br|
 Thésard : Alexandre Dumon
 
-**Master (2014/2016)**
+:underline-bold:`Master (2014/2016)`
 
-**Image processing : Anisotropic lter & Level-Set Method for segmentation on 3D biological images** (:ref:`Level Set Method <lsm>` & :ref:`Anisotropic Blur <ipab>`) |br|
+:underline-bold:`Image processing : Anisotropic lter & Level-Set Method for segmentation on 3D biological images` (:ref:`Level Set Method <lsm>` & :ref:`Anisotropic Blur <ipab>`) |br|
 Coordination : Annamaria Kiss et Cerasela Calugaru |br|
 Etudiant : Typhaine Moreau
 
-**Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)**
+:underline-bold:`Ecoulements turbulents bidimensionnels et géophysiques (2014-2016)`
 
 .. image:: ../_static/img_projets/zonal_velocity.png
     :class: img-float pe-2
@@ -1122,7 +1125,7 @@ Coordination : Freddy Bouchet
 
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
-**Epifly (2014-2015)**
+:underline-bold:`Epifly (2014-2015)`
 
 .. image:: ../_static/img_projets/epiflyfig-1.jpg
     :class: img-float pe-2
@@ -1132,7 +1135,7 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 Coordination : Cédric Vaillant, Emmanuel Quemener 
 
-**Structure et Dynamique de membranes lipidiques à l'échelle moléculaire  (2014)**
+:underline-bold:`Structure et Dynamique de membranes lipidiques à l'échelle moléculaire  (2014)`
 
 .. container:: d-flex  mb-3
 
@@ -1147,7 +1150,7 @@ Coordination : Cédric Vaillant, Emmanuel Quemener
 2013
 ----
 
-**SIB_CP (2013-2016)**
+:underline-bold:`SIB_CP (2013-2016)`
 
 .. container:: d-flex  mb-3
 
@@ -1159,7 +1162,7 @@ Coordination : Cédric Vaillant, Emmanuel Quemener
         :ref:`Développement d’une bibliothèque parallèle dans le domaine de la biologie cellulaire et du traitement d’images <sibcp2>` |br|
         Coordination : Cerasela Calugaru et Annamaria Kiss 
 
-**Fishin'TE (2013-2014)**
+:underline-bold:`Fishin'TE (2013-2014)`
 
 .. image:: ../_static/img_projets/fishinte.jpg
     :class: img-float pe-2
@@ -1169,7 +1172,7 @@ Coordination : Cédric Vaillant, Emmanuel Quemener
 
 Coordination : Domitile Chalopin, Magali Naville, Emmanuel Quemener 
 
-**SIMBIO (2013-2018)**
+:underline-bold:`SIMBIO (2013-2018)`
 
 .. container:: d-flex  mb-3
 
@@ -1184,7 +1187,7 @@ Coordination : Domitile Chalopin, Magali Naville, Emmanuel Quemener
 2012
 ----
 
-**Humanités numériques (2012-20xx)**
+:underline-bold:`Humanités numériques (2012-20xx)`
 
 .. container:: d-flex  mb-3
 
@@ -1196,7 +1199,7 @@ Coordination : Domitile Chalopin, Magali Naville, Emmanuel Quemener
         :ref:`Atelier des Humanités numériques de l'ENS de Lyon <ahn>` |br|
         Coordination : Jean-Philippe Magué 
 
-**ANR FSCF (2012-2015)**
+:underline-bold:`ANR FSCF (2012-2015)`
 
 .. image:: ../_static/img_projets/proteins.png
     :class: img-float pe-2
@@ -1207,7 +1210,7 @@ Coordination : Ralf Everaers |br|
 Post-doc : Sam Meyer |br|
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
-**CARPACCIO (2012-20xx)**
+:underline-bold:`CARPACCIO (2012-20xx)`
 
 .. image:: ../_static/img_projets/carpacciologo.png
     :class: img-float pe-2
@@ -1217,7 +1220,7 @@ Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
 Coordination : Brian B. Rudkin
 
-**WURM project (2012-20xx)**
+:underline-bold:`WURM project (2012-20xx)`
 
 .. image:: ../_static/img_projets/wurm1.jpg
     :class: img-float pe-2
@@ -1230,7 +1233,7 @@ Coordination : Razvan Caracas
 
 Expert analyse numérique et calcul scientifique : Cerasela Calugaru
 
-**ANR Rideporph (2012-2015)**
+:underline-bold:`ANR Rideporph (2012-2015)`
 
 .. image:: ../_static/img_projets/porphyrin.png
     :class: img-float pe-2
@@ -1242,7 +1245,7 @@ Coordination : Marie-Laure Bocquet
 
 Post-doc : Marie Lattelais
 
-**Puma Mind (2012-2015)**
+:underline-bold:`Puma Mind (2012-2015)`
 
 .. image:: ../_static/img_projets/pumamind.jpg
     :class: img-float pe-2
@@ -1251,7 +1254,7 @@ Post-doc : Marie Lattelais
 :ref:`International R&D project that aims to advance the state of knowledge in designing new tools for Proton Exchange Membrane Fuel Cells (PEMFCs) <pumamind2>` |br|
 Coordination ENS : David Loffreda |br|
 
-**Bourse Eiffel (2012-2015)**
+:underline-bold:`Bourse Eiffel (2012-2015)`
 
 .. image:: ../_static/img_projets/campusfrance.jpg
     :class: img-float pe-2
@@ -1259,14 +1262,14 @@ Coordination ENS : David Loffreda |br|
 
 Ce programme de prestige récompense les étudiants étrangers présentés par l'établissement français dans lequel ils poursuivront leurs études, et retenus par un jury d'évaluateurs.
 
-**Étude de fluides complexes d'intérêt biologique et de fluides confinés dans des matériaux nano-poreux** |br|
+:underline-bold:`Étude de fluides complexes d'intérêt biologique et de fluides confinés dans des matériaux nano-poreux` |br|
 Lauréat : Falin Tian |br|
 Directeur de Thèse : Wei Dong
 
 2011
 ----
 
-**ANR Galac (2011-2015)**
+:underline-bold:`ANR Galac (2011-2015)`
 
 .. image:: ../_static/img_projets/acide_lactique.png
     :class: img-float pe-2
@@ -1277,14 +1280,14 @@ Directeur de Thèse : Wei Dong
 Coordination ENS : Philippe Sautet & Carine Michel |br|
 Doctorant : Jérémie Zaffran
 
-**Collaboration ENS - Total**
+:underline-bold:`Collaboration ENS - Total`
 
 .. image:: ../_static/img_projets/total.jpg
     :class: img-float pe-2
     :alt: Logo total
 
-**Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
-Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
+:underline-bold:`Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
+Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal` |br|
 Coordination ENS : Philippe Sautet
 
 **Collaboration ENS - Solvay**

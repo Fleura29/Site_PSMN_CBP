@@ -64,11 +64,31 @@
                                     <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
                                     <li><a class="dropdown-item" href="{{ pathto('Informations/Calendrier') }}">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
-                                    <li><a class="dropdown-item" href="#">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Informations/Adaptation') }}">Adaptation aux nouveaux besoins</a></li>
                                     <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Réalisations/Logiciels')}}">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Réalisations/Outils')}}">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Réalisations/Matériel')}}">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Réalisations/Réseaux')}}">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Réalisations/Plateaux')}}">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Classification/Etudes')}}">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Classification/Intégration')}}">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Plateformes/Classification/Qualification')}}">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>   
                             </div>
                         </li> 
@@ -80,25 +100,8 @@
                                     <li><a class="dropdown-item" href="{{ pathto('Plateformes/DataCenter')}}">Data Center</a></li>
                                     <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
                                     <li><a class="dropdown-item" href="{{ pathto('Plateformes/ClustersServeurs')}}">Les clusters et les serveurs</a></li>
-                                    <li><a class="dropdown-item" href="#">Outils / langages / Logiciels</a></li>
-                                    <li><a class="dropdown-item" href="#">Pourquoi une informatique pour la recherche ? (à enlever)</a></li>
                                     <li><a class="dropdown-item" href="{{ pathto('Plateformes/EquipInfo')}}">Equipements informatique</a></li>
                                     <li><a class="dropdown-item" href="{{ pathto('Plateformes/ProjetInfra')}}">Projets d'infrastructure</a></li>
-                                    <li class="nav-item dropend">
-                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux (à enlever)</a>
-                                        <div class="dropdown-menu">
-                                            <ul>
-                                                <li><a class="dropdown-item" href="#">CECAM-FR-RA</a></li> 
-                                                <li><a class="dropdown-item" href="#">FLMSN</a></li>
-                                                <li><a class="dropdown-item" href="#">IXXI</a></li>
-                                                <li><a class="dropdown-item" href="#">Pôle Bioinformatique Lyonnais</a></li>
-                                                <li><a class="dropdown-item" href="#">CIRA: Calcul intensif en Rhône-Alpes</a></li>
-                                                <li><a class="dropdown-item" href="#">GDR Calcul</a></li>
-                                                <li><a class="dropdown-item" href="#">LyonCalcul</a></li>
-                                                <li><a class="dropdown-item" href="#">Sierra</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
                                     <li class="nav-item dropend">
                                         <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
                                         <div class="dropdown-menu">
@@ -143,26 +146,39 @@
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
                             <div class="dropdown-menu">
                                 <ul>
-                                    <li><a class="dropdown-item" href="#">Atelier des Humanités Numériques (AHN)</a></li> 
-                                    <li><a class="dropdown-item" href="#">Atelier de Biologie Computationnelle (ABC)</a></li>
-                                    <li><a class="dropdown-item" href="#">Atelier de Chimie Théorique</a></li>
                                     <li><a class="dropdown-item" href="{{ pathto('Animation/EvenementsScient') }}">Évènements scientifiques</a></li>
-                                    <li><a class="dropdown-item" href="#">Services proposés aux organisateurs</a></li>
-                                    <li><a class="dropdown-item" href="#">Projets d'animation scientifique</a></li>
-                                    <li><a class="dropdown-item" href="#">Appel à projets</a></li>
-                                    <li><a class="dropdown-item" href="#">Médias</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Animation/Services') }}">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Animation/PAS') }}">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Animation/Appels') }}">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Animation/Media') }}">Médias</a></li>
                                     <li class="nav-item dropend">
                                         <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
                                         <div class="dropdown-menu">
                                             <ul>
-                                                
-                                                    <li><a class="dropdown-item" href="#">Humanités Numériques (AHN)</a></li> 
-                                                    <li><a class="dropdown-item" href="#">Pratiques Numériques en SHS (ED483)</a></li>
-                                                    <li><a class="dropdown-item" href="#">Guides et Tutoriels</a></li>
+                                                <li><a class="dropdown-item" href="{{ pathto('Animation/Ateliers/AHN') }}">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="{{ pathto('Animation/Ateliers/ABC') }}">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="{{ pathto('Animation/Ateliers/ACT') }}">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="{{ pathto('Animation/Ateliers/Guides') }}">Guides et Tutoriels</a></li>
                                             </ul>
                                         </div>
                                     </li>
                                 </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/CECAM') }}">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/FLMSN') }}">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/IXXI') }}">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/PBIL') }}">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/CIRA') }}">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/GDR') }}">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/LC') }}">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="{{ pathto('Réseaux/Sierra') }}">Sierra</a></li>
+                                </ul>
                             </div>
                         </li>
                         

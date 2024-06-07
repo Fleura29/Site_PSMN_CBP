@@ -11,7 +11,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputSurname">Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp">
@@ -25,7 +25,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
                         <input type="email" class="form-control form-style" id="inputEmail">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
                         <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;">

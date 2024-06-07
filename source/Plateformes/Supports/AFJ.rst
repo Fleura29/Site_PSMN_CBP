@@ -12,7 +12,7 @@ Administratrice - Centre Blaise Pascal / PSMN
 ---------------------------------------------
 
 Diane BARTHELEMY - Centre Blaise Pascal |br|
-Courriel : cbp @ ens-lyon.fr |br|
+Courriel : cbp\@ens-lyon.fr |br|
 Téléphone : +33 (0)4 72 72 86 37 
 
 :underline:`Contact pour :`

@@ -10,19 +10,16 @@ Support et recherche en informatique scientifique
 
 * **Emmanuel QUEMENER**
 
-.. container:: d-flex
+.. image:: ../../_static/equipe/quemener.png
+    :class: img-float pe-1
+    :width: 100px
+    :alt: Image Emmanuel QUEMENER
 
-    .. image:: ../../_static/equipe/quemener.png
-        :width: 100px
-        :alt: Image Emmanuel QUEMENER
-
-    .. container::
-
-        Centre Blaise Pascal |br|
-        École normale supérieure de Lyon |br|
-        Ingénieur de Recherche - Pilote d’essais informatiques |br|
-        Courriel : Emmanuel.Quemener @ ens-lyon.fr |br|
-        Téléphone : (+33) 4 72 72 86 33
+Centre Blaise Pascal |br|
+École normale supérieure de Lyon |br|
+Ingénieur de Recherche - Pilote d’essais informatiques |br|
+Courriel : Emmanuel.Quemener @ ens-lyon.fr |br|
+Téléphone : (+33) 4 72 72 86 33
 
 .. image:: ../../_static/equipe/eqltlanguages.png
 
@@ -96,8 +93,8 @@ Projets réalisés
 * pour les écoles des Houches *Computational Physics*
 
     * éditions 2011, 2012, 2013, 2014, 2015 et 2016
-* [[developpement:activites:qualification|Qualification matérielle]]
-* [[developpement:activites:qualification|Qualification logicielle]]
+* `Qualification matérielle <#>`_
+* `Qualification logicielle <#>`_
 
 Livrables, Communications, Formations, articles
 -----------------------------------------------
@@ -133,7 +130,10 @@ Livrables, Communications, Formations, articles
 **Année 2021**
 
 * Présentation `ressources du CBP <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationBio-2021-2022.pdf>`_ au département de biologie
-* Présentation JCAD 2021 <del> `Digital Staging <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf>`_ </del> ou `Digital re-* and de-* <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf>`_
+.. raw:: html
+    
+    <ul class="simple"><li><p>Présentation JCAD 2021 <a href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf" class="line">Digital Staging</a>  ou <a href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf">`Digital re-* and de-*</a></p></li></ul>
+
 * Cours INSA Lyon 3ème année `les GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/INSA2021-GPU-211203.pdf>`_
 * Cours INSA Lyon 3ème année `les CPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/INSA2021-CPU-211129.pdf>`_
 * Présentation CEA `Parallélisation et Portage d'une application sur GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CEA-20211117.pdf>`_
@@ -194,14 +194,14 @@ Livrables, Communications, Formations, articles
 * Présentation au colloque HPC CEA/ENS-Cachan : `présentation CBP et usage des GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Cargese2017_EQ.pdf>`_
 * Ateliers `30 ans de l'ENS-Lyon <http://www.ens-lyon.fr/agenda-30-ans/>`_, Atelier `Voyage aux pays des ordinateurs <http://www.ens-lyon.fr/agenda-30-ans/voyage-au-pays-des-ordinateurs-a-la-decouverte-de-leurs-composants-et-de-leurs-evolutions-348203.kjsp?RH=1497335464208>`_
 * Présentation aux étudiants de Licence ENS-Lyon : `transparents <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2017.pdf>`_
-* Cours `Astrosim 2017 <https://astrosim.sciencesconf.org/program>`_ : `Pragmatic Parallelism <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_Parallelism.pdf>`_ and `Introduction to GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_GPU.pdf>`_ et Travaux pratiques [[formation:astrosim2017gpu4dummies|GPU4dummies]] et [[formation:astrosim2017para4dummies|para4dummies]]
+* Cours `Astrosim 2017 <https://astrosim.sciencesconf.org/program>`_ : `Pragmatic Parallelism <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_Parallelism.pdf>`_ and `Introduction to GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_GPU.pdf>`_ et Travaux pratiques `GPU4dummies <#>`_ et `para4dummies <#>`_
 * `Journée thématique ABinit <https://cbppsmndays.sciencesconf.org/resource/page/id/2>`_ : `Ressources Informatiques du CBP : le centre d'essais <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Abinit_20170612.pdf>`_
 * Workshop à l'`ISA <https://isa-lyon.fr/>`_ `modelisation and computational biology <https://isa-lyon.fr/?p=3751>`_ : `From multicores to Myrialus <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ISA_20170609.pdf>`_
 * Club des décideurs HPE *L’hétérogénéité des clusters de calcul* : `Hétérogénéité de l'hôtel à projets au méso-centre <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SimulHub_20170308-EQ.pdf>`_
 
 **Année 2016**
 
-* Formation `ANF 2016 : des données au BigData : exploitez le stockage distribué <https://indico.mathrice.fr/event/5/>`_ : `Retour d'expérience sur GlusterFS <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ANF2016_GlusterFS.pdf>`_ et [[formation:anfbigdata|Travaux pratiques sur GlusterFS]]
+* Formation `ANF 2016 : des données au BigData : exploitez le stockage distribué <https://indico.mathrice.fr/event/5/>`_ : `Retour d'expérience sur GlusterFS <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ANF2016_GlusterFS.pdf>`_ et `Travaux pratiques sur GlusterFS <#>`_
 * Présentation `Simulation Hub <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Annonce_2016_10_14_final.pdf>`_ : `Architectures multi-coeurs & myri-alus <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SimulationHub_20161014.pdf>`_
 * Présentation `9èmes Journées Méso-centres <http://calcul.math.cnrs.fr/spip.php?article270>`_ : `Retour d'expérience GlusterFS <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Mesocentre2016.pdf>`_
 * Formation ISA 2016 (1 semaine) : SIDUS, de son exploitation locale à son déploiement sur cluster
@@ -262,5 +262,3 @@ Livrables, Communications, Formations, articles
 * Présentation ARAMIS : `GPU = un supercalculateur : du Mythe à la Réalité ! <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis-GPU-100520-4all.pdf>`_
 
 * **Activités passées pré-CBP** `de 1993 à 2006 <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Past/>`_
-
-<hidden> Centre Blaise Pascal, Maison de la modélisation de Lyon, Maison de la simulation de Lyon, Hôtel à projets </hidden>

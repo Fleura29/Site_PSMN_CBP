@@ -9,6 +9,7 @@ body{
     font-family: "Nunito Sans", sans-serif;
     display: flex;
     flex-direction: column;
+    font-size: 15px;
 }
 
 .orange-border {
@@ -77,36 +78,24 @@ a:hover{
     vertical-align: .125em;
 }
 
-@media screen and (max-width: 576px) {
-    .contenu {
-        width: 98%;
-    }
-    .body{
-        font-size: 12px;
-    }
-}
-
 @media screen and (min-width: 1265px){
     .contenu {
         width: 75%;
     }
 }
 
-@media screen and (min-width: 577px) and (max-width: 1264px) {
-    .contenu {
-        width: 90%;
-    }
-}
-
 @media screen and (max-width:767px){
-    .orange-border {
-        width: 10px; 
-    }
     .navbar-collapse{
         text-align: center;
     }
     .wid-header{
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .orange-border {
+        width: 5px; 
     }
 }
 
@@ -157,11 +146,13 @@ h2{
     font-size: 1.5rem;
     border-bottom: 1px solid #E69645;
     margin-bottom: 0.9rem;
+    margin-left: 2px;
 }
 
 h3{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: underline;
+    margin-left: 5px;
 }
 
 .btn:hover{
@@ -243,6 +234,11 @@ th, td{
 
 .underline {
     text-decoration: underline;
+}
+
+.underline-bold{
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 .line{

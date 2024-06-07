@@ -21,7 +21,7 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col ">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputSurname" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp" required>
@@ -39,7 +39,7 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                         <input type="text" class="form-control form-style"  id="inputTeam">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
                         <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" required>
@@ -64,9 +64,9 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
             </div>
 
             <div class="border-top border-secondary-subtle mt-1 pt-1">
-                Logiciel:
+                <u>Logiciel :</u>
                 <div class="row mt-1">
-                    <div class="col ">
+                    <div class="col col-12 col-sm-6">
                         <div class="mb-2">
                             <label for="inputLabo">Type de demande*</label>
                             <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 11px;" required>
@@ -88,7 +88,7 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                         </div>
                         
                     </div>
-                    <div class="col">
+                    <div class="col col-12 col-sm-6">
                         <div class="mb-2" >
                             <label for="inputTeam">Version*</label>
                             <input type="text" class="form-control form-style"  id="inputTeam" required>

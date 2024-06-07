@@ -7,19 +7,16 @@ Support et recherche en calcul scientifique
 
 * **Cerasela Iliana CALUGARU - CBPsmn, ENS de Lyon**
 
-.. container:: d-flex
+.. image:: ../../_static/equipe/calugaru.jpg
+    :class: img-float pe-1
+    :width: 110px
+    :alt: Image Cerasela Iliana CALUGARU
 
-    .. image:: ../../_static/equipe/calugaru.jpg
-        :width: 100px
-        :alt: Image Cerasela Iliana CALUGARU
-
-    .. container::
-
-        Centre Blaise Pascal - École normale supérieure de Lyon |br|
-        Ingénieur de Recherche en Calcul Scientifique |br|
-        Docteur en Mathématiques Appliquées |br|
-        Courriel : Cerasela.Iliana.Calugaru @ ens-lyon.fr |br|
-        Téléphone : (+33) 4 72 72 86 31 
+Centre Blaise Pascal - École normale supérieure de Lyon |br|
+Ingénieur de Recherche en Calcul Scientifique |br|
+Docteur en Mathématiques Appliquées |br|
+Courriel : Cerasela.Iliana.Calugaru @ ens-lyon.fr |br|
+Téléphone : (+33) 4 72 72 86 31 
 
 .. image:: ../../_static/equipe/cclanguages.png
 
