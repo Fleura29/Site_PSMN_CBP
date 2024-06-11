@@ -15,22 +15,22 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
             <div class="row">
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="inputSurname" >Nom*</label>
-                        <input type="text" class="form-control form-style" id="Surname">
+                        <label for="inputNom" >Nom*</label>
+                        <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName">
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
                     </div>
                 </div>
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="inputEmail">Email*</label>
-                        <input type="email" class="form-control form-style" id="inputEmail">
+                        <label for="inputMail">Email*</label>
+                        <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputLaboratory">Laboratoire*</label>
-                        <input type="text" class="form-control form-style" id="inputLaboratory">
+                        <label for="inputLabo">Laboratoire*</label>
+                        <input type="text" class="form-control form-style" id="inputLabo" name="labo" required>
                     </div>
                 </div>
             </div>

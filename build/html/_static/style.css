@@ -275,6 +275,8 @@ a.headerlink{
     border: dashed #E69645 1px;
     overflow-x: auto;
     white-space: nowrap;
+    margin-bottom: 10px;
+    padding-top: 0.7rem;
 }
 
 .cursor{

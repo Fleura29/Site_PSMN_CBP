@@ -12,6 +12,8 @@
     <script src="../../_static/translations.js?v=bf059b8c"></script>
     <link href="../../_static/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="LaBS" href="LaBS.html" />
@@ -91,10 +93,29 @@
                                     <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
                                     <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
-                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Int%C3%A9gration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>   
                             </div>
                         </li> 
@@ -255,10 +276,7 @@ Near the cell walls, the diffusion is anisotropic : it is strong along the walls
 </ul>
 <p>The algorithm is based on a filter developed by Weickert, using a formula from Schmidt</p>
 <ul class="simple">
-<li><ol class="upperalpha simple" start="10">
-<li><p>Weickert. Anisotropic Diffusion In Image Processing. B.G. Teubner Stuttgart, 1998.</p></li>
-</ol>
-</li>
+<li><p>J . Weickert. Anisotropic Diffusion In Image Processing. B.G. Teubner Stuttgart, 1998.</p></li>
 <li><p>Schmidt, T., Pasternak, T., Liu, K., Blein, T., Aubry-Hivet, D., Dovzhenko, A., Duerr, J., Teale, W., Ditengou, F. A., Burkhardt, H., Ronneberger, O. and Palme, K. (2014), The iRoCS Toolbox – 3D analysis of the plant root apical meristem at cellular resolution. The Plant Journal, 77: 806–814. doi: 10.1111/tpj.12429</p></li>
 </ul>
 <div class="text-center docutils container">

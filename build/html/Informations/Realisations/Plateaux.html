@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Plateaux techniques &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
+                                    <li><a class="dropdown-item" href="../Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="#">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Int%C3%A9gration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Master/MEMA.html">Master Erasmus (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Master/MNPC.html">Master 2- MNPC (à enlever)</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex ms-auto" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+    
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="plateaux-techniques">
+<h1>Plateaux techniques<a class="headerlink" href="#plateaux-techniques" title="Lien vers cette rubrique">¶</a></h1>
+<p>Le Centre Blaise Pascal dispose de plateaux techniques formant une plate-forme expérimentale pour tous les chercheurs, enseignants, ingénieurs, stagiaires ou étudiants désirant se familiariser, expérimenter ou prototyper dans les domaines de l’informatique scientifique.</p>
+<p>Le « plateau technique » désigne ici une infrastructure informatique complète (matériel &amp; logiciel) polyvalente et aisément reconfigurable.</p>
+<p>Depuis fin 2009, plusieurs plateaux techniques ont été mis en place pour faciliter l’accès à des ressources et permettre les missions du Centre Blaise Pascal.</p>
+<section id="multi-noeuds">
+<h2>Multi-noeuds<a class="headerlink" href="#multi-noeuds" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2009Q4 pour x86 et 2010Q1 pour x86_64</p></li>
+<li><p>Montée en charge : de 8 machines x86 fin 2009 à 84 noeuds x86_64 permanents début 2018</p></li>
+<li><p><strong>Pourquoi</strong> : offrir un environnement complet pour le calcul parallèle</p></li>
+<li><p><strong>Quoi</strong> : environnement logiciel pour MPI, PVM, …</p></li>
+<li><p><strong>Pour qui</strong> : chercheurs, enseignants, étudiants, stagiaires</p></li>
+<li><p><strong>Où</strong> : de la salle de cours à la salle de serveurs</p></li>
+<li><p><strong>Combien</strong> : 84 noeuds x86_64 permanents et 23 stations multi-coeurs</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>64+8 noeuds r410 huit coeurs physiques (16 logiques)</p></li>
+<li><p>8 noeuds x41z huit coeurs physiques</p></li>
+<li><p>4 noeuds c6100 avec 12 coeurs physiques (24 logiques)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Comment</strong> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>accès par “lethe.cbp.ens-lyon.fr”</p></li>
+<li><p>utilisation des noeuds par le gestionnaire de ressources GridEngine</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Ces machines s’appuyent sur l’authentification Ldap de l’établissement et utilisent pour les comptes utilisateurs le serveur de dossiers utilisateurs.</p>
+</section>
+<section id="multi-coeurs">
+<h2>Multi-coeurs<a class="headerlink" href="#multi-coeurs" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2009Q4 pour x86 et 2010Q1 pour x86_64</p></li>
+<li><p>Montée en charge : de 8 machines x86 fin 2009 à 86 noeuds x86_64 permanents début 2013</p></li>
+<li><p><strong>Pourquoi</strong> : offrir un environnement complet &amp; diversifié pour le calcul parallèle</p></li>
+<li><p><strong>Quoi</strong> : environnement logiciel pour MPI, OpenMP, Pthreads, OpenCL, …</p></li>
+<li><p><strong>Pour qui</strong> : chercheurs, enseignants, étudiants, stagiaires</p></li>
+<li><p><strong>Où</strong> : la salle de cours</p></li>
+<li><p><strong>Combien</strong> :  84 noeuds x86_64 permanents, 24 stations multi-coeurs, 2 serveurs</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>4 noeuds c6100 avec 12 coeurs HT : Intel X5650 à 2.67 GHz</p></li>
+<li><p>72 noeuds R410 avec 8 coeurs HT : Intel X5550 à 2.67 GHz</p></li>
+<li><p>8 noeuds x41z avec 8 coeurs : Intel E5440 à 2.83 GHz</p></li>
+<li><p>1 serveur R730* avec 16 coeurs HT : Intel E5-2640v3 à 2.6 GHz</p></li>
+<li><p>1 serveur R720* avec 8 coeurs HT : Intel E5-2637v2 à 3.5 GHz</p></li>
+<li><p>1 serveur R620* avec 20 coeurs HT : Intel E5-2670v2 à 2.5 GHz</p></li>
+<li><p>2 serveurs X2200* avec 8 coeurs : AMD Opteron 2347 à 1.9 GHz</p></li>
+<li><p>1 station Precision T7600* avec 16 coeurs HT : E5-2665 à 2.40 GHz</p></li>
+<li><p>1 station Precision T7500 avec 12 coeurs HT : Intel X5650 à 2.67 GHz</p></li>
+<li><p>12 stations Precision T5600 avec 6 coeurs HT : Intel E5-2620 à 2 GHz</p></li>
+<li><p>4 stations Precision T5610 avec 8 coeurs : Intel E5-2609v2 à 2.5 GHz</p></li>
+<li><p>4 stations Precision T7810 avec 8 coeurs HT : Intel E5-2630v3 à 2.4 GHz</p></li>
+<li><p>1 station d’essai ouverte : AMD Kaveri A10-7850K à 3.7 GHz</p></li>
+<li><p>1 poste Optiplex 745 avec 2 coeurs : Intel Core2 6300 à 1.86GHz</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Comment</strong> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>accès indirect par la passerelle pour les noeuds par SSH</p></li>
+<li><p>accès direct pour les stations, par SSH et x2go</p></li>
+<li><p>les équipements marqués « * » sont à accès restreint</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Ces machines s’appuyent sur l’authentification Ldap de l’établissement et utilisent pour les comptes utilisateurs le serveur de dossiers utilisateurs.</p>
+</section>
+<section id="gpu-accelerateur">
+<h2>GPU &amp; Accélérateur<a class="headerlink" href="#gpu-accelerateur" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2009Q4</p></li>
+<li><p>Montée de charge : de 1 machine fin 2009 à 31 machines début 2015</p></li>
+<li><p><strong>Pourquoi</strong> : offrir un environnement pour le calcul sur GPU</p></li>
+<li><p><strong>Quoi</strong> : environnement logiciel x86_64 pour Cuda et OpenCL</p></li>
+<li><p><strong>Pour qui</strong> : chercheurs, enseignants, étudiants, stagiaires</p></li>
+<li><p><strong>Où</strong> : de la salle de cours à la salle de serveurs</p></li>
+<li><p><strong>Combien</strong> : de 1 station de travail fin 2009 à 25 stations de travail, 2 serveurs, 4 noeuds fin 2015</p>
+<blockquote>
+<div><ul>
+<li><dl class="simple">
+<dt>Avec GPU Nvidia (supportant Cuda &amp; OpenCL) :</dt><dd><ul class="simple">
+<li><p>Nvidia GTX 980Ti : 3+1 stations <strong>gtx980ti(alpha|beta|gamma)</strong> et <strong>titan*</strong></p></li>
+<li><p>Nvidia GTX 980 : 1 station <strong>gtx980</strong></p></li>
+<li><p>Nvidia GTX 970 : 1 station <strong>gtx970</strong></p></li>
+<li><p>Nvidia GTX 960 : 1 station <strong>gtx960</strong></p></li>
+<li><p>Nvidia GTX 750Ti : 1 station <strong>gtx980tialpha</strong></p></li>
+<li><p>Nvidia GTX 750 : 1 station <strong>gtx980tigamma</strong></p></li>
+<li><p>Nvidia GTX 780ti : 1 station <strong>gtx780ti</strong></p></li>
+<li><p>Nvidia GTX 780 : 4 stations <strong>gtx780(alpha|beta|gamma|delta)</strong></p></li>
+<li><p>Nvidia GTX Titan : 1 station <strong>gtxtitan</strong></p></li>
+<li><p>Nvidia GTX 690 : 1 station <strong>gtx690</strong></p></li>
+<li><p>Nvidia GTX 680 : 1 station <strong>gtx680</strong></p></li>
+<li><p>Nvidia Tesla K80 : 1 serveur <strong>r730*</strong></p></li>
+<li><p>Nvidia Tesla K40 : 1 station <strong>k40</strong> &amp; 1 serveur <strong>r720*</strong></p></li>
+<li><p>Nvidia Tesla K20 : 2 noeuds <strong>c6100gpu-(1|2)</strong></p></li>
+<li><p>Nvidia Quadro K4000 : 1 station <strong>k4000</strong></p></li>
+<li><p>Nvidia Quadro K2000 : 2 stations <strong>gtxtitan</strong> &amp; <strong>k40</strong></p></li>
+<li><p>Nvidia Quadro 4000 : 1 station <strong>q4000alpha</strong></p></li>
+<li><p>Nvidia GT 640 : 1 station <strong>gtx780ti</strong></p></li>
+<li><p>Nvidia GTX 560Ti : 1 station <strong>k4000</strong></p></li>
+<li><p>Nvidia Tesla C2090 : 1 noeud <strong>c6100gpu-4</strong></p></li>
+<li><p>Nvidia Tesla C2070 : 1 noeud <strong>c6100gpu-3</strong></p></li>
+<li><p>Nvidia Tesla C2050 : 1 noeud <strong>c6100gpu-3</strong></p></li>
+<li><p>Nvidia GT 620 : 1 station <strong>gtxtitan</strong></p></li>
+<li><p>Nvidia GT 430 : 1 station <strong>gtx680</strong></p></li>
+<li><p>Nvidia NV 315 : 3 stations <strong>gtx960</strong>, <strong>gtx970</strong>, <strong>gtx980tibeta</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Avec GPU AMD/ATI : support de OpenCL</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Kaveri A10-7850K avec R7 : 1 station sur <strong>banchetto*</strong></p></li>
+<li><p>Radeon Furi : 1 station <strong>titan</strong></p></li>
+<li><p>Radeon R9-295X : 1 station <strong>banchetto*</strong></p></li>
+<li><p>Radeon R9-290X : 1 station <strong>r9-290</strong></p></li>
+<li><p>Radeon R7-240 : 1 station <strong>hd5850</strong></p></li>
+<li><p>FirePro W5000 : 1 station <strong>w5000</strong></p></li>
+<li><p>Radeon HD 7970 : 1 station <strong>hd7970</strong></p></li>
+<li><p>Radeon HD 6670 : 1 station <strong>hd6670</strong></p></li>
+<li><p>Radeon HD 5850 : 1 station <strong>hd5850</strong></p></li>
+<li><p>Radeon HD 6450 : 2 stations <strong>hd7970</strong> &amp; <strong>r9-290</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Avec carte accélératrice MIC : support de OpenCL, OpenMP, MPI</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Intel Xeon 7120P : 1 serveur <strong>r720*</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Avec carte intégrée Intel : support de OpenCL</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Intel HD Graphics Haswell CRW GT3 : 1 noeud Moonshot <strong>m710alpha</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Ces machines s’appuyent sur l’authentification Ldap de l’établissement et utilisent pour les comptes utilisateurs le serveur de dossiers utilisateurs.</p>
+</section>
+<section id="visualisation-3d">
+<h2>Visualisation 3D<a class="headerlink" href="#visualisation-3d" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2013Q4</p></li>
+<li><p><strong>Pourquoi</strong> : offrir le plus d’une visualisation 3D</p></li>
+<li><p><strong>Quoi</strong> : stations, écrans, lunettes, environnement logiciel pour l’exploitation de logiciels adaptés</p></li>
+<li><p><strong>Pour qui</strong> : chercheurs, enseignants, étudiants, stagiaires</p></li>
+<li><p><strong>Où</strong> : petite salle de réunion, salle de travaux pratiques</p></li>
+<li><p><strong>Combien</strong> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>salle de formation M7-1H04 : station <strong>q4000</strong>, 1 écran 3D 24 », 1 vidéoprojecteur, 2 paires de lunettes IRDA</p></li>
+<li><p>bureau M7-1H07 : 1 station <strong>k4000</strong>, 1 écran 3D 28 », 2 paires de lunettes RF,</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Ces machines s’appuyent sur l’authentification Ldap de l’établissement et utilisent pour les comptes utilisateurs le serveur de dossiers utilisateurs.</p>
+</section>
+<section id="integration-logicielle">
+<h2>Intégration logicielle<a class="headerlink" href="#integration-logicielle" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2010Q4</p></li>
+<li><p><strong>Pourquoi</strong> : offrir un environnement d’intégration logicielle différent de l’environnement de base Debian</p></li>
+<li><p><strong>Quoi</strong> : environnement logiciel complet x86 et x86_64</p></li>
+<li><p><strong>Pour qui</strong> : chercheurs, ingénieurs demandant des environnements différents</p></li>
+<li><p><strong>Où</strong> : de la salle de cours à la salle de serveurs</p></li>
+<li><p><strong>Combien</strong> : de 1 station de travail à 10 stations de travail</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>2 serveurs Ubuntu 10.04 en x86 et x86_64</p></li>
+<li><p>2 serveurs Ubuntu 12.04 en x86 et x86_64</p></li>
+<li><p>2 serveurs Centos 5.5 en x86 et x86_64</p></li>
+<li><p>2 serveurs Debian Lenny en x86 et x86_64</p></li>
+<li><p>2 serveurs Debian Squeeze en x86 et x86_64</p></li>
+<li><p>4 serveurs Debian Wheezy en x86, x86_64, Sparc et PowerPC</p></li>
+<li><p>2 serveurs Debian Jessie en x86 et x86_64</p></li>
+<li><p>2 serveurs Debian Sid en x86 et x86_64</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Ces machines s’appuyent sur l’authentification Ldap de l’établissement et utilisent pour les comptes utilisateurs le serveur de dossiers utilisateurs.</p>
+</section>
+<section id="paillasses-numeriques-des-ahn">
+<h2>Paillasses Numériques des AHN<a class="headerlink" href="#paillasses-numeriques-des-ahn" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2012Q1</p></li>
+<li><p><strong>Pourquoi</strong> : offrir un environnement expérimental aux AHN</p></li>
+<li><p><strong>Quoi</strong> : environnement logiciel x86_64</p></li>
+<li><p><strong>Pour qui</strong> : chercheurs et ingénieurs des <a class="reference internal" href="../../Science/Projets/AHN.html#ahn"><span class="std std-ref">Atelier des Humanités Numériques</span></a></p></li>
+<li><p><strong>Où</strong> : salle de serveurs</p></li>
+<li><p><strong>Combien</strong> : 10 serveurs</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>3 socles logiciels sous Debian Squeeze</p></li>
+<li><p>7 socles logiciels sous Debian Wheezy</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Ces machines ne sont accessibles qu’aux membres du groupe « Atelier des Humanités numériques ».</p>
+</section>
+<section id="stockage-distribue">
+<h2>Stockage Distribué<a class="headerlink" href="#stockage-distribue" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2010Q4</p></li>
+<li><p><strong>Pourquoi</strong> : étudier l’utilisation des ressources disques distribuées</p></li>
+<li><p><strong>Quoi</strong> : environnement complet permettant d’explorer 5 méthodes différentes</p></li>
+<li><p><strong>Pour qui</strong> : ingénieurs</p></li>
+<li><p><strong>Où</strong> : de la salle de cours à la salle de serveurs</p></li>
+<li><p><strong>Combien</strong> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>40 noeuds utilisés (1 par dispositif) pour iSCSI, AoE, GlusterFS, XtreemFS, CephFS</p></li>
+<li><p>8 postes de travail x86 utilisés pour GlusterFS</p></li>
+<li><p>8 postes de travail x86_64 utilisés pour CephFS</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Ce plateau technique, baptisé <em>DiStoNet</em> pour <em>Distributed Storage Network</em> a permis les présentations au Jres 2011.</p>
+<p>Ce plateau technique a été démobilisé en 2012Q2 pour l’étude sur le stockage distribué haute performance sur InfiniBand entre 2012Q3 et 2013Q1.</p>
+</section>
+<section id="ecole-des-houches">
+<h2>Ecole des Houches<a class="headerlink" href="#ecole-des-houches" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2011Q2</p></li>
+<li><p>Réalisations : éditions 2011, 2012, 2013, 2014, 2015</p></li>
+<li><p><strong>Pourquoi</strong> : faciliter l’appropriation des outils numériques</p></li>
+<li><p><strong>Quoi</strong> : fourniture d’un environnement complet applicatif, système et réseau</p></li>
+<li><p><strong>Pour qui</strong> : auditeurs, intervenants</p></li>
+<li><p><strong>Où</strong> : École de Physique des Houches</p></li>
+<li><p><strong>Combien</strong> : pour 25 à 70 personnes par session</p></li>
+<li><p><strong>Comment</strong> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Voici la {{h2012-20120619_eq_tiny.pdf|présentation}} des ressources de la session 2012.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Afin de réaliser les travaux pratiques dans de bonnes conditions, un environnement complet est fourni à chaque auditeur.</p>
+<p>Cet environnement réalise toutes les simulations et traitements sur son propre équipement : c’est le système <em>COMOD</em> pour <em>Compute On My Own Device</em>. Il se base sur <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">SIDUS</span></a>.</p>
+<p>Cet environnement a deux composantes :
+* une <em>autonome</em> où tout le système existe sur dans une image virtuelle de disque dur :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>l’espace requis est de plusieurs Go,</p></li>
+<li><p>la connexion réseau est facultative ;</p></li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p>une <em>partagée</em> où tout le système se trouve sur un équipement tierce :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>l’espace requis est seulement plusieurs Ko,</p></li>
+<li><p>la connexion réseau filaire est indispensable</p></li>
+<li><p>la technologie utilisée hérite du projet <em>SIDUS</em> pour <em>Single Instance Distributing Universal System</em></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="comod">
+<h2>COMOD<a class="headerlink" href="#comod" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2011Q1</p></li>
+</ul>
+<p><strong>COMOD (Compute On My Own Device)</strong> est la fusion de deux projets distincts de début 2011 :</p>
+<ul class="simple">
+<li><p>environnement de calcul scientifique virtualisé autour du logiciel VASP</p></li>
+<li><p>environnement scientifique pour l’école des Houches 2011</p></li>
+</ul>
+<p>Il offre aux utilisateurs la possibilité de démarrer en quelques secondes un environnement scientifique complet sur une machine quelconque, virtuelle ou réelle, dans un environnement exactement identique à ceux des plateaux techniques du Centre Blaise Pascal.</p>
+</section>
+<section id="galaxy">
+<h2>Galaxy<a class="headerlink" href="#galaxy" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Contact : <a class="reference internal" href="../../Plateformes/Supports/RIS.html#ris"><span class="std std-ref">Emmanuel Quemener</span></a></p></li>
+<li><p>Date de création : 2015Q1</p></li>
+<li><p>Date de disponibilité de la version 2 : 2016Q4</p></li>
+</ul>
+<p>Portail <a class="reference external" href="http://galaxy2.cbp.ens-lyon.fr">Galaxy</a> pour les applications de biologie.</p>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Informations/Realisations/Plateaux.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="txt_footer mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/bootstrap_popper.min.js"></script>
+  <script src="../../_static/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/bootstrap.min.js"></script>
+  </body>
+</html>

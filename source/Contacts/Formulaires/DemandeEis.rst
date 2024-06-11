@@ -17,16 +17,16 @@ Demande d'expertise en informatique scientifique
             <div class="row ">
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="inputSurname" >Nom*</label>
-                        <input type="text" class="form-control form-style" id="inputSurname" >
+                        <label for="inputNom" >Nom*</label>
+                        <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom(s)*</label>
-                        <input type="text" class="form-control form-style" id="inputName">
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputEmail">Email*</label>
-                        <input type="email" class="form-control form-style" id="inputEmail">
+                        <label for="inputMail">Email*</label>
+                        <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputEmail">Courriel de la personne marraine *</label>
@@ -36,37 +36,37 @@ Demande d'expertise en informatique scientifique
                 </div>
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="inputDem">Demande*</label>
-                        <select class="form-select form-style" id="inputDem" style="padding: 0 0 0 10px;">
+                        <label for="inputDemande">Demande*</label>
+                        <select class="form-select form-style" id="inputDemande" style="padding: 0 0 0 10px;">
                             <option selected>Séléctionner une demande </option>
                         </select>
                     </div>
                     <div class="mb-2">
-                        <label for="inputPlat">Plateau technique *</label>
-                        <select class="form-select form-style" id="inputPlat" style="padding: 0 0 0 10px;">
+                        <label for="inputPlateau">Plateau technique *</label>
+                        <select class="form-select form-style" id="inputPlateau" style="padding: 0 0 0 10px;">
                             <option selected>Choisir un plateau technique  </option>
                         </select>
                     </div>
                     <div class="mb-2">
-                        <label for="inputEntity">Entite*</label>
-                        <select class="form-select form-style" id="inputEntity" style="padding: 0 0 0 10px;">
+                        <label for="inputEntite">Entite*</label>
+                        <select class="form-select form-style" id="inputEntite" style="padding: 0 0 0 10px;">
                             <option selected>Choisir une entite </option>
                         </select>
                     </div>
-                    <div class="mb-2">
-                        <label for="inputOther">Autre (si entité non ENS)</label>
-                        <input type="text" class="form-control form-style" id="inputOther">
+                    <div class="mb-2" >
+                        <label for="inputAutre">Autre (si entité non ENS)</label>
+                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" name="autre">
                     </div>             
                 </div>
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control textarea" placeholder="Leave a comment here" id="floatingTextarea1" required></textarea>
-                <label for="floatingTextarea1">Projet de recherche :*</label>
+                <textarea class="form-control textarea" id="textAreaProjet" required></textarea>
+                <label for="textAreaProjet">Projet de recherche :*</label>
             </div>
             <div class="form-floating mt-3"> 
-                <textarea class="form-control textarea" placeholder="Leave a comment here" id="floatingTextarea2" required></textarea>     
-                <label for="floatingTextarea2">Description de l'expertise sollicitée :*</label>
+                <textarea class="form-control textarea" id="textAreaDescription" required></textarea>     
+                <label for="textAreaDescription">Description de l'expertise sollicitée :*</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>

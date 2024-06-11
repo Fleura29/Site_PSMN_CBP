@@ -9,34 +9,34 @@ Suggérer une entrée de F.A.Q.
             <div class="row ">
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="inputSurname" >Nom*</label>
-                        <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp" required>
+                        <label for="inputNom" >Nom*</label>
+                        <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName" aria-describedby="emailHelp" required>
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputEmail">Email*</label>
-                        <input type="email" class="form-control form-style" id="inputEmail" required>
+                        <label for="inputMail">Email*</label>
+                        <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                 </div>
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
-                        <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" required>
+                        <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" name="labo" value="" required>
                             <option selected>Choisir un laboratoire </option>
                         </select>
                     </div>
                     <div class="mb-2" >
-                        <label for="inputOther">Autre</label>
-                        <input type="text" class="form-control form-style"  id="inputOther">
+                        <label for="inputAutre">Autre</label>
+                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" name="autre">
                     </div>
                 </div>
             </div>
 
             <div class="border-top border-secondary-subtle mt-1 pt-1">
-                <u>Problème:</u>
+                <u>Problème :</u>
                 <div class="row mt-1">
                     <div class="col col-12 col-sm-6">
                         <div class="mb-2">

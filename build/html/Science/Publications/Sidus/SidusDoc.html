@@ -12,6 +12,8 @@
     <script src="../../../_static/translations.js?v=bf059b8c"></script>
     <link href="../../../_static/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Recherche" href="../../../search.html" />
     <link rel="next" title="Errata de l’article dans Linux Journal sur SIDUS" href="SidusFR.html" />
@@ -91,10 +93,29 @@
                                     <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
                                     <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
-                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Classification/Int%C3%A9gration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>   
                             </div>
                         </li> 
@@ -269,14 +290,16 @@
 <p>Par défaut, le mot de passe <strong>root</strong> du serveur <strong>sidus4labs</strong> est <strong>Sidus4LABS</strong> (pas très original donc à changer par vos soins).</p>
 <p>Il y a 24 comptes accessibles, les 24 lettres grecques de <strong>alpha</strong> à <strong>omega</strong>. Le mot de passe de chacun est son login avec la première lettre en majuscule et immédiatement suivi de cette funeste année, 2020 : donc de <strong>Alpha2020</strong> à <strong>Omega2020</strong>.</p>
 <p>Le compte <strong>alpha</strong> est un compte <strong>sudo</strong>. Il est donc possible de passer <strong>root</strong> en exploitant ce compte. Il est donc préférable de changer le mot de passe du compte <strong>alpha</strong> si vous <em>sortez</em> cet environnement Sidus4LABS de votre poste de travail.</p>
-<p>Le compte <strong>root</strong> dispose de deux clés d’accès <strong>ssh</strong> :
-* celle sans mot de passe : pour se connecter à <strong>root</strong> de <strong>root</strong> sur le serveur et sur n’importe quel client SIDUS.
-* celle du créateur de Sidus4LABS : pour de la maintenance initiale mais aussi pour lui permettre d’accéder au serveur en cas de demande d’intervention
-* si vous craignez quoi que ce soit, “”rm /root/.ssh/authorized_keys””</p>
-<p>Les deux interfaces réseau du serveurs <strong>sidus4labs</strong> sont NATés. Pour accéder au serveur de l’extérieur, il existe une redirection du port 22022 sur le port 22. Pour accéder au serveur <strong>sidus4labs</strong> de sa machine hôte, il suffit d’un “”ssh -p 22022 &lt;login&gt;&#64;localhost””.</p>
+<p>Le compte <strong>root</strong> dispose de deux clés d’accès <strong>ssh</strong> :</p>
+<ul class="simple">
+<li><p>celle sans mot de passe : pour se connecter à <strong>root</strong> de <strong>root</strong> sur le serveur et sur n’importe quel client SIDUS.</p></li>
+<li><p>celle du créateur de Sidus4LABS : pour de la maintenance initiale mais aussi pour lui permettre d’accéder au serveur en cas de demande d’intervention</p></li>
+<li><p>si vous craignez quoi que ce soit, rm /root/.ssh/authorized_keys</p></li>
+</ul>
+<p>Les deux interfaces réseau du serveurs <strong>sidus4labs</strong> sont NATés. Pour accéder au serveur de l’extérieur, il existe une redirection du port 22022 sur le port 22. Pour accéder au serveur <strong>sidus4labs</strong> de sa machine hôte, il suffit d’un ssh -p 22022 &lt;login&gt;&#64;localhost.</p>
 <p>Chacun des systèmes proposés au démarrage dispose d’un environnement graphique comparable, XFCE, plutôt léger. D’autres environnements sont proposés, mais ils requièrent un matériel graphique conséquent. Il se peut donc que GNOME3, choisi comme environnement par défaut par certaines distributions, ne fonctionne pas correctement. XFCE fonctionne dans tous les cas.</p>
-<div class="text-center w-50 docutils container">
-<div class="bg-danger-subtle pt-2 pb-1 rounded fs-13 docutils container">
+<div class="text-center docutils container">
+<div class="d-inline-block bg-danger-subtle pt-2 mb-2 rounded fs-13 docutils container">
 <p>Pour en savoir plus sur SIDUS, c’est là-dessous</p>
 </div>
 </div>
@@ -285,13 +308,17 @@
 <h2>SIDUS en quelques phrases<a class="headerlink" href="#sidus-en-quelques-phrases" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>SIDUS</strong> est l’acronyme de <em>Single Instance Distributing Universal System</em> et se propose de simplifier à l’extrême l’administration de machines.</p>
 <p>Son <a class="reference external" href="http://fr.wiktionary.org/wiki/sidus">origine latine</a> <em>d’ensemble de corps stellaires</em> est une allégorie : nous vous laissons trouver celle qui vous convient le mieux =).</p>
-<p><strong>SIDUS</strong> a deux principales propriétés :
-* <strong>l’unicité de configuration</strong> : deux machines démarrant sous Sidus ont exactement le même système d’exploitation
-* <strong>l’usage des ressources locales</strong> : les processeurs et mémoire vive sollicités sont ceux de la machine locale</p>
-<p><strong>SIDUS</strong> n’est donc :
-* <strong>ni LTSP</strong> pour <em>Linux Terminal Server Project</em> : LTSP propose une gestion simplifiée de terminaux légers en offrant un accès X11 ou RDP à un serveur : ce dernier supporte ainsi toute la charge de traitement. A contrario, SIDUS exploite entièrement (ou à discrétion de l’utilisateur) toute la machine qui s’y raccroche. Seul le stockage du système d’exploitation est déporté sur des machines tierces.
-* <strong>ni FAI</strong> pour <em>Fully Automatic Installation</em> : FAI ou Kickstart proposent une installation complète simplifiée permettant de limiter voire d’éliminer toute action de l’administrateur. A contrario, SIDUS propose un système unique dans un arbre intégrant à la fois le système de base et toutes les applications installées manuellement.
-* <strong>ni un LiveCD</strong> sur réseau : un LiveCD démarre un système minimaliste, nécessairement figé. Il est toujours possible de créer son propre LiveCD mais c’est une opération assez lourde. Avec SIDUS, il est possible d’installer à la volée sur tous ses clients un logiciel instantanément, de le reconfigurer.</p>
+<p><strong>SIDUS</strong> a deux principales propriétés :</p>
+<ul class="simple">
+<li><p><strong>l’unicité de configuration</strong> : deux machines démarrant sous Sidus ont exactement le même système d’exploitation</p></li>
+<li><p><strong>l’usage des ressources locales</strong> : les processeurs et mémoire vive sollicités sont ceux de la machine locale</p></li>
+</ul>
+<p><strong>SIDUS</strong> n’est donc :</p>
+<ul class="simple">
+<li><p><strong>ni LTSP</strong> pour <em>Linux Terminal Server Project</em> : LTSP propose une gestion simplifiée de terminaux légers en offrant un accès X11 ou RDP à un serveur : ce dernier supporte ainsi toute la charge de traitement. A contrario, SIDUS exploite entièrement (ou à discrétion de l’utilisateur) toute la machine qui s’y raccroche. Seul le stockage du système d’exploitation est déporté sur des machines tierces.</p></li>
+<li><p><strong>ni FAI</strong> pour <em>Fully Automatic Installation</em> : FAI ou Kickstart proposent une installation complète simplifiée permettant de limiter voire d’éliminer toute action de l’administrateur. A contrario, SIDUS propose un système unique dans un arbre intégrant à la fois le système de base et toutes les applications installées manuellement.</p></li>
+<li><p><strong>ni un LiveCD</strong> sur réseau : un LiveCD démarre un système minimaliste, nécessairement figé. Il est toujours possible de créer son propre LiveCD mais c’est une opération assez lourde. Avec SIDUS, il est possible d’installer à la volée sur tous ses clients un logiciel instantanément, de le reconfigurer.</p></li>
+</ul>
 </section>
 <section id="cqqcoqp-les-7-questions-sur-sidus">
 <h2>CQQCOQP : les 7 questions sur SIDUS<a class="headerlink" href="#cqqcoqp-les-7-questions-sur-sidus" title="Lien vers cette rubrique">¶</a></h2>
@@ -312,8 +339,9 @@
 </section>
 <section id="pour-qui">
 <h3>Pour Qui ?<a class="headerlink" href="#pour-qui" title="Lien vers cette rubrique">¶</a></h3>
-<p>SIDUS s’adresse à tous ceux qui veulent se simplifier la tâche et qui :
-* disposent de groupes de machines ayant toute la même destination :</p>
+<p>SIDUS s’adresse à tous ceux qui veulent se simplifier la tâche et qui :</p>
+<ul>
+<li><p>disposent de groupes de machines ayant toute la même destination :</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>des noeuds de cluster de calcul</p></li>
@@ -321,7 +349,7 @@
 <li><p>des machines virtuelles dans le cadre de formations</p></li>
 </ul>
 </div></blockquote>
-<ul class="simple">
+</li>
 <li><p>veulent analyser des équipements sans jamais toucher au système</p></li>
 </ul>
 </section>

@@ -5,9 +5,9 @@ SIDUS : "avec SIDUS, n'installe plus, démarre seulement tes machines !"
 
 .. container:: text-center
 
-        .. image:: ../../../_static/sidus-800.png
-            :class: img-max-width
-            :alt: Logo Sidus
+    .. image:: ../../../_static/sidus-800.png
+        :class: img-max-width
+        :alt: Logo Sidus
 
 Démonstrateur SIDUS sous VirtualBox
 -----------------------------------
@@ -67,20 +67,20 @@ Il y a 24 comptes accessibles, les 24 lettres grecques de **alpha** à **omega**
 Le compte **alpha** est un compte **sudo**. Il est donc possible de passer **root** en exploitant ce compte. Il est donc préférable de changer le mot de passe du compte **alpha** si vous *sortez* cet environnement Sidus4LABS de votre poste de travail.
 
 Le compte **root** dispose de deux clés d'accès **ssh** : 
+
 * celle sans mot de passe : pour se connecter à **root** de **root** sur le serveur et sur n'importe quel client SIDUS. 
 * celle du créateur de Sidus4LABS : pour de la maintenance initiale mais aussi pour lui permettre d'accéder au serveur en cas de demande d'intervention
-* si vous craignez quoi que ce soit, ''rm /root/.ssh/authorized_keys''
+* si vous craignez quoi que ce soit, rm /root/.ssh/authorized_keys
 
-Les deux interfaces réseau du serveurs **sidus4labs** sont NATés. Pour accéder au serveur de l'extérieur, il existe une redirection du port 22022 sur le port 22. Pour accéder au serveur **sidus4labs** de sa machine hôte, il suffit d'un ''ssh -p 22022 <login>@localhost''.
+Les deux interfaces réseau du serveurs **sidus4labs** sont NATés. Pour accéder au serveur de l'extérieur, il existe une redirection du port 22022 sur le port 22. Pour accéder au serveur **sidus4labs** de sa machine hôte, il suffit d'un ssh -p 22022 <login>@localhost.
 
 Chacun des systèmes proposés au démarrage dispose d'un environnement graphique comparable, XFCE, plutôt léger. D'autres environnements sont proposés, mais ils requièrent un matériel graphique conséquent. Il se peut donc que GNOME3, choisi comme environnement par défaut par certaines distributions, ne fonctionne pas correctement. XFCE fonctionne dans tous les cas.
 
-.. container:: text-center w-50
+.. container:: text-center 
     
-    .. container:: bg-danger-subtle pt-2 pb-1 rounded fs-13
+    .. container:: d-inline-block bg-danger-subtle pt-2 mb-2 rounded fs-13
         
         Pour en savoir plus sur SIDUS, c'est là-dessous
-        
 
 SIDUS en quelques phrases
 -------------------------
@@ -90,10 +90,12 @@ SIDUS en quelques phrases
 Son `origine latine <http://fr.wiktionary.org/wiki/sidus>`_ *d'ensemble de corps stellaires* est une allégorie : nous vous laissons trouver celle qui vous convient le mieux =).
 
 **SIDUS** a deux principales propriétés : 
+
 * **l'unicité de configuration** : deux machines démarrant sous Sidus ont exactement le même système d'exploitation
 * **l'usage des ressources locales** : les processeurs et mémoire vive sollicités sont ceux de la machine locale
 
 **SIDUS** n'est donc :
+
 * **ni LTSP** pour *Linux Terminal Server Project* : LTSP propose une gestion simplifiée de terminaux légers en offrant un accès X11 ou RDP à un serveur : ce dernier supporte ainsi toute la charge de traitement. A contrario, SIDUS exploite entièrement (ou à discrétion de l'utilisateur) toute la machine qui s'y raccroche. Seul le stockage du système d'exploitation est déporté sur des machines tierces.
 * **ni FAI** pour *Fully Automatic Installation* : FAI ou Kickstart proposent une installation complète simplifiée permettant de limiter voire d'éliminer toute action de l'administrateur. A contrario, SIDUS propose un système unique dans un arbre intégrant à la fois le système de base et toutes les applications installées manuellement.
 * **ni un LiveCD** sur réseau : un LiveCD démarre un système minimaliste, nécessairement figé. Il est toujours possible de créer son propre LiveCD mais c'est une opération assez lourde. Avec SIDUS, il est possible d'installer à la volée sur tous ses clients un logiciel instantanément, de le reconfigurer. 
@@ -126,6 +128,7 @@ Pour Qui ?
 ~~~~~~~~~~
 
 SIDUS s'adresse à tous ceux qui veulent se simplifier la tâche et qui :
+
 * disposent de groupes de machines ayant toute la même destination :
 
     * des noeuds de cluster de calcul

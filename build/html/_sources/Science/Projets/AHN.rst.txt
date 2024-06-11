@@ -9,6 +9,7 @@ Atelier des Humanités Numériques
 
 .. image:: ../../_static/img_projets/ahn_logo.png
     :class: img-float pe-2
+    :width: 140px
     :alt: Logo AHN
 
 Coordination : Pierre-Yves Jallud et Nathalie Arlin 

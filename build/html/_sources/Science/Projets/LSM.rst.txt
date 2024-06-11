@@ -14,6 +14,7 @@ An automatic way to segment grayscale 3D images of cells.
 To study plant morphogenesis, one need to follow the evolution of a plant during time. We can use real-time live imaging and image segmentation to reconstruct the plant development at a cell level.
 A first pipeline, MARS-ALT, has been develop by the RDP laboratory in collaboration with the Virtual Plants team (INRIA, Montpellier), as a part of the OpenAlea platform for plant modelling. The 3D image are assembled from the fusion of three confocal stacks, and cells are segmented using a watershed algorithm. With 3D segmented images of the same plant at different steps of development, ALT can reconstruct the lineage between cells.
 To improve the segmentation part of the pipeline, a new method was implement in 3 steps :
+
 * Detect exterior shape of the organ with LSM
 * Perform a watershed algorithm to have a first segmentation, given the exterior shape
 * Improve segmentation by re-detecting each cell shape with LSM  

@@ -12,6 +12,8 @@
     <script src="../../../_static/translations.js?v=bf059b8c"></script>
     <link href="../../../_static/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Recherche" href="../../../search.html" />
     <link rel="next" title="Errata for Linux Journal article about SIDUS" href="SidusEN.html" />
@@ -91,10 +93,29 @@
                                     <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
                                     <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
-                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Classification/Int%C3%A9gration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>   
                             </div>
                         </li> 
@@ -222,14 +243,16 @@
 <span id="sidusfr"></span><h1>Errata de l’article dans Linux Journal sur SIDUS<a class="headerlink" href="#errata-de-l-article-dans-linux-journal-sur-sidus" title="Lien vers cette rubrique">¶</a></h1>
 <p>Quelques erreurs se sont glissées dans l”<a class="reference external" href="http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration">article</a> de Linux Journal de novembre 2013 sur SIDUS.</p>
 <p>Si vous suivez pas à pas la <a class="reference internal" href="SidusDoc.html#sidusdoc"><span class="std std-ref">documentation complète</span></a>  de SIDUS, ces erreurs sont corrigées.</p>
-<h4 class="h4-border">''Next-Server'' page 102</h4><div class="docutils container">
+<section id="next-server-page-102">
+<h2>“”Next-Server”” page 102<a class="headerlink" href="#next-server-page-102" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 102, il est proposé comme adresse de serveur TFTP “”172.16.20.251””. Elle est incohérente avec le reste de l’article.</p>
 <p>Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le “”next-server””, dans “”/etc/dhcp/dhcpd.conf”” est à remplacer comme suit :</p>
 <div class="border-dashed docutils container">
 <p>next-server 10.13.20.13;</p>
 </div>
-</div>
-<h4 class="h4-border">MyInclude & MyExclude page 104</h4><div class="docutils container">
+</section>
+<section id="myinclude-myexclude-page-104">
+<h2>MyInclude &amp; MyExclude page 104<a class="headerlink" href="#myinclude-myexclude-page-104" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 104, il est proposé d’utiliser les variables “”MyInclude”” et “”MyExclude”” pour installer dès le <a class="reference external" href="https://wiki.debian.org/Debootstrap">debootstrap</a> un certain nombre de paquets.</p>
 <p>Certains sont installés « de base » par “”debootstrap””. SIDUS exige le noyau (“”linux-image-3.2.0-4-amd64”” pour architecture AMD64) et les outils initrd (“”initramfs-tools””). D’autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.</p>
 <p>Voici ce que nous proposons pour MyInclude :</p>
@@ -241,28 +264,31 @@
 <div class="border-dashed docutils container">
 <p>export MyExclude= »nano,exim,mysql-server,mysql-server-5.5,mysql-server-core-5.5,network-manager,apache2,apache2-mpm-worker,apache2-utils,apache2.2-bin,apache2.2-common,libapache2-mod-dnssd,libapache2-mod-php5,r-cran-fecofin,libmpich1.0gf,gerris,gspiceui,qucs,ktimetrace,kseg,ghdl,earth3d,libopenigtlink1,qtdmm,scilab-overload,gmsh,klogic,g++-doc,openturns-wrapper,xorsa,r-cran-rpvm,labplot,zygrib,libteem1,magnus,libcomplearn-dev,libtorque2,torque-common,torque-server,gridengine-client,gridengine-exec,gridengine-master,gridengine-qmon,gnuplot,gnuplot-nox,rtai,rtai-doc,libhdf5-dev,libhdf5-1.8,libgd2-xpm »</p>
 </div>
-</div>
-<h4 class="h4-border">Hook ''policy-rc.d'' page 104</h4><div class="docutils container">
+</section>
+<section id="hook-policy-rc-d-page-104">
+<h2>Hook “”policy-rc.d”” page 104<a class="headerlink" href="#hook-policy-rc-d-page-104" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 104, il est proposé de supprimer après l’installation complète le <em>hook</em> “”${SIDUS}/usr/sbin/policy-rc.d””.</p>
 <p>Il peut être utile de le conserver pour éviter qu’à l’installation d’un nouveau service, l’installeur ne le démarre pas.</p>
-</div>
-<h4 class="h4-border">''rootaufs'' page 106</h4><div class="docutils container">
+</section>
+<section id="rootaufs-page-106">
+<h2>“”rootaufs”” page 106<a class="headerlink" href="#rootaufs-page-106" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 106, le “”wget”” proposé pour télécharger et installer <em>coeur</em> de démarrage de SIDUS dans le “”initrd”” est incomplet. De plus, le mettre exécutable est un plus !</p>
 <p>Il faut remplacer cette ligne par :</p>
 <div class="border-dashed docutils container">
 <p>wget -O ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs <a class="reference external" href="http://www.cbp.ens-lyon.fr/sidus/rootaufs">http://www.cbp.ens-lyon.fr/sidus/rootaufs</a>
 chmod 755 ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs</p>
 </div>
-</div>
-<h4 class="h4-border">''vmlinux-Sidus'' et ''initrd-Sidus'' page 107</h4><div class="docutils container">
+</section>
+<section id="vmlinux-sidus-et-initrd-sidus-page-107">
+<h2>“”vmlinux-Sidus”” et “”initrd-Sidus”” page 107<a class="headerlink" href="#vmlinux-sidus-et-initrd-sidus-page-107" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 107, il y a une référence à “”vmlinux-Sidus”” et “”initrd-Sidus”” pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du “”/srv/tftp/pxelinux.cfg/default””.</p>
 <p>Il faut remplacer cette ligne par :</p>
 <div class="border-dashed docutils container">
 <p>cp ${SIDUS}/vmlinuz /srv/tftp/vmlinuz-Sidus
 cp ${SIDUS}/srv/nfsroot/boot/initrd /srv/tftp/initrd.img-Sidus</p>
 </div>
-</div>
 <i><a href="mailto:emmanuel.quemener@ens-lyon.fr">Emmanuel Quemener</a> 2013/11/07 10:55</i></section>
+</section>
 
 
               </div>

@@ -36,7 +36,7 @@ Suggérer une entrée de F.A.Q.
             </div>
 
             <div class="border-top border-secondary-subtle mt-1 pt-1">
-                <u>Problème:</u>
+                <u>Problème :</u>
                 <div class="row mt-1">
                     <div class="col col-12 col-sm-6">
                         <div class="mb-2">

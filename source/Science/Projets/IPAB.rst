@@ -9,7 +9,6 @@ Coordination : Cerasela Calugaru et Annamaria Kiss
 
 Etudiante stagiaire : Typhaine Moreau
 
-
 * **Why ?**
 
 To study plant morphogenesis, we need to follow the evolution of a plant during time. We can use real-time imaging and image segmentation to reconstruct the plant development at a cell level. 
@@ -28,9 +27,9 @@ Near the cell walls, the diffusion is anisotropic : it is strong along the walls
 
 From left to right :
 
-- original image
-- anisotropic blur K=0.1 / sigma=6 / gamma=1 / nb_it=150
-- gaussian blur
+* original image
+* anisotropic blur K=0.1 / sigma=6 / gamma=1 / nb_it=150
+* gaussian blur
 
 .. container:: text-center
 
@@ -42,8 +41,8 @@ From left to right :
 
 The algorithm is based on a filter developed by Weickert, using a formula from Schmidt
 
-- J. Weickert. Anisotropic Diffusion In Image Processing. B.G. Teubner Stuttgart, 1998.
-- Schmidt, T., Pasternak, T., Liu, K., Blein, T., Aubry-Hivet, D., Dovzhenko, A., Duerr, J., Teale, W., Ditengou, F. A., Burkhardt, H., Ronneberger, O. and Palme, K. (2014), The iRoCS Toolbox – 3D analysis of the plant root apical meristem at cellular resolution. The Plant Journal, 77: 806–814. doi: 10.1111/tpj.12429
+* J . Weickert. Anisotropic Diffusion In Image Processing. B.G. Teubner Stuttgart, 1998.
+* Schmidt, T., Pasternak, T., Liu, K., Blein, T., Aubry-Hivet, D., Dovzhenko, A., Duerr, J., Teale, W., Ditengou, F. A., Burkhardt, H., Ronneberger, O. and Palme, K. (2014), The iRoCS Toolbox – 3D analysis of the plant root apical meristem at cellular resolution. The Plant Journal, 77: 806–814. doi: 10.1111/tpj.12429
 
 .. container:: text-center
 

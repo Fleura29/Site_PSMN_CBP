@@ -13,44 +13,45 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
             <div class="row ">
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="inputSurname" >Nom*</label>
-                        <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp">
+                        <label for="inputNom" >Nom*</label>
+                        <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName" aria-describedby="emailHelp">
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="inputMail">Email*</label>
+                        <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputEtablissement">Établissement*</label>
                         <input type="text" class="form-control form-style" id="inputEtablissement" aria-describedby="emailHelp">
                     </div>
-                    <div class="mb-2">
-                        <label for="inputLaboratory">Laboratoire ou Département*</label>
-                        <input type="text" class="form-control form-style" id="inputLaboratory">
-                    </div>
+                    
                 </div>
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="inputEmail">Email*</label>
-                        <input type="email" class="form-control form-style" id="inputEmail">
+                        <label for="inputLabo">Laboratoire ou Département*</label>
+                        <input type="text" class="form-control form-style" id="inputLabo">
                     </div>
                     <div class="mb-2">
-                        <label for="inputEmailOther">Courriel de la personne marraine *</label>
-                        <input type="text" class="form-control form-style" id="inputEmailOther">
+                        <label for="inputEmailAutre">Courriel de la personne marraine *</label>
+                        <input type="text" class="form-control form-style" id="inputEmailAutre">
                     </div>
-                    <div class="mb-2" >
-                        <label for="inputStartDate">Date de début*</label>
-                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputStartDate" value="">
+                    <div class="mb-2">
+                        <label for="inputDateDeb">Date de début*</label>
+                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputDateDeb" name="datedeb"  value="" required>
                     </div>
-                    <div class="mb-2" >
-                        <label for="inputEndDate">Date de fin*</label>
-                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputEndDate" value="">
+                    <div class="mb-2">
+                        <label for="inputDateFin">Date de Fin*</label>
+                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputDateFin" name="datefin"  value="" required>
                     </div>
                 </div>
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea1" style="height: 100px; border-color: #E69645;"></textarea>
+                <textarea class="form-control" id="floatingTextarea1" style="height: 100px; border-color: #E69645;"></textarea>
                 <label for="floatingTextarea1">Descriptif du domaine</label>
             </div>
             <div class="form-floating mt-3"> 

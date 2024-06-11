@@ -49,8 +49,8 @@ ou poser une question...
                         <input type="text" class="form-control form-style" id="inputEmailOther">
                     </div>
                     <div class="mb-2" >
-                        <label for="inputStartDate">Autre</label>
-                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputStartDate" value="">
+                        <label for="inputAutre">Autre</label>
+                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" value="">
                     </div>
                 </div>
             </div>

@@ -7,7 +7,6 @@ Approche des Données par Annotations (Lyon)
 
    <br>
 
-    
 .. image:: ../../_static/img_projets/iao2.jpeg
     :class: img-float pe-2
     :width: 200px

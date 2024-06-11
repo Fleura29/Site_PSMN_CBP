@@ -1286,11 +1286,11 @@ Doctorant : Jérémie Zaffran
     :class: img-float pe-2
     :alt: Logo total
 
-:underline-bold:`Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
-Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal` |br|
+**Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
+Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
 Coordination ENS : Philippe Sautet
 
-**Collaboration ENS - Solvay**
+:underline-bold:`Collaboration ENS - Solvay`
 
 .. image:: ../_static/img_projets/solvay.png
     :class: img-float pe-2
@@ -1305,7 +1305,7 @@ Post-doc : Prokopis Andrikopoulos
 2010
 ----
 
-**ANR Dyquma (2010-2013)**
+:underline-bold:`ANR Dyquma (2010-2013)`
 
 .. image:: ../_static/img_projets/dyquma.png
     :class: img-float pe-2
@@ -1315,7 +1315,7 @@ Post-doc : Prokopis Andrikopoulos
 
 Coordination ENS : Philippe Sautet, Wei Dong & David Loffreda
 
-**ANR ChimigraphN (2010-2013)**
+:underline-bold:`ANR ChimigraphN (2010-2013)`
 
 .. image:: ../_static/img_projets/graphene.png
     :class: img-float pe-2
@@ -1326,7 +1326,7 @@ Coordination ENS : Philippe Sautet, Wei Dong & David Loffreda
 
 Coordination ENS : Marie-Laure Bocquet
 
-**ANR LORIS (2010-2013)**
+:underline-bold:`ANR LORIS (2010-2013)`
 
 .. container:: d-flex  mb-3
 
@@ -1341,7 +1341,7 @@ Coordination ENS : Marie-Laure Bocquet
 2009
 ----
 
-**Biophysique et développement (2009-2017)**
+:underline-bold:`Biophysique et développement (2009-2017)`
 
 .. container:: d-flex  mb-3
 
@@ -1353,7 +1353,7 @@ Coordination ENS : Marie-Laure Bocquet
         :ref:`Descriptive and predictive cell-based models for the emergence of shape in plants <dpcbmp>` |br|
         Coordination : Arezki Boudaoud
 
-**CADENCED (2009-2014)**
+:underline-bold:`CADENCED (2009-2014)`
 
 .. container:: d-flex  mb-3
 
@@ -1366,7 +1366,7 @@ Coordination ENS : Marie-Laure Bocquet
         :ref:`Computer Assisted Discovery and Elucidation of Novel Catalysts for Economic Development of Saudi Arabia <cadenced>` |br|
         Coordination ENS : Philippe Sautet
 
-**LaBS (2009-2013)**
+:underline-bold:`LaBS (2009-2013)`
 
 .. container:: d-flex  mb-3
 
@@ -1379,7 +1379,7 @@ Coordination ENS : Marie-Laure Bocquet
         Coordination : Emmanuel Lévêque |br|
         Post-doc : Hatem Touil
 
-**ANR STATOCEAN (2009-2012)**
+:underline-bold:`ANR STATOCEAN (2009-2012)`
 
 .. image:: ../_static/img_projets/statocean.jpg
     :class: img-float pe-2
@@ -1393,7 +1393,7 @@ Coordination : Freddy Bouchet
 2008
 ----
 
-**ANR Muse (2008-2012)**
+:underline-bold:`ANR Muse (2008-2012)`
 
 .. image:: ../_static/img_projets/ugi-smiles-reaction.png
     :class: img-float pe-2
@@ -1406,7 +1406,7 @@ Coordination ENS : Paul Fleurat-Lessard
 2007
 ----
 
-**Marie Curie Early Stage Training (EST) EuroSim (2006-2010)**
+:underline-bold:`Marie Curie Early Stage Training (EST) EuroSim (2006-2010)`
 
 .. container:: d-flex mb-3
 
@@ -1418,7 +1418,7 @@ Coordination ENS : Paul Fleurat-Lessard
         :ref:`European Molecular Simulations Training Program <eurosim>` |br|
         Coordination : Ralf Everaers
 
-**CompPhysSoftBioMat (2005-20xx)**
+:underline-bold:`CompPhysSoftBioMat (2005-20xx)`
 
     .. image:: ../_static/img_projets/sofmatter.jpg
         :class: img-float pe-2

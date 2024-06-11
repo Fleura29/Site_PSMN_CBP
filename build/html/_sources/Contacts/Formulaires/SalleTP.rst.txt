@@ -15,62 +15,62 @@ Réservation de la salle de TP numériques du CBP
     
     .. raw:: html
 
-        <form class="ms-2 me-2">
-            <div class="row ">
+        <form id="userForm" method="post" class="ms-2 me-2" data-nom="salleTP">
+            <div class="row">
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="InputName" >Nom*</label>
-                        <input type="text" class="form-control form-style" id="exampleInputEmail1">
+                        <label for="inputNom" >Nom*</label>
+                        <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputName">Prénom*</label>
-                        <input type="text" class="form-control form-style" id="inputName">
+                        <label for="inputPrenom">Prénom*</label>
+                        <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
                     </div>
                     <div class="mb-2">
-                        <label for="exampleInputEmail1">Laboratoire*</label>
-                        <input type="text" class="form-control form-style" id="exampleInputEmail1">
+                        <label for="inputMail">Email*</label>
+                        <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                     <div class="mb-2">
-                    <label for="exampleInputEmail1">Email*</label>
-                    <input type="email" class="form-control form-style" id="exampleInputEmail1">
+                        <label for="inputLabo">Laboratoire*</label>
+                        <input type="text" class="form-control form-style" id="inputLabo" name="labo" required>
+                    </div>  
+                    <div class="mb-2">
+                        <label for="inputEvenement">Titre de l'évènement*</label>
+                        <input type="text" class="form-control form-style" id="inputEvenement" name="evenement" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputEndDate">Titre de l'évènement*</label>
-                        <input type="text" class="form-control form-style" id="inputEndDate">
-                    </div>
-                    <div class="mb-2">
-                        <label for="exampleInputEmail1">Salle*</label>
-                        <select class="form-select form-style" id="inputRoom" style="padding: 0 0 0 10px;" aria-label="Default select example">
+                        <label for="inputSalle">Salle*</label>
+                        <select class="form-select form-style" id="inputSalle" style="padding: 0 0 0 10px;" name="salle" value="" required> 
                             <option selected>Choisir une salle </option>
-                            <option value="1">Salle de formation 25 places M7-1H04</option>
-                            <option value="2">Salle de formation 12 places M7-1H19</option>
+                            <option value="Salle de formation 25 places M7-1H04">Salle de formation 25 places M7-1H04</option>
+                            <option value="Salle de formation 12 places M7-1H19">Salle de formation 12 places M7-1H19</option>
                         </select>
                     </div>
                 </div>
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
-                        <label for="exampleInputEmail1">Date de début</label>
-                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputStartDate"  value="">
+                        <label for="inputDateDeb">Date de début*</label>
+                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputDateDeb" name="datedeb"  value="" required>
                     </div>
                     <div class="mb-2">
-                        <label for="exampleInputEmail1">Horaire de début*</label>
-                        <select class="form-select form-style" id="inputStartTime" style="padding: 0 0 0 10px;" aria-label="Default select example">
+                        <label for="inputHoraireDeb">Horaire de début*</label>
+                        <select class="form-select form-style" style="padding: 0 0 0 10px;" id="inputHoraireDeb" name="horairedeb" required>
                             <option selected>Choisir un horaire </option>
                         </select>
                     </div>
                     <div class="mb-2" >
-                        <label for="exampleInputEmail1">Date de fin*</label>
-                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputEndDate"  value="">
+                        <label for="inputDateFin">Date de fin*</label>
+                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputDateFin" name="datefin"  value="" required>
                     </div>
                     <div class="mb-2">
-                        <label for="exampleInputEmail1">Horaire de fin*</label>
-                        <select class="form-select form-style" id="inputEndTime" style="padding: 0 0 0 10px;" aria-label="Default select example">
+                        <label for="inputHoraireFin">Horaire de fin*</label>
+                        <select class="form-select form-style"  style="padding: 0 0 0 10px;" id="inputHoraireFin" name="horairefin" required>
                             <option selected>Choisir un horaire </option>
                         </select>
                     </div>
                     <div class="mb-2">
-                        <label for="exampleInputEmail1">Nombre estimatif de participants</label>
-                        <input type="number" class="form-control form-style" id="inputNumber" >
+                        <label for="inputNbParticipants">Nombre estimatif de participants</label>
+                        <input type="number" class="form-control form-style" id="inputNbParticipants" name="nbparticipants" >
                     </div>
                 </div>
             </div>
@@ -78,8 +78,8 @@ Réservation de la salle de TP numériques du CBP
             <p class="fs-12"> Toutes nos salles sont désormais équipées de vidéo-projecteurs fixes.</p>
             
             <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; border-color: #E69645;"></textarea>
-                <label for="floatingTextarea2">Autres renseignements</label>
+                <textarea class="form-control" id="TextAreaAutre" style="height: 100px; border-color: #E69645;"></textarea>
+                <label for="TextAreaAutre">Autres renseignements</label>
             </div>
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
             <div class="container text-center">
@@ -88,12 +88,19 @@ Réservation de la salle de TP numériques du CBP
                     des <a href="../../Plateformes/Autres/Conditions.html">Conditions Générales d'Utilisation</a>.
                 </p>
             </div>
-            <div class="text-center">
-                <button type="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
+
+            <div class="d-flex justify-content-center">
+                <label class="me-1" for="human" id="human-question"></label>
+                <input id="human-answer" type="text"/> 
             </div>
-        </form>                    
+            <div id="bloc" class="text-center"></div>
+            <script src="../../_static/Formulaires/Formulaires.js"></script>
+
+            <div class="text-center mt-2">
+                <button type="submit" value="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
+            </div>    
+        </form>          
 
 .. container:: mt-3 fs-13
 
-    L'équipement de la salle M1H19 a été réalisé dans le cadre du programme COMESUP avec 
-    le concours financier de la `Région Auvergne-Rhône-Alpes <#>`.  
+    L'équipement de la salle M1H19 a été réalisé dans le cadre du programme COMESUP avec le concours financier de la `Région Auvergne-Rhône-Alpes <https://www.auvergnerhonealpes.fr/>`_ .  

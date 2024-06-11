@@ -1,3 +1,5 @@
+.. _ris:
+
 Support et recherche en informatique scientifique
 =================================================
 

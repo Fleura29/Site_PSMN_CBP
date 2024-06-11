@@ -12,6 +12,8 @@
     <script src="../../_static/translations.js?v=bf059b8c"></script>
     <link href="../../_static/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="A landscape of transposable elements in fish" href="LTEF.html" />
@@ -91,10 +93,29 @@
                                     <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
                                     <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
-                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Int%C3%A9gration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>   
                             </div>
                         </li> 
@@ -228,11 +249,13 @@
 </ul>
 <p>To study plant morphogenesis, one need to follow the evolution of a plant during time. We can use real-time live imaging and image segmentation to reconstruct the plant development at a cell level.
 A first pipeline, MARS-ALT, has been develop by the RDP laboratory in collaboration with the Virtual Plants team (INRIA, Montpellier), as a part of the OpenAlea platform for plant modelling. The 3D image are assembled from the fusion of three confocal stacks, and cells are segmented using a watershed algorithm. With 3D segmented images of the same plant at different steps of development, ALT can reconstruct the lineage between cells.
-To improve the segmentation part of the pipeline, a new method was implement in 3 steps :
-* Detect exterior shape of the organ with LSM
-* Perform a watershed algorithm to have a first segmentation, given the exterior shape
-* Improve segmentation by re-detecting each cell shape with LSM
-From left to right : original image, contour detect by LSM, watershed segmentation, cells detect by LSM</p>
+To improve the segmentation part of the pipeline, a new method was implement in 3 steps :</p>
+<ul class="simple">
+<li><p>Detect exterior shape of the organ with LSM</p></li>
+<li><p>Perform a watershed algorithm to have a first segmentation, given the exterior shape</p></li>
+<li><p>Improve segmentation by re-detecting each cell shape with LSM</p></li>
+</ul>
+<p>From left to right : original image, contour detect by LSM, watershed segmentation, cells detect by LSM</p>
 <div class="text-center pb-3 docutils container">
 <img alt="Image lsm1" class="img-fluid" src="../../_images/lsm1.png" />
 </div>

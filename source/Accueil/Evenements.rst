@@ -12,53 +12,49 @@ Evènements
 .. role:: it-bold
     :class: it-bold
 
-Evènements 2024 du Centre Blaise Pascal
----------------------------------------
+2024
+----
 
-.. container:: mt-2
+**03/04/2024 au 05/04/2024 - Frontiers of Coarse-Grained Models: From New Developments to Modeling Dynamics, Assemblies, and Macromolecular Machines, CECAM-FR-RA**
+`https://www.cecam.org/workshop-details/1311/ <https://www.cecam.org/workshop-details/1311/>`_
 
-    **03/04/2024 au 05/04/2024 - Frontiers of Coarse-Grained Models: From New Developments to Modeling Dynamics, Assemblies, and Macromolecular Machines, CECAM-FR-RA**
-    `https://www.cecam.org/workshop-details/1311/ <https://www.cecam.org/workshop-details/1311/>`_
+2023
+----
 
-Evénements 2023 du Centre Blaise Pascal
----------------------------------------
+**RECRUTEMENT - Data Manager (H/F) - 16/11/2023 : Dans le cadre d’une collaboration entre son centre de calcul et ses laboratoires de biologie, l’École normale supérieure de Lyon recrute un data manager pour la mise en place d’un dépôt institutionnel de données d’imagerie scientifique.**
+`Information complémentaire <https://ens-lyon.softy.pro/offre/92014-gestionnaire-de-donnees-dimagerie-h-f>`_
 
-.. container:: mt-2
+**11/12/2023 - Formation GPU pour INSA de Lyon** : M7-1H19 de 14h00 à 18h00, séance #2
 
-    **RECRUTEMENT - Data Manager (H/F) - 16/11/2023 : Dans le cadre d’une collaboration entre son centre de calcul et ses laboratoires de biologie, l’École normale supérieure de Lyon recrute un data manager pour la mise en place d’un dépôt institutionnel de données d’imagerie scientifique.**
-    `Information complémentaire <https://ens-lyon.softy.pro/offre/92014-gestionnaire-de-donnees-dimagerie-h-f>`_
+**08/12/2023 - Newsletter de** `l'ENS de Lyon <https://www.ens-lyon.fr>`_ : `Transition écologique et IT <https://www.ens-lyon.fr/actualite/recherche/la-transition-ecologique-une-preoccupation-au-coeur-des-activites-et-des?from=newsletter>`_
 
-    **11/12/2023 - Formation GPU pour INSA de Lyon** : M7-1H19 de 14h00 à 18h00, séance #2
+**04/12/2023 - Formation GPU pour INSA de Lyon** : M7-1H19 de 14h00 à 18h00, séance #1
 
-    **08/12/2023 - Newsletter de** `l'ENS de Lyon <https://www.ens-lyon.fr>`_ : `Transition écologique et IT <https://www.ens-lyon.fr/actualite/recherche/la-transition-ecologique-une-preoccupation-au-coeur-des-activites-et-des?from=newsletter>`_
+**12-14/10/2023 - Fête de la Science avec l'atelier** `Voyage aux pays des ordinateurs <https://www.ens-lyon.fr/evenement/savoirs/informatique-visite-labo-voyage-au-pays-des-ordinateurs>`_ : salle 3IP du CBP
 
-    **04/12/2023 - Formation GPU pour INSA de Lyon** : M7-1H19 de 14h00 à 18h00, séance #1
+**25/05/2023 - Journée** `Immersion Cooling <https://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ITrium_Meeting_25_mai_2023-ENS_de_Lyon.pdf>`_ : Amphithéâtre A
 
-    **12-14/10/2023 - Fête de la Science avec l'atelier** `Voyage aux pays des ordinateurs <https://www.ens-lyon.fr/evenement/savoirs/informatique-visite-labo-voyage-au-pays-des-ordinateurs>`_ : salle 3IP du CBP
+**15/05/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #8
 
-    **25/05/2023 - Journée** `Immersion Cooling <https://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ITrium_Meeting_25_mai_2023-ENS_de_Lyon.pdf>`_ : Amphithéâtre A
+**17/04/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #7
 
-    **15/05/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #8
+**03/04/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #6
 
-    **17/04/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #7
+:line-bold:`27/03/2023 - Formation GPU par la pratique` :line:`: M7-1H04 de 11h30 à 13h00, séance #6`
 
-    **03/04/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #6
+**23/03/2023 - Journée Immersion Cooling** : Amphithéâtre A
 
-    :line-bold:`27/03/2023 - Formation GPU par la pratique` :line:`: M7-1H04 de 11h30 à 13h00, séance #6`
+**13/03/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #5
 
-    **23/03/2023 - Journée Immersion Cooling** : Amphithéâtre A
+**06/03/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #4
 
-    **13/03/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #5
+**20/02/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #3
 
-    **06/03/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #4
+**13/02/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #2
 
-    **20/02/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #3
+**30/01/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #1
 
-    **13/02/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #2
-
-    **30/01/2023 - Formation GPU par la pratique** : M7-1H04 de 11h30 à 13h00, séance #1
-
-    **09/01/2023 - Formation GPU pour INSA de Lyon** : M7-1H04 de 14h00 à 18h00, séance #2
+**09/01/2023 - Formation GPU pour INSA de Lyon** : M7-1H04 de 14h00 à 18h00, séance #2
 
 Infrastructure du Centre Blaise Pascal
 --------------------------------------

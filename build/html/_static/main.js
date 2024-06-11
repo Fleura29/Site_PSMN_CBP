@@ -36,8 +36,8 @@ let horaires= [
 ];
 
 function insertTime(){
-    const selectHoraireDebut= document.querySelector("#inputStartTime");
-    const selectHoraireFin= document.querySelector("#inputEndTime");
+    const selectHoraireDebut= document.querySelector("#inputHoraireDeb");
+    const selectHoraireFin= document.querySelector("#inputHoraireFin");
     horaires.map((o) => {
         const option= document.createElement("option");
         option.value= o;
@@ -179,7 +179,7 @@ function insertStatut(){
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    if (document.querySelector('#inputStartTime') && document.querySelector("#inputEndTime")) {
+    if (document.querySelector('#inputHoraireDeb') && document.querySelector("#inputHoraireFin")) {
         insertTime();
     }
     if (document.querySelector('#inputLabo')) {

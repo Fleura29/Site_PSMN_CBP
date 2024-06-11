@@ -12,6 +12,8 @@
     <script src="../../_static/translations.js?v=bf059b8c"></script>
     <link href="../../_static/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="Réservation d’une salle de discussions/réunions" href="SalleDisc.html" />
@@ -91,10 +93,29 @@
                                     <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="#">Les pannes et incidents</a></li>
                                     <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
-                                    <li><a class="dropdown-item" href="#">Projets d'infrastructures</a></li>
-                                    <li><a class="dropdown-item" href="#">Réalisations et solutions </a></li>
-                                    <li><a class="dropdown-item" href="#">Classification par activités</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Int%C3%A9gration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Plateformes/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>   
                             </div>
                         </li> 
@@ -227,62 +248,62 @@
 </div>
 </div>
 <div class="pt-2 border border-secondary-subtle docutils container">
-<form class="ms-2 me-2">
-    <div class="row ">
+<form id="userForm" method="post" class="ms-2 me-2" data-nom="salleTP">
+    <div class="row">
         <div class="col col-12 col-sm-6">
             <div class="mb-2">
-                <label for="InputName" >Nom*</label>
-                <input type="text" class="form-control form-style" id="exampleInputEmail1">
+                <label for="inputNom" >Nom*</label>
+                <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
             </div>
             <div class="mb-2">
-                <label for="inputName">Prénom*</label>
-                <input type="text" class="form-control form-style" id="inputName">
+                <label for="inputPrenom">Prénom*</label>
+                <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
             </div>
             <div class="mb-2">
-                <label for="exampleInputEmail1">Laboratoire*</label>
-                <input type="text" class="form-control form-style" id="exampleInputEmail1">
+                <label for="inputMail">Email*</label>
+                <input type="email" class="form-control form-style" id="inputMail" name="email" required>
             </div>
             <div class="mb-2">
-            <label for="exampleInputEmail1">Email*</label>
-            <input type="email" class="form-control form-style" id="exampleInputEmail1">
+                <label for="inputLabo">Laboratoire*</label>
+                <input type="text" class="form-control form-style" id="inputLabo" name="labo" required>
             </div>
             <div class="mb-2">
-                <label for="inputEndDate">Titre de l'évènement*</label>
-                <input type="text" class="form-control form-style" id="inputEndDate">
+                <label for="inputEvenement">Titre de l'évènement*</label>
+                <input type="text" class="form-control form-style" id="inputEvenement" name="evenement" required>
             </div>
             <div class="mb-2">
-                <label for="exampleInputEmail1">Salle*</label>
-                <select class="form-select form-style" id="inputRoom" style="padding: 0 0 0 10px;" aria-label="Default select example">
+                <label for="inputSalle">Salle*</label>
+                <select class="form-select form-style" id="inputSalle" style="padding: 0 0 0 10px;" name="salle" value="" required>
                     <option selected>Choisir une salle </option>
-                    <option value="1">Salle de formation 25 places M7-1H04</option>
-                    <option value="2">Salle de formation 12 places M7-1H19</option>
+                    <option value="Salle de formation 25 places M7-1H04">Salle de formation 25 places M7-1H04</option>
+                    <option value="Salle de formation 12 places M7-1H19">Salle de formation 12 places M7-1H19</option>
                 </select>
             </div>
         </div>
         <div class="col col-12 col-sm-6">
             <div class="mb-2">
-                <label for="exampleInputEmail1">Date de début</label>
-                <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputStartDate"  value="">
+                <label for="inputDateDeb">Date de début*</label>
+                <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputDateDeb" name="datedeb"  value="" required>
             </div>
             <div class="mb-2">
-                <label for="exampleInputEmail1">Horaire de début*</label>
-                <select class="form-select form-style" id="inputStartTime" style="padding: 0 0 0 10px;" aria-label="Default select example">
+                <label for="inputHoraireDeb">Horaire de début*</label>
+                <select class="form-select form-style" style="padding: 0 0 0 10px;" id="inputHoraireDeb" name="horairedeb" required>
                     <option selected>Choisir un horaire </option>
                 </select>
             </div>
             <div class="mb-2" >
-                <label for="exampleInputEmail1">Date de fin*</label>
-                <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputEndDate"  value="">
+                <label for="inputDateFin">Date de fin*</label>
+                <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputDateFin" name="datefin"  value="" required>
             </div>
             <div class="mb-2">
-                <label for="exampleInputEmail1">Horaire de fin*</label>
-                <select class="form-select form-style" id="inputEndTime" style="padding: 0 0 0 10px;" aria-label="Default select example">
+                <label for="inputHoraireFin">Horaire de fin*</label>
+                <select class="form-select form-style"  style="padding: 0 0 0 10px;" id="inputHoraireFin" name="horairefin" required>
                     <option selected>Choisir un horaire </option>
                 </select>
             </div>
             <div class="mb-2">
-                <label for="exampleInputEmail1">Nombre estimatif de participants</label>
-                <input type="number" class="form-control form-style" id="inputNumber" >
+                <label for="inputNbParticipants">Nombre estimatif de participants</label>
+                <input type="number" class="form-control form-style" id="inputNbParticipants" name="nbparticipants" >
             </div>
         </div>
     </div>
@@ -290,8 +311,8 @@
     <p class="fs-12"> Toutes nos salles sont désormais équipées de vidéo-projecteurs fixes.</p>
 
     <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; border-color: #E69645;"></textarea>
-        <label for="floatingTextarea2">Autres renseignements</label>
+        <textarea class="form-control" id="TextAreaAutre" style="height: 100px; border-color: #E69645;"></textarea>
+        <label for="TextAreaAutre">Autres renseignements</label>
     </div>
     <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
     <div class="container text-center">
@@ -300,13 +321,20 @@
             des <a href="../../Plateformes/Autres/Conditions.html">Conditions Générales d'Utilisation</a>.
         </p>
     </div>
-    <div class="text-center">
-        <button type="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
+
+    <div class="d-flex justify-content-center">
+        <label class="me-1" for="human" id="human-question"></label>
+        <input id="human-answer" type="text"/>
+    </div>
+    <div id="bloc" class="text-center"></div>
+    <script src="../../_static/Formulaires/Formulaires.js"></script>
+
+    <div class="text-center mt-2">
+        <button type="submit" value="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
     </div>
 </form></div>
 <div class="mt-3 fs-13 docutils container">
-<p>L’équipement de la salle M1H19 a été réalisé dans le cadre du programme COMESUP avec
-le concours financier de la <cite>Région Auvergne-Rhône-Alpes &lt;#&gt;</cite>.</p>
+<p>L’équipement de la salle M1H19 a été réalisé dans le cadre du programme COMESUP avec le concours financier de la <a class="reference external" href="https://www.auvergnerhonealpes.fr/">Région Auvergne-Rhône-Alpes</a> .</p>
 </div>
 </section>
 

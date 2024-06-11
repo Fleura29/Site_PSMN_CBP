@@ -6,7 +6,7 @@ Organisation des Workshops, séminaires & tutoriels
 
 .. container:: d-flex mb-2
 
-    .. image:: ../../_static/Animations/badges.jpg
+    .. image:: ../_static/Animations/badges.jpg
             :class:  pe-1
             :width: 170px
             :alt: Badges
