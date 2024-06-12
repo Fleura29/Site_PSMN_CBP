@@ -26,18 +26,18 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
                     </div>
                     <div class="mb-2">
                         <label for="inputEtablissement">Établissement*</label>
-                        <input type="text" class="form-control form-style" id="inputEtablissement" aria-describedby="emailHelp">
+                        <input type="text" class="form-control form-style" id="inputEtablissement" name="etablissement" required>
                     </div>
                     
                 </div>
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire ou Département*</label>
-                        <input type="text" class="form-control form-style" id="inputLabo">
+                        <input type="text" class="form-control form-style" id="inputLabo" name="labo" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputEmailAutre">Courriel de la personne marraine *</label>
-                        <input type="text" class="form-control form-style" id="inputEmailAutre">
+                        <label for="inputCourriel">Courriel de la personne marraine*</label>
+                        <input type="text" class="form-control form-style" id="inputCourriel" name="courriel" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputDateDeb">Date de début*</label>
@@ -51,12 +51,12 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control" id="floatingTextarea1" style="height: 100px; border-color: #E69645;"></textarea>
-                <label for="floatingTextarea1">Descriptif du domaine</label>
+                <textarea class="form-control" id="textAreaDescr" style="height: 100px; border-color: #E69645;" name="descriptif"></textarea>
+                <label for="textAreaDescr">Descriptif du domaine</label>
             </div>
             <div class="form-floating mt-3"> 
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; border-color: #E69645;"></textarea>     
-                <label for="floatingTextarea2">Logiciels ou bibliothèques utilisés</label>
+                <textarea class="form-control" id="textAreaLogiciels" style="height: 100px; border-color: #E69645;" name="logiciels"></textarea>     
+                <label for="textAreaLogiciels">Logiciels ou bibliothèques utilisés</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>

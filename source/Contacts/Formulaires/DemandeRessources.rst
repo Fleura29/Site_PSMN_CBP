@@ -50,51 +50,51 @@ Demande d'accès aux ressources du PSMN
                         </select>
                     </div>
                     <div class="mb-2" >
-                        <label for="inputAutre">Autre</label>
-                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" name="autre">
+                        <label for="inputAutreLabo">Autre</label>
+                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutreLabo" name="autreLabo">
                     </div>
                 </div>
                 <div class="col col-12 col-sm-6">
                     
                     <div class="mb-2">
-                        <label for="inputTeam">Équipe (ou Groupe, Projet)</label>
-                        <input type="text" class="form-control form-style" id="inputTeam">
+                        <label for="inputEquipe">Équipe (ou Groupe, Projet)</label>
+                        <input type="text" class="form-control form-style" id="inputEquipe" name="equipe">
                     </div>
                     <div class="mb-2">
-                        <label for="inputAdminStatut">Statut administratif*</label>
-                        <select class="form-select form-style" id="inputAdminStatut" style="padding: 0 0 0 10px;">
+                        <label for="inputStatutAdmin">Statut administratif*</label>
+                        <select class="form-select form-style" id="inputStatutAdmin" style="padding: 0 0 0 10px;" name="admin" required>
                             <option selected>Autre</option>
                         </select>
                     </div>
                     <div class="mb-2" >
-                        <label for="inputOther">Autre</label>
-                        <input type="text" class="form-control form-style"  id="inputOther">
+                        <label for="inputAutreStatut">Autre</label>
+                        <input type="text" class="form-control form-style"  id="inputAutreStatut" name="autreStatut">
                     </div>
                     <div class="mb-2" >
                         <label for="inputResp">Responsable d'ouverture de compte* </label>
-                        <input type="text" class="form-control form-style"  id="inputResp" required>
+                        <input type="text" class="form-control form-style"  id="inputResp" name="responsable" required>
                     </div>
                     <div class="mb-2" >
-                        <label for="exampleInputEmail1">Date de fin*</label>
-                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputEndDate"  value="" required>
+                        <label for="inputDateFin">Date de fin*</label>
+                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputDateFin"  value="" name="datefin" required>
                     </div>
                 </div>
                 
             </div>
             <div class="form-check">
-                    <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault" name="check">
                     <label class="form-check-label" for="flexCheckDefault">
                         No compute (accès data uniquement)
                     </label>
             </div>
 
             <div class="form-floating mt-2">
-                <textarea class="form-control" placeholder="Leave a comment here" id="textAreaDscr" style="height: 100px; border-color: #E69645;"></textarea>
-                <label for="textAreaDscr">Descriptif du domaine scientifique :</label>
+                <textarea class="form-control" id="textAreaDescr" style="height: 100px; border-color: #E69645;" name="textAreaDescr"></textarea>
+                <label for="textAreaDescr">Descriptif du domaine scientifique :</label>
             </div>
             <p class="mt-2" style="margin-bottom: 0;">Pour les membres des laboratoires hors du site de Gerland: </p>
             <div class="form-floating " style="overflow-x: auto;"> 
-                <textarea class="form-control" placeholder="Leave a comment here" id="textAreaJust" style="height: 100px; border-color: #E69645;"></textarea>     
+                <textarea class="form-control" id="textAreaJust" style="height: 100px; border-color: #E69645;"></textarea>     
                 <label for="textAreaJust">justifier cette demande</label>
             </div>
 
@@ -103,13 +103,13 @@ Demande d'accès aux ressources du PSMN
             <div class="border-top border-secondary-subtle mt-1 pt-1">
                 Langue(s):
                 <div class="form-check">
-                    <input class="form-check-input checkbox" type="checkbox" value="" id="checkFr">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="checkFr" name="checkFr">
                     <label class="form-check-label" for="checkFr">
                         Français
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input checkbox" type="checkbox" value="" id="checkEn">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="checkEn" name="checkEn">
                     <label class="form-check-label" for="checkEn">
                         English
                     </label>

@@ -51,7 +51,7 @@ Si vous souhaitez vous **désinscrire**, merci de valider le formulaire suivant 
         <form class="ms-2 me-2">
             <div class="mb-2">
                 <label for="inputEmail">Email*</label>
-                <input type="text" class="form-control form-style" id="Email">
+                <input type="text" class="form-control form-style" id="inputEmail" name="mailDesinscription" required>
             </div>
             <p class="mt-2 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
             <div class="text-center">

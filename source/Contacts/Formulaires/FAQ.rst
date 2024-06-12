@@ -40,21 +40,21 @@ Suggérer une entrée de F.A.Q.
                 <div class="row mt-1">
                     <div class="col col-12 col-sm-6">
                         <div class="mb-2">
-                            <label for="inputEmail">Catégorie*</label>
-                            <input type="text" class="form-control form-style" id="inputEmail" required>
+                            <label for="inputCategorie">Catégorie*</label>
+                            <input type="text" class="form-control form-style" id="inputCategorie" name="categorie" required>
                         </div>
                     </div>
                     <div class="col col-12 col-sm-6">
                         <div class="mb-2" >
-                            <label for="inputTeam">Problème*</label>
-                            <input type="text" class="form-control form-style"  id="inputTeam" required>
+                            <label for="inputProbleme">Problème*</label>
+                            <input type="text" class="form-control form-style"  id="inputProbleme" name="probleme" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-floating mt-2">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea1" style="height: 100px; border-color: #E69645;"></textarea>
-                    <label for="floatingTextarea1">Résolution proposée :*</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="textAreaResol" style="height: 100px; border-color: #E69645;" name="resolution" required></textarea>
+                    <label for="textAreaResol">Résolution proposée :*</label>
                 </div>
             </div>
             

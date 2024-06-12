@@ -45,8 +45,8 @@ ou poser une question...
                         </select>
                     </div>
                     <div class="mb-2">
-                        <label for="inputEmailOther">Sujet*</label>
-                        <input type="text" class="form-control form-style" id="inputEmailOther">
+                        <label for="inputSujet">Sujet*</label>
+                        <input type="text" class="form-control form-style" id="inputSujet" name="sujet" required>
                     </div>
                     <div class="mb-2" >
                         <label for="inputAutre">Autre</label>
@@ -56,8 +56,8 @@ ou poser une question...
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea1" style="height: 100px; border-color: #E69645;"></textarea>
-                <label for="floatingTextarea1">Commentaire</label>
+                <textarea class="form-control" id="textAreaCommentaire" style="height: 100px; border-color: #E69645;" name="commentaire"></textarea>
+                <label for="textAreaCommentaire">Commentaire</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>

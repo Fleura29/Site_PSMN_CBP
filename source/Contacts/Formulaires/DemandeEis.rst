@@ -29,27 +29,27 @@ Demande d'expertise en informatique scientifique
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputEmail">Courriel de la personne marraine *</label>
-                        <input type="email" class="form-control form-style" id="inputEmail">
+                        <label for="inputCourriel">Courriel de la personne marraine *</label>
+                        <input type="email" class="form-control form-style" id="inputCourriel" name="courriel" required>
                     </div>
                     
                 </div>
                 <div class="col col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputDemande">Demande*</label>
-                        <select class="form-select form-style" id="inputDemande" style="padding: 0 0 0 10px;">
+                        <select class="form-select form-style" id="inputDemande" style="padding: 0 0 0 10px;" name="demande" required>
                             <option selected>Séléctionner une demande </option>
                         </select>
                     </div>
                     <div class="mb-2">
-                        <label for="inputPlateau">Plateau technique *</label>
-                        <select class="form-select form-style" id="inputPlateau" style="padding: 0 0 0 10px;">
+                        <label for="inputPlateau">Plateau technique*</label>
+                        <select class="form-select form-style" id="inputPlateau" style="padding: 0 0 0 10px;" name="plateau" required>
                             <option selected>Choisir un plateau technique  </option>
                         </select>
                     </div>
                     <div class="mb-2">
                         <label for="inputEntite">Entite*</label>
-                        <select class="form-select form-style" id="inputEntite" style="padding: 0 0 0 10px;">
+                        <select class="form-select form-style" id="inputEntite" style="padding: 0 0 0 10px;" name="entite" required>
                             <option selected>Choisir une entite </option>
                         </select>
                     </div>
@@ -65,7 +65,7 @@ Demande d'expertise en informatique scientifique
                 <label for="textAreaProjet">Projet de recherche :*</label>
             </div>
             <div class="form-floating mt-3"> 
-                <textarea class="form-control textarea" id="textAreaDescription" required></textarea>     
+                <textarea class="form-control textarea" id="textAreaDescription" name="textAreaDescription" required></textarea>     
                 <label for="textAreaDescription">Description de l'expertise sollicitée :*</label>
             </div>
 

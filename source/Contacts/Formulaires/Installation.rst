@@ -34,9 +34,9 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                         <label for="inputMail">Email*</label>
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
-                    <div class="mb-2" >
-                        <label for="inputTeam">Equipe</label>
-                        <input type="text" class="form-control form-style"  id="inputTeam">
+                    <div class="mb-2">
+                        <label for="inputEquipe">Équipe</label>
+                        <input type="text" class="form-control form-style" id="inputEquipe" name="equipe">
                     </div>
                 </div>
                 <div class="col col-12 col-sm-6">
@@ -47,18 +47,18 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                         </select>
                     </div>
                     <div class="mb-2" >
-                        <label for="inputAutre">Autre</label>
-                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" name="autre">
+                        <label for="inputAutreLabo">Autre</label>
+                        <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutreLabo" name="autreLabo">
                     </div>
                     <div class="mb-2">
-                        <label for="inputAdminStatut">Statut administratif*</label>
-                        <select class="form-select form-style" id="inputAdminStatut" style="padding: 0 0 0 10px;">
+                        <label for="inputStatutAdmin">Statut administratif*</label>
+                        <select class="form-select form-style" id="inputStatutAdmin" style="padding: 0 0 0 10px;" name="admin" required>
                             <option selected>Autre</option>
                         </select>
                     </div>
                     <div class="mb-2" >
-                        <label for="inputOther">Autre</label>
-                        <input type="text" class="form-control form-style"  id="inputOther">
+                        <label for="inputAutreStatut">Autre</label>
+                        <input type="text" class="form-control form-style" id="inputAutreStatut" name="autreStatut">
                     </div>
                 </div>
             </div>
@@ -68,35 +68,35 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                 <div class="row mt-1">
                     <div class="col col-12 col-sm-6">
                         <div class="mb-2">
-                            <label for="inputLabo">Type de demande*</label>
-                            <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 11px;" required>
+                            <label for="inputType">Type de demande*</label>
+                            <select class="form-select form-style" id="inputType" style="padding: 0 0 0 11px;" name="type" required>
                                 <option selected>Installation</option>
                                 <option>Mise à jour</option>
                             </select>
                         </div>
                         <div class="mb-2">
-                            <label for="inputLabo">Statut du logiciel*</label>
-                            <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 11px;" required>
+                            <label for="inputStatutLogi">Statut du logiciel*</label>
+                            <select class="form-select form-style" id="inputStatutLogi" style="padding: 0 0 0 11px;" name="statutLogi" required>
                                 <option selected>Free Software</option>
                                 <option>Registered</option>
                                 <option>Licensed</option>
                             </select>
                         </div>
                         <div class="mb-2">
-                            <label for="inputEmail">Nom du logiciel*</label>
-                            <input type="email" class="form-control form-style" id="inputEmail" required>
+                            <label for="inputLogiciel">Nom du logiciel*</label>
+                            <input type="text" class="form-control form-style" id="inputLogiciel" name="logiciel" required>
                         </div>
                         
                     </div>
                     <div class="col col-12 col-sm-6">
                         <div class="mb-2" >
-                            <label for="inputTeam">Version*</label>
-                            <input type="text" class="form-control form-style"  id="inputTeam" required>
+                            <label for="inputVersion">Version*</label>
+                            <input type="text" class="form-control form-style"  id="inputVersion" name="version" required>
                         </div>
                             
                         <div class="mb-2" >
-                            <label for="inputOther">URL de téléchargement</label>
-                            <input type="text" class="form-control form-style"  id="inputOther" placeholder="http://">
+                            <label for="inputURL">URL de téléchargement</label>
+                            <input type="text" class="form-control form-style"  id="inputURL" placeholder="http://">
                         </div>
                     </div>
                 </div>
