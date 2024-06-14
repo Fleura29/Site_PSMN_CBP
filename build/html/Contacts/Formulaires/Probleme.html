@@ -3,17 +3,17 @@
 <html lang="fr" data-content_root="../../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Signaler un problème &#8212; Documentation PSMN-CBP </title>
     <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/translations.js?v=bf059b8c"></script>
-    <link href="../../_static/bootstrap.min.css" rel="stylesheet">
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="Suggérer une entrée de F.A.Q." href="FAQ.html" />
@@ -250,45 +250,45 @@
 <p><strong>N’oubliez pas de préciser, quand vous les connaissez, le job_id, le nom de la machine, du cluster et tout ce qui est pertinent pour régler votre problème.</strong></p>
 </div>
 </div>
-<div class="pt-2 border border-secondary-subtle docutils container">
+<div class="border-form docutils container">
 <form class="ms-2 me-2">
     <div class="row ">
-        <div class="col col-12 col-sm-6">
+        <div class="col-12 col-sm-6">
             <div class="mb-2">
-                <label for="inputSurname" >Nom*</label>
-                <input type="text" class="form-control form-style" id="inputSurname" aria-describedby="emailHelp">
+                <label for="inputNom" >Nom*</label>
+                <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
             </div>
             <div class="mb-2">
-                <label for="inputName">Prénom*</label>
-                <input type="text" class="form-control form-style" id="inputName" aria-describedby="emailHelp">
+                <label for="inputPrenom">Prénom*</label>
+                <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
             </div>
             <div class="mb-2">
-                <label for="inputEmail">Email*</label>
-                <input type="email" class="form-control form-style" id="inputEmail">
+                <label for="inputMail">Email*</label>
+                <input type="email" class="form-control form-style" id="inputMail" name="email" required>
             </div>
 
         </div>
-        <div class="col col-12 col-sm-6">
+        <div class="col-12 col-sm-6">
             <div class="mb-2">
                 <label for="inputLabo">Laboratoire*</label>
-                <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;">
+                <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" name="labo" value="" required>
                     <option selected>Choisir un laboratoire </option>
                 </select>
             </div>
             <div class="mb-2">
-                <label for="inputEmailOther">Sujet*</label>
-                <input type="text" class="form-control form-style" id="inputEmailOther">
+                <label for="inputSujet">Sujet*</label>
+                <input type="text" class="form-control form-style" id="inputSujet" name="sujet" required>
             </div>
             <div class="mb-2" >
                 <label for="inputAutre">Autre</label>
-                <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" value="">
+                <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" name="autre">
             </div>
         </div>
     </div>
 
     <div class="form-floating mt-2">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea1" style="height: 100px; border-color: #E69645;"></textarea>
-        <label for="floatingTextarea1">Commentaire</label>
+        <textarea class="form-control" id="textAreaCommentaire" style="height: 100px; border-color: #E69645;" name="commentaire"></textarea>
+        <label for="textAreaCommentaire">Commentaire</label>
     </div>
 
     <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
@@ -345,9 +345,9 @@
   </footer>
   <script src="../../_static/main.js"></script>
   <script src="../../_static/jquery.min.js"></script>
-  <script src="../../_static/bootstrap_bundle.min.js"></script>
-  <script src="../../_static/bootstrap_popper.min.js"></script>
-  <script src="../../_static/bootstrap_cdn.min.js"></script>
-  <script src="../../_static/bootstrap.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

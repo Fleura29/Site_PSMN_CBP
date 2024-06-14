@@ -3,17 +3,17 @@
 <html lang="fr" data-content_root="../../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Demande d’expertise en Calcul Scientifique et HPC &#8212; Documentation PSMN-CBP </title>
     <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/translations.js?v=bf059b8c"></script>
-    <link href="../../_static/bootstrap.min.css" rel="stylesheet">
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="Demande d’expertise en informatique scientifique" href="DemandeEis.html" />
@@ -248,45 +248,44 @@
 <li><p>le développement des méthodes numériques et leur implémentation</p></li>
 </ul>
 <p>Cette expertise implique un travail collaboratif entre les chercheurs impliqués dans les projets et les ingénieurs du CBP.</p>
-<div class="pt-2 border border-secondary-subtle docutils container">
+<div class="border-form docutils container">
 <form class="ms-2 me-2">
     <div class="row ">
-        <div class="col col-12 col-sm-6">
+        <div class="col-12 col-sm-6">
             <div class="mb-2">
-                <label for="inputSurname" >Nom*</label>
-                <input type="text" class="form-control form-style" id="inputSurname" >
+                <label for="inputNom" >Nom*</label>
+                <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
             </div>
             <div class="mb-2">
-                <label for="inputName">Prénom(s)*</label>
-                <input type="text" class="form-control form-style" id="inputName">
+                <label for="inputPrenom">Prénom*</label>
+                <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
             </div>
+            <div class="mb-2">
+                <label for="inputMail">Email*</label>
+                <input type="email" class="form-control form-style" id="inputMail" name="email" required>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
             <div class="mb-2">
                 <label for="inputLabo">Laboratoire*</label>
-                <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;">
+                <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" name="labo" value="" required>
                     <option selected>Choisir un laboratoire </option>
                 </select>
             </div>
-        </div>
-        <div class="col col-12 col-sm-6">
-            <div class="mb-2">
-                <label for="inputOther">Autre</label>
-                <input type="text" class="form-control form-style" id="inputOther">
+            <div class="mb-2" >
+                <label for="inputAutre">Autre</label>
+                <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutre" name="autre">
             </div>
-            <div class="mb-2">
-                <label for="inputEmail">Email*</label>
-                <input type="email" class="form-control form-style" id="inputEmail">
-            </div>
-
         </div>
     </div>
 
     <div class="form-floating mt-2">
-        <textarea class="form-control textarea" placeholder="Leave a comment here" id="textAreaProject" required></textarea>
-        <label for="textAreaProject">Projet de recherche :*</label>
+        <textarea class="form-control textarea" id="textAreaProjet" name="projet" required></textarea>
+        <label for="textAreaProjet">Projet de recherche :*</label>
     </div>
     <div class="form-floating mt-3">
-        <textarea class="form-control textarea" placeholder="Leave a comment here" id="textAreaDesc" required></textarea>
-        <label for="textAreaDesc">Description de l'expertise sollicitée :*</label>
+        <textarea class="form-control textarea" id="textAreaDescription" name="description" required></textarea>
+        <label for="textAreaDescription">Description de l'expertise sollicitée :*</label>
     </div>
 
     <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
@@ -343,9 +342,9 @@
   </footer>
   <script src="../../_static/main.js"></script>
   <script src="../../_static/jquery.min.js"></script>
-  <script src="../../_static/bootstrap_bundle.min.js"></script>
-  <script src="../../_static/bootstrap_popper.min.js"></script>
-  <script src="../../_static/bootstrap_cdn.min.js"></script>
-  <script src="../../_static/bootstrap.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -35,7 +35,7 @@ let horaires= [
     "19:00",
 ];
 
-function insertTime(){
+function Horaire(){
     const selectHoraireDebut= document.querySelector("#inputHoraireDeb");
     const selectHoraireFin= document.querySelector("#inputHoraireFin");
     horaires.map((o) => {
@@ -52,7 +52,7 @@ function insertTime(){
     })
 }
 
-let laboratories= [
+let laboratoires= [
     "CIRI - U1111 UMR5308",
     "CRAL - UMR 5574",
     "EVS - UMR 5600",
@@ -81,9 +81,9 @@ let laboratories= [
     "CSSI"
 ];
 
-function insertLabo(){
+function Laboratoire(){
     const selectLabo= document.querySelector('#inputLabo');
-    laboratories.map((o) => {
+    laboratoires.map((o) => {
         const option= document.createElement("option");
         option.value= o;
         option.textContent= o;
@@ -107,13 +107,13 @@ const demandes=[
     "Extension de quota"
 ];
 
-function insertRequest(){
-    const demande= document.querySelector("#inputDem");
+function Demande(){
+    const selectDemande= document.querySelector("#inputDemande");
     demandes.map((o) => {
         const option= document.createElement("option");
         option.value= o;
         option.textContent= o;
-        demande.appendChild(option);
+        selectDemande.appendChild(option);
     })
 }
 
@@ -128,17 +128,17 @@ const plateaux=[
     "intégration (Ubuntu, Centos, Debian)"
 ];
 
-function insertPlat(){
-    const plateau= document.querySelector("#inputPlat");
+function Plateau(){
+    const selectPlateau= document.querySelector("#inputPlateau");
     plateaux.map((o) => {
         const option= document.createElement("option");
         option.value= o;
         option.textContent= o;
-        plateau.appendChild(option);
+        selectPlateau.appendChild(option);
     })
 }
 
-const entities=[
+const entités=[
     "Laboratoire Monod",
     "Laboratoire Descartes",
     "Département Monod",
@@ -146,17 +146,17 @@ const entities=[
     "Entité hors ENS-Lyon"
 ];
 
-function insertEntity(){
-    const entity= document.querySelector("#inputEntity");
-    entities.map((o) => {
+function Entité(){
+    const selectEntité= document.querySelector("#inputEntite");
+    entités.map((o) => {
         const option= document.createElement("option");
         option.value= o;
         option.textContent= o;
-        entity.appendChild(option);
+        selectEntité.appendChild(option);
     })
 }
 
-const Adminstatut=[
+const statutAdmins=[
     "Professeur",
     "MCF",
     "DR",
@@ -167,34 +167,34 @@ const Adminstatut=[
     "Etudiant"
 ];
 
-function insertStatut(){
-    const adminStatut= document.querySelector("#inputAdminStatut");
-    Adminstatut.map((o) => {
+function StatutAdmin(){
+    const selectStatut= document.querySelector("#inputStatutAdmin");
+    statutAdmins.map((o) => {
         const option= document.createElement("option");
         option.value= o;
         option.textContent= o;
-        adminStatut.appendChild(option);
+        selectStatut.appendChild(option);
     })
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     
     if (document.querySelector('#inputHoraireDeb') && document.querySelector("#inputHoraireFin")) {
-        insertTime();
+        Horaire();
     }
     if (document.querySelector('#inputLabo')) {
-        insertLabo();
+        Laboratoire();
     }
-    if (document.querySelector('#inputDem')) {
-        insertRequest();
+    if (document.querySelector('#inputDemande')) {
+        Demande();
     }
-    if (document.querySelector('#inputPlat')) {
-        insertPlat();
+    if (document.querySelector('#inputPlateau')) {
+        Plateau();
     }
-    if (document.querySelector('#inputEntity')) {
-        insertEntity();
+    if (document.querySelector('#inputEntite')) {
+        Entité();
     }
-    if (document.querySelector('#inputAdminStatut')) {
-        insertStatut();
+    if (document.querySelector('#inputStatutAdmin')) {
+        StatutAdmin();
     }
 });

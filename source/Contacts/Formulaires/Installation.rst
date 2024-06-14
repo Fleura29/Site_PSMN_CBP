@@ -15,13 +15,13 @@ Demande d'installation ou de mise à jour d'un logiciel
 
 Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, d'obtenir les droits d'usage du logiciel (achat ou inscription, et téléchargement). 
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
 
     .. raw:: html
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -39,7 +39,7 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                         <input type="text" class="form-control form-style" id="inputEquipe" name="equipe">
                     </div>
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
                         <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" name="labo" value="" required>
@@ -66,7 +66,7 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
             <div class="border-top border-secondary-subtle mt-1 pt-1">
                 <u>Logiciel :</u>
                 <div class="row mt-1">
-                    <div class="col col-12 col-sm-6">
+                    <div class="col-12 col-sm-6">
                         <div class="mb-2">
                             <label for="inputType">Type de demande*</label>
                             <select class="form-select form-style" id="inputType" style="padding: 0 0 0 11px;" name="type" required>
@@ -88,7 +88,7 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
                         </div>
                         
                     </div>
-                    <div class="col col-12 col-sm-6">
+                    <div class="col-12 col-sm-6">
                         <div class="mb-2" >
                             <label for="inputVersion">Version*</label>
                             <input type="text" class="form-control form-style"  id="inputVersion" name="version" required>

@@ -1,17 +1,18 @@
-var numbers = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"];
-var num1 = Math.floor(Math.random() * 10);
-var num2 = Math.floor(Math.random() * 10);
+let numbers = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"];
+let num1 = Math.floor(Math.random() * 10);
+let num2 = Math.floor(Math.random() * 10);
 document.querySelector('#human-question').innerHTML = "Quel est le résultat de " + numbers[num1] + " plus " + numbers[num2] + " ? ";
 
 const formulaire= document.querySelector('#userForm');
-var lien="";
+let lien="";
 
 switch(formulaire.dataset.nom){
     case 'cafe':
         lien= "EnvoiFormCafe.php";
         break;
     case 'salleTP':
-        lien= EnvoiFormTP.php
+        lien= "EnvoiFormTP.php";
+        break;
 }
 
 formulaire.addEventListener('submit', function(event) {
@@ -32,11 +33,13 @@ formulaire.addEventListener('submit', function(event) {
         .then(response => response.json())
         .then(data => {
             const messageDiv= document.createElement("div");
+
             if (data.status === "success") {
                 messageDiv.style.color = "green";
             } else {
                 messageDiv.style.color = "red";
             }
+            
             messageDiv.textContent = data.message;
             const bloc= document.querySelector("#bloc");
             bloc.append(messageDiv);

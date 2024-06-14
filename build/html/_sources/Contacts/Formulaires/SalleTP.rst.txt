@@ -11,13 +11,13 @@ Réservation de la salle de TP numériques du CBP
 
         N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
     
     .. raw:: html
 
         <form id="userForm" method="post" class="ms-2 me-2" data-nom="salleTP">
             <div class="row">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -47,7 +47,7 @@ Réservation de la salle de TP numériques du CBP
                         </select>
                     </div>
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputDateDeb">Date de début*</label>
                         <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputDateDeb" name="datedeb"  value="" required>

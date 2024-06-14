@@ -1,10 +1,10 @@
-var numbers = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"];
-var num1 = Math.floor(Math.random() * 10);
-var num2 = Math.floor(Math.random() * 10);
+let numbers = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"];
+let num1 = Math.floor(Math.random() * 10);
+let num2 = Math.floor(Math.random() * 10);
 document.querySelector('#human-question').innerHTML = "Quel est le résultat de " + numbers[num1] + " plus " + numbers[num2] + " ? ";
 
 const formulaire= document.querySelector('#userForm');
-var lien="";
+let lien="";
 
 switch(formulaire.dataset.nom){
     case 'cafe':

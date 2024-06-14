@@ -5,7 +5,7 @@ Liste de diffusion
 
 Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pascal, il vous suffit de remplir le formulaire suivant : 
 
-.. container:: pt-2 border border-secondary-subtle mb-2
+.. container:: border-form mb-2
     
     Demande d'inscription à la liste de diffusion CBP
 
@@ -13,7 +13,7 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
 
         <form class="ms-2 me-2">
             <div class="row">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -23,7 +23,7 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
                         <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
                     </div>
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputMail">Email*</label>
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
@@ -42,7 +42,7 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
 
 Si vous souhaitez vous **désinscrire**, merci de valider le formulaire suivant : 
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form 
     
     Désinscription de la liste de diffusion CBP
 

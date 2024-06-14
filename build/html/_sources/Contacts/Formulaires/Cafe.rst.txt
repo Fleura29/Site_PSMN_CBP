@@ -5,13 +5,13 @@ Suggérer une question ou un thème pour le café du Jeudi
 
 Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentiellement le Jeudi. 
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
 
     .. raw:: html
 
         <form id="userForm" method="post" class="ms-2 me-2" data-nom="cafe">
             <div class="row ">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -25,7 +25,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
                         <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" name="labo" value="" required>
@@ -53,7 +53,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
             <div id="bloc" class="text-center"></div>
             <script src="../../_static/Formulaires/Formulaires.js"></script>
 
-            <div class="text-center">
+            <div class="text-center mt-2">
                 <button type="submit" value="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   

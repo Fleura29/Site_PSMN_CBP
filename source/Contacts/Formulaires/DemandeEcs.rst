@@ -9,13 +9,13 @@ Dans le cadre des projets de recherche, le CBP peut fournir aux chercheurs de l'
 
 Cette expertise implique un travail collaboratif entre les chercheurs impliqués dans les projets et les ingénieurs du CBP.
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
 
     .. raw:: html
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -29,7 +29,7 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
                         <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" name="labo" value="" required>

@@ -291,3 +291,7 @@ a.headerlink{
     float: right;
 }
 
+.border-form{
+    padding-top: 0.5rem;
+    border: 1px solid #C4C8CB;
+}

@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $autre = htmlspecialchars($_POST["autre"]);
 
     $to = "charlotte.ruiz@hotmail.fr"; 
-    $subject = "Suggestion de question ou thème pour le café du jeudi";
+    $subject = "Suggestion de question ou theme pour le cafe du jeudi";
     
     $message = "Mail reçu de : $nom $prenom pour une suggestion de question ou thème pour le café du jeudi\n\n";
     $message .= "Email : $email\n";

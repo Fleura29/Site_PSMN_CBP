@@ -236,8 +236,8 @@ Coordination ENS de Lyon : Carine Michel
     :class: img-fluid img-float pe-2
     :alt: Logo Total
 
-`Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
-Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal` |br|
+**Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
+Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** |br|
 Coordination ENS de Lyon : Philippe Sautet & Carine Michel
 
 .. _ens-solvay:
@@ -436,7 +436,7 @@ Partenaire ENS de Lyon Elise Dumont: `description <http://www.agence-nationale-r
 .. container:: d-flex mb-3
 
     .. image:: ../_static/img_projets/statocean.jpg
-        :alt: Logo FSCF
+        :alt: Image statocean
 
     .. container::
 

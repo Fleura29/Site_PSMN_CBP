@@ -1,13 +1,13 @@
 Suggérer une entrée de F.A.Q.
 =============================
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
 
     .. raw:: html
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -21,7 +21,7 @@ Suggérer une entrée de F.A.Q.
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
                         <select class="form-select form-style" id="inputLabo" style="padding: 0 0 0 10px;" name="labo" value="" required>
@@ -38,13 +38,13 @@ Suggérer une entrée de F.A.Q.
             <div class="border-top border-secondary-subtle mt-1 pt-1">
                 <u>Problème :</u>
                 <div class="row mt-1">
-                    <div class="col col-12 col-sm-6">
+                    <div class="col-12 col-sm-6">
                         <div class="mb-2">
                             <label for="inputCategorie">Catégorie*</label>
                             <input type="text" class="form-control form-style" id="inputCategorie" name="categorie" required>
                         </div>
                     </div>
-                    <div class="col col-12 col-sm-6">
+                    <div class="col-12 col-sm-6">
                         <div class="mb-2" >
                             <label for="inputProbleme">Problème*</label>
                             <input type="text" class="form-control form-style"  id="inputProbleme" name="probleme" required>

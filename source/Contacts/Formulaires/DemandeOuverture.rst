@@ -5,13 +5,13 @@ Le Centre Blaise Pascal dispose de plusieurs équipements en libre-service, leur
 
 Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante : votre identifiant et votre mot de passe ENS vous permettront de vous connecter sans soucis à ces ressources. 
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
 
     .. raw:: html
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -30,7 +30,7 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
                     </div>
                     
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire ou Département*</label>
                         <input type="text" class="form-control form-style" id="inputLabo" name="labo" required>

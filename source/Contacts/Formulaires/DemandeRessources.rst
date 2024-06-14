@@ -20,13 +20,13 @@ Demande d'accès aux ressources du PSMN
         Fermeture pour raison de sécurité : Un compte peut être bloqué, fermé ou banni, à tout moment et 
         sans préavis sur décision de la Direction du PSMN et/ou du RSSI de l'ENS de Lyon. 
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
 
     .. raw:: html
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -54,8 +54,7 @@ Demande d'accès aux ressources du PSMN
                         <input type="text" class="form-control form-style" style="padding: 0 0 0 10px;"  id="inputAutreLabo" name="autreLabo">
                     </div>
                 </div>
-                <div class="col col-12 col-sm-6">
-                    
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputEquipe">Équipe (ou Groupe, Projet)</label>
                         <input type="text" class="form-control form-style" id="inputEquipe" name="equipe">

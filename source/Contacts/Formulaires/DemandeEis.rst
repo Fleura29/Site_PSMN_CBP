@@ -9,13 +9,13 @@ Demande d'expertise en informatique scientifique
 
         Toutes les personnes non permanentes (étudiantes, stagiaires, doctorantes, …) doivent IMPERATIVEMENT être parrainées par une personne permanente de l'établissement, soit dans votre laboratoire de recherche, soit dans votre département d'enseignement. 
 
-.. container:: pt-2 border border-secondary-subtle 
+.. container:: border-form
 
     .. raw:: html
 
         <form class="ms-2 me-2">
             <div class="row ">
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputNom" >Nom*</label>
                         <input type="text" class="form-control form-style" id="inputNom" name="nom" required>
@@ -34,7 +34,7 @@ Demande d'expertise en informatique scientifique
                     </div>
                     
                 </div>
-                <div class="col col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <div class="mb-2">
                         <label for="inputDemande">Demande*</label>
                         <select class="form-select form-style" id="inputDemande" style="padding: 0 0 0 10px;" name="demande" required>
