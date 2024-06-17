@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $datefin = htmlspecialchars($_POST["datefin"]);
     $horairefin = htmlspecialchars($_POST["horairefin"]);
     $nbparticipants = htmlspecialchars($_POST["nbparticipants"]);
-    $autre = htmlspecialchars($_POST["autre"]);
+    $autre = htmlspecialchars($_POST["renseignements"]);
 
     $to = "charlotte.ruiz@hotmail.fr"; 
     $subject = "Reservation salle de TP";

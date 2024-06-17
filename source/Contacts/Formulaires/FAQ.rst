@@ -5,7 +5,7 @@ Suggérer une entrée de F.A.Q.
 
     .. raw:: html
 
-        <form class="ms-2 me-2">
+        <form id="userForm" method="post" class="ms-2 me-2" data-nom="faq">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -53,14 +53,22 @@ Suggérer une entrée de F.A.Q.
                 </div>
 
                 <div class="form-floating mt-2">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="textAreaResol" style="height: 100px; border-color: #E69645;" name="resolution" required></textarea>
+                    <textarea class="form-control textArea" id="textAreaResol" name="resolution" required></textarea>
                     <label for="textAreaResol">Résolution proposée :*</label>
                 </div>
             </div>
             
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
-            <div class="text-center">
+            <div class="d-flex justify-content-center">
+                <label class="me-1" for="human" id="human-question"></label>
+                <input id="human-answer" type="text"/> 
+            </div>
+
+            <div id="bloc" class="text-center"></div>
+            <script src="../../_static/Formulaires/Formulaires.js"></script>
+
+            <div class="text-center mt-2">
                 <button type="submit" class="btn mb-4" style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   

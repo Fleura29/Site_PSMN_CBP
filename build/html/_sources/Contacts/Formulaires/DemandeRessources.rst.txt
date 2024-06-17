@@ -24,7 +24,7 @@ Demande d'accès aux ressources du PSMN
 
     .. raw:: html
 
-        <form class="ms-2 me-2">
+        <form id="userForm" method="post" class="ms-2 me-2" data-nom="dar">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -40,8 +40,8 @@ Demande d'accès aux ressources du PSMN
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
                     </div>
                     <div class="mb-2">
-                        <label for="inputBirthDate">Date de naissance*</label>
-                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputBirthDate"  value="" required>
+                        <label for="inputDateNaiss">Date de naissance*</label>
+                        <input type="date" class="form-control form-style" style="padding: 0 0 0 10px;" id="inputDateNaiss" name="datenaiss"  value="" required>
                     </div>
                     <div class="mb-2">
                         <label for="inputLabo">Laboratoire*</label>
@@ -88,12 +88,12 @@ Demande d'accès aux ressources du PSMN
             </div>
 
             <div class="form-floating mt-2">
-                <textarea class="form-control" id="textAreaDescr" style="height: 100px; border-color: #E69645;" name="textAreaDescr"></textarea>
+                <textarea class="form-control textArea" id="textAreaDescr" name="descriptif"></textarea>
                 <label for="textAreaDescr">Descriptif du domaine scientifique :</label>
             </div>
             <p class="mt-2" style="margin-bottom: 0;">Pour les membres des laboratoires hors du site de Gerland: </p>
             <div class="form-floating " style="overflow-x: auto;"> 
-                <textarea class="form-control" id="textAreaJust" style="height: 100px; border-color: #E69645;"></textarea>     
+                <textarea class="form-control textArea" id="textAreaJust" name="justifier"></textarea>     
                 <label for="textAreaJust">justifier cette demande</label>
             </div>
 
@@ -115,7 +115,15 @@ Demande d'accès aux ressources du PSMN
                 </div>
             </div>
 
-            <div class="text-center">
+            <div class="d-flex justify-content-center">
+                <label class="me-1" for="human" id="human-question"></label>
+                <input id="human-answer" type="text"/> 
+            </div>
+
+            <div id="bloc" class="text-center"></div>
+            <script src="../../_static/Formulaires/Formulaires.js"></script>
+
+            <div class="text-center mt-2">
                 <button type="submit" class="btn mb-4" style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   

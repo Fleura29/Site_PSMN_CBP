@@ -13,7 +13,7 @@ Demande d'expertise en informatique scientifique
 
     .. raw:: html
 
-        <form class="ms-2 me-2">
+        <form id="userForm" method="post" class="ms-2 me-2" data-nom="eis">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -61,17 +61,25 @@ Demande d'expertise en informatique scientifique
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control textarea" id="textAreaProjet" required></textarea>
+                <textarea class="form-control textarea" id="textAreaProjet" name="projet" required></textarea>
                 <label for="textAreaProjet">Projet de recherche :*</label>
             </div>
             <div class="form-floating mt-3"> 
-                <textarea class="form-control textarea" id="textAreaDescription" name="textAreaDescription" required></textarea>     
+                <textarea class="form-control textarea" id="textAreaDescription" name="description" required></textarea>     
                 <label for="textAreaDescription">Description de l'expertise sollicitée :*</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
-            <div class="text-center">
+            <div class="d-flex justify-content-center">
+                <label class="me-1" for="human" id="human-question"></label>
+                <input id="human-answer" type="text"/> 
+            </div>
+
+            <div id="bloc" class="text-center"></div>
+            <script src="../../_static/Formulaires/Formulaires.js"></script>
+
+            <div class="text-center mt-2">
                 <button type="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   

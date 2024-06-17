@@ -20,7 +20,7 @@ ou poser une question...
 
     .. raw:: html
 
-        <form class="ms-2 me-2">
+        <form id="userForm" method="post" class="ms-2 me-2" data-nom="probleme">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -56,13 +56,21 @@ ou poser une question...
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control" id="textAreaCommentaire" style="height: 100px; border-color: #E69645;" name="commentaire"></textarea>
+                <textarea class="form-control textArea" id="textAreaCommentaire" name="commentaire"></textarea>
                 <label for="textAreaCommentaire">Commentaire</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
-            <div class="text-center">
+            <div class="d-flex justify-content-center">
+                <label class="me-1" for="human" id="human-question"></label>
+                <input id="human-answer" type="text"/> 
+            </div>
+
+            <div id="bloc" class="text-center"></div>
+            <script src="../../_static/Formulaires/Formulaires.js"></script>
+
+            <div class="text-center mt-2">
                 <button type="submit" class="btn mb-4" style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   

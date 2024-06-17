@@ -78,8 +78,8 @@ Réservation de la salle de TP numériques du CBP
             <p class="fs-12"> Toutes nos salles sont désormais équipées de vidéo-projecteurs fixes.</p>
             
             <div class="form-floating">
-                <textarea class="form-control" id="TextAreaAutre" style="height: 100px; border-color: #E69645;"></textarea>
-                <label for="TextAreaAutre">Autres renseignements</label>
+                <textarea class="form-control textArea" id="textAreaAutre" name="renseignements"></textarea>
+                <label for="textAreaAutre">Autres renseignements</label>
             </div>
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
             <div class="container text-center">

@@ -40,8 +40,8 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control" id="TextAreaQuestion" placeholder="Leave a comment here" style="height: 100px; border-color: #E69645;" name="question" required></textarea>
-                <label for="TextAreaQuestion">Question ou thème : *</label>
+                <textarea class="form-control textArea" id="textAreaQuestion" name="question" required></textarea>
+                <label for="textAreaQuestion">Question ou thème : *</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>

@@ -13,6 +13,27 @@ switch(formulaire.dataset.nom){
     case 'salleTP':
         lien= "EnvoiFormTP.php";
         break;
+    case 'ecs':
+        lien= "EnvoiFormEcs.php";
+        break;
+    case 'eis':
+        lien= "EnvoiFormEis.php";
+        break;
+    case 'doce':
+        lien= "EnvoiFormDemandeOuverture.php";
+        break;
+    case 'dar':
+        lien= "EnvoiFormDemandeRessources.php";
+        break;
+    case 'faq':
+        lien= "EnvoiFormFAQ.php";
+        break;
+    case 'dimaj':
+        lien= "EnvoiFormDimaj.php";
+        break;
+    case 'probleme':
+        lien= "EnvoiFormProbleme.php";
+        break;
 }
 
 formulaire.addEventListener('submit', function(event) {

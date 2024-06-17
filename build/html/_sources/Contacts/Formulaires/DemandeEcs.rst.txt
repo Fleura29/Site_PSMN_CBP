@@ -13,7 +13,7 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
 
     .. raw:: html
 
-        <form class="ms-2 me-2">
+        <form id="userForm" method="post" class="ms-2 me-2" data-nom="ecs">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -23,7 +23,7 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
                     <div class="mb-2">
                         <label for="inputPrenom">Prénom*</label>
                         <input type="text" class="form-control form-style" id="inputPrenom" name="prenom" required>
-                    </div>
+                    </div> 
                     <div class="mb-2">
                         <label for="inputMail">Email*</label>
                         <input type="email" class="form-control form-style" id="inputMail" name="email" required>
@@ -54,7 +54,15 @@ Cette expertise implique un travail collaboratif entre les chercheurs impliqués
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
-            <div class="text-center">
+            <div class="d-flex justify-content-center">
+                <label class="me-1" for="human" id="human-question"></label>
+                <input id="human-answer" type="text"/> 
+            </div>
+
+            <div id="bloc" class="text-center"></div>
+            <script src="../../_static/Formulaires/Formulaires.js"></script>
+
+            <div class="text-center mt-2">
                 <button type="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   

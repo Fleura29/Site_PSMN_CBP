@@ -70,7 +70,6 @@ body{
 }
 
 a:hover{
-    
     text-decoration: underline;
 }
 
@@ -151,16 +150,13 @@ h2{
 
 h3{
     font-size: 1.1rem;
-    text-decoration: underline;
-    margin-left: 5px;
+    border-bottom: 1px solid;
+    width: max-content ;
 }
 
-.btn:hover{
-    background-color: #bdbdbd;
-    border-color: #bdbdbd;
-}
+/*---------- Taille de police ----------*/
 
-.txt_footer{
+.fs-11{
     font-size: 11px;
 }
 
@@ -230,6 +226,11 @@ th, td{
     border-color: #E69645;
 }
 
+.btn:hover{
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+}
+
 /*---------- role RST ----------*/
 
 .underline {
@@ -294,4 +295,9 @@ a.headerlink{
 .border-form{
     padding-top: 0.5rem;
     border: 1px solid #C4C8CB;
+}
+
+.textArea{
+    height: 100px; 
+    border-color: #E69645;
 }
