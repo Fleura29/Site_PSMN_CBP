@@ -7,7 +7,7 @@ Local opening of the DNA double-helix is required in many fundamental biological
 
 Source code of Twist-DNA are available :download:`here <../../../_static/twist-dna_1.1.tar.gz>`
 
-Data for the genomes of E. coli and B. subtilis in physiological conditions (Temperature 37C, Salt concentration 0.1 M and Superhelical density -0.06) are available :download:`here <../../../_static/data_ecoli_bsubtilis.tar.gz>` in BED format.
+Data for the genomes of E. coli and B. subtilis in physiological conditions (Temperature 37C, Salt concentration 0.1 M and Superhelical density -0.06) are available `here <#>`_ in BED format.
 
 A Twist-DNA wrapper for Galaxy has been developed by Björn Grüning. It is integrated in the `Galaxy Toolshed <http://testtoolshed.g2.bx.psu.edu/repository?repository_id=dfa99e996b65c815>`_ and is also available :download:`here <../../../_static/twistdna_galaxywrapper.zip>`.
 

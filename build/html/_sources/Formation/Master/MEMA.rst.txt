@@ -31,7 +31,7 @@ Master Erasmus Mundus AtoSiM
 
 ..  container:: text-center
 
-    .. container::  w-75 d-inline-block bg-warning-subtle pt-3 rounded fs-13
+    .. container:: d-inline-block bg-warning-subtle pt-3 rounded fs-13
 
             **AtoSiM Students - Support:** |br|
             `Principles of simulation in Physics <#>`_ |br|

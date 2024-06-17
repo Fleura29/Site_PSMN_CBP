@@ -118,7 +118,7 @@ Lancement de tous les tests :
     while [ $i -le 919 ]
     do
     if [ -f test$(printf "%03d" $i).com ]; then
-        time g09 test$(printf "%03d" $i).com 2> test$(printf "%03d" $i).time
+    time g09 test$(printf "%03d" $i).com 2> test$(printf "%03d" $i).time
     fi
     i=$(($i+1))
     done
