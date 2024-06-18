@@ -149,9 +149,10 @@ h2{
 }
 
 h3{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border-bottom: 1px solid;
-    width: max-content ;
+    width: max-content;
+    font-weight: bold;
 }
 
 /*---------- Taille de police ----------*/

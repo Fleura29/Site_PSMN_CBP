@@ -6,6 +6,9 @@ Calendrier prévisionnel des Évolutions
 .. role:: line
     :class: line
 
+.. role:: line-bold
+    :class: line-bold
+
 Évolutions 2023
 ---------------
 
@@ -241,7 +244,7 @@ Novembre à Décembre 2019 :
     * :line:`des files d'attente M6142 C et D` **OK le 26/11/2019** 
     * :line:`des compilateurs e5-2670comp[1-2]` **OK le 27/11/2019** 
     * :line:`des files d'attente h48-E5 (partiel) et E5-2670 F (partiel)` **OK le 28/11/2019**
-    * :line:`des compilateurs m6142comp[1-2] vers **Lake**` **OK le 02/12/2019**
+    * :line:`des compilateurs m6142comp[1-2] vers` :line-bold:`Lake` **OK le 02/12/2019**
 * nouveau scratch **Bio** sur **Lake** : **OK (28/11/2019)**
 * nouvelles frontales, **cl6242comp1** et **cl6242comp2** : **OK (27/11/2019)**
 * arrêt/redémarrage des serveurs de visualisation pour changement de carte infiniband (dual connect)
@@ -607,7 +610,7 @@ Afin de préparer le matériel **Équip@méso** dont la livraison est terminée,
 
 **Semaine 25/2013**
 
-* Lundi 17 juin 2013, arrêt des serveurs **dl165** :line:`et **r410 séquentiels** (r410lin100 à 106)`.
+* Lundi 17 juin 2013, arrêt des serveurs **dl165** et :line-bold:`r410 séquentiels` :line:`(r410lin100 à 106)`.
 * Lundi 17 juin 2013, arrêt des serveurs **x41z** et de **x41zcomp**.
 * Mardi 18 juin 2013, re-démarrage des **dl165** si tout se passe bien.
 * Mardi 18 juin 2013, re-démarrage d'une dizaine de serveurs **x41z** si tout va bien.
@@ -618,10 +621,10 @@ Afin de préparer le matériel **Équip@méso** dont la livraison est terminée,
 
 **Semaine 20~22/2013**
 
-* :line:`Re-organisation des interconnexions infiniband des queues **sl390** et **c6100**`.
+* :line:`Re-organisation des interconnexions infiniband des queues` :line-bold:`sl390 et c6100`.
 * Installation du second cube "allée chaude" = arrêt des **sl390**, **c6100** et **sl230**.
-* :line:`Déplacement physique des **dl165**`.
-* :line:`Déplacement physique des **r410-48** (séquentiel)`.
+* :line:`Déplacement physique des` :line-bold:`dl165`. 
+* :line:`Déplacement physique des` :line-bold:`r410-48` :line:`(séquentiel)`.
 
 **Semaine(s) 16~24/2013**
 

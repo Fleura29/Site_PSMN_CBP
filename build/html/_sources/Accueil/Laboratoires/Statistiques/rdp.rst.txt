@@ -1,14 +1,14 @@
 .. _rdp:
 
-Laboratoire d'Informatique du Parallélisme (LIP - UMR 5668)
-===========================================================
+Laboratoire Reproduction et Développement des Plantes (RDP - UMR 5667)
+======================================================================
 
-* `http://www.ens-lyon.fr/LIP <http://www.ens-lyon.fr/LIP>`_
+* http://www.ens-lyon.fr/RDP/
 
 Informations
 ------------
 
-Représentant et responsable de l'ouverture des comptes: Jean-Yves L'EXCELLENT.
+Représentant et responsable de l'ouverture des comptes: Jeremy JUST.
 
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+
 | Année                                               |  2017  | 2016 | 2015 | 2014 | 2013 | 2012 | 2011 | 2010 |      | 2013-2016 |
@@ -31,7 +31,7 @@ Représentant et responsable de l'ouverture des comptes: Jean-Yves L'EXCELLENT.
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
 | Financement (en % du financement mutualisé total)   |        |  0   |  1   |  2   |  2   |  2   |  2   |  2   |      |    1,5    |       
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
-| Financement (en % du financement total)             |        |  0   |  1   |  1   |  1   |  1   |  1   |  1   |      |    2      |       
+| Financement (en % du financement total)             |        |  0   |  1   |  1   |  1   |  1   |  1   |  1   |      |    1      |       
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
 |                                                     |        |      |      |      |      |      |      |      |      |           |       
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
@@ -44,7 +44,7 @@ Représentant et responsable de l'ouverture des comptes: Jean-Yves L'EXCELLENT.
 
     .. image:: ../../../_static/statistiques/plot_by_labs_rdp.png
         :class: img-fluid
-        :alt: Graphique chimie
+        :alt: Graphique RDP
 
 Autres Projets
 --------------

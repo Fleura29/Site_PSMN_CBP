@@ -61,23 +61,21 @@ le “Tier-0”.
 .. container:: text-center mb-3
 
    .. image:: _static/tier_schema.png
-      :class: img-fluid
+      :class: img-fluid text-center
       :alt: Schéma
 
 Le Centre Blaise Pascal - CBP
 -----------------------------
 
-.. container::
+.. image:: _static/nuage_cbp.png
+   :class: img-fluid img-float
+   :alt: nuage_CBP
 
-   .. image:: _static/nuage_cbp.png
-      :class: img-fluid img-float
-      :alt: nuage_CBP
-
-   **Le Centre Blaise Pascal est une “maison de la modélisation”**, un lieu de conférences, de recherche et 
-   de formation liées à la modélisation numérique dans tous les domaines scientifiques. Le CBP dispose 
-   d'une infrastructure numérique complète (salle de TP, clusters de calcul, serveurs dédiés, forge 
-   logicielle, outils de travail collaboratif, etc.), des bureaux et des salles de séminaires et de 
-   conférences.
+**Le Centre Blaise Pascal est une “maison de la modélisation”**, un lieu de conférences, de recherche et 
+de formation liées à la modélisation numérique dans tous les domaines scientifiques. Le CBP dispose 
+d'une infrastructure numérique complète (salle de TP, clusters de calcul, serveurs dédiés, forge 
+logicielle, outils de travail collaboratif, etc.), des bureaux et des salles de séminaires et de 
+conférences.
 
 **La partie recherche fonctionne sur le modèle “hôtel à projets”** et offre un soutien pendant la durée 
 déterminée d'un projet scientifique. Nous accueillons dans nos murs des chercheurs et des groupes de 

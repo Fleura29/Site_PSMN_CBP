@@ -44,7 +44,7 @@ Représentants et responsables de l'ouverture des comptes: David LOFFREDA et Tao
 
 .. container:: text-center
 
-    .. image:: ../../../_static/plot_by_labs_chimie.png
+    .. image:: ../../../_static/statistiques/plot_by_labs_chimie.png
         :class: img-fluid
         :alt: Graphique chimie
 
@@ -53,14 +53,13 @@ Collaborations Industrielles
 
 * :ref:`Collaboration ENS-Total <ens-total>`
 
-.. container:: d-flex 
+.. image:: ../../../_static/img_projets/total.jpg
+    :class: img-float
+    :alt: Logo Total
 
-    .. image:: ../../../_static/img_projets/total.jpg
-        :alt: Logo Total
-
-    **Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
-    Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** 
-    Coordination ENS de Lyon : Philippe Sautet 
+**Développement d'un outil d'évaluation des paramètres du procédé mis en oeuvre par Hutchinson dans le cas des mélanges PP-EPDM 
+Développement d'un modèle mésoscale des phénomènes d'adhésion à l'interface des systèmes Silicone-Silane-Métal** 
+Coordination ENS de Lyon : Philippe Sautet 
 
 * :ref:`Collaboration ENS-Solvay <ens-solvay>`
 

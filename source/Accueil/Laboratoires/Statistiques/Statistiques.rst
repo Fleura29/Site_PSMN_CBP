@@ -7,38 +7,38 @@ Laboratoires de l'ENS de Lyon
 -----------------------------
 
 * :ref:`Laboratoire de Chimie (LCH) <lch>` 
-* `Laboratoire de Biologie Moléculaire de la Cellule (LBMC) <#>`_
-* `Insitut de Génomique Fonctionnelle (IGFL) <#>`_
-* `Laboratoire de Géologie de Lyon : Terre, Planète, Environnement (LGL-TPE) <#>`_
-* `Centre International de Recherche en Infectiologie (CIRI) <#>`_
-* `Centre de Recherche Astrophysique de Lyon (CRAL) <#>`_
-* `Laboratoire d'Informatique du Parallélisme (LIP) <#>`_
-* `Unité de Mathématiques Pures et Appliquées (UMPA) <#>`_
+* :ref:`Laboratoire de Biologie Moléculaire de la Cellule (LBMC) <lbmc>`
+* :ref:`Insitut de Génomique Fonctionnelle (IGFL) <igfl>`
+* :ref:`Laboratoire de Géologie de Lyon : Terre, Planète, Environnement (LGL-TPE) <lgltpe>`
+* :ref:`Centre International de Recherche en Infectiologie (CIRI) <ciri>`
+* :ref:`Centre de Recherche Astrophysique de Lyon (CRAL) <cral>`
+* :ref:`Laboratoire d'Informatique du Parallélisme (LIP) <lip>`
+* :ref:`Unité de Mathématiques Pures et Appliquées (UMPA) <umpa>`
 * `Laboratoire de Physique <#>`_
-* `Laboratoire Reproduction et Développement des Plantes (RDP) <#>`_
-* `Centre Blaise Pascal (CBP) <#>`_
-* `Institut d'Histoire des Représentations et des Idées dans les Modernités (IHRIM) <#>`_
-* `Centre de Résonnance Magnétique Nucléaire (CRMN) <#>`_
-* `Institut Rhônalpin des Sytèmes Complexes (IXXI) <#>`_
-* `Environnement Ville Société (EVS) <#>`_
+* :ref:`Laboratoire Reproduction et Développement des Plantes (RDP) <rdp>`
+* :ref:`Centre Blaise Pascal (CBP) <cbp>`
+* :ref:`Institut d'Histoire des Représentations et des Idées dans les Modernités (IHRIM) <ihrim>`
+* :ref:`Centre de Résonnance Magnétique Nucléaire (CRMN) <crmn>`
+* :ref:`Institut Rhônalpin des Sytèmes Complexes (IXXI) <ixxi>`
+* :ref:`Environnement Ville Société (EVS) <evs>`
 
 Laboratoires de l'UdL
 ---------------------
 
 .. container:: pt-2
 
-    * `Intitut Lumière Matière (ILM) <#>`_
-    * `Intitut des Sciences Analytiques (ISA) <#>`_
-    * `Insitut de Chimie et Biochimie Moléculaires et Supramoléculaires (ICBMS) <#>`_
-    * `Laboratoire de Mécanique des Fluides et d'Acoustique (LMFA) <#>`_
+    * :ref:`Intitut Lumière Matière (ILM) <ilm>`
+    * :ref:`Intitut des Sciences Analytiques (ISA) <isa>`
+    * :ref:`Insitut de Chimie et Biochimie Moléculaires et Supramoléculaires (ICBMS) <icbms>`
+    * :ref:`Laboratoire de Mécanique des Fluides et d'Acoustique (LMFA) <lmfa>`
     
 Partenaires Privées
 -------------------
 
 .. container:: pt-2
 
-    * `Sociétés de services informatiques <#>`_
-    * `Start-Up <#>`_
+    * :ref:`Sociétés de services informatiques <ssi>`
+    * :ref:`Start-Up <ppcsu>`
 
 Statistiques globales d'utilisation
 -----------------------------------

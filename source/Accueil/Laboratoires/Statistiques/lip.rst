@@ -3,7 +3,7 @@
 Laboratoire d'Informatique du Parallélisme (LIP - UMR 5668)
 ===========================================================
 
-* `http://www.ens-lyon.fr/LIP <http://www.ens-lyon.fr/LIP>`_
+* http://www.ens-lyon.fr/LIP
 
 Informations
 ------------
@@ -44,7 +44,7 @@ Représentant et responsable de l'ouverture des comptes: Jean-Yves L'EXCELLENT.
 
     .. image:: ../../../_static/statistiques/plot_by_labs_lip.png
         :class: img-fluid
-        :alt: Graphique chimie
+        :alt: Graphique LIP
 
 Autres Projets
 --------------
