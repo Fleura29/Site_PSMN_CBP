@@ -1,6 +1,0 @@
-Réservation salle de TP
-=======================
-
-.. toctree::
-      :maxdepth: 1
-      :caption: Accueil:Réservation salle de TP

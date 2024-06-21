@@ -1,0 +1,21 @@
+Fil des news
+============
+
+.. feed:: 
+    :rss: ../_static/news.rss
+    :title: Flux RSS des Nouvelles
+    :link: https://example.com/news.rss
+
+    .. feed-entry::
+        :title: Première nouvelle
+        :author: Auteur 1
+        :date: 2024-06-19
+
+        Contenu de la première nouvelle.
+
+    .. feed-entry::
+        :title: Deuxième nouvelle
+        :author: Auteur 2
+        :date: 2024-06-18
+
+        Contenu de la deuxième nouvelle.

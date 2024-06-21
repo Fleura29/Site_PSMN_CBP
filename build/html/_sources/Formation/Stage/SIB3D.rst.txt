@@ -10,13 +10,13 @@ Proposition de stage de Master1/Master2 – 2013
 Sujet: Segmentation d'images biologiques 3D en utilisant du calcul parallèle
 ----------------------------------------------------------------------------
 
-.. image:: ../../_static/stage_rdp.png
-    :class: img-fluid img-float 
+.. image:: ../../_static/img_projets/stage_rdp.png
+    :class: img-float me-2
     :alt: Image rdp
 
 Un des problèmes clés dans l'imagerie quantitative en biologie est la segmentation correcte au niveau cellulaire des images confocales 3D des tissus. Les méthodes de segmentation de base que nous utilisons sont les méthodes watershed et level set combinés. Le but du stage est d'optimiser et donner une implémentation efficace de la méthode level set.
 
-Pour cela, l'étudiant est invité à :
+Pour cela, l'étudiant est invité à :
 
 ➢ étudier les méthodes d'analyse d'image que nous utilisons, |br|
 ➢ faire un revue des techniques d'optimisation et parallélisation, qui sont applicables à la méthode de segmentation level set |br|

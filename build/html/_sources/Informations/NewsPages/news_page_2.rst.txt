@@ -1,0 +1,17 @@
+.. _news_page_2:
+
+Page 2
+==================
+
+`S'abonner au fil des news (flux RSS) <../_static/news.rss>`_.
+
+.. include:: ../News/24-06-2024.rst
+.. include:: ../News/25-06-2024.rst
+
+.. only:: html
+
+   .. raw:: html
+
+      <div class="pagination">
+      <a href="news_page_1.html">Previous</a> 
+      </div>

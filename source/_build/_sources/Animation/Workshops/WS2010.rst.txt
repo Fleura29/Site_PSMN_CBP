@@ -1,0 +1,104 @@
+Workshops 2010
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. container:: 
+
+    .. image:: ../../_static/Animations/WS/computational_science.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image computational_science
+
+    `Computational science in Lyon <#>`_ |br|
+    Location : Salle de réunion LR6 C 023, Centre Blaise Pascal, ENS-Lyon, France |br|
+    **16 Novembre 2010** 
+    
+    * Paul FLEURAT-LESARD, Laboratoire de Chimie, Ecole Normale Supérieure de Lyon, France
+    * Claire LOISON , Laboratoire de Spectrométrie Ionique et Moléculaire, Université de Lyon / CNRS, France
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/magnetisme.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image magnetisme
+
+    **Théorie et modélisation pour le magnétisme: de la molécule au transport polarisé en spin** |br|
+    Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+    **November 3-5, 2010** |br|
+    `Website of the Workshop <http://gdrcodft.grenoble.cnrs.fr/Magnetisme2010/>`_
+
+    * Vincent Robert, ENS-Lyon, France
+    * Andres Saul, Centre Interdisciplinaire de Nanoscience de Marseille (CINAM), France
+    * Mebarek Alouani, IPCMS – Groupe d’Etude des Matériaux Métalliques, Strasbourg, France
+    * Cyrille Barreteau, CEA SACLAY, France
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/mhd.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image mhd
+
+    `Relativistic MHD and kinetic theory of jets and numerical simulations <#>`_ |br|
+    Location : Salle de réunion LR6 C 023, Centre Blaise Pascal, ENS-Lyon, France |br|
+    **18 Octobre 2010**
+
+    * Rolf Walder, Ecole Normale Superieure de Lyon, France
+    * Ken-Ichi NISHIKAWA, Center for space plasma and aeronomic research, |br|
+    University of Alabama in Huntsville and NSSTC - National Space Science and Technology Center, USA
+    
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/frontiers.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image frontiers
+
+    **Frontiers in Computational Astrophysics: Particles and Flames in Magnetic and Radiative Flows** |br|
+    Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+    **October 11, 2010 - October 15, 2010** |br|
+    `Website of the Workshop <http://fca2010.univ-lyon1.fr/>`_
+
+    * Jean-Piere Bertoglio, Ecole Centrale de Lyon, France
+    * Rolf Walder, Ecole Normale Superieure de Lyon, France
+    * Baraffe Isabelle, Ecole Normale Superieure de Lyon, France
+    * Chabrier Gilles, Ecole Normale Superieure de Lyon, France
+    * Alexei M. Khokhlov, University of Chicago, USA
+    * Ewald Mueller, Max Plank Institute for Astrophysics, Garching, Germany, Germany
+    * Richard Klein, University of California, Berkeley, USA
+ 
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/complexdynamics.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image complexdynamics
+
+    **Complex dynamics of fluids in disordered and crowded environments** |br|
+    Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+    **June 28, 2010 - July 1, 2010** |br|
+    `Website of the Workshop <http://www.cecam.org/workshop-427.html>`_
+
+    * Vincent Krakoviack, Laboratoire de chimie, ENS Lyon, France
+    * Gerhard Kahl, Technical University of Vienna, Austria
+    * Daniele Coslovich, Technical University of Vienna, Austria
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/chromosomes.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image chromosomes
+
+    **Coarse-Grain Mechanics of DNA: Bases to Chromosomes** |br|
+    Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+    **June 1-4, 2010** |br|
+    `Website of the Workshop <http://www.cecam.org/workshop-416.html>`_
+
+    * Ralf Everaers, École Normale Supérieure de Lyon, France
+    * Helmut Schiessel, Instituut-Lorentz for Theoretical Physics, Leiden, The Netherlands
+    * John H. Maddocks, Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland

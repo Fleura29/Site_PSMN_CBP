@@ -105,7 +105,7 @@ Gestionnaire
 
         Ingénieur de Recherche - Pilote d'essai informatique |br|
         Courriel : Emmanuel.Quemener@ens-lyon.fr |br|
-        `Page perso <#>`_ |br|
+        :ref:`Page perso <ris>` |br|
         Téléphone : +33 (0)4 72 72 86 33 |br| 
         Langues: français, anglais
 

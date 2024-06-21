@@ -1,0 +1,115 @@
+Workshops 2011
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. container:: 
+
+    .. image:: ../../_static/Animations/WS/jcbp2.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image jcbp2
+
+    `Journées du Centre Blaise Pascal <#>`_ |br|
+    Location : Centre Blaise Pascal, ENS de Lyon, France |br|
+    **29 Novembre, 2011** 
+
+    * Paul Fleurat-Lessard, Laboratoire de Chimie, Ecole Normale Supérieure de Lyon, France
+    * Claire Loison, Laboratoire de Spectrométrie Ionique et Moléculaire, Université de Lyon / CNRS, France
+    * Cerasela Calugaru, CBP/PSMN, ENS Lyon, France
+ 
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/coarsegrain.png
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image coarsegrain
+
+    `Coarse-Grain Mechanics of DNA: Part II From Electrons to Oligomers <#>`_ |br|
+    Location : CECAM-HQ-EPFL, Lausanne, Switzerland |br|
+    **August 30, 2011 - September 2, 2011** 
+
+    * John H. Maddocks, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland
+    * Ralf Everaers, École Normale Supérieure de Lyon, France
+    * Helmut Schiessel, Instituut-Lorentz for Theoretical Physics, Leiden, The Netherlands
+ 
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/polymer.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image polymer
+
+    `Polymer Dynamics : Entanglements and Architectures <#>`_ |br|
+    Location : Capri, Italy |br|
+    **July 26, 2011 to July 29, 2011** 
+
+    * Ralf Everaers, École Normale Supérieure de Lyon, France
+    * Daniel Read, University of Leeds, United Kingdom
+    * Giovanni Ianniruberto, University Federico II, Naples, Italy
+    * Peter Olmsted, University of Leeds , United Kingdom
+    * Alexei Likhtman, University of Reading, United Kingdom
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/coarsegraining.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image coarsegraining
+
+    `Coarse-Graining Strategies and Methodologies for Polymeric and Biomolecular Assemblies <#>`_ |br|
+    Location : Centre Blaise Pascal, ENS de Lyon, France |br|
+    Launching event of the CFCAM-RA Node |br|
+    **July 5, 2011 - July 8, 2011**
+
+    * Barbara Capone, University of Vienna, Austria
+    * Christos N. Likos, University of Vienna, Austria
+    * Jean Pierre Hansen, University of Cambridge, United Kingdom
+    * Vincent Krakoviack, Ecole Normale Supérieure de Lyon, France
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/rareevents.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image rareevents
+
+    `Rencontre thématique : Calcul des évènements rares <#>`_ |br|
+    Location : Centre Blaise Pascal, ENS de Lyon, France |br|
+    Launching event of the GDR PHENIX |br|
+    **23 Juin, 2011** 
+
+    * Freddy Bouchet, Laboratoire de Physique, ENS Lyon, France
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/no_picture.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image no picture
+
+    `Workshop sur les systèmes à longue portée <#>`_ |br|
+    Location : Centre Blaise Pascal, ENS de Lyon, France |br|
+    **17 Juin, 2011** 
+
+    * Doris Folini, Laboratoire de Physique, ENS de Lyon, France	
+    * Rolf Walder, Laboratoire de Physique, ENS de Lyon, France	
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/jcbp1.jpg
+        :class: img-float pe-2
+        :width: 170px
+        :alt: Image jcbp1
+
+    `Journées du Centre Blaise Pascal <#>`_ |br|
+    Location : Centre Blaise Pascal, ENS de Lyon, France |br|
+    **14 Juin, 2011**
+
+    * Paul Fleurat-Lessard, Laboratoire de Chimie, ENS de Lyon, France
+    * Claire Loison, LaSIM, UCBL / CNRS, France
+    * Emmanuel Lévêque, PSMN/Laboratoire de Physique, ENS Lyon, France
+    * Ralf Everaers, CBP/Laboratoire de Physique, ENS Lyon, France
+    * Cerasela Calugaru, CBP/PSMN, ENS Lyon, France 

@@ -1,0 +1,73 @@
+Workshops 2019
+==============
+
+.. image:: ../../_static/Animations/WS/ecam.png
+    :class: img-float pe-3
+    :alt: Image Ecam
+
+**13/11/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+`4D Genome computation day <https://www.cecam-fr.org/agenda/evenements/4d-genome-computation-day.html>`_  
+
+* Pascal Carrivain (École Normale Supérieure de Lyon, CBP)
+* Cédric Vaillant (École Normale Supérieure de Lyon, CBP)
+* Ralf Everaers (École Normale Supérieure de Lyon, CBP)
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/ecam.png
+        :class: img-float pe-3
+        :alt: Image Ecam
+
+    **03/04/2019 au 05/04/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+    `ESDW: Topics in Classical MD <https://www.cecam.org/workshop-1802.html>`_ 
+
+* David Swenson (École Normale Supérieure de Lyon, CBP)
+* Ralf Everaers (École Normale Supérieure de Lyon, CBP)
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
+        :class: img-float pe-3
+        :alt: Logo Cecam-seul
+
+    **03/04/2019 au 05/04/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+    `Current Challenges in transport, growth and dissolution at mineral-fluid interfaces <https://www.cecam.org/workshop-1705.html>`_
+
+* Olivier Pierre-Louis (CNRS / Université Claude Bernard Lyon 1, France)
+* Fernando Bresme (Department of Chemistry, Imperial College London , United Kingdom)
+* Inna Kurganskaya (University of Bremen, Germany)
+* Dag Kristian Dysthe (University of Oslo, Norway)
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+        
+    .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
+        :class: img-fluid img-float pe-3
+        :alt: Logo Cecam-seul
+
+    **02/05/2019 au 04/05/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+    `Network analysis to elucidate natural system dynamics, diversity and performance <https://www.cecam.org/workshop-1753.html>`_
+
+* Claire Lesieur (CNRS, Univ. Lyon, France)
+* David Leitner (University of Nevada, Reno, USA)
+* Luisa Di Paola (University Campus Biomedico Rome, Italy)
+* Alessandro Giuliani (''Sapienza’ University of Rome, Italy)
+* Elena Papaleo (Danish Cancer Society Research Center - Denmark, Denmark)
+
+.. container:: mt-2 pt-2 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/logo_cecam-seul.png
+        :class: img-float pe-3
+        :alt: Logo Cecam-seul
+
+    **17/06/2019 au 21/06/2019 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+    `Recent developments in quantum dynamics, an E-CAM state-of-the-art workshop <https://www.cecam.org/workshop-1774.html>`_
+
+* Sara Bonella (CECAM@EPFL, Switzerland)
+* Aaron Kelly (Dalhousie University, Canada)
+* Florent Calvo (CECAM-FR-RA et CBP, France)
+* Cyril Falvo (Universite Paris Sud, France)

@@ -8,7 +8,7 @@ Equipements informatique
     :class: line
 
 La nouveauté, le portail Cloud\@CBP
-----------------------------------
+-----------------------------------
 
 Pour simplifier l'accès aux ressources du Centre Blaise Pascal, le portail `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ permet de **visualiser** et **sélectionner** les ressources disponibles.
 

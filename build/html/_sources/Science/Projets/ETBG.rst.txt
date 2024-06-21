@@ -37,12 +37,13 @@ Contribution of PSMN/CBP
 
 * le travail est aussi orienté vers la validation du code en définissant un jeu de tests et des cas de référence pour vérifier l’aptitude du code à approximer les divers termes intervenant dans l’équation. 
 
-* Nous sommes très reconnaissants pour les ressources informatiques et en calcul scientifique fournis par le PSMN. 
-
 .. container:: text-center
     
     .. image:: ../../_static/img_projets/freddy2.png
         :class: img-fluid
         :alt: Image freddy2
+
+* Nous sommes très reconnaissants pour les ressources informatiques et en calcul scientifique fournis par le PSMN. 
+
 
 

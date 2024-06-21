@@ -1,0 +1,89 @@
+Workshops 2014
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. container::
+
+    .. image:: ../../_static/Animations/WS/gdr_iqfa_atomesfroids.png
+        :class: img-float pe-3
+        :width: 180px
+        :alt: Image gdr_iqfa_atomesfroids
+
+    `Progresses in quantum information and quantum simulation <#>`_ |br|
+    *Colloque GDR IQFA et Atomes Froids* |br|
+    **November 17-19, 2014** - Amphithéâtre Mérieux, ENS Lyon, France 
+
+    * Pascal Degiovanni, ENS de Lyon
+    * Tommaso Roscilde, ENS de Lyon
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/cover_image.jpg
+        :class: img-float pe-3
+        :width: 150px
+        :alt: Image cover
+
+    `Organization and Dynamics of colloids at liquid surfaces and interfaces <#>`_ |br|
+    **16 October, 2014** - Centre Blaise Pascal, ENS Lyon, France |br|
+
+    * Olivier Pierre-Louis, ILM, Lyon
+    * Laurent Joly, ILM, Lyon
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/boomerang_hst.jpg
+        :class: img-float pe-3
+        :width: 150px
+        :alt: Image boomerang_hst
+
+    `Accretion and Outflows throughout the scales: from young stellar objects to AGNs <#>`_ |br|
+    **October 1-3, 2014** - Centre Blaise Pascal, ENS Lyon, France
+
+    * Benoît Commerçon, ENS de Lyon, France
+    * Christian Fendt, MPIA, Heidelberg, Germany
+    * Jonathan Ferreira, UJF, Grenoble, France
+    * Neil Vaytet, ENS deLyon, France
+    * Rolf Walder, ENS de Lyon, France
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/ps_in_raft.png
+        :class: img-float pe-3
+        :width: 170px
+        :alt: Image ps_in_raft
+
+    `Biological membranes: interpreting experiments using molecular simulations <#>`_ |br|
+    **June 30, 2014** - ENS Lyon, France 
+
+    * Luca Monticelli, IBCP Lyon
+ 
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/logo_equipameso.png
+        :class: img-float pe-3
+        :width: 150px
+        :alt: Image logo_equipameso
+
+    `Journées Scientifiques Equip@Meso 2014 : Méthodes Ab-initio <#>`_ |br|
+    **May 16, 2014** Centre Blaise Pascal, ENS Lyon, France 
+
+    * Marc Buffat, UCB Lyon 1
+    * Razvan Caracas, LGLTPE - ENS de Lyon
+    * Ralf Everaers, CBP - ENS de Lyon
+    * Michel Kern, Inria / MdS
+
+.. container:: mt-3 pt-3 border-top border-dark-subtle
+
+    .. image:: ../../_static/Animations/WS/silex.jpg
+        :class: img-float pe-3
+        :width: 160px
+        :alt: Image silex
+
+    `From Stone Age to Modern Physics: A story of crack patterns! <#>`_ |br|
+    **April 15, 2014** - Centre Blaise Pascal, ENS Lyon, France 
+
+    * Stéphane Santucci, Laboratoire de physique, ENS de Lyon
+    * Valérie Vidal, Laboratoire de physique, ENS de Lyon

@@ -7,8 +7,6 @@ Formation universitaire
         :maxdepth: 1
         :caption: Table des matières
 
-        Master/MEMA
-        Master/MNPC
         Stage
         Stage/SIB3D
 

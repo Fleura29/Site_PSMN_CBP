@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{  
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.orange-border {
+    background-color: #E69645;
+    height: 100%;
+    width: 30px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.orange-border.right {
+    left: auto;
+    right: 0;
+}
+
+/*---------- Menu ----------*/
+
+.dropdown .dropdown-menu{
+    display: none;
+}
+
+@media screen and (min-width:993px){
+    .dropdown:hover > .dropdown-menu{
+        display: block;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .dropend:hover > .dropdown-menu{
+        display: block;
+        position: absolute;
+        left: 70% !important;
+        top: 0;
+    }
+
+    .dropdown-menu{
+        border-width: 0 1px 1px;
+        border-color: #a5a5a5;
+        border-radius: 0;
+    }
+    .wid-header{
+        width: 25%;
+    }
+}
+
+.dropdown-item{
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: bold;
+    list-style-type: disc;
+}
+
+.dropdown-item:hover{
+    color: black;
+    background-color: #bbb;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.nav-link.dropdown-toggle::after {
+    vertical-align: .125em;
+}
+
+@media screen and (min-width: 1265px){
+    .contenu {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .navbar-collapse{
+        text-align: center;
+    }
+    .wid-header{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .orange-border {
+        width: 5px; 
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width:992px){
+    .wid-header{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .navbar-collapse{
+        text-align: center;
+    }
+    .btn-search{
+        position: absolute;
+        right: 0;
+    }
+    .input-search{
+        width: 150px;
+        position: absolute;
+        right: 50px;
+    }
+    .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
+        display: block;
+    }
+    .nav-link.dropdown-toggle{
+        font-size: 17px !important;
+    }
+    .dropdown-menu{
+        border: none;
+    }
+}
+
+@media screen and (min-width:992) and (max-width:1058px){
+    .input-search{
+        width: 50px;
+    }
+}
+
+/*---------- Titre ----------*/
+
+h1{
+    font-size: 1.7rem;
+    text-decoration: underline; 
+}
+
+h2{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #E69645;
+    margin-bottom: 0.9rem;
+    margin-left: 2px;
+}
+
+h3{
+    font-size: 1.2rem;
+    border-bottom: 1px solid;
+    width: max-content;
+    font-weight: bold;
+}
+
+/*---------- Taille de police ----------*/
+
+.fs-11{
+    font-size: 11px;
+}
+
+.fs-12{
+    font-size: 12px;
+}
+
+.fs-13{
+    font-size: 13px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-15{
+    font-size: 15px;
+}
+
+.header{
+    margin: 0;
+    background-color: orange;
+}
+
+/*---------- Tableau ----------*/
+
+table{
+    margin: 0 auto 10px;
+    width: 100%;
+}
+
+th{
+    background-color: #bdbdbd;
+}
+
+th, td{
+    border: solid 1px grey;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+/*---------- Formulaires ----------*/
+
+.form-style{
+    height: 23px;
+    border-color: #E69645;
+    font-size: 13px;
+}
+
+.textarea{
+    height: 100px; border-color: #E69645;
+}
+
+.checkbox{
+    border: solid #E69645 1px;
+    cursor: pointer;
+}
+
+/*---------- Recherche ----------*/
+
+.btn-search{
+    border-color: #bdbdbd; 
+}
+
+.input-search{
+    border-color: #E69645;
+}
+
+.btn:hover{
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+}
+
+/*---------- role RST ----------*/
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline-bold{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+.line-bold{
+    text-decoration: line-through;
+    font-weight: bolder;
+}
+
+.it-bold{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/*---------- Ajouts Sphinx ----------*/
+
+.highlighted{
+    background-color: #E69645;
+}
+
+a.headerlink{
+    display: none;
+}
+
+.disp{
+    display: none;
+}
+
+/*---------- Autres ----------*/
+
+.border-dashed{
+    border: dashed #E69645 1px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    padding-top: 0.7rem;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.img-float{
+    float: left;
+}
+
+.img-float-r{
+    float: right;
+}
+
+.border-form{
+    padding-top: 0.5rem;
+    border: 1px solid #C4C8CB;
+}
+
+.textArea{
+    border-color: #E69645;
+}

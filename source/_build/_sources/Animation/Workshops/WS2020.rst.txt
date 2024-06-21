@@ -1,0 +1,13 @@
+Workshops 2020
+==============
+
+.. image:: ../../_static/Animations/WS/ecam.png
+    :class: img-float pe-3
+    :alt: Image Ecam
+
+**20/02/2020 au 21/02/2020 - CECAM-FR-RA, Ecole Normale Supérieure de Lyon, France**
+
+http://www.cecam-fr.org/agenda/evenements/esdw-topics-in-classical-md-session-2
+
+* David Swenson (École Normale Supérieure de Lyon, CBP)
+* Ralf Everaers (École Normale Supérieure de Lyon, CBP)

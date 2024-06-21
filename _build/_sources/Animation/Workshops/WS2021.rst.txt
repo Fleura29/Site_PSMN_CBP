@@ -1,0 +1,14 @@
+Workshops 2021
+==============
+
+**14/11/2021 au 19/11/2021 - CompSysBio2021: Advanced Lecture Course on Computational Systems Biology, CECAM-FR-RA, ENS Lyon**
+
+* https://www.cecam.org/workshop-details/1042
+
+**25/10/2021 au 29/102021 - CCS 2021, CECAM-FR-RA**
+
+* https://ccs2021.univ-lyon1.fr/#HOME
+
+**19/08/2021 au 26/08/2021 - CEMRACS 2021 : Data assimilation and model reduction in high-dimensional problems, CECAM-FR-RA,**
+
+* https://www.cecam.org/workshop-details/1065

@@ -1,0 +1,10 @@
+.. _news_20240619:
+
+20240619
+========
+
+Détails de l'exemple de nouvelle ici.
+
+.. feed-entry::
+    :author: Charlotte
+    :date: 2024-06-19

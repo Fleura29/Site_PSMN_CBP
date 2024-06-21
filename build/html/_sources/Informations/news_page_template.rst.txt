@@ -1,0 +1,16 @@
+.. _news_page_{page_number}:
+
+Page {page_number}
+==================
+
+hey `S'abonner au fil des news (flux RSS) <../_static/news.rss>`_.
+
+{articles}
+
+.. only:: html
+
+   .. raw:: html
+
+      <div class="pagination">
+      {prev_button} {next_button}
+      </div>

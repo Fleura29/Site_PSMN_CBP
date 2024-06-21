@@ -26,7 +26,7 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
                     </div>
                     <div class="mb-2">
                         <label for="inputCourriel">Courriel de la personne marraine*</label>
-                        <input type="text" class="form-control form-style" id="inputCourriel" name="courriel" required>
+                        <input type="email" class="form-control form-style" id="inputCourriel" name="courriel" required>
                     </div>
                     
                     

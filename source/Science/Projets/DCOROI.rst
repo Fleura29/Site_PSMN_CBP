@@ -24,6 +24,7 @@ Intervention of PSMN/CBP
 ------------------------
 
 * prise en main du code, portage sur les architectures des serveurs du PSMN (écriture d’un nouveau makefile, compilation, tests de fonctionnement et de performance); installation de packages/librairies nécessaires dans le projet
+* prise en main du code MITgcm, portage sur les architectures des serveurs du PSMN (écriture d’un nouveau makefile, compilation, tests de fonctionnement et de performance); installation de packages/librairies nécessaires dans le projet, formation à l'utilisation du code sur les machines PSMN
 * choix du jeu de tests et des cas de référence pour vérifier l'aptitude du code à approximer les divers termes intervenant dans les équations
 * utilisation des ressources logistiques et informatiques, formation à svm des utilisateurs (projet dans la forge du CBP), écriture de scripts de soumission
 * nous sommes très reconnaissants pour les ressources informatiques fournis par le PSMN.
