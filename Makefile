@@ -13,11 +13,12 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 .PHONY: help Makefile
-
-rss: html
-	python build/html/_static/limit_rss_items.py 
 	
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
+# touch source/Informations/News.rst : Rafraîchir la date de modification du fichier News.rst
+# python build/html/_static/limit_rss_items.py : Générer le fichier rss
+%: Makefile 
+	touch source/Informations/News.rst 
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	python build/html/_static/limit_rss_items.py 

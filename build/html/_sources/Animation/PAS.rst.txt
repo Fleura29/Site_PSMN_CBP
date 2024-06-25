@@ -42,7 +42,7 @@ Projets d'animation scientifique CBP
 
 .. container:: ms-1
 
-    `Ateliers 3IP <#>`_ |br|
+    :ref:`Ateliers 3IP <3ip>` |br|
     Coordination : Emmanuel Quemener
 
 2017 - 2020
@@ -66,7 +66,7 @@ Projets d'animation scientifique CBP
 
 .. container:: ms-1
 
-    `Atelier de Biologie Computationnelle <#>`_ |br|
+    :ref:`Atelier de Biologie Computationnelle <abs>` |br|
     Coordination : Cédric Vaillant
 
 2014 - 2020
@@ -76,5 +76,5 @@ Projets d'animation scientifique CBP
 
 .. container:: ms-1
 
-    `Avancées des outils numériques et leurs applications dans différents domaines scientifiques <#>`_ |br|
+    :ref:`Avancées des outils numériques et leurs applications dans différents domaines scientifiques <aonadds>` |br|
     Coordination : Cerasela Calugaru 

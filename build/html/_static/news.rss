@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Contenu des articles</title>
+    <link>http://localhost:5501/build/html/</link>
+    <description />
+    <lastBuildDate>Tue, 25 Jun 2024 12:04:25 GMT</lastBuildDate>
+    <generator>sphinxcontrib-newsfeed</generator>
+    <item>
+      <title>20240625</title>
+      <link>http://localhost:5501/build/html/Informations/News/25-06-2024.html</link>
+      <description>&lt;div class="compound"&gt;
+&lt;p&gt;Contenu.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+      <guid>http://localhost:5501/build/html/Informations/News/25-06-2024.html</guid>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>20240624</title>
+      <link>http://localhost:5501/build/html/Informations/News/24-06-2024.html</link>
+      <description>&lt;div class="compound"&gt;
+&lt;p&gt;Contenu.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+      <guid>http://localhost:5501/build/html/Informations/News/24-06-2024.html</guid>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>20240623</title>
+      <link>http://localhost:5501/build/html/Informations/News/23-06-2024.html</link>
+      <description>&lt;div class="compound"&gt;
+&lt;p&gt;Contenu.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+      <guid>http://localhost:5501/build/html/Informations/News/23-06-2024.html</guid>
+      <pubDate>Sun, 23 Jun 2024 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>20240622</title>
+      <link>http://localhost:5501/build/html/Informations/News/22-06-2024.html</link>
+      <description>&lt;div class="compound"&gt;
+&lt;p&gt;Contenu.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+      <guid>http://localhost:5501/build/html/Informations/News/22-06-2024.html</guid>
+      <pubDate>Sat, 22 Jun 2024 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>20240621</title>
+      <link>http://localhost:5501/build/html/Informations/News/21-06-2024.html</link>
+      <description>&lt;div class="compound"&gt;
+&lt;p&gt;Contenu.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+      <guid>http://localhost:5501/build/html/Informations/News/21-06-2024.html</guid>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 GMT</pubDate>
+    </item>
+    </channel>
+</rss>

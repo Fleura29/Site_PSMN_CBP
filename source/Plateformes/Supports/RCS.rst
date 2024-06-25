@@ -107,7 +107,7 @@ Animation scientifique
 
   * Colloquium du Centre Blaise Pascal ( :ref:`Avancées des outils numériques et leurs applications dans différents domaines scientifiques <aonadds>` : 2014; 2015); 
   * séminaires (du :ref:`CBP <evenements>` : 2009 - 2012; 2014); 
-  * Les Journées du Centre Blaise Pascal (`November 16, 2010 <#>`_ ; `June 14, 2011 <#>`_ ; `November 29, 2011 <#>`_ ; `November 20, 2012 <#>`_; `Novembre 28, 2013 <http://jcbp.sciencesconf.org/>`_); 
+  * Les Journées du Centre Blaise Pascal ( :ref:`November 16, 2010 <cslyon>` ; :ref:`June 14, 2011 <jcbp>` ; :ref:`November 29, 2011 <jcbpcg>` ; :ref:`November 20, 2012 <jcbpeel>`; `Novembre 28, 2013 <http://jcbp.sciencesconf.org/>`_); 
   * de journées (ex « Exploring (Free) Energy Landscapes » ); 
   * de colloques, (ex "European Workshop on Superfluid turbulence from the perspective of numerics: modeling, methods and challenges")
 * **Représenter le Centre Blaise Pascal** auprès de différents publics (réunions de travail, manifestations scientifiques)

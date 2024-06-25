@@ -1,10 +1,12 @@
+.. _ceclam2021:
+
 Proposal for the CECAM flagship programme in 2021
 =================================================
 
 .. |br| raw:: html
 
    <br>
-
+ 
 Dear Friends of CECAM,
 
 This is our invitation for you to submit a proposal for the CECAM flagship programme in 2021. |br|

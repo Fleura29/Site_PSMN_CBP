@@ -7,7 +7,7 @@ def limit_rss_items(file_path, max_items=5):
     channel = root.find('channel') #cherche l'élément <channel> dans le document XML
     items = channel.findall('item')
 
-    for item in items[max_items:]: #sélectionne tous les items après le max_items-ème item donc enlève à partir du
+    for item in items[max_items:]: #sélectionne tous les items après le max_items-ème item
         channel.remove(item)
 
     tree.write(file_path, encoding='utf-8', xml_declaration=True)

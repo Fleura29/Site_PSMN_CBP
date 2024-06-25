@@ -1,3 +1,5 @@
+.. _abs:
+
 Atelier de Biologie Computationnelle
 ====================================
 

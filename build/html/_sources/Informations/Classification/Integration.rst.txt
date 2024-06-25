@@ -44,7 +44,7 @@ Logiciels de Calcul Scientifique
 
       * portage sur les tous les environnements BLAS OpenSource disponibles
       * portage sur CuBLAS (2010T1)
-      * rédaction de documentation d'installation sous Debian :ref:`Squeeze <compxhpldebian>` & [[developpement:activites:integration:hpl4wheezy|Wheezy]] 
+      * rédaction de documentation d'installation sous Debian :ref:`Squeeze <compxhpldebian>` & `Wheezy <#>`_ 
 
 * **intégration de LAMMPS dans un environnement Debian**
 
@@ -54,7 +54,7 @@ Logiciels de Calcul Scientifique
     * Actions :
 
       * adaptation à l'environnement Debian Squeeze
-      * rédaction de documentation d'installation sous Debian [[developpement:activites:integration:lammps4debian|Squeeze]], [[developpement:activites:integration:lammps4wheezy|Wheezy simple]] et [[developpement:activites:integration:lammpsgpu4wheezy|Wheezy GPU]]
+      * rédaction de documentation d'installation sous Debian `Squeeze <#>`_, `Wheezy simple <#>`_ et `Wheezy GPU <#>`_
 
 * **intégration de Visual Molecular Dynamics dans un environnement Debian** 
 
@@ -64,7 +64,7 @@ Logiciels de Calcul Scientifique
 
       * adaptation à l'environnement Debian Squeeze (2010Q1)
       * adaptation à l'environnement Debian Wheezy (2012Q3)
-      * rédaction de documentation d'installation sous Debian  ou [[developpement:activites:integration:vmd4squeeze|Squeeze]] & [[developpement:activites:integration:vmd4dwheezy|Wheezy]]
+      * rédaction de documentation d'installation sous Debian  ou `Squeeze <#>`_ & `Wheezy <#>`_
 
 * **intégration de ABInit dans un environnement Debian** 
 
@@ -74,7 +74,7 @@ Logiciels de Calcul Scientifique
 
       * intégration à l'environnement Debian Squeeze (2011T1)
       * intégration à l'environnement Debian Wheezy (2012T3)
-      * rédaction de documentation d'installation sous Debian [[developpement:activites:integration:abinit4squeeze|Squeeze]] & [[developpement:activites:integration:abinit4wheezy|Wheezy]]
+      * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
 
 * **intégration de Siesta dans un environnement Debian** 
 
@@ -84,7 +84,7 @@ Logiciels de Calcul Scientifique
 
         * intégration à l'environnement Debian Squeeze
         * intégration à l'environnement Debian Wheezy
-        * rédaction de documentation d'installation sous Debian [[developpement:activites:integration:siesta4squeeze|Squeeze]] & [[developpement:activites:integration:siesta4wheezy|Wheezy]] 
+        * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_ 
 
 * **intégration de CP2K dans un environnement Debian**
 
@@ -94,25 +94,25 @@ Logiciels de Calcul Scientifique
 
         * intégration à l'environnement Debian Lenny
         * intégration à l'environnement Debian Squeeze
-        * rédaction de documentation d'installation sous Debian [[developpement:activites:integration:cp2k4lenny|Lenny]], [[developpement:activites:integration:cp2k4squeeze|Squeeze]] [[developpement:activites:integration:cp2k4wheezy|Wheezy]]
+        * rédaction de documentation d'installation sous Debian `Lenny <#>`_, `Squeeze <#>`_ `Wheezy <#>`_
 
-* intégration de SageMath sous Debian [[developpement:activites:integration:sagemath4squeeze|Squeeze]] et [[developpement:activites:integration:sagemath4wheezy|Wheezy]]
+* intégration de SageMath sous Debian `Squeeze <#>`_ et `Wheezy <#>`_
 
-* intégration de Molden sous Debian Squeeze, Wheezy et [[developpement:activites:integration:molden4jessie|Jessie]]
+* intégration de Molden sous Debian Squeeze, Wheezy et `Jessie <#>`_
 
-* intégration de Amber9 sous Debian Squeeze, [[developpement:activites:integration:amber94wheezy|Wheezy]], [[developpement:activites:integration:amber94jessie|Jessie]]
+* intégration de Amber9 sous Debian Squeeze, `Wheezy <#>`_, `Jessie <#>`_
 
-* intégration de BigDFT sous Debian [[developpement:activites:integration:bigdft4squeeze|Squeeze]] et [[developpement:activites:integration:bigdft4wheezy|Wheezy]] 
+* intégration de BigDFT sous Debian `Squeeze <#>`_ et `Wheezy <#>`_ 
 
-* intégration de MolMod sous Debian [[developpement:activites:integration:molmod4wheezy|Wheezy]]
+* intégration de MolMod sous Debian `Wheezy <#>`_
 
-* intégration de OpenBLAS sous Debian [[developpement:activites:integration:openblas4squeeze|Squeeze]]
+* intégration de OpenBLAS sous Debian `Squeeze <#>`_
 
-* intégration de EkoPath sous [[developpement:activites:integration:ekopath4squeeze|Debian Squeeze]]
+* intégration de EkoPath sous `Debian Squeeze <#>`_
 
-* intégration de XCrySDen sous [[developpement:activites:integration:xcrysden4wheezy|Debian Wheezy]]
+* intégration de XCrySDen sous `Debian Wheezy <#>`_
 
-* intégration de DNABend sous [[developpement:activites:integration:dnabend4wheezy|Debian Wheezy]]
+* intégration de DNABend sous `Debian Wheezy <#>`_
 
 Technologies avancées
 ---------------------
@@ -125,7 +125,7 @@ Technologies avancées
 
       * adaptation à l'environnement Debian (2013T4)
       * exécution de tests de comparaison sous OpenCL (2014T1)
-      * rédaction de documentation d'installation sous Debian (2014T1) [[developpement:activites:integration:xeonphi4wheezy|Wheezy]]
+      * rédaction de documentation d'installation sous Debian (2014T1) `Wheezy <#>`_
 
 * **intégration de CUDA dans un environnement Debian** 
 
@@ -138,7 +138,7 @@ Technologies avancées
         * intégration à un environnement Diskless (2011T4)
         * intégration à l'environnement SIDUS (2012T3)
         * intégration de CUDA 5 à l'environnement Debian Wheezy
-        * rédaction de documentation d'installation sous Debian [[developpement:activites:integration:cuda4squeeze|Squeeze]] & [[developpement:activites:integration:cuda4wheezy|Wheezy]]
+        * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
 
 * **intégration du SDK ATI dans un environnement Debian**
 
@@ -150,11 +150,11 @@ Technologies avancées
         * mise à disposition de stations de travail dédiées
         * intégration à un environnement Diskless (2011T4)
         * intégration à l'environnement SIDUS (2012T3)
-        * rédaction de documentation d'installation sous Debian [[developpement:activites:integration:stream4squeeze|Squeeze]] & [[developpement:activites:integration:stream4wheezy|Wheezy]]
+        * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
 
-* intégration de PyFFT sous [[developpement:activites:integration:pyfft4squeeze|Debian Squeeze]]
+* intégration de PyFFT sous `Debian Squeeze <#>`_
 
-* intégration de Par4all sous [[developpement:activites:integration:par4all4squeeze|Debian Squeeze]]
+* intégration de Par4all sous `Debian Squeeze <#>`_
 
 Logiciels de diffusion des savoirs
 ----------------------------------
@@ -167,7 +167,7 @@ Logiciels de diffusion des savoirs
 
       * adaptation à l'environnement Debian
       * mise à disposition de stations de travail dédiées
-      * rédaction de documentation d'installation sous Debian  [[developpement:activites:integration:sankore4wheezy|Wheezy]]
+      * rédaction de documentation d'installation sous Debian  `Wheezy <#>`_
 
 Outils Système & Réseaux
 ------------------------

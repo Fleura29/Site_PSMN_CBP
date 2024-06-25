@@ -40,7 +40,7 @@ Infrastructures
 
 .. container:: text-center 
     
-    .. container::  bg-danger-subtle pt-3 pb-2 rounded fs-13 mb-2 w-75
+    .. container:: bg-danger-subtle pt-3 pb-2 rounded fs-13 mb-2 
 
         **IMPORTANT NEWS**
         Debian9/SGE has been shutdown definitely Friday 21th of October 2022
@@ -63,7 +63,7 @@ Infrastructures
     * migration GridEngine -> **slurm** ⇒ **READY**
     * nouveau système d'installation des logiciels (easybuild)  ⇒ **READY**
     * remise à zéro des scratchs (lors de la migration)  ⇒ **AWAITING**
-    * New Documentation (**READY**) `https://meso-centres-lyon.pages.in2p3.fr/psmn-rtd/index.html <https://meso-centres-lyon.pages.in2p3.fr/psmn-rtd/index.html>`_
+    * New Documentation (**READY**) https://meso-centres-lyon.pages.in2p3.fr/psmn-rtd/index.html
 * Cluster Cascade **ouvert** aux béta-tests ⇒ **OPEN / IN PRODUCTION** (:ref:`use web forms for access <probleme>`)
 
 Clusters
@@ -167,7 +167,6 @@ Clusters
 
 * migration Chimie (data et homes, data2 -> data10), finalisation pendant coupure d'octobre
 * migration Geol (data et homes, data3 -> data9), finalisation pendant coupure d'octobre
-
 
 **Automne 2020 : Extinction cluster "X5"**
 

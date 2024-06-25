@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Documentation PSMN-CBP </title>
+    <title>Qualification &#8212; Documentation PSMN-CBP </title>
     <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -233,7 +233,425 @@
 </header>
               <div class="pt-4 border-top border-secondary" id="contenu">
                 
-  
+  <section id="qualification">
+<h1>Qualification<a class="headerlink" href="#qualification" title="Lien vers cette rubrique">¶</a></h1>
+<p>La <a class="reference external" href="http://fr.wiktionary.org/wiki/qualification">qualification</a> permet l’attribution d’une « qualité ». Dans notre domaine, le calcul et l’informatique scientifiques, c’est l’expression d’une aptitude ou d’une capacité d’un matériel, d’un logiciel, d’une méthode à bien réaliser la tâche confiée.</p>
+<p>Au Centre Blaise Pascal, la qualification est une activité essentielle, certainement par la proximité du centre de calcul de l’ENS-Lyon, le PSMN. Si le CBP est un centre d’essais en calcul scientifique comme l’est le <a class="reference external" href="http://www.nasa.gov/centers/dryden/home/index.html">Dryden</a> de la <a class="reference external" href="http://www.nasa.gov/">NASA</a>, son « pilote d’essais informatiques » est Emmanuel Quemener.</p>
+<p>Dans le même esprit de la NASA, le CBP met à disposition les études, tests, qualification qu’il a réalisé ou les outils qu’il a mis en oeuvre pour les réaliser. Les ressources techniques logicielles et matérielles à disposition sont décrites dans [[ressources:ressources|Une infrastructure logicielle cohérente]]</p>
+<section id="banc-d-essais">
+<h2>Banc d’essais<a class="headerlink" href="#banc-d-essais" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le principal « banc d’essai » est le socle système Sidus (Single Instance Distributing Universal System).</p>
+<dl class="simple">
+<dt>Le Sidus permet le lancement de n’importe quel équipement démarrant par le réseau via le protocole PXE. C’est un socle :</dt><dd><ul class="simple">
+<li><p><strong>pour les matériels</strong> : le noyau Linux intégré à la Debian est si générique qu’il permet le lancement sans modification notable de presque tous les équipements</p></li>
+<li><p><strong>pour les logiciels</strong> : exploitant largement la distribution Linux la plus complète, la Debian, elle offre les fondations génériques</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="qualification-materielle">
+<h2>Qualification Matérielle<a class="headerlink" href="#qualification-materielle" title="Lien vers cette rubrique">¶</a></h2>
+<p>La qualification matérielle s’assure que le matériel disponible fonctionne de manière nominale avec le socle technique courant.</p>
+<p>Au Centre Blaise Pascal, l’environnement logiciel par défaut est la Linux Debian : tous les matériels suivants ont fonctionné ou fonctionnent encore avec cette distribution.</p>
+<p>Certains matériels (les Apple notamment) exigent parfois des processus d’installation spécifique : des pages d’aide à l’installation ont donc été écrites pour faciliter leur usage.</p>
+<section id="serveurs">
+<h3>Serveurs<a class="headerlink" href="#serveurs" title="Lien vers cette rubrique">¶</a></h3>
+<p>Des modèles des marques Sun, Dell, Hewlett Packard, Fujitsu ont été qualifiés.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Marque</p></th>
+<th class="head"><p>Modèle</p></th>
+<th class="head"><p>Distributions Debian</p></th>
+<th class="head"><p>Architecture</p></th>
+<th class="head"><p>Système</p></th>
+<th class="head"><p>Usage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Sun</p></td>
+<td><p>v100</p></td>
+<td><p>Wheezy</p></td>
+<td><p>Sparc</p></td>
+<td><p>embarqué</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sun</p></td>
+<td><p>v20z</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-even"><td><p>Sun</p></td>
+<td><p>v40z</p></td>
+<td><p>Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS/iSCSI</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sun</p></td>
+<td><p>v20z2</p></td>
+<td><p>Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-even"><td><p>Sun</p></td>
+<td><p>x4500</p></td>
+<td><p>Lenny Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sun</p></td>
+<td><p>x4540</p></td>
+<td><p>Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en test</p></td>
+</tr>
+<tr class="row-even"><td><p>Sun</p></td>
+<td><p>x41z</p></td>
+<td><p>Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sun</p></td>
+<td><p>x2200</p></td>
+<td><p>Lenny Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>PE 2850</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>PE R610</p></td>
+<td><p>Squeeze Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>PE R710</p></td>
+<td><p>Lenny Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>PE R510</p></td>
+<td><p>Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>PE R620</p></td>
+<td><p>Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>PE C6100</p></td>
+<td><p>Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>PE C410x</p></td>
+<td><p>Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>embarqué</p></td>
+<td><p>en prêt</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>PE R410</p></td>
+<td><p>Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>PE R720</p></td>
+<td><p>Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>iSCSI</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>PE R730</p></td>
+<td><p>Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>iSCSI</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>HP</p></td>
+<td><p>SL230</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>en prêt</p></td>
+</tr>
+<tr class="row-odd"><td><p>HP</p></td>
+<td><p>SL250</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>en prêt</p></td>
+</tr>
+<tr class="row-even"><td><p>HP</p></td>
+<td><p>DL585</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>embarqué</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fujitsu</p></td>
+<td><p>C620</p></td>
+<td><p>Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>SIDUS</p></td>
+<td><p>embarqué</p></td>
+</tr>
+<tr class="row-even"><td><p>Apple</p></td>
+<td><p>Xserve-G4</p></td>
+<td><p>Wheezy</p></td>
+<td><p>PowerPC</p></td>
+<td><p>embarqué</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-odd"><td><p>Intel</p></td>
+<td><p><a class="reference internal" href="Debian-Squeeze/qualifxeonphidebian.html#xeonphidebian"><span class="std std-ref">Grizzly</span></a></p></td>
+<td><p>Wheezy</p></td>
+<td><p>x86_64 + Phi</p></td>
+<td><p>iSCSI</p></td>
+<td><p>en prêt</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="postes-stations-de-travail">
+<h3>Postes/Stations de travail<a class="headerlink" href="#postes-stations-de-travail" title="Lien vers cette rubrique">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Marque</p></th>
+<th class="head"><p>Modèle</p></th>
+<th class="head"><p>Distributions Debian</p></th>
+<th class="head"><p>Architecture</p></th>
+<th class="head"><p>Usage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Precision 360</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>Precision 370</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Precision 390</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>Precision 3500</p></td>
+<td><p>Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Precision 7500</p></td>
+<td><p>Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>Precision 5600</p></td>
+<td><p>Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>Sidus CUDA</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Precision 7600</p></td>
+<td><p>Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>Sidus CUDA</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>Optiplex 170</p></td>
+<td><p>Squeeze Wheezy</p></td>
+<td><p>x86</p></td>
+<td><p>déclassé</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Optiplex 745</p></td>
+<td><p>Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>Sidus CUDA/Stream</p></td>
+</tr>
+<tr class="row-odd"><td><p>Apple</p></td>
+<td><p>iMac 7.1</p></td>
+<td><p>Lenny Squeeze</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Apple</p></td>
+<td><p>iMac 11.1</p></td>
+<td><p>Lenny Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Apple</p></td>
+<td><p>iMac 12.1</p></td>
+<td><p>Lenny Squeeze Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>HP</p></td>
+<td><p>Z800</p></td>
+<td><p>Lenny Squeeze</p></td>
+<td><p>x86_64</p></td>
+<td><p>jadis en prêt</p></td>
+</tr>
+<tr class="row-odd"><td><p>HP</p></td>
+<td><p>Z420</p></td>
+<td><p>Wheezy Jessie</p></td>
+<td><p>x86_64</p></td>
+<td><p>Sidus CUDA</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipements-nomades">
+<h3>Equipements Nomades<a class="headerlink" href="#equipements-nomades" title="Lien vers cette rubrique">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Marque</p></th>
+<th class="head"><p>Modèle</p></th>
+<th class="head"><p>Distributions Debian</p></th>
+<th class="head"><p>Architecture</p></th>
+<th class="head"><p>Usage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Mini 1010</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>Latitude D500</p></td>
+<td><p>Squeeze Wheezy</p></td>
+<td><p>x86</p></td>
+<td><p>en prêt</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Latitude D800</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dell</p></td>
+<td><p>Latitude E6410</p></td>
+<td><p>Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Dell</p></td>
+<td><p>Precision M4600</p></td>
+<td><p>Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Apple</p></td>
+<td><p>MacBook Pro 4.1</p></td>
+<td><p>Lenny Squeeze Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Apple</p></td>
+<td><p>MacBook Pro 9.1</p></td>
+<td><p>Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Asus</p></td>
+<td><p>TF700</p></td>
+<td><p>CyanogenMod 10.1 + Wheezy</p></td>
+<td><p>ARMv7</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>Asus</p></td>
+<td><p>X55U</p></td>
+<td><p>Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Samsung</p></td>
+<td><p>Galaxy S3</p></td>
+<td><p>CyanogenMod 10.1 + Wheezy</p></td>
+<td><p>ARMv7</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-even"><td><p>HP</p></td>
+<td><p>8770w</p></td>
+<td><p>Wheezy</p></td>
+<td><p>x86_64</p></td>
+<td><p>en service</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipements-micro-serveurs">
+<h3>Equipements Micro-serveurs<a class="headerlink" href="#equipements-micro-serveurs" title="Lien vers cette rubrique">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Marque</p></th>
+<th class="head"><p>Modèle</p></th>
+<th class="head"><p>Distributions Debian</p></th>
+<th class="head"><p>Architecture</p></th>
+<th class="head"><p>Usage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Hard Kernel</p></td>
+<td><p>Odroid-U2</p></td>
+<td><p>Wheezy</p></td>
+<td><p>ARMv7 Exynos 4412</p></td>
+<td><p>en service</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hard Kernel</p></td>
+<td><p>Odroid-XU</p></td>
+<td><p>Wheezy</p></td>
+<td><p>ARMv7 Exynos 5120</p></td>
+<td><p>en service</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="qualification-logicielle">
+<h2>Qualification Logicielle<a class="headerlink" href="#qualification-logicielle" title="Lien vers cette rubrique">¶</a></h2>
+</section>
+</section>
+
 
               </div>
               <!--
