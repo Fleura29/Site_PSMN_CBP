@@ -3,7 +3,7 @@ Les absences des opérateurs 2024
 
 Convention: une absence du jour x au soir au jour y au matin signifie, s'il y a un samedi et un dimanche ou un jour férié entre les jours x et y, que la personne n'interviendra pas à distance pendant la durée de son absence. 
 
-+--------------------+----------+---------------------+--------------+-------------------------------------+
++--------------------+----------+------------------------------------+-------------------------------------+
 | Nom                |  Cause   |  Date de début                     |  Date de fin                        |                                                                    
 +====================+==========+====================================+=====================================+
 | Cerasela Calugaru  |  Congés  |  Jeudi 22 février 2023 au matin    |  Jeudi 22 février 2024 au soir      |                 

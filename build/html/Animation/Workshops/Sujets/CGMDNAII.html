@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Coarse-Grain Mechanics of DNA: Part II From Electrons to Oligomers &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="cgmdnaii">
+<li><p><a class="reference internal" href="../WS2011.html#workshop2011"><span class="std std-ref">Workshops 2011</span></a></p></li>
+</ul>
+<section id="coarse-grain-mechanics-of-dna-part-ii-from-electrons-to-oligomers">
+<h1>Coarse-Grain Mechanics of DNA: Part II From Electrons to Oligomers<a class="headerlink" href="#coarse-grain-mechanics-of-dna-part-ii-from-electrons-to-oligomers" title="Lien vers cette rubrique">¶</a></h1>
+<p>Location: CECAM-HQ-EPFL, Lausanne, Switzerland <br>
+August 30, 2011 to September 2, 2011 <br>
+<a class="reference external" href="http://www.cecam.org/workshop-0-539.html">Website of the event</a></p>
+<p>Organisers:</p>
+<ul class="simple">
+<li><p><strong>John H. Maddocks</strong>, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland</p></li>
+<li><p><strong>Ralf Everaers</strong>, École Normale Supérieure de Lyon, France</p></li>
+<li><p><strong>Helmut Schiessel</strong>, Instituut-Lorentz for Theoretical Physics, Leiden, The Netherlands</p></li>
+</ul>
+<p>Supports:</p>
+<ul class="simple">
+<li><p><strong>CECAM</strong></p></li>
+<li><p><strong>EPFL</strong></p></li>
+</ul>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Lien vers cette rubrique">¶</a></h2>
+<p>DNA carries genetic information so that understanding processes such as transcription and replication are central to biology.  In the simplest classic view, the DNA sequence carries information merely via codons of three bases which encode for an amino acid when transcribed. Recently, this view has broadened to encompass the idea that the detailed chemistry of the four possible bases also provide a sequence-dependent modulation of the physical properties of the DNA, such as nonzero intrinsic curvature, varying intrinsic twist, and variations in stiffness, and that these sequence-dependent variations of the physical properties of the DNA are actually key to the control and regulation of the biological processes involving the DNA. For example, recently Segal et al [1] proposed that Nature exploits the redundancy of the genetic code (64 codons but only 20 amino acids) to create a « second genetic code » via the sequence-dependent mechanical properties of DNA which control the preferred locations of nucleosomes along the DNA. And the sequence-dependent mechanical properties of DNA is believed to be significant in other biological systems too.</p>
+<p>The workshop will be a venue to discuss subjects surrounding the sequence-dependent physical properties of DNA. It is the second in a series of such discussions including the CECAM workshop “Coarse-Grain Mechanics of DNA: Bases to Chromosomes” which was  held in Lyon in 2010. The third, to be organized by the Netherlands CECAM node, is anticipated for 2012. This second workshop will be tightly focused on discussing the shorter, biologically pertinent length scales of DNA, i.e. a few hundreds of base-pairs down to single bases and below. We are particularly interested in encouraging discussions between experimentalists and practitioners of modelling of various types. Specifically the participants will include experts in simulations at divers levels of coarse graining, ranging from a) quantum simulations of nucleic acids, b) atomistic molecular dynamics simulations, c) rigid base and base-pair simulations, and d) sequence-dependent continuum mechanics and polymer simulations up to lengths of one or two hundred base pairs. This is the scale of a DNA double-helix persistence length, which is believed to be rather important in biology. This range of length scales will be matched with the participation of experimentalists, from crystallographers at the atomistic level, to practitioners of looping, cyclization and mini-circle experiments, which offer a direct probe of sequence-dependent DNA mechanical properties. On the simulation side one of the primary issues is how one can quantitatively pass information between models at multiple scales. And of course interaction with experimentalists is key to the verification of model parameters at the various scales.</p>
+<p>We believe that the undoubted importance of DNA in biology is already a powerful justification for a detailed study of its sequence-dependent physical properties. The mechanical properties of DNA do vary significantly with sequence, and to determine definitively whether and how these modulations are exploited in biology, requires an improved and quantitative understanding of the variations. In addition it should be realised that DNA is increasingly being adopted as a construction material in non-biological nanoscience, due to the inherent self-assembly properties of the double helix. However in the design of artificial nanostructures made from DNA, the sequence-dependence of the duplex DNA mechanical properties has not as yet been exploited, in part due to a lack of quantification of these properties. Accordingly a secondary, minor theme of the workshop will be to discuss such non-biological uses of DNA.</p>
+</section>
+<section id="state-of-the-art">
+<h2>State of the art<a class="headerlink" href="#state-of-the-art" title="Lien vers cette rubrique">¶</a></h2>
+<section id="atomistic-molecular-dynamics-simulations-of-short-oligomers">
+<h3>Atomistic Molecular Dynamics Simulations of Short Oligomers<a class="headerlink" href="#atomistic-molecular-dynamics-simulations-of-short-oligomers" title="Lien vers cette rubrique">¶</a></h3>
+<p>The year 2011 will be the tenth anniversary of the forming of the ABC (or Ascona B-DNA Consortium) collaboration. The ABC was born at an interdisciplinary workshop organized by John Maddocks. The idea was that by pooling computational resources between groups, a database of entirely consistent simulations of DNA oligomers covering « all possible » sequence-dependence could be constructed. The most recent ABC publication [2], which is based on a data set of nearly 5microseconds of simulation time of 39 different 18 base-pair oligomers, is only now starting to approach that goal, and of course much was learnt along the way. For example, previous ABC data sets revealed serious limitations of the underlying Amber atomistic force field, which lead to a re-parametrization from quantum simulations [3]. The current data set has no known inconsistencies with experimental data, and has various specific predictions, for example bimodal distribution of twist at certain specific base-pair steps.</p>
+</section>
+<section id="atomistic-molecular-dynamics-simulations-of-dna-minicircles-and-experiment">
+<h3>Atomistic Molecular Dynamics Simulations of DNA Minicircles and Experiment:<a class="headerlink" href="#atomistic-molecular-dynamics-simulations-of-dna-minicircles-and-experiment" title="Lien vers cette rubrique">¶</a></h3>
+<p>The study of J-factors, or the probability of formation of DNA minicircles, is a classic technique for studying DNA mechanics. And minicircle formation has even been proposed as a way to determine experimentally the sequence-dependent mechanical properties of DNA [4]. In particular some specific sequences were observed to cyclize remarkably efficiently compared to predictions made by standard, sequence-independent theories [5], although there is still some controversy over the experimental results [6,7]. Motivated by these results there have been two published molecular dynamics simulations of full minicircles [8,9], the first of which observed localized kink deformations of the DNA duplex, remarkably similar to those discussed theoretically thirty years previously [10]. The 3D conformations of slightly longer DNA minicircles can be observed using stereo-cryo-EM [11, 12] although the method is very close to the limits of resolution. Nevertheless after the introduction of new statistical tests for curves in 3D, a statistically significant difference in the fluctuations of two minicircles formed from two different sequences could be observed [13].</p>
+</section>
+<section id="rigid-base-and-base-pair-models">
+<h3>Rigid base and base-pair models:<a class="headerlink" href="#rigid-base-and-base-pair-models" title="Lien vers cette rubrique">¶</a></h3>
+<p>A standard model of the elasticity of double-helical DNA on the few nm length scale is the rigid base-pair model (rbpm), whose conformation variables are the relative positions and orientations of adjacent base pairs [14]. Corresponding sequence-dependent local elastic potentials have been obtained from (combinations of) all-atom MD simulation and from high-resolution crystal structure data [15,16,17,18] and have been used with some success to model DNA-protein binding [17] and nucleosome positioning [18, 19]. Nevertheless the analysis of [20] has shown that at length scales of a few tens of base-pairs, a rbpm with a localized energy is not consistent with molecular dynamics data sets of the type obtained in [2], while a rigid base model with localized interactions is consistent with molecular dynamics data.</p>
+</section>
+<section id="sequence-dependent-continuum-mechanics-models">
+<h3>Sequence-dependent continuum mechanics models:<a class="headerlink" href="#sequence-dependent-continuum-mechanics-models" title="Lien vers cette rubrique">¶</a></h3>
+<p>Beyond the 100nm scale, DNA is successfully described by a worm like chain model with homogeneous elastic properties [21], which can be determined via a systematic coarse-graining procedure from the rbpm [22]. Modifications to model kinking have also been proposed [23].  On the wormlike chain level a systematic treatment of small fluctuations (semi classical approximation) of the statistical mechanics of chains is now available [24,25].Sequence-dependent continuum models ignoring fluctuations have been applied to model cyclization data [26].</p>
+</section>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Lien vers cette rubrique">¶</a></h3>
+<p>[1] E. Segal, Y. Fondufe-Mittendorf, L. Chen, A. Thastrom, Y. Field, I. Moore, J. Wang, J. Widom,
+‘Nucleosome sequence preferences influence in vivo nucleosome organization’, Nature 442, 772
+(2006)</p>
+<p>[2] R. Lavery, K. Zakrzewska, D. Beveridge, T. C. Bishop, D. A. Case, T.E. Cheatham III, S. Dixit,
+B. Jayaram, F. Lankas, Ch. Laughton, J.H. Maddocks, A. Michon, R. Osman, M. Orozco, A. Perez,
+T. Singh, N. Spackova, J. Sponer, « A systematic molecular dynamics study of nearest neighbor effects
+on base pair and base pair step conformations and fluctuations in B-DNA », Nucleic Acids Research
+1-15 (2009).</p>
+<p>[3] A. Perez, I. Marchan, D. Svozil, J. Sponer, T.E. Cheatham III, C.A. Laughton, M. Orozco, « Refinement
+of the AMBER force field for nucleic acids: Improving the description of alpha/gamma conformers »,
+Biophys. J. 92, 3817-3829 (2007).</p>
+<p>[4] Y. Zhang, D.M. Crothers, « High-throughput approach for detection of DNA bending and flexibility based
+on cylization », Proc. Acad. Sci. USA 100, 3161-3166 (2003).</p>
+<p>[5] T.E. Cloutier, J. Widom, « Spontaneous Sharp Bending of Double-Stranded DNA », Mol. Cell 14 355-362
+(2004).</p>
+<p>[6] Q. Du, C. Smith, N. Shiffeldrim, M. Vologodskaia, A. Vologodskii, « Cyclization of short DNA fragments
+and bending fluctuations of the double helix », Proc. Natl. Acad. Sci. USA 102, 5397-5404 (2005).</p>
+<p>[7] Q. Du, A. Kotlyar, A. Vologodskii, « Kinking the double helix by bending deformation, » Nucleic Acids
+Research, Vol. 36, No. 4 1120-1128 (2008).</p>
+<p>[8] F. Lankas, R. Lavery, J.H. Maddocks, « DNA kinking occurs during molecular dynamics simulations of
+small DNA minicircles », Structure 14, 1527- 1534 (2006).</p>
+<p>[9] S.A. Harris, C.A. Laughton, T.B. Liverpool, « Mapping the phase diagram of the writhe of DNA
+nanocircles using atomistic molecular dynamics simulations », Nucleic Acids Research 36, 1-29 (2008).</p>
+<p>[10] F.H.C. Crick, A. Klug, « Kinky helix », Nature 255, 530-533 (1975).</p>
+<p>[11] A. Amzallag, C. Vaillant, M. Jacob, M. Unser, J. Bednar, J.D. Kahn, J. Dubo- chet, A. Stasiak,
+J.H. Maddocks, ‘3D reconstruction and comparison of shapes of DNA minicircles observed by cryo-
+electron microscopy’, Nucleic Acids Res. 34, e125 (2006).</p>
+<p>[12] D. Demurtas, A. Amzallag, E.J. Rawdon, J.H. Maddocks, J. Dubochet, A. Stasiak, ‘Bending modes of
+DNA directly addressed by cryo-electron microscopy of DNA minicircles’, Nucleic Acids Research,
+37, 9, 2882-2893 (2009).</p>
+<p>[13] V.M. Panaretos, D. Kraus, J.H. Maddocks, ‘Second-Order Comparison of Gaussian Random Curves
+and the Geometry of DNA Minicircles’, J. Am. Stat. Ass. 105, 670-682 (2010)</p>
+<p>[14] B. D. Coleman, W. K. Olson, D. Swigon, ‘Theory of sequence-dependent DNA elasticity’,
+J. Chem. Phys. 118, 7127 (2003).</p>
+<p>[15] W. Olson, A. Gorin, X. Lu, L. Hock, V. Zhurkin, ‘DNA sequence-dependent deformability deduced
+from protein-DNA crystal complexes’, Proc. Natl. Acad. Sci. U.S.A. 95, 11163-11168 (1998).</p>
+<p>[16] F. Lankas, J. Sponer, J. Langowski, T. E. Cheatham III, ‘DNA basepair step deformability inferred
+from molecular dynamics simulations,’ Biophys. J. 85, 2872 (2003).</p>
+<p>[17] N.B. Becker, L. Wolff and R. Everaers, ‘Indirect readout: Detection of optimized subsequences and
+calculation of relative binding affinities using different DNA elastic potential’, Nucleic Acids Res.
+34, 5638 - 5649 (2006).</p>
+<p>[18] A.V. Morozov, K. Fortne, D.A. Gaykalova, V.M. Studitsky, J. Widom, E. D. Siggia, ‘Using DNA
+mechanics to predict in vitro nucleosome positions and formation energies’, Nucleic Acids Res.,
+37, 4707-22 (2009)</p>
+<p>[19] N. B. Becker, R. Everaers, ‘DNA Nanomechanics in the Nucleosome’, Structure 17, 579-589 (2009).</p>
+<p>[20] F. Lankas, O. Gonzalez, L. M. Heffler, G. Stoll, M. Moakher, J. H. Maddocks, ‘On the parameterization
+of rigid base and basepair models of DNA from molecular dynamics simulations’, Phys. Chem. Chem.
+Phys. 11, 10565-10588 (2009).</p>
+<p>[21] J. F. Marko, E. D. Siggia, ‘Bending and Twisting Elasticity of DNA’, Macromolecules 27, 981-988
+(1994).</p>
+<p>[22] N.B. Becker, R.Everaers, ‘DNA: From rigid base-pairs to semiflexible polymers’, Phys. Rev. E 76,
+021923 (2007).</p>
+<p>[23] P.A. Wiggins, R. Phillips, P.C. Nelson, ‘Exact theory of kinkable elastic polymers’, Phys. Rev. E 71,
+021909 (2005).</p>
+<p>[24] M. Emanuel, H. Mohrbach, M. Sayar, H. Schiessel, I. M. Kulic, ‘Bucling of stiff polymers: Influence of
+thermal fluctuations’, Phys. Rev. E 76, 061907-1-13 (2007).</p>
+<p>[25] M. Emanuel, H. Mohrbach. M. Sayar, H. Schiessel, I. M. 26 R.S. Manning, J.H. Maddocks, J.D. Kahn,
+‘A continuum rod model of sequence-dependent DNA structure’, J. Chem. Phys. 105, 5626-5646
+(1996)</p>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Animation/Workshops/Sujets/CGMDNAII.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -114,7 +114,7 @@ a:hover{
     }
     .input-search{
         width: 150px;
-        position: absolute;
+        position: absolute; 
         right: 50px;
     }
     .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
@@ -146,6 +146,7 @@ h2{
     border-bottom: 1px solid #E69645;
     margin-bottom: 0.9rem;
     margin-left: 2px;
+    margin-top: 15px;
 }
 
 h2 a{
@@ -158,8 +159,13 @@ h3{
     border-bottom: 1px solid;
     width: max-content;
     font-weight: bold;
+    margin-bottom: 0.75rem;
 }
 
+h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
 /*---------- Taille de police ----------*/
 
 .fs-11{
@@ -281,7 +287,7 @@ a.headerlink{
 .border-dashed{
     border: dashed #E69645 1px;
     overflow-x: auto;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     margin-bottom: 10px;
     padding-top: 0.7rem;
 }

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Coarse-Graining Strategies &amp; Methodologies for Polymeric &amp; Biomolecular Assemblies &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="cgsmpba">
+<li><p><a class="reference internal" href="../WS2011.html#workshop2011"><span class="std std-ref">Workshops 2011</span></a></p></li>
+</ul>
+<section id="coarse-graining-strategies-methodologies-for-polymeric-biomolecular-assemblies">
+<h1>Coarse-Graining Strategies &amp; Methodologies for Polymeric &amp; Biomolecular Assemblies<a class="headerlink" href="#coarse-graining-strategies-methodologies-for-polymeric-biomolecular-assemblies" title="Lien vers cette rubrique">¶</a></h1>
+<p>Location : CFCAM-RA, Centre Blaise Pascal, Lyon, France  <br>
+Launching event of the CFCAM-RA Node  <br>
+July 5, 2011 to July 8, 2011  <br>
+<a class="reference external" href="http://www.cecam.org/workshop-522.html">Website of the event</a></p>
+<p>Organizers:</p>
+<ul class="simple">
+<li><p><strong>Barbara Capone</strong>, University of Vienna, Austria</p></li>
+<li><p><strong>Christos N. Likos</strong>, University of Vienna, Austria</p></li>
+<li><p><strong>Jean Pierre Hansen</strong>, University of Cambridge, United Kingdom</p></li>
+<li><p><strong>Vincent Krakoviack</strong>, Ecole Normale Supérieure de Lyon, France</p></li>
+</ul>
+<p>The workshop is supported by:</p>
+<ul class="simple">
+<li><p>CECAM</p></li>
+</ul>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Lien vers cette rubrique">¶</a></h2>
+<p>Over the past two decades, the study of complex fluids, exemplified here for the case of polymer or biomolecular solutions and melts, has attracted the interest of scientists across a broad spectrum of disciplines, in the experimental, theoretical and simulation contexts. Complex fluids present intriguing self-assembling properties, and therefore rich phase diagrams that are widely explored experimentally, e.g. in the case of diblock copolymers [1]; from a theoretical point of view, complex fluids are characterised by a high number of competing microscopic interactions, including many-body forces. In principle, to fully describe such systems, it is necessary to properly account for the elementary interactions between the constituent building blocks of the macromolecules. Numerical simulations that take into account all the microscopic forces, i.e. fully atomistic simulations will in principle provide accurate descriptions of the real systems. However, they are strongly limited by the computational resources available that usually do not allow to reach mesoscopically and macroscopically relevant size and time scales.</p>
+<p>Out of the aforementioned limitations, the need arises to introduce simplified but efficient and accuratee descriptions, which allow us to reproduce the main features of the systems, circumventing the need of a full atomistic description that would be theoretically and computationally prohibitive. The workshop will give an overview of the state of the art of coarse-graining strategies by bringing together researchers from the different fields involved, from experimentalists to theoreticians.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Lien vers cette rubrique">¶</a></h2>
+<p>[1] Bang, J. and T. P. Lodge. Macromolecular Research, 16, 51 (2008).</p>
+<p>[2] de Gennes, P. G. Scaling Concepts in Polymer Physics (Cornell University Press,(Ithaca), 1979).</p>
+<p>[3] Flory, P. J. and W. R. Krigbaum. J. Chem. Phys, 18, 1086 (1950).</p>
+<p>[4] Bolhuis, P. G., A. A. Louis, J.-P. Hansen, and E. J. Meijer. J. Chem. Phys.,114(9), 4296 (2001).</p>
+<p>[5] Pierleoni, C., B. Capone, and J.-P. Hansen. J. Chem. Phys., 127(17), 171102 (2007).</p>
+<p>[6] Coluzza, I. and J.-P. Hansen. Phys. Rev. Lett., 100(1), 016104 (2008).</p>
+<p>[7] Baschnagel, J., K. Binder, P. Doruker, A. Gusev, O. Hahn, K. Kremer, W. Mattice, F. Muller-Plathe, M. Murat, W. Paul, S. Santos, U. Suter, and V. Tries. In Advances in Polymer Science: Viscoelasticity, atomistic models, statical chemistry, volume 152 of Advances in Polymer Science, 41–156 (Springer-Verlag Berlin, Heidelberg Platz 3, D-14197 Berlin, Germany, 2000).</p>
+<p>[8] Harmandaris, V. A. and K. Kremer. Macromolecules, 42, 791 (2009).</p>
+<p>[9] Capone, B., C. Pierleoni, J.-P. Hansen, and V. Krakoviack. J. Phys. Chem. B, 113(12), 3629 (2009).</p>
+<p>[10] Ballauff, M. and C. N. Likos. Ang. Chem. Intnl., 43, 2998 (2004).</p>
+<p>[11] Stiakakis, E., D. Vlassopoulos, C. N. Likos, J. Roovers, and G. Meier. Phys. Rev. Lett., 89, 208302 (2002).</p>
+<p>[12] Fritz, D., V. A. Harmandaris, K. Kremer, and N. F. A. van der Vegt. Macromolecules, 42, 7579 (2009).</p>
+<p>[13] Hoang, T. X., F. Seno, A. Trovato, J. R. Banavar, and A. Maritan. Proc. Nat. Acad. Sci. U.S.A., 101, 7960 (2004).</p>
+<p>[14] Maritan, A., C. Micheletti, A. Trovato, and J. R. Banavar. Nature, 406, 287 (2000).</p>
+<p>[15] Coluzza, I., A. D. Simone, F. Fraternali, and D. Frenkel. PLoS Comput Biol, 4(2), e1000006 (2008).</p>
+<p>[16] Ouldridge, T. E., I. G. Johnston, A. A. Louis, and J. P. K. Doye. The Journal of Chemical Physics, 130(6), 065101 (pages 11) (2009).</p>
+<p>[17] Mladek, B. and D. Frenkel. in preparation. [18] Likos, C. N. Phys. Rep., 348, 267 (2001).</p>
+<p>[19] Binder, K. and W. Paul. J. Polym. Sci. Part B - Polymer Physics, 35(1), 1 (1997).</p>
+<p>[20] Harmandaris, V. A. and K. Kremer. Soft Matter, 5, 3920 (2009).</p>
+<p>[21] Groot, R. D. and P. B. Warren. J. Chem. Phys., 107, 4423 (1997).</p>
+<p>[22] Martinez-Veracoechea, F. J. and F. A. Escobedo. Macromolecules, 42, 1775 (2009).</p>
+<p>[23] Gompper, G., T. Ihle, D. M. Kroll, and R. G. Winckler. Adv. Polym. Sci., 221, 1 (2009).</p>
+<p>[24] Ripoll, M., R. G. Winkler, and G. Gompper. Phys. Rev. Lett., 96, 188302 (2006).</p>
+<p>[25] Nikoubashman, A. and C. N. Likos. Macromolecules, 43, 1610 (2010).</p>
+<p>[26] Briels, W. Soft Matter, 5, 4401 (2009).</p>
+<p>[27] Erwin, B. M., M. Cloitre, M. Gauthier, and D. Vlassopoulos. Soft Matter, 6, 2825 (2010).</p>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Animation/Workshops/Sujets/CGSMPBA.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

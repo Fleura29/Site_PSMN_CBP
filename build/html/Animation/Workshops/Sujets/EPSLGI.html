@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Equilibrium and out-of-equilibrium properties of systems with long-range interactions &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="epslgi">
+<li><p><a class="reference internal" href="../WS2012.html#workshop2012"><span class="std std-ref">Workshops 2012</span></a></p></li>
+</ul>
+<section id="equilibrium-and-out-of-equilibrium-properties-of-systems-with-long-range-interactions">
+<h1>Equilibrium and out-of-equilibrium properties of systems with long-range interactions<a class="headerlink" href="#equilibrium-and-out-of-equilibrium-properties-of-systems-with-long-range-interactions" title="Lien vers cette rubrique">¶</a></h1>
+<p>Location: Salle de réunion LR6 C 023, Centre Blaise Pascal, ENS-Lyon, France  <br>
+August 27, 2012 - August 31, 2012</p>
+<p>Organizing committee:</p>
+<ul class="simple">
+<li><p><strong>Stefano Ruffo</strong>, ENS de Lyon</p></li>
+<li><p><strong>Thierry Dauxois</strong>, ENS de Lyon</p></li>
+<li><p><strong>Yan Levin</strong>, Instituto de Fisica UFRGS, Porto Alegre</p></li>
+<li><p><strong>David Mukamel</strong>, The Weizmann Institute of Science, Rehovot</p></li>
+</ul>
+<p>Administrative coordination:</p>
+<ul class="simple">
+<li><p><strong>Samantha Barendson</strong>, CBP, ENS de Lyon, France (samantha.barendson &#64; ens-lyon.fr)</p></li>
+</ul>
+<p>The workshop is supported by:</p>
+<img alt="Image jcbp" class="img-fluid" src="../../../_images/sponsors_longrange.png" />
+<section id="program">
+<h2>Program<a class="headerlink" href="#program" title="Lien vers cette rubrique">¶</a></h2>
+<section id="proposal">
+<h3>1 Proposal<a class="headerlink" href="#proposal" title="Lien vers cette rubrique">¶</a></h3>
+<section id="introduction-and-motivation">
+<h4>1.1 Introduction and motivation<a class="headerlink" href="#introduction-and-motivation" title="Lien vers cette rubrique">¶</a></h4>
+<p>Although different aspects of systems with long-range interactions have been studied in the past in specific scientific communities, notably astrophysics and plasma physics, this has not constituted a seed for more general theoretical studies. In the last decade or so, it has become progressively clear that the ubiquitous presence of long-range forces needs an approach that integrates different methodologies. This has induced a widespread interest in long-range systems throughout numerous research groups.
+This workshop will bring together scientists and scholars in statistical physics, astrophysics, accelerator physics and plasma physics in order to explore the novel statistical and dynamical out-of-equilibrium properties of systems with long range interactions. In particular, the discovery of ensemble inequivalence demands for a better understanding of the physical conditions under which it is realized. Moreover, a consistent kinetic theory of long-range systems remains to be developed, which should include the full characterization of the numerically observed quasistationary states.
+All this justifies the organization of the workshop in 2012: time is ripe to make significant progress in the understanding of the equilibrium and out-of-equilibrium properties of systems with long-range interactions.
+The format of the workshop aims at reproducing the “old style” CECAM workshops, where a limited group of senior scientists were meeting together with juniors for a full week (or more in some cases). Seminars will be limited in number (not in duration) and placed in the mornings. Afternoons will be fully devoted to informal presentations, discussions and work. Access to the computer cluster at the Centre Blaise Pascal and to the 5000-core ENSL supercomputing center (PSMN) will be guaranteed, in order to put in (numerical) practice some of the emerging ideas. To achieve the goal of a real collaboration the blend of participants must be carefully chosen. The core of the group must be composed of persons who have already collaborated (or disagreed) in the past. Around them, a “halo” formed of fewer qualified persons in somewhat related fields, whose presence might lead to unexpected developments, should be also present.
+Here we have decided to select a true plasma physicist, Dominique Escande, and an expert of disordered systems, Hidetoshi Nishimori. Escande already collaborated in the past with one of the organisers of this workshop (SR) and we have established with him already a common language (he participated in the Les Houches School quoted in the list of references). Nishimori recently wrote a series of pioneering papers extending the notion of ensemble inequivalence to the random field Ising model and to spin-glass models.
+However, the workshop will be open to the participation of other scholars in these fields. In particular, some contacts will be established with researchers of the CRAL (Center of Research in Astrophysics in Lyon) working on the simulation of self-gravitating systems.</p>
+</section>
+<section id="state-of-the-art">
+<h4>1.2 State of the art<a class="headerlink" href="#state-of-the-art" title="Lien vers cette rubrique">¶</a></h4>
+<p>Long-range interactions are found in astrophysics, plasma physics, hydrodynamics, atomic physics, nuclear physics, solid-state physics and disordered systems. However, their statistical and dynamical properties are much less understood than those short-range interactions. If, for sufficiently large distances, the two-body potential decays with a power that is smaller or equal than space dimension, then the interaction is long-range. Our workshop will be focused on the equilibrium and outofequilibrium properties of long-range systems, relying on the tools of statistical mechanics. The aim of equilibrium statistical mechanics is to derive the thermodynamic properties of a macroscopic system from microscopic interactions: the connection between microstates and macrostates is realized through the introduction of statistical ensembles. Different thermodynamic potentials describe situations in which different thermodynamic parameters are used for the characterization of the system. However, it is usually stated, and experimentally verified for many physical systems with short-range interactions, that, as far as macroscopic averages are concerned, i.e. in the thermodynamic limit, the predictions of statistical mechanics do not depend on the chosen ensemble. Ensemble equivalence is related to the fact that, given a sufficient number of macroscopic thermodynamic parameters, the others are fixed in the large volume limit, apart from vanishingly small relative fluctuations. On the contrary, an important feature of long-range systems is that ensembles can be inequivalent. Therefore one of the main objectives of the theoretical studies of these systems is to explore the relation between the various ensembles, probe the conditions under which they become inequivalent and determine the relevant ensemble appropriate for a given Proposal : Equilibrium and out-of-equilibrium properties of systems with long-range interactions experimental setup. Ensemble inequivalence is not merely a mathematical drawback, it is the consequence of fundamental physical properties of long-range systems. Probably, one of the most striking features of long-range systems is the possibility to display negative specific heat in the microcanonical ensemble, which is a consequence of ensemble inequivalence.
+As far as outofequilibrium properties are concerned, long-range systems show peculiar behaviours. The approach to equilibrium can be extremely slow: it takes place on time scales that increase with system size (while for short-range systems relaxations occur on an intensive time scale). The state of the system during this long transient is quasistationary, since its very slow time evolution allows one to define slowly varying macroscopic observables, like for local equilibrium or quasi-static transformations. The explanation of the widespread presence of quasistationary states relies upon the study of the dynamical properties of systems with long-range interactions. In the continuum limit long-range interacting systems admit a kinetic description in terms of the Vlasov equation. Within this scenario, quasistationary states correspond to stable stationary states of the Vlasov equation. The finite size system relaxes to equilibrium due to corrections of the Vlasov equation, whose study must be performed in the context of appropriately devised kinetic theories. The problem of developing a rigorous statistical mechanics treatment of quasistationary states has recently catalyzed a vigorous debate, but is still far from being solved.
+A system can be driven out of equilibrium by putting it under the action of an external force or an electric field, or coupled to thermostats at different temperatures. Even in the case in which the bulk dynamics is conserving and local such systems are characterized by long-range correlations, which lead, e.g., to phase transitions and long-range order even in one dimension. In some models, features characteristic of long-range interactions, such as ensemble inequivalence have been detected. In specific cases it can even be shown that, in particular range of parameters where detailed balance is satisfied, the weight of configurations is given by an effective Hamiltonian which has explicit long-range terms. This is certainly a direction to be further explored and that can elucidate the connection between long-range correlations and long-range interactions.</p>
+<p><strong>REFERENCES</strong></p>
+<ul class="simple">
+<li><p>A. Campa, T. Dauxois and S. Ruffo, Statistical mechanics and dynamics of solvable models with long-range interactions, Physics Reports, 480, 57 (2009).</p></li>
+<li><p>T. Dauxois, S. Ruffo and L. Cugliandolo Eds., Long-range interacting systems, Les Houches Summer School 2008, Oxford University Press (2009).</p></li>
+<li><p>A. Campa, A. Giansanti, G. Morigi and F. Sylos Labini, Dynamics and Thermodynamics of Systems with Long Range Interactions: Theory and experiments, satellite conf. of Statphys23, AIP Conf. Proceedings, 965, 122, (2008).</p></li>
+<li><p>T. Dauxois, S. Ruffo, E. Arimondo, M. Wilkens Eds. Dynamics and Thermodynamics of Systems with Long Range Interactions, Les Houches Winter School 2002, Lecture Notes in Physics, 602, Springer (2002).</p></li>
+<li><p>F. Bouchet, S. Gupta and D. Mukamel, Physica A, 389, 4389 (2010).</p></li>
+</ul>
+</section>
+<section id="objectives">
+<h4>1.3 Objectives<a class="headerlink" href="#objectives" title="Lien vers cette rubrique">¶</a></h4>
+<p>Workshop focus on:</p>
+<ul class="simple">
+<li><p>Obtaining necessary and sufficient criteria for ensemble inequivalence.</p></li>
+<li><p>Exploring the conditions for the experimental verification of the effects induced by ensemble inequivalence, like negative specific heat.</p></li>
+<li><p>Determining the conditions for the evolution towards quasistationary states and characterizing the law of divergence of the timescale with system size.</p></li>
+<li><p>Checking the stability of quasistationary states under the action of external perturbations.</p></li>
+<li><p>Developing appropriate kinetic theories for systems with long-range interactions.</p></li>
+<li><p>Unveiling the possibility to describe long-range correlations in driven systems in terms of long-range interactions.</p></li>
+<li><p>Last but not least, to develop efficient numerical simulation methods for systems with long-range interactions, including simulations of the Vlasov eqution and other kinetic equations.</p></li>
+</ul>
+</section>
+<section id="organisers-biography">
+<h4>1.4 Organisers” biography<a class="headerlink" href="#organisers-biography" title="Lien vers cette rubrique">¶</a></h4>
+<p><strong>Thierry DAUXOIS</strong>, born in 1967, former student of ENS Lyon got a PhD from Dijon University (France) in 1993. He entered CNRS in 1994. He spent 6 months in Firenze in 1996 and a sabbatical year at Scripps Institution of Oceanography in 1997. His main field of research are nonlinear physics and Statistical physics. He was first interested in applications of solitons to biophysics, before going interested in applications to condensed matter and hydrodynamics. In the last 10 years, his interests were mainly focused in the dynamic and statistical mechanics of systems with long-range interactions. In parallel, he developed theoretical and experimental studies of internal gravity waves in stratified fluids with applications to physical oceanography. He was at the head of the graduate studies (M2) of ENS Lyon for physics from 2005 to 2011. He is chairman of the CNRS committee for theoretical physics (Section 02) from 2010 to 2012 and will be director of the Physics Laboratory at ENS from 2012 to 2015.</p>
+<p><strong>Yan LEVIN</strong> received B.S. degree from Carnegie Mellon University in 1987, and Ph.D. from University of California at Berkeley in 1992. His thesis work was on fluctuation effects in lattice models of microemulsions. After this he spent two years as a postdoctoral associate with Michael E. Fisher at University of Maryland, developing theories of Coulombic criticality. In 1994 he moved to Porto Alegre, Brazil where he is a Professor of Physics. He is also a senior associate at ICTP, Trieste, Italy. Dr. Levin’s primary research interests are in statistical mechanics of systems with long range interactions such as: magnetically confined plasmas, self-gravitating systems, electrolytes, polyelectrolytes, and charge stabilized colloidal suspensions.</p>
+<p><strong>David MUKAMEL</strong>
+Date of birth: Dec. 24,1945 <br>
+Education: <br>
+1966 B.Sc. Hebrew University <br>
+1970 M.Sc. Weizmann Institute of Science <br>
+1973 Ph.D. Weizmann Institute of Science <br></p>
+<p><span class="underline">Employment:</span></p>
+<p>2/69 - 8/70: Nuclear Research Center, Negev, Beer-Sheva. <br>
+9/73 - 9/75: Research Associate, Dept. of Physics, Brookhaven National Laboratory. <br>
+9/75 - 9/77: Visiting Fellow, Dept of Chemistry, Cornell University. <br>
+3/77 - 9/79: Senior Scientist, Dept. of Electronics, Weizmann Institute of Science. <br>
+9/79 - 4/84: Associate Professor, Dept of Nuclear Physics, The Weizmann Institute of Science. <br>
+4/84: Professor, Department of Nuclear Physics, Weizmann Institute of Science. <br></p>
+<p><span class="underline">Professional Activities:</span></p>
+<p>1985 – 1987: Member of the Editorial Board, Journal of Statistical Physics. <br>
+1/91 – 1/02: Member of The National Council of Higher Education, Israel. <br></p>
+<p><span class="underline">Proposal : Equilibrium and out-of-equilibrium properties of systems with long-range interactions</span></p>
+<p>9/95 – 5/02: Dean, Faculty of Physics, The Weizmann Institute of Science. <br>
+2000 - 2006 Associate Editor, The European Physical Journal B. <br>
+2002: Member of IUPAP Comission on Statistical Physics. <br>
+2002 - 2006 Member of the Editorial Board, Journal of Statistical Physics. <br>
+2004: Member of the Editorial Board, Journal of Statistical Mechanics: theory and experiment. <br>
+2005: Chairman of IUPAP Comission on Statistical Physics. <br>
+2010: Member of the Board of Scientific Directors, Journal of Statistical Mechanics: theory and experiment. <br></p>
+<p><span class="underline">Research Activity:</span></p>
+<p>Active in the general areas of statistical physics and condensed matter physics. Carried out theoretical research on phase transition symmetry and symmetry breaking in macroscopic systems and other collective phenomena. Particularly in magnetic systems and liquid crystals. More recently engaged in studies of collective behavior of driven systems far from thermal equilibrium, systems with long range interactions, and in studies of statistical properties of DNA and other biopolymers. <br></p>
+<p><span class="underline">Honors:</span></p>
+<p>1969 The Miphal Hapais Prize <br>
+1972 The M. Landau Prize <br>
+1974 The J.F. Kennedy Prize <br>
+1978 Sara Zinder Leedy Memorial Award <br>
+1977 Keren Bat-Sheva de Rotschild Prize <br>
+1985 The Jeanette and Samuel Lubell Prize <br>
+1978 Holder of the Heiny Glasberg Career Development Chair <br>
+1992 Holder of the Harold J. and Marion F. Green Professorial Chair <br></p>
+<p><strong>Stefano RUFFO</strong>, born in 1954, got the « Laurea » in Physics from Florence University (Italy) in 1977. <br>
+Before obtaining his permanent position as an assistant professor at Pisa University (1981), he got a fellowship from the National Institute of Nuclear Physics in Pisa (1978-1981). From 1987 to 1991 he has been an associate professor in condensed matter physics at the University of Basilicata. He moved to the Faculty of Engineering, University of Florence, in 1991. In 2011 he became full professor. His main fields of research are nonlinear dynamics and statistical physics, specfically: hamiltonian dynamics; cellular automata; coupled map lattices and space-time chaos; long-range interactions. He has studied applications of physics to biology: immune system modeling, DNA models. He has published about 140 papers in international refereed journals. He has been an advisor of numerous master and PhD Thesis in Italian and foreign Universities. He has visited several foreign institution: Oxford University (UK), CPT-CNRS Marseille (FR), ENS de Lyon (FR), Berkeley University (USA), Kyoto University (JP). He is a member of the Italian Physical Society and a referee a several international journals. He is an editor of Communications in Nonlinear Science and Numerical Simulations (Elsevier) and an associate editor of Physica A (Elsevier). He is the chairman of the C3 (Statistical Physics) commission of the IUPAP for the term 2011-13. He is Weston visiting professor at the Weizmann Insitute of Science (2010-11) and Chaire
+d’Excellence at ENS de Lyon (2011-12).</p>
+</section>
+</section>
+</section>
+<section id="participant-list">
+<h2>2 Participant List<a class="headerlink" href="#participant-list" title="Lien vers cette rubrique">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Family name</p></th>
+<th class="head"><p>First name</p></th>
+<th class="head"><p>Institution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ALASTUEY</p></td>
+<td><p>Angel</p></td>
+<td><p>Ecole normale supérieure de Lyon, France</p></td>
+</tr>
+<tr class="row-odd"><td><p>BACHELARD</p></td>
+<td><p>Romain</p></td>
+<td><p>CePOF, Universidade de São Paulo, Brazil</p></td>
+</tr>
+<tr class="row-even"><td><p>BARBARA</p></td>
+<td><p>Bernard</p></td>
+<td><p>Institut Néel CNRS, Université Joseph Fourier, Grenoble, France</p></td>
+</tr>
+<tr class="row-odd"><td><p>BARRE</p></td>
+<td><p>Julien</p></td>
+<td><p>Laboratoire J.A. Dieudonné Université de Nice - Sophia Antipolis, France</p></td>
+</tr>
+<tr class="row-even"><td><p>BENETTI</p></td>
+<td><p>Fernanda</p></td>
+<td><p>UFRSG, Porto Alegre, Brazil</p></td>
+</tr>
+<tr class="row-odd"><td><p>BOUCHET</p></td>
+<td><p>Freddy</p></td>
+<td><p>CNRS-ENS de Lyon, France</p></td>
+</tr>
+<tr class="row-even"><td><p>BRENIG</p></td>
+<td><p>Léon</p></td>
+<td><p>Université libre de Bruxelles, Belgium</p></td>
+</tr>
+<tr class="row-odd"><td><p>CAMPA</p></td>
+<td><p>Alessandro</p></td>
+<td><p>Istituto Superiore di Sanità, Roma, Italy</p></td>
+</tr>
+<tr class="row-even"><td><p>CHAFFI</p></td>
+<td><p>Yassin</p></td>
+<td><p>Université libre de Bruxelles, Belgium</p></td>
+</tr>
+<tr class="row-odd"><td><p>DE BUYL</p></td>
+<td><p>Pierre</p></td>
+<td><p>Université libre de Bruxelles, Belgium</p></td>
+</tr>
+<tr class="row-even"><td><p>ESCANDE</p></td>
+<td><p>Dominique</p></td>
+<td><p>CNRS-Université de Provence, Marseille, France</p></td>
+</tr>
+<tr class="row-odd"><td><p>FANELLI</p></td>
+<td><p>Duccio</p></td>
+<td><p>Università degli Studi di Firenze, Italy</p></td>
+</tr>
+<tr class="row-even"><td><p>GUPTA</p></td>
+<td><p>Shamik</p></td>
+<td><p>Ecole normale supérieure de Lyon, France</p></td>
+</tr>
+<tr class="row-odd"><td><p>JOYCE</p></td>
+<td><p>Michael</p></td>
+<td><p>LPNHE, Université Pierre et Marie Curie, Paris, France</p></td>
+</tr>
+<tr class="row-even"><td><p>LAURIE</p></td>
+<td><p>Jason</p></td>
+<td><p>Ecole normale supérieure de Lyon, France</p></td>
+</tr>
+<tr class="row-odd"><td><p>MACIEL</p></td>
+<td><p>João Marcos</p></td>
+<td><p>Instituto de Física, Universidade de Brasília, Brazil</p></td>
+</tr>
+<tr class="row-even"><td><p>MARCOS</p></td>
+<td><p>Bruno</p></td>
+<td><p>Laboratoire J.A. Dieudonné Université de Nice - Sophia Antipolis, France</p></td>
+</tr>
+<tr class="row-odd"><td><p>MORAND</p></td>
+<td><p>Jules</p></td>
+<td><p>LPNHE, Université Pierre et Marie Curie, Paris, France</p></td>
+</tr>
+<tr class="row-even"><td><p>NARDINI</p></td>
+<td><p>Cesare</p></td>
+<td><p>Università degli Studi di Firenze, Italy and ENS de Lyon, France</p></td>
+</tr>
+<tr class="row-odd"><td><p>NISHIMORI</p></td>
+<td><p>Hidetoshi</p></td>
+<td><p>Department of Physics, Tokyo Institute of Technology, Japan</p></td>
+</tr>
+<tr class="row-even"><td><p>NUNES TELES</p></td>
+<td><p>Tarcisio</p></td>
+<td><p>Universidade Federal do Rio Grande do Sul, Brazil</p></td>
+</tr>
+<tr class="row-odd"><td><p>PAKTER</p></td>
+<td><p>Renato</p></td>
+<td><p>FRSG, Porto Alegre, Brazil</p></td>
+</tr>
+<tr class="row-even"><td><p>PATELLI</p></td>
+<td><p>Aurelio</p></td>
+<td><p>Università degli Studi di Firenze, Italy</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROCHA FILHO</p></td>
+<td><p>Tarcisio Marciano</p></td>
+<td><p>Instituto de Física, Universidade de Brasília, Brazil</p></td>
+</tr>
+<tr class="row-even"><td><p>SILVESTRE</p></td>
+<td><p>Cinthia Helena</p></td>
+<td><p>Instituto de Física, Universidade de Brasília, Brazil</p></td>
+</tr>
+<tr class="row-odd"><td><p>TANGARIFE</p></td>
+<td><p>Tomas</p></td>
+<td><p>Ecole normale supérieure de Lyon, France</p></td>
+</tr>
+<tr class="row-even"><td><p>TOUCHETTE</p></td>
+<td><p>Hugo</p></td>
+<td><p>School of Mathematical Sciences, Queen Mary University of London, UK</p></td>
+</tr>
+<tr class="row-odd"><td><p>VENAILLE</p></td>
+<td><p>Antoine</p></td>
+<td><p>Ecole normale supérieure de Lyon, France</p></td>
+</tr>
+<tr class="row-even"><td><p>YAMAGUCHI</p></td>
+<td><p>Yoshiyuki</p></td>
+<td><p>Kyoto University, Japan</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Animation/Workshops/Sujets/EPSLGI.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

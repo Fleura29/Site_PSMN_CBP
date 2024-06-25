@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Compilation de XHPL sous Debian &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="compilation-de-xhpl-sous-debian">
+<span id="compxhpldebian"></span><h1>Compilation de XHPL sous Debian<a class="headerlink" href="#compilation-de-xhpl-sous-debian" title="Lien vers cette rubrique">¶</a></h1>
+<div class="text-center docutils container">
+<div class="d-inline-block bg-warning-subtle pt-3 mb-2 rounded fs-13 docutils container">
+<p>Pour utiliser xHPL, mieux vaut directement aller sur le projet de la forge du CBP dédiée : <a class="reference external" href="https://forge.cbp.ens-lyon.fr/redmine/projects/hpl4all">https://forge.cbp.ens-lyon.fr/redmine/projects/hpl4all</a></p>
+</div>
+</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le logiciel <a class="reference external" href="http://www.netlib.org/benchmark/hpl/">hpl</a> est une implémentation du fameux Linpack utilisé pour estimer la puissance des machines, notamment pour le <a class="reference external" href="www.top500.org">classement Top500</a> des machines les plus puissantes de la planète.</p>
+<p>La dernière version, la <a class="reference external" href="http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz">2.0</a> date du 10 septembre 2008 :</p>
+<div class="border-dashed docutils container">
+<p>wget <a class="reference external" href="http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz">http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz</a></p>
+</div>
+</section>
+<section id="installation-des-prerequis">
+<h2>Installation des prérequis<a class="headerlink" href="#installation-des-prerequis" title="Lien vers cette rubrique">¶</a></h2>
+<p>Comme le veut la tradition, le système « souche » sera une Linux Debian, version Lenny (5.0.3).</p>
+<p>Les librairies suivantes seront utilisées :</p>
+<ul class="simple">
+<li><p>ensemble Atlas pour les librairies d’algèbre linéaire</p></li>
+<li><p>ensemble OpenMPI pour la distribution des calculs sur les noeuds</p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>sudo apt-get install gcc gfortran <br>
+sudo apt-get install openmpi-bin openmpi-common libopenmpi-dev <br>
+# Sur une architecture i386 <br>
+sudo apt-get install libatlas-test libatlas3gf-base libatlas-headers libatlas-base-dev libatlas-sse2-dev libatlas3gf-sse2 <br>
+# Sur une architecture amd64 <br>
+sudo apt-get install libatlas-test libatlas3gf-base libatlas-headers libatlas-base-dev</p>
+</div>
+</section>
+<section id="compilation">
+<h2>Compilation<a class="headerlink" href="#compilation" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Préparation de l’archive : (plutôt à la racine de l’utilisateur)</p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>cd $HOME <br>
+wget <a class="reference external" href="http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz">http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz</a> <br>
+tar xzf hpl-2.0.tar.gz <br>
+ln -s hpl-2.0 hpl <br>
+cd hpl</p>
+</div>
+<ul>
+<li><p>Compilation :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>la phase de compilation est assez hardue : elle consiste à créer son propre <em>MakeFile</em>, sous la forme d’un Make.MonMakefileAMoi</p></li>
+<li><p>étant donné que, en informatique, il faut savoir être fainéant, avant, vous pouviez récupérer les <em>Makefile</em> d’une <a class="reference external" href="http://pagesperso-orange.fr/klhpc/tutoriels/hpl/">page perso de Orange</a> maintenant disparue. Vous pouvez cependant en récupérer les sauvegardes :</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="border-dashed docutils container">
+<p>wget <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_BLAS_gm">http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_BLAS_gm</a> <br>
+wget <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_CBLAS_gm">http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_CBLAS_gm</a> <br>
+wget <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_FBLAS_gm">http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_FBLAS_gm</a></p>
+</div>
+<ul class="simple">
+<li><p>importer ces documents et les placer à la racine de HPL :</p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>mv Make.Debian_* $HOME/hpl</p>
+</div>
+<ul class="simple">
+<li><p>compiler les différents <em>Makefile</em> :</p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>make arch=Debian_BLAS_gm <br>
+make arch=Debian_CBLAS_gm <br>
+make arch=Debian_FBLAS_gm</p>
+</div>
+</section>
+<section id="execution-des-benchs">
+<h2>Exécution des benchs<a class="headerlink" href="#execution-des-benchs" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les exécutables ainsi compilés se trouvent dans $HOME/hpl/bin</p>
+<p>Pour les exécuter, trois opérations :</p>
+<ol class="upperalpha simple">
+<li><p>se déplacer dans l’un des répertoires, au choix :</p></li>
+</ol>
+<div class="border-dashed docutils container">
+<p>cd $HOME/hpl/bin/Debian_BLAS_gm <br>
+cd $HOME/hpl/bin/Debian_CBLAS_gm <br>
+cd $HOME/hpl/bin/Debian_FBLAS_gm</p>
+</div>
+<ol class="upperalpha simple" start="2">
+<li><p>paramétrer le fichier de configuration HPL.dat :</p></li>
+</ol>
+<div class="border-dashed docutils container">
+<p>HPLinpack benchmark input file <br>
+Innovative Computing Laboratory, University of Tennessee <br>
+HPL.out      output file name (if any) <br>
+file         device out (6=stdout,7=stderr,file) <br>
+1            # of problems sizes (N) <br>
+2560         Ns <br>
+1            # of NBs <br>
+256          NBs <br>
+0            PMAP process mapping (0=Row-,1=Column-major) <br>
+1            # of process grids (P x Q) <br>
+1            Ps <br>
+2            Qs <br>
+-16.0        threshold <br>
+3            # of panel fact <br>
+0 1 2        PFACTs (0=left, 1=Crout, 2=Right) <br>
+2            # of recursive stopping criterium <br>
+2 4          NBMINs (&gt;= 1) <br>
+1            # of panels in recursion <br>
+2            NDIVs <br>
+3            # of recursive panel fact. <br>
+0 1 2        RFACTs (0=left, 1=Crout, 2=Right) <br>
+1            # of broadcast <br>
+0            BCASTs (0=1rg,1=1rM,2=2rg,3=2rM,4=Lng,5=LnM) <br>
+1            # of lookahead depth <br>
+0            DEPTHs (&gt;=0) <br>
+2            SWAP (0=bin-exch,1=long,2=mix) <br>
+64           swapping threshold <br>
+0            L1 in (0=transposed,1=no-transposed) form <br>
+0            U  in (0=transposed,1=no-transposed) form <br>
+1            Equilibration (0=no,1=yes) <br>
+16           memory alignment in double (&gt; 0)</p>
+</div>
+<ol class="upperalpha simple" start="3">
+<li><p>Lancer le bench :</p></li>
+</ol>
+<div class="border-dashed docutils container">
+<p>orterun -np 2 ./xhpl</p>
+</div>
+<ul class="simple">
+<li><p>en sortie, même si les résultats sont consignés dans un fichier HPL.out, on obtient :</p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>================================================================================  <br>
+HPLinpack 2.0  –  High-Performance Linpack benchmark  –   September 10, 2008 <br>
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK <br>
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK <br>
+Modified by Julien Langou, University of Colorado Denver <br>
+================================================================================</p>
+<p>An explanation of the input/output parameters follows: <br>
+T/V    : Wall time / encoded variant. <br>
+N      : The order of the coefficient matrix A. <br>
+NB     : The partitioning blocking factor. <br>
+P      : The number of process rows. <br>
+Q      : The number of process columns. <br>
+Time   : Time in seconds to solve the linear system. <br>
+Gflops : Rate of execution for solving the linear system. <br></p>
+<p>The following parameter values will be used:</p>
+<p>N      :    2560  <br>
+NB     :     256  <br>
+PMAP   : Row-major process mapping <br>
+P      :       1  <br>
+Q      :       2  <br>
+PFACT  :    Left    Crout    Right  <br>
+NBMIN  :       2        4 <br>
+NDIV   :       2  <br>
+RFACT  :    Left    Crout    Right  <br>
+BCAST  :   1ring  <br>
+DEPTH  :       0  <br>
+SWAP   : Mix (threshold = 64) <br>
+L1     : transposed form <br>
+U      : transposed form <br>
+EQUIL  : yes <br>
+ALIGN  : 16 double precision words <br></p>
+<p>================================================================================ <br>
+T/V                N    NB     P     Q               Time                 Gflops <br>
+-——————————————————————————- <br>
+WR00L2L2        2560   256     1     2               4.29              2.612e+00 <br>
+WR00L2L4        2560   256     1     2               4.23              2.648e+00 <br>
+WR00L2C2        2560   256     1     2               4.26              2.628e+00 <br>
+WR00L2C4        2560   256     1     2               4.22              2.652e+00 <br>
+WR00L2R2        2560   256     1     2               4.24              2.638e+00 <br>
+WR00L2R4        2560   256     1     2               4.23              2.643e+00 <br>
+WR00C2L2        2560   256     1     2               4.26              2.630e+00 <br>
+WR00C2L4        2560   256     1     2               4.24              2.642e+00 <br>
+WR00C2C2        2560   256     1     2               4.25              2.637e+00 <br>
+WR00C2C4        2560   256     1     2               4.24              2.639e+00 <br>
+WR00C2R2        2560   256     1     2               4.26              2.631e+00 <br>
+WR00C2R4        2560   256     1     2               4.22              2.655e+00 <br>
+WR00R2L2        2560   256     1     2               4.26              2.629e+00 <br>
+WR00R2L4        2560   256     1     2               4.21              2.656e+00 <br>
+WR00R2C2        2560   256     1     2               4.26              2.628e+00 <br>
+WR00R2C4        2560   256     1     2               4.21              2.660e+00 <br>
+WR00R2R2        2560   256     1     2               4.23              2.646e+00 <br>
+WR00R2R4        2560   256     1     2               4.23              2.645e+00 <br>
+================================================================================</p>
+<dl class="simple">
+<dt>Finished     18 tests with the following results: <br></dt><dd><p>18 tests completed without checking, <br>
+0 tests skipped because of illegal input values. <br></p>
+</dd>
+</dl>
+<p>——————————————————————————– <br></p>
+<p>End of Tests. <br>
+================================================================================</p>
+</div>
+<ul class="simple">
+<li><p>on remarque que ce vieux Pentium 4 HT a une puissance de 2.6 GFps</p></li>
+<li><p>les résultats sont comparables en BLAS, CBLAS et FBLAS</p></li>
+</ul>
+</section>
+<section id="references">
+<h2>Références<a class="headerlink" href="#references" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://wiki.generation-debian.org/doku.php/bench">http://wiki.generation-debian.org/doku.php/bench</a></p></li>
+<li><p><a class="reference external" href="http://pagesperso-orange.fr/klhpc/tutoriels/hpl/">http://pagesperso-orange.fr/klhpc/tutoriels/hpl/</a></p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Informations/Classification/Debian-Squeeze/CompXHPLDebian.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installation de Gaussian sous Debian Wheezy &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="installation-de-gaussian-sous-debian-wheezy">
+<span id="instagaussianwheezy"></span><h1>Installation de Gaussian sous Debian Wheezy<a class="headerlink" href="#installation-de-gaussian-sous-debian-wheezy" title="Lien vers cette rubrique">¶</a></h1>
+<div class="text-center docutils container">
+<div class="d-inline-block bg-warning-subtle pt-3 mb-2 rounded fs-13 docutils container">
+<p>Modification le 5 février 2014 : compilation de la version G09 D01.</p>
+</div>
+</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique">¶</a></h2>
+<p><a class="reference external" href="http://www.gaussian.com/">Gaussian</a>  est un outil largement utilisé par la communauté scientifique des chimistes, ce malgré la large contreverse concernant une licence effroyablement restrictive d’utilisation. Pour en juger, il suffit de se renseigner sur la communauté <a class="reference external" href="http://www.bannedbygaussian.org/">Banned By Gaussian</a>, toujours croissante.</p>
+<p>Malgré cela, comme certains ne peuvent manifestement pas se passer de cet outil, pourquoi ne pas tenter de l’offrir dans les conditions les plus « ouvertes » possibles, c’est à dire sur le socle logiciel le plus OpenSource possible : une distribution GNU/Linux avec des outils de compilation libres.</p>
+<p>Gaussian précise des <a class="reference external" href="http://www.gaussian.com/g09_plat.htm">conditions de compilation très restrictives</a>, exigeant l’usage du compilateur PGI (sur plate-forme AMD64), lequel consitue un coût caché dont nos institutions pourraient se passer si d’aventure Gaussian « compilait » avec GFortran et surtout « fonctionnait » ensuite.</p>
+<p>Tout individu s’étant risqué dans la compilation de Gaussian sait ce que signifie le compiler et le faire fonctionner : un rude chemin de croix où chaque arrêt équivaut à un virage dissimulant le virage suivant, de longues et multiples compilations pour en arriver à des exécutions, qui, parfois, fonctionnent : il arrive que « Gaussian » tombe en marche pour le chanceux débutant…</p>
+<p>Les notes qui vont suivre permettent pas à pas, moyennant des opérations assez lourdes (patcher un code propriétaire directement n’est pas une étape anodine), de récupérer un Gaussian fonctionnel…</p>
+<p>Pour son utilisation, vous pouvez consulter le <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/dokuwiki/doku.php?id=tools4test">« pied à l’étrier »</a> rédigé pour les applications scientifiques installées dans le cadre de la formation Atosim.</p>
+<ol class="arabic simple">
+<li><p>Installation de quelques paquets Debian et leurs dépendances :</p></li>
+</ol>
+<div class="border-dashed docutils container">
+<p># Installation du compilateur, des libraries OpenMP, Atlas/BLAS, tcsh <br>
+sudo apt-get install gfortran libgomp1 libatlas-base-dev tcsh patch <br>
+# Cette commande est INDISPENSABLE, sinon le CSH par defaut fait planter la compilation <br>
+sudo update-alternatives –set csh /bin/tcsh</p>
+</div>
+<ol class="arabic">
+<li><p>Configuration de l’environnement des sources à compiler :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>il est supposé que le CDROM des sources de Gaussian09 est monté sur /media/cdrom</p></li>
+<li><p>le répertoire d’installation par défaut est /opt</p></li>
+<li><p>les sources sont extraites du fichier TGZ</p></li>
+<li><p>par défaut, il faut utiliser le CSH pour la compilation :</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="border-dashed docutils container">
+<p>tcsh <br>
+setenv basedir « /media/cdrom/ » <br>
+setenv g09root « /opt » <br>
+cd $g09root <br>
+gunzip -c $basedir/tar/*.tgz | tar xvf -</p>
+</div>
+<ol class="arabic simple">
+<li><p>Récupération du <em>patch</em> et son application pour compiler avec GFortran :</p></li>
+</ol>
+<div class="border-dashed docutils container">
+<p>cd g09 <br>
+# pour une distribution Debian Squeeze sous 64 bits :  <br>
+wget <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/Gaussian/g09.wheezy64">http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/Gaussian/g09.wheezy64</a></p>
+<p># La ligne suivante s’applique a la version pour la Debian Squeeze 64 bits <br>
+patch -p 1 -i ./g09.wheezy64</p>
+</div>
+<ul class="simple">
+<li><p>La sortie doit présenter les lignes suivantes :</p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>patching file bsd/i386.make <br>
+patching file bsd/mdutil.c <br>
+patching file bsd/mdutil.F <br>
+patching file bsd/set-mflags <br></p>
+</div>
+<ol class="arabic simple">
+<li><p>Préparation de la compilation et lancement :</p></li>
+</ol>
+<div class="border-dashed docutils container">
+<p>cd $g09root/g09 <br>
+./bsd/install <br>
+source $g09root/g09/bsd/g09.login <br>
+# Compilation <br>
+bsd/bldg09 &gt;&amp; $g09root/g09/build-<cite>date « +%Y%m%d%H%M »</cite></p>
+</div>
+<ol class="arabic simple">
+<li><p>Positionnement des droits pour toute l’arborescence (ici, tous les utilisateurs du groupe users ont accès) :</p></li>
+</ol>
+<div class="border-dashed docutils container">
+<p>chown -R root.users .</p>
+</div>
+</section>
+<section id="test-des-compilations">
+<h2>Test des compilations<a class="headerlink" href="#test-des-compilations" title="Lien vers cette rubrique">¶</a></h2>
+<p>Par défaut, le source de Gaussian comprend les résultats de tests sur architecture IA64 dans le dossier $g09root/g09/tests/ia64.</p>
+<p>Pour exécuter tous les tests, voici la commande</p>
+<div class="border-dashed docutils container">
+<p># A rajouter à la fin de son .bashrc <br>
+export g09root=/opt <br>
+export GAUSS_SCRDIR=/tmp <br>
+. $g09root/g09/bsd/g09.profile</p>
+</div>
+<p>Lancement de tous les tests :</p>
+<div class="border-dashed docutils container">
+<p>mkdir $HOME/Gaussian <br>
+cp $g09root/g09/tests/com/test*[0-9][0-9].com $HOME/Gaussian <br>
+cd $HOME/Gaussian <br>
+i=0 <br>
+while [ $i -le 1044 ] <br>
+do <br>
+if [ -f test$(printf « %04d » $i).com ]; then <br>
+{ /usr/bin/time g09 test$(printf « %04d » $i).com ; } 2&gt; test$(printf « %04d » $i).time <br>
+fi <br>
+i=$(($i+1)) <br>
+done</p>
+</div>
+</section>
+<section id="commandes-annexes">
+<h2>Commandes annexes<a class="headerlink" href="#commandes-annexes" title="Lien vers cette rubrique">¶</a></h2>
+<p>Pour établir les patchs à appliquer par rapport à l’archive de sources originelle, la commande suivante a été utilisée :</p>
+<div class="border-dashed docutils container">
+<p>diff -crB g09 g09.work &gt; g09.wheezy64</p>
+</div>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Informations/Classification/Debian-Squeeze/InstaGaussianWheezy.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

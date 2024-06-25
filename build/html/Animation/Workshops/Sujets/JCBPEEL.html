@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Journées du Centre Blaise Pascal : Exploring (Free) Energy Landscapes &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="jcbpeel">
+<li><p><a class="reference internal" href="../WS2012.html#workshop2012"><span class="std std-ref">Workshops 2012</span></a></p></li>
+</ul>
+<section id="journees-du-centre-blaise-pascal-exploring-free-energy-landscapes">
+<h1>Journées du Centre Blaise Pascal : Exploring (Free) Energy Landscapes<a class="headerlink" href="#journees-du-centre-blaise-pascal-exploring-free-energy-landscapes" title="Lien vers cette rubrique">¶</a></h1>
+<p>Location: Salle de réunion LR6 C 023, Centre Blaise Pascal, ENS-Lyon, France  <br>
+November 20th, 2012</p>
+<p>Organizing committee:</p>
+<ul class="simple">
+<li><p><strong>Paul Fleurat-Lessard</strong>, Laboratoire de Chimie - ENS de Lyon</p></li>
+<li><p><strong>Claire Loison</strong>, Laboratoire de Spectrométrie Ionique et Moléculaire - Université de Lyon / CNRS</p></li>
+<li><p><strong>Cerasela Calugaru</strong>, Centre Blaise Pascal - ENS de Lyon</p></li>
+</ul>
+<p>Administrative coordination:</p>
+<ul class="simple">
+<li><p><strong>Samantha Barendson</strong>, CBP, ENS de Lyon, France (samantha.barendson &#64; ens-lyon.fr)</p></li>
+</ul>
+<p>The workshop is supported by:</p>
+<ul class="simple">
+<li><p>the Centre Blaise Pascal</p></li>
+</ul>
+<p>La communauté des lyonnais utilisant l’outil numérique pour résoudre un problème scientifique est vaste : informaticiens pour sûr, mais aussi mathématiciens, biologistes, physiciens, chimistes…</p>
+<p>L’objectif de ces rencontres est de souder cette communauté autour de rencontres conviviales. Plus concrètement, ces journées visent aussi à permettre de trouver des réponses à nos interrogations quotidiennes auprès d’interlocuteurs locaux. Que les questions soient techniques comme l’utilisation d’un logiciel par exemple, ou plus méthodologiques comme la résolution d’une équation aux dérivées partielles, au moins une réponse se trouve probablement à moins de quelques kilomètres !</p>
+<p>Entre les objets d’étude très varies, et le processeur, hardware commun au travail de tous, se croisent de nombreux chemins qui passent par la compréhension d’un système, sa modélisation mathématique, la dérivation d’un algorithme sous-jacent, la traduction de celui-ci dans un langage, l’utilisation d’un exécutable et enfin, l’exploitation des données produites. Chacune de ces étapes peut elle-même constituer un sujet de recherche et de développement, mais certains chercheurs devront les parcourir toutes, quitte à y passer moins de temps.</p>
+<p>Bien évidemment, les journées du Centre Blaise Pascal ne pourront balayer exhaustivement les thématiques de recherche de la communauté.
+Nous chercherons à présenter des applications variées, des méthodes assez générales utilisées dans différents domaines, et des matériels toujours nouveaux et toujours plus performants.</p>
+<section id="program">
+<h2>1. Program<a class="headerlink" href="#program" title="Lien vers cette rubrique">¶</a></h2>
+<p>09h30 <strong>Christophe Chipot</strong> (UHP Nancy): <em>Addressing complex biological problems using free-energy calculations</em>  <br>
+10h30 Coffee break  <br>
+10h45 <strong>Martin Spichty</strong> (ENS Lyon): <em>Conformational free energy calculations and their application to peptide aptamer technology</em>  <br>
+11h15 <strong>Chandan Patel</strong> (ENS Lyon): <em>Complex DNA lesions : insights from QM/MM–MD</em>  <br></p>
+<p>11h45 - 14h00 Buffet Lunch</p>
+<p>14h00 <strong>Ralf Everaers</strong> (ENS Lyon): <em>A statistical mechanical framework for adaptive resolution multiscale simulations</em>  <br>
+15h00 Coffee break  <br>
+15h15 <strong>Benjamin Bouvier</strong> (IBCP Lyon): <em>Simulating macromolecular recognition using enhanced sampling</em>  <br>
+15h45 <strong>Pawel Koziatek</strong> (INP Grenoble): <em>Potential energy landscape of glasses: distributions of activation energies and attempt frequencies</em>  <br></p>
+</section>
+<section id="abstracts">
+<h2>2. Abstracts<a class="headerlink" href="#abstracts" title="Lien vers cette rubrique">¶</a></h2>
+<p><strong>Christophe Chipot (UHP Nancy)</strong>: <em>Addressing complex biological problems using free-energy calculations</em>  <br>
+One of the current grand challenges of molecular modeling is the faithful description of the reaction coordinates that characterize processes of biological interest. Closely related to this endeavor, the determination of accurate free-energy changes along the model reaction coordinates constitutes an even greater challenge. Sampling the relevant degrees of freedom while circumventing hidden barriers will be illustrated in four case-studies, which demonstrate convincingly how quantitative numerical simulations based on the estimation of free-energy differences can help decipher the intricate reality of the cell machinery. The first problem revolves around the insertion of the nascent protein in the biological membrane mediated by SecY, the translocation complex, which forms a continuous channel with the exit tunnel of the ribosome. Next, the ability of bacterial cells to survive osmotic shocks will be discussed in light of our recent findings on the central role played by the cytoplasmic domain of their small-conductance mechanosensitive channels. How transmembrane segments self-assemble to form light-harvesting complexes, central to photosynthesis, constitutes the third illustration where free-energy calculations help interpret convoluted experimental data. Last, the choice of a relevant method, perturbative or gradient-based, to determine standard binding free energies will conclude this presentation.</p>
+<p><strong>Martin Spichty (ENS Lyon)</strong>: <em>Conformational free energy calculations and their application to peptide aptamer technology</em>  <br>
+Peptide aptamers, conceived to conceptually resemble antibodies, are man-made combinatorial protein reagents. They consist of a random sequence loop introduced into a scaffold protein (see Figure). The ends of the loop are restrained by a disulfide bond. When large libraries of random loops are expressed in living cells, certain loop sequences can adopt a conformation that is capable of interacting with a specific target protein and thereby modifying the functioning of the cell. Molecular biologists can determine the amino-acid sequence of such bioactive peptide aptamers but the three-dimensional structure remains unknown. This seminar will show how biomolecular computer simulations, such as conformational free-energy calculations can provide valuable insights into the structure of bioactive peptide aptamers, and how this information can guide biologists in their design of novel enhanced peptide aptamers.</p>
+<p><strong>Chandan Patel (ENS Lyon)</strong>: <em>Complex DNA lesions : insights from QM/MM–MD</em> <br>
+DNA is continously exposed to a vast number of damaging events triggered by endogeneous and exogeneous agents.[4] Formation and structure variety of these lesions have been studied using exper- iments. Although experimental studies, within their confines, have provided very useful information regarding structural properties of some of the DNA lesions and their repair, they do not provide any mechanistic or energetic information pertaining to their formation. Computational Biochemistry has recently beneficiated from the advent of a large range methods [3], which rely on the increase of avail- able, highly-parallelized computational resources, but were first and foremost motivated by the utter need to describe as accurately as possible complex, strongly heterogeneous systems. Such multiscale and dynamical simulations have become routine for proteic systems [5], yet remain scarce on DNA. In the first seminal example in 2004, Parrinello and coworkers stressed out the importance of the B-helix environment on guanine radical cation structure. [2] QM/MM methodologies are particularly useful in this regard, as they can be used to study reaction mechanisms and electronic porperties in large systems. Here, we present our studies on oxidatively generated intrastrand crosslinks within DNA [1, 6]. In absence of NMR or X-ray structures, the B-helix distortion can be inspected purely on the basis of molecular simulations. Preliminary results obtained on other oxidative cross-link adducts, such as dCyd341, will also be discussed.[7] <br></p>
+<p>References :</p>
+<p>[1] Julian Garrec, Chandan Patel, Ursula Rothlisberger, and Elise Dumont. Insights into Intrastrand Cross-Link Lesions of DNA from QM/MM Molecular Dynamics Simulations. Journal of the American Chemical Society, 134(4):2111–2119, 2012.</p>
+<p>[2] Francesco Luigi Gervasio, Alessandro Laio, Marcella Iannuzzi, and Michele Parrinello. Influence of DNA Structure on the Reactivity of the Guanine Radical Cation. Chemistry A European Journal, 10(19):4846–4852, 2004.</p>
+<p>[3] Eric H. Lee, Jen Hsin, Marcos Sotomayor, Gemma Comellas, and Klaus Schulten. Discovery Through the Computational Microscope. Structure, 17(10):1295 – 1306, 2009.</p>
+<p>[4] T. Lindahl and DE Barnes. Repair of endogenous DNA damage, 65. 2000.</p>
+<p>[5] J.A. McCammon, B.R. Gelin, M. Karplus, et al. Dynamics of folded proteins. Nature, 267(5612):585, 1977.</p>
+<p>[6] C. Patel, J. Garrec, C. Dupont, and E. Dumont. What singles out the G[8-5]C intrastrand DNA cross-link ? Mechanistic and structural insights from hybrid Car-Parrinello simulations. submitted.</p>
+<p>[7] P. Regulus, B. Duroux, P.A. Bayle, A. Favier, J. Cadet, and J.L. Ravanat. Oxidation of the sugar moiety of DNA by ionizing radiation or bleomycin could induce the formation of a cluster DNA lesion. Proceedings of the National Academy of Sciences, 104(35):14032, 2007.</p>
+<p><strong>Ralf Everaers (ENS Lyon), Rafael Delgado-Buscalioni (UAM, Madrid)</strong>: <em>A statistical mechanical framework for adaptive resolution multiscale simulations</em> <br>
+Simultaneous multi-scale schemes directly couple parts of a system described with different models. The idea behind the embedding is to reduce finite size effects in the more finely resolved region compared to a one-level description with periodic or open boundary conditions. Classical examples are QM/MM and the reaction field method for long-range interactions. The particularity of the recently introduced AdResS scheme [1] is to allow a free exchange of particles across the interface between different regions. In the presentation, I will outline a rigorous statistical mechanical framework for the method, which we are currently developing [2]. <br>
+References :</p>
+<p>[1] M. Praprotnik, L. Delle Site, and K. Kremer, The Journal of Chemical Physics 123, 224106 (2005); M. Praprotnik, L. Delle Site, and K. Kremer, Phys. Rev. E 73, 066701 (2006); M. Praprotnik, L. Delle Site, and K. Kremer, J. Chem. Phys. 126, 134902 (2007); M. Praprotnik, L. Delle Site, and K. Kremer, Annual Review of Physical Chemistry 59, 545 (2008); L. Delle Site, S. Leon, and K. Kremer, Journal of the American Chemical Society 126, 2944 (2004); S. Fritsch, C. Junghans, and K. Kremer, J. Chem. Theory Comput. 8, 398 (2012); A. B. Poma and L. D. Site, Physical Review Letters 104, 250201 (2010); R. Potestio and L. Delle Site, J. Chem. Phys. 136 (2012); S. Poblete, M. Praprotnik, K. Kremer, and L. Delle Site, J. Chem. Phys. 132, 114101 (2010); S. Fritsch, S. Poblete, C. Junghans, G. Ciccotti, L. Delle Site, and K. Kremer, Phys. Rev. Lett. 108 (2012).</p>
+<p>[2] R. Potestio, S. Fritsch, P. Espanol, R. Delgado-Buscalioni, K. Kremer, R. Everaers, and D. Donadio, submitted.</p>
+<p><strong>Benjamin Bouvier (IBCP Lyon)</strong>: <em>Simulating macromolecular recognition using enhanced sampling</em> <br>
+Biological macromolecules do not function isolatedly, but form intricate interaction networks featuring multi-partner complexes of diverse natures and binding strengths. The mechanisms driving the recognition between partners of such complexes are very efficient yet very subtle, allowing for instance faster-than-diffusion discrimination between similar DNA sequences. They often involve a combination of chemical interactions at an interface (direct recognition) and large-scale collective motion by which each partner probes the other’s ability to deform (indirect recognition). The amplitude of motion and binding free energies involved prevent the study of such recognition processes using standard molecular dynamics simulations on current computers. In this talk, we present examples of protein-DNA, drug-DNA and protein-protein recognition processes that we have addressed using enhanced sampling simulations along custom-designed generalized coordinates. We discuss how the resulting free energy profiles and binding mechanisms help shed light on the intricacies of biomacromolecular recognition.</p>
+<p><strong>Pawel Koziatek (INP Grenoble), D. Rodney, J. L. Barrat</strong>: <em>Potential energy landscape of glasses: distributions of activation energies and attempt frequencies</em>  <br>
+Molecular dynamics is a powerful tool to simulate the atomic-scale processes that occur in bulk metallic glasses either at rest during aging or under plastic deformation. This technique is however limited to short-time dynamics and does not give access to the slow thermally-activated events that progressively dominate the glass dynamics when the temperature and/or the strain rate are decreased. We report here results obtained with a saddle-point search method, the Activation-Relaxation Technique, used to determine thermally-activated paths in glasses. From the paths, we determine the distributions of activation energies and attempt frequencies, the two main parameters that characterize thermally-activated processes. We study in particular the influence by the history and level of relaxation of the glass on the above distributions.</p>
+</section>
+<section id="participants">
+<h2>3. Participants<a class="headerlink" href="#participants" title="Lien vers cette rubrique">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Family name</p></th>
+<th class="head"><p>First name</p></th>
+<th class="head"><p>Institution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Albaret</p></td>
+<td><p>Tristan</p></td>
+<td><p>Universite Lyon 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bacchus</p></td>
+<td><p>Marie-Christine</p></td>
+<td><p>LASIM</p></td>
+</tr>
+<tr class="row-even"><td><p>Blanchet</p></td>
+<td><p>Christophe</p></td>
+<td><p>CNRS IBCP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Calugaru</p></td>
+<td><p>Cerasela</p></td>
+<td><p>ENS de Lyon</p></td>
+</tr>
+<tr class="row-even"><td><p>Caracas</p></td>
+<td><p>Ema</p></td>
+<td><p>ENS de Lyon</p></td>
+</tr>
+<tr class="row-odd"><td><p>Caracas</p></td>
+<td><p>Razvan</p></td>
+<td><p>CNRS, ENS de Lyon</p></td>
+</tr>
+<tr class="row-even"><td><p>Cheaib</p></td>
+<td><p>Bachar</p></td>
+<td><p>ENS</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chuffart</p></td>
+<td><p>Florent</p></td>
+<td><p>CNRS</p></td>
+</tr>
+<tr class="row-even"><td><p>DELBECQ</p></td>
+<td><p>Françoise</p></td>
+<td><p>NRS-ENS</p></td>
+</tr>
+<tr class="row-odd"><td><p>DONG</p></td>
+<td><p>Wei</p></td>
+<td><p>ENS-Lyon</p></td>
+</tr>
+<tr class="row-even"><td><p>Dumont</p></td>
+<td><p>Elise</p></td>
+<td><p>Laboratoire de Chimie, ENS de Lyon</p></td>
+</tr>
+<tr class="row-odd"><td><p>Filbet</p></td>
+<td><p>FRancis</p></td>
+<td><p>univ Lyon 1</p></td>
+</tr>
+<tr class="row-even"><td><p>Fleurat-Lessard</p></td>
+<td><p>Paul</p></td>
+<td><p>Laboratoire de Chimie de l’ENS de Lyon</p></td>
+</tr>
+<tr class="row-odd"><td><p>FORSTER</p></td>
+<td><p>Georg Daniel</p></td>
+<td><p>LASIM at University Lyon 1 / Claude Bernard</p></td>
+</tr>
+<tr class="row-even"><td><p>Gebresilassie</p></td>
+<td><p>Abel Gebreegziabher</p></td>
+<td><p>INSA-Lyon</p></td>
+</tr>
+<tr class="row-odd"><td><p>Giordano</p></td>
+<td><p>Valentina</p></td>
+<td><p>LPMCN</p></td>
+</tr>
+<tr class="row-even"><td><p>Houwaart</p></td>
+<td><p>Torsten</p></td>
+<td><p>ENS de Lyon</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ignacio</p></td>
+<td><p>Maxime</p></td>
+<td><p>LPMCN</p></td>
+</tr>
+<tr class="row-even"><td><p>Josh</p></td>
+<td><p>Kaustubh</p></td>
+<td><p>ENS de Lyon</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jost</p></td>
+<td><p>Daniel</p></td>
+<td><p>ENS de Lyon</p></td>
+</tr>
+<tr class="row-even"><td><p>Le Goff</p></td>
+<td><p>Thomas</p></td>
+<td><p>LPMCN</p></td>
+</tr>
+<tr class="row-odd"><td><p>MERABIA</p></td>
+<td><p>Samy</p></td>
+<td><p>CNRS-université Lyon 1</p></td>
+</tr>
+<tr class="row-even"><td><p>Meyer</p></td>
+<td><p>Sam</p></td>
+<td><p>ENS de Lyon</p></td>
+</tr>
+<tr class="row-odd"><td><p>MICHON</p></td>
+<td><p>Alexi</p></td>
+<td><p>CNRS BMSSI</p></td>
+</tr>
+<tr class="row-even"><td><p>Renaut</p></td>
+<td><p>Gilles-Alexis</p></td>
+<td><p>ECL LMFA</p></td>
+</tr>
+<tr class="row-odd"><td><p>STEBE</p></td>
+<td><p>Pierre Nicolas</p></td>
+<td><p>ENS de Lyon</p></td>
+</tr>
+<tr class="row-even"><td><p>TANGUY</p></td>
+<td><p>Anne</p></td>
+<td><p>Université Lyon 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>VERDIER</p></td>
+<td><p>Timothée</p></td>
+<td><p>Labo de physique de l’ENS de Lyon</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Animation/Workshops/Sujets/JCBPEEL.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

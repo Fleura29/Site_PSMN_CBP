@@ -124,7 +124,7 @@ Les thèses sont listées "en vrac" par années.
 
 * **David Lopes Cardozo** : `Finite size scaling and the critical Casimir force : ising magnets and binary fluids <http://theses.fr/2015ENSL1025>`_, directeur de thèse **P. Holdsworth**. 
 
-* **Ernesto Horne** : `Transport properties of internal gravity waves <http://theses.fr/2015ENSL1027>`_, directeurs de thèse ** S. Joubaud** et **Ph. Odier**. 
+* **Ernesto Horne** : `Transport properties of internal gravity waves <http://theses.fr/2015ENSL1027>`_, directeurs de thèse **S. Joubaud** et **Ph. Odier**. 
 
 * **Guillaume Holzer** : `Origine de la signalisation thyroïdienne chez les métazoaires et implication dans leur métamorphose <http://theses.fr/2015ENSL1062>`_, directeur de thèse **V. Laudet**.
 
@@ -145,7 +145,7 @@ Les thèses sont listées "en vrac" par années.
 
 * **Peter Nagui Refki Khalil** : `Hox genes and the evolution of adaptive phenotypes. <http://theses.fr/2014LYO10288>`_, directeur de thèse **A. Khila**. 
 
-* **Baptiste Bourget** : `Ondes internes, de l’instabilité au mélange. Approche expérimentale <http://theses.fr/2014ENSL0912>`_, directeurs de thèse ** T. Dauxois** et **P. Odier**. 
+* **Baptiste Bourget** : `Ondes internes, de l’instabilité au mélange. Approche expérimentale <http://theses.fr/2014ENSL0912>`_, directeurs de thèse **T. Dauxois** et **P. Odier**. 
 
 * **Jérémie Zaffran** : `Linear energy relations for biomass transformation under heterogeneous catalysis: A fast prediction of polyalcohol dehydrogenation on transition metals <http://theses.fr/2014ENSL0891>`_, directeur de thèse **P. Sautet**. 
 

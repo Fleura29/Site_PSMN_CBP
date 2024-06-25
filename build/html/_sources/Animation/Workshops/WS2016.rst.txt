@@ -17,12 +17,12 @@ Workshops 2016
 * intervenante : Marie FISLER, LabEx COMOD 
 * discutant : Pierre-Edouard PORTIER, LIRIS, équipe DRIM
 
-.. container:: mt-3 pt-3 border-top border-dark-subtle
+----
 
-    .. image:: ../../_static/Animations/WS/cecam_logo.png
-        :class: img-float pe-3
-        :width: 170px
-        :alt: Logo Ecam
+.. image:: ../../_static/Animations/WS/cecam_logo.png
+    :class: img-float pe-3
+    :width: 170px
+    :alt: Logo Ecam
 
-    `The flow of amorphous solids: from atomistic simulations to Earth Science applications ? <#>`_ |br|
-    **du 15 au 17 juin 2016** 
+`The flow of amorphous solids: from atomistic simulations to Earth Science applications ? <#>`_ |br|
+**du 15 au 17 juin 2016** 

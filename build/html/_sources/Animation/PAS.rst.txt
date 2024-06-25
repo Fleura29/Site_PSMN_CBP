@@ -18,6 +18,8 @@ Projets d'animation scientifique CBP
     `Physics of (or inspired by) the folding of chromosomes <http://www.ens-lyon.fr/PHYSIQUE/seminars/colloquium/2018-11-12>`_ |br|
     Speaker : Ralf Everaers (CBP&Laboratoire de Physique)  /  Monday, Novembre 12, 11h AM - Amphi. Schrödinger (ENS LYON)
 
+----
+
 :underline-bold:`LAMMPS for molecular dynamic simulations : from development to applications`
 
 .. container:: ms-1
@@ -25,12 +27,16 @@ Projets d'animation scientifique CBP
     `LAMMPS for molecular dynamic simulations : from development to applications <https://lammps.sciencesconf.org>`_ |br|
     Coordination : Ralf Everaers (CBP&Laboratoire de Physique), Florent Calvo (LiPhy Grenoble), Cerasela Calugaru(CBP)
 
+----
+
 :underline-bold:`CP2K for atomic et molecular simulations : from development to applications`
 
 .. container:: ms-1
 
     `CP2K for atomic et molecular simulations : from development to applications <https://cp2k.sciencesconf.org>`_ |br|
     Coordination : Carine Michel et Stephane Steinemman (Laboratoire de Chimie), Cerasela Calugaru(CBP)
+
+----
 
 :underline-bold:`Ateliers 3IP : Introduction Inductive à l'Informatique et au Parallélisme`
 

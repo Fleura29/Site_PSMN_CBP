@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>New QM/MM opportunities for in silico macromolecular photochemistry &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="nosmp">
+<li><p><a class="reference internal" href="../WS2012.html#workshop2012"><span class="std std-ref">Workshops 2012</span></a></p></li>
+</ul>
+<section id="new-qm-mm-opportunities-for-in-silico-macromolecular-photochemistry">
+<h1>New QM/MM opportunities for in silico macromolecular photochemistry<a class="headerlink" href="#new-qm-mm-opportunities-for-in-silico-macromolecular-photochemistry" title="Lien vers cette rubrique">¶</a></h1>
+<p>Location: Salle de réunion LR6 C 023, Centre Blaise Pascal, ENS-Lyon, France  <br>
+February 28, 2012 to March 2, 2012 <br>
+<a class="reference external" href="http://www.cecam.org/workshop-0-683.html">Website of the workshop</a> <br>
+<a class="reference external" href="http://www.cbp.ens-lyon.fr/lib/exe/fetch.php?media=animation:workshops:2012:booklet_qmmm.pdf">Booklet of abstracts</a></p>
+<p>Organizing committee:</p>
+<ul class="simple">
+<li><p><strong>Antonio Monari</strong> ( University of Lorraine-Nancy, France)</p></li>
+<li><p><strong>Elise Dumont</strong> (Ecole Normale Supérieure de Lyon, France)</p></li>
+<li><p><strong>Yohann Moreau</strong> (University Joseph Fourier, Grenoble, France)</p></li>
+<li><p><strong>Nicolas Ferré</strong> ( University of Aix-Marseille, France)</p></li>
+</ul>
+<p>Administrative coordination:</p>
+<ul class="simple">
+<li><p><strong>Samantha Barendson</strong>, CBP, ENS de Lyon, France (samantha.barendson &#64; ens-lyon.fr)</p></li>
+</ul>
+<p>The workshop is supported by:</p>
+<p><a class="reference external" href="http://www.cecam.org">CECAM</a>  <br>
+<a class="reference external" href="http://www.cecam.org/workshop-683.html">Réseau Français de Chimie Théorique</a>  <br>
+<a class="reference external" href="http://www.rhonealpes.fr">Région Rhône-Alpes</a>  <br>
+<a class="reference external" href="http://www.cecam.org/workshop-683.html">Bull</a>  <br>
+<a class="reference external" href="http://www.cecam.org/workshop-683.html">SCF Lorraine</a></p>
+<section id="description">
+<h2>1. Description<a class="headerlink" href="#description" title="Lien vers cette rubrique">¶</a></h2>
+<p>Sunlight is the predominant energy on Earth, and a key factor in photosynthesis. It is intimately related to life. The in-depth understanding of the nature of electronic excited states in biological or other complex systems is uncontestedly one of the key subjects in present days chemical and physical sciences.</p>
+<p>Interaction between light and matter has indeed many important consequences in biological process or in advanced materials elaboration. From the comprehension of physiological process (for instance vision) to the development of phototherapeutic drugs, from the elaboration of molecular photoelectronic devices to the design of efficient solar cells.</p>
+<p>In all these cases, the interplay of the molecular and macromolecular environment should be taken into account as precisely as possible to get a meaningful description and hence to allow for a predictive approach and molecular design.</p>
+<p>New and more powerful techniques, both theoretical and experimental, have emerged. Hybrid QM/MM methodologies have proven to be capable to provide such a description to reproduce experimental data and to give them a deeper insight.</p>
+<p>In our workshop, the state of the art of the different approaches will be presented, their limitation and the need of of development will be underlined, the interaction between theory and experience will especially be considered.</p>
+<p>Together with cutting-edge scientific results, considerable amount of time will be devoted to discussion between the different participants.</p>
+<p>Young researchers and students are particularly encouraged to participate and to present their results with poster or oral communications. The workshop scientific committee is formed by: U. Röthlisberger (EPF Lausanne), M. Olivucci (Univ. Siena and B.G.U Ohio), Ph. Sautet (ENS Lyon), and S. Ménage (CEA Grenoble).</p>
+</section>
+<section id="program">
+<h2>2. Program<a class="headerlink" href="#program" title="Lien vers cette rubrique">¶</a></h2>
+<section id="day-1-feb-28th-2012">
+<h3>Day 1 - Feb. 28th 2012<a class="headerlink" href="#day-1-feb-28th-2012" title="Lien vers cette rubrique">¶</a></h3>
+<p>From light to bio, advanced methods for advanced applications</p>
+<p>14:00 to 14:30 - Welcome  <br>
+14:30 to 15:10 - <strong>Luca Frediani</strong>  <br>
+One- and Two-Photon spectroscopy in solution by polarizable methods: DFT/MM and DFT/MM/PCM studies  <br>
+15:10 to 15:30 - <strong>Isabelle Navizet</strong>  <br>
+Light emission in firefly : a QMMM study  <br>
+15:30 to 16:00 - Poster Session  <br>
+16:00 to 16:30 - Coffee Break  <br>
+16:30 to 16:55 - <strong>Tatiana Domratcheva</strong>  <br>
+Computational spectroscopy of light-sensing flavoproteins  <br>
+16:55 to 17:25 - <strong>Pablo Campomanes</strong>  <br>
+Spectral Tuning in Rhodopsin Early Photointermediates  <br>
+17:20 to 17:40 - <strong>Anikó Udvarhelyi</strong>  <br>
+Photoinduced electron transfer in a flavin-binding blue light photoreceptor – a CASSCF-POCAS study  <br></p>
+</section>
+<section id="day-2-feb-29th-2012">
+<h3>Day 2 - Feb. 29th 2012<a class="headerlink" href="#day-2-feb-29th-2012" title="Lien vers cette rubrique">¶</a></h3>
+<p>Advanced Materials and molecular design what theory can provide</p>
+<p>09:00 to 09:40 - <strong>Gonzalez Leticia</strong>  <br>
+Photochemistry and control from first principles: from quantum dynamics to molecular dynamics and back.  <br>
+09:40 to 10:00 - <strong>Marie-Laure Bonnet</strong>  <br>
+Local Disorder in Lithium Imide Characterized by ab initio molecular dynamics simulations and NMR Spectroscopy  <br>
+10:00 to 10:30 - Coffee Break  <br>
+10:30 to 10:55 - <strong>Marcus Boeckmann</strong>  <br>
+Ab initio molecular dynamics (AIMD) tailored for probing photoswitchable smart materials  <br>
+10:55 to 11:40 - <strong>Massimo Olivucci</strong>  <br>
+From Computational Photobiology to the Development of Biomimetic Molecular Devices  <br>
+11:40 to 12:00  <br>
+12:00 to 14:30 - Poster Session and Buffet Lunch  <br></p>
+<p>From light to bio: we need to talk about the environment</p>
+<p>14:30 to 15:15 - <strong>Anna Krylov</strong>  <br>
+Quantum chemistry behind bioimaging: Insights from ab initio studies of fluorescent proteins and their chromophores  <br>
+15:15 to 15:35 - <strong>Thibaut Very</strong>  <br>
+Treatment of the environment: effect on UV-Visible spectra of ruthenium complex  <br>
+15:35 to 16:00 - <strong>Marco Garavelli</strong>  <br>
+Retinal chromophores and rhodopsins photophysics: a computational perspective  <br>
+16:00 to 16:30 - Coffee Break  <br>
+16:30 to 16:55 - <strong>Bernard Levy</strong>  <br>
+Interplay between the chromophore <strong>and the protein dynamics in fluorescent proteins  |br|
+16:55 to 17:15 -</strong> Christoph Allolio  <br>
+Unraveling the molecular origin of the time-dependent Stokes shift via ab initio molecular dynamics simulations  <br>
+17:15 to 17:40 - <strong>Jean-Philip PIquemal</strong>  <br>
+Coupling hybrid QM/MM methods and quantum interpretative techniques.  <br></p>
+</section>
+<section id="day-3-march-1st-2012">
+<h3>Day 3 - March 1st 2012<a class="headerlink" href="#day-3-march-1st-2012" title="Lien vers cette rubrique">¶</a></h3>
+<p>Experimental wishlist</p>
+<p>09:15 to 10:00 - <strong>Olivier Maury</strong>  <br>
+Lanthanides for nonlinear optics, From old complexes to new concepts…  <br>
+10:00 to 10:30 - Coffee Break  <br>
+10:30 to 11:15 - <strong>Gregory Scholes</strong>  <br>
+Quantum mechanisms for light harvesting in photosynthesis  <br>
+11:15 to 12:00 - <strong>Guido Pintacuda</strong>  <br>
+Structure and dynamics of proteins by high-resolution solid-state NMR  <br>
+12:00 to 14:10 - Poster Session and Buffet Lunch  <br></p>
+<p>TDDFT and beyond: the right methods for the right system</p>
+<p>14:10 to 14:55 - <strong>Kenneth Ruud</strong>  <br>
+QM/MM calculations of chiroptical properties: a utopia ?  <br>
+14:55 to 15:15 - <strong>Hélène Jamet</strong>  <br>
+QM and QM/MM studies of the magnetic properties for inhibitors of tyrosinase  <br>
+15:15 to 15:40 - <strong>Chantal Daniel</strong>  <br>
+Spectroscopy and Photophysics of ruthenium (II) polypyridyl complexes used as DNA intercalators  <br>
+15:40 to 16:00 - <strong>Kristian Sneskov</strong>  <br>
+The Polarizable Embedding Coupled Cluster method  <br>
+16:00 to 16:30 - Coffee Break  <br>
+16:30 to 16:55 - <strong>Denis Jacquemin</strong>  <br>
+Ab initio models for multi-photochromic entities  <br>
+16:55 to 17:20 - <strong>Gilles Frison</strong>  <br>
+Modeling the one-electron reduction of diprotonated peptides  <br>
+17:20 to 17:40 - <strong>Miquel Huix-Rotllant</strong>  <br>
+A hybrid exchange-correlation kernel with double excitation configurations for linear-response time-dependent density-functional theory</p>
+</section>
+<section id="day-4-march-2nd-2012">
+<h3>Day 4 - March 2nd 2012<a class="headerlink" href="#day-4-march-2nd-2012" title="Lien vers cette rubrique">¶</a></h3>
+<p>Going further and think different: non UV/VIS spectroscopies and original methods</p>
+<p>09:00 to 09:45 - <strong>Vincenzo Barone</strong>  <br>
+The QM/MM/PCM approach for absorption and fluorescence spectra  <br>
+09:45 to 10:00 - <strong>Hossam Elgabarty</strong>  <br>
+Xray-structure versus in-situ structure of C-Phycocyanin: Insight from first-principles NMR calculations.  <br>
+10:00 to 10:30 - Coffee Break  <br>
+10:30 to 10:55 - <strong>Michel Caffarel</strong>  <br>
+Coupling QMC with MM or MD: A few remarks on perpectives  <br>
+10:55 to 11:15 - <strong>Emanuele Coccia</strong>  <br>
+Quantum Monte Carlo / Molecular Mechanics (QMC/MM): relaxed geometries of Retinal in gas phase and in Rhodopsin  <br>
+11:15 to 12:00 - Closing Word  <br></p>
+</section>
+</section>
+<section id="participants">
+<h2>3. Participants<a class="headerlink" href="#participants" title="Lien vers cette rubrique">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Country</p></th>
+<th class="head"><p>Family name</p></th>
+<th class="head"><p>First name</p></th>
+<th class="head"><p>Institution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Austria</strong></p></td>
+<td><p>Leticia</p></td>
+<td><p>Gonzalez</p></td>
+<td><p>(Universität Wien · Institut für Theoretische Chemie)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Belgium</strong></p></td>
+<td><p>Thibaud</p></td>
+<td><p>Etienne</p></td>
+<td><p>(Fundp Namur)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Canada</strong></p></td>
+<td><p>Greg</p></td>
+<td><p>Scholes</p></td>
+<td><p>(University of Toronto)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Denmark</strong></p></td>
+<td><p>Kristian</p></td>
+<td><p>Sneskov</p></td>
+<td><p>(Aarhus University)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>France</strong></p></td>
+<td><p>Xavier</p></td>
+<td><p>Assfeld</p></td>
+<td><p>(Université de Lorraine, Nancy)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Marie-Christine</p></td>
+<td><p>Bacchus</p></td>
+<td><p>(LASIM)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Marie-Laure</p></td>
+<td><p>Bonnet</p></td>
+<td><p>(LCT Université Pierre et Marie curie)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Michel</p></td>
+<td><p>Caffarel</p></td>
+<td><p>(University Paul Sabatier)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Agisilaos</p></td>
+<td><p>Chantzis</p></td>
+<td><p>(Equipe de Chimie et Biochimie Théoriques (CBT) Institut Jean Barriol Université de Lorraine)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Chantal</p></td>
+<td><p>Daniel</p></td>
+<td><p>(Laboratoire de Chimie Quantique, Université de Strasbourg, France)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Gilles</p></td>
+<td><p>Frison</p></td>
+<td><p>(CNRS-Ecole Polytechnique, Palaiseau)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Florian</p></td>
+<td><p>Goeltl</p></td>
+<td><p>(ENS Lyon)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Miquel</p></td>
+<td><p>Huix-Rotllant</p></td>
+<td><p>(Aix-Marseille Université)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Denis</p></td>
+<td><p>Jacquemin</p></td>
+<td><p>(CEISAM, Université de Nantes)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Hélène</p></td>
+<td><p>Jamet</p></td>
+<td><p>(Université Joseph Fourier)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Joaquim</p></td>
+<td><p>JORNET SOMOZA</p></td>
+<td><p>(ICGM-CNRS (UM2))</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Loïc</p></td>
+<td><p>Joubert Doriol</p></td>
+<td><p>(ICGM, UM2, Montpellier)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Bernard</p></td>
+<td><p>Levy</p></td>
+<td><p>(LCP, Universite Paris Sud )</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Claire</p></td>
+<td><p>Loison</p></td>
+<td><p>(LASIM-UMR 5579 CNRS / UCBL)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Antoine</p></td>
+<td><p>ARION</p></td>
+<td><p>(Theoretical Chemistry and Biochemistry group - SRSMC - University of Lorraine - Nancy - CNRS)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Olivier</p></td>
+<td><p>Maury</p></td>
+<td><p>(Ecole Normale Superieure Lyon)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Guido</p></td>
+<td><p>Pintacuda</p></td>
+<td><p>(ENS Lyon)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Jean-Philip</p></td>
+<td><p>Piquemal</p></td>
+<td><p>(UPMC - Université Paris 6)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Philippe</p></td>
+<td><p>Sautet</p></td>
+<td><p>(Ecole Normale Supérieure de Lyon)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Thibaut</p></td>
+<td><p>Very</p></td>
+<td><p>(Université de Lorraine)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Germany</strong></p></td>
+<td><p>Christoph</p></td>
+<td><p>Allolio</p></td>
+<td><p>(Freie Universität Berlin)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Marcus</p></td>
+<td><p>Boeckmann</p></td>
+<td><p>(Ruhr-Universitaet Bochum)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Tatiana</p></td>
+<td><p>Domratcheva</p></td>
+<td><p>(MPI-Heidelberg)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Hossam</p></td>
+<td><p>Elgabarty</p></td>
+<td><p>(Freie Universitaet Berlin)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Abdul</p></td>
+<td><p>Rehaman Moughal Shahi</p></td>
+<td><p>(Max Planck Institute for Medical Research)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Anikó</p></td>
+<td><p>Udvarhelyi</p></td>
+<td><p>(Max Planck Institute for Medical Research)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Tobias</p></td>
+<td><p>Watermann</p></td>
+<td><p>(Freie Universität Berlin)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Italy</strong></p></td>
+<td><p>Vincenzo</p></td>
+<td><p>Barone</p></td>
+<td><p>(Scuola Normale Superiore Pisa)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Emanuele</p></td>
+<td><p>Coccia</p></td>
+<td><p>(Università degli Studi dell””Aquila)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Marco</p></td>
+<td><p>Garavelli</p></td>
+<td><p>(Universita di Bologna)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Massimo</p></td>
+<td><p>Olivucci</p></td>
+<td><p>(Dipartimento di Chimica, Università di Siena, Italy Department of Chemistry and Biochemistry, Ohio State University, USA)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Nicola</p></td>
+<td><p>Zanna</p></td>
+<td><p>(Organic Chemistry Departement University of Bologna)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Norway</strong></p></td>
+<td><p>Luca</p></td>
+<td><p>Frediani</p></td>
+<td><p>(Center for Theoretical and Computational Chemistry, University of Tromsoe, Norway)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Kenneth</p></td>
+<td><p>Ruud</p></td>
+<td><p>(Center for Theoretical and Computational Chemistry, University of Tromsoe, Norway)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Arnfinn</p></td>
+<td><p>Hykkerud Steindal</p></td>
+<td><p>(CTCC, University of Tromsø)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>South Africa</strong></p></td>
+<td><p>Isabelle</p></td>
+<td><p>Navizet</p></td>
+<td><p>(University of the Witwatersrand)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Switzerland</strong></p></td>
+<td><p>Pablo</p></td>
+<td><p>Campomanes</p></td>
+<td><p>(Swiss Federal Institute of Technology EPF-Lausanne, Switzerland)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>USA</strong></p></td>
+<td><p>Anna</p></td>
+<td><p>Krylov</p></td>
+<td><p>(University Southern California)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Deyana</p></td>
+<td><p>Tchitchekova</p></td>
+<td><p>(Dept Chem, Univ Massachusetts)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Animation/Workshops/Sujets/NOSMP.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

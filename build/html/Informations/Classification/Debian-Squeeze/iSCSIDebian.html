@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Booter iSCSI sous Debian Wheezy &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="booter-iscsi-sous-debian-wheezy">
+<span id="iscsis"></span><h1>Booter iSCSI sous Debian Wheezy<a class="headerlink" href="#booter-iscsi-sous-debian-wheezy" title="Lien vers cette rubrique">¶</a></h1>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Lien vers cette rubrique">¶</a></h2>
+<p><strong>Pourquoi ?</strong> <br>
+Pour permettre le démarrage directement sur le réseau d’une machine</p>
+<p><strong>Quoi ?</strong> <br>
+Utiliser le protocole iSCSI pour offrir un OS complet sur un périphérique équivalent à un disque</p>
+<p><strong>Quand ?</strong> <br>
+N’importe quand. Seule une demi-heure est nécessaire dans environnement maîtrisé (sous Linux/Debian) pour réaliser cette opération.</p>
+<p><strong>Qui ?</strong> <br>
+N’importe quel administrateur de 2 machines (ayant un minimum de connaissances, notamment pour le copier/coller des commandes suivantes)</p>
+<p><strong>Où ?</strong> <br>
+Sur un réseau local ou distant (un réseau haut débit est préférable, un réseau local également mais iSCSI utilise TCP/IP)</p>
+<p><strong>Combien ?</strong> <br>
+Pour l’hôte de cibles iSCSI ou pour le client, n’importe quelle machine suffit, du moment que la machine cliente peut démarrer en PXE</p>
+<p><strong>Comment ?</strong> <br>
+C’est ce que nous allons voir</p>
+</section>
+<section id="iscsi-ou-le-scsi-par-le-reseau-dans-l-environnement-debian">
+<h2>iSCSI ou le SCSI par le réseau dans l’environnement Debian<a class="headerlink" href="#iscsi-ou-le-scsi-par-le-reseau-dans-l-environnement-debian" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le protocole <a class="reference external" href="http://fr.wikipedia.org/wiki/ISCSI">iSCSI</a> permet à un hôte d’offrir un espace disque (du <em>mode bloc</em>) à un hôte distant.</p>
+<dl class="simple">
+<dt>Linux/Debian intègre dans la Wheezy (version 7) tout ce qui permet d’accéder à des volumes iSCSI ou de les créer.</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="http://www.open-iscsi.org">Open-ISCSI</a> pour accéder à des ressources offertes en iSCSI</p></li>
+<li><p><a class="reference external" href="http://iscsitarget.sourceforge.net/">iSCSItarget</a> pour offrir des <em>targets</em> iSCSI avec un module noyau</p></li>
+<li><p><a class="reference external" href="http://stgt.sourceforge.net/">TGT</a> pour offrir des <em>targets</em> iSCSI sans module noyau</p></li>
+</ul>
+</dd>
+</dl>
+<p>De mon expérience (près de 5 ans sur iSCSItarget et un 1 et demi mois sur TGT), j’aurai tendance à préférer iSCSItarget. Le principal avantage de TGT réside dans son absence de module noyau et donc facile implantation sur un serveur, mais il a un problème de taille : impossible de retirer un volume déclaré !</p>
+</section>
+<section id="les-prerequis">
+<h2>Les prérequis<a class="headerlink" href="#les-prerequis" title="Lien vers cette rubrique">¶</a></h2>
+<ul>
+<li><p>une machine portant les « cibles » iSCSI, appelée MyHost</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>elle dispose d’un espace disque disponible en mode bloc (fichiers, disques, volumes)</p></li>
+<li><p>elle a installé une implémentation de cibles iSCSI</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>une machine portant un serveur TFTP avec les images PXE, appelée MyPXE</p></li>
+<li><p>une machine pouvant démarrer en PXE, d’adresse MAC simplement 00:AA:BB:CC:DD:EE, disposant d’une IP fournie par DHCP</p></li>
+</ul>
+</section>
+<section id="machine-portant-les-partages-iscsi">
+<h2>Machine portant les partages iSCSI<a class="headerlink" href="#machine-portant-les-partages-iscsi" title="Lien vers cette rubrique">¶</a></h2>
+<p>Il est supposé que la machine MyHost dispose d’une infrastructure LVM :</p>
+<ul class="simple">
+<li><p>son VG est MyVG</p></li>
+<li><p>le nom du LV à créer est MyLViSCSI <br> <br></p></li>
+<li><p><span class="underline">Création du volume LVM de 20G sur le VG Raid6</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>lvcreate -L 20G -n MyLViSCSI MyVG</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Formatage en Ext3</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>mkfs.ext3 -m 0 /dev/MyVG/MyLViSCSI</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Montage du volume sur le système hôte</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>mkdir /media/MyLViSCSI
+mount -o noatime /dev/MyVG/MyLViSCSI /media/MyLViSCSI</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Etablissement d’un label sur la partition</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>e2label /dev/MyVG/MyLViSCSI MyLViSCSI</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Installation au besoin de debootstrap</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>apt-get install debootstrap</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Installation du système de base Wheezy, architecture x86_64 ou i386</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p># pour une architecture x86_64
+debootstrap –arch amd64 wheezy /media/MyLViSCSI <a class="reference external" href="http://ftp.fr.debian.org/debian">http://ftp.fr.debian.org/debian</a>
+# pour une architecture i386
+debootstrap –arch i386 wheezy /media/MyLViSCSI <a class="reference external" href="http://ftp.fr.debian.org/debian">http://ftp.fr.debian.org/debian</a></p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Passage dans l’environnement</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>chroot /media/MyLViSCSI</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Création d’une nouvelle liste de paquets</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>tee /etc/apt/sources.list &lt;&lt;EOF
+deb <a class="reference external" href="http://ftp.fr.debian.org/debian/">http://ftp.fr.debian.org/debian/</a> wheezy main contrib non-free
+deb-src <a class="reference external" href="http://ftp.fr.debian.org/debian/">http://ftp.fr.debian.org/debian/</a> sid main contrib non-free
+deb-src <a class="reference external" href="http://ftp.fr.debian.org/debian/">http://ftp.fr.debian.org/debian/</a> experimental main contrib non-free
+deb <a class="reference external" href="http://security.debian.org/">http://security.debian.org/</a> wheezy/updates main contrib non-free
+deb-src <a class="reference external" href="http://security.debian.org/">http://security.debian.org/</a> wheezy/updates main contrib non-free
+EOF</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Mise à jour de la base des paquets :</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>apt-get update</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Montage du /proc pendant l’installation</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>mount -t proc none /proc</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Initialisation du mot de passe superutilisateur</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>echo « root:MyStrongPassword » | chpasswd</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Installation de paquets nécessaires</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>apt-get -y install dhcp3-common openssh-server locales initramfs-tools dhcp3-client aufs-tools firmware-linux-nonfree firmware-linux firmware-bnx2 open-iscsi iftop htop iotop emacs mtr lsof tshark mbw memtest86 cpuburn bonnie dbench iozone3 console-setup less &amp;&amp; apt-get clean
+# Pour les architectures i686
+apt-get -y install linux-image-3.2.0-4-686-pae
+# Pour les architectures x86_64
+apt-get -y install linux-image-3.2.0-4-amd64</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Purge des archives de paquets :</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>apt-get clean</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Suppression du démarrage du démon iSCSI (en noyau 3.2, le script plante et empêche le démarrage)</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>insserv -r open-iscsi</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Paramétrage d’un boot iSCSI</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>touch /etc/iscsi/iscsi.initramfs
+update-initramfs -k all -u</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Vérification de la présence du support iSCSI “lsinitramfs /boot/initrd.img-* | grep « local-top/iscsi »” retourne :</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>scripts/local-top/iscsi
+scripts/local-top/iscsi</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Paramétrage de l’interface de démarrage iSCSI</span></p></li>
+</ul>
+<div class="text-center docutils container">
+<div class="d-inline-block bg-danger-subtle pt-3 mb-2 rounded fs-13 docutils container">
+<p>En cas d’interfaces multiples, il est INDISPENSABLE de préciser l’interface de démarrage, sinon…</p>
+</div>
+</div>
+<div class="border-dashed docutils container">
+<p>sed -i « s/DEVICE=/DEVICE=eth0/g » /etc/initramfs-tools/initramfs.conf</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Suppression du hostname pour le paramétrage automatique du HOST</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>rm /etc/hostname</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Définition de l’interface de loopback</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>tee /etc/network/interfaces &lt;&lt;EOF
+auto lo
+iface lo inet loopback
+EOF</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Démontage du /proc</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>umount /proc</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Sortie de l’environnement chrooté</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>exit</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Arrêt des services démarrés à l’installation</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>lsof | grep /media/MyLViSCSI | awk “{ print $2 }” | sort -u | xargs -I “{}” kill “{}”</p>
+</div>
+</section>
+<section id="configuration-du-demarrage-pxe">
+<h2>Configuration du démarrage PXE<a class="headerlink" href="#configuration-du-demarrage-pxe" title="Lien vers cette rubrique">¶</a></h2>
+<section id="sur-le-porteur-de-cibles-iscsi">
+<h3>Sur le porteur de cibles iSCSI<a class="headerlink" href="#sur-le-porteur-de-cibles-iscsi" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><span class="underline">Copie des composants pour le PXE</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>cp /media/MyLViSCSI/boot/initrd.img-3.2.0-4-686-pae /root/initrd.img-3.2.0-4-686-pae-iSCSI
+cp /media/MyLViSCSI/boot/vmlinuz-3.2.0-4-686-pae /root/vmlinuz-3.2.0-4-686-pae-iSCSI
+cp /media/MyLViSCSI/boot/initrd.img-3.2.0-4-amd64 /root/initrd.img-3.2.0-4-amd64-iSCSI
+cp /media/MyLViSCSI/boot/vmlinuz-3.2.0-4-amd64 /root/vmlinuz-3.2.0-4-amd64-iSCSI</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Copie des clés autorisées</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>mkdir /media/MyLViSCSI/root/.ssh
+cp -a /root/.ssh/authorized_keys /media/MyLViSCSI/root/.ssh/</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Démontage de la partition</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>umount /media/MyLViSCSI</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Copie des composants de démarrage sur le serveur PXE</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p># Le serveur TFTP/PXE est MyPXE:
+scp /root/<a href="#id1"><span class="problematic" id="id2">*</span></a>iSCSI PyPXE:/srv/tftp</p>
+</div>
+<ul>
+<li><p><span class="underline">Création d’un partage iSCSI nécessitant les paramètres</span></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>IQN (pour iSCSI Qualified Name) : “iqn.2012-04.MySite.MyHost:MyLViSCSI”</p></li>
+<li><p>identifiant : “inputname”</p></li>
+<li><p>mot de passe : “MyInputPwd”</p></li>
+<li><p>chemin : “/dev/MyVG/MyLViSCSI”</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><span class="underline">Paramétrage de la cible IET</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p># Renommage de l’ancien fichier de configuration
+cp /etc/iet/ietd.conf /etc/iet/ietd.conf-$(date +%Y%m%d)
+# Ajout de l’entree précedente
+tee -a /etc/iet/ietd.conf &lt;&lt;EOF
+Target iqn.2013-06.MySite.MyHost:MyLViSCSI
+IncomingUser inputname MyInputPwd
+Lun 0 Path=/dev/MyVG/MyLViSCSI,BlockSize=4096,Type=fileio
+EOF</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Activation des partages</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>ietadm –op new –tid=100 –params Name=iqn.2013-06.MySite.MyHost:MyLViSCSI
+ietadm –op new –tid=100 –lun=0 –params Path=/dev/MyVG/MyLViSCSI,BlockSize=4096,Type=fileio
+ietadm –op new –tid=100 –lun=0 –user –params IncomingUser=inputname,Password=MyInputPwd</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Vérification des partages par la commande “cat /proc/net/iet/volume  | grep MyLViSCSI”</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>cat /proc/net/iet/volume  | grep MyLViSCSI
+tid:86 name:iqn.2013-03.MySite.MyHost:MyLViSCSI
+lun:0 state:0 iotype:fileio iomode:wt blocks:5242880 blocksize:4096 path:/dev/MyVG/MyLViSCSI</p>
+</div>
+</section>
+<section id="sur-le-serveur-tftp-de-boot-pxe">
+<h3>Sur le serveur TFTP de boot PXE<a class="headerlink" href="#sur-le-serveur-tftp-de-boot-pxe" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><span class="underline">Déplacement dans le dossier de configuration TFTP, anciennement “/srv/tftp”, maintenant</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>cd /srv/tftp/pxelinux.cfg</p>
+</div>
+<ul>
+<li><p><span class="underline">Déclaration de l’entrée TFTP pour notre entrée</span></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ISCSI_TARGET_NAME : IQN</p></li>
+<li><p>ISCSI_TARGET_IP : hôte de cibles iSCSI</p></li>
+<li><p>ISCSI_INITIATOR : IQN</p></li>
+<li><p>ISCSI_USERNAME : identifiant</p></li>
+<li><p>ISCSI_PASSWORD : mot de passe</p></li>
+<li><p>ISCSI_TARGET_GROUP : groupe, généralement 1</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="border-dashed docutils container">
+<p>tee iscsi &lt;&lt;EOF
+DEFAULT linux64</p>
+<p>LABEL linux64
+KERNEL vmlinuz-3.2.0-4-amd64-iSCSI
+APPEND console=tty1 initrd=initrd.img-3.2.0-4-amd64-iSCSI ip=dhcp rw ISCSI_TARGET_NAME=iqn.2013-06.MySite.MyHost:MyLViSCSI ISCSI_TARGET_IP=MyHost ISCSI_INITIATOR=iqn.2013-06.MySite.MyHost:default ISCSI_USERNAME=inputname ISCSI_TARGET_GROUP=1 ISCSI_PASSWORD=MyInputPwd root=LABEL=MyLViSCSI rootflags=data=journal</p>
+<p>LABEL linux32
+KERNEL vmlinuz-3.2.0-4-686-pae-iSCSI
+APPEND console=tty1 initrd=initrd.img-3.2.0-4-686-pae-iSCSI ip=dhcp rw ISCSI_TARGET_NAME=iqn.2013-06.MySite.MyHost:MyLViSCSI ISCSI_TARGET_IP=MyHost ISCSI_INITIATOR=iqn.2013-06.MySite.MyHost:default ISCSI_USERNAME=inputname ISCSI_TARGET_GROUP=1 ISCSI_PASSWORD=MyInputPwd root=LABEL=MyLViSCSI rootflags=data=journal
+EOF</p>
+</div>
+<ul class="simple">
+<li><p><span class="underline">Création des liens pour chaque machine spécifique. L’adresse MAC de la forme : « 00:AA:BB:CC:DD:EE » doit être écrite sous la forme 01-00-aa-bb-cc-dd-ee en MINUSCULE !</span></p></li>
+</ul>
+<div class="border-dashed docutils container">
+<p>ln -sf iscsi 01-00-aa-bb-cc-dd-ee</p>
+</div>
+<p><a class="reference external" href="mailto:emmanuel&#46;quemener&#37;&#52;&#48;ens-lyon&#46;fr">Emmanuel Quemener</a> <em>2013/06/13 06:05</em></p>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Informations/Classification/Debian-Squeeze/iSCSIDebian.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

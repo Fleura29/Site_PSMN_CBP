@@ -112,7 +112,7 @@ Animation scientifique
   * de colloques, (ex "European Workshop on Superfluid turbulence from the perspective of numerics: modeling, methods and challenges")
 * **Représenter le Centre Blaise Pascal** auprès de différents publics (réunions de travail, manifestations scientifiques)
 * **Gestion de la** :ref:`liste de diffusion <liste-diff>` du Centre Blaise Pascal (2009 -...)
-* **S’impliquer dans des réseaux de compétence** : `GDR Calcul <http://calcul.math.cnrs.fr/spip.php?rubrique42>`_, représentant du Centre Blaise Pascal dans le Réseau `LyonCalcul <http://lyoncalcul.univ-lyon1.fr/spip.php>`_, etc . 
+* **S'impliquer dans des réseaux de compétence** : `GDR Calcul <http://calcul.math.cnrs.fr/spip.php?rubrique42>`_, représentant du Centre Blaise Pascal dans le Réseau `LyonCalcul <http://lyoncalcul.univ-lyon1.fr/spip.php>`_, etc . 
 
 Activités au PSMN
 -----------------

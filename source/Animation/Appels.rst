@@ -8,7 +8,7 @@ Appels à projets
 2021
 ----
 
-`Proposal for the CECAM flagship programme in 2021 <#>`_ |br|
+`Proposal for the CECAM flagship programme in 2021 <Appels/CECAMFlag2021.html>`_ |br|
 The call is open from 26 April 2021 to 18 July 2021
 
 2020
@@ -39,10 +39,11 @@ Date limite de dépôt : 5 octobre 2013
 
 2013
 ----
-`Edition 2013 du PRIX BULL – JOSEPH FOURIER pour le développement de la simulation numérique en France <#>`_ |br|
+
+`Edition 2013 du PRIX BULL – JOSEPH FOURIER pour le développement de la simulation numérique en France <Appels/PrixBull.html>`_ |br|
 Date limite de remise des dossiers : Vendredi 25 octobre 2013
 
-`Proposal for the CECAM flagship programme in 2014 <#>`_ |br|
+`Proposal for the CECAM flagship programme in 2014 <Appels/CECAMFlag2021.html>`_ |br|
 The call is open from 18 April 2013 to 12 July 2013
 
 `Demandes de soutien pour Animations scientifiques en Calcul, Modélisation et Sciences Numériques <#>`_ |br|

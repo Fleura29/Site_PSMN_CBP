@@ -20,6 +20,8 @@ Projets d'infrastructure
 `Computational Physics : Computational Astrophysics <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
+----
+
 :underline-bold:`Sidus4Labs @ ISA`
 
 .. image:: ../_static/img_projets/logo_isa.png
@@ -28,6 +30,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 
 `Sidus4Labs @ ISA <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
+
+----
 
 :underline-bold:`DH-Foucault (2016-20xx)`
 
@@ -39,6 +43,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 `Exploration d'outils numériques pour la bibliothèque Foucault <#>`_ 
 
 Maitrise d'oeuvre : Emmanuel Quemener
+
+----
 
 :underline-bold:`OIKO (2015-2016)`
 
@@ -61,6 +67,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 
 `Computational Physics : Multiscale modeling of materials <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
+
+----
 
 :underline-bold:`Galaxy`
 
@@ -95,6 +103,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 `Evolution de l'infrastructure informatique de l'UMPA <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
+----
+
 :underline-bold:`Houches 2013`
 
 .. image:: ../_static/img_projets/houches.png
@@ -103,6 +113,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 
 `Computational Physics : from DNA to evolution <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
+
+----
 
 :underline-bold:`Projet de création, administration et maintenance du site web du CBP (2013-20xx)`
 
@@ -115,6 +127,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 
 Coordination : Samantha Barendson & Loïs Taulelle
 
+----
+
 :underline-bold:`Projet de création, administration et maintenance du site web du PSMN (2013-20xx)`
 
 .. image:: ../_static/img_projets/psmn.png
@@ -124,10 +138,12 @@ Coordination : Samantha Barendson & Loïs Taulelle
 `Site web collaboratif du Pole Scientifique de Modélisation Numérique <#>`_ |br|
 Coordination : Loïs Taulelle & Samantha Barendson
 
+----
 
 :underline-bold:`ENVeMedis (2013-20xx)`
 
 .. image:: ../_static/img_projets/pds.jpg
+    :width: 100px
     :class: img-float pe-3
     :alt: Image pds
 
@@ -146,6 +162,8 @@ Maitrise d'oeuvre : Emmanuel Quemener |br|
 
 `Computational Physics : DFT <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
+
+----
 
 :underline-bold:`Equip@Meso (2012-20XX)`
 
@@ -168,6 +186,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 `Computational Physics : soft matter <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
+----
+
 :underline-bold:`VASP 4 Workstation`
 
 .. image:: ../_static/img_projets/vasp.png
@@ -177,6 +197,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 `Vasp Running on my workstation <#>`_
 
 Maitrise d'oeuvre : Emmanuel Quemener
+
+----
 
 :underline-bold:`Projet de développement, administration et maintenance du site web collaboratif pour le CFCAM-RA (2011-20XX)`
 
@@ -203,6 +225,8 @@ Coordination : Cerasela Calugaru / Assistance : Samantha Barendson
 
         Maitrise d'oeuvre : Emmanuel Quemener
 
+----
+
 :underline-bold:`SIDUS 2010-2021`
 
 .. container:: d-flex mb-3
@@ -228,6 +252,8 @@ Coordination : Cerasela Calugaru / Assistance : Samantha Barendson
 `Du Cecam à l'ENS-Lyon au Centre Blaise Pascal <#>`_ |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
+----
+
 :underline-bold:`Projet de développement, administration et maintenance du site web collaboratif pour le PSMN (2009 - avril 2013)`
 
 .. image:: ../_static/img_projets/psmn.png
@@ -236,6 +262,8 @@ Maitrise d'oeuvre : Emmanuel Quemener
 
 `Site web collaboratif du Pole Scientifique de Modélisation Numérique <#>`_ |br|
 Coordination : Cerasela Calugaru
+
+----
 
 :underline-bold:`Création du plateau technique de multi-noeuds`
 
@@ -247,6 +275,8 @@ Coordination : Cerasela Calugaru
 `Plateau Technique Multi-Noeuds <#>`_
 
 Maitrise d'oeuvre : Emmanuel Quemener
+
+----
 
 :underline-bold:`Création d'une passerelle OpenVPN pour l'établissement`
 
