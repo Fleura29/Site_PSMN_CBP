@@ -33,8 +33,6 @@ Centre européen de calcul atomique et moléculaire
 
 CECAM activities will range from the organization of scientific workshops to that of specific tutorials at the graduate level on the use of especially relevant software, from brain-storming meetings on timely topics to collaborative research projects, and sponsoring of an interesting visitors program as well as of specialized courses in computational sciences also at the master level.
 
-.. container:: text-center
-
-    .. image:: ../_static/Réseaux/europe_nodes_hq.png
-        :class: img-fluid
-        :alt: Image europe nodes hq
+.. image:: ../_static/Réseaux/europe_nodes_hq.png
+    :class: img-fluid center
+    :alt: Image europe nodes hq

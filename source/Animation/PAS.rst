@@ -51,7 +51,7 @@ Coordination : Cerasela Calugaru et Samantha Barendson
 
 **Atelier de Biologie Computationnelle**
 
-:ref:`Atelier de Biologie Computationnelle <abs>` |br|
+:ref:`Atelier de Biologie Computationnelle <abc>` |br|
 Coordination : Cédric Vaillant
 
 2014 - 2020

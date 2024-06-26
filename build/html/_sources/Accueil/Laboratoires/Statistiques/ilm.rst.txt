@@ -40,9 +40,7 @@ Représentants et responsables de l'ouverture des comptes: Thierry BIBEN et Fran
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_ilm.png
-        :class: img-fluid
-        :alt: Graphique ILM
+.. image:: ../../../_static/statistiques/plot_by_labs_ilm.png
+    :class: img-fluid center
+    :alt: Graphique ILM
 

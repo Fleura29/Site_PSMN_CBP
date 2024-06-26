@@ -40,11 +40,9 @@ Représentant et responsable de l'ouverture des comptes: Paul VIGNEAUX.
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_umpa.png
-        :class: img-fluid
-        :alt: Graphique chimie
+.. image:: ../../../_static/statistiques/plot_by_labs_umpa.png
+    :class: img-fluid center
+    :alt: Graphique chimie
 
 ERC
 ---

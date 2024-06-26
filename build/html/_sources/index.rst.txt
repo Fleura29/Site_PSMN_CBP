@@ -48,8 +48,8 @@ logiciels, ainsi que la formation et l'accompagnement des utilisateurs dans le d
 performance.
 
 **Avec ses homologues des autres établissements lyonnais (P2CHPD à Lyon I et PMCS2I à l'ECL), 
-le PSMN forme le méso-centre de calcul de la** `Fédération Lyonnaise de Modélisation et Sciences 
-Numériques <#nouvel_onglet>`_. Ce méso-centre régional est un des plus important de ce type en France, il héberge 
+le PSMN forme le méso-centre de calcul de la** :ref:`Fédération Lyonnaise de Modélisation et Sciences 
+Numériques <flmsns>` . Ce méso-centre régional est un des plus important de ce type en France, il héberge 
 l'équipement d'excellence lyonnais du projet `Equip@Meso <http://www.genci.fr/fr/content/equipmeso-0>`_ coordonné par 
 `GENCI <http://www.genci.fr/>`_ (Grand Équipement National de Calcul Intensif).
 

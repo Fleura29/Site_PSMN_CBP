@@ -40,8 +40,6 @@ Représentant et responsable de l'ouverture des comptes: à déterminer.
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_lmfa.png
-        :class: img-fluid
-        :alt: Graphique LMFA
+.. image:: ../../../_static/statistiques/plot_by_labs_lmfa.png
+    :class: img-fluid center
+    :alt: Graphique LMFA

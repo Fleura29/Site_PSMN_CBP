@@ -61,14 +61,12 @@ Infrastructure du Centre Blaise Pascal
 
 Un coup d'oeil sur les machines accessibles ? Le réflexe `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_  `Cluster@CBP <http://www.cbp.ens-lyon.fr/python/forms/ClusterCBP>`_ `Servers@CBP <http://www.cbp.ens-lyon.fr/python/forms/ServersCBP>`_ !
     
-.. container:: text-center
+.. container:: d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13 text-center
+        
+    Les machines de `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ présentes dans les 
+    salles M7-1H04, M7-1H19 et M-GN-102 sont éteintes de 19h30 à 7h30 du matin. 
+    Elles sont rallumées automatiquement. Les autres machines restent allumées H24
 
-    .. container:: d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13
-            
-        Les machines de `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ présentes dans les 
-        salles M7-1H04, M7-1H19 et M-GN-102 sont éteintes de 19h30 à 7h30 du matin. 
-        Elles sont rallumées automatiquement. Les autres machines restent allumées H24
-    
 Documentations pour bien utiliser les espaces de stockage du CBP ? Les `$HOME et /projects <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Qreuil_stockages1.jpg>`_ et `/local et /scratch <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Qreuil_stockages2.jpg>`_  
 
 **06/04/2024 - Arrêt, mise à jour et redémarrage de** `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_

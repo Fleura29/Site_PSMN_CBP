@@ -42,6 +42,7 @@ Activités
 ---------
 
 **Animation de l'Atelier des Humanités Numériques de l'ENS de Lyon**
+
 * Organisation du programme des ateliers et formations.
 * Organisation ponctuelle de conférences et prise en charge des intervenants extérieurs.
 * Animation du réseau : envoi du programme des activités aux listes de diffusion; rédaction de billets sur le `blog Hypothèse <https://ahnenslyon.hypotheses.org/>`_.
@@ -49,6 +50,7 @@ Activités
 * Coordination de l'AHN avec le `consortium CAHIER <https://cahier.hypotheses.org/>`_ par une participation au groupe de travail sur l'édition numérique de la correspondance.
 
 **Appui aux laboratoires selon les besoins**
+
 * Soutien aux équipes HN des laboratoires SHS à leur demande  : aide à la modélisation des projets, à la structuration de données et à leur visualisation.
 * Formation / aide à la prise en main d'outils, par exemple le logiciel Oxygen, initiation à l'encodage XML TEI, etc.
 * Conseil et recommandations sur la politique éditoriale des éditions critiques et corpus numériques : curation, diffusion, accès, citabilité, pérennité, propriété intellectuelle...

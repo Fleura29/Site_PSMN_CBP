@@ -1,3 +1,5 @@
+.. _act:
+
 Atelier de Chimie Théorique
 ===========================
 

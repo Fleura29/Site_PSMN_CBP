@@ -110,7 +110,7 @@ Livrables, Communications, Formations, articles
 * Présentations à `journée JoSy sur ZFS <https://indico.mathrice.fr/event/420/>`_ : `du HDD à ZFS <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JoSy2023_HDD2ZFS_EQ.pdf>`_ et `Survey sur les HDD <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JoSy2023_HDDSurvey_EQ.pdf>`_
 * Présentation aux L3 Physique-Chimie des `ressources du CBP <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2023-2024.pdf>`_
 * Journée `Immersion Cooling <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ITrium_Meeting_25_mai_2023-ENS_de_Lyon.pdf>`_ : `Retour d'expérience <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Immersion2023_0525_EQ.pdf>`_    
-* * Présentation à `Aramis 2023 <https://aramis.resinfo.org/doku.php?id=pleniaires:pleniere23mai2023>`_ : `video <https://webcast.in2p3.fr/video/strategie-de-consommation-moins-ou-mieux>`_ et `présentation <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis2023-20230523_EQ.pdf>`_
+* Présentation à `Aramis 2023 <https://aramis.resinfo.org/doku.php?id=pleniaires:pleniere23mai2023>`_ : `video <https://webcast.in2p3.fr/video/strategie-de-consommation-moins-ou-mieux>`_ et `présentation <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis2023-20230523_EQ.pdf>`_
 * Présentation sur l'*Immersion Cooling* à l'ENS-Lyon : `Retour d'expérience <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Immersion2023_0322_EQ.pdf>`_
 
 **Année 2022**

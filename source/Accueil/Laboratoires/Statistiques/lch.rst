@@ -42,11 +42,9 @@ Représentants et responsables de l'ouverture des comptes: David LOFFREDA et Tao
 
 *\*Séparation d'avec les comptes liés au CRMN*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_chimie.png
-        :class: img-fluid
-        :alt: Graphique chimie
+.. image:: ../../../_static/statistiques/plot_by_labs_chimie.png
+    :class: img-fluid center
+    :alt: Graphique chimie
 
 Collaborations Industrielles
 ----------------------------

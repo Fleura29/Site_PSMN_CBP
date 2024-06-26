@@ -40,11 +40,9 @@ Représentant et responsable de l'ouverture des comptes: Jeremy JUST.
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_rdp.png
-        :class: img-fluid
-        :alt: Graphique RDP
+.. image:: ../../../_static/statistiques/plot_by_labs_rdp.png
+    :class: img-fluid center
+    :alt: Graphique RDP
 
 Autres Projets
 --------------

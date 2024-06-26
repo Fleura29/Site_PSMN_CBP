@@ -40,11 +40,9 @@ Représentant et responsable de l'ouverture des comptes: Gaël YVERT.
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-  .. image:: ../../../_static/statistiques/plot_by_labs_lbmc.png
-    :class: img-fluid
-    :alt: Graphique LBMC
+.. image:: ../../../_static/statistiques/plot_by_labs_lbmc.png
+  :class: img-fluid center
+  :alt: Graphique LBMC
 
 Autres Projets
 --------------

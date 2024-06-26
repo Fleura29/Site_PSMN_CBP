@@ -40,11 +40,9 @@ Représentant et responsable de l'ouverture des comptes: Razvan CARACAS.
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_geol.png
-        :class: img-fluid
-        :alt: Graphique geol
+.. image:: ../../../_static/statistiques/plot_by_labs_geol.png
+    :class: img-fluid center
+    :alt: Graphique geol
 
 ERC
 ---

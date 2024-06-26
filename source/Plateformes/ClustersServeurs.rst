@@ -20,13 +20,11 @@ Le PSMN a reçu un financement "equipex" en 2012. Les nouveaux serveurs, dépend
 Transferts technologiques
 -------------------------
 
-.. container:: text-center
+.. container:: d-inline-block bg-success-subtle pt-3 mb-3 rounded fs-13 text-center
+    
+    Les configurations du système d'exploitation, ainsi que sa diffusion (SIDUS) sur les noeuds ont profité des travaux préparatoires, recettes et intégrations réalisés sur la plate-forme expérimentale du CBP.
 
-    .. container:: d-inline-block bg-success-subtle pt-3 mb-3 rounded fs-13
-        
-        Les configurations du système d'exploitation, ainsi que sa diffusion (SIDUS) sur les noeuds ont profité des travaux préparatoires, recettes et intégrations réalisés sur la plate-forme expérimentale du CBP.
-
-    .. image:: ../_static/Plateformes/salle_des_machines_4.png
-      :class: img-fluid
-      :alt: Image salle des machines
+.. image:: ../_static/Plateformes/salle_des_machines_4.png
+    :class: img-fluid center
+    :alt: Image salle des machines
 

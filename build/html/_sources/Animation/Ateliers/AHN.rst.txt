@@ -1,3 +1,5 @@
+.. _ahn:
+
 Ateliers en Humanités Numériques
 ================================
 

@@ -42,9 +42,7 @@ Représentant et responsable de l'ouverture des comptes: Magali NAVILLE.
 
 *Structure créée en 2012*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_igfl.png
-        :class: img-fluid
-        :alt: Graphique IGFL
+.. image:: ../../../_static/statistiques/plot_by_labs_igfl.png
+    :class: img-fluid center
+    :alt: Graphique IGFL
 

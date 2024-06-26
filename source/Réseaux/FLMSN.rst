@@ -1,3 +1,5 @@
+.. _flmsns:
+
 Fédération Lyonnaise de Modélisation et Sciences Numériques
 ===========================================================
 

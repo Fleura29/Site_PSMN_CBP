@@ -22,8 +22,6 @@ Informations
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_private.png
-        :class: img-fluid
-        :alt: Graphique Sociétés de service informatique
+.. image:: ../../../_static/statistiques/plot_by_labs_private.png
+    :class: img-fluid
+    :alt: Graphique Sociétés de service informatique

@@ -29,7 +29,7 @@ Représentant et responsable de l'ouverture des comptes: Rolf WALDER
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
 |                                                     |        |      |      |      |      |      |      |      |      |           |      
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
-| Financement (en % du financement mutualisé total)   |        |  1  |  12   |  11  |  12  |  0   |  13  |  13  |      |    7      |       
+| Financement (en % du financement mutualisé total)   |        |  1   |  12  |  11  |  12  |  0   |  13  |  13  |      |    7      |       
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
 | Financement (en % du financement total)             |        |  1   |  5   |  5   |  5   |  0   |  8   |  8   |      |    4      |       
 +-----------------------------------------------------+--------+------+------+------+------+------+------+------+------+-----------+ 
@@ -40,13 +40,9 @@ Représentant et responsable de l'ouverture des comptes: Rolf WALDER
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: d-flex
-
-    .. container:: text-center
-
-        .. image:: ../../../_static/statistiques/plot_by_labs_cral.png
-            :class: img-fluid
-            :alt: Graphique CRAL
+.. image:: ../../../_static/statistiques/plot_by_labs_cral.png
+    :class: img-fluid center
+    :alt: Graphique CRAL
 
 ERC
 ---

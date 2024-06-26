@@ -7,11 +7,9 @@ Actualités
 
    <br>
 
-.. container:: text-center
-
-    .. image:: ../_static/actualites.png
-        :class: img-fluid
-        :alt: image salle des machines
+.. image:: ../_static/actualites.png
+    :class: img-fluid center
+    :alt: Image salle des machines
     
 Actualités du Pôle Scientifique de Modélisation Numérique
 ---------------------------------------------------------
@@ -21,26 +19,24 @@ Financements PIA3 Equipex+:
 Le PSMN est partenaire de deux projets financés:
     * **Spatial-Cell-ID**, projet porté par l'ENS de Lyon.
     * **MuDiS4LS**, Mutualised Digital Spaces for FAIR data in Life and Health Sciences.
-    * `https://www.france-bioinformatique.fr/en/news/mudis4ls-the-project-for-shared-digital-spaces-for-life-sciences/ <https://www.france-bioinformatique.fr/en/news/mudis4ls-the-project-for-shared-digital-spaces-for-life-sciences/>`_ 
+    * https://www.france-bioinformatique.fr/en/news/mudis4ls-the-project-for-shared-digital-spaces-for-life-sciences/
 
 Actualités récurentes:
-    * Les `Journées CBP & PSMN - cycle de rencontres thématiques <ateliers>`_  
+    * Les :ref:`Journées CBP & PSMN - cycle de rencontres thématiques <thematique>`  
     * Les :ref:`Cafés du jeudi <cafe>` organisés par le pôle.
-    * Les `dates de formation <date>`_. 
+    * Les `dates de formation <#>`_. 
 
-Pour une présentation du PSMN et du CBP, veuillez consulter `cette page <index>`_.
+Pour une présentation du PSMN et du CBP, veuillez consulter `cette page <../index.html>`_.
 
 Les formations
 --------------
 
 Voir `la page dédiée aux formations <formations>`_
 
-.. container:: text-center mb-3
+.. container:: d-inline-block bg-danger-subtle pt-3 mb-3 rounded fs-13 text-center
 
-    .. container:: d-inline-block bg-danger-subtle pt-3 rounded fs-13
-
-        Les formations PSMN sont proposées en présentiel (ou visioconférence), en général, le mardi après-midi ou le jeudi après-midi, à la demande des utilisateurs. |br|
-        **Inscriptions** : `Cerasela Calugaru <mailto:cerasela.iliana.calugaru@ens-lyon.fr>`_
+    Les formations PSMN sont proposées en présentiel (ou visioconférence), en général, le mardi après-midi ou le jeudi après-midi, à la demande des utilisateurs. |br|
+    **Inscriptions** : `Cerasela Calugaru <mailto:cerasela.iliana.calugaru@ens-lyon.fr>`_
 
 Refroidissement par immersion
 -----------------------------

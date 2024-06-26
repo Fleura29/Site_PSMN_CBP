@@ -1,4 +1,4 @@
-.. _abs:
+.. _abc:
 
 Atelier de Biologie Computationnelle
 ====================================

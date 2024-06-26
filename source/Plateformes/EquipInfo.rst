@@ -17,11 +17,9 @@ Les ressources disponibles sont alors facilement accessibles via SSH ou :ref:`x2
 Une utilisation toujours croissante
 -----------------------------------
 
-.. container:: text-center
-
-    .. image:: ../_static/Plateformes/utilisateurscbp2019.png
-        :class: img-fluid pb-2
-        :alt: Graphique utilisateurs cbp 2019
+.. image:: ../_static/Plateformes/utilisateurscbp2019.png
+    :class: img-fluid pb-2 center
+    :alt: Graphique utilisateurs cbp 2019
 
 Un ensemble de plateaux techniques
 ----------------------------------
@@ -68,11 +66,9 @@ L'utilisateur dispose sur les machines `Cloud@CBP <https://www.cbp.ens-lyon.fr/p
 * l'espace vrac récent **/distonet**: **partagé entre les machines**, de **120 TB**, ni archivé mais sauvegardé. Il dispose d'un accès rapide sur le réseau de la salle (autour de 100 MB/s) et très très rapide sur le réseau du cluster (autour de 2 GB/s). Ne JAMAIS l'exploiter pour des traitements générant ou traitant au delà de 10000 fichiers ! Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /distonet/$USER"
 * l'espace projets **/projects**: **partagé entre les machines**, de **12 TB**, archivé mais non sauvegardé. C'est un espace collaboratif. Il dispose d'un accès rapide sur le réseau de la salle et sur le réseau du cluster. Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /projects/users/$USER"
 
-.. container:: text-center 
+.. container:: d-inline-block bg-warning-subtle pt-2 mb-2 rounded fs-13 text-center 
 
-    .. container:: d-inline-block bg-warning-subtle pt-2 mb-2 rounded fs-13
-
-        La règle la plus importante pour le stockage est : "On ne travaille PAS dans son $HOME"
+    La règle la plus importante pour le stockage est : "On ne travaille PAS dans son $HOME"
 
 Infrastructure logicielle cohérente
 -----------------------------------
@@ -87,11 +83,9 @@ Un certain nombre d'applications scientifiques complémentaires (OpenSource ou p
 Équipements informatiques matériels
 -----------------------------------
 
-.. container:: text-center 
-
-    .. container:: d-inline-block bg-success-subtle pt-2 mb-2 rounded fs-13
-        
-        Les équipements suivants forment le `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ : plus de 150 machines directement accessibles avec le même environnement
+.. container:: d-inline-block bg-success-subtle pt-2 mb-2 rounded fs-13 text-center
+    
+    Les équipements suivants forment le `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ : plus de 150 machines directement accessibles avec le même environnement
 
 Équipements généraux
 --------------------
@@ -221,11 +215,9 @@ Bureau M7-1H07 avec capacité 3D
 Équipements spécifiques
 -----------------------
 
-.. container:: text-center
-
-    .. image:: ../_static/Plateformes/cimg0039.jpg
-        :class: img-fluid
-        :alt: Image cimg0039
+.. image:: ../_static/Plateformes/cimg0039.jpg
+    :class: img-fluid center
+    :alt: Image cimg0039
 
 * **un cluster 64 bits** de 156 noeuds permanents et sa frontale
 

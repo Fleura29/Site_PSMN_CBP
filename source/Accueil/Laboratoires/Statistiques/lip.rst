@@ -40,11 +40,9 @@ Représentant et responsable de l'ouverture des comptes: Jean-Yves L'EXCELLENT.
 
 *Les chiffres pour l'année en cours sont amenés à évoluer*
 
-.. container:: text-center
-
-    .. image:: ../../../_static/statistiques/plot_by_labs_lip.png
-        :class: img-fluid
-        :alt: Graphique LIP
+.. image:: ../../../_static/statistiques/plot_by_labs_lip.png
+    :class: img-fluid center
+    :alt: Graphique LIP
 
 Autres Projets
 --------------

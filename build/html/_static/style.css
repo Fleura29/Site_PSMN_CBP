@@ -90,6 +90,12 @@ a:hover{
     .wid-header{
         width: 90%;
     }
+    table{
+        display: block;
+        overflow-x: auto;
+        border-collapse: collapse;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -296,6 +302,12 @@ a.headerlink{
 
 .img-float-r{
     float: right;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .border-form{

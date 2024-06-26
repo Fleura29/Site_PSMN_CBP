@@ -43,11 +43,9 @@ Partenaires Privées
 Statistiques globales d'utilisation
 -----------------------------------
 
-.. container:: text-center
-
-    .. image:: ../../../_static/2022_barplot_statistiques_accounting_by_year.svg
-        :class: img-fluid
-        :alt: Graphique
+.. image:: ../../../_static/2022_barplot_statistiques_accounting_by_year.svg
+    :class: img-fluid center
+    :alt: Graphique
 
 
 
