@@ -67,11 +67,11 @@ Liste des publications
 
 * **Schindler B, Renois-Predelus G, Bagdadi N, Melizi S, Barnes L, Chambert S, Allouche AR**, Compagnon I. MS/IR, a new MS-based hyphenated method for analysis of hexuronic acid epimers in glycosaminoglycans. *Glycoconjugate journal*. 2017 Jun 1;34(3):421-5. `DOI: 10.1007/s10719-016-9741-8  <https://link.springer.com/article/10.1007/s10719-016-9741-8>`_ , [ImpactFactor: 2.186 | H index:  76 | SJR 2016: 0.609]
 
-* **Siouani C, Mahtout S, Safer S, Rabilloud F**. Structure, Stability, and Electronic and Magnetic Properties of VGe<sub>n</sub> (n= 1–19) Clusters. *Journal of Physical Chemistry A*. 2017 Apr 28;121(18):3540-54. `DOI: 10.1021/acs.jpca.7b00881 <https://pubs.acs.org/doi/full/10.1021/acs.jpca.7b00881>`_ , [ImpactFactor: 2.847 | H index: 196  | SJR 2016: 1.258] 
+* **Siouani C, Mahtout S, Safer S, Rabilloud F**. Structure, Stability, and Electronic and Magnetic Properties of :math:`VGe_{n}` (n= 1–19) Clusters. *Journal of Physical Chemistry A*. 2017 Apr 28;121(18):3540-54. `DOI: 10.1021/acs.jpca.7b00881 <https://pubs.acs.org/doi/full/10.1021/acs.jpca.7b00881>`_ , [ImpactFactor: 2.847 | H index: 196  | SJR 2016: 1.258] 
 
 * **Mahtout S, Siouani C, Rabilloud F**. Growth Behavior and Electronic Structure of Noble Metal-Doped Germanium Clusters. *Journal of Physical Chemistry A*. 2017 Dec. `DOI: 10.1021/acs.jpca.7b09887 <https://pubs.acs.org/doi/abs/10.1021/acs.jpca.7b09887>`_ , [ImpactFactor: 2.847 | H index: 196  | SJR 2016: 1.258] 
 
-* **Mahtout S, Amatousse N, Rabilloud F**. Structural, electronic and magnetic properties of P<sub>n+ 1</sub> and FeP<sub>n</sub> (n= 1–14) clusters. *Computational and Theoretical Chemistry*. 2017 Dec 15;1122:16-26. `DOI: 10.1016/j.comptc.2017.10.010 <https://doi.org/10.1016/j.comptc.2017.10.010>`_ , [ImpactFactor: 1.549 | H index:  75 | SJR 2016: 0.541]
+* **Mahtout S, Amatousse N, Rabilloud F**. Structural, electronic and magnetic properties of :math:`P_{n+ 1}` and :math:`FeP_{n}` (n= 1–14) clusters. *Computational and Theoretical Chemistry*. 2017 Dec 15;1122:16-26. `DOI: 10.1016/j.comptc.2017.10.010 <https://doi.org/10.1016/j.comptc.2017.10.010>`_ , [ImpactFactor: 1.549 | H index:  75 | SJR 2016: 0.541]
 
 * **Rahmouni S, Djedouani A, Anak B, Tabti S, Bendaas A, Bencharif M, François M, Fleutot S, Rabilloud F**. Synthesis, X-ray crystal structures, electrochemistry and theoretical investigation of a tetradentate nickel and copper Schiff base complexes. *Journal of Molecular Structure*. 2017 Nov 15;1148:238-46. `DOI: 10.1016/j.molstruc.2017.07.032 <http://www.sciencedirect.com/science/article/pii/S0022286017309651>`_ , [ImpactFactor: 1.753 | H index: 82  | SJR 2016: 0.401]
 

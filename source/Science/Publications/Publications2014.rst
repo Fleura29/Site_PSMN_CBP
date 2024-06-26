@@ -59,7 +59,7 @@ Liste des publications
 
 * **Förster, G.D., Magnin, Y., Rabilloud, F. and Calvo, F.**, 2014. Effective embedded-atom potential for metallic adsorbates on crystalline surfaces. *Modelling and Simulation in Materials Science and Engineering*, 22(3), p.035015. `DOI:10.1088/0965-0393/22/3/035015 <http://iopscience.iop.org/article/10.1088/0965-0393/22/3/035015/meta>`_ , [ImpactFactor: 1.492 | H index: 54 | SJR 2013: 0.612]
 
-* **Anak, B., Bencharif, M. and Rabilloud, F.**, 2014. Time-dependent density functional study of UV-visible absorption spectra of small noble metal clusters (Cu<sub>n</sub>, Ag<sub>n</sub>, Au<sub>n</sub>, n= 2–9, 20). *RSC Advances*, 4(25), pp.13001-13011. `DOI:10.1039/C3RA47244B <http://pubs.rsc.org/en/Content/ArticleLanding/2014/RA/c3ra47244b#!divAbstract>`_ , [ImpactFactor: 3.708 | H index: 62 | SJR 2013: 1.128]
+* **Anak, B., Bencharif, M. and Rabilloud, F.**, 2014. Time-dependent density functional study of UV-visible absorption spectra of small noble metal clusters (:math:`Cu_{n}`, :math:`Ag_{n}`, :math:`Au_{n}` , n= 2–9, 20). *RSC Advances*, 4(25), pp.13001-13011. `DOI:10.1039/C3RA47244B <http://pubs.rsc.org/en/Content/ArticleLanding/2014/RA/c3ra47244b#!divAbstract>`_ , [ImpactFactor: 3.708 | H index: 62 | SJR 2013: 1.128]
 
 * **Bourget, B., Scolan, H., Dauxois, T., Le Bars, M., Odier, P. and Joubaud, S.**, 2014. Finite-size effects in parametric subharmonic instability. *Journal of Fluid Mechanics*, 759, pp.739-750. `DOI:10.1017/jfm.2014.550 <https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0022112014005503>`_ , [ImpactFactor: 2.294 | H index: 155 | SJR 2013: 2.074]
 
