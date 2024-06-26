@@ -38,12 +38,10 @@ Infrastructures
     
 **Automne 2022**
 
-.. container:: text-center 
-    
-    .. container:: bg-danger-subtle pt-3 pb-2 rounded fs-13 mb-2 
+.. container:: bg-danger-subtle pt-3 pb-2 rounded fs-13 mb-2 text-center 
 
-        **IMPORTANT NEWS**
-        Debian9/SGE has been shutdown definitely Friday 21th of October 2022
+    **IMPORTANT NEWS**
+    Debian9/SGE has been shutdown definitely Friday 21th of October 2022
 
 * **Nouvelle infrastructure système**
     * migration debian 9 -> **debian 11** (LTS) ⇒ **DONE**

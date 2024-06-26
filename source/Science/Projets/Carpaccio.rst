@@ -36,11 +36,9 @@ Short description of the project
 
 Muscle degeneration or loss diminishes the quality of life. The causes can be genetic, disease related, accidental, environmental, or associated with aging. The study of muscle is performed in animal models around the world so as to better understand the underlying mechanisms and investigate promising new therapeutic approaches. For this, muscle cross sections are studied to determine muscle fiber number, size, gene expression and localization of the nuclei – indicators of the status of the muscle’s health and response to treatments. This process, performed manually, would take up to 8 – 12 hours per muscle. We have developed a program called *CARPACCIO* to perform automatic, objective evaluation of these parameters derived from microscope images of muscle cross sections, offering versatile representation of the data within less than 30 min. This is considered in the field as a *methodological breakthrough*.
 
-.. container:: text-center
-
-    .. image:: ../../_static/img_projets/carpaccio.png
-        :class: img-fluid
-        :alt: Image Carpaccio
+.. image:: ../../_static/img_projets/carpaccio.png
+    :class: img-fluid center
+    :alt: Image Carpaccio
 
 Intervention of PSMN/CBP
 ------------------------

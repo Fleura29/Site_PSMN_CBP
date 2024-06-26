@@ -25,11 +25,9 @@ The theoretical description of the interplay of lipids, proteins and nucleic aci
 
 Our research is focused on three topics: (i) viscoelasticity of entangled polymer melts, solutions and networks, (ii) electrostatic interactions in soft condensed matter, and (iii) DNA and chromatin.
 
-.. container:: text-center mb-2
-    
-    .. image:: ../../_static/img_projets/compphyssoftbiomat.png
-        :class: img-fluid
-        :alt: Image compphyssoftbiomat
+.. image:: ../../_static/img_projets/compphyssoftbiomat.png
+    :class: img-fluid center mb-2
+    :alt: Image compphyssoftbiomat
 
 CBP contribution to the project
 -------------------------------

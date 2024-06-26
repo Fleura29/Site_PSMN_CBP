@@ -12,11 +12,9 @@ Ces 10 dernières années, l'usage de la salle s'est largement diversifiée, les
 
 Deux autres salles de formation multimédia, celle du département de biologie et celle de bachelor, partagent la même gestion administrative permettant l'accès aux ressources.
 
-.. container:: text-center
+.. container:: bg-warning-subtle pt-3 pb-1 mb-2 rounded fs-13 text-center 
 
-  .. container:: bg-warning-subtle pt-3 pb-1 mb-2 rounded fs-13
-
-    Les salles de travaux pratiques du CBP n'ont **aucun lien** avec les salles libre-service gérées par la DSI (salles 0014, 106 et 109 du site Monod) !
+  Les salles de travaux pratiques du CBP n'ont **aucun lien** avec les salles libre-service gérées par la DSI (salles 0014, 106 et 109 du site Monod) !
 
 Sa composition
 --------------
@@ -85,11 +83,9 @@ L'intervenant se doit :
   * de permettre l'accès d'étudiants ou chercheurs (hors examen) désirant exploiter une station libre.
   * de veiller au bon respect des *10 commandements* durant son cours.
 
-.. container:: text-center
+.. container:: bg-warning-subtle pt-3 pb-1 mb-2 rounded fs-13 text-center 
 
-  .. container:: bg-warning-subtle pt-3 pb-1 mb-2 rounded fs-13
-
-    Aucun logiciel ne sera installé la semaine voire le jour de la formation !
+  Aucun logiciel ne sera installé la semaine voire le jour de la formation !
 
 Pour un accès distant
 ~~~~~~~~~~~~~~~~~~~~~

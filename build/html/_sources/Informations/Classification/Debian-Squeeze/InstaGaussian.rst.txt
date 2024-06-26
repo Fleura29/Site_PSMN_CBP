@@ -6,12 +6,10 @@ Installation de Gaussian sous Debian Squeeze (et Ubuntu)
 .. |br| raw:: html
 
    <br>
-   
-.. container:: text-center 
 
-    .. container:: d-inline-block bg-warning-subtle pt-3 mb-2 rounded fs-13
+.. container:: d-inline-block bg-warning-subtle pt-3 mb-2 rounded fs-13 text-center 
 
-        Cette documentation s'applique à Gaussian 09 version A01.
+    Cette documentation s'applique à Gaussian 09 version A01.
 
 Introduction
 ------------
@@ -26,11 +24,9 @@ Tout individu s'étant risqué dans la compilation de Gaussian sait ce que signi
 
 Les notes qui vont suivre permettent pas à pas, moyennant des opérations assez lourdes (patcher un code propriétaire directement n'est pas une étape anodine), de récupérer un Gaussian fonctionnel...
 
-.. container:: text-center 
+.. container:: d-inline-block bg-warning-subtle pt-3 mb-2 rounded fs-13 text-center 
 
-    .. container:: d-inline-block bg-warning-subtle pt-3 mb-2 rounded fs-13
-
-        En construction : pour l'instant, seule la version 64 bits (soit amd64 chez Debian) a été validée. Elle semble opérationnelle pour les versions Debian Lenny et Squeeze et les versions 10.04 et 10.10 de Ubuntu.
+    En construction : pour l'instant, seule la version 64 bits (soit amd64 chez Debian) a été validée. Elle semble opérationnelle pour les versions Debian Lenny et Squeeze et les versions 10.04 et 10.10 de Ubuntu.
 
 Pour son utilisation, vous pouvez consulter le `"pied à l'étrier" <http://www.cbp.ens-lyon.fr/emmanuel.quemener/dokuwiki/doku.php?id=tools4test>`_ rédigé pour les applications scientifiques installées dans le cadre de la formation Atosim.
 

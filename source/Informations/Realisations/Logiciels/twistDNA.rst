@@ -11,8 +11,6 @@ Data for the genomes of E. coli and B. subtilis in physiological conditions (Tem
 
 A Twist-DNA wrapper for Galaxy has been developed by Björn Grüning. It is integrated in the `Galaxy Toolshed <http://testtoolshed.g2.bx.psu.edu/repository?repository_id=dfa99e996b65c815>`_ and is also available :download:`here <../../../_static/twistdna_galaxywrapper.zip>`.
 
-.. container:: text-center
-
-    .. image:: ../../../_static/Réalisations/twistdna2.gif
-        :class: img-fluid
-        :alt: Image twistdna
+.. image:: ../../../_static/Réalisations/twistdna2.gif
+    :class: img-fluid center
+    :alt: Image twistdna

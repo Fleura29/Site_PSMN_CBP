@@ -20,11 +20,9 @@ To improve the segmentation part of the pipeline, a new method was implement in 
 * Improve segmentation by re-detecting each cell shape with LSM  
 From left to right : original image, contour detect by LSM, watershed segmentation, cells detect by LSM
 
-.. container:: text-center pb-3
-
-    .. image:: ../../_static/img_projets/lsm1.png
-        :class: img-fluid
-        :alt: Image lsm1  	
+.. image:: ../../_static/img_projets/lsm1.png
+    :class: img-fluid center pb-3
+    :alt: Image lsm1  	
 
 Intervention of PSMN/CBP
 ------------------------
@@ -56,11 +54,9 @@ Theoretically, the algorithm should stop when all the image is segmented. In pra
 
 From left to right : watershed, eroded watershed (step 1), evolve towards edge (step 2), final segmentation (step 3)
 
-.. container:: text-center mb-2
-
-    .. image:: ../../_static/img_projets/lsm2.png
-        :class: img-fluid
-        :alt: Image lsm2  	
+.. image:: ../../_static/img_projets/lsm2.png
+    :class: img-fluid center mb-2
+    :alt: Image lsm2  	
 
 * **Program optimization**
 
@@ -89,10 +85,8 @@ Several versions were implement in order to :
 * segment only a list of cells (LSM cells)
 * restart at the third step (LSM cells)
 
-.. container:: text-center
-    
-    .. container:: bg-body-secondary pt-2 pb-1 rounded fs-13
+.. container:: bg-body-secondary pt-2 pb-1 rounded fs-13 text-center
 
-        This project has been performed during the stage of Master of **Typhaine Moreau** at ENS Lyon 
-        (Reproduction et Developpement des Plantes and Centre Blaise Pascal) coordinated by 
-        **Annamaria Kiss and Cerasela Calugaru**
+    This project has been performed during the stage of Master of **Typhaine Moreau** at ENS Lyon 
+    (Reproduction et Developpement des Plantes and Centre Blaise Pascal) coordinated by 
+    **Annamaria Kiss and Cerasela Calugaru**

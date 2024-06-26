@@ -9,15 +9,13 @@ Coordination : Emmanuel Lévêque
 
 Post-doc : Hatem Touil
 
-.. container:: text-center
+.. image:: ../../_static/img_projets/labs1.png
+    :class: img-fluid center
+    :alt: Logo LaBS1
 
-    .. image:: ../../_static/img_projets/labs1.png
-        :class: img-fluid
-        :alt: Logo LaBS1
-
-    .. image:: ../../_static/img_projets/labs2.png
-        :class: img-fluid
-        :alt: Logo LaBS2
+.. image:: ../../_static/img_projets/labs2.png
+    :class: img-fluid center
+    :alt: Logo LaBS2 
 
 Contribution du Centre Blaise Pascal à ce projet
 ------------------------------------------------

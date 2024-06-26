@@ -22,8 +22,6 @@ SoFTP uses appropriate finite element method of degree 2 (Lagrange elements for 
 
 SoFTP was initially writen in Fortran 77 language because it used MODULEF library for several tasks (mesh generation, solvers, visualization) but now, an evolution to Fortran 90/95 is carried out. Parallel implementations using PETSc and MPI have been also realized. 
 
-.. container:: text-center
-
-    .. image:: ../../../_static/Réalisations/3d.jpeg
-        :class: img-fluid
-        :alt: Image 3d
+.. image:: ../../../_static/Réalisations/3d.jpeg 
+    :class: img-fluid center
+    :alt: Image 3d
