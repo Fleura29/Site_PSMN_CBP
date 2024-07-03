@@ -3,11 +3,9 @@
 SIDUS : "avec SIDUS, n'installe plus, démarre seulement tes machines !"
 =======================================================================
 
-.. container:: text-center
-
-    .. image:: ../../../_static/sidus-800.png
-        :class: img-max-width
-        :alt: Logo Sidus
+.. image:: ../../../_static/sidus-800.png
+    :class: img-max-width center
+    :alt: Logo Sidus
 
 Démonstrateur SIDUS sous VirtualBox
 -----------------------------------
@@ -76,11 +74,9 @@ Les deux interfaces réseau du serveurs **sidus4labs** sont NATés. Pour accéde
 
 Chacun des systèmes proposés au démarrage dispose d'un environnement graphique comparable, XFCE, plutôt léger. D'autres environnements sont proposés, mais ils requièrent un matériel graphique conséquent. Il se peut donc que GNOME3, choisi comme environnement par défaut par certaines distributions, ne fonctionne pas correctement. XFCE fonctionne dans tous les cas.
 
-.. container:: text-center 
+.. container:: d-inline-block bg-danger-subtle pt-2 mb-2 rounded fs-13 text-center
     
-    .. container:: d-inline-block bg-danger-subtle pt-2 mb-2 rounded fs-13
-        
-        Pour en savoir plus sur SIDUS, c'est là-dessous
+    Pour en savoir plus sur SIDUS, c'est là-dessous
 
 SIDUS en quelques phrases
 -------------------------

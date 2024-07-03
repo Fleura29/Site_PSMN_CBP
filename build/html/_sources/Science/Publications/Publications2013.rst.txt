@@ -147,4 +147,3 @@ CBP
     :alt: Image cover235linuxmag
 
 First international publication on SIDUS in `Linux Journal <http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration>`_  by E. Quemener & M. Corvellec: SIDUS, a unique system that drastically reduces maintenance and installation time for new computer workstations. Tiny errata available in :ref:`French <sidusfr>` & :ref:`English <sidusen>`.
-

@@ -43,19 +43,15 @@ The Kuroshio current and the Zapiola anticyclone
 
 We will study several important phenomena for the large scale dynamics of oceans ; on one hand the bistability of some of the western boundary currents like the Gulf Stream, but especially of the Kuroshio current (east of Japan), and on the other hand the self-organized Zapiola ocean anticyclone, east of Argentina. Our choice of these examples has been dictated by their importance for ocean circulation, but also for their paradigmatic interest as far as statistical mechanics is concerned. Indeed, the Kuroshio exhibits a bistability that we will explain by the vicinity of an out of equilibrium phase transition. The Zapiola is one of the clearest examples of self organization close to some equilibrium states, even out of equilibrium. Then these two problems will be essential for illustrating the relevance of statistical mechanics tools for ocean dynamics but also for other types of geophysical fluid dynamics problems.
 
-.. container:: text-center
-
-    .. image:: ../../_static/img_projets/rings-southern-ocean-high-resolution.jpg
-        :class: img-fluid
-        :alt: Image rings-southern-ocean
+.. image:: ../../_static/img_projets/rings-southern-ocean-high-resolution.jpg
+    :class: img-fluid center
+    :alt: Image rings-southern-ocean
 
 *[From Hallberg-Gnanadesikan - JPO 2006.]  A large part of ocean mesoscale variability is explained by vortices (rings) of size 100 - 200 km.  These rings are present everywhere in the ocean. There are for instance visible here south of South Africa and all along the Antarctic circumpolar current.*
 
-.. container:: text-center
-
-    .. image:: ../../_static/img_projets/rings-psi-vitesse.jpg
-        :class: img-fluid
-        :alt: Image rings-psi-vitesse
+.. image:: ../../_static/img_projets/rings-psi-vitesse.jpg
+    :class: img-fluid center
+    :alt: Image rings-psi-vitesse
 
 *Streamfunction and velocity statistical equilibria, explaining the structure and drift velocity of ocean rings.*
 

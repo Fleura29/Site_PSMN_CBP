@@ -34,7 +34,7 @@
             </a>
         </div>
         <div class="wid-header">
-            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+            <div class="d-flex justify-content-end container-language">
                 <div class="px-2">
                     <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
                 </div>
@@ -240,7 +240,7 @@
 <p>Si vous souhaitez vous <strong>inscrire</strong> à la liste de diffusion du Centre Blaise Pascal, il vous suffit de remplir le formulaire suivant :</p>
 <div class="border-form mb-2 docutils container">
 <p>Demande d’inscription à la liste de diffusion CBP</p>
-<form id="userForm" method="post" class="ms-2 me-2" data-nom="liste">
+<form id="userForm" method="post" class="ms-2 me-2" data-nom="liste_inscr">
     <div class="row">
         <div class="col-12 col-sm-6">
             <div class="mb-2">
@@ -271,16 +271,16 @@
     </div>
 
     <div id="bloc" class="text-center"></div>
-    <script src="../../_static/Formulaires/Formulaires.js"></script>
 
-    <div class="text-center">
-        <button type="submit" class="btn mb-3 mt-2" style="border-color: #E69645;">Soumettre</button>
+
+    <div class="text-center mt-3">
+        <button class="btn btn-submit mb-3" type="submit" value="submit" >Soumettre</button>
     </div>
 </form></div>
 <p>Si vous souhaitez vous <strong>désinscrire</strong>, merci de valider le formulaire suivant :</p>
 <div class="border-form docutils container">
 <p>Désinscription de la liste de diffusion CBP</p>
-<form class="ms-2 me-2">
+<form id="userForm2" method="post" class="ms-2 me-2" data-nom="liste_desinscr">
     <div class="mb-2">
         <label for="inputEmail">Email*</label>
         <input type="text" class="form-control form-style" id="inputEmail" name="mailDesinscription" required>
@@ -288,17 +288,17 @@
     <p class="mt-2 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
     <div class="d-flex justify-content-center">
-        <label class="me-1" for="human" id="human-question"></label>
-        <input id="human-answer" type="text"/>
+        <label class="me-1" for="human" id="human-questio2"></label>
+        <input id="human-answer2" type="text"/>
     </div>
 
-    <div id="bloc" class="text-center"></div>
-    <script src="../../_static/Formulaires/Formulaires.js"></script>
+    <div id="bloc2" class="text-center"></div>
 
-    <div class="text-center mt-2">
-        <button type="submit" class="btn mb-3 mt-2" style="border-color: #E69645;">Soumettre</button>
+    <div class="text-center mt-3">
+        <button class="btn btn-submit mb-3" type="submit" value="submit" >Soumettre</button>
     </div>
-</form></div>
+</form>
+<script src="../../_static/Formulaires/Formulaires.js"></script></div>
 </section>
 
 

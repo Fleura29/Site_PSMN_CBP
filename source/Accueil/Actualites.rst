@@ -44,7 +44,7 @@ Refroidissement par immersion
 .. raw:: html
 
     <div class="text-center">
-        <iframe width="450" height="270" src="https://video.ens-lyon.fr/actualites/2020/2020-02-28_immersion_cooling_vcourte_VOSTA.hd.mp4?direct&420x250" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="270" src="https://video.ens-lyon.fr/actualites/2020/2020-02-28_immersion_cooling_vcourte_VOSTA.hd.mp4?direct&420x250" frameborder="0" allowfullscreen></iframe>
     </div>
 
 Les cafés du jeudi

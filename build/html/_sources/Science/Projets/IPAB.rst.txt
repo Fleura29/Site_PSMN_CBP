@@ -31,11 +31,9 @@ From left to right :
 * anisotropic blur K=0.1 / sigma=6 / gamma=1 / nb_it=150
 * gaussian blur
 
-.. container:: text-center
-
-    .. image:: ../../_static/img_projets/ab1.png
-        :class: img-fluid mb-2
-        :alt: Image ab1  	
+.. image:: ../../_static/img_projets/ab1.png
+    :class: img-fluid mb-2 center
+    :alt: Image ab1  	
 
 * **References**
 
@@ -44,11 +42,8 @@ The algorithm is based on a filter developed by Weickert, using a formula from S
 * J . Weickert. Anisotropic Diffusion In Image Processing. B.G. Teubner Stuttgart, 1998.
 * Schmidt, T., Pasternak, T., Liu, K., Blein, T., Aubry-Hivet, D., Dovzhenko, A., Duerr, J., Teale, W., Ditengou, F. A., Burkhardt, H., Ronneberger, O. and Palme, K. (2014), The iRoCS Toolbox – 3D analysis of the plant root apical meristem at cellular resolution. The Plant Journal, 77: 806–814. doi: 10.1111/tpj.12429
 
-.. container:: text-center
+.. container:: bg-body-secondary pt-2 pb-1 rounded fs-13 text-center
 
-    .. container:: bg-body-secondary pt-2 pb-1 rounded fs-13
-
-        This project has been performed during the stage of Master of **Typhaine Moreau** at ENS Lyon 
-        (Reproduction et Developpement des Plantes and Centre Blaise Pascal) coordinated by 
-        **Annamaria Kiss and Cerasela Calugaru**
-     
+    This project has been performed during the stage of Master of **Typhaine Moreau** at ENS Lyon 
+    (Reproduction et Developpement des Plantes and Centre Blaise Pascal) coordinated by 
+    **Annamaria Kiss and Cerasela Calugaru**

@@ -5,11 +5,9 @@ Réservation de la salle de TP numériques du CBP
 
 `Calendrier de disponibilité de la salle de TP numériques du CBP <calendrier>`_ 
 
-.. container:: text-center
+.. container:: d-inline-block bg-body-secondary pt-3 mb-3 rounded fs-13 text-center
 
-    .. container:: d-inline-block bg-body-secondary pt-3 mb-3 rounded fs-13
-
-        N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
+    N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
 
 .. container:: border-form
     
@@ -78,7 +76,7 @@ Réservation de la salle de TP numériques du CBP
             <p class="fs-12"> Toutes nos salles sont désormais équipées de vidéo-projecteurs fixes.</p>
             
             <div class="form-floating">
-                <textarea class="form-control textArea" id="textAreaAutre" name="renseignements"></textarea>
+                <textarea class="form-control textarea" id="textAreaAutre" name="renseignements"></textarea>
                 <label for="textAreaAutre">Autres renseignements</label>
             </div>
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
@@ -97,7 +95,7 @@ Réservation de la salle de TP numériques du CBP
             <script src="../../_static/Formulaires/Formulaires.js"></script>
 
             <div class="text-center mt-2">
-                <button type="submit" value="submit" class="btn mb-3" style="border-color: #E69645;">Soumettre</button>
+                <button class="btn btn-submit mb-3" type="submit" value="submit" >Soumettre</button>
             </div>    
         </form>          
 

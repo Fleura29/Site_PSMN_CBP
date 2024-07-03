@@ -29,7 +29,7 @@ Nombre total de cœurs (core) en cours d'utilisation (active) par les jobs sur l
 Nombre d'utilisateurs actifs
 ----------------------------
 
-Nombre d'utilisateurs dont les travaux sont en cours (Running) ou en attente (Pending) (//Le total comprend aussi les travaux en erreur//).
+Nombre d'utilisateurs dont les travaux sont en cours (Running) ou en attente (Pending) (*Le total comprend aussi les travaux en erreur*).
 
 *(réprésentation instantanée non cumulative)*
 

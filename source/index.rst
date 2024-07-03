@@ -58,11 +58,9 @@ régionale, ou “Tier-2”. Les centres de calcul nationaux de GENCI assurent q
 et enfin les super-calculateurs les plus grands à l'échelle Européenne (tels que `PRACE <http://www.prace-ri.eu/prace-in-a-few-words/>`_) assurent 
 le “Tier-0”.
 
-.. container:: text-center mb-3
-
-   .. image:: _static/tier_schema.png
-      :class: img-fluid text-center
-      :alt: Schéma
+.. image:: _static/tier_schema.png
+   :class: img-fluid center mb-3
+   :alt: Schéma
 
 Le Centre Blaise Pascal - CBP
 -----------------------------

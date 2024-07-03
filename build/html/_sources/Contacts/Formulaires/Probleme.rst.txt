@@ -63,7 +63,7 @@ ou poser une question...
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question"></label>
+                <label class="me-1" for="human" id="human-question2"></label>
                 <input id="human-answer" type="text"/> 
             </div>
 
@@ -71,7 +71,7 @@ ou poser une question...
             <script src="../../_static/Formulaires/Formulaires.js"></script>
 
             <div class="text-center mt-2">
-                <button type="submit" class="btn mb-4" style="border-color: #E69645;">Soumettre</button>
+                <button class="btn btn-submit mb-3" type="submit" value="submit" >Soumettre</button>
             </div>
         </form>   
 

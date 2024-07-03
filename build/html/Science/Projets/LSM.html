@@ -34,7 +34,7 @@
             </a>
         </div>
         <div class="wid-header">
-            <div class="d-flex justify-content-end" style="margin-left: 74%;">
+            <div class="d-flex justify-content-end container-language">
                 <div class="px-2">
                     <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
                 </div>
@@ -252,9 +252,7 @@ To improve the segmentation part of the pipeline, a new method was implement in 
 <li><p>Improve segmentation by re-detecting each cell shape with LSM</p></li>
 </ul>
 <p>From left to right : original image, contour detect by LSM, watershed segmentation, cells detect by LSM</p>
-<div class="text-center pb-3 docutils container">
-<img alt="Image lsm1" class="img-fluid" src="../../_images/lsm1.png" />
-</div>
+<img alt="Image lsm1" class="img-fluid center pb-3" src="../../_images/lsm1.png" />
 <section id="intervention-of-psmn-cbp">
 <h2>Intervention of PSMN/CBP<a class="headerlink" href="#intervention-of-psmn-cbp" title="Lien vers cette rubrique">¶</a></h2>
 <p>This new method give better results but had a major downside : the computation time. The running time for only the first step on a floral meristem was about 8h. The aim of this project was to reduce the computation time and the amount of memory used.</p>
@@ -277,9 +275,7 @@ Each time step, the background growth is measure. The algorithm stops when the g
 <p>In the last step, every cell evolve for one iteration and then possible overlap are checked. An overlap region is consider not segmented. A cell can’t evolve in an other cell area : overlap can only happen in a same iteration. At each iteration, the growth of the segmented areas is measured, and the algorithm stop when this growth become null.
 Theoretically, the algorithm should stop when all the image is segmented. In practice, the segmentation growth is more and more slow and some area between cells are never segmented, or too slowly. It’s more efficient to stop the LSM and to use another algorithm to fill the remaining holes.</p>
 <p>From left to right : watershed, eroded watershed (step 1), evolve towards edge (step 2), final segmentation (step 3)</p>
-<div class="text-center mb-2 docutils container">
-<img alt="Image lsm2" class="img-fluid" src="../../_images/lsm2.png" />
-</div>
+<img alt="Image lsm2" class="img-fluid center mb-2" src="../../_images/lsm2.png" />
 <ul class="simple">
 <li><p><strong>Program optimization</strong></p></li>
 </ul>
@@ -302,12 +298,10 @@ The computation time was divided by 4.5 from Python to C++ in the LSM detect con
 <li><p>segment only a list of cells (LSM cells)</p></li>
 <li><p>restart at the third step (LSM cells)</p></li>
 </ul>
-<div class="text-center docutils container">
-<div class="bg-body-secondary pt-2 pb-1 rounded fs-13 docutils container">
+<div class="bg-body-secondary pt-2 pb-1 rounded fs-13 text-center docutils container">
 <p>This project has been performed during the stage of Master of <strong>Typhaine Moreau</strong> at ENS Lyon
 (Reproduction et Developpement des Plantes and Centre Blaise Pascal) coordinated by
 <strong>Annamaria Kiss and Cerasela Calugaru</strong></p>
-</div>
 </div>
 </section>
 </section>

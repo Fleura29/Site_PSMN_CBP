@@ -32,11 +32,9 @@ rale des fluides en milieu désordonné. L’étude de modèles simples a mis en
 riche, avec parfois des résultats inattendus. Ces prévisions ont été pour une part significative confirmées par
 des simulations numériques.
 
-.. container:: text-center
-    
-    .. image:: ../../_static/img_projets/fluides2.png
-        :class: img-fluid
-        :alt: Image fluides
+.. image:: ../../_static/img_projets/fluides2.png
+    :class: img-fluid center
+    :alt: Image fluides
 
 Partant de ces résultats, le but de cette thèse est de développer des applications et des extensions de la
 théorie de couplage de modes existante pour étudier diverses situations dans lesquelles des fluides sont plon-

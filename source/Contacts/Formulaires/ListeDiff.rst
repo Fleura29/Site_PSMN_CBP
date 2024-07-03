@@ -10,8 +10,8 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
     Demande d'inscription à la liste de diffusion CBP
 
     .. raw:: html
-
-        <form id="userForm" method="post" class="ms-2 me-2" data-nom="liste">
+        
+        <form id="userForm" method="post" class="ms-2 me-2" data-nom="liste_inscr">
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -42,10 +42,10 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
             </div>
 
             <div id="bloc" class="text-center"></div>
-            <script src="../../_static/Formulaires/Formulaires.js"></script>
             
-            <div class="text-center">
-                <button type="submit" class="btn mb-3 mt-2" style="border-color: #E69645;">Soumettre</button>
+            
+            <div class="text-center mt-3">
+                <button class="btn btn-submit mb-3" type="submit" value="submit" >Soumettre</button>
             </div>
         </form>     
 
@@ -57,7 +57,7 @@ Si vous souhaitez vous **désinscrire**, merci de valider le formulaire suivant 
 
     .. raw:: html
 
-        <form class="ms-2 me-2">
+        <form id="userForm2" method="post" class="ms-2 me-2" data-nom="liste_desinscr">
             <div class="mb-2">
                 <label for="inputEmail">Email*</label>
                 <input type="text" class="form-control form-style" id="inputEmail" name="mailDesinscription" required>
@@ -65,14 +65,14 @@ Si vous souhaitez vous **désinscrire**, merci de valider le formulaire suivant 
             <p class="mt-2 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question"></label>
-                <input id="human-answer" type="text"/> 
+                <label class="me-1" for="human" id="human-questio2"></label>
+                <input id="human-answer2" type="text"/> 
             </div>
 
-            <div id="bloc" class="text-center"></div>
-            <script src="../../_static/Formulaires/Formulaires.js"></script>
+            <div id="bloc2" class="text-center"></div>
 
-            <div class="text-center mt-2">
-                <button type="submit" class="btn mb-3 mt-2" style="border-color: #E69645;">Soumettre</button>
+            <div class="text-center mt-3">
+                <button class="btn btn-submit mb-3" type="submit" value="submit" >Soumettre</button>
             </div>
         </form> 
+        <script src="../../_static/Formulaires/Formulaires.js"></script>

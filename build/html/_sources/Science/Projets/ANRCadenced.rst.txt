@@ -41,11 +41,9 @@ accelerated high performance computing (HPC) applied to catalysis is proposed.
 The goal of this subproject is to develop and optimize a hybrid computing system by coupling a high performance computer with graphic microprocessors (GPU) or accelerators such as CELL processor and then to develop and implement algorithms improving performances of the
 quantum calculation software code (software enhancement) running on this hybrid system. These developments should provide an expected gain from 5 to 10 times in computing speed for applications in catalysis. Once implemented in KAUST these improvements should provide users in KCRC with enhanced HPC resources necessary to deploy “Computer Assisted Discoveries” methodologies applied to catalysis and materials sciences.
 
-.. container:: text-center 
-
-    .. image:: ../../_static/img_projets/toc.jpg
-        :class: img-fluid
-        :alt: Image toc
+.. image:: ../../_static/img_projets/toc.jpg
+    :class: img-fluid center
+    :alt: Image toc
 
 References
 ----------

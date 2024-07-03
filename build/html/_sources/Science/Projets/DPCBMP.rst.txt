@@ -33,12 +33,10 @@ Research project
 How shape emerges in a developing organism is still a mystery. We conduct an interdisciplinary research on plant development, using biological, biophysical and computational approaches. On the computational side, we combine the analysis of large sets of spatial experimental data and the predictive modelling of cell and tissue shape.
 
 On the one hand, we quantify the dynamics of a growing organ (e.g. a flower as in the figure below). We start from optical images and obtain 3D segmented images where pixels are attributed to cell volumes. This computationally intensive pipeline was developed in collaboration with the Virtual Plants team (INRIA, Montpellier) and is part of the OpenAlea platform for plant modelling; we also use MorphoGraphX, a CUDA-based platform for the visualization and processing of 3D biological datasets. We build cell graphs containing quantitative data on morphology and growth; we analyse these graphs using statistical clustering methods. Doing so, we aim at identifying specific cellular domains in relation with morphogenesis.
-
-.. container:: text-center mb-3
     
-    .. image:: ../../_static/img_projets/flower_bud.png
-        :class: img-fluid
-        :alt: Computer-assisted reconstruction of a growing flower bud
+.. image:: ../../_static/img_projets/flower_bud.png
+    :class: img-fluid center mb-3
+    :alt: Computer-assisted reconstruction of a growing flower bud
 
 The 3D image was assembled from the fusion of three confocal stacks using a non-linear optimization of the overlap between the stacks, and cells were segmented using a watershed algorithm.
 

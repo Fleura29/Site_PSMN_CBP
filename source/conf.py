@@ -25,6 +25,4 @@ language = 'fr'
 
 html_theme = 'CBPSMN'
 html_static_path = ['_static']
-html_context = {
-    "css_files": [],
-}
+html_context = { "css_files": []}

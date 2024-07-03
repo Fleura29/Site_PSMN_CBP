@@ -12,6 +12,12 @@ body{
     font-size: 15px;
 }
 
+@media (min-width: 1700px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1520px;
+    }
+}
+
 .orange-border {
     background-color: #E69645;
     height: 100%;
@@ -29,10 +35,9 @@ body{
 
 /*---------- Menu ----------*/
 
-.dropdown .dropdown-menu{
-    display: none;
+.container-language{
+    margin-left: 74%;
 }
-
 @media screen and (min-width:993px){
     .dropdown:hover > .dropdown-menu{
         display: block;
@@ -84,9 +89,6 @@ a:hover{
 }
 
 @media screen and (max-width:767px){
-    .navbar-collapse{
-        text-align: center;
-    }
     .wid-header{
         width: 90%;
     }
@@ -172,6 +174,7 @@ h4{
     font-size: 1rem;
     font-weight: bold;
 }
+
 /*---------- Taille de police ----------*/
 
 .fs-11{
@@ -214,6 +217,11 @@ th, td{
 
 /*---------- Formulaires ----------*/
 
+.border-form{
+    padding-top: 0.5rem;
+    border: 1px solid #C4C8CB;
+}
+
 .form-style{
     height: 23px;
     border-color: #E69645;
@@ -221,7 +229,8 @@ th, td{
 }
 
 .textarea{
-    height: 100px; border-color: #E69645;
+    height: 100px; 
+    border-color: #E69645;
 }
 
 .checkbox{
@@ -235,13 +244,28 @@ th, td{
     border-color: #bdbdbd; 
 }
 
-.input-search{
+.input-search, .btn-submit{
     border-color: #E69645;
 }
 
 .btn:hover{
     background-color: #bdbdbd;
     border-color: #bdbdbd;
+}
+
+/*---------- Images ----------*/
+.img-float{
+    float: left;
+}
+
+.img-float-r{
+    float: right;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*---------- role RST ----------*/
@@ -294,25 +318,6 @@ a.headerlink{
 
 .cursor{
     cursor: pointer;
-}
-
-.img-float{
-    float: left;
-}
-
-.img-float-r{
-    float: right;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.border-form{
-    padding-top: 0.5rem;
-    border: 1px solid #C4C8CB;
 }
 
 .border-top{
