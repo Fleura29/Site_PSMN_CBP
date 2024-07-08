@@ -61,7 +61,7 @@ Infrastructure du Centre Blaise Pascal
 
 Un coup d'oeil sur les machines accessibles ? Le réflexe `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_  `Cluster@CBP <http://www.cbp.ens-lyon.fr/python/forms/ClusterCBP>`_ `Servers@CBP <http://www.cbp.ens-lyon.fr/python/forms/ServersCBP>`_ !
     
-.. container:: d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13 text-center
+.. container:: note note-imp
         
     Les machines de `Cloud@CBP <http://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ présentes dans les 
     salles M7-1H04, M7-1H19 et M-GN-102 sont éteintes de 19h30 à 7h30 du matin. 

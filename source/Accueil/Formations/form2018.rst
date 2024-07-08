@@ -1,0 +1,32 @@
+.. _form2018:
+
+Formation dédiée aux nouveaux utilisateurs du PSMN :
+====================================================
+
+* Jeudi 18 janvier 2018, 
+* Mardi 15 février 2018, 
+* Jeudi 01 mars 2018, 
+* Mardi 15 mars 2018, 
+* Jeudi 22 mars 2018, 
+* Jeudi 12 avril 2018, 
+* Vendredi 27 avril 2018, 
+* Jeudi 17 mai 2018, 
+* Jeudi 31 mai 2018, 
+* Jeudi 14 juin 2018, 
+* Jeudi 28 juin 2018, 
+* Vendredi 20 septembre 2018 (après 16h, l'utilisation du logiciel ABINIT installé sous les serveurs du PSMN), 
+* Vendredi 05 octobre 2018, 
+* Lundi 22 octobre 2018, 
+* Jeudi 15 novembre 2018, 
+* Vendredi 23 novembre 2018 (de 10h à 13h : outils pour les codes parallèles, etc.; l'utilisation du logiciel LAMMPS installé sous les serveurs du PSMN ), 
+* Mardi 06 décembre 2018 (de 14h : outils pour les codes parallèles, etc.; l'utilisation du logiciel DEDALUS installé sous les serveurs du PSMN ), 
+* Mercredi 19 décembre 2018.
+
+**Ateliers dédiés à la transition sur la nouvelle architecture du PSMN**
+
+Lieu : **Salle de travaux pratiques (M7 étage 1H), Centre Blaise Pascal, ENS-Lyon**
+  
+* **1 février 2018**, 10h00 - 16h00, sessions d'une heure
+ 
+    Ainsi, les utilisateurs du PSMN qui ont des questions ou des difficultés dans l’utilisation des machines du PSMN (accès aux   serveurs, définition d’environnement, soumission des jobs, etc.) sont invités à s'inscrire ci-dessous :
+        

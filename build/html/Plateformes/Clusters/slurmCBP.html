@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Utilisation de Cluster@CBP avec Slurm au Centre Blaise Pascal &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="utilisation-de-cluster-cbp-avec-slurm-au-centre-blaise-pascal">
+<span id="slurm"></span><h1>Utilisation de <a class="reference external" href="mailto:Cluster&#37;&#52;&#48;CBP">Cluster<span>&#64;</span>CBP</a> avec Slurm au Centre Blaise Pascal<a class="headerlink" href="#utilisation-de-cluster-cbp-avec-slurm-au-centre-blaise-pascal" title="Lien vers cette rubrique">¶</a></h1>
+<section id="ce-qu-il-faut-retenir">
+<h2>Ce qu’il faut retenir !<a class="headerlink" href="#ce-qu-il-faut-retenir" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>pour se connecter sur la passerelle de cluster :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>&lt;login&gt;@cocyte.cbp.ens-lyon.fr
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>pour connaître les noeuds disponibles ou les queues : <cite>sinfo</cite></p></li>
+<li><p>pour connaître l’état des tâches : <cite>squeue</cite></p></li>
+<li><p>pour effectuer une réservation en mode interactif : <cite>srun %%–%%pty bash</cite></p></li>
+<li><p>pour lancer une tâche définie par le script SLURM <cite>MyJob.slurm</cite> : <cite>sbatch MyJob.slurm</cite></p></li>
+</ul>
+<p>Comme « pense-bête » est disponible cette intéressante <a class="reference external" href="https://slurm.schedmd.com/pdfs/summary.pdf">Reference Card</a>.</p>
+</section>
+<section id="contexte-execution-de-taches-mode-interactif-ou-mode-non-connecte">
+<h2>Contexte : exécution de tâches « mode intéractif » ou « mode non connecté »<a class="headerlink" href="#contexte-execution-de-taches-mode-interactif-ou-mode-non-connecte" title="Lien vers cette rubrique">¶</a></h2>
+<p>Généralement, l’exécution d’un programme au CBP sur une machine se fait via un terminal en ligne de commande. Les tâches, listées dans un script, s’exécutent sur la machine hôte les unes après les autres. Se déconnecter de son terminal met fin à l’exécution de son programme. Avec <strong>tmux</strong> ou <strong>screen</strong>, il est possible de maintenir ses exécutions en se « détachant » de son terminal pour y revenir ensuite.</p>
+<p>Il est très profitable d’avoir un « soumissionneur » pour distribuer ses tâches à un ensemble de ressources disponibles, sans avoir à se connecter de manière individuelle sur chaque machine. L’exploitation de programmes parallèlisés s’exécutant de manière concurrente sur plusieurs coeurs d’une même machine ou sur plusieurs machines</p>
+<p>Le « soumissionneur » (ou <em>batch scheduler</em>) est un outil permettant l’exécution de tâches en <em>« mode non connecté »</em> ou en <em>« mode non intéractif »</em> sur un ensemble de ressources sans que l’utilisateur ait à choisir où et quand ses tâches vont être traitées.</p>
+</section>
+<section id="ressources-du-centre-blaise-pascal">
+<h2>Ressources du Centre Blaise Pascal<a class="headerlink" href="#ressources-du-centre-blaise-pascal" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le Centre Blaise Pascal dispose de plateaux techniques, notamment  des noeuds de clusters, destinés :</p>
+<ul class="simple">
+<li><p>à l’initiation au calcul scientifique, notamment <a class="reference external" href="http://en.wikipedia.org/wiki/Message_Passing_Interface">MPI</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/OpenMP">OpenMP</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/CUDA">CUDA</a> <a class="reference external" href="http://en.wikipedia.org/wiki/Opencl">OpenCL</a></p></li>
+<li><p>au développement d’applications dans le domaine du calcul scientifique</p></li>
+<li><p>à l’intégration de démonstrateurs agrégeant des technologies matures dans un ensemble original</p></li>
+<li><p>au passage de l’expérience scientifique (« la paillasse ») à la technologie de production (« le génie des procédés »)</p></li>
+<li><p>à l’exploration de « domaine de vol » des applications scientifiques (paramètres de parallélisation, audit de code)</p></li>
+<li><p>à la réalisation de prototypes pour la mise en place de nouveaux services informatiques</p></li>
+</ul>
+<p>Le Centre Blaise Pascal n’a pas vocation à voir ses infrastructures utilisées :</p>
+<ul class="simple">
+<li><p>pour de longs calculs de production (de l’ordre de la semaine)</p></li>
+<li><p>pour des calculs sur de très grands nombres de coeurs (supérieurs à 1000)</p></li>
+</ul>
+<p>Pour ces deux exigences, le <a class="reference internal" href="../ClustersServeurs.html#clustserv"><span class="std std-ref">PSMN dispose d’une infrastructure de production</span></a>.</p>
+<p>Les équipements accessibles via le soumissionneur SLURM sont 96 noeuds répartis de 4 types différents pour un total de 1888 coeurs et plus de 8 TB de RAM agrégées.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Cluster</strong></p></th>
+<th class="head"><p><strong>Marque</strong></p></th>
+<th class="head"><p><strong>Modèle</strong></p></th>
+<th class="head"><p><strong>Noeuds</strong></p></th>
+<th class="head"><p><strong>Coeurs /Noeud</strong></p></th>
+<th class="head"><p><strong>RAM /Noeud</strong></p></th>
+<th class="head"><p><strong>Réseau GE</strong></p></th>
+<th class="head"><p><strong>Réseau IB</strong></p></th>
+<th class="head"><p><strong>Total Coeurs</strong></p></th>
+<th class="head"><p><strong>Total RAM</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>c82</strong></p></td>
+<td><p>Dell</p></td>
+<td><p>C8220</p></td>
+<td><p>64</p></td>
+<td><p>8</p></td>
+<td><p>128 GB</p></td>
+<td><p>GE</p></td>
+<td><p>IB</p></td>
+<td><p>1024</p></td>
+<td><p>8192 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>c61</strong></p></td>
+<td><p>Dell</p></td>
+<td><p>C6100</p></td>
+<td><p>16</p></td>
+<td><p>12</p></td>
+<td><p>24 GB</p></td>
+<td><p>GE</p></td>
+<td><p>IB</p></td>
+<td><p>192</p></td>
+<td><p>384 GB</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>c82gluster</strong></p></td>
+<td><p>Dell</p></td>
+<td><p>C8220</p></td>
+<td><p>4</p></td>
+<td><p>16</p></td>
+<td><p>256 GB</p></td>
+<td><p>GE</p></td>
+<td><p>IB</p></td>
+<td><p>32</p></td>
+<td><p>1024 GB</p></td>
+</tr>
+</tbody>
+</table>
+<p>Ces clusters partagent exactement la même image de système, <a class="reference internal" href="../../Science/Publications/Sidus/SidusDoc.html#sidusdoc"><span class="std std-ref">Sidus</span></a> (pour Single Instance Distributing Universal System), un système complet Debian intégrant tous les paquets scientifiques ainsi que de nombreux paquets de développement.</p>
+</section>
+<section id="acces-aux-clusters">
+<h2>Accès aux clusters<a class="headerlink" href="#acces-aux-clusters" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’accès aux clusters se fait via la passerelle <cite>cocyte.cbp.ens-lyon.fr</cite>, par le protocole SSH :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>-X<span class="w"> </span>&lt;login&gt;@cocyte.cbp.ens-lyon.fr
+</pre></div>
+</div>
+<p>ou via <a class="reference external" href="http://wiki.x2go.org/doku.php">x2go</a> sur la même adresse. Il est donc préalablement nécessaire d’installer sur sa machine un client SSH ou x2go pour accéder à la passerelle.</p>
+<p>En outre, cette passerelle n’est accessible que de l’intérieur de l’ENS : il est nécessaire de passer par la passerelle de l’ENS <cite>ssh.ens-lyon.fr</cite> ou par le Virtual Private Network par OpenVPN pour y accéder.</p>
+<p>Notons que l’outil x2go permet de paramétrer directement la passerelle <cite>ssh.ens-lyon.fr</cite> et d’obtenir directement le bureau graphique.</p>
+</section>
+<section id="dossiers-personnels">
+<h2>Dossiers personnels<a class="headerlink" href="#dossiers-personnels" title="Lien vers cette rubrique">¶</a></h2>
+<p>Sur la passerelle <cite>cocyte</cite>, chaque utilisateur dispose de 5 espaces de travail :</p>
+<ul class="simple">
+<li><p>un <strong>personnel cluster</strong> dans <cite>/home/&lt;login&gt;</cite></p></li>
+<li><p>un <strong>personnel CBP</strong> dans <cite>/cbp/&lt;login&gt;</cite></p></li>
+<li><p>un <strong>projets</strong> dans <cite>/projects</cite></p></li>
+<li><p>un <span class="it-bold">temporaire</span> <strong>rapide</strong> dans <cite>/scratch</cite></p></li>
+<li><p>un <span class="it-bold">temporaire</span> <strong>très rapide</strong> dans <cite>/distonet</cite></p></li>
+</ul>
+<p>L’espace <strong>personnel CBP</strong> correspond à l’espace utilisateur de ressources informatiques du CBP lorsqu’on se connecte :</p>
+<ul class="simple">
+<li><p>Toute machine de <a class="reference external" href="http://www.cbp.ens-lyon.fr/python/forms/CloudCBP">Cloud&#64;CBP</a> notamment :
+* aux 22 stations de travail de la salle de formation du CBP
+* aux 13 stations de travail de la salle de formation du département de biologie</p></li>
+</ul>
+</section>
+<section id="parametrage-de-l-acces-aux-grappes-de-calcul">
+<h2>Paramétrage de l’accès aux grappes de calcul<a class="headerlink" href="#parametrage-de-l-acces-aux-grappes-de-calcul" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Création d’une clé publique par <cite>ssh-keygen -t rsa</cite> dans mot de passe</p></li>
+<li><p>Pression 2 fois sur la touche <cite>&lt;Entrée&gt;</cite> pour entrer un mot de passe vide</p></li>
+<li><p>La commande précédente présente une sortie comparable à la suivante :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Generating<span class="w"> </span>public/private<span class="w"> </span>rsa<span class="w"> </span>key<span class="w"> </span>pair.
+Enter<span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>which<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>key<span class="w"> </span><span class="o">(</span>/home/&lt;MonLogin&gt;/.ssh/id_rsa<span class="o">)</span>:
+Enter<span class="w"> </span>passphrase<span class="w"> </span><span class="o">(</span>empty<span class="w"> </span><span class="k">for</span><span class="w"> </span>no<span class="w"> </span>passphrase<span class="o">)</span>:
+Enter<span class="w"> </span>same<span class="w"> </span>passphrase<span class="w"> </span>again:
+Your<span class="w"> </span>identification<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>saved<span class="w"> </span><span class="k">in</span><span class="w"> </span>/home/&lt;MonLogin&gt;/.ssh/id_rsa.
+Your<span class="w"> </span>public<span class="w"> </span>key<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>saved<span class="w"> </span><span class="k">in</span><span class="w"> </span>/home/&lt;MonLogin&gt;/.ssh/id_rsa.pub.
+The<span class="w"> </span>key<span class="w"> </span>fingerprint<span class="w"> </span>is:
+9b:96:69:95:29:0e:0e:ff:a8:77:ce:ca:c5:3b:92:55<span class="w"> </span>&lt;MonLogin&gt;@lethe
+The<span class="w"> </span>key<span class="err">&#39;</span>s<span class="w"> </span>randomart<span class="w"> </span>image<span class="w"> </span>is:
++---<span class="o">[</span>RSA<span class="w"> </span><span class="m">2048</span><span class="o">]</span>----+
+<span class="p">|</span><span class="w">                 </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>.<span class="w"> </span>.<span class="w">             </span><span class="p">|</span>
+<span class="p">|</span>.<span class="w"> </span>.<span class="w"> </span>.<span class="w">            </span><span class="p">|</span>
+<span class="p">|</span>.<span class="w">    </span>.E<span class="w">    </span>o<span class="w">     </span><span class="p">|</span>
+<span class="p">|</span>.<span class="w"> </span>.<span class="w"> </span>o..<span class="w"> </span>S<span class="w"> </span>+<span class="w">      </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>.<span class="w"> </span><span class="o">=</span>.o<span class="w"> </span>o<span class="w"> </span>B<span class="w">       </span><span class="p">|</span>
+<span class="p">|</span><span class="w">   </span>o*<span class="w"> </span>.<span class="w"> </span>O<span class="w">        </span><span class="p">|</span>
+<span class="p">|</span><span class="w">  </span>o+..<span class="w"> </span>o<span class="w">         </span><span class="p">|</span>
+<span class="p">|</span><span class="w">  </span>....<span class="w">           </span><span class="p">|</span>
++-----------------+
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Copie de la clé publique comme clé d’autorisation de connexion sans mot de passe :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/.ssh
+cat<span class="w"> </span>id_rsa.pub<span class="w"> </span>&gt;&gt;<span class="w"> </span>authorized_keys
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Test de connexion locale :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>cocyte
+</pre></div>
+</div>
+<p>Normalement, on se connecte sans avoir à entrer un quelconque mot de passe.</p>
+</section>
+<section id="acces-aux-ressources">
+<h2>Accès aux ressources<a class="headerlink" href="#acces-aux-ressources" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’utilisation de <a class="reference external" href="https://computing.llnl.gov/linux/slurm/">SLURM</a> permet de :</p>
+<ul class="simple">
+<li><p>connaître les ressources disponibles : commande <cite>sinfo</cite> et ses options</p></li>
+<li><p>connaître l’état des calculs en cours : commande <cite>squeue</cite> et ses options</p></li>
+<li><p>lancer une réservation de machines en mode interactif : commande <cite>srun</cite> et ses options</p></li>
+<li><p>lancer un calcul autonome (sous forme de batch) : commande <cite>sbatch</cite> et ses options</p></li>
+</ul>
+<p>Ce <a class="reference external" href="https://slurm.schedmd.com/pdfs/summary.pdf">résumé sur Slurm</a> reprend les commandes importantes.</p>
+<section id="connaitre-les-ressources-disponibles">
+<h3>Connaître les ressources disponibles<a class="headerlink" href="#connaitre-les-ressources-disponibles" title="Lien vers cette rubrique">¶</a></h3>
+<p>La commande <cite>sinfo</cite> permet de connaître l’état des noeuds gérés par le gestionnaire de tâches.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PARTITION<span class="w">  </span>AVAIL<span class="w">  </span>TIMELIMIT<span class="w">  </span>NODES<span class="w">  </span>STATE<span class="w"> </span>NODELIST
+r422<span class="w">          </span>up<span class="w">   </span>infinite<span class="w">      </span><span class="m">6</span><span class="w">  </span>drain<span class="w"> </span>r422node<span class="o">[</span><span class="m">3</span>-4,33,52,56,59<span class="o">]</span>
+r422<span class="w">          </span>up<span class="w">   </span>infinite<span class="w">      </span><span class="m">1</span><span class="w">    </span>mix<span class="w"> </span>r422node34
+r422<span class="w">          </span>up<span class="w">   </span>infinite<span class="w">     </span><span class="m">12</span><span class="w">  </span>alloc<span class="w"> </span>r422node<span class="o">[</span><span class="m">1</span>-2,53-55,57-58,60-64<span class="o">]</span>
+r422<span class="w">          </span>up<span class="w">   </span>infinite<span class="w">     </span><span class="m">45</span><span class="w">   </span>idle<span class="w"> </span>r422node<span class="o">[</span><span class="m">5</span>-32,35-51<span class="o">]</span>
+r410<span class="w">          </span>up<span class="w">   </span>infinite<span class="w">     </span><span class="m">48</span><span class="w">  </span>down*<span class="w"> </span>r410node<span class="o">[</span><span class="m">1</span>-48<span class="o">]</span>
+c82gluster<span class="w">    </span>up<span class="w">   </span>infinite<span class="w">      </span><span class="m">4</span><span class="w">   </span>idle<span class="w"> </span>c82gluster<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span>
+s92*<span class="w">          </span>up<span class="w">   </span>infinite<span class="w">     </span><span class="m">12</span><span class="w">   </span>idle<span class="w"> </span>s92node<span class="o">[</span><span class="m">1</span>-12<span class="o">]</span>
+</pre></div>
+</div>
+<p>La colonne <cite>STATE</cite> renseigne sur l’état des machines. Par exemple :</p>
+<ul class="simple">
+<li><p>les noeuds du cluster <strong>r410</strong> sont tous éteints</p></li>
+<li><p>les noeuds <strong>r422node3</strong> ou <strong>r422node59</strong> sont indisponibles à l’usage</p></li>
+<li><p>les noeuds du cluster <strong>s92</strong> de <strong>s92node1</strong> à <strong>s92node12</strong> sont disponibles</p></li>
+<li><p>les noeuds <strong>r422node1</strong> ou <strong>r422node64</strong> sont utilisés pour des calculs</p></li>
+</ul>
+</section>
+<section id="connaitre-l-etat-des-calculs-en-cours-squeue">
+<h3>Connaître l’état des calculs en cours squeue<a class="headerlink" href="#connaitre-l-etat-des-calculs-en-cours-squeue" title="Lien vers cette rubrique">¶</a></h3>
+<section id="pour-connaitre-l-etat-general">
+<h4>Pour connaître l’état général<a class="headerlink" href="#pour-connaitre-l-etat-general" title="Lien vers cette rubrique">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>squeue
+</pre></div>
+</div>
+</section>
+</section>
+<section id="lancer-un-calcul-autonome-mode-batch">
+<h3>Lancer un calcul autonome (mode batch)<a class="headerlink" href="#lancer-un-calcul-autonome-mode-batch" title="Lien vers cette rubrique">¶</a></h3>
+<p>Il est possible de lancer un batch en précisant les paramètres de soumission dans la commande en ligne mais il est de toutes façons nécessaire de créer un script shell.</p>
+<p>Autant créer un script de lancement Slurm lequel sera utilisé pour déclarer tout d’un bloc.</p>
+<section id="lancer-un-batch-sequentiel">
+<h4>Lancer un batch séquentiel<a class="headerlink" href="#lancer-un-batch-sequentiel" title="Lien vers cette rubrique">¶</a></h4>
+<p>Le propre d’un programme séquentiel est que les commandes s’exécutent les unes derrière les autres. Dans le « vocable » de calcul scientifique, le <em>job séquentiel</em> s’exécute sur une machine et une seule, les tâches les unes à la suite des autres.</p>
+<p>Nous voulons exécuter le programme séquentiel <cite>HelloWorld</cite> sur une des machines de la zone cluster du CBP.</p>
+<p>Nous voulons que le nom de fichiers de sortie soit préfixés de <cite>HelloWorld</cite>.</p>
+<p>Le lancement de batch se fait par :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sbatch<span class="w"> </span>HelloWorld.slurm
+</pre></div>
+</div>
+<p>Le script de batch <cite>MyJob.slurm</cite> est le suivant :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+srun<span class="w"> </span>date
+srun<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello world!&quot;</span>
+srun<span class="w"> </span>date
+</pre></div>
+</div>
+<p>Le lancement de batch se fait par :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sbatch<span class="w"> </span>HelloWorld.slurm
+</pre></div>
+</div>
+<p>Il est possible de préciser dans le script de lancement de nombreuses informations notamment :</p>
+<ul class="simple">
+<li><p>le nom des sorties du terminal <cite>STDOUT</cite> et <cite>STDERR</cite></p></li>
+<li><p>l’adresse de courriel d’expédition de message</p></li>
+<li><p>les ressources nécessaires à l’exécution</p></li>
+<li><p>l’usage exclusif d’une ressource (par exemple un noeud)</p></li>
+</ul>
+<p>L’ordonnanceur <strong>slurm</strong> dispose de centaines d’options pour paramétrer sa requête.</p>
+<p>Le script de batch <cite>MyJob.slurm</cite> est le suivant :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#</span>
+<span class="c1"># Definition du nom du job, apparaissant dans la colonne NAME avec squeue : facultatif</span>
+<span class="c1">#SBATCH --job-name=HelloWorld</span>
+<span class="c1"># Definition du fichier de sortie (stdout)</span>
+<span class="c1">#SBATCH --output=HelloWorld.out</span>
+<span class="c1"># Definition du fichier de sortie des erreurs (stderr)</span>
+<span class="c1">#</span>
+<span class="c1"># Avec exclusive, le noeud est reserve dans sa totalite</span>
+<span class="c1">#SBATCH --exclusive</span>
+<span class="c1">#</span>
+<span class="c1">#SBATCH --mail-type=END</span>
+<span class="c1">#SBATCH --mail-user=mon.nom@mon-site.mon-pays</span>
+
+srun<span class="w"> </span>date
+srun<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello world!&quot;</span>
+srun<span class="w"> </span>date
+</pre></div>
+</div>
+<div class="note note-imp docutils container">
+<p>Suite de la documentation en construction&lt;/note&gt;</p>
+</div>
+</section>
+<section id="reservation-de-ressources">
+<h4>Réservation de ressources<a class="headerlink" href="#reservation-de-ressources" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour l’instant, la réservation de ressources n’est possible que sur les noeuds, les coeurs et la mémoire sur les clusters du CBP.</p>
+<p>Voici un exemple de soumission slurm pour réserver un total de 64 coeurs sur un unique noeud</p>
+</section>
+<section id="lancer-un-batch-parallele-sur-plusieurs-coeurs">
+<h4>Lancer un batch parallèle sur plusieurs coeurs<a class="headerlink" href="#lancer-un-batch-parallele-sur-plusieurs-coeurs" title="Lien vers cette rubrique">¶</a></h4>
+<p>Nous voulons exécuter le programme parallélisée <cite>MyJob</cite> sur 48 coeurs sur une machine de la queue <strong>s92</strong>.</p>
+<p>Nous voulons que le nom de fichiers de de sortie soit préfixés de <cite>MyJob</cite>.</p>
+<p>Nous créons le script suivant sous le nom (très original) de <cite>MyJob.slurm</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+</pre></div>
+</div>
+<p>Le programme se lance en utilisant la commande de soumission <cite>sbatch ./MyJob.slurm</cite>.</p>
+<p>La commande d’examen des tâches en cours <cite>squeue</cite> permet ensuite de savoir que le job a bien été pris en compte.</p>
+</section>
+<section id="lancer-un-batch-parallele">
+<h4>Lancer un batch parallèle<a class="headerlink" href="#lancer-un-batch-parallele" title="Lien vers cette rubrique">¶</a></h4>
+<p>Nous voulons exécuter le programme MPI <cite>MyJob</cite> sur 32 coeurs sur la queue des x41z.</p>
+<p>Nous voulons que le nom de fichiers de de sortie soit préfixés de <cite>MyJob</cite>.</p>
+<p>Nous créons le script suivant sous le nom (très original) de <cite>MyJob.slurm</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+</pre></div>
+</div>
+<p>Le programme se lance en utilisant la commande de soumission <cite>sbatch ./MyJob.slurm</cite>.</p>
+<p>La commande d’examen des tâches en cours <cite>squeue</cite> permet ensuite de savoir que le job a bien été pris en compte.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Clusters/slurmCBP.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

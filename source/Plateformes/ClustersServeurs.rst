@@ -1,3 +1,5 @@
+.. _clustserv:
+
 Les clusters et les serveurs
 ============================
 
@@ -12,15 +14,15 @@ Les équipements mis à disposition regroupent environ **~650 noeuds** dans **30
 
 Ils sont décrits plus en détail dans les pages qui suivent.
 
-* `Configuration matérielle des clusters <#>`_
-* `Statistiques d'utilisation des clusters <#>`_
+* :ref:`Configuration matérielle des clusters <confmat>`
+* :ref:`Statistiques d'utilisation des clusters <statsutil>`
 
 Le PSMN a reçu un financement "equipex" en 2012. Les nouveaux serveurs, dépendants du programme "Équip@méso", sont entrés en production depuis Q3 2013 (cluster E5).
 
 Transferts technologiques
 -------------------------
 
-.. container:: d-inline-block bg-success-subtle pt-3 mb-3 rounded fs-13 text-center
+.. container:: note note-info
     
     Les configurations du système d'exploitation, ainsi que sa diffusion (SIDUS) sur les noeuds ont profité des travaux préparatoires, recettes et intégrations réalisés sur la plate-forme expérimentale du CBP.
 

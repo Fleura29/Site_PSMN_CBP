@@ -5,7 +5,7 @@ Réservation de la salle de TP numériques du CBP
 
 `Calendrier de disponibilité de la salle de TP numériques du CBP <calendrier>`_ 
 
-.. container:: d-inline-block bg-body-secondary pt-3 mb-3 rounded fs-13 text-center
+.. container:: note note-info
 
     N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
 

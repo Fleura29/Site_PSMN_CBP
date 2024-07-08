@@ -16,7 +16,7 @@ TMPFILE=$(mktemp /tmp/"${SCRIPTNAME}".XXXXXXXX) || exit 1
 
 # pousser en -R build/html/* dans /PSMN/Documentation
 BASE_SRC="build/html"
-BASE_DEST="/CBPsmn"
+BASE_DEST="/CBPsmn/sphinx"
 
 #echo "cd ${BASE_DEST}" >> "${TMPFILE}"
 echo "put -r ${BASE_SRC}/* ${BASE_DEST}/" >> "${TMPFILE}"

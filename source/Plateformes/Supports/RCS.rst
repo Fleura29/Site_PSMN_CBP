@@ -120,7 +120,7 @@ Activités au PSMN
 Participation à la gestion et à l’exploitation de machines de calcul
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* **Installations et tests sur les serveurs du PSMN** : installations optimisées et tests de fonctionnement et performance logiciels ( par exemple, `cp2k avec intel/MKL avec fft de MKL <#>`_ , `Lammps <#>`_, ...), tests d’utilisation de compilateurs (gnu, intel, `tests de fonctionnement et performance pgi <#>`_), des bibliothèques (ex. `PETSc <#>`_, `FFTW <#>`_,Blitz, ...) `benchmarks GPU <#>`_
+* **Installations et tests sur les serveurs du PSMN** : installations optimisées et tests de fonctionnement et performance logiciels ( par exemple, `cp2k avec intel/MKL avec fft de MKL <#>`_ , :ref:`Lammps <lammps>` , ...), tests d’utilisation de compilateurs (gnu, intel, `tests de fonctionnement et performance pgi <#>`_), des bibliothèques (ex. `PETSc <#>`_, `FFTW <#>`_,Blitz, ...) `benchmarks GPU <#>`_
 * Participer à la **création/suppression de comptes utilisateur** sur les serveurs du PSMN
 * Participer au **suivi du bon fonctionnement de noeuds de calcul** sur les serveurs du PSMN 
 * Participer au **suivi de quota disque** sur les serveurs du PSMN 

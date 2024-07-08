@@ -1,3 +1,5 @@
+.. _projinfra:
+
 Projets d'infrastructure
 ========================
 
@@ -17,7 +19,7 @@ Projets d'infrastructure
     :class: img-float pe-3
     :alt: Image houches
 
-`Computational Physics : Computational Astrophysics <#>`_ |br|
+:ref:`Computational Physics : Computational Astrophysics <houches>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
@@ -28,7 +30,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Logo Isa
 
-`Sidus4Labs @ ISA <#>`_ |br|
+:ref:`Sidus4Labs @ ISA <sidus4labs>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
@@ -40,7 +42,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :width: 110px
     :alt: Image dh-foucault
 
-`Exploration d'outils numériques pour la bibliothèque Foucault <#>`_ 
+:ref:`Exploration d'outils numériques pour la bibliothèque Foucault <explofoucault>`
 
 Maitrise d'oeuvre : Emmanuel Quemener
 
@@ -52,7 +54,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Image oikopleura
 
-`Sidus4Labs @ ISA <#>`_
+:ref:`Sidus4Labs @ ISA <oiko>`
 
 Maitrise d'oeuvre : Emmanuel Quemener
 
@@ -65,7 +67,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Image houches
 
-`Computational Physics : Multiscale modeling of materials <#>`_ |br|
+:ref:`Computational Physics : Multiscale modeling of materials <houches2015>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
@@ -73,10 +75,11 @@ Maitrise d'oeuvre : Emmanuel Quemener
 :underline-bold:`Galaxy`
 
 .. image:: ../_static/img_projets/galaxylogotrimmed.png
-    :class: img-float pe-3
+    :class: img-float pe-2
+    :width: 150px
     :alt: Image galaxylogotrimmed
 
-`Galaxy Easy Gateway for Biological ENS Laboratories <#>`_ |br|
+:ref:`Galaxy Easy Gateway for Biological ENS Laboratories <galaxy>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 2014
@@ -88,7 +91,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Image houches
 
-`Computational Physics : From quantum gases to strongly correlated systems <#>`_ |br|
+:ref:`Computational Physics : From quantum gases to strongly correlated systems <houches2014>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 2013
@@ -100,7 +103,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Logo umpa
 
-`Evolution de l'infrastructure informatique de l'UMPA <#>`_ |br|
+:ref:`Evolution de l'infrastructure informatique de l'UMPA <umpa>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
@@ -111,7 +114,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Image houches
 
-`Computational Physics : from DNA to evolution <#>`_ |br|
+:ref:`Computational Physics : from DNA to evolution <houches2013>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
@@ -123,7 +126,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :width: 100px
     :alt: Logo CBP
 
-`Site web collaboratif du Centre Blaise Pascal <#>`_ 
+:ref:`Site web collaboratif du Centre Blaise Pascal <camwebcbp>`
 
 Coordination : Samantha Barendson & Loïs Taulelle
 
@@ -135,7 +138,7 @@ Coordination : Samantha Barendson & Loïs Taulelle
     :class: img-float pe-3
     :alt: Logo PSMN
 
-`Site web collaboratif du Pole Scientifique de Modélisation Numérique <#>`_ |br|
+:ref:`Site web collaboratif du Pole Scientifique de Modélisation Numérique <camwebpsmn>` |br|
 Coordination : Loïs Taulelle & Samantha Barendson
 
 ----
@@ -147,7 +150,7 @@ Coordination : Loïs Taulelle & Samantha Barendson
     :class: img-float pe-3
     :alt: Image pds
 
-`Exploration de nouveaux vecteurs de médiation et de diffusion des savoirs <#>`_
+:ref:`Exploration de nouveaux vecteurs de médiation et de diffusion des savoirs <explovmds>`
 
 Maitrise d'oeuvre : Emmanuel Quemener |br|
 
@@ -160,7 +163,7 @@ Maitrise d'oeuvre : Emmanuel Quemener |br|
     :class: img-float pe-3
     :alt: Image houches
 
-`Computational Physics : DFT <#>`_ |br|
+:ref:`Computational Physics : DFT <houches2012>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
@@ -171,7 +174,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Logo PSMN
 
-`Stockage Temporaire Hautes Performances <#>`_ |br|
+:ref:`Stockage Temporaire Hautes Performances <sthp>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 2011
@@ -183,7 +186,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Image houches
 
-`Computational Physics : soft matter <#>`_ |br|
+:ref:`Computational Physics : soft matter <houches2011>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
@@ -194,7 +197,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Image vasp
 
-`Vasp Running on my workstation <#>`_
+:ref:`Vasp Running on my workstation <vasp>`
 
 Maitrise d'oeuvre : Emmanuel Quemener
 
@@ -206,7 +209,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Logo CFCAM-RA
 
-`Site web du Centre Français de Calcul Atomique et Moléculaire – Rhône-Alpes <#>`_ |br|
+:ref:`Site web du Centre Français de Calcul Atomique et Moléculaire – Rhône-Alpes <cfcamra>` |br|
 Coordination : Cerasela Calugaru / Assistance : Samantha Barendson
 
 2010
@@ -221,7 +224,7 @@ Coordination : Cerasela Calugaru / Assistance : Samantha Barendson
 
     .. container::
 
-        `Enquêtes sur les Besoins de Stockage de l'ENS-Lyon <#>`_
+        :ref:`Enquêtes sur les Besoins de Stockage de l'ENS-Lyon <stockens>`
 
         Maitrise d'oeuvre : Emmanuel Quemener
 
@@ -236,7 +239,7 @@ Coordination : Cerasela Calugaru / Assistance : Samantha Barendson
 
     .. container::
 
-        `Single Instance Distributing Universal System <#>`_
+        :ref:`Single Instance Distributing Universal System <sidusdoc>`
 
         Maitrise d'oeuvre : Emmanuel Quemener
 
@@ -260,7 +263,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Logo PSMN
 
-`Site web collaboratif du Pole Scientifique de Modélisation Numérique <#>`_ |br|
+:ref:`Site web collaboratif du Pole Scientifique de Modélisation Numérique <pdampsmn>` |br|
 Coordination : Cerasela Calugaru
 
 ----
@@ -284,7 +287,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Image sidus
 
-`Création d'une passerelle OpenVPN <#>`_ |br|
+:ref:`Création d'une passerelle OpenVPN <openvpn>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 2008
@@ -296,6 +299,6 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Logo CBP
 
-`Site web collaboratif du Centre Blaise Pascal <#>`_
+:ref:`Site web collaboratif du Centre Blaise Pascal <pdamcbp>`
 
 Coordination : Cerasela Calugaru

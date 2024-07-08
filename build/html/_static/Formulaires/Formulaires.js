@@ -7,13 +7,51 @@ document.querySelector("#human-question").textContent = "Quel est le résultat d
 const question2 = document.querySelector("#human-questio2");
 
 if(question2){
-    let num1 = Math.floor(Math.random() * 10);
-    let num2 = Math.floor(Math.random() * 10);
-    question2.textContent = "Quel est le résultat de " + numbers[num1] + " plus " + numbers[num2] + " ? ";
+    let num_desc1 = Math.floor(Math.random() * 10);
+    let num_desc2 = Math.floor(Math.random() * 10);
+    question2.textContent = "Quel est le résultat de " + numbers[num_desc1] + " plus " + numbers[num_desc2] + " ? ";
+
+    const formulaireDescinsc = document.querySelector("#userForm2");
+
+    formulaireDescinsc.addEventListener('submit', function(event) { 
+        event.preventDefault();
+        lien = "EnvoiFormDesinsc.php";
+        let formData = new FormData(formulaireDescinsc);
+
+        let sum = document.querySelector('#human-answer2').value;
+
+        if(Number.parseInt(sum) != num_desc1 + num_desc2){
+            alert("Désolé, votre calcul est incorrect, cela laisse penser que vous êtes un robot.");
+            return false;
+        } else {
+            fetch('../../_static/Formulaires/'+ lien, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const messageDiv= document.createElement("div");
+    
+                if (data.status === "success") {
+                    messageDiv.style.color = "green";
+                } else {
+                    messageDiv.style.color = "red";
+                }
+                
+                messageDiv.textContent = data.message;
+                const bloc2= document.querySelector("#bloc2");
+                bloc2.append(messageDiv);
+            })
+            .catch(error => {
+                document.querySelector('#bloc2').textContent = 'Erreur lors de l\'envoi de l\'e-mail : ' + error;
+                document.querySelector('#bloc2').style.color = "red";
+            });
+        }
+    })
 }
 
 const formulaire = document.querySelector('#userForm');
-const formulaireDescinsc = document.querySelector("#userForm2");
+
 let lien = "";
 
 switch(formulaire.dataset.nom){
@@ -43,6 +81,9 @@ switch(formulaire.dataset.nom){
         break;
     case 'probleme':
         lien = "EnvoiFormProbleme.php";
+        break;
+    case 'liste_inscr':
+        lien = "EnvoiFormInsc.php";
         break;
 }
 
@@ -82,38 +123,3 @@ formulaire.addEventListener('submit', function(event) {
     }
 });
 
-formulaireDescinsc.addEventListener('submit', function(event) { 
-    event.preventDefault();
-    lien = "EnvoieFormDesinsc";
-    let formData = new FormData(formulaire);
-    
-    let sum = document.querySelector('#human-answer').value;
-
-    if(Number.parseInt(sum) != num1 + num2){
-        alert("Désolé, votre calcul est incorrect, cela laisse penser que vous êtes un robot.");
-        return false;
-    } else {
-        fetch('../../_static/Formulaires/'+ lien, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            const messageDiv= document.createElement("div");
-
-            if (data.status === "success") {
-                messageDiv.style.color = "green";
-            } else {
-                messageDiv.style.color = "red";
-            }
-            
-            messageDiv.textContent = data.message;
-            const bloc= document.querySelector("#bloc");
-            bloc.append(messageDiv);
-        })
-        .catch(error => {
-            document.querySelector('#bloc2').textContent = 'Erreur lors de l\'envoi de l\'e-mail : ' + error;
-            document.querySelector('#bloc2').style.color = "red";
-        });
-    }
-})

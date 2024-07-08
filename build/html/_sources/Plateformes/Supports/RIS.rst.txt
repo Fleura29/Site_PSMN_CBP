@@ -27,7 +27,7 @@ Téléphone : (+33) 4 72 72 86 33
 
 :underline:`Contact pour :`
 
-* exploitation des `plateaux techniques en service du CBP <#>`_
+* exploitation des :ref:`plateaux techniques en service du CBP <equipinfo>`
 * librification de codes scientifiques
 * conception, déploiement et administration de nouveaux plateaux techniques ;
 * expertise pour résoudre un problème en informatique scientifique ;
@@ -95,8 +95,9 @@ Projets réalisés
 * pour les écoles des Houches *Computational Physics*
 
     * éditions 2011, 2012, 2013, 2014, 2015 et 2016
-* `Qualification matérielle <#>`_
-* `Qualification logicielle <#>`_
+
+* :ref:`Qualification matérielle <qualificationmat>`
+* :ref:`Qualification logicielle <qualificationlog>`
 
 Livrables, Communications, Formations, articles
 -----------------------------------------------
@@ -120,7 +121,7 @@ Livrables, Communications, Formations, articles
 * Cours INSA Lyon M2 `les CPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/INSA2022-CPU-221204.pdf>`_
 * Présentation JCAD 2022 `Retour d'expérience sur l'immersion de serveurs <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Presentation_longue_Orateur_Quemener_Emmanuel_RefroidissementImmersionServeurs_v2.pdf>`_
 * Présentation aux L3 Physique-Chimie des `ressources du CBP <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2022-2023.pdf>`_
-* Travaux pratiques `ETSN 2022 <https://conferences.cirm-math.fr/2842.html>`_ au CIRM : `sessions <#>`_
+* Travaux pratiques `ETSN 2022 <https://conferences.cirm-math.fr/2842.html>`_ au CIRM : :ref:`sessions <etsn>`
 * Cours 1 & 2 de `ETSN 2022 <https://conferences.cirm-math.fr/2842.html>`_ au CIRM : `Les GPU : technologie disruptive du 21e siècle <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ETSN_IntroductionGPU_Cours12.pdf>`_
 * Cours 3 de `ETSN 2022 <https://conferences.cirm-math.fr/2842.html>`_ au CIRM : `Portage d'un code et métrologie <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ETSN_PortageEtMetrologie_Cours3.pdf>`_
 * Cours 4 de `ETSN 2022 <https://conferences.cirm-math.fr/2842.html>`_ au CIRM : `Métrologie d'applications <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ETSN_MetrologieGPU_Cours4.pdf>`_
@@ -132,6 +133,7 @@ Livrables, Communications, Formations, articles
 **Année 2021**
 
 * Présentation `ressources du CBP <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationBio-2021-2022.pdf>`_ au département de biologie
+
 .. raw:: html
     
     <ul class="simple"><li><p>Présentation JCAD 2021 <a href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf" class="line">Digital Staging</a>  ou <a href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JCAD2021-20211214-EQ.pdf">`Digital re-* and de-*</a></p></li></ul>
@@ -148,14 +150,14 @@ Livrables, Communications, Formations, articles
 * Article LinkedIn `AMBER : métrologie GPU <https://www.linkedin.com/pulse/amber-exploitons-la-super-en-attendant-amp%25C3%25A8re-emmanuel-quemener/?trackingId=%2FTHDoI9dt0k7Zy9DNyR%2B1w%3D%3D>`_
 * Article LinkedIn `Epyc Rome : la fin de l'hégémonie de la Nvidia V100 (ou d'Intel) ? <https://www.linkedin.com/pulse/epyc-rome-la-fin-de-lh%C3%A9g%C3%A9monie-nvidia-v100-ou-dintel-quemener/>`_
 * Conférence au CRAL : `Simuler un trou noir : de la parallélisation à la gépufication d'un (vieux) code <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CRAL-200131.pdf>`_
-* TP pour l'INSA-Lyon en Master 2 : `TP INSA 2019-2020 : le GPU par la pratique <#>`_
+* TP pour l'INSA-Lyon en Master 2 : :ref:`TP INSA 2019-2020 : le GPU par la pratique <insagpu>`
 
 **Année 2019**
 
 * Article LinkedIn `Episode 3 - la GéPUfication d'un code pour simuler un trou noir <https://www.linkedin.com/pulse/episode-3-la-g%C3%A9pufication-dun-code-pour-simuler-un-trou-quemener/>`_
 * Article LinkedIn `Acte 2 - Simuler un trou noir : la parallélisation du code <https://www.linkedin.com/pulse/acte-2-simuler-un-trou-noir-du-processeur-%C3%A0-la-carte-quemener/>`_
 * Article LinkedIn `Simuler un trou noir : du processeur à la carte graphique <https://www.linkedin.com/pulse/simuler-un-trou-noir-du-processeur-%C3%A0-la-carte-emmanuel-quemener/>`_
-* TP pour l'INSA-Lyon en Master 2 : `TP INSA 2019-2020 : le GPU par la pratique <#>`_
+* TP pour l'INSA-Lyon en Master 2 : :ref:`TP INSA 2019-2020 : le GPU par la pratique <insagpu>`
 * Cours à l'INSA-Lyon en Master 2 : Les `GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/CoursINSA_GPU_191209.pdf>`_ et leurs performances 
 * Présentation JRES 2019 sur `Elapsed Time, pertinent pour la facturation ? <#>`_ : `présentation <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRES2019_Elapsed_20191203.pdf>`_, `article <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/JRES2019_Elapsed_Article.pdf>`_ et `vidéo <https://replay.jres.org/videos/watch/73775f03-8383-42a0-bb7d-65379a49f9da>`_ décembre 2019
 * Présentation `LIP : Autour des GPUs <http://www.ens-lyon.fr/LIP/index.php/uncategorized/531-journee-calcul-du-lip-autour-des-gpus>`_ : `Simuler un trou noir <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/NvidiaLIP-191114.pdf>`_ 
@@ -163,7 +165,7 @@ Livrables, Communications, Formations, articles
 * Formation à l'usage du CBP : `transparents <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/FormationCBP_191107.pdf>`_ 
 * Fête de la science: `Voyage au pays des ordinateurs <http://www.ens-lyon.fr/evenement/savoirs/informatique-voyage-au-pays-des-ordinateurs>`_
 * Article LinkedIn `Le C4140 : la puissance de 1 baie dans 1U, et de quoi effacer les autres C41 <https://www.linkedin.com/pulse/le-c4140-la-puissance-de-1-baie-dans-1u-et-quoi-effacer-quemener/>`_
-* Journée thématique FLMSN & CBP "`Le GPU par la pratique <#>`_" avec son `cours associé <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationGPU_190606_EQ.pdf>`_
+* Journée thématique FLMSN & CBP " :ref:`Le GPU par la pratique <gpu2019>` " avec son `cours associé <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationGPU_190606_EQ.pdf>`_
 * Présentation `ARAMIS 2019 <https://aramis.resinfo.org/wiki/doku.php?id=pleniaires:pleniere23mai2019>`_ : `SIDUS : outil de reproductibilité <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis2019_SIDUS_20190523.pdf>`_ avec la `vidéo <https://webcast.in2p3.fr/video/sidus>`_
 * Cours à `Lyon Calcul <http://lyoncalcul.univ-lyon1.fr/>`_ : `Des architectures parallèles aux applications parallélisées <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/LyonCalcul2019_190516.pdf>`_
 * Conférence à ESDW 2019 : `Benchmarking of GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ESDW_Benchmarking_20190404.pdf>`_
@@ -192,18 +194,18 @@ Livrables, Communications, Formations, articles
 
 * Cours à `Lyon Calcul <http://lyoncalcul.univ-lyon1.fr/>`_ : `Des architectures parallèles aux applications parallélisées <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/LyonCalcul2017_EQ.pdf>`_
 * Présentation aux `Journées Succes 2017 <https://succes2017.sciencesconf.org/resource/page/id/8>`_ : `Installation Portail Galaxy <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Succes2017_Galaxy_EQ.pdf>`_
-* Présentation aux `10emes journées Mésocentres <http://calcul.math.cnrs.fr/spip.php?article285>`_ : `Métrologie comparée du PSMN & CBP <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Mesocentres2017_EQ.pdf>`_
+* Présentation aux `10emes journées Mésocentres <http://calcul.math.cnrs.fr/spip.php?article285>`_ : `Métrologie comparée du PSMN & CBP <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Mesocentres2017_EQ.pdf>`_ 
 * Présentation au colloque HPC CEA/ENS-Cachan : `présentation CBP et usage des GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Cargese2017_EQ.pdf>`_
 * Ateliers `30 ans de l'ENS-Lyon <http://www.ens-lyon.fr/agenda-30-ans/>`_, Atelier `Voyage aux pays des ordinateurs <http://www.ens-lyon.fr/agenda-30-ans/voyage-au-pays-des-ordinateurs-a-la-decouverte-de-leurs-composants-et-de-leurs-evolutions-348203.kjsp?RH=1497335464208>`_
 * Présentation aux étudiants de Licence ENS-Lyon : `transparents <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/PresentationL3-2017.pdf>`_
-* Cours `Astrosim 2017 <https://astrosim.sciencesconf.org/program>`_ : `Pragmatic Parallelism <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_Parallelism.pdf>`_ and `Introduction to GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_GPU.pdf>`_ et Travaux pratiques `GPU4dummies <#>`_ et `para4dummies <#>`_
+* Cours `Astrosim 2017 <https://astrosim.sciencesconf.org/program>`_ : `Pragmatic Parallelism <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_Parallelism.pdf>`_ and `Introduction to GPU <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/AstroSim2017_GPU.pdf>`_ et Travaux pratiques :ref:`GPU4dummies <gpu4dummies>` et :ref:`para4dummies <para4dummies>`
 * `Journée thématique ABinit <https://cbppsmndays.sciencesconf.org/resource/page/id/2>`_ : `Ressources Informatiques du CBP : le centre d'essais <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Abinit_20170612.pdf>`_
 * Workshop à l'`ISA <https://isa-lyon.fr/>`_ `modelisation and computational biology <https://isa-lyon.fr/?p=3751>`_ : `From multicores to Myrialus <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ISA_20170609.pdf>`_
 * Club des décideurs HPE *L’hétérogénéité des clusters de calcul* : `Hétérogénéité de l'hôtel à projets au méso-centre <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SimulHub_20170308-EQ.pdf>`_
 
 **Année 2016**
 
-* Formation `ANF 2016 : des données au BigData : exploitez le stockage distribué <https://indico.mathrice.fr/event/5/>`_ : `Retour d'expérience sur GlusterFS <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ANF2016_GlusterFS.pdf>`_ et `Travaux pratiques sur GlusterFS <#>`_
+* Formation `ANF 2016 : des données au BigData : exploitez le stockage distribué <https://indico.mathrice.fr/event/5/>`_ : `Retour d'expérience sur GlusterFS <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ANF2016_GlusterFS.pdf>`_ et :ref:`Travaux pratiques sur GlusterFS <tpglusterfs>`
 * Présentation `Simulation Hub <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Annonce_2016_10_14_final.pdf>`_ : `Architectures multi-coeurs & myri-alus <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/SimulationHub_20161014.pdf>`_
 * Présentation `9èmes Journées Méso-centres <http://calcul.math.cnrs.fr/spip.php?article270>`_ : `Retour d'expérience GlusterFS <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Mesocentre2016.pdf>`_
 * Formation ISA 2016 (1 semaine) : SIDUS, de son exploitation locale à son déploiement sur cluster
@@ -258,8 +260,8 @@ Livrables, Communications, Formations, articles
 
 * Enquêtes sur les besoins de stockage :
 
-    * `Site Monod <#>`_
-    * `Site Descartes et Pôle de diffusion des savoirs <#>`_
+    * :ref:`Site Monod <stockmonod>`
+    * :ref:`Site Descartes et Pôle de diffusion des savoirs <stockdescartes>`
 
 * Présentation ARAMIS : `GPU = un supercalculateur : du Mythe à la Réalité ! <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Aramis-GPU-100520-4all.pdf>`_
 

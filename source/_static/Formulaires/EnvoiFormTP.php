@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nbparticipants = htmlspecialchars($_POST["nbparticipants"]);
     $autre = htmlspecialchars($_POST["renseignements"]);
 
-    $to = "charlotte.ruiz@hotmail.fr"; 
+    $to = "charlotte.ruiz@hotmail.fr,admin-psmn@ens-lyon.fr"; 
     $subject = "Reservation salle de TP";
     
     $message = "Mail reçu de : $nom $prenom pour une demande de réservation de salle de TP\n\n";

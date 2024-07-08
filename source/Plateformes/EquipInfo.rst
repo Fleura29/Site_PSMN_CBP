@@ -1,3 +1,5 @@
+.. _equipinfo:
+
 Equipements informatique
 ========================
 
@@ -26,7 +28,7 @@ Un ensemble de plateaux techniques
 
 A l'origine, les ressources informatiques du Centre Blaise Pascal étaient celles du Cecam, essentiellement cantonnées à la salle informatique.
 
-Maintenant, le Centre Blaise Pascal dispose d'un ensemble de `plateaux techniques <#>`_ destinés à la formation, l'étude (de l'expérience au prototypage), le développement ou la qualification dans tous les segments de l'informatique scientifique :
+Maintenant, le Centre Blaise Pascal dispose d'un ensemble de :ref:`plateaux techniques <plattech>` destinés à la formation, l'étude (de l'expérience au prototypage), le développement ou la qualification dans tous les segments de l'informatique scientifique :
 
 * plateau multi-noeuds : 2 clusters de 64 noeuds r410 et r422, 1 cluster de 16 noeuds c6100, 1 cluster de 12 noeuds s9200
 * plateau multi-coeurs : près de 250 machines disposant de 2 à 128 coeurs physiques dans 48 modèles différents
@@ -37,7 +39,7 @@ Maintenant, le Centre Blaise Pascal dispose d'un ensemble de `plateaux technique
 * plateau COMOD : "Compute On My Own Device"
 * plateau Galaxy externe `Diet <http://diet.ens-lyon.fr>`_
 * plateau Galaxy interne `Galaxy3 <http://galaxy3.cbp.ens-lyon.fr>`_
-* plateau pour les ateliers `3IP pour "Introduction Inductive à l'Informatique et au Parallélisme" <#>`_
+* plateau pour les ateliers :ref:`3IP pour "Introduction Inductive à l'Informatique et au Parallélisme" <3ip>`
 
 Pour simplifier l'accès à la majorité de ces machines, le portail `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ existe : il permet 
 
@@ -48,11 +50,11 @@ Ces plateaux reposent essentiellement sur :
   
 * une infrastructure logicielle cohérente
 * des équipements matériels génériques 
-* une `salle de formation <#>`_ correctement équipée
+* une :ref:`salle de formation <conditions>` correctement équipée
 * des clusters hétérogènes de récupération
 * un environnement d'administration simplifié :ref:`SIDUS <sidusdoc>`
 
-L'`utilisation <#>`_ des clusters (plateaux multi-noeuds & multi-coeurs) se base sur GridEngine. 
+L' :ref:`utilisation <clustgridcbp>` des clusters (plateaux multi-noeuds & multi-coeurs) se base sur GridEngine. 
 
 Espaces de stockage du CBP
 --------------------------
@@ -66,7 +68,7 @@ L'utilisateur dispose sur les machines `Cloud@CBP <https://www.cbp.ens-lyon.fr/p
 * l'espace vrac récent **/distonet**: **partagé entre les machines**, de **120 TB**, ni archivé mais sauvegardé. Il dispose d'un accès rapide sur le réseau de la salle (autour de 100 MB/s) et très très rapide sur le réseau du cluster (autour de 2 GB/s). Ne JAMAIS l'exploiter pour des traitements générant ou traitant au delà de 10000 fichiers ! Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /distonet/$USER"
 * l'espace projets **/projects**: **partagé entre les machines**, de **12 TB**, archivé mais non sauvegardé. C'est un espace collaboratif. Il dispose d'un accès rapide sur le réseau de la salle et sur le réseau du cluster. Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /projects/users/$USER"
 
-.. container:: d-inline-block bg-warning-subtle pt-2 mb-2 rounded fs-13 text-center 
+.. container:: note note-imp
 
     La règle la plus importante pour le stockage est : "On ne travaille PAS dans son $HOME"
 
@@ -83,7 +85,7 @@ Un certain nombre d'applications scientifiques complémentaires (OpenSource ou p
 Équipements informatiques matériels
 -----------------------------------
 
-.. container:: d-inline-block bg-success-subtle pt-2 mb-2 rounded fs-13 text-center
+.. container:: note note-tip
     
     Les équipements suivants forment le `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_ : plus de 150 machines directement accessibles avec le même environnement
 
@@ -221,42 +223,42 @@ Bureau M7-1H07 avec capacité 3D
 
 * **un cluster 64 bits** de 156 noeuds permanents et sa frontale
 
-* accès par **cocyte.cbp.ens-lyon.fr** avec soumission par `Slurm <#>`_
+    * accès par **cocyte.cbp.ens-lyon.fr** avec soumission par :ref:`Slurm <slurm>`
 
 * **24 stations d'intégration :**
 
-* **lenny32** & **lenny64** : distributions Debian Lenny 32/64 bits
-* **squeeze32** & **squeeze64** : distributions Debian Squeeze 32/64 bits
-* **wheezy32** & **wheezy64** : distributions Debian Wheezy 32/64 bits
-* **jessie32** & **jessie64** : distributions Debian Jessie 32/64 bits
-* **stretch32** & **stretch64** : distributions Debian Stretch 32/64 bits
-* **sid32** et **sid64** : distributions Debian Sid 32/64 bits
-* **ubuntu32-1004** & **ubuntu64-1004** : distributions Ubuntu 10.04 32/64 bits
-* **ubuntu32-1204** & **ubuntu64-1204** : distributions Ubuntu 12.04 32/64 bits
-* **ubuntu32-1404** & **ubuntu64-1404** : distributions Ubuntu 14.04 32/64 bits
-* **ubuntu32-1604** & **ubuntu64-1604** : distributions Ubuntu 16.04 32/64 bits
-* **centos32-55** & **centos64-55** : distributions CentOS 5.5 32/64 bits
-* **centos32-7** & **centos64-7** : distributions CentOS 7 32/64 bits  
+    * **lenny32** & **lenny64** : distributions Debian Lenny 32/64 bits
+    * **squeeze32** & **squeeze64** : distributions Debian Squeeze 32/64 bits
+    * **wheezy32** & **wheezy64** : distributions Debian Wheezy 32/64 bits
+    * **jessie32** & **jessie64** : distributions Debian Jessie 32/64 bits
+    * **stretch32** & **stretch64** : distributions Debian Stretch 32/64 bits
+    * **sid32** et **sid64** : distributions Debian Sid 32/64 bits
+    * **ubuntu32-1004** & **ubuntu64-1004** : distributions Ubuntu 10.04 32/64 bits
+    * **ubuntu32-1204** & **ubuntu64-1204** : distributions Ubuntu 12.04 32/64 bits
+    * **ubuntu32-1404** & **ubuntu64-1404** : distributions Ubuntu 14.04 32/64 bits
+    * **ubuntu32-1604** & **ubuntu64-1604** : distributions Ubuntu 16.04 32/64 bits
+    * **centos32-55** & **centos64-55** : distributions CentOS 5.5 32/64 bits
+    * **centos32-7** & **centos64-7** : distributions CentOS 7 32/64 bits  
 
 Machines virtuelles à accélérateur
 ----------------------------------
 
 * **14 stations de travail virtuelles**
 
-* **phi7120p** : Xeon Phi 7120p avec 12GB
-* **k40m** : Nvidia Tesla K40m avec 12GB
-* **k80alpha** : 1/2 de Tesla K80 - 1GPU avec 12GB
-* **k80beta** : 1/2 de Tesla K80 - 1GPU avec 12GB
-* **k80gamma** : Tesla K80 - 2GPU avec 12GB
-* **gtx1080alpha** : Nvidia GTX 1080 avec 8GB
-* **gtx1080beta** : Nvidia GTX 1080 avec 8GB
-* **gtx1080gamma** : Nvidia GTX 1080 avec 8GB
-* **gtx1080delta** : Nvidia GTX 1080 avec 8GB
-* **p100alpha** : Nvidia Tesla P100 avec 16GB
-* **p100beta** : Nvidia Tesla P100 avec 16GB
-* **p100gamma** : 2x Nvidia Tesla P100 avec 16GB
-* **v100alpha** : Nvidia Tesla V100 avec 16GB
-* :line-bold:`v100beta` :line:`: Nvidia Tesla V100 avec 16GB`
+    * **phi7120p** : Xeon Phi 7120p avec 12GB
+    * **k40m** : Nvidia Tesla K40m avec 12GB
+    * **k80alpha** : 1/2 de Tesla K80 - 1GPU avec 12GB
+    * **k80beta** : 1/2 de Tesla K80 - 1GPU avec 12GB
+    * **k80gamma** : Tesla K80 - 2GPU avec 12GB
+    * **gtx1080alpha** : Nvidia GTX 1080 avec 8GB
+    * **gtx1080beta** : Nvidia GTX 1080 avec 8GB
+    * **gtx1080gamma** : Nvidia GTX 1080 avec 8GB
+    * **gtx1080delta** : Nvidia GTX 1080 avec 8GB
+    * **p100alpha** : Nvidia Tesla P100 avec 16GB
+    * **p100beta** : Nvidia Tesla P100 avec 16GB
+    * **p100gamma** : 2x Nvidia Tesla P100 avec 16GB
+    * **v100alpha** : Nvidia Tesla V100 avec 16GB
+    * :line-bold:`v100beta` :line:`: Nvidia Tesla V100 avec 16GB`
 
 Ces machines sont accessibles par SSH et :ref:`x2go <x2go>` : "<nom>.cbp.ens-lyon.fr"
 

@@ -7,7 +7,7 @@ Installation de Gaussian sous Debian Wheezy
 
    <br>
 
-.. container:: d-inline-block bg-warning-subtle pt-3 mb-2 rounded fs-13 text-center 
+.. container:: note note-imp
 
     Modification le 5 février 2014 : compilation de la version G09 D01. 
 

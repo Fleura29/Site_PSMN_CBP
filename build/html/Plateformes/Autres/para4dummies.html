@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Practical session for Astrosim 2017 &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="practical-session-for-astrosim-2017">
+<span id="para4dummies"></span><h1>Practical session for Astrosim 2017<a class="headerlink" href="#practical-session-for-astrosim-2017" title="Lien vers cette rubrique">¶</a></h1>
+<p>Practical work support for <a class="reference external" href="https://astrosim.sciencesconf.org/">Astrosim 2017</a></p>
+<section id="w-2h-why-what-where-when-who-how-much-how">
+<h2>5 W/2H : Why ? What ? Where ? When ? Who ? How much ? How ?<a class="headerlink" href="#w-2h-why-what-where-when-who-how-much-how" title="Lien vers cette rubrique">¶</a></h2>
+<p>5W/2H : CQQCOQP (Comment ? Quoi ? Qui, Combien ? Où ? Quand ? Pourquoi ?) in french…</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Why ?</strong> Have a look to parallelism on machines and improve investigations process</p></li>
+<li><p><strong>What ?</strong> Test with dummie examples</p></li>
+<li><p><strong>When ?</strong> Friday, the 30th of June in the afternoon</p></li>
+<li><p><strong>How much ?</strong> Nothing, Blaise Pascal Center provides workstations &amp; cluster nodes</p></li>
+<li><p><strong>Where ?</strong> On workstations, cluster nodes, laptop (well configured), inside terminals</p></li>
+<li><p><strong>Who ?</strong> For people who want to open the hood</p></li>
+<li><p><strong>How ?</strong> Applying some simple commands (essentially shell ones)</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="session-goal">
+<h2>Session Goal<a class="headerlink" href="#session-goal" title="Lien vers cette rubrique">¶</a></h2>
+<p>It’s to illustrate the relations between parallel hardware architectures and parallelized implementations of applications.</p>
+</section>
+<section id="starting-the-session">
+<h2>Starting the session<a class="headerlink" href="#starting-the-session" title="Lien vers cette rubrique">¶</a></h2>
+<section id="prerequisites-hardware-software-and-humanware">
+<h3>Prerequisites hardware, software and humanware<a class="headerlink" href="#prerequisites-hardware-software-and-humanware" title="Lien vers cette rubrique">¶</a></h3>
+<p>In order to get a complete functional environment, Blaise Pascal Center provides hardware, software, and OS well designed. People who want to achieve this practical session on their own laptop must have a real Unix Operating System.</p>
+<section id="prerequisite-for-hardware">
+<h4>Prerequisite for hardware<a class="headerlink" href="#prerequisite-for-hardware" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>If using CBP resources, nothing… Just login…</p></li>
+<li><p>If NOT using CBP resources, a machine relatively recent with multi-cores CPU</p></li>
+</ul>
+</section>
+<section id="prerequisite-for-software">
+<h4>Prerequisite for software<a class="headerlink" href="#prerequisite-for-software" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Open graphical session on one workstation, several terminals and your favorite browser</p></li>
+<li><p>If NOT using CBP resources, a GNU/Linux Operating System well configured</p></li>
+</ul>
+</section>
+<section id="prerequisite-for-humanware">
+<h4>Prerequisite for humanware<a class="headerlink" href="#prerequisite-for-humanware" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>An allergy to command line will severely restrict the range of this practical session.</p></li>
+<li><p>A practice of shell scripts would be a asset, but you will improve it in this session!</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="investigate-hardware">
+<h2>Investigate Hardware<a class="headerlink" href="#investigate-hardware" title="Lien vers cette rubrique">¶</a></h2>
+<section id="what-inside-my-host">
+<h3>What inside my host ?<a class="headerlink" href="#what-inside-my-host" title="Lien vers cette rubrique">¶</a></h3>
+<p>Hardware in computing science is defined by <a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Von_Neumann_Architecture.svg">Von Neumann architecture</a>:</p>
+<ul class="simple">
+<li><p>CPU (Central Processing Unit) with CU (Control Unit) and ALU (Arithmetic and Logic Unit)</p></li>
+<li><p>MU (Memory Unit)</p></li>
+<li><p>Input and Output Devices</p></li>
+</ul>
+<p>The first property of hardware is limited resources.</p>
+<p>In Posix systems, everything is file. So you can retreive informations (or set configurations) by classical file commands inside a terminal. For example <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/proc/cpuinfo</span></code> returns information about processor.</p>
+<p>On <strong>hd6450alpha</strong>, the less powerfull workstation in CBP, <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/proc/cpuinfo</span></code> returns:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>processor<span class="w">   </span>:<span class="w"> </span><span class="m">0</span>
+vendor_id<span class="w">   </span>:<span class="w"> </span>GenuineIntel
+cpu<span class="w"> </span>family<span class="w">  </span>:<span class="w"> </span><span class="m">15</span>
+model<span class="w">               </span>:<span class="w"> </span><span class="m">6</span>
+model<span class="w"> </span>name<span class="w">  </span>:<span class="w"> </span>Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>Pentium<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>D<span class="w"> </span>CPU<span class="w"> </span><span class="m">3</span>.40GHz
+stepping<span class="w">    </span>:<span class="w"> </span><span class="m">4</span>
+microcode<span class="w">   </span>:<span class="w"> </span>0x4
+cpu<span class="w"> </span>MHz<span class="w">             </span>:<span class="w"> </span><span class="m">3388</span>.919
+cache<span class="w"> </span>size<span class="w">  </span>:<span class="w"> </span><span class="m">2048</span><span class="w"> </span>KB
+physical<span class="w"> </span>id<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>
+siblings<span class="w">    </span>:<span class="w"> </span><span class="m">2</span>
+core<span class="w"> </span>id<span class="w">             </span>:<span class="w"> </span><span class="m">0</span>
+cpu<span class="w"> </span>cores<span class="w">   </span>:<span class="w"> </span><span class="m">2</span>
+apicid<span class="w">              </span>:<span class="w"> </span><span class="m">0</span>
+initial<span class="w"> </span>apicid<span class="w">      </span>:<span class="w"> </span><span class="m">0</span>
+fpu<span class="w">         </span>:<span class="w"> </span>yes
+fpu_exception<span class="w">       </span>:<span class="w"> </span>yes
+cpuid<span class="w"> </span>level<span class="w"> </span>:<span class="w"> </span><span class="m">6</span>
+wp<span class="w">          </span>:<span class="w"> </span>yes
+flags<span class="w">               </span>:<span class="w"> </span>fpu<span class="w"> </span>vme<span class="w"> </span>de<span class="w"> </span>pse<span class="w"> </span>tsc<span class="w"> </span>msr<span class="w"> </span>pae<span class="w"> </span>mce<span class="w"> </span>cx8<span class="w"> </span>apic<span class="w"> </span>sep<span class="w"> </span>mtrr<span class="w"> </span>pge<span class="w"> </span>mca<span class="w"> </span>cmov<span class="w"> </span>pat<span class="w"> </span>pse36<span class="w"> </span>clflush<span class="w"> </span>dts<span class="w"> </span>acpi<span class="w"> </span>mmx<span class="w"> </span>fxsr<span class="w"> </span>sse<span class="w"> </span>sse2<span class="w"> </span>ss<span class="w"> </span>ht<span class="w"> </span>tm<span class="w"> </span>pbe<span class="w"> </span>syscall<span class="w"> </span>nx<span class="w"> </span>lm<span class="w"> </span>constant_tsc<span class="w"> </span>pebs<span class="w"> </span>bts<span class="w"> </span>nopl<span class="w"> </span>eagerfpu<span class="w"> </span>pni<span class="w"> </span>dtes64<span class="w"> </span>monitor<span class="w"> </span>ds_cpl<span class="w"> </span>est<span class="w"> </span>cid<span class="w"> </span>cx16<span class="w"> </span>xtpr<span class="w"> </span>pdcm<span class="w"> </span>lahf_lm
+bugs<span class="w">                </span>:
+bogomips<span class="w">    </span>:<span class="w"> </span><span class="m">6777</span>.83
+clflush<span class="w"> </span>size<span class="w">        </span>:<span class="w"> </span><span class="m">64</span>
+cache_alignment<span class="w">     </span>:<span class="w"> </span><span class="m">128</span>
+address<span class="w"> </span>sizes<span class="w">       </span>:<span class="w"> </span><span class="m">36</span><span class="w"> </span>bits<span class="w"> </span>physical,<span class="w"> </span><span class="m">48</span><span class="w"> </span>bits<span class="w"> </span>virtual
+power<span class="w"> </span>management:
+
+processor<span class="w">   </span>:<span class="w"> </span><span class="m">1</span>
+vendor_id<span class="w">   </span>:<span class="w"> </span>GenuineIntel
+cpu<span class="w"> </span>family<span class="w">  </span>:<span class="w"> </span><span class="m">15</span>
+model<span class="w">               </span>:<span class="w"> </span><span class="m">6</span>
+model<span class="w"> </span>name<span class="w">  </span>:<span class="w"> </span>Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>Pentium<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>D<span class="w"> </span>CPU<span class="w"> </span><span class="m">3</span>.40GHz
+stepping<span class="w">    </span>:<span class="w"> </span><span class="m">4</span>
+microcode<span class="w">   </span>:<span class="w"> </span>0x4
+cpu<span class="w"> </span>MHz<span class="w">             </span>:<span class="w"> </span><span class="m">3388</span>.919
+cache<span class="w"> </span>size<span class="w">  </span>:<span class="w"> </span><span class="m">2048</span><span class="w"> </span>KB
+physical<span class="w"> </span>id<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>
+siblings<span class="w">    </span>:<span class="w"> </span><span class="m">2</span>
+core<span class="w"> </span>id<span class="w">             </span>:<span class="w"> </span><span class="m">1</span>
+cpu<span class="w"> </span>cores<span class="w">   </span>:<span class="w"> </span><span class="m">2</span>
+apicid<span class="w">              </span>:<span class="w"> </span><span class="m">1</span>
+initial<span class="w"> </span>apicid<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>
+fpu<span class="w">         </span>:<span class="w"> </span>yes
+fpu_exception<span class="w">       </span>:<span class="w"> </span>yes
+cpuid<span class="w"> </span>level<span class="w"> </span>:<span class="w"> </span><span class="m">6</span>
+wp<span class="w">          </span>:<span class="w"> </span>yes
+flags<span class="w">               </span>:<span class="w"> </span>fpu<span class="w"> </span>vme<span class="w"> </span>de<span class="w"> </span>pse<span class="w"> </span>tsc<span class="w"> </span>msr<span class="w"> </span>pae<span class="w"> </span>mce<span class="w"> </span>cx8<span class="w"> </span>apic<span class="w"> </span>sep<span class="w"> </span>mtrr<span class="w"> </span>pge<span class="w"> </span>mca<span class="w"> </span>cmov<span class="w"> </span>pat<span class="w"> </span>pse36<span class="w"> </span>clflush<span class="w"> </span>dts<span class="w"> </span>acpi<span class="w"> </span>mmx<span class="w"> </span>fxsr<span class="w"> </span>sse<span class="w"> </span>sse2<span class="w"> </span>ss<span class="w"> </span>ht<span class="w"> </span>tm<span class="w"> </span>pbe<span class="w"> </span>syscall<span class="w"> </span>nx<span class="w"> </span>lm<span class="w"> </span>constant_tsc<span class="w"> </span>pebs<span class="w"> </span>bts<span class="w"> </span>nopl<span class="w"> </span>eagerfpu<span class="w"> </span>pni<span class="w"> </span>dtes64<span class="w"> </span>monitor<span class="w"> </span>ds_cpl<span class="w"> </span>est<span class="w"> </span>cid<span class="w"> </span>cx16<span class="w"> </span>xtpr<span class="w"> </span>pdcm<span class="w"> </span>lahf_lm
+bugs<span class="w">                </span>:
+bogomips<span class="w">    </span>:<span class="w"> </span><span class="m">6778</span>.13
+clflush<span class="w"> </span>size<span class="w">        </span>:<span class="w"> </span><span class="m">64</span>
+cache_alignment<span class="w">     </span>:<span class="w"> </span><span class="m">128</span>
+address<span class="w"> </span>sizes<span class="w">       </span>:<span class="w"> </span><span class="m">36</span><span class="w"> </span>bits<span class="w"> </span>physical,<span class="w"> </span><span class="m">48</span><span class="w"> </span>bits<span class="w"> </span>virtual
+power<span class="w"> </span>management:
+</pre></div>
+</div>
+<p>This command provides lots of informations (54 lines) on computing capabilities. Several are physical ones (number of cores, size of caches, frequency), logical ones.</p>
+<p>The command <code class="docutils literal notranslate"><span class="pre">lscpu</span></code> provides a more compact informations:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Architecture:<span class="w">          </span>x86_64
+CPU<span class="w"> </span>op-mode<span class="o">(</span>s<span class="o">)</span>:<span class="w">        </span><span class="m">32</span>-bit,<span class="w"> </span><span class="m">64</span>-bit
+Byte<span class="w"> </span>Order:<span class="w">            </span>Little<span class="w"> </span>Endian
+CPU<span class="o">(</span>s<span class="o">)</span>:<span class="w">                </span><span class="m">2</span>
+On-line<span class="w"> </span>CPU<span class="o">(</span>s<span class="o">)</span><span class="w"> </span>list:<span class="w">   </span><span class="m">0</span>,1
+Thread<span class="o">(</span>s<span class="o">)</span><span class="w"> </span>per<span class="w"> </span>core:<span class="w">    </span><span class="m">1</span>
+Core<span class="o">(</span>s<span class="o">)</span><span class="w"> </span>per<span class="w"> </span>socket:<span class="w">    </span><span class="m">2</span>
+Socket<span class="o">(</span>s<span class="o">)</span>:<span class="w">             </span><span class="m">1</span>
+NUMA<span class="w"> </span>node<span class="o">(</span>s<span class="o">)</span>:<span class="w">          </span><span class="m">1</span>
+Vendor<span class="w"> </span>ID:<span class="w">             </span>GenuineIntel
+CPU<span class="w"> </span>family:<span class="w">            </span><span class="m">15</span>
+Model:<span class="w">                 </span><span class="m">6</span>
+Model<span class="w"> </span>name:<span class="w">            </span>Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>Pentium<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>D<span class="w"> </span>CPU<span class="w"> </span><span class="m">3</span>.40GHz
+Stepping:<span class="w">              </span><span class="m">4</span>
+CPU<span class="w"> </span>MHz:<span class="w">               </span><span class="m">3388</span>.919
+BogoMIPS:<span class="w">              </span><span class="m">6777</span>.83
+L1d<span class="w"> </span>cache:<span class="w">             </span>16K
+L2<span class="w"> </span>cache:<span class="w">              </span>2048K
+NUMA<span class="w"> </span>node0<span class="w"> </span>CPU<span class="o">(</span>s<span class="o">)</span>:<span class="w">     </span><span class="m">0</span>,1
+Flags:<span class="w">                 </span>fpu<span class="w"> </span>vme<span class="w"> </span>de<span class="w"> </span>pse<span class="w"> </span>tsc<span class="w"> </span>msr<span class="w"> </span>pae<span class="w"> </span>mce<span class="w"> </span>cx8<span class="w"> </span>apic<span class="w"> </span>sep<span class="w"> </span>mtrr<span class="w"> </span>pge<span class="w"> </span>mca<span class="w"> </span>cmov<span class="w"> </span>pat<span class="w"> </span>pse36<span class="w"> </span>clflush<span class="w"> </span>dts<span class="w"> </span>acpi<span class="w"> </span>mmx<span class="w"> </span>fxsr<span class="w"> </span>sse<span class="w"> </span>sse2<span class="w"> </span>ss<span class="w"> </span>ht<span class="w"> </span>tm<span class="w"> </span>pbe<span class="w"> </span>syscall<span class="w"> </span>nx<span class="w"> </span>lm<span class="w"> </span>constant_tsc<span class="w"> </span>pebs<span class="w"> </span>bts<span class="w"> </span>nopl<span class="w"> </span>eagerfpu<span class="w"> </span>pni<span class="w"> </span>dtes64<span class="w"> </span>monitor<span class="w"> </span>ds_cpl<span class="w"> </span>est<span class="w"> </span>cid<span class="w"> </span>cx16<span class="w"> </span>xtpr<span class="w"> </span>pdcm<span class="w"> </span>lahf_lm
+</pre></div>
+</div>
+<section id="exercice-1-get-this-informations-on-your-host-with-cat-proc-cpuinfo-and-compare-to-one-above">
+<h4>Exercice #1: get this informations on your host with <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/proc/cpuinfo</span></code> and compare to one above<a class="headerlink" href="#exercice-1-get-this-informations-on-your-host-with-cat-proc-cpuinfo-and-compare-to-one-above" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>How much lines of informations ?</p></li>
+</ul>
+</section>
+<section id="exercice-2-get-the-informations-on-your-host-with-lscpu-command">
+<h4>Exercice #2 : get the informations on your host with <code class="docutils literal notranslate"><span class="pre">lscpu</span></code> command<a class="headerlink" href="#exercice-2-get-the-informations-on-your-host-with-lscpu-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>What new informations appear on the output ?</p></li>
+<li><p>How many CPUs ? Threads per core ? Cores per socket ? Sockets ?</p></li>
+<li><p>How many cache levels ?</p></li>
+<li><p>How many « flags » ? What do they represent ?</p></li>
+</ul>
+</section>
+</section>
+<section id="exploration">
+<h3>Exploration<a class="headerlink" href="#exploration" title="Lien vers cette rubrique">¶</a></h3>
+<p>Some hardware libraries provides you a graphical view of hardware system, including peripherals. The command <code class="docutils literal notranslate"><span class="pre">hwloc-ls</span></code> from <code class="docutils literal notranslate"><span class="pre">hwloc</span></code> library offers this output:</p>
+<img alt="Image hwloc-ls" class="img-fluid center" src="../../_images/lstopo_035.png" />
+<section id="exercice-3-get-a-graphical-representation-of-hardware-with-hwloc-ls-command">
+<h4>Exercice #3 : get a graphical representation of hardware with <code class="docutils literal notranslate"><span class="pre">hwloc-ls</span></code> command<a class="headerlink" href="#exercice-3-get-a-graphical-representation-of-hardware-with-hwloc-ls-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Locate and identify the elements provided with <code class="docutils literal notranslate"><span class="pre">lscpu</span></code> command</p></li>
+<li><p>How much memory does your host hold ?</p></li>
+</ul>
+<p>The peripherals are listed and prefixed by <code class="docutils literal notranslate"><span class="pre">PCI</span></code>. The command <code class="docutils literal notranslate"><span class="pre">lspci</span> <span class="pre">-nn</span></code> provides the list of PCI devices:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">00</span>:00.0<span class="w"> </span>Host<span class="w"> </span>bridge<span class="w"> </span><span class="o">[</span><span class="m">0600</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82Q963/Q965<span class="w"> </span>Memory<span class="w"> </span>Controller<span class="w"> </span>Hub<span class="w"> </span><span class="o">[</span><span class="m">8086</span>:2990<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:01.0<span class="w"> </span>PCI<span class="w"> </span>bridge<span class="w"> </span><span class="o">[</span><span class="m">0604</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82Q963/Q965<span class="w"> </span>PCI<span class="w"> </span>Express<span class="w"> </span>Root<span class="w"> </span>Port<span class="w"> </span><span class="o">[</span><span class="m">8086</span>:2991<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:1a.0<span class="w"> </span>USB<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span>0c03<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>USB<span class="w"> </span>UHCI<span class="w"> </span>Controller<span class="w"> </span><span class="c1">#4 [8086:2834] (rev 02)</span>
+<span class="m">00</span>:1a.1<span class="w"> </span>USB<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span>0c03<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>USB<span class="w"> </span>UHCI<span class="w"> </span>Controller<span class="w"> </span><span class="c1">#5 [8086:2835] (rev 02)</span>
+<span class="m">00</span>:1a.7<span class="w"> </span>USB<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span>0c03<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>USB2<span class="w"> </span>EHCI<span class="w"> </span>Controller<span class="w"> </span><span class="c1">#2 [8086:283a] (rev 02)</span>
+<span class="m">00</span>:1b.0<span class="w"> </span>Audio<span class="w"> </span>device<span class="w"> </span><span class="o">[</span><span class="m">0403</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>HD<span class="w"> </span>Audio<span class="w"> </span>Controller<span class="w"> </span><span class="o">[</span><span class="m">8086</span>:284b<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:1c.0<span class="w"> </span>PCI<span class="w"> </span>bridge<span class="w"> </span><span class="o">[</span><span class="m">0604</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>PCI<span class="w"> </span>Express<span class="w"> </span>Port<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">[</span><span class="m">8086</span>:283f<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:1c.4<span class="w"> </span>PCI<span class="w"> </span>bridge<span class="w"> </span><span class="o">[</span><span class="m">0604</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>PCI<span class="w"> </span>Express<span class="w"> </span>Port<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">[</span><span class="m">8086</span>:2847<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:1d.0<span class="w"> </span>USB<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span>0c03<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>USB<span class="w"> </span>UHCI<span class="w"> </span>Controller<span class="w"> </span><span class="c1">#1 [8086:2830] (rev 02)</span>
+<span class="m">00</span>:1d.1<span class="w"> </span>USB<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span>0c03<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>USB<span class="w"> </span>UHCI<span class="w"> </span>Controller<span class="w"> </span><span class="c1">#2 [8086:2831] (rev 02)</span>
+<span class="m">00</span>:1d.2<span class="w"> </span>USB<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span>0c03<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>USB<span class="w"> </span>UHCI<span class="w"> </span>Controller<span class="w"> </span><span class="c1">#3 [8086:2832] (rev 02)</span>
+<span class="m">00</span>:1d.7<span class="w"> </span>USB<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span>0c03<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>USB2<span class="w"> </span>EHCI<span class="w"> </span>Controller<span class="w"> </span><span class="c1">#1 [8086:2836] (rev 02)</span>
+<span class="m">00</span>:1e.0<span class="w"> </span>PCI<span class="w"> </span>bridge<span class="w"> </span><span class="o">[</span><span class="m">0604</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span><span class="m">82801</span><span class="w"> </span>PCI<span class="w"> </span>Bridge<span class="w"> </span><span class="o">[</span><span class="m">8086</span>:244e<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span>f2<span class="o">)</span>
+<span class="m">00</span>:1f.0<span class="w"> </span>ISA<span class="w"> </span>bridge<span class="w"> </span><span class="o">[</span><span class="m">0601</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801HB/HR<span class="w"> </span><span class="o">(</span>ICH8/R<span class="o">)</span><span class="w"> </span>LPC<span class="w"> </span>Interface<span class="w"> </span>Controller<span class="w"> </span><span class="o">[</span><span class="m">8086</span>:2810<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:1f.2<span class="w"> </span>IDE<span class="w"> </span>interface<span class="w"> </span><span class="o">[</span><span class="m">0101</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span><span class="m">4</span><span class="w"> </span>port<span class="w"> </span>SATA<span class="w"> </span>Controller<span class="w"> </span><span class="o">[</span>IDE<span class="w"> </span>mode<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">8086</span>:2820<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:1f.3<span class="w"> </span>SMBus<span class="w"> </span><span class="o">[</span>0c05<span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801H<span class="w"> </span><span class="o">(</span>ICH8<span class="w"> </span>Family<span class="o">)</span><span class="w"> </span>SMBus<span class="w"> </span>Controller<span class="w"> </span><span class="o">[</span><span class="m">8086</span>:283e<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">00</span>:1f.5<span class="w"> </span>IDE<span class="w"> </span>interface<span class="w"> </span><span class="o">[</span><span class="m">0101</span><span class="o">]</span>:<span class="w"> </span>Intel<span class="w"> </span>Corporation<span class="w"> </span>82801HR/HO/HH<span class="w"> </span><span class="o">(</span>ICH8R/DO/DH<span class="o">)</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>port<span class="w"> </span>SATA<span class="w"> </span>Controller<span class="w"> </span><span class="o">[</span>IDE<span class="w"> </span>mode<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">8086</span>:2825<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+<span class="m">01</span>:00.0<span class="w"> </span>VGA<span class="w"> </span>compatible<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span><span class="m">0300</span><span class="o">]</span>:<span class="w"> </span>Advanced<span class="w"> </span>Micro<span class="w"> </span>Devices,<span class="w"> </span>Inc.<span class="w"> </span><span class="o">[</span>AMD/ATI<span class="o">]</span><span class="w"> </span>Caicos<span class="w"> </span><span class="o">[</span>Radeon<span class="w"> </span>HD<span class="w"> </span><span class="m">6450</span>/7450/8450<span class="w"> </span>/<span class="w"> </span>R5<span class="w"> </span><span class="m">230</span><span class="w"> </span>OEM<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">1002</span>:6779<span class="o">]</span>
+<span class="m">01</span>:00.1<span class="w"> </span>Audio<span class="w"> </span>device<span class="w"> </span><span class="o">[</span><span class="m">0403</span><span class="o">]</span>:<span class="w"> </span>Advanced<span class="w"> </span>Micro<span class="w"> </span>Devices,<span class="w"> </span>Inc.<span class="w"> </span><span class="o">[</span>AMD/ATI<span class="o">]</span><span class="w"> </span>Caicos<span class="w"> </span>HDMI<span class="w"> </span>Audio<span class="w"> </span><span class="o">[</span>Radeon<span class="w"> </span>HD<span class="w"> </span><span class="m">6450</span><span class="w"> </span>/<span class="w"> </span><span class="m">7450</span>/8450/8490<span class="w"> </span>OEM<span class="w"> </span>/<span class="w"> </span>R5<span class="w"> </span><span class="m">230</span>/235/235X<span class="w"> </span>OEM<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">1002</span>:a...
+<span class="m">03</span>:00.0<span class="w"> </span>Ethernet<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span><span class="m">0200</span><span class="o">]</span>:<span class="w"> </span>Broadcom<span class="w"> </span>Limited<span class="w"> </span>NetXtreme<span class="w"> </span>BCM5754<span class="w"> </span>Gigabit<span class="w"> </span>Ethernet<span class="w"> </span>PCI<span class="w"> </span>Express<span class="w"> </span><span class="o">[</span>14e4:167a<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span><span class="m">02</span><span class="o">)</span>
+</pre></div>
+</div>
+</section>
+<section id="exercice-4-list-the-pci-peripherals-with-lspci-command">
+<h4>Exercice #4 : list the PCI peripherals with <code class="docutils literal notranslate"><span class="pre">lspci</span></code> command<a class="headerlink" href="#exercice-4-list-the-pci-peripherals-with-lspci-command" title="Lien vers cette rubrique">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>How many devices do you get ?</p></li>
+<li><p>Can you identify the devices listed with graphical representation ?</p></li>
+<li><p>What keywords on graphical representation define the VGA device ?</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="exploring-dynamic-system">
+<h3>Exploring dynamic system<a class="headerlink" href="#exploring-dynamic-system" title="Lien vers cette rubrique">¶</a></h3>
+<p>Your hosts run a <a class="reference external" href="http://www.kernel.org">GNU/Linux</a> operating system based on <a class="reference external" href="http://www.debian.org">Debian</a> Stretch distribution.</p>
+<p>As when your drive a car, it’s useful to get informations about running system during process. The commands <code class="docutils literal notranslate"><span class="pre">top</span></code> and <code class="docutils literal notranslate"><span class="pre">htop</span></code></p>
+<section id="exercice-5-open-htop-and-top-in-two-terminals">
+<h4>Exercice #5: open <code class="docutils literal notranslate"><span class="pre">htop</span></code> and <code class="docutils literal notranslate"><span class="pre">top</span></code> in two terminals<a class="headerlink" href="#exercice-5-open-htop-and-top-in-two-terminals" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>What do you see first ?</p></li>
+<li><p>How much memory have you ?</p></li>
+<li><p>How much swap ?</p></li>
+<li><p>How many tasks are launched ? How many threads ?</p></li>
+</ul>
+</section>
+</section>
+<section id="tiny-metrology-with-usr-bin-time">
+<h3>Tiny metrology with <code class="docutils literal notranslate"><span class="pre">/usr/bin/time</span></code><a class="headerlink" href="#tiny-metrology-with-usr-bin-time" title="Lien vers cette rubrique">¶</a></h3>
+<div class="note note-imp docutils container">
+<p>Be careful, there is a difference between <code class="docutils literal notranslate"><span class="pre">time</span></code> included as command in shells and <code class="docutils literal notranslate"><span class="pre">time</span></code> as standalone program. In order not to get difficulties, the program <code class="docutils literal notranslate"><span class="pre">time</span></code> has to be resquested by <code class="docutils literal notranslate"><span class="pre">/usr/bin/time</span></code>!</p>
+</div>
+<p>Difference between <code class="docutils literal notranslate"><span class="pre">time</span></code> build in command and <code class="docutils literal notranslate"><span class="pre">time</span></code> standalone program.</p>
+<p><code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">(date</span> <span class="pre">;</span> <span class="pre">sleep</span> <span class="pre">10</span> <span class="pre">;</span> <span class="pre">date)</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Thu<span class="w"> </span>Jun<span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">09</span>:15:53<span class="w"> </span>CEST<span class="w"> </span><span class="m">2017</span>
+Thu<span class="w"> </span>Jun<span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">09</span>:16:03<span class="w"> </span>CEST<span class="w"> </span><span class="m">2017</span>
+
+real<span class="w">        </span>0m10.012s
+user<span class="w">        </span>0m0.000s
+sys<span class="w"> </span>0m0.000s
+</pre></div>
+</div>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>/usr/bin/time bash -c “date ; sleep 10 ; date” ``</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Thu<span class="w"> </span>Jun<span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">09</span>:18:51<span class="w"> </span>CEST<span class="w"> </span><span class="m">2017</span>
+Thu<span class="w"> </span>Jun<span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">09</span>:19:01<span class="w"> </span>CEST<span class="w"> </span><span class="m">2017</span>
+<span class="m">0</span>.00user<span class="w"> </span><span class="m">0</span>.00system<span class="w"> </span><span class="m">0</span>:10.01elapsed<span class="w"> </span><span class="m">0</span>%CPU<span class="w"> </span><span class="o">(</span>0avgtext+0avgdata<span class="w"> </span>2984maxresident<span class="o">)</span>k
+0inputs+0outputs<span class="w"> </span><span class="o">(</span>0major+481minor<span class="o">)</span>pagefaults<span class="w"> </span>0swaps
+</pre></div>
+</div>
+<p>Have a close eye to the difference of the syntax if you would like to get metrology on a sequence of commands: a prefix by <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">-c</span></code> and the quotes on the boundaries are needed.</p>
+<p>The defaut output of <code class="docutils literal notranslate"><span class="pre">/usr/bin/time</span></code> is more verbose but not easily to parse. It’s better to define the output with <code class="docutils literal notranslate"><span class="pre">TIME</span></code> variable. Copy/paste the following in terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">TIME</span><span class="o">=</span><span class="s1">&#39;TIME Command being timed: &quot;%C&quot;</span>
+<span class="s1">TIME User time (seconds): %U</span>
+<span class="s1">TIME System time (seconds): %S</span>
+<span class="s1">TIME Elapsed (wall clock) time : %e</span>
+<span class="s1">TIME Percent of CPU this job got: %P</span>
+<span class="s1">TIME Average shared text size (kbytes): %X</span>
+<span class="s1">TIME Average unshared data size (kbytes): %D</span>
+<span class="s1">TIME Average stack size (kbytes): %p</span>
+<span class="s1">TIME Average total size (kbytes): %K</span>
+<span class="s1">TIME Maximum resident set size (kbytes): %M</span>
+<span class="s1">TIME Average resident set size (kbytes): %t</span>
+<span class="s1">TIME Major (requiring I/O) page faults: %F</span>
+<span class="s1">TIME Minor (reclaiming a frame) page faults: %R</span>
+<span class="s1">TIME Voluntary context switches: %w</span>
+<span class="s1">TIME Involuntary context switches: %c</span>
+<span class="s1">TIME Swaps: %W</span>
+<span class="s1">TIME File system inputs: %I</span>
+<span class="s1">TIME File system outputs: %O</span>
+<span class="s1">TIME Socket messages sent: %s</span>
+<span class="s1">TIME Socket messages received: %r</span>
+<span class="s1">TIME Signals delivered: %k</span>
+<span class="s1">TIME Page size (bytes): %Z</span>
+<span class="s1">TIME Exit status: %x&#39;</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$TIME</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TIME<span class="w"> </span>Command<span class="w"> </span>being<span class="w"> </span>timed:<span class="w"> </span><span class="s2">&quot;%C&quot;</span><span class="w"> </span>TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span>%U<span class="w"> </span>TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span>%S<span class="w"> </span>TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span>%e<span class="w"> </span>TIME<span class="w"> </span>Percent<span class="w"> </span>of<span class="w"> </span>CPU<span class="w"> </span>this<span class="w"> </span>job<span class="w"> </span>got:<span class="w"> </span>%P<span class="w"> </span>TIME<span class="w"> </span>Average<span class="w"> </span>shared<span class="w"> </span>text<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span>%X<span class="w"> </span>TIME<span class="w"> </span>Average<span class="w"> </span>unshared<span class="w"> </span>data<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span>%D<span class="w"> </span>TIME<span class="w"> </span>Average<span class="w"> </span>stack<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span>%p<span class="w"> </span>TIME<span class="w"> </span>Average<span class="w"> </span>total<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span>%K<span class="w"> </span>TIME<span class="w"> </span>Maximum<span class="w"> </span>resident<span class="w"> </span><span class="nb">set</span><span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span>%M<span class="w"> </span>TIME<span class="w"> </span>Average<span class="w"> </span>resident<span class="w"> </span><span class="nb">set</span><span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span>%t<span class="w"> </span>TIME<span class="w"> </span>Major<span class="w"> </span><span class="o">(</span>requiring<span class="w"> </span>I/O<span class="o">)</span><span class="w"> </span>page<span class="w"> </span>faults:<span class="w"> </span>%F<span class="w"> </span>TIME<span class="w"> </span>Minor<span class="w"> </span><span class="o">(</span>reclaiming<span class="w"> </span>a<span class="w"> </span>frame<span class="o">)</span><span class="w"> </span>page<span class="w"> </span>faults:<span class="w"> </span>%R<span class="w"> </span>TIME<span class="w"> </span>Voluntary<span class="w"> </span>context<span class="w"> </span>switches:<span class="w"> </span>%w<span class="w"> </span>TIME<span class="w"> </span>Involuntary<span class="w"> </span>context<span class="w"> </span>switches:<span class="w"> </span>%c<span class="w"> </span>TIME<span class="w"> </span>Swaps:<span class="w"> </span>%W<span class="w"> </span>TIME<span class="w"> </span>File<span class="w"> </span>system<span class="w"> </span>inputs:<span class="w"> </span>%I<span class="w"> </span>TIME<span class="w"> </span>File<span class="w"> </span>system<span class="w"> </span>outputs:<span class="w"> </span>%O<span class="w"> </span>TIME<span class="w"> </span>Socket<span class="w"> </span>messages<span class="w"> </span>sent:<span class="w"> </span>%s<span class="w"> </span>TIME<span class="w"> </span>Socket<span class="w"> </span>messages<span class="w"> </span>received:<span class="w"> </span>%r<span class="w"> </span>TIME<span class="w"> </span>Signals<span class="w"> </span>delivered:<span class="w"> </span>%k<span class="w"> </span>TIME<span class="w"> </span>Page<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>bytes<span class="o">)</span>:<span class="w"> </span>%Z<span class="w"> </span>TIME<span class="w"> </span>Exit<span class="w"> </span>status:<span class="w"> </span>%x
+</pre></div>
+</div>
+<p>For the execution line above, we got something like:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Thu<span class="w"> </span>Jun<span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">09</span>:32:34<span class="w"> </span>CEST<span class="w"> </span><span class="m">2017</span>
+Thu<span class="w"> </span>Jun<span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">09</span>:32:44<span class="w"> </span>CEST<span class="w"> </span><span class="m">2017</span>
+TIME<span class="w"> </span>Command<span class="w"> </span>being<span class="w"> </span>timed:<span class="w"> </span><span class="s2">&quot;bash -c date ; sleep 10 ; date&quot;</span>
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.00
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.00
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">10</span>.01
+TIME<span class="w"> </span>Percent<span class="w"> </span>of<span class="w"> </span>CPU<span class="w"> </span>this<span class="w"> </span>job<span class="w"> </span>got:<span class="w"> </span><span class="m">0</span>%
+TIME<span class="w"> </span>Average<span class="w"> </span>shared<span class="w"> </span>text<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Average<span class="w"> </span>unshared<span class="w"> </span>data<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Average<span class="w"> </span>stack<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Average<span class="w"> </span>total<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Maximum<span class="w"> </span>resident<span class="w"> </span><span class="nb">set</span><span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span><span class="m">3072</span>
+TIME<span class="w"> </span>Average<span class="w"> </span>resident<span class="w"> </span><span class="nb">set</span><span class="w"> </span>size<span class="w"> </span><span class="o">(</span>kbytes<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Major<span class="w"> </span><span class="o">(</span>requiring<span class="w"> </span>I/O<span class="o">)</span><span class="w"> </span>page<span class="w"> </span>faults:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Minor<span class="w"> </span><span class="o">(</span>reclaiming<span class="w"> </span>a<span class="w"> </span>frame<span class="o">)</span><span class="w"> </span>page<span class="w"> </span>faults:<span class="w"> </span><span class="m">488</span>
+TIME<span class="w"> </span>Voluntary<span class="w"> </span>context<span class="w"> </span>switches:<span class="w"> </span><span class="m">32</span>
+TIME<span class="w"> </span>Involuntary<span class="w"> </span>context<span class="w"> </span>switches:<span class="w"> </span><span class="m">4</span>
+TIME<span class="w"> </span>Swaps:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>File<span class="w"> </span>system<span class="w"> </span>inputs:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>File<span class="w"> </span>system<span class="w"> </span>outputs:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Socket<span class="w"> </span>messages<span class="w"> </span>sent:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Socket<span class="w"> </span>messages<span class="w"> </span>received:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Signals<span class="w"> </span>delivered:<span class="w"> </span><span class="m">0</span>
+TIME<span class="w"> </span>Page<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>bytes<span class="o">)</span>:<span class="w"> </span><span class="m">4096</span>
+TIME<span class="w"> </span>Exit<span class="w"> </span>status:<span class="w"> </span><span class="m">0</span>
+</pre></div>
+</div>
+<section id="exercice-6-exploration-of-usr-bin-time-on-several-command-unix-commands-or-your-small-programs">
+<h4>Exercice #6 : exploration of <code class="docutils literal notranslate"><span class="pre">/usr/bin/time</span></code> on several command Unix commands or your small programs<a class="headerlink" href="#exercice-6-exploration-of-usr-bin-time-on-several-command-unix-commands-or-your-small-programs" title="Lien vers cette rubrique">¶</a></h4>
+</section>
+</section>
+<section id="statistics-on-the-fly-penstacle-of-statistics">
+<h3>Statistics on the fly ! Penstacle of statistics<a class="headerlink" href="#statistics-on-the-fly-penstacle-of-statistics" title="Lien vers cette rubrique">¶</a></h3>
+<p><a class="reference external" href="https://www.r-project.org/">R project</a> is a complete and extended software for statistics.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">minimum</span></code>: the best (in time) or the worst (in performance)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">maximum</span></code>: the worst (in time) or the best (in performance)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">average</span></code>: the classical metric used (but not the best on computing dynamic systems)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">median</span></code>: the best metric on a set of experiments</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stddev</span></code> or standard deviation:</p></li>
+<li><p>variability is defined as the ratio between median and standard deviation</p></li>
+</ul>
+<p>The tool <code class="docutils literal notranslate"><span class="pre">/tmp/Rmmmms-$USER.r</span></code> estimates the <em>penstacle</em> of statistics and adds on the rightest column the variability on a standard input stream.</p>
+<p>To create <code class="docutils literal notranslate"><span class="pre">/tmp/Rmmmms-$USER.r</span></code>, copy/paste following lines in a terminal.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tee<span class="w"> </span>/tmp/Rmmmms-<span class="nv">$USER</span>.r<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">#! /usr/bin/env Rscript</span>
+<span class="s">d&lt;-scan(&quot;stdin&quot;, quiet=TRUE)</span>
+<span class="s">cat(min(d), max(d), median(d), mean(d), sd(d), sd(d)/median(d), sep=&quot;\t&quot;)</span>
+<span class="s">cat(&quot;\n&quot;)</span>
+<span class="s">EOF</span>
+chmod<span class="w"> </span>u+x<span class="w"> </span>/tmp/Rmmmms-<span class="nv">$USER</span>.r
+</pre></div>
+</div>
+<p>To evaluate the variability to MemCopy test memory in <code class="docutils literal notranslate"><span class="pre">mbw</span></code> tool on 10 launches with a size of 1GB, the command is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mbw<span class="w"> </span>-a<span class="w"> </span>-t<span class="w"> </span><span class="m">0</span><span class="w"> </span>-n<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">1000</span>
+</pre></div>
+</div>
+<p>This is an example of output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Long<span class="w"> </span>uses<span class="w"> </span><span class="m">8</span><span class="w"> </span>bytes.<span class="w"> </span>Allocating<span class="w"> </span><span class="m">2</span>*131072000<span class="w"> </span><span class="nv">elements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2097152000</span><span class="w"> </span>bytes<span class="w"> </span>of<span class="w"> </span>memory.
+Getting<span class="w"> </span>down<span class="w"> </span>to<span class="w"> </span>business...<span class="w"> </span>Doing<span class="w"> </span><span class="m">10</span><span class="w"> </span>runs<span class="w"> </span>per<span class="w"> </span>test.
+<span class="m">0</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17240<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5800</span>.430<span class="w"> </span>MiB/s
+<span class="m">1</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17239<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5800</span>.700<span class="w"> </span>MiB/s
+<span class="m">2</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17320<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5773</span>.672<span class="w"> </span>MiB/s
+<span class="m">3</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17304<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5779</span>.044<span class="w"> </span>MiB/s
+<span class="m">4</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17311<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5776</span>.741<span class="w"> </span>MiB/s
+<span class="m">5</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17315<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5775</span>.473<span class="w"> </span>MiB/s
+<span class="m">6</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17337<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5767</span>.911<span class="w"> </span>MiB/s
+<span class="m">7</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17429<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5737</span>.531<span class="w"> </span>MiB/s
+<span class="m">8</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17365<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5758</span>.776<span class="w"> </span>MiB/s
+<span class="m">9</span><span class="w">   </span>Method:<span class="w"> </span>MEMCPY<span class="w">  </span>Elapsed:<span class="w"> </span><span class="m">0</span>.17327<span class="w">        </span>MiB:<span class="w"> </span><span class="m">1000</span>.00000<span class="w"> </span>Copy:<span class="w"> </span><span class="m">5771</span>.240<span class="w"> </span>MiB/s
+</pre></div>
+</div>
+<p>To filter and extract statistics <em>on the fly</em>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mbw<span class="w"> </span>-a<span class="w"> </span>-t<span class="w"> </span><span class="m">0</span><span class="w"> </span>-n<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>MEMCPY<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $9 }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/tmp/Rmmmms-<span class="nv">$USER</span>.r
+</pre></div>
+</div>
+<p>This is an example of output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">5595</span>.783<span class="w">    </span><span class="m">5673</span>.179<span class="w">        </span><span class="m">5624</span>.503<span class="w">        </span><span class="m">5625</span>.749<span class="w">        </span><span class="m">21</span>.81671<span class="w">        </span><span class="m">0</span>.003878869
+</pre></div>
+</div>
+<section id="exercice-7-practice-rmmmms-user-r-and-investigate-variability">
+<h4>Exercice #7 : practice <code class="docutils literal notranslate"><span class="pre">Rmmmms-$USER.r</span></code> and investigate variability<a class="headerlink" href="#exercice-7-practice-rmmmms-user-r-and-investigate-variability" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Launch previous command to 10000, 1000, 100 launchs with respectly sizes of 10, 100, 1000</p></li>
+<li><p>Have a look on statistics estimators : what tipically variability do you reach ?</p></li>
+</ul>
+<p>This will be very useful to extract and provides statistics of times.</p>
+</section>
+</section>
+</section>
+<section id="an-illustrative-example-pi-dart-dash">
+<h2>An illustrative example: Pi Dart Dash<a class="headerlink" href="#an-illustrative-example-pi-dart-dash" title="Lien vers cette rubrique">¶</a></h2>
+<section id="principle-inputs-outputs">
+<h3>Principle, inputs &amp; outputs<a class="headerlink" href="#principle-inputs-outputs" title="Lien vers cette rubrique">¶</a></h3>
+<p>The most common example of Monte Carlo program: estimate Pi number by the ratio between the number of points located in the quarter of a circle where random points are uniformly distributed. It needs:</p>
+<ul class="simple">
+<li><p>a random number generator for the 2 coordonates: pseudo-random number generators are generally based on logic and arithmetic functions on integer.</p></li>
+<li><p>operators of estimate the square of the 2 numbers and their sum</p></li>
+<li><p>a comparator</p></li>
+</ul>
+<p>The input &amp; output are the simplest one:</p>
+<ul class="simple">
+<li><p>Input: an integer as number of iterations</p></li>
+<li><p>Output: an integer as number of points inside the quarter of circle</p></li>
+<li><p>Output (bis): an estimation of Pi number (very inefficient method but the result is well known, so easy checked).</p></li>
+<li><p>Output (ter): the total amount of iterations (just to remind)</p></li>
+</ul>
+<p>The following implementation is as <code class="docutils literal notranslate"><span class="pre">bash</span></code> shell script one. The <code class="docutils literal notranslate"><span class="pre">RANDOM</span></code> command provides a random number between 0 and 32767. So the frontier is located on <code class="docutils literal notranslate"><span class="pre">32767*32767</span></code>.</p>
+<p>Copy/Paste the following block inside a terminal.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tee<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">#!/bin/bash</span>
+
+<span class="s">if [ -z &quot;\$1&quot; ]</span>
+<span class="s">then</span>
+<span class="s">    echo &quot;Please provide a number of iterations!&quot;</span>
+<span class="s">    exit</span>
+<span class="s">fi</span>
+
+<span class="s">INSIDE=0</span>
+<span class="s">THEONE=\$((32767**2))</span>
+
+<span class="s">ITERATION=0</span>
+
+<span class="s">while [ \$ITERATION -lt \$1 ]</span>
+<span class="s">do</span>
+
+<span class="s">    X=\$((RANDOM))</span>
+<span class="s">    Y=\$((RANDOM))</span>
+
+<span class="s">    if [ \$((\$X*\$X+\$Y*\$Y)) -le \$THEONE ]</span>
+<span class="s">    then</span>
+<span class="s">    INSIDE=\$((\$INSIDE+1))</span>
+<span class="s">    fi</span>
+<span class="s">    ITERATION=\$((\$ITERATION+1))</span>
+<span class="s">done</span>
+
+<span class="s">echo Pi \$(echo 4.*\$INSIDE/\$ITERATION | bc -l)</span>
+<span class="s">echo Inside \$INSIDE</span>
+<span class="s">echo Iterations \$1</span>
+<span class="s">EOF</span>
+chmod<span class="w"> </span>u+x<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh
+</pre></div>
+</div>
+<p>A program name <code class="docutils literal notranslate"><span class="pre">PiMC-$USER.sh</span></code> located in <code class="docutils literal notranslate"><span class="pre">/tmp</span></code> where <code class="docutils literal notranslate"><span class="pre">$USER</span></code> is your login is created and ready to use.</p>
+<section id="exercice-8-launch-pimc-program-with-several-number-of-iterations-from-100-to-1000000">
+<h4>Exercice #8: launch <code class="docutils literal notranslate"><span class="pre">PiMC</span></code> program with several number of iterations: from 100 to 1000000<a class="headerlink" href="#exercice-8-launch-pimc-program-with-several-number-of-iterations-from-100-to-1000000" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>What is the typical precision of the result ?</p></li>
+</ul>
+</section>
+<section id="exercice-9-launch-pimc-program-prefixed-by-usr-bin-time-with-several-number-of-iterations-100-to-1000000">
+<h4>Exercice #9: launch <code class="docutils literal notranslate"><span class="pre">PiMC</span></code> program prefixed by <code class="docutils literal notranslate"><span class="pre">/usr/bin/time</span></code> with several number of iterations: 100 to 1000000<a class="headerlink" href="#exercice-9-launch-pimc-program-prefixed-by-usr-bin-time-with-several-number-of-iterations-100-to-1000000" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Grep the <code class="docutils literal notranslate"><span class="pre">Elapsed</span></code> and <code class="docutils literal notranslate"><span class="pre">Iterations</span></code> and estimate manually the <strong>ITOPS</strong> (ITerative Operations Per Second) for this program implementation</p></li>
+<li><p>Improve the test to estimate the ITOPS <em>on the fly</em>: apply to different amount of iterations and several time</p></li>
+</ul>
+<p>One Solution:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>/usr/bin/time<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="m">100000</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Elapsed|Iterations)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="k">)</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="w"> </span>-l
+</pre></div>
+</div>
+<p>For 100000 iterations, 10 times:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">31250</span>.00000000000000000000
+<span class="m">31645</span>.56962025316455696202
+<span class="m">28248</span>.58757062146892655367
+<span class="m">30864</span>.19753086419753086419
+<span class="m">31847</span>.13375796178343949044
+<span class="m">32362</span>.45954692556634304207
+<span class="m">32467</span>.53246753246753246753
+<span class="m">31545</span>.74132492113564668769
+<span class="m">32573</span>.28990228013029315960
+<span class="m">32362</span>.45954692556634304207
+</pre></div>
+</div>
+<p>Example of code for previous results:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span>seq<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="k">)</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>/usr/bin/time<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="m">100000</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Elapsed|Iterations)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="k">)</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="w"> </span>-l<span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</pre></div>
+</div>
+<p>From 1000 to 1000000, 1 time:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">1000</span><span class="w">        </span><span class="m">20000</span>.00000000000000000000
+<span class="m">10000</span><span class="w">       </span><span class="m">26315</span>.78947368421052631578
+<span class="m">100000</span><span class="w">      </span><span class="m">32154</span>.34083601286173633440
+<span class="m">1000000</span><span class="w">     </span><span class="m">31685</span>.67807351077313054499
+</pre></div>
+</div>
+<p>Example of code for previous results:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span>POWER<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span>seq<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">6</span><span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="k">$((</span><span class="m">10</span><span class="o">**</span><span class="nv">$POWER</span><span class="k">))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span>-ne<span class="w"> </span><span class="nv">$ITERATIONS</span><span class="s1">&#39;\t&#39;</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>/usr/bin/time<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Elapsed|Iterations)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="k">)</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="w"> </span>-l<span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="split-the-execution-in-equal-parts">
+<h3>Split the execution in equal parts<a class="headerlink" href="#split-the-execution-in-equal-parts" title="Lien vers cette rubrique">¶</a></h3>
+<p>The following command line divides the job to do (10000000 iterations) into <code class="docutils literal notranslate"><span class="pre">PR</span></code> equal jobs.</p>
+<ul class="simple">
+<li><p>Define the number of iterations of each job</p></li>
+<li><p>Launch sequentially jobs with the association of <code class="docutils literal notranslate"><span class="pre">seq</span></code> and xargs</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">1000000</span>
+<span class="nv">PR</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span>
+seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span>PR<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span>PR<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+<p>Example of execution on 32 coresHT</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pi<span class="w"> </span><span class="m">3</span>.14100400000000000000
+Inside<span class="w"> </span><span class="m">785251</span>
+Iterations<span class="w"> </span><span class="m">1000000</span>
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">30</span>.32
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.08
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">30</span>.43
+</pre></div>
+</div>
+<p>On the previous launch, User time represents 99.6% of Elapsed time. Internal system operations only 0.4%.</p>
+<section id="exercice-10-identification-of-the-cost-of-splitting-process">
+<h4>Exercice #10 : identification of the cost of splitting process<a class="headerlink" href="#exercice-10-identification-of-the-cost-of-splitting-process" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Explore the values of <code class="docutils literal notranslate"><span class="pre">User</span></code>, <code class="docutils literal notranslate"><span class="pre">System</span></code> and <code class="docutils literal notranslate"><span class="pre">Elapsed</span></code> times for different values of iterations</p></li>
+<li><p>Estimate the ratio between <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">time</span></code> and <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">time</span></code> for the results</p></li>
+<li><p>Estimate the ratio between <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">time</span></code> and <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">time</span></code> for the results</p></li>
+<li><p>What could you conclude ?</p></li>
+</ul>
+<p>Replace the <code class="docutils literal notranslate"><span class="pre">PR</span></code> set as <code class="docutils literal notranslate"><span class="pre">1</span></code> by the detected number of CPU with <code class="docutils literal notranslate"><span class="pre">lspcu</span></code> command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">1000000</span>
+<span class="nv">PR</span><span class="o">=</span><span class="k">$(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span>
+<span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span>
+seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+<p>On a bi-socket workstation with 8-cores CPU and Hyper Threading acivated, 32 CPUs are detected</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pi<span class="w"> </span><span class="m">3</span>.14073600000000000000
+Inside<span class="w"> </span><span class="m">24537</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14073600000000000000
+Inside<span class="w"> </span><span class="m">24537</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12870400000000000000
+Inside<span class="w"> </span><span class="m">24443</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.11910400000000000000
+Inside<span class="w"> </span><span class="m">24368</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.11667200000000000000
+Inside<span class="w"> </span><span class="m">24349</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13625600000000000000
+Inside<span class="w"> </span><span class="m">24502</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14176000000000000000
+Inside<span class="w"> </span><span class="m">24545</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13254400000000000000
+Inside<span class="w"> </span><span class="m">24473</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14496000000000000000
+Inside<span class="w"> </span><span class="m">24570</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12960000000000000000
+Inside<span class="w"> </span><span class="m">24450</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12140800000000000000
+Inside<span class="w"> </span><span class="m">24386</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13587200000000000000
+Inside<span class="w"> </span><span class="m">24499</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14880000000000000000
+Inside<span class="w"> </span><span class="m">24600</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12870400000000000000
+Inside<span class="w"> </span><span class="m">24443</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14368000000000000000
+Inside<span class="w"> </span><span class="m">24560</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13945600000000000000
+Inside<span class="w"> </span><span class="m">24527</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13203200000000000000
+Inside<span class="w"> </span><span class="m">24469</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14803200000000000000
+Inside<span class="w"> </span><span class="m">24594</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14688000000000000000
+Inside<span class="w"> </span><span class="m">24585</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14368000000000000000
+Inside<span class="w"> </span><span class="m">24560</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13305600000000000000
+Inside<span class="w"> </span><span class="m">24477</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15276800000000000000
+Inside<span class="w"> </span><span class="m">24631</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14931200000000000000
+Inside<span class="w"> </span><span class="m">24604</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15072000000000000000
+Inside<span class="w"> </span><span class="m">24615</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14265600000000000000
+Inside<span class="w"> </span><span class="m">24552</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14790400000000000000
+Inside<span class="w"> </span><span class="m">24593</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14572800000000000000
+Inside<span class="w"> </span><span class="m">24576</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14496000000000000000
+Inside<span class="w"> </span><span class="m">24570</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14240000000000000000
+Inside<span class="w"> </span><span class="m">24550</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12908800000000000000
+Inside<span class="w"> </span><span class="m">24446</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13344000000000000000
+Inside<span class="w"> </span><span class="m">24480</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12755200000000000000
+Inside<span class="w"> </span><span class="m">24434</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">32</span>.56
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.12
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">33</span>.05
+</pre></div>
+</div>
+<p>In this example, we see that the User time represents 98.52% of the Elapsed time. The total Elapsed time is greater up to 10% to unsplitted one. So, splitting has a cost. The system time represents 0.4% of Elapsed time.</p>
+</section>
+<section id="exercice-11-identification-of-the-cost-of-splitting-process">
+<h4>Exercice #11 : identification of the cost of splitting process<a class="headerlink" href="#exercice-11-identification-of-the-cost-of-splitting-process" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Explore the values of <code class="docutils literal notranslate"><span class="pre">User</span></code>, <code class="docutils literal notranslate"><span class="pre">System</span></code> and <code class="docutils literal notranslate"><span class="pre">Elapsed</span></code> times for different values of iterations</p></li>
+<li><p>Estimate the ratio between <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">time</span></code> and <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">time</span></code> for the results</p></li>
+<li><p>Estimate the ratio between <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">time</span></code> and <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">time</span></code> for the results</p></li>
+<li><p>What could you conclude ?</p></li>
+</ul>
+</section>
+<section id="exercice-12-merging-results-improve-metrology">
+<h4>Exercice #12 : merging results &amp; improve metrology<a class="headerlink" href="#exercice-12-merging-results-improve-metrology" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Append the program to extract the total amount of <em>Inside</em> number of iterations</p></li>
+<li><p>Set timers inside command lines to estimate the total Elapsed time</p></li>
+</ul>
+<p>Solution: the timer used are based on <code class="docutils literal notranslate"><span class="pre">date</span></code> command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">1000000</span>
+<span class="nv">START</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%s.%N&#39;</span><span class="k">)</span>
+<span class="nv">PR</span><span class="o">=</span><span class="k">$(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span>
+<span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span>
+seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>^Inside<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ sum+=$2 } END { printf &quot;Insides %i&quot;, sum }&#39;</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nb">echo</span>
+<span class="nv">STOP</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%s.%N&#39;</span><span class="k">)</span>
+<span class="nb">echo</span><span class="w"> </span>Total<span class="w"> </span>Elapsed<span class="w"> </span>time:<span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$STOP</span>-<span class="nv">$START</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="w"> </span>-l<span class="k">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="after-splitting-finally-the-parallelization">
+<h3>After splitting, finally the parallelization<a class="headerlink" href="#after-splitting-finally-the-parallelization" title="Lien vers cette rubrique">¶</a></h3>
+<p>In this illustrative case, each job is independant to others. They can be distributed to all the computing resources available. <code class="docutils literal notranslate"><span class="pre">xargs</span></code> command line builder do it for you with <code class="docutils literal notranslate"><span class="pre">-P</span> <span class="pre">&lt;ConcurrentProcess&gt;</span></code>.</p>
+<p>So, the previous command becomes</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">1000000</span>
+<span class="nv">PR</span><span class="o">=</span><span class="k">$(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span>
+<span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span>
+seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pi<span class="w"> </span><span class="m">3</span>.13843200000000000000
+Inside<span class="w"> </span><span class="m">24519</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14688000000000000000
+Inside<span class="w"> </span><span class="m">24585</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15686400000000000000
+Inside<span class="w"> </span><span class="m">24663</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14508800000000000000
+Inside<span class="w"> </span><span class="m">24571</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14572800000000000000
+Inside<span class="w"> </span><span class="m">24576</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15174400000000000000
+Inside<span class="w"> </span><span class="m">24623</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14547200000000000000
+Inside<span class="w"> </span><span class="m">24574</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12972800000000000000
+Inside<span class="w"> </span><span class="m">24451</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14688000000000000000
+Inside<span class="w"> </span><span class="m">24585</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14521600000000000000
+Inside<span class="w"> </span><span class="m">24572</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13740800000000000000
+Inside<span class="w"> </span><span class="m">24511</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14316800000000000000
+Inside<span class="w"> </span><span class="m">24556</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.16147200000000000000
+Inside<span class="w"> </span><span class="m">24699</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12665600000000000000
+Inside<span class="w"> </span><span class="m">24427</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13625600000000000000
+Inside<span class="w"> </span><span class="m">24502</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14496000000000000000
+Inside<span class="w"> </span><span class="m">24570</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14163200000000000000
+Inside<span class="w"> </span><span class="m">24544</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13510400000000000000
+Inside<span class="w"> </span><span class="m">24493</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13830400000000000000
+Inside<span class="w"> </span><span class="m">24518</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14419200000000000000
+Inside<span class="w"> </span><span class="m">24564</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14035200000000000000
+Inside<span class="w"> </span><span class="m">24534</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14624000000000000000
+Inside<span class="w"> </span><span class="m">24580</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13190400000000000000
+Inside<span class="w"> </span><span class="m">24468</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15097600000000000000
+Inside<span class="w"> </span><span class="m">24617</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15494400000000000000
+Inside<span class="w"> </span><span class="m">24648</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13817600000000000000
+Inside<span class="w"> </span><span class="m">24517</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.14547200000000000000
+Inside<span class="w"> </span><span class="m">24574</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15814400000000000000
+Inside<span class="w"> </span><span class="m">24673</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.13459200000000000000
+Inside<span class="w"> </span><span class="m">24489</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.12985600000000000000
+Inside<span class="w"> </span><span class="m">24452</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15238400000000000000
+Inside<span class="w"> </span><span class="m">24628</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+Pi<span class="w"> </span><span class="m">3</span>.15072000000000000000
+Inside<span class="w"> </span><span class="m">24615</span>
+Iterations<span class="w"> </span><span class="m">31250</span>
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.52
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.16
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">2</span>.06
+</pre></div>
+</div>
+<p>The total User time jumped from 32 to 59 seconds (+83%)! But Elapsed time is reduced from 33.05 to 2.06 (-84%). The System time represents 7% of Elapsed time.</p>
+<p>In conclusion, splitting a huge job into small jobs has a Operating System cost. But distribute the jobs using system can very efficient to reduce Elapsed time.</p>
+<section id="exercice-13-launch-with-p-set-with-the-number-of-cpu-detected">
+<h4>Exercice #13 : launch with <code class="docutils literal notranslate"><span class="pre">-P</span></code> set with the number of CPU detected<a class="headerlink" href="#exercice-13-launch-with-p-set-with-the-number-of-cpu-detected" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Examine the <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">time</span></code>: decrease or not ?</p></li>
+<li><p>Examine the <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">time</span></code>: increase or not ?</p></li>
+<li><p>Examine the <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">time</span></code>: increase or not ?</p></li>
+</ul>
+</section>
+<section id="exercice-14-append-the-program-to-improve-statistics">
+<h4>Exercice #14 : append the program to improve statistics<a class="headerlink" href="#exercice-14-append-the-program-to-improve-statistics" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Add iterator to redo the program 10 times</p></li>
+<li><p>Store the <code class="docutils literal notranslate"><span class="pre">time</span></code> estimators inside an output file defined as : <code class="docutils literal notranslate"><span class="pre">/tmp/PiMC-$USER_YYYYmmddHHMM.log</span></code></p></li>
+<li><p>Parse the output file and extract statistics on 3 times estimators.</p></li>
+<li><p>Estimate the speedup between <code class="docutils literal notranslate"><span class="pre">PR=1</span></code> and <code class="docutils literal notranslate"><span class="pre">PR=&lt;NumberOfCPU&gt;</span></code></p></li>
+<li><p>Multiply by 10 the number of iterations and estimate the speedup</p></li>
+</ul>
+<p>Solution:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">1000000</span>
+<span class="nv">PR</span><span class="o">=</span><span class="k">$(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span>
+<span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span>
+<span class="nv">LOGFILE</span><span class="o">=</span>/tmp/<span class="k">$(</span>basename<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span><span class="w"> </span>.sh<span class="k">)</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%Y%m%d%H%M&#39;</span><span class="k">)</span>.log
+seq<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>ITEM
+<span class="k">do</span>
+seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(time)&#39;</span>
+<span class="k">done</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$LOGFILE</span>
+<span class="nb">echo</span><span class="w"> </span>Results<span class="w"> </span>stored<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$LOGFILE</span>
+</pre></div>
+</div>
+<p>Example of output file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.81
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.14
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">2</span>.02
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.38
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.10
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">1</span>.96
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.20
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.22
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">1</span>.97
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.50
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.09
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">1</span>.98
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.37
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.14
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">1</span>.97
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.61
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.16
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">2</span>.01
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.12
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.16
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">2</span>.00
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.70
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.12
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">1</span>.99
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.34
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.14
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">1</span>.99
+TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">59</span>.33
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.12
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">1</span>.98
+</pre></div>
+</div>
+<p>Examples of statistics on estimators:
+With <em>magic</em> <code class="docutils literal notranslate"><span class="pre">Rmmmms-$USER.r</span></code> command, we can extract statistics on different times</p>
+<ul class="simple">
+<li><p>for <em>Elapsed time</em> : <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/tmp/PiMC-$USER_201706291231.log</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">Elapsed</span> <span class="pre">|</span> <span class="pre">awk</span> <span class="pre">'{</span> <span class="pre">print</span> <span class="pre">$NF</span> <span class="pre">}'</span> <span class="pre">|</span> <span class="pre">/tmp/Rmmmms-$USER.r</span></code>:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">1</span>.96<span class="w">        </span><span class="m">2</span>.02<span class="w">    </span><span class="m">1</span>.985<span class="w">   </span><span class="m">1</span>.987<span class="w">   </span><span class="m">0</span>.01888562<span class="w">      </span><span class="m">0</span>.009514167
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>for <em>System time</em> : <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/tmp/PiMC-$USER_201706291231.log</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">System</span> <span class="pre">|</span> <span class="pre">awk</span> <span class="pre">'{</span> <span class="pre">print</span> <span class="pre">$NF</span> <span class="pre">}'</span> <span class="pre">|</span> <span class="pre">/tmp/Rmmmms-$USER.r</span></code>:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span>.09<span class="w">        </span><span class="m">0</span>.22<span class="w">    </span><span class="m">0</span>.14<span class="w">    </span><span class="m">0</span>.139<span class="w">   </span><span class="m">0</span>.03665151<span class="w">      </span><span class="m">0</span>.2617965
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>for <em>User time</em> : <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/tmp/PiMC-$USER_201706291231.log</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">User</span> <span class="pre">|</span> <span class="pre">awk</span> <span class="pre">'{</span> <span class="pre">print</span> <span class="pre">$NF</span> <span class="pre">}'</span> <span class="pre">|</span> <span class="pre">/tmp/Rmmmms-$USER.r</span></code>:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">59</span>.12<span class="w">       </span><span class="m">59</span>.81<span class="w">   </span><span class="m">59</span>.375<span class="w">  </span><span class="m">59</span>.436<span class="w">  </span><span class="m">0</span>.2179297<span class="w">       </span><span class="m">0</span>.003670394
+</pre></div>
+</div>
+<p>The previous results show that the variability, in this cas, in</p>
+<p>If we take 10x the previous number of iterations:</p>
+<ul class="simple">
+<li><p>With <code class="docutils literal notranslate"><span class="pre">PR=1</span></code>:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">313</span>.36
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">0</span>.93
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">314</span>.40
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>With <code class="docutils literal notranslate"><span class="pre">PR=32</span></code>:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TIME<span class="w"> </span>User<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">606</span>.06
+TIME<span class="w"> </span>System<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>seconds<span class="o">)</span>:<span class="w"> </span><span class="m">1</span>.65
+TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</span>wall<span class="w"> </span>clock<span class="o">)</span><span class="w"> </span><span class="nb">time</span><span class="w"> </span>:<span class="w"> </span><span class="m">19</span>.46
+</pre></div>
+</div>
+</section>
+</section>
+<section id="select-the-execution-cores">
+<h3>Select the execution cores<a class="headerlink" href="#select-the-execution-cores" title="Lien vers cette rubrique">¶</a></h3>
+<p>It’s possible with the <code class="docutils literal notranslate"><span class="pre">hwloc-bind</span></code> command to select the cores on which you would like to execute your program. You just have to specify the physical units with the format <em>from</em> <code class="docutils literal notranslate"><span class="pre">-</span></code> <em>to</em>. For example, if you want to execute the parallelized application MyParallelApplication on a machine with 8 cores (defined from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">7</span></code>) only on the two first:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:0-1<span class="w"> </span>./MyParallelApplication
+</pre></div>
+</div>
+<p>If you want to select only one atomic core, the last one, for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:7-7<span class="w"> </span>./MyParallelApplication
+</pre></div>
+</div>
+<p>If you want to select several non adjacent cores, the first and the last ones, for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:0-0<span class="w"> </span>pu:7-7<span class="w"> </span>./MyParallelApplication
+</pre></div>
+</div>
+<div class="note note-imp docutils container">
+<p>You can control the selection by watching in another terminal the <code class="docutils literal notranslate"><span class="pre">htop</span></code> activity of cores</p>
+</div>
+<section id="exercice-15-launch-the-previous-program-on-a-slice-of-machine">
+<h4>Exercice #15 : launch the previous program on a slice of machine<a class="headerlink" href="#exercice-15-launch-the-previous-program-on-a-slice-of-machine" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Identify and launch the program on only the first core</p></li>
+<li><p>Identify and launch the program on the first half of cores</p></li>
+<li><p>Identify and launch the program on the second half of cores</p></li>
+<li><p>Identify and launch on two first cores</p></li>
+<li><p>Identify and launch on first on the first half and first on the second half of cores</p></li>
+<li><p>Why is there a so great difference between elapsed time</p></li>
+</ul>
+<p>Watch inside terminal with <code class="docutils literal notranslate"><span class="pre">htop</span></code> to check the right distribution of tasks.</p>
+<p>Solutions for a 32 cores workstation:</p>
+<ul class="simple">
+<li><p>On the first core: 0</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">10000000</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">PR</span><span class="o">=</span><span class="k">$(($(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span><span class="o">/</span><span class="m">2</span><span class="k">))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:0-0<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>On the first half of cores: 0 to 15</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">10000000</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">PR</span><span class="o">=</span><span class="k">$(($(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span><span class="o">/</span><span class="m">2</span><span class="k">))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:0-15<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>On the second half of cores: 16 to 31</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">10000000</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">PR</span><span class="o">=</span><span class="k">$(($(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span><span class="o">*</span><span class="m">2</span><span class="k">))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:16-31<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>On the first of first half and first of second half of cores: 0 and 8</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">10000000</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">PR</span><span class="o">=</span><span class="k">$(($(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span><span class="o">*</span><span class="m">2</span><span class="k">))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:0-1<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>On the first of first half and first of second half of cores: 0 and 8</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">10000000</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">PR</span><span class="o">=</span><span class="k">$(($(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span><span class="o">*</span><span class="m">2</span><span class="k">))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:0-0<span class="w"> </span>pu:8-8<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>timed<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span><span class="s1">&#39;(Pi|Inside|Iterations|time)&#39;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="exercice-17-from-exploration-to-laws-estimation">
+<h3>Exercice #17 : from exploration to laws estimation<a class="headerlink" href="#exercice-17-from-exploration-to-laws-estimation" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>explore with previous program from <code class="docutils literal notranslate"><span class="pre">PR=1</span></code> to <code class="docutils literal notranslate"><span class="pre">PR=&lt;2x</span> <span class="pre">CPU&gt;</span></code>, 10x for each</p></li>
+<li><p>store the results in a file</p></li>
+</ul>
+<p>Solution:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ITERATIONS</span><span class="o">=</span><span class="m">1000000</span><span class="w"> </span><span class="p">;</span>
+<span class="nv">REDO</span><span class="o">=</span><span class="m">10</span><span class="w"> </span><span class="p">;</span>
+<span class="nv">PR_START</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="p">;</span>
+<span class="nv">PR_STOP</span><span class="o">=</span><span class="k">$(($(</span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;^CPU(s):&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span><span class="k">)</span><span class="o">*</span><span class="m">2</span><span class="k">))</span><span class="w"> </span><span class="p">;</span>
+<span class="nv">OUTPUT</span><span class="o">=</span>/tmp/<span class="k">$(</span>basename<span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span>.sh<span class="k">)</span>_<span class="si">${</span><span class="nv">PR_START</span><span class="si">}</span>_<span class="si">${</span><span class="nv">PR_STOP</span><span class="si">}</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d%H%M&quot;</span><span class="k">)</span>.dat
+seq<span class="w"> </span><span class="nv">$PR_START</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="nv">$PR_STOP</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>PR<span class="w"> </span><span class="p">;</span>
+<span class="k">do</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-ne<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PR</span><span class="s2">\t&quot;</span><span class="w"> </span><span class="p">;</span>
+<span class="w">    </span><span class="nv">EACHJOB</span><span class="o">=</span><span class="k">$(</span><span class="o">[</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="k">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="nv">$ITERATIONS</span><span class="o">/</span><span class="nv">$PR</span><span class="o">+</span><span class="m">1</span><span class="k">)))</span><span class="w"> </span><span class="p">;</span>
+<span class="w">    </span>seq<span class="w"> </span><span class="nv">$REDO</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>STEP<span class="w"> </span><span class="p">;</span>
+<span class="w">    </span><span class="k">do</span>
+<span class="w">    </span>seq<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>-P<span class="w"> </span><span class="nv">$PR</span><span class="w"> </span>/tmp/PiMC-<span class="nv">$USER</span>.sh<span class="w"> </span><span class="nv">$EACHJOB</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Elapsed<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $NF }&#39;</span>
+<span class="w">    </span><span class="k">done</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/tmp/Rmmmms-<span class="nv">$USER</span>.r
+<span class="k">done</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$OUTPUT</span>
+<span class="nb">echo</span><span class="w"> </span>Results<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$OUTPUT</span><span class="w"> </span>file
+</pre></div>
+</div>
+<p>As an example, a 32HT cores workstation, we got:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># PR        MIN     MAX     AVG     MED     STDEV   Variability</span>
+<span class="m">1</span><span class="w">   </span><span class="m">29</span>.94<span class="w">   </span><span class="m">35</span>.16<span class="w">   </span><span class="m">30</span>.56<span class="w">   </span><span class="m">30</span>.99<span class="w">   </span><span class="m">1</span>.54438<span class="w"> </span><span class="m">0</span>.05053601
+<span class="m">2</span><span class="w">   </span><span class="m">15</span>.09<span class="w">   </span><span class="m">16</span>.73<span class="w">   </span><span class="m">15</span>.445<span class="w">  </span><span class="m">15</span>.531<span class="w">  </span><span class="m">0</span>.4647449<span class="w">       </span><span class="m">0</span>.03009031
+<span class="m">3</span><span class="w">   </span><span class="m">10</span>.3<span class="w">    </span><span class="m">12</span>.02<span class="w">   </span><span class="m">10</span>.555<span class="w">  </span><span class="m">10</span>.795<span class="w">  </span><span class="m">0</span>.6131567<span class="w">       </span><span class="m">0</span>.05809158
+<span class="m">4</span><span class="w">   </span><span class="m">7</span>.78<span class="w">    </span><span class="m">8</span>.21<span class="w">    </span><span class="m">7</span>.97<span class="w">    </span><span class="m">7</span>.975<span class="w">   </span><span class="m">0</span>.1269514<span class="w">       </span><span class="m">0</span>.01592866
+<span class="m">5</span><span class="w">   </span><span class="m">6</span>.31<span class="w">    </span><span class="m">6</span>.53<span class="w">    </span><span class="m">6</span>.435<span class="w">   </span><span class="m">6</span>.416<span class="w">   </span><span class="m">0</span>.07366591<span class="w">      </span><span class="m">0</span>.01144769
+<span class="m">6</span><span class="w">   </span><span class="m">5</span>.27<span class="w">    </span><span class="m">5</span>.57<span class="w">    </span><span class="m">5</span>.41<span class="w">    </span><span class="m">5</span>.415<span class="w">   </span><span class="m">0</span>.09778093<span class="w">      </span><span class="m">0</span>.01807411
+<span class="m">7</span><span class="w">   </span><span class="m">4</span>.61<span class="w">    </span><span class="m">5</span>.67<span class="w">    </span><span class="m">4</span>.74<span class="w">    </span><span class="m">4</span>.901<span class="w">   </span><span class="m">0</span>.3989277<span class="w">       </span><span class="m">0</span>.08416197
+<span class="m">8</span><span class="w">   </span><span class="m">4</span>.03<span class="w">    </span><span class="m">4</span>.35<span class="w">    </span><span class="m">4</span>.115<span class="w">   </span><span class="m">4</span>.146<span class="w">   </span><span class="m">0</span>.09800227<span class="w">      </span><span class="m">0</span>.02381586
+<span class="m">9</span><span class="w">   </span><span class="m">3</span>.66<span class="w">    </span><span class="m">3</span>.92<span class="w">    </span><span class="m">3</span>.71<span class="w">    </span><span class="m">3</span>.718<span class="w">   </span><span class="m">0</span>.07420692<span class="w">      </span><span class="m">0</span>.02000186
+<span class="m">10</span><span class="w">  </span><span class="m">3</span>.32<span class="w">    </span><span class="m">4</span>.29<span class="w">    </span><span class="m">3</span>.36<span class="w">    </span><span class="m">3</span>.453<span class="w">   </span><span class="m">0</span>.295524<span class="w">        </span><span class="m">0</span>.08795358
+<span class="m">11</span><span class="w">  </span><span class="m">3</span>.01<span class="w">    </span><span class="m">4</span>.45<span class="w">    </span><span class="m">3</span>.08<span class="w">    </span><span class="m">3</span>.229<span class="w">   </span><span class="m">0</span>.4330114<span class="w">       </span><span class="m">0</span>.1405881
+<span class="m">12</span><span class="w">  </span><span class="m">2</span>.77<span class="w">    </span><span class="m">4</span>.29<span class="w">    </span><span class="m">2</span>.86<span class="w">    </span><span class="m">3</span>.019<span class="w">   </span><span class="m">0</span>.4609519<span class="w">       </span><span class="m">0</span>.161172
+<span class="m">13</span><span class="w">  </span><span class="m">2</span>.61<span class="w">    </span><span class="m">2</span>.89<span class="w">    </span><span class="m">2</span>.68<span class="w">    </span><span class="m">2</span>.707<span class="w">   </span><span class="m">0</span>.08602971<span class="w">      </span><span class="m">0</span>.03210064
+<span class="m">14</span><span class="w">  </span><span class="m">2</span>.51<span class="w">    </span><span class="m">4</span>.03<span class="w">    </span><span class="m">2</span>.615<span class="w">   </span><span class="m">2</span>.842<span class="w">   </span><span class="m">0</span>.4982369<span class="w">       </span><span class="m">0</span>.1905304
+<span class="m">15</span><span class="w">  </span><span class="m">2</span>.31<span class="w">    </span><span class="m">3</span>.42<span class="w">    </span><span class="m">2</span>.41<span class="w">    </span><span class="m">2</span>.565<span class="w">   </span><span class="m">0</span>.3422231<span class="w">       </span><span class="m">0</span>.1420013
+<span class="m">16</span><span class="w">  </span><span class="m">2</span>.31<span class="w">    </span><span class="m">3</span>.03<span class="w">    </span><span class="m">2</span>.66<span class="w">    </span><span class="m">2</span>.675<span class="w">   </span><span class="m">0</span>.2382459<span class="w">       </span><span class="m">0</span>.08956613
+<span class="m">17</span><span class="w">  </span><span class="m">2</span>.42<span class="w">    </span><span class="m">3</span>.11<span class="w">    </span><span class="m">2</span>.7<span class="w">     </span><span class="m">2</span>.722<span class="w">   </span><span class="m">0</span>.2395737<span class="w">       </span><span class="m">0</span>.088731
+<span class="m">18</span><span class="w">  </span><span class="m">2</span>.42<span class="w">    </span><span class="m">2</span>.8<span class="w">     </span><span class="m">2</span>.67<span class="w">    </span><span class="m">2</span>.627<span class="w">   </span><span class="m">0</span>.1477272<span class="w">       </span><span class="m">0</span>.05532855
+<span class="m">19</span><span class="w">  </span><span class="m">2</span>.52<span class="w">    </span><span class="m">2</span>.72<span class="w">    </span><span class="m">2</span>.605<span class="w">   </span><span class="m">2</span>.615<span class="w">   </span><span class="m">0</span>.06114645<span class="w">      </span><span class="m">0</span>.02347273
+<span class="m">20</span><span class="w">  </span><span class="m">2</span>.43<span class="w">    </span><span class="m">2</span>.91<span class="w">    </span><span class="m">2</span>.54<span class="w">    </span><span class="m">2</span>.579<span class="w">   </span><span class="m">0</span>.136337<span class="w">        </span><span class="m">0</span>.05367598
+<span class="m">21</span><span class="w">  </span><span class="m">2</span>.37<span class="w">    </span><span class="m">2</span>.91<span class="w">    </span><span class="m">2</span>.49<span class="w">    </span><span class="m">2</span>.509<span class="w">   </span><span class="m">0</span>.1540166<span class="w">       </span><span class="m">0</span>.06185405
+<span class="m">22</span><span class="w">  </span><span class="m">2</span>.28<span class="w">    </span><span class="m">2</span>.73<span class="w">    </span><span class="m">2</span>.37<span class="w">    </span><span class="m">2</span>.407<span class="w">   </span><span class="m">0</span>.1271963<span class="w">       </span><span class="m">0</span>.05366931
+<span class="m">23</span><span class="w">  </span><span class="m">2</span>.3<span class="w">     </span><span class="m">2</span>.54<span class="w">    </span><span class="m">2</span>.35<span class="w">    </span><span class="m">2</span>.37<span class="w">    </span><span class="m">0</span>.06879922<span class="w">      </span><span class="m">0</span>.02927627
+<span class="m">24</span><span class="w">  </span><span class="m">2</span>.25<span class="w">    </span><span class="m">2</span>.37<span class="w">    </span><span class="m">2</span>.285<span class="w">   </span><span class="m">2</span>.287<span class="w">   </span><span class="m">0</span>.03368151<span class="w">      </span><span class="m">0</span>.01474027
+<span class="m">25</span><span class="w">  </span><span class="m">2</span>.19<span class="w">    </span><span class="m">2</span>.37<span class="w">    </span><span class="m">2</span>.225<span class="w">   </span><span class="m">2</span>.246<span class="w">   </span><span class="m">0</span>.06022181<span class="w">      </span><span class="m">0</span>.02706598
+<span class="m">26</span><span class="w">  </span><span class="m">2</span>.1<span class="w">     </span><span class="m">2</span>.32<span class="w">    </span><span class="m">2</span>.18<span class="w">    </span><span class="m">2</span>.191<span class="w">   </span><span class="m">0</span>.05606544<span class="w">      </span><span class="m">0</span>.02571809
+<span class="m">27</span><span class="w">  </span><span class="m">2</span>.14<span class="w">    </span><span class="m">2</span>.27<span class="w">    </span><span class="m">2</span>.205<span class="w">   </span><span class="m">2</span>.198<span class="w">   </span><span class="m">0</span>.04516636<span class="w">      </span><span class="m">0</span>.02048361
+<span class="m">28</span><span class="w">  </span><span class="m">2</span>.07<span class="w">    </span><span class="m">2</span>.21<span class="w">    </span><span class="m">2</span>.14<span class="w">    </span><span class="m">2</span>.134<span class="w">   </span><span class="m">0</span>.04273952<span class="w">      </span><span class="m">0</span>.01997174
+<span class="m">29</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.11<span class="w">    </span><span class="m">2</span>.07<span class="w">    </span><span class="m">2</span>.065<span class="w">   </span><span class="m">0</span>.02758824<span class="w">      </span><span class="m">0</span>.01332765
+<span class="m">30</span><span class="w">  </span><span class="m">2</span><span class="w">       </span><span class="m">2</span>.13<span class="w">    </span><span class="m">2</span>.035<span class="w">   </span><span class="m">2</span>.036<span class="w">   </span><span class="m">0</span>.03806427<span class="w">      </span><span class="m">0</span>.0187048
+<span class="m">31</span><span class="w">  </span><span class="m">1</span>.98<span class="w">    </span><span class="m">2</span>.07<span class="w">    </span><span class="m">1</span>.99<span class="w">    </span><span class="m">2</span>.002<span class="w">   </span><span class="m">0</span>.02820559<span class="w">      </span><span class="m">0</span>.01417367
+<span class="m">32</span><span class="w">  </span><span class="m">1</span>.97<span class="w">    </span><span class="m">2</span>.02<span class="w">    </span><span class="m">1</span>.99<span class="w">    </span><span class="m">1</span>.993<span class="w">   </span><span class="m">0</span>.01766981<span class="w">      </span><span class="m">0</span>.008879302
+<span class="m">33</span><span class="w">  </span><span class="m">2</span>.05<span class="w">    </span><span class="m">2</span>.25<span class="w">    </span><span class="m">2</span>.12<span class="w">    </span><span class="m">2</span>.129<span class="w">   </span><span class="m">0</span>.06402257<span class="w">      </span><span class="m">0</span>.03019932
+<span class="m">34</span><span class="w">  </span><span class="m">2</span>.08<span class="w">    </span><span class="m">2</span>.23<span class="w">    </span><span class="m">2</span>.15<span class="w">    </span><span class="m">2</span>.155<span class="w">   </span><span class="m">0</span>.0457651<span class="w">       </span><span class="m">0</span>.02128609
+<span class="m">35</span><span class="w">  </span><span class="m">2</span>.08<span class="w">    </span><span class="m">2</span>.25<span class="w">    </span><span class="m">2</span>.16<span class="w">    </span><span class="m">2</span>.156<span class="w">   </span><span class="m">0</span>.05853774<span class="w">      </span><span class="m">0</span>.0271008
+<span class="m">36</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.21<span class="w">    </span><span class="m">2</span>.13<span class="w">    </span><span class="m">2</span>.129<span class="w">   </span><span class="m">0</span>.05782156<span class="w">      </span><span class="m">0</span>.02714627
+<span class="m">37</span><span class="w">  </span><span class="m">2</span>.08<span class="w">    </span><span class="m">2</span>.2<span class="w">     </span><span class="m">2</span>.15<span class="w">    </span><span class="m">2</span>.147<span class="w">   </span><span class="m">0</span>.03560587<span class="w">      </span><span class="m">0</span>.01656087
+<span class="m">38</span><span class="w">  </span><span class="m">2</span>.01<span class="w">    </span><span class="m">2</span>.19<span class="w">    </span><span class="m">2</span>.125<span class="w">   </span><span class="m">2</span>.119<span class="w">   </span><span class="m">0</span>.05384133<span class="w">      </span><span class="m">0</span>.0253371
+<span class="m">39</span><span class="w">  </span><span class="m">2</span>.05<span class="w">    </span><span class="m">2</span>.2<span class="w">     </span><span class="m">2</span>.105<span class="w">   </span><span class="m">2</span>.111<span class="w">   </span><span class="m">0</span>.05108816<span class="w">      </span><span class="m">0</span>.02426991
+<span class="m">40</span><span class="w">  </span><span class="m">2</span>.06<span class="w">    </span><span class="m">2</span>.2<span class="w">     </span><span class="m">2</span>.11<span class="w">    </span><span class="m">2</span>.124<span class="w">   </span><span class="m">0</span>.04526465<span class="w">      </span><span class="m">0</span>.02145244
+<span class="m">41</span><span class="w">  </span><span class="m">2</span>.07<span class="w">    </span><span class="m">2</span>.18<span class="w">    </span><span class="m">2</span>.09<span class="w">    </span><span class="m">2</span>.102<span class="w">   </span><span class="m">0</span>.03425395<span class="w">      </span><span class="m">0</span>.01638945
+<span class="m">42</span><span class="w">  </span><span class="m">2</span>.04<span class="w">    </span><span class="m">2</span>.13<span class="w">    </span><span class="m">2</span>.095<span class="w">   </span><span class="m">2</span>.092<span class="w">   </span><span class="m">0</span>.0265832<span class="w">       </span><span class="m">0</span>.01268888
+<span class="m">43</span><span class="w">  </span><span class="m">2</span>.03<span class="w">    </span><span class="m">2</span>.12<span class="w">    </span><span class="m">2</span>.08<span class="w">    </span><span class="m">2</span>.076<span class="w">   </span><span class="m">0</span>.03025815<span class="w">      </span><span class="m">0</span>.01454719
+<span class="m">44</span><span class="w">  </span><span class="m">2</span>.04<span class="w">    </span><span class="m">2</span>.14<span class="w">    </span><span class="m">2</span>.085<span class="w">   </span><span class="m">2</span>.086<span class="w">   </span><span class="m">0</span>.03204164<span class="w">      </span><span class="m">0</span>.01536769
+<span class="m">45</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.13<span class="w">    </span><span class="m">2</span>.08<span class="w">    </span><span class="m">2</span>.082<span class="w">   </span><span class="m">0</span>.03392803<span class="w">      </span><span class="m">0</span>.01631155
+<span class="m">46</span><span class="w">  </span><span class="m">2</span>.05<span class="w">    </span><span class="m">2</span>.12<span class="w">    </span><span class="m">2</span>.075<span class="w">   </span><span class="m">2</span>.081<span class="w">   </span><span class="m">0</span>.0218327<span class="w">       </span><span class="m">0</span>.01052178
+<span class="m">47</span><span class="w">  </span><span class="m">1</span>.98<span class="w">    </span><span class="m">2</span>.15<span class="w">    </span><span class="m">2</span>.08<span class="w">    </span><span class="m">2</span>.073<span class="w">   </span><span class="m">0</span>.05250397<span class="w">      </span><span class="m">0</span>.02524229
+<span class="m">48</span><span class="w">  </span><span class="m">1</span>.99<span class="w">    </span><span class="m">2</span>.14<span class="w">    </span><span class="m">2</span>.085<span class="w">   </span><span class="m">2</span>.081<span class="w">   </span><span class="m">0</span>.04557046<span class="w">      </span><span class="m">0</span>.02185633
+<span class="m">49</span><span class="w">  </span><span class="m">2</span>.04<span class="w">    </span><span class="m">2</span>.18<span class="w">    </span><span class="m">2</span>.085<span class="w">   </span><span class="m">2</span>.087<span class="w">   </span><span class="m">0</span>.04321779<span class="w">      </span><span class="m">0</span>.02072796
+<span class="m">50</span><span class="w">  </span><span class="m">2</span>.06<span class="w">    </span><span class="m">2</span>.17<span class="w">    </span><span class="m">2</span>.12<span class="w">    </span><span class="m">2</span>.116<span class="w">   </span><span class="m">0</span>.03657564<span class="w">      </span><span class="m">0</span>.01725266
+<span class="m">51</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.16<span class="w">    </span><span class="m">2</span>.09<span class="w">    </span><span class="m">2</span>.086<span class="w">   </span><span class="m">0</span>.03864367<span class="w">      </span><span class="m">0</span>.01848979
+<span class="m">52</span><span class="w">  </span><span class="m">2</span>.03<span class="w">    </span><span class="m">2</span>.13<span class="w">    </span><span class="m">2</span>.08<span class="w">    </span><span class="m">2</span>.075<span class="w">   </span><span class="m">0</span>.02915476<span class="w">      </span><span class="m">0</span>.01401671
+<span class="m">53</span><span class="w">  </span><span class="m">2</span>.03<span class="w">    </span><span class="m">2</span>.14<span class="w">    </span><span class="m">2</span>.095<span class="w">   </span><span class="m">2</span>.093<span class="w">   </span><span class="m">0</span>.03465705<span class="w">      </span><span class="m">0</span>.01654274
+<span class="m">54</span><span class="w">  </span><span class="m">2</span><span class="w">       </span><span class="m">2</span>.11<span class="w">    </span><span class="m">2</span>.075<span class="w">   </span><span class="m">2</span>.069<span class="w">   </span><span class="m">0</span>.03212822<span class="w">      </span><span class="m">0</span>.01548348
+<span class="m">55</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.15<span class="w">    </span><span class="m">2</span>.095<span class="w">   </span><span class="m">2</span>.085<span class="w">   </span><span class="m">0</span>.04062019<span class="w">      </span><span class="m">0</span>.01938911
+<span class="m">56</span><span class="w">  </span><span class="m">2</span>.05<span class="w">    </span><span class="m">2</span>.11<span class="w">    </span><span class="m">2</span>.09<span class="w">    </span><span class="m">2</span>.081<span class="w">   </span><span class="m">0</span>.02078995<span class="w">      </span><span class="m">0</span>.009947347
+<span class="m">57</span><span class="w">  </span><span class="m">2</span>.03<span class="w">    </span><span class="m">2</span>.09<span class="w">    </span><span class="m">2</span>.065<span class="w">   </span><span class="m">2</span>.065<span class="w">   </span><span class="m">0</span>.01840894<span class="w">      </span><span class="m">0</span>.008914739
+<span class="m">58</span><span class="w">  </span><span class="m">2</span>.06<span class="w">    </span><span class="m">2</span>.11<span class="w">    </span><span class="m">2</span>.07<span class="w">    </span><span class="m">2</span>.082<span class="w">   </span><span class="m">0</span>.02250926<span class="w">      </span><span class="m">0</span>.01087404
+<span class="m">59</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.11<span class="w">    </span><span class="m">2</span>.07<span class="w">    </span><span class="m">2</span>.067<span class="w">   </span><span class="m">0</span>.02451757<span class="w">      </span><span class="m">0</span>.01184424
+<span class="m">60</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.1<span class="w">     </span><span class="m">2</span>.055<span class="w">   </span><span class="m">2</span>.057<span class="w">   </span><span class="m">0</span>.02406011<span class="w">      </span><span class="m">0</span>.01170808
+<span class="m">61</span><span class="w">  </span><span class="m">2</span>.03<span class="w">    </span><span class="m">2</span>.15<span class="w">    </span><span class="m">2</span>.065<span class="w">   </span><span class="m">2</span>.07<span class="w">    </span><span class="m">0</span>.03333333<span class="w">      </span><span class="m">0</span>.01614205
+<span class="m">62</span><span class="w">  </span><span class="m">2</span>.01<span class="w">    </span><span class="m">2</span>.13<span class="w">    </span><span class="m">2</span>.06<span class="w">    </span><span class="m">2</span>.059<span class="w">   </span><span class="m">0</span>.03842742<span class="w">      </span><span class="m">0</span>.01865409
+<span class="m">63</span><span class="w">  </span><span class="m">2</span>.01<span class="w">    </span><span class="m">2</span>.09<span class="w">    </span><span class="m">2</span>.07<span class="w">    </span><span class="m">2</span>.06<span class="w">    </span><span class="m">0</span>.03018462<span class="w">      </span><span class="m">0</span>.01458194
+<span class="m">64</span><span class="w">  </span><span class="m">2</span>.02<span class="w">    </span><span class="m">2</span>.11<span class="w">    </span><span class="m">2</span>.075<span class="w">   </span><span class="m">2</span>.077<span class="w">   </span><span class="m">0</span>.02945807<span class="w">      </span><span class="m">0</span>.01419666
+</pre></div>
+</div>
+<section id="question-18-plot-fit-with-amdahl-and-mylq-laws">
+<h4>Question #18 : plot &amp; fit with Amdahl and Mylq laws<a class="headerlink" href="#question-18-plot-fit-with-amdahl-and-mylq-laws" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>plot the curve with your favorite plotter the different values, focus on median one !</p></li>
+<li><p>fit with an Amdahl law where <code class="docutils literal notranslate"><span class="pre">T=s+p/N</span></code> where <code class="docutils literal notranslate"><span class="pre">N</span></code> is <code class="docutils literal notranslate"><span class="pre">PR</span></code></p></li>
+<li><p>fit with a Mylq law where <code class="docutils literal notranslate"><span class="pre">T=s+c*N+p/N</span></code></p></li>
+<li><p>what law match the best</p></li>
+</ul>
+<p>Examples of gnuplot bunch of commands to do the job. Adapt to your file and <code class="docutils literal notranslate"><span class="pre">PR</span></code>…</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Ta<span class="o">(</span>x<span class="o">)=</span>T1*<span class="o">(</span><span class="m">1</span>-Pa+Pa/x<span class="o">)</span>
+fit<span class="w"> </span><span class="o">[</span><span class="nv">x</span><span class="o">=</span><span class="m">1</span>:16<span class="o">]</span><span class="w"> </span>Ta<span class="o">(</span>x<span class="o">)</span><span class="w"> </span><span class="s1">&#39;PiMC_1_64.dat&#39;</span><span class="w"> </span>using<span class="w"> </span><span class="m">1</span>:4<span class="w"> </span>via<span class="w"> </span>T1,Pa
+Tm<span class="o">(</span>x<span class="o">)=</span>Sm+Cm*x+Pm/x
+fit<span class="w"> </span><span class="o">[</span><span class="nv">x</span><span class="o">=</span><span class="m">1</span>:16<span class="o">]</span><span class="w"> </span>Tm<span class="o">(</span>x<span class="o">)</span><span class="w"> </span><span class="s1">&#39;PiMC_1_64.dat&#39;</span><span class="w"> </span>using<span class="w"> </span><span class="m">1</span>:4<span class="w"> </span>via<span class="w"> </span>Sm,Cm,Pm
+<span class="nb">set</span><span class="w"> </span>xlabel<span class="w"> </span><span class="s1">&#39;Parallel Rate&#39;</span>
+<span class="nb">set</span><span class="w"> </span>xrange<span class="w"> </span><span class="o">[</span><span class="m">1</span>:64<span class="o">]</span>
+<span class="nb">set</span><span class="w"> </span>ylabel<span class="w"> </span><span class="s2">&quot;Speedup Factor&quot;</span>
+<span class="nb">set</span><span class="w"> </span>title<span class="w"> </span><span class="s2">&quot;PiMC : parallel execution with Bash for distributed iterations&quot;</span>
+plot<span class="w">    </span><span class="s1">&#39;PiMC_1_64.dat&#39;</span><span class="w"> </span>using<span class="w"> </span><span class="o">(</span><span class="nv">$1</span><span class="o">)</span>:<span class="o">(</span>Tm<span class="o">(</span><span class="m">1</span><span class="o">)</span>/<span class="nv">$4</span><span class="o">)</span><span class="w"> </span>title<span class="w"> </span><span class="s1">&#39;Mesures&#39;</span><span class="w"> </span>with<span class="w"> </span>points,<span class="se">\</span>
+<span class="w">    </span>Tm<span class="o">(</span><span class="m">1</span><span class="o">)</span>/Tm<span class="o">(</span>x<span class="o">)</span><span class="w"> </span>title<span class="w"> </span><span class="s2">&quot;Mylq Law&quot;</span><span class="w"> </span>with<span class="w"> </span>lines,<span class="se">\</span>
+<span class="w">    </span>Ta<span class="o">(</span><span class="m">1</span><span class="o">)</span>/Ta<span class="o">(</span>x<span class="o">)</span><span class="w"> </span>title<span class="w"> </span><span class="s2">&quot;Amdahl Law&quot;</span><span class="w"> </span>with<span class="w"> </span>lines
+</pre></div>
+</div>
+<img alt="Image pimc_1_64" class="img-fluid center" src="../../_images/pimc_1_64.png" />
+</section>
+</section>
+<section id="other-sample-codes-used-for-courses">
+<h3>Other sample codes (used for courses)<a class="headerlink" href="#other-sample-codes-used-for-courses" title="Lien vers cette rubrique">¶</a></h3>
+<p>In folder <code class="docutils literal notranslate"><span class="pre">/scratch/AstroSim2017</span></code>, you will find the following executables:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> : Pi Monte Carlo Dart Dash in PyOpenCL</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NBody.py</span></code> : N-Body in PyOpenCL</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xGEMM_DP_openblas</span></code> : Matrix-Matrix multiplication with multithreaded OpenBLAS library in double precision</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xGEMM_SP_openblas</span></code> : Matrix-Matrix multiplication with multithreaded OpenBLAS library in simple precision</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xGEMM_DP_clblas</span></code> : Matrix-Matrix multiplication for OpenCL library in double precision</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xGEMM_SP_clblas</span></code> : Matrix-Matrix multiplication for OpenCL library in simple precision</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xGEMM_DP_cublas</span></code> : Matrix-Matrix multiplication for CUDA library in double precision</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xGEMM_SP_cublas</span></code> : Matrix-Matrix multiplication for CUDA library in simple precision</p></li>
+</ul>
+<section id="exercice-19-select-parallelized-program-and-explore-salability">
+<h4>Exercice #19 : select parallelized program and explore salability<a class="headerlink" href="#exercice-19-select-parallelized-program-and-explore-salability" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>launch one of the upper code with <code class="docutils literal notranslate"><span class="pre">PR</span></code> from <code class="docutils literal notranslate"><span class="pre">1</span></code> to the 2 times the number of CPUs</p></li>
+<li><p>draw the scalability curve</p></li>
+<li><p>estimates the parameters with Amdahl Law and Mylq Law</p></li>
+</ul>
+</section>
+</section>
+<section id="your-prefered-software">
+<h3>Your prefered software<a class="headerlink" href="#your-prefered-software" title="Lien vers cette rubrique">¶</a></h3>
+<section id="exercice-20-select-parallelized-program-and-explore-salability">
+<h4>Exercice #20 : select parallelized program and explore salability<a class="headerlink" href="#exercice-20-select-parallelized-program-and-explore-salability" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>launch your MPI code with <code class="docutils literal notranslate"><span class="pre">PR</span></code> from <code class="docutils literal notranslate"><span class="pre">1</span></code> to the 2 times the number of CPUs</p></li>
+<li><p>draw the scalability curve</p></li>
+<li><p>estimates the parameters with Amdahl Law and Mylq Law</p></li>
+</ul>
+<p>— <a class="reference external" href="mailto:emmanuel&#46;quemener&#37;&#52;&#48;ens-lyon&#46;fr">Emmanuel Quemener</a> 2017/06/30 14:26</p>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Autres/para4dummies.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

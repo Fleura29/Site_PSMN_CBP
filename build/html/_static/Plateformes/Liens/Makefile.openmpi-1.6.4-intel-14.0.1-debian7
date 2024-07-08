@@ -1,0 +1,5 @@
+CC =            mpic++
+CCFLAGS =       -O2 
+LINK =          mpic++
+MPI_INC, MPI_PATH, MPI_LIB = 
+FFT_INC, FFT_PATH, FFT_LIB = 

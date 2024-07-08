@@ -1,0 +1,5 @@
+   $ make yes-class2
+   $ make yes-molecule 
+   $ make yes-rigid
+   $ make yes-user-cg-cmm
+   $ make yes-user-omp 

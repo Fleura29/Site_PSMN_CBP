@@ -109,7 +109,7 @@ Tutoriels & Formations
         * `Tutoriels/Formations 2018 <#>`_
         * `Tutoriels/Formations 2017 <#>`_
         * `Tutoriels/Formations 2016 <#>`_
-        * `Tutoriels/Formations 2015 <#>`_
+        * :ref:`Tutoriels/Formations 2015 <tt2015>`
         * `Tutoriels/Formations 2014 <#>`_
         
     .. container:: col col-12 col-lg-4

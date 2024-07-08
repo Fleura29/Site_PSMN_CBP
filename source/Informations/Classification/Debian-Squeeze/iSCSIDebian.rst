@@ -178,7 +178,7 @@ Il est supposé que la machine MyHost dispose d'une infrastructure LVM :
 
 * :underline:`Paramétrage de l'interface de démarrage iSCSI`
 
-.. container:: d-inline-block bg-danger-subtle pt-3 mb-2 rounded fs-13 text-center 
+.. container:: note note-important
 
     En cas d'interfaces multiples, il est INDISPENSABLE de préciser l'interface de démarrage, sinon...
 

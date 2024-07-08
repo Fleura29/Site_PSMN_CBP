@@ -1,0 +1,36 @@
+.. _form2020:
+
+Formation dédiée aux nouveaux utilisateurs du PSMN :
+====================================================
+
+.. role:: line-bold
+    :class: line-bold
+
+.. role:: line
+    :class: line
+
+* **14 janvier 2020**, 13h00 - 17h00 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes **séquentiels**, le système de batch, etc.)
+* **20 janvier 2020**, 13h00 - 17h00 (dédié aux outils pour les codes **parallèles**, etc.)
+* **27 janvier 2020**, 14h00 - 17h00 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes **séquentiels**, le système de batch, etc.)
+* **30 janvier 2020**, 13h00 - 17h00 (dédié aux outils pour les codes **parallèles**, etc. ou/et à l'utilisation d'un logiciel spécifique installé sous les serveurs du PSMN)
+* **04 février 2020**, 10h00 - 13h00 (formation personnalisé pour le calcul séquentiel / scratch / visualisation)
+* **10 mars 2020**, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes **séquentiels**, le système de batch, etc.)
+* 
+* **Les formations ci-dessous ont été annulées pour cause de Covid**
+* 
+* :line-bold:`19 mars 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)` 
+* :line-bold:`27 mars 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)`
+* :line-bold:`02 avril 2020` :line:`, 14h00 - 17h30 (dédié aux outils pour les codes` :line-bold:`parallèles` :line:`, etc. ou/et à l'utilisation d'un logiciel spécifique installé sous les serveurs du PSMN)` 
+* :line-bold:`08 avril 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)`
+* :line-bold:`16 avril 2020` :line:`, 14h00 - 17h30 (dédié aux outils pour les codes` :line-bold:`parallèles` :line:`, etc.)`
+* :line-bold:`21 avril 2020` :line:`, 14h00 - 17h30 (dédié aux outils pour les codes` :line-bold:`parallèles` :line:`, etc.)`
+* :line-bold:`30 avril 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)`
+* :line-bold:`05 mai 2020` :line:`, 14h00 - 17h30 (dédié aux outils pour les codes` :line-bold:`parallèles` :line:`, etc. ou/et à l'utilisation d'un logiciel spécifique installé sous les serveurs du PSMN)` 
+* :line-bold:`14 mai 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)`
+* :line-bold:`18 mai 2020` :line:`, 14h00 - 17h30 (dédié aux outils pour les codes` :line-bold:`parallèles` :line:`, etc.)
+* :line-bold:`28 mai 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)`
+* :line-bold:`05 juin 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)`
+* :line-bold:`11 juin 2020` :line:`, 14h00 - 17h30 (dédié aux outils pour les codes` :line-bold:`parallèles` :line:`, etc.)`
+* :line-bold:`16 juin 2020` :line:`, 14h00 - 17h30 (dédié aux outils pour les codes` :line-bold:`parallèles` :line:`, etc. ou/et à l'utilisation d'un logiciel spécifique installé sous les serveurs du PSMN)`
+* :line-bold:`23 juin 2020` :line:`, 14h00 - 17h30 (formation personnalisé pour le calcul séquentiel / scratch / visualisation)`
+* :line-bold:`03 juillet 2020` :line:`, 14h00 - 17h30 (dédié à la connexion sur les serveurs du PSMN, l'utilisation des serveurs, les outils pour des codes` :line-bold:`séquentiels` :line:`, le système de batch, etc.)`  

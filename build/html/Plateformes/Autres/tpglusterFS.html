@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Travaux pratiques GlusterFS pour ANF Bigdata &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="travaux-pratiques-glusterfs-pour-anf-bigdata">
+<span id="tpglusterfs"></span><h1>Travaux pratiques GlusterFS pour ANF Bigdata<a class="headerlink" href="#travaux-pratiques-glusterfs-pour-anf-bigdata" title="Lien vers cette rubrique">¶</a></h1>
+<p>Support de Travaux pratiques dans le cadre de <a class="reference external" href="https://indico.mathrice.fr/event/5/">Des données au BigData : exploitez le stockage distribué</a></p>
+<section id="cqqcoqp-comment-quoi-qui-combien-ou-quand-pourquoi">
+<h2>CQQCOQP (Comment ? Quoi ? Qui, Combien ? Où ? Quand ? Pourquoi ?)<a class="headerlink" href="#cqqcoqp-comment-quoi-qui-combien-ou-quand-pourquoi" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Pourquoi ?</strong> Survoler les principales fonctionnalités de GlusterFS et se faire sa propre idée</p></li>
+<li><p><strong>Quoi ?</strong> Tester au travers d’exemples simples en appliquant le modèles STNPPNFP</p></li>
+<li><p><strong>Quand ?</strong> Jeudi 15 décembre de 9h à 12h</p></li>
+<li><p><strong>Combien ?</strong> 12GB d’espace disque, 3GB de RAM, 5 VM</p></li>
+<li><p><strong>Où ?</strong> Sur une machine unique, dans en environnement VirtualBox</p></li>
+<li><p><strong>Qui ?</strong> Pour des admin’sys soucieux d’expérimenter rapidement</p></li>
+<li><p><strong>Comment ?</strong> En appliquant une série de commandes simples au travers d’un terminal</p></li>
+</ul>
+</section>
+<section id="objectif-de-la-seance">
+<h2>Objectif de la séance<a class="headerlink" href="#objectif-de-la-seance" title="Lien vers cette rubrique">¶</a></h2>
+<p>C’est de donner un aperçu des différentes fonctionnalités de GlusterFS dans un environnement propre, en insistant sur sa simplicité d’installation, de configuration, d’administration.</p>
+</section>
+<section id="preparation-de-la-seance">
+<h2>Préparation de la séance<a class="headerlink" href="#preparation-de-la-seance" title="Lien vers cette rubrique">¶</a></h2>
+<section id="prerequis-materiel-logiciel-personnel">
+<h3>Prérequis matériel, logiciel &amp; personnel<a class="headerlink" href="#prerequis-materiel-logiciel-personnel" title="Lien vers cette rubrique">¶</a></h3>
+<p>De manière à ce que les travaux pratiques de chacun entraînent le minimum d’effets de bord, il est proposé de réaliser toute cette séance dans un environnement virtualisé installé sur chaque machine d’auditeur.</p>
+<p>Les archives des machines virtuelles fournies sont issus de l’outil VirtualBox</p>
+<section id="prerequis-materiel">
+<h4>Prérequis matériel<a class="headerlink" href="#prerequis-materiel" title="Lien vers cette rubrique">¶</a></h4>
+<p>Devant héberger le gestionnaire de machines virtuelles VirtualBox, la machine « hôte » doit disposer de :</p>
+<ul class="simple">
+<li><p>au moins 4GB de RAM (3GB seront sollicités par les 5 machines virtuelles installées)</p></li>
+<li><p>au moins 2 coeurs</p></li>
+<li><p>au moins 10GB d’espace sur le disque dur (une fois les environnements déployés), donc, en comptant les archives des environnements virtualisés, 13GB d’espace</p></li>
+<li><p>une activation de la virtualisation dans le BIOS de la machine (elle est systématique sur les matériel Apple</p></li>
+</ul>
+</section>
+<section id="prerequis-logiciel">
+<h4>Prérequis logiciel<a class="headerlink" href="#prerequis-logiciel" title="Lien vers cette rubrique">¶</a></h4>
+<p>Le système d’exploitation hôte doit disposer :</p>
+<ul class="simple">
+<li><p>un environnement 64 bits (pour être efficace)</p></li>
+<li><p>le logiciel VirtualBox dans sa version 5 ou supérieure</p></li>
+<li><p>un client SSH pour un accès en console à la passerelle</p></li>
+<li><p>un client x2go pour un accès graphique à la passerelle</p></li>
+</ul>
+</section>
+<section id="prerequis-personnel">
+<h4>Prérequis personnel<a class="headerlink" href="#prerequis-personnel" title="Lien vers cette rubrique">¶</a></h4>
+<p>Une allergie à la commande en ligne rend la réalisation de ces exercices très très difficile. Il est donc recommandé d’avoir une certaine expérience d’un shell quelconque.</p>
+<p>Les machines virtuelles fournies sont basées sur la distribution Debian Jessie. De manière à disposer d’une version récente de GlusterFS, l’archive de rétroportage officielle (paquets   backports ) ont été tous installés. Cela permet de disposer d’un noyau de version 4.7 et de GlusterFS de version 3.8.4.</p>
+</section>
+</section>
+<section id="installation-des-machines-virtuelles">
+<h3>Installation des machines virtuelles<a class="headerlink" href="#installation-des-machines-virtuelles" title="Lien vers cette rubrique">¶</a></h3>
+<p>Deux archives de machines virtuelles sont à télécharger puis à intégrer.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/vms/ANF_GlusterClient-161213.ova">ANF-GlusterClient</a> : c’est l’environnement « client ».</p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/vms/ANF_GlusterMatrix-161213.ova">ANF-GlusterMatrix</a> : c’est la matrice qui servira à créer les 4 noeuds server GlusterFS,</p></li>
+</ul>
+<section id="installation-du-client-glusterfs-passerelle">
+<h4>Installation du client GlusterFS passerelle<a class="headerlink" href="#installation-du-client-glusterfs-passerelle" title="Lien vers cette rubrique">¶</a></h4>
+<p>L’installation de la machine ANF-GlusterClient ne requiert aucune modification (ni sur le nom, ni sur l’adresse MAC).</p>
+<p>En effet, pour éviter tout effet de bord sur les communications réseau, un réseau interne privé de nom   forgluster  est intégré pour chaque machine virtuelle.</p>
+<p>Cette machine ANF-GlusterClient , disposant de 2 interfaces, établit une communication entre l’extérieur (communication avec l’hôte et Internet) et le réseau interne   forgluster . Elle dispose également des services réseau internes classiques comme le DHCP et le DNS.</p>
+<p>Cette machine intègre en outre un environnement graphique XFCE permettant de se connecter simplement et de <code class="docutils literal notranslate"><span class="pre">suivre</span></code> les serveurs. Au démarrage de la machine, cet environnement se connecte automatiquement sur le login   alpha  de mot de passe   AlphaANF2016 .</p>
+<p>Si le mode graphique de VirtualBox ne convient pas, il est possible d’accéder directement à ANF-GlusterClient à partir de la machine hôte (ou du réseau local) en utilisant le protocole SSH ou x2go sur le port 22322.</p>
+</section>
+<section id="installation-des-serveurs-glusterfs-par-clonage">
+<h4>Installation des serveurs GlusterFS par clonage<a class="headerlink" href="#installation-des-serveurs-glusterfs-par-clonage" title="Lien vers cette rubrique">¶</a></h4>
+<p>L’installation des 4 serveurs GlusterFS s’effectue par clonage à l’installation de la machine ANF-GlusterMatrix.</p>
+<p>Le clonage s’effectue en installant plusieurs fois la matrice <strong>mais</strong> en procédant à deux modifications :</p>
+<ul class="simple">
+<li><p>Changer le nom : de ANF-GlusterMatrix vers ANF-GlusterServer1, ANF-GlusterServer2, ANF-GlusterServer3 et ANF-Gluster4 (facultatif mais utile)</p></li>
+<li><p>Réinitialiser l’adresse Mac (indispensable !)</p></li>
+</ul>
+</section>
+<section id="ordre-de-demarrage-verification-de-connexion">
+<h4>Ordre de démarrage &amp; vérification de connexion<a class="headerlink" href="#ordre-de-demarrage-verification-de-connexion" title="Lien vers cette rubrique">¶</a></h4>
+<p>Le serveurs ont leurs adresses IP fournies par la machine Gluster-Client. Il est donc indispensable de   d’abord  démarrer le Gluster-Client.</p>
+<p>Une fois la machine ANF-GlusterClient démarrée (directement sur le compte de l’utilisateur alpha), les machines serveurs peuvent être démarrées à leur tour.</p>
+<p>En démarrant ANF-GlusterServer1, puis ANF-GlusterServer2, ensuite ANF-GlusterServer3, enfin ANF-GlusterServer4 successivement, les serveurs doivent disposer respectivement des noms peer1, peer2, peer3, peer4.</p>
+<ul class="simple">
+<li><p>Login <code class="docutils literal notranslate"><span class="pre">root</span></code> : <code class="docutils literal notranslate"><span class="pre">GlusterANF2016</span></code></p></li>
+<li><p>Login <code class="docutils literal notranslate"><span class="pre">alpha</span></code> : <code class="docutils literal notranslate"><span class="pre">AlphaANF2016</span></code></p></li>
+</ul>
+<p>La commande <code class="docutils literal notranslate"><span class="pre">clush</span></code> de   ClusterShell  est utilisée pour vérifier que les 4 serveurs sont bien accessibles par le client. Elle permet de s’adresser à un groupe de machines en leur appliquant la même commande.</p>
+<p>Pour la suite du TP, tout ou presque se fera par la commande en ligne. Donc, il est nécessaire d’ouvrir un terminal (icône en bas du bureau). De plus, la majorité des commandes sont à exécuter comme <code class="docutils literal notranslate"><span class="pre">root</span></code>.</p>
+<p>De manière à simplifier le déroulé du TP en effectuant des copier/coller, il est possible d’installer un navigateur graphique dans <strong>gluster-client</strong>. Pour cela, taper dans un terminal :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-t<span class="w"> </span>jessie-backports<span class="w"> </span>-y<span class="w"> </span>firefox-esr
+</pre></div>
+</div>
+<p>Appliquons la commande <code class="docutils literal notranslate"><span class="pre">w</span></code>  aux quatres serveurs de <strong>peer1</strong> à <strong>peer4</strong>, nous avons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>w
+</pre></div>
+</div>
+<p>Nous avons comme résultat quelque chose de comparable à :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer2:<span class="w">  </span><span class="m">15</span>:30:54<span class="w"> </span>up<span class="w"> </span><span class="m">23</span><span class="w"> </span>min,<span class="w">  </span><span class="m">0</span><span class="w"> </span>users,<span class="w">  </span>load<span class="w"> </span>average:<span class="w"> </span><span class="m">0</span>,00,<span class="w"> </span><span class="m">0</span>,00,<span class="w"> </span><span class="m">0</span>,00
+peer2:<span class="w"> </span>USER<span class="w">     </span>TTY<span class="w">      </span>FROM<span class="w">             </span>LOGIN@<span class="w">   </span>IDLE<span class="w">   </span>JCPU<span class="w">   </span>PCPU<span class="w"> </span>WHAT
+peer3:<span class="w">  </span><span class="m">15</span>:30:54<span class="w"> </span>up<span class="w"> </span><span class="m">22</span><span class="w"> </span>min,<span class="w">  </span><span class="m">0</span><span class="w"> </span>users,<span class="w">  </span>load<span class="w"> </span>average:<span class="w"> </span><span class="m">0</span>,08,<span class="w"> </span><span class="m">0</span>,02,<span class="w"> </span><span class="m">0</span>,01
+peer3:<span class="w"> </span>USER<span class="w">     </span>TTY<span class="w">      </span>FROM<span class="w">             </span>LOGIN@<span class="w">   </span>IDLE<span class="w">   </span>JCPU<span class="w">   </span>PCPU<span class="w"> </span>WHAT
+peer4:<span class="w">  </span><span class="m">15</span>:30:54<span class="w"> </span>up<span class="w"> </span><span class="m">21</span><span class="w"> </span>min,<span class="w">  </span><span class="m">0</span><span class="w"> </span>users,<span class="w">  </span>load<span class="w"> </span>average:<span class="w"> </span><span class="m">0</span>,00,<span class="w"> </span><span class="m">0</span>,00,<span class="w"> </span><span class="m">0</span>,00
+peer4:<span class="w"> </span>USER<span class="w">     </span>TTY<span class="w">      </span>FROM<span class="w">             </span>LOGIN@<span class="w">   </span>IDLE<span class="w">   </span>JCPU<span class="w">   </span>PCPU<span class="w"> </span>WHAT
+peer1:<span class="w">  </span><span class="m">15</span>:30:53<span class="w"> </span>up<span class="w"> </span><span class="m">25</span><span class="w"> </span>min,<span class="w">  </span><span class="m">0</span><span class="w"> </span>users,<span class="w">  </span>load<span class="w"> </span>average:<span class="w"> </span><span class="m">0</span>,00,<span class="w"> </span><span class="m">0</span>,00,<span class="w"> </span><span class="m">0</span>,00
+peer1:<span class="w"> </span>USER<span class="w">     </span>TTY<span class="w">      </span>FROM<span class="w">             </span>LOGIN@<span class="w">   </span>IDLE<span class="w">   </span>JCPU<span class="w">   </span>PCPU<span class="w"> </span>WHAT
+</pre></div>
+</div>
+<p>Si nous cherchons à vérifier que chaque serveur dispose d’un serveur GlusterFS démarré (de nom <code class="docutils literal notranslate"><span class="pre">glusterd</span></code> ) :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>glusterd
+</pre></div>
+</div>
+<p>Nous obtenons comme résultat (au numéros de PID près) :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer4:<span class="w"> </span>root<span class="w">      </span><span class="m">1344</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">3</span>.5<span class="w"> </span><span class="m">400828</span><span class="w"> </span><span class="m">17888</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:09<span class="w">   </span><span class="m">0</span>:00<span class="w">   </span>/usr/sbin/glusterd<span class="w"> </span>-p<span class="w"> </span>/var/run/glusterd.pid
+peer3:<span class="w"> </span>root<span class="w">      </span><span class="m">1321</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">3</span>.6<span class="w"> </span><span class="m">400828</span><span class="w"> </span><span class="m">18192</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:08<span class="w">   </span><span class="m">0</span>:00<span class="w">   </span>/usr/sbin/glusterd<span class="w"> </span>-p<span class="w"> </span>/var/run/glusterd.pid
+peer2:<span class="w"> </span>root<span class="w">      </span><span class="m">1333</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">3</span>.5<span class="w"> </span><span class="m">400828</span><span class="w"> </span><span class="m">18128</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:07<span class="w">   </span><span class="m">0</span>:00<span class="w">   </span>/usr/sbin/glusterd<span class="w"> </span>-p<span class="w"> </span>/var/run/glusterd.pid
+peer1:<span class="w"> </span>root<span class="w">      </span><span class="m">1341</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">3</span>.5<span class="w"> </span><span class="m">400828</span><span class="w"> </span><span class="m">18024</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:05<span class="w">   </span><span class="m">0</span>:00<span class="w">   </span>/usr/sbin/glusterd<span class="w"> </span>-p<span class="w"> </span>/var/run/glusterd.pid
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="premiers-pas-avec-la-commande-gluster">
+<h2>Premiers pas avec la commande <code class="docutils literal notranslate"><span class="pre">gluster</span></code><a class="headerlink" href="#premiers-pas-avec-la-commande-gluster" title="Lien vers cette rubrique">¶</a></h2>
+<p>Toutes les commandes permettant de gérer des volumes GlusterFS, les pairs, le chiffrement, des géoréplication, etc… exploitent la commande <code class="docutils literal notranslate"><span class="pre">gluster</span></code>.</p>
+<section id="gestion-des-pairs">
+<h3>Gestion des pairs<a class="headerlink" href="#gestion-des-pairs" title="Lien vers cette rubrique">¶</a></h3>
+<p>Sous GlusterFS, tous les serveurs sont équivalents : il n’existe pas de serveurs de méta-données, de frontale de connexion. Ainsi, chaque composant d’une grappe de stockage distribué est équivalent à l’autre.</p>
+<p>Ces composants assurant indifféremment stockage, gestion des méta-données et service de fichiers sont appelés des « pairs » (//peer// en anglais) et leur gestion se réalise par la commande unique <code class="docutils literal notranslate"><span class="pre">gluster</span> <span class="pre">peer</span></code></p>
+<p>Objectifs :</p>
+<ul class="simple">
+<li><p>lister les pairs</p></li>
+<li><p>associer des pairs</p></li>
+</ul>
+<section id="lister-les-pairs">
+<h4>Lister les pairs<a class="headerlink" href="#lister-les-pairs" title="Lien vers cette rubrique">¶</a></h4>
+<p>La première commande consiste à lister les pairs (les serveurs) susceptibles de partager des volumes.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gluster<span class="w"> </span>peer<span class="w"> </span>status
+</pre></div>
+</div>
+<p>Pour la lancer sur un des serveurs en particulier, par exemple <strong>peer1</strong> à partir du client</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>peer<span class="w"> </span>status
+</pre></div>
+</div>
+<p>La commande renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Number<span class="w"> </span>of<span class="w"> </span>Peers:<span class="w"> </span><span class="m">0</span>
+</pre></div>
+</div>
+<p>Pour le lancer sur tous les serveurs :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>gluster<span class="w"> </span>peer<span class="w"> </span>status
+</pre></div>
+</div>
+<p>La commande <code class="docutils literal notranslate"><span class="pre">clush</span></code> renvoit alors :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer1:<span class="w"> </span>Number<span class="w"> </span>of<span class="w"> </span>Peers:<span class="w"> </span><span class="m">0</span>
+peer3:<span class="w"> </span>Number<span class="w"> </span>of<span class="w"> </span>Peers:<span class="w"> </span><span class="m">0</span>
+peer4:<span class="w"> </span>Number<span class="w"> </span>of<span class="w"> </span>Peers:<span class="w"> </span><span class="m">0</span>
+peer2:<span class="w"> </span>Number<span class="w"> </span>of<span class="w"> </span>Peers:<span class="w"> </span><span class="m">0</span>
+</pre></div>
+</div>
+</section>
+<section id="associer-des-pairs">
+<h4>Associer des pairs<a class="headerlink" href="#associer-des-pairs" title="Lien vers cette rubrique">¶</a></h4>
+<p>Il suffit de se connecter sur un des serveurs et de préciser le serveur à associer. Par exemple, pour associer le peer4 au peer1, il suffit de taper :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gluster<span class="w"> </span>peer<span class="w"> </span>probe<span class="w"> </span>peer4
+</pre></div>
+</div>
+<p>Pour réaliser cette opération directement à partir de la machine cliente, nous utilisons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>peer<span class="w"> </span>probe<span class="w"> </span>peer4
+</pre></div>
+</div>
+<p>En cas de succès, la commande renvoit comme message :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer<span class="w"> </span>probe:<span class="w"> </span>success.
+</pre></div>
+</div>
+<p>Pour assurer l’association des pairs peer3 et peer2 :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>peer<span class="w"> </span>probe<span class="w"> </span>peer3
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer<span class="w"> </span>probe:<span class="w"> </span>success.
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>peer<span class="w"> </span>probe<span class="w"> </span>peer2
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer<span class="w"> </span>probe:<span class="w"> </span>success.
+</pre></div>
+</div>
+<p>De manière à vérifier que les serveurs   peer1  à   peer4  font désormais partie de la même grappe, nous utilisons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>pool<span class="w"> </span>list
+</pre></div>
+</div>
+<p>La commande renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>UUID<span class="w">                                        </span>Hostname<span class="w">        </span>State
+<span class="m">26898237</span>-86c7-4687-8660-703de9cd48b0<span class="w">        </span>peer4<span class="w">           </span>Connected
+d7ae008b-1269-4992-bb1b-bd858eeb1ccc<span class="w">        </span>peer3<span class="w">           </span>Connected
+a6fd556e-7fa9-4c3c-8190-8b33805d47d3<span class="w">        </span>peer2<span class="w">           </span>Connected
+25dbbaa2-980d-42a8-bd04-426218d9673a<span class="w">        </span>localhost<span class="w">       </span>Connected
+</pre></div>
+</div>
+<p>La machine <strong>peer1</strong> sur laquelle nous avons lancée notre commande répond avec son nom local <strong>localhost</strong>.</p>
+<p>Les UUID présentés dans le résultat (et unique pour chacun de nous) de la dernière commande permettent d’identifier de manière unique un serveur. Ces UUID sont présents dans le fichier <code class="docutils literal notranslate"><span class="pre">/var/lib/glusterd/glusterd.info</span></code>.</p>
+<p>Pour nous en assurer, nous utilisons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>cat<span class="w"> </span>/var/lib/glusterd/glusterd.info
+</pre></div>
+</div>
+<p>La commande renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer1:<span class="w"> </span><span class="nv">UUID</span><span class="o">=</span>25dbbaa2-980d-42a8-bd04-426218d9673a
+peer1:<span class="w"> </span>operating-version<span class="o">=</span><span class="m">30800</span>
+peer3:<span class="w"> </span><span class="nv">UUID</span><span class="o">=</span>d7ae008b-1269-4992-bb1b-bd858eeb1ccc
+peer3:<span class="w"> </span>operating-version<span class="o">=</span><span class="m">30800</span>
+peer4:<span class="w"> </span><span class="nv">UUID</span><span class="o">=</span><span class="m">26898237</span>-86c7-4687-8660-703de9cd48b0
+peer4:<span class="w"> </span>operating-version<span class="o">=</span><span class="m">30800</span>
+peer2:<span class="w"> </span><span class="nv">UUID</span><span class="o">=</span>a6fd556e-7fa9-4c3c-8190-8b33805d47d3
+peer2:<span class="w"> </span>operating-version<span class="o">=</span><span class="m">30800</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="creation-d-un-premier-volume-glusterfs">
+<h3>Création d’un premier volume GlusterFS<a class="headerlink" href="#creation-d-un-premier-volume-glusterfs" title="Lien vers cette rubrique">¶</a></h3>
+<p>Maintenant, nous sommes prêts à créer notre premier volume GlusterFS.</p>
+<p>La première étape pour créer un volume GlusterFS est d’abord de définir une racine dans laquelle GlusterFS va stocker tout le nécessaire au stockage des données et à la gestion des méta-données.</p>
+<p>Nous allons aussi créer un point de montage de ce volume</p>
+<p>Objectifs :</p>
+<ul class="simple">
+<li><p>créer et activer un volume de type « distributed »</p></li>
+<li><p>monter la partition en local ou distanciel</p></li>
+<li><p>étudier le stockage local</p></li>
+<li><p>ajouter le support NFS</p></li>
+</ul>
+<p>Etapes :</p>
+<ul class="simple">
+<li><p>créer le dossier de stockage local <code class="docutils literal notranslate"><span class="pre">/MyGluster</span></code> sur le pair <strong>peer1</strong></p></li>
+<li><p>créer un volume <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code> sur le pair <strong>peer1</strong></p></li>
+<li><p>observer les propriétés du volume <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code></p></li>
+<li><p>activer le volume <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code></p></li>
+<li><p>observer les changements de propriétés de <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code></p></li>
+<li><p>monter sur le pair <strong>peer1</strong> le volume MyGluster sur la racine <code class="docutils literal notranslate"><span class="pre">/media/MyGluster</span></code></p></li>
+<li><p>monter sur le client le volume <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code>  dans le dossier <code class="docutils literal notranslate"><span class="pre">/media/MyGluster</span></code></p></li>
+<li><p>créer un fichier <code class="docutils literal notranslate"><span class="pre">TestFile.txt</span></code> dans le dossier <code class="docutils literal notranslate"><span class="pre">/media/MyGluster</span></code> contenant « Premier Test » sur le client</p></li>
+<li><p>regarder la signature MD5 de <code class="docutils literal notranslate"><span class="pre">TestFile.txt</span></code> dans le dossier monté sur le serveur</p></li>
+<li><p>regarder la signature MD5 de <code class="docutils literal notranslate"><span class="pre">TestFile.txt</span></code> dans le dossier de stockage du serveur</p></li>
+<li><p>ajouter le support NFS sur le volume <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code></p></li>
+<li><p>regarder les propriétés du volume <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code></p></li>
+<li><p>monter le volume <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code> en NFS sur le client dans le dossier <code class="docutils literal notranslate"><span class="pre">/media/MyGlusterNFS</span></code> préabalement créé</p></li>
+<li><p>regarder la signature MD5 de <code class="docutils literal notranslate"><span class="pre">TestFile.txt</span></code> dans le dossier NFS</p></li>
+</ul>
+<p>Création d’un dossier pour le premier partage</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>mkdir<span class="w"> </span>/MyGluster
+</pre></div>
+</div>
+<p>Création du volume GlusterFS de nom <code class="docutils literal notranslate"><span class="pre">MyGluster</span></code> sur ce point de montage <code class="docutils literal notranslate"><span class="pre">/MyGluster</span></code> sur le serveur 1 nommé <strong>peer1</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>MyGluster<span class="w"> </span>peer1:/MyGluster<span class="w"> </span>force
+</pre></div>
+</div>
+<p>L’option <code class="docutils literal notranslate"><span class="pre">force</span></code> est indispensable dans ce cas : en effet, tout le système des machines virtuelles créées repose sur une unique partition. GlusterFS le détecte et ne recommande pas cette opération. Nous lui forçons la main !</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>create:<span class="w"> </span>MyGluster:<span class="w"> </span>success:<span class="w"> </span>please<span class="w"> </span>start<span class="w"> </span>the<span class="w"> </span>volume<span class="w"> </span>to<span class="w"> </span>access<span class="w"> </span>data
+</pre></div>
+</div>
+<p>L’indication précédente invite à le monter, c’est ce que nous faisons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>start<span class="w"> </span>MyGluster
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>start:<span class="w"> </span>MyGluster:<span class="w"> </span>success
+</pre></div>
+</div>
+<p>La commande <code class="docutils literal notranslate"><span class="pre">gluster</span> <span class="pre">volume</span> <span class="pre">info</span></code> permet à tout instant de visualiser la configuration</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGluster
+Type:<span class="w"> </span>Distribute
+Volume<span class="w"> </span>ID:<span class="w"> </span>70b68cd9-357c-40aa-bcfc-9c1b1a51b4b7
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">1</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGluster
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Cet espace de stockage est déjà montable sur n’importe quelle machine, sur le serveur lui même :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>mkdir<span class="w"> </span>/media/MyGluster
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGluster<span class="w"> </span>/media/MyGluster
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>df
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Sys.<span class="w"> </span>de<span class="w"> </span>fichiers<span class="w"> </span>blocs<span class="w"> </span>de<span class="w"> </span>1K<span class="w"> </span>Utilise<span class="w"> </span>Disponible<span class="w"> </span>Uti
+devtmpfs<span class="w">              </span><span class="m">239524</span><span class="w">       </span><span class="m">0</span><span class="w">     </span><span class="m">239524</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                 </span><span class="m">252128</span><span class="w">       </span><span class="m">0</span><span class="w">     </span><span class="m">252128</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                 </span><span class="m">252128</span><span class="w">    </span><span class="m">6636</span><span class="w">     </span><span class="m">245492</span><span class="w">   </span><span class="m">3</span>
+tmpfs<span class="w">                   </span><span class="m">5120</span><span class="w">       </span><span class="m">0</span><span class="w">       </span><span class="m">5120</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                 </span><span class="m">252128</span><span class="w">       </span><span class="m">0</span><span class="w">     </span><span class="m">252128</span><span class="w">   </span><span class="m">0</span>
+/dev/sda1<span class="w">            </span><span class="m">1951744</span><span class="w">  </span><span class="m">847456</span><span class="w">     </span><span class="m">981376</span><span class="w">  </span><span class="m">47</span>
+peer1:MyGluster<span class="w">      </span><span class="m">1951744</span><span class="w">  </span><span class="m">847488</span><span class="w">     </span><span class="m">981376</span><span class="w">  </span><span class="m">47</span>
+</pre></div>
+</div>
+<p>Ou sur le client :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGluster<span class="w"> </span>/media/MyGluster
+</pre></div>
+</div>
+<p>Il est possible d’utiliser la commande plus compacte <code class="docutils literal notranslate"><span class="pre">mount.glusterfs</span></code> en lieu et place de <code class="docutils literal notranslate"><span class="pre">mount</span> <span class="pre">-t</span> <span class="pre">glusterfs</span></code>. Cependant, cette commande n’est pas recommandée parce qu’elle empêche l’utilisation de l’option <code class="docutils literal notranslate"><span class="pre">noatime</span></code> bien utile pour ne pas //surcharger// le système de fichiers hôte à chaque accès de fichiers.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>df
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Sys.<span class="w"> </span>de<span class="w"> </span>fichiers<span class="w"> </span>blocs<span class="w"> </span>de<span class="w"> </span>1K<span class="w"> </span>Utilise<span class="w"> </span>Disponible<span class="w"> </span>Uti
+udev<span class="w">                   </span><span class="m">10240</span><span class="w">       </span><span class="m">0</span><span class="w">      </span><span class="m">10240</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                 </span><span class="m">204068</span><span class="w">    </span><span class="m">2988</span><span class="w">     </span><span class="m">201080</span><span class="w">   </span><span class="m">2</span>
+/dev/sda1<span class="w">            </span><span class="m">3905536</span><span class="w"> </span><span class="m">1519816</span><span class="w">    </span><span class="m">2165432</span><span class="w">  </span><span class="m">42</span>
+tmpfs<span class="w">                 </span><span class="m">510168</span><span class="w">       </span><span class="m">0</span><span class="w">     </span><span class="m">510168</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                   </span><span class="m">5120</span><span class="w">       </span><span class="m">0</span><span class="w">       </span><span class="m">5120</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                 </span><span class="m">510168</span><span class="w">       </span><span class="m">0</span><span class="w">     </span><span class="m">510168</span><span class="w">   </span><span class="m">0</span>
+peer1:MyGluster<span class="w">      </span><span class="m">1951744</span><span class="w">  </span><span class="m">847488</span><span class="w">     </span><span class="m">981248</span><span class="w">  </span><span class="m">47</span>
+</pre></div>
+</div>
+<p>Écrivons un premier fichier dans le volume monté sur le client et récupérons sa signature MD5 à des fins de vérification :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;Premier Test&quot; &gt; /media/MyGluster/TestFile.txt&#39;</span>
+md5sum<span class="w"> </span>/media/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<p>La commande renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>6a55620050029ce24a149a6b02cf9f73<span class="w">  </span>/media/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<p>Nous pouvons également vérifier la cohérence du fichier dans le volume en lançant la commande sur un autre client, par exemple le serveur lui même !</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>md5sum<span class="w"> </span>/media/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<p>La commande renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>6a55620050029ce24a149a6b02cf9f73<span class="w">  </span>/media/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<p>GlusterFS permet de pouvoir exploiter un volume GlusterFS en NFS standard.</p>
+<p>L’activation du partage NFS se fait très simplement sur le volume gluster. Il suffit de désactiver le paramètre <code class="docutils literal notranslate"><span class="pre">nfs.disable</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span><span class="nb">set</span><span class="w"> </span>MyGluster<span class="w"> </span>nfs.disable<span class="w"> </span>off
+</pre></div>
+</div>
+<p>La commande renvoir en cas de succès :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>set:<span class="w"> </span>success
+</pre></div>
+</div>
+<p>Créons alors un nouveau point de montage et montons ce partage GlusterFS en NFS</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mkdir<span class="w"> </span>/media/MyGlusterNFS
+sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>nfs<span class="w"> </span>peer1:/MyGluster<span class="w"> </span>/media/MyGlusterNFS
+</pre></div>
+</div>
+<p>Assurons-nous du montage par la commande <code class="docutils literal notranslate"><span class="pre">df</span></code> laquelle renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Sys.<span class="w"> </span>de<span class="w"> </span>fichiers<span class="w"> </span>blocs<span class="w"> </span>de<span class="w"> </span>1K<span class="w"> </span>Utilise<span class="w"> </span>Disponible<span class="w"> </span>Uti
+udev<span class="w">                   </span><span class="m">10240</span><span class="w">       </span><span class="m">0</span><span class="w">      </span><span class="m">10240</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                 </span><span class="m">204068</span><span class="w">    </span><span class="m">2992</span><span class="w">     </span><span class="m">201076</span><span class="w">   </span><span class="m">2</span>
+/dev/sda1<span class="w">            </span><span class="m">3905536</span><span class="w"> </span><span class="m">1519816</span><span class="w">    </span><span class="m">2165432</span><span class="w">  </span><span class="m">42</span>
+tmpfs<span class="w">                 </span><span class="m">510168</span><span class="w">       </span><span class="m">0</span><span class="w">     </span><span class="m">510168</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                   </span><span class="m">5120</span><span class="w">       </span><span class="m">0</span><span class="w">       </span><span class="m">5120</span><span class="w">   </span><span class="m">0</span>
+tmpfs<span class="w">                 </span><span class="m">510168</span><span class="w">       </span><span class="m">0</span><span class="w">     </span><span class="m">510168</span><span class="w">   </span><span class="m">0</span>
+peer1:MyGluster<span class="w">      </span><span class="m">1951744</span><span class="w">  </span><span class="m">847616</span><span class="w">     </span><span class="m">981248</span><span class="w">  </span><span class="m">47</span>
+peer1:/MyGluster<span class="w">     </span><span class="m">1951744</span><span class="w">  </span><span class="m">846848</span><span class="w">     </span><span class="m">982016</span><span class="w">  </span><span class="m">47</span>
+</pre></div>
+</div>
+<p>Là aussi, un petit test pour voir si le document est consistant :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>md5sum<span class="w"> </span>/media/MyGlusterNFS/TestFile.txt
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>md5sum<span class="w"> </span>/media/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<p>La sortie des 2 commandes précédentes est la suivante :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>6a55620050029ce24a149a6b02cf9f73<span class="w">  </span>/media/MyGlusterNFS/TestFile.txt
+6a55620050029ce24a149a6b02cf9f73<span class="w">  </span>/media/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<p>Il est aussi intéressant de « voir » comment, où et de quelle manière GlusterFS stocke les informations. Le dossier <code class="docutils literal notranslate"><span class="pre">/MyGluster</span></code> sur   <strong>peer1</strong> contient tous les documents que nous avons créés, mais plus encore :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>ls<span class="w"> </span>-la<span class="w"> </span>/MyGluster
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>total<span class="w"> </span><span class="m">24</span>
+drwxr-xr-x<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w">  </span><span class="m">88</span><span class="w"> </span>nov.<span class="w">  </span><span class="m">30</span><span class="w"> </span><span class="m">17</span>:02<span class="w"> </span>.
+drwxr-xr-x<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">210</span><span class="w"> </span>nov.<span class="w">  </span><span class="m">30</span><span class="w"> </span><span class="m">16</span>:49<span class="w"> </span>..
+drw-------<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">208</span><span class="w"> </span>nov.<span class="w">  </span><span class="m">30</span><span class="w"> </span><span class="m">17</span>:02<span class="w"> </span>.glusterfs
+-rw-r--r--<span class="w"> </span><span class="m">2</span><span class="w"> </span>root<span class="w"> </span>root<span class="w">  </span><span class="m">13</span><span class="w"> </span>nov.<span class="w">  </span><span class="m">30</span><span class="w"> </span><span class="m">16</span>:55<span class="w"> </span>TestFile.txt
+drwxr-xr-x<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w">  </span><span class="m">22</span><span class="w"> </span>nov.<span class="w">  </span><span class="m">30</span><span class="w"> </span><span class="m">16</span>:51<span class="w"> </span>.trashcan
+</pre></div>
+</div>
+<p>Si nous regardons la signature des fichiers que nous avons créés :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>md5sum<span class="w"> </span>/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>6a55620050029ce24a149a6b02cf9f73<span class="w">  </span>/MyGluster/TestFile.txt
+</pre></div>
+</div>
+<p>Nous retrouvons donc bien, à l’endroit où nous avons placé « physiquement » les données, le fichier dans sa totalité, avec la cohérence associée.</p>
+<p>Pour visualiser les clients qui ont monté le volume, la commande <code class="docutils literal notranslate"><span class="pre">gluster</span> <span class="pre">volume</span> <span class="pre">status</span></code> peut-être utilisée :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>status
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Client<span class="w"> </span>connections<span class="w"> </span><span class="k">for</span><span class="w"> </span>volume<span class="w"> </span>MyGluster
+----------------------------------------------
+Brick<span class="w"> </span>:<span class="w"> </span>peer1:/MyGluster
+Clients<span class="w"> </span>connected<span class="w"> </span>:<span class="w"> </span><span class="m">6</span>
+Hostname<span class="w">                                               </span>BytesRead<span class="w">    </span>BytesWritten
+--------<span class="w">                                               </span>---------<span class="w">    </span>------------
+<span class="m">10</span>.20.16.1:49145<span class="w">                                            </span><span class="m">5968</span><span class="w">            </span><span class="m">4692</span>
+<span class="m">10</span>.20.16.254:49149<span class="w">                                         </span><span class="m">10165</span><span class="w">            </span><span class="m">9268</span>
+<span class="m">10</span>.20.16.1:49146<span class="w">                                            </span><span class="m">4516</span><span class="w">            </span><span class="m">4400</span>
+<span class="m">10</span>.20.16.3:49148<span class="w">                                            </span><span class="m">1708</span><span class="w">            </span><span class="m">1228</span>
+<span class="m">10</span>.20.16.4:49148<span class="w">                                            </span><span class="m">1708</span><span class="w">            </span><span class="m">1228</span>
+<span class="m">10</span>.20.16.2:49148<span class="w">                                            </span><span class="m">1708</span><span class="w">            </span><span class="m">1228</span>
+</pre></div>
+</div>
+<p>Vient maintenant le moment de clore ce premier contact avec un volume GlusterFS <code class="docutils literal notranslate"><span class="pre">atomique</span></code>, sur un seul serveur, en démontant d’abord tous les clients connectés :</p>
+<p>Nous démontons d’abord sur le client les volumes montés en GlusterFS et NFS :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>umount<span class="w"> </span>/media/MyGlusterNFS
+sudo<span class="w"> </span>umount<span class="w"> </span>/media/MyGluster
+</pre></div>
+</div>
+<p>Nous démontons ensuite sur le serveur</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>umount<span class="w"> </span>/media/MyGluster
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>status<span class="w"> </span>MyGluster<span class="w"> </span>clients
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Client<span class="w"> </span>connections<span class="w"> </span><span class="k">for</span><span class="w"> </span>volume<span class="w"> </span>MyGluster
+----------------------------------------------
+Brick<span class="w"> </span>:<span class="w"> </span>peer1:/MyGluster
+Clients<span class="w"> </span>connected<span class="w"> </span>:<span class="w"> </span><span class="m">4</span>
+Hostname<span class="w">                                               </span>BytesRead<span class="w">    </span>BytesWritten
+--------<span class="w">                                               </span>---------<span class="w">    </span>------------
+<span class="m">10</span>.20.16.1:49146<span class="w">                                            </span><span class="m">4860</span><span class="w">            </span><span class="m">4848</span>
+<span class="m">10</span>.20.16.3:49148<span class="w">                                            </span><span class="m">1708</span><span class="w">            </span><span class="m">1228</span>
+<span class="m">10</span>.20.16.4:49148<span class="w">                                            </span><span class="m">1708</span><span class="w">            </span><span class="m">1228</span>
+<span class="m">10</span>.20.16.2:49148<span class="w">                                            </span><span class="m">1708</span><span class="w">            </span><span class="m">1228</span>
+</pre></div>
+</div>
+<p>Il ne reste finalement que les 4 serveurs qui sont clients d’eux mêmes pour diffuser les données.</p>
+<p>Arrêt &amp; suppression d’un volume GlusterFS</p>
+<p>Les commandes d’arrêt et de suppression de volume nécessitent une validation par <code class="docutils literal notranslate"><span class="pre">y</span></code>. Pour la valider en forçant, nous préfixons la commande de <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">y</span> <span class="pre">|</span></code>.</p>
+<p>Arrêt du volume</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span><span class="s2">&quot;echo y | gluster volume stop MyGluster&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Stopping<span class="w"> </span>volume<span class="w"> </span>will<span class="w"> </span>make<span class="w"> </span>its<span class="w"> </span>data<span class="w"> </span>inaccessible.<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="k">continue</span>?<span class="w"> </span><span class="o">(</span>y/n<span class="o">)</span><span class="w"> </span>volume<span class="w"> </span>stop:<span class="w"> </span>MyGluster:<span class="w"> </span>success
+</pre></div>
+</div>
+<p>Suppression du volume</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span><span class="s2">&quot;echo y | gluster volume delete MyGluster&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Deleting<span class="w"> </span>volume<span class="w"> </span>will<span class="w"> </span>erase<span class="w"> </span>all<span class="w"> </span>information<span class="w"> </span>about<span class="w"> </span>the<span class="w"> </span>volume.<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="k">continue</span>?<span class="w"> </span><span class="o">(</span>y/n<span class="o">)</span><span class="w"> </span>volume<span class="w"> </span>delete:<span class="w"> </span>MyGluster:<span class="w"> </span>success
+</pre></div>
+</div>
+<p>Vérification de suppression</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>No<span class="w"> </span>volumes<span class="w"> </span>present
+</pre></div>
+</div>
+</section>
+</section>
+<section id="creation-d-un-volume-de-type-distributed-equivalent-linear">
+<h2>Création d’un volume de type <code class="docutils literal notranslate"><span class="pre">distributed</span></code> (équivalent <code class="docutils literal notranslate"><span class="pre">linear</span></code>)<a class="headerlink" href="#creation-d-un-volume-de-type-distributed-equivalent-linear" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le mode d’agrégation par défaut de GlusterFS s’apparente au mode <code class="docutils literal notranslate"><span class="pre">linear</span></code> de la gestion par <code class="docutils literal notranslate"><span class="pre">mdadm</span></code>. Il consiste simplement à agréger des volumes.</p>
+<p>Création des racines de stockages</p>
+<p>Nous créons sur chaque pair <strong>peer1</strong> à <strong>peer4</strong> une nouvelle racine de stockage.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>mkdir<span class="w"> </span>/MyGlusterLinear<span class="w"> </span>/media/MyGlusterLinear
+</pre></div>
+</div>
+<p>Création du volume de montage</p>
+<p>Dans notre cas, nous créons un volume de nom <code class="docutils literal notranslate"><span class="pre">MyGlusterLinear</span></code> agrégeant les racines de stockage <code class="docutils literal notranslate"><span class="pre">/MyGlusterLinear</span></code> des pairs   <strong>peer1</strong>, <strong>peer2</strong> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>MyGlusterLinear<span class="w"> </span>transport<span class="w"> </span>tcp<span class="w"> </span>peer1:/MyGlusterLinear<span class="w"> </span>peer2:/MyGlusterLinear<span class="w"> </span>force
+</pre></div>
+</div>
+<p>En cas de succès, la commande renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>create:<span class="w"> </span>MyGlusterLinear:<span class="w"> </span>success:<span class="w"> </span>please<span class="w"> </span>start<span class="w"> </span>the<span class="w"> </span>volume<span class="w"> </span>to<span class="w"> </span>access<span class="w"> </span>data
+</pre></div>
+</div>
+<p>Démarrage du volume</p>
+<p>Comme dans le cas précédent, un volume créé demande d’être activé :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>start<span class="w"> </span>MyGlusterLinear
+</pre></div>
+</div>
+<p>En cas de succès :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>start:<span class="w"> </span>MyGlusterLinear:<span class="w"> </span>success
+</pre></div>
+</div>
+<p>Information sur le volume créé</p>
+<p>Pour visualiser la configuration du volume créé, nous utilisons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info<span class="w"> </span>MyGlusterLinear
+</pre></div>
+</div>
+<p>La commande renvoit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterLinear
+Type:<span class="w"> </span>Distribute
+Volume<span class="w"> </span>ID:<span class="w"> </span>e77e82d8-f1e6-49f1-b72a-7e25ba3465b4
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">2</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterLinear
+Brick2:<span class="w"> </span>peer2:/MyGlusterLinear
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Comme nouveauté, nous voyons que les nombres de //bricks// composant le volume est de 2, et que ces <code class="docutils literal notranslate"><span class="pre">briques</span></code> sont listées sous forme de leur pair associé à la racine de stockage.</p>
+<p>Montage d’un volume Distribute &amp; investigations</p>
+<p>Montons sur le client ce volume après création d’un point spécifique :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mkdir<span class="w"> </span>/media/MyGlusterLinear
+sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGlusterLinear<span class="w"> </span>/media/MyGlusterLinear
+</pre></div>
+</div>
+<p>Explorons l’espace disponible :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>df<span class="w"> </span>-h<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Gluster
+</pre></div>
+</div>
+<p>Nous disposons donc de 1.7GB d’espace libre :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peer1:MyGlusterLinear<span class="w">   </span><span class="m">3</span>,8G<span class="w">    </span><span class="m">1</span>,7G<span class="w">  </span><span class="m">1</span>,9G<span class="w">  </span><span class="m">47</span>%<span class="w"> </span>/media/MyGlusterLinear
+</pre></div>
+</div>
+<p>Si nous regardons quel espace est disponible sur les serveurs</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-2<span class="o">]</span><span class="w"> </span>df<span class="w"> </span>-h<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sda
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@peer2:<span class="w"> </span>/dev/sda1<span class="w">          </span><span class="m">1</span>,9G<span class="w">    </span>835M<span class="w">  </span>951M<span class="w">  </span><span class="m">47</span>%<span class="w"> </span>/
+root@peer1:<span class="w"> </span>/dev/sda1<span class="w">          </span><span class="m">1</span>,9G<span class="w">    </span>835M<span class="w">  </span>951M<span class="w">  </span><span class="m">47</span>%<span class="w"> </span>/
+</pre></div>
+</div>
+<p>Nous constatons que chacun dispose de 828MB ce qui représente le quart de l’espace identifié plus haut : une solution donc simple pour concaténer les espaces disponibles de serveurs.</p>
+<p>Configurons l’espace de stockage comme un espace <code class="docutils literal notranslate"><span class="pre">/scratch</span></code> (avec des droits comparables à du <code class="docutils literal notranslate"><span class="pre">/tmp</span></code>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>/media/MyGlusterLinear
+sudo<span class="w"> </span>chmod<span class="w"> </span>o+t<span class="w"> </span>/media/MyGlusterLinear
+ls<span class="w"> </span>-ltra<span class="w"> </span>/media/MyGlusterLinear
+</pre></div>
+</div>
+<p>Test d’écritures parallèles &amp; investigations</p>
+<p>Lançons un test écrivant un millier de fichiers en parallèle :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>seq<span class="w"> </span>-w<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;echo Hello File &#39;{}&#39; &gt; /media/MyGlusterLinear/File.&#39;{}&#39;&quot;</span>
+</pre></div>
+</div>
+<p>Cette commande prend un peu moins d’une minute sur une machine lente.</p>
+<p>Lançons maintenant une lecture tout aussi parallèle</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/media/MyGlusterLinear/File.*<span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>md5sum<span class="w"> </span><span class="s1">&#39;{}&#39;</span>
+</pre></div>
+</div>
+<p>Cette commande ne prend quelques quelques secondes.</p>
+<p>Il est possible de voir comment sont distribués les fichiers sur les différents serveurs :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span><span class="s1">&#39;ls /MyGlusterLinear/File.* | wc -l&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@peer4:<span class="w"> </span><span class="m">0</span>
+root@peer4:<span class="w"> </span>ls:<span class="w"> </span>impossible<span class="w"> </span>d<span class="s1">&#39;accéder à /MyGlusterLinear/File.*: Aucun fichier ou dossier de ce type</span>
+<span class="s1">root@peer1: 506</span>
+<span class="s1">root@peer2: 494</span>
+<span class="s1">root@peer3: 0</span>
+<span class="s1">root@peer3: ls: impossible d&#39;</span>accéder<span class="w"> </span>à<span class="w"> </span>/MyGlusterLinear/File.*:<span class="w"> </span>Aucun<span class="w"> </span>fichier<span class="w"> </span>ou<span class="w"> </span>dossier<span class="w"> </span>de<span class="w"> </span>ce<span class="w"> </span><span class="nb">type</span>
+</pre></div>
+</div>
+<p>Il y a donc à peu près équirépartition des écritures entre les serveurs <strong>peer1</strong> et <strong>peer2</strong> : GlusterFS remplit donc son office !</p>
+<p>Ajoutons une brique avec <strong>peer3</strong> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>add-brick<span class="w"> </span>MyGlusterLinear<span class="w"> </span>peer3:/MyGlusterLinear<span class="w"> </span>force
+</pre></div>
+</div>
+<p>En cas de succès, nous obtenons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>add-brick:<span class="w"> </span>success
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer3<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterLinear
+Type:<span class="w"> </span>Distribute
+Volume<span class="w"> </span>ID:<span class="w"> </span>e6cc9af2-5f48-4599-bc8e-12a7ee9d39b1
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">3</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterLinear
+Brick2:<span class="w"> </span>peer2:/MyGlusterLinear
+Brick3:<span class="w"> </span>peer3:/MyGlusterLinear
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Regardons si l’espace disponible s’est étendu par la commande <code class="docutils literal notranslate"><span class="pre">df</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Sys.<span class="w"> </span>de<span class="w"> </span>fichiers<span class="w">      </span>Taille<span class="w"> </span>Utilisé<span class="w"> </span>Dispo<span class="w"> </span>Uti%<span class="w"> </span>Monté<span class="w"> </span>sur
+udev<span class="w">                     </span>10M<span class="w">       </span><span class="m">0</span><span class="w">   </span>10M<span class="w">   </span><span class="m">0</span>%<span class="w"> </span>/dev
+tmpfs<span class="w">                   </span>200M<span class="w">    </span><span class="m">3</span>,0M<span class="w">  </span>197M<span class="w">   </span><span class="m">2</span>%<span class="w"> </span>/run
+/dev/sda1<span class="w">               </span><span class="m">3</span>,8G<span class="w">    </span><span class="m">1</span>,7G<span class="w">  </span><span class="m">1</span>,9G<span class="w">  </span><span class="m">47</span>%<span class="w"> </span>/
+tmpfs<span class="w">                   </span>499M<span class="w">       </span><span class="m">0</span><span class="w">  </span>499M<span class="w">   </span><span class="m">0</span>%<span class="w"> </span>/dev/shm
+tmpfs<span class="w">                   </span><span class="m">5</span>,0M<span class="w">       </span><span class="m">0</span><span class="w">  </span><span class="m">5</span>,0M<span class="w">   </span><span class="m">0</span>%<span class="w"> </span>/run/lock
+tmpfs<span class="w">                   </span>499M<span class="w">       </span><span class="m">0</span><span class="w">  </span>499M<span class="w">   </span><span class="m">0</span>%<span class="w"> </span>/sys/fs/cgroup
+peer1:MyGlusterLinear<span class="w">   </span><span class="m">5</span>,6G<span class="w">    </span><span class="m">2</span>,5G<span class="w">  </span><span class="m">2</span>,8G<span class="w">  </span><span class="m">47</span>%<span class="w"> </span>/media/MyGlusterLinear
+</pre></div>
+</div>
+<p>L’espace s’est étendu d’autant !</p>
+<p>Lançons le mécanisme de répartition avec <code class="docutils literal notranslate"><span class="pre">balance</span></code> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>rebalance<span class="w"> </span>MyGlusterLinear<span class="w"> </span>start
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>rebalance:<span class="w"> </span>MyGlusterLinear:<span class="w"> </span>success:<span class="w"> </span>Rebalance<span class="w"> </span>on<span class="w"> </span>MyGlusterLinear<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>started<span class="w"> </span>successfully.<span class="w"> </span>Use<span class="w"> </span>rebalance<span class="w"> </span>status<span class="w"> </span><span class="nb">command</span><span class="w"> </span>to<span class="w"> </span>check<span class="w"> </span>status<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>rebalance<span class="w"> </span>process.
+ID:<span class="w"> </span>58ce178d-5fd8-44b2-b484-382f71ad0a02
+</pre></div>
+</div>
+<p>Cette procédure pouvant être assez longue, l’état du <code class="docutils literal notranslate"><span class="pre">rebalance</span></code> s’obtient par un simple <code class="docutils literal notranslate"><span class="pre">status</span></code> à la place de <code class="docutils literal notranslate"><span class="pre">start</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>rebalance<span class="w"> </span>MyGlusterLinear<span class="w"> </span>status
+</pre></div>
+</div>
+<p>Nous avons une sortie comparable à ce qui suit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">                                    </span>Node<span class="w"> </span>Rebalanced-files<span class="w">          </span>size<span class="w">       </span>scanned<span class="w">      </span>failures<span class="w">       </span>skipped<span class="w">               </span>status<span class="w">  </span>run<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>h:m:s
+<span class="w">                                </span>---------<span class="w">      </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">         </span>------------<span class="w">     </span>--------------
+<span class="w">                                </span>localhost<span class="w">              </span><span class="m">171</span><span class="w">         </span><span class="m">2</span>.7KB<span class="w">           </span><span class="m">506</span><span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:8
+<span class="w">                                    </span>peer3<span class="w">                </span><span class="m">0</span><span class="w">        </span>0Bytes<span class="w">             </span><span class="m">2</span><span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:0
+<span class="w">                                    </span>peer2<span class="w">                </span><span class="m">0</span><span class="w">        </span>0Bytes<span class="w">           </span><span class="m">494</span><span class="w">             </span><span class="m">0</span><span class="w">           </span><span class="m">147</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:4
+volume<span class="w"> </span>rebalance:<span class="w"> </span>MyGlusterLinear:<span class="w"> </span>success
+</pre></div>
+</div>
+<p>Si nous regardons la redistribution, nous obtenons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span><span class="s1">&#39;ls /MyGlusterLinear/File.* | wc -l&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@peer2:<span class="w"> </span><span class="m">347</span>
+root@peer1:<span class="w"> </span><span class="m">335</span>
+root@peer4:<span class="w"> </span><span class="m">0</span>
+root@peer4:<span class="w"> </span>ls:<span class="w"> </span>impossible<span class="w"> </span>d<span class="err">&#39;</span>accéder<span class="w"> </span>à<span class="w"> </span>/MyGlusterLinear/File.*:<span class="w"> </span>Aucun<span class="w"> </span>fichier<span class="w"> </span>ou<span class="w"> </span>dossier<span class="w"> </span>de<span class="w"> </span>ce<span class="w"> </span><span class="nb">type</span>
+root@peer3:<span class="w"> </span><span class="m">318</span>
+</pre></div>
+</div>
+<p>La redistribution n’est pas parfaite, mais elle reste correcte !</p>
+<p>Supprimons maintenant la brique issue de <strong>peer1</strong> à partir de <strong>peer2</strong> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer2<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>remove-brick<span class="w"> </span>MyGlusterLinear<span class="w"> </span>peer1:/MyGlusterLinear<span class="w"> </span>start
+</pre></div>
+</div>
+<p>Le message suivant indique que la procédure a démarré</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>remove-brick<span class="w"> </span>start:<span class="w"> </span>success
+ID:<span class="w"> </span>92c17fc7-9980-4c73-83fd-fd011a8be530
+</pre></div>
+</div>
+<p>Contrôlons la progression de la migration des données issues de la demande de suppression :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer2<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>remove-brick<span class="w"> </span>MyGlusterLinear<span class="w"> </span>peer1:/MyGlusterLinear<span class="w"> </span>status
+</pre></div>
+</div>
+<p>Une fois terminé, nous avons pour la même commande précédente :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">              </span>Node<span class="w"> </span>Rebalanced-files<span class="w">          </span>size<span class="w">       </span>scanned<span class="w">      </span>failures<span class="w">       </span>skipped<span class="w">               </span>status<span class="w">  </span>run<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>h:m:s
+<span class="w">         </span>---------<span class="w">      </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">         </span>------------<span class="w">     </span>--------------
+peer1.gluster.zone<span class="w">              </span><span class="m">335</span><span class="w">         </span><span class="m">5</span>.2KB<span class="w">           </span><span class="m">335</span><span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:13
+</pre></div>
+</div>
+<p>Relançons la commande pour voir la distribution sur les différents serveurs</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span><span class="s1">&#39;ls /MyGlusterLinear/File.* | wc -l&#39;</span>
+</pre></div>
+</div>
+<p>Nous obtenons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@peer1:<span class="w"> </span><span class="m">0</span>
+root@peer1:<span class="w"> </span>ls:<span class="w"> </span>impossible<span class="w"> </span>d<span class="s1">&#39;accéder à /MyGlusterLinear/File.*: Aucun fichier ou dossier de ce type</span>
+<span class="s1">root@peer4: 0</span>
+<span class="s1">root@peer4: ls: impossible d&#39;</span>accéder<span class="w"> </span>à<span class="w"> </span>/MyGlusterLinear/File.*:<span class="w"> </span>Aucun<span class="w"> </span>fichier<span class="w"> </span>ou<span class="w"> </span>dossier<span class="w"> </span>de<span class="w"> </span>ce<span class="w"> </span><span class="nb">type</span>
+root@peer2:<span class="w"> </span><span class="m">347</span>
+root@peer3:<span class="w"> </span><span class="m">653</span>
+</pre></div>
+</div>
+<p>Les fichiers ont bien disparu de <strong>peer1</strong> et se sont retrouvés sur <strong>peer3</strong> !</p>
+<p>Validons la suppression</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer2<span class="w"> </span><span class="s1">&#39;echo y | gluster volume remove-brick MyGlusterLinear peer1:/MyGlusterLinear commit&#39;</span>
+</pre></div>
+</div>
+<p>Un petit message nous invite à la prudence, pour, au pire, restaurer les données :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Removing<span class="w"> </span>brick<span class="o">(</span>s<span class="o">)</span><span class="w"> </span>can<span class="w"> </span>result<span class="w"> </span><span class="k">in</span><span class="w"> </span>data<span class="w"> </span>loss.<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>Continue?<span class="w"> </span><span class="o">(</span>y/n<span class="o">)</span><span class="w"> </span>volume<span class="w"> </span>remove-brick<span class="w"> </span>commit:<span class="w"> </span>success
+Check<span class="w"> </span>the<span class="w"> </span>removed<span class="w"> </span>bricks<span class="w"> </span>to<span class="w"> </span>ensure<span class="w"> </span>all<span class="w"> </span>files<span class="w"> </span>are<span class="w"> </span>migrated.
+If<span class="w"> </span>files<span class="w"> </span>with<span class="w"> </span>data<span class="w"> </span>are<span class="w"> </span>found<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>brick<span class="w"> </span>path,<span class="w"> </span>copy<span class="w"> </span>them<span class="w"> </span>via<span class="w"> </span>a<span class="w"> </span>gluster<span class="w"> </span>mount<span class="w"> </span>point<span class="w"> </span>before<span class="w"> </span>re-purposing<span class="w"> </span>the<span class="w"> </span>removed<span class="w"> </span>brick.
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer3<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterLinear
+Type:<span class="w"> </span>Distribute
+Volume<span class="w"> </span>ID:<span class="w"> </span>e6cc9af2-5f48-4599-bc8e-12a7ee9d39b1
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">2</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer2:/MyGlusterLinear
+Brick3:<span class="w"> </span>peer3:/MyGlusterLinear
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Effaçons ces fichiers et démontons le volume monté sur le client :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>/media/MyGlusterLinear/File.*
+sudo<span class="w"> </span>umount<span class="w"> </span>/media/MyGlusterLinear
+</pre></div>
+</div>
+<div class="note note-imp docutils container">
+<p>Il ne faut utiliser la commande <code class="docutils literal notranslate"><span class="pre">replace-brick</span></code> <strong>uniquement</strong> dans le cadre d’un volume <code class="docutils literal notranslate"><span class="pre">replica</span></code> !&lt;/note&gt;</p>
+</div>
+</section>
+<section id="creation-dun-volume-de-type-striped-equivalent-raid0">
+<h2>Création d’un volume de type <code class="docutils literal notranslate"><span class="pre">striped</span></code> (équivalent RAID0)<a class="headerlink" href="#creation-dun-volume-de-type-striped-equivalent-raid0" title="Lien vers cette rubrique">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>mkdir<span class="w"> </span>/MyGlusterRAID0
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>MyGlusterRAID0<span class="w"> </span>stripe<span class="w"> </span><span class="m">2</span><span class="w"> </span>peer1:/MyGlusterRAID0<span class="w"> </span>peer2:/MyGlusterRAID0<span class="w"> </span>force
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>start<span class="w"> </span>MyGlusterRAID0
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>create:<span class="w"> </span>MyGlusterRAID0:<span class="w"> </span>success:<span class="w"> </span>please<span class="w"> </span>start<span class="w"> </span>the<span class="w"> </span>volume<span class="w"> </span>to<span class="w"> </span>access<span class="w"> </span>data
+volume<span class="w"> </span>start:<span class="w"> </span>MyGlusterRAID0:<span class="w"> </span>success
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info<span class="w"> </span>MyGlusterRAID0
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterRAID0
+Type:<span class="w"> </span>Stripe
+Volume<span class="w"> </span>ID:<span class="w"> </span>4b7451de-36cc-4679-925e-f0846e4325b9
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">1</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterRAID0
+Brick2:<span class="w"> </span>peer2:/MyGlusterRAID0
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Montage sur le client &amp; réglages de droits d’accès</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/media/MyGlusterRAID0
+sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>-o<span class="w"> </span>noatime<span class="w"> </span>peer1:MyGlusterRAID0<span class="w"> </span>/media/MyGlusterRAID0
+sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>/media/MyGlusterRAID0
+sudo<span class="w"> </span>chmod<span class="w"> </span>o+t<span class="w"> </span>/media/MyGlusterRAID0
+</pre></div>
+</div>
+<p>Ecriture de données &amp; cohérence des données</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>seq<span class="w"> </span>-w<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;echo Hello File &#39;{}&#39; &gt; /media/MyGlusterRAID0/File.&#39;{}&#39;&quot;</span>
+</pre></div>
+</div>
+<p>Si nous regardons les MD5 dans <code class="docutils literal notranslate"><span class="pre">/media/MyGlusterRAID0/</span></code> et sur les deux serveurs <strong>peer1</strong> et <strong>peer2</strong> dans <code class="docutils literal notranslate"><span class="pre">/MyGlusterRAID0/</span></code>, nous constatons uniquement des fichiers de taille nulle sont sur <strong>peer2</strong> et les mêmes signature sur <strong>peer1</strong> : ceci est dû à la taille au delà de laquelle les données sont découpées.</p>
+<p>En effet, la commande <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">root&#64;peer1</span> <span class="pre">gluster</span> <span class="pre">volume</span> <span class="pre">get</span> <span class="pre">MyGlusterRAID0</span> <span class="pre">all</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">stripe-block-size</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cluster.stripe-block-size<span class="w">               </span>128KB
+</pre></div>
+</div>
+<p>Essayons avec 10 fichiers de 1MB générés aléatoirement pour dépasser cette limite</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>/media/MyGlusterRAID0/File.*
+seq<span class="w"> </span>-w<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">10</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;base64 /dev/urandom | head -c 1048576 &gt; /media/MyGlusterRAID0/File.&#39;{}&#39;&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/media/MyGlusterRAID0/File.*<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">10</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>md5sum<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+ssh<span class="w"> </span>root@peer1<span class="w"> </span><span class="s2">&quot;ls /MyGlusterRAID0/File.* | xargs -I &#39;{}&#39; md5sum &#39;{}&#39;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+ssh<span class="w"> </span>root@peer2<span class="w"> </span><span class="s2">&quot;ls /MyGlusterRAID0/File.* | xargs -I &#39;{}&#39; md5sum &#39;{}&#39;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+</pre></div>
+</div>
+<p>Nous voyons que les sommes MD5 ne sont pas identiques… En cas de plantage de GlusterFS, il n’y a pas possibilité de récupérer les informations en allant les chercher « à la main ».</p>
+</section>
+<section id="creation-dun-volume-de-type-replica-equivalent-raid1">
+<h2>Création d’un volume de type <code class="docutils literal notranslate"><span class="pre">replica</span></code> (équivalent RAID1)<a class="headerlink" href="#creation-dun-volume-de-type-replica-equivalent-raid1" title="Lien vers cette rubrique">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>mkdir<span class="w"> </span>/MyGlusterRAID1
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>MyGlusterRAID1<span class="w"> </span>replica<span class="w"> </span><span class="m">2</span><span class="w"> </span>peer1:/MyGlusterRAID1<span class="w"> </span>peer3:/MyGlusterRAID1<span class="w"> </span>force
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>start<span class="w"> </span>MyGlusterRAID1
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>create:<span class="w"> </span>MyGlusterRAID1:<span class="w"> </span>success:<span class="w"> </span>please<span class="w"> </span>start<span class="w"> </span>the<span class="w"> </span>volume<span class="w"> </span>to<span class="w"> </span>access<span class="w"> </span>data
+volume<span class="w"> </span>start:<span class="w"> </span>MyGlusterRAID1:<span class="w"> </span>success
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer3<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info<span class="w"> </span>MyGlusterRAID1
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterRAID1
+Type:<span class="w"> </span>Replicate
+Volume<span class="w"> </span>ID:<span class="w"> </span>7bb3b6dd-a82c-45bd-bb28-5f9545438d84
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">1</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterRAID1
+Brick2:<span class="w"> </span>peer3:/MyGlusterRAID1
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Montage sur le client &amp; réglages de droits d’accès</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/media/MyGlusterRAID1
+sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>-o<span class="w"> </span>noatime<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1
+sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>/media/MyGlusterRAID1
+sudo<span class="w"> </span>chmod<span class="w"> </span>o+t<span class="w"> </span>/media/MyGlusterRAID1
+</pre></div>
+</div>
+<p>Ecriture de données &amp; cohérence des données</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>seq<span class="w"> </span>-w<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;echo Hello File &#39;{}&#39; &gt; /media/MyGlusterRAID1/File.&#39;{}&#39;&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/media/MyGlusterRAID1/File.*<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>md5sum<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $1 }&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/Gluster.md5
+ssh<span class="w"> </span>root@peer1<span class="w"> </span><span class="s2">&quot;ls /MyGlusterRAID1/File.* | xargs -P 1000 -I &#39;{}&#39; md5sum &#39;{}&#39;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $1 }&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/GlusterPeer1.md5
+ssh<span class="w"> </span>root@peer3<span class="w"> </span><span class="s2">&quot;ls /MyGlusterRAID1/File.* | xargs -P 1000 -I &#39;{}&#39; md5sum &#39;{}&#39;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $1 }&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/GlusterPeer3.md5
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>md5sum<span class="w"> </span>/tmp/Gluster.md5<span class="w"> </span>/tmp/GlusterPeer1.md5<span class="w"> </span>/tmp/GlusterPeer3.md5
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>521e443b0dd9b639f7610c0a7e0dd001<span class="w">  </span>/tmp/Gluster.md5
+521e443b0dd9b639f7610c0a7e0dd001<span class="w">  </span>/tmp/GlusterPeer1.md5
+521e443b0dd9b639f7610c0a7e0dd001<span class="w">  </span>/tmp/GlusterPeer3.md5
+</pre></div>
+</div>
+<p>Essayons avec 10 fichiers de 1MB générés aléatoirement pour dépasser cette limite</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>/media/MyGlusterRAID1/File.*
+seq<span class="w"> </span>-w<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">10</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;base64 /dev/urandom | head -c 1048576 &gt; /media/MyGlusterRAID1/File.&#39;{}&#39;&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/media/MyGlusterRAID1/File.*<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">10</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>md5sum<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+ssh<span class="w"> </span>root@peer1<span class="w"> </span><span class="s2">&quot;ls /MyGlusterRAID1/File.* | xargs -I &#39;{}&#39; md5sum &#39;{}&#39;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+ssh<span class="w"> </span>root@peer3<span class="w"> </span><span class="s2">&quot;ls /MyGlusterRAID1/File.* | xargs -I &#39;{}&#39; md5sum &#39;{}&#39;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+</pre></div>
+</div>
+<p>Même pour des fichiers de taille plus importante, la cohérence des données est respectée.</p>
+<p>AJout d’une brique sur le replica :</p>
+<p>Etant donné que nous sommes en mode <code class="docutils literal notranslate"><span class="pre">replica</span></code>, il est nécessaire d’associer une brique contenant deux espaces :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>add-brick<span class="w"> </span>MyGlusterRAID1<span class="w"> </span>replica<span class="w"> </span><span class="m">2</span><span class="w"> </span>peer2:/MyGlusterRAID1<span class="w"> </span>peer4:/MyGlusterRAID1<span class="w"> </span>force
+</pre></div>
+</div>
+<p>Le <code class="docutils literal notranslate"><span class="pre">gluster</span> <span class="pre">volume</span> <span class="pre">info</span> <span class="pre">MyGlusterRAID1</span></code> fournit :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterRAID1
+Type:<span class="w"> </span>Distributed-Replicate
+Volume<span class="w"> </span>ID:<span class="w"> </span>7bb3b6dd-a82c-45bd-bb28-5f9545438d84
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">2</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterRAID1
+Brick2:<span class="w"> </span>peer3:/MyGlusterRAID1
+Brick3:<span class="w"> </span>peer2:/MyGlusterRAID1
+Brick4:<span class="w"> </span>peer4:/MyGlusterRAID1
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Lançons un <code class="docutils literal notranslate"><span class="pre">rebalance</span></code> sur le volume <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">root&#64;peer4</span> <span class="pre">gluster</span> <span class="pre">volume</span> <span class="pre">rebalance</span> <span class="pre">MyGlusterRAID1</span> <span class="pre">start</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>volume<span class="w"> </span>rebalance:<span class="w"> </span>MyGlusterRAID1:<span class="w"> </span>success:<span class="w"> </span>Rebalance<span class="w"> </span>on<span class="w"> </span>MyGlusterRAID1<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>started<span class="w"> </span>successfully.<span class="w"> </span>Use<span class="w"> </span>rebalance<span class="w"> </span>status<span class="w"> </span><span class="nb">command</span><span class="w"> </span>to<span class="w"> </span>check<span class="w"> </span>status<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>rebalance<span class="w"> </span>process.
+ID:<span class="w"> </span>12d11627-146d-4057-b1f7-e041f9b1b218
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer4<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>rebalance<span class="w"> </span>MyGlusterRAID1<span class="w"> </span>status
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">                                    </span>Node<span class="w"> </span>Rebalanced-files<span class="w">          </span>size<span class="w">       </span>scanned<span class="w">      </span>failures<span class="w">       </span>skipped<span class="w">               </span>status<span class="w">  </span>run<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>h:m:s
+<span class="w">                                </span>---------<span class="w">      </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">   </span>-----------<span class="w">         </span>------------<span class="w">     </span>--------------
+<span class="w">                                </span>localhost<span class="w">                </span><span class="m">0</span><span class="w">        </span>0Bytes<span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:0
+<span class="w">                        </span>peer1.gluster.zone<span class="w">                </span><span class="m">4</span><span class="w">         </span><span class="m">4</span>.0MB<span class="w">            </span><span class="m">10</span><span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:1
+<span class="w">                                    </span>peer3<span class="w">                </span><span class="m">0</span><span class="w">        </span>0Bytes<span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:0
+<span class="w">                                    </span>peer2<span class="w">                </span><span class="m">0</span><span class="w">        </span>0Bytes<span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">             </span><span class="m">0</span><span class="w">            </span>completed<span class="w">        </span><span class="m">0</span>:0:1
+volume<span class="w"> </span>rebalance:<span class="w"> </span>MyGlusterRAID1:<span class="w"> </span>success
+</pre></div>
+</div>
+</section>
+<section id="elements-de-securite-sous-glusterfs">
+<h2>Eléments de sécurité sous GlusterFS<a class="headerlink" href="#elements-de-securite-sous-glusterfs" title="Lien vers cette rubrique">¶</a></h2>
+<section id="resilience-de-l-acces-au-serveur">
+<h3>Résilience de l’accès au serveur<a class="headerlink" href="#resilience-de-l-acces-au-serveur" title="Lien vers cette rubrique">¶</a></h3>
+<p>Démontons le volume <code class="docutils literal notranslate"><span class="pre">MyGlusterRAID1</span></code> sur le client :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>umount<span class="w"> </span>/media/GlusterRAID1/
+</pre></div>
+</div>
+<p>Simulons une panne en arrêtant le démon <code class="docutils literal notranslate"><span class="pre">glusterd</span></code> sur <strong>peer1</strong> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>glusterfs-server.service
+</pre></div>
+</div>
+<p>Essayons de remonter le volume <code class="docutils literal notranslate"><span class="pre">MyGlusterRAID1</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1/
+</pre></div>
+</div>
+<p>Ca ne fonctionne pas avec le message :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Mount<span class="w"> </span>failed.<span class="w"> </span>Please<span class="w"> </span>check<span class="w"> </span>the<span class="w"> </span>log<span class="w"> </span>file<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>details.
+</pre></div>
+</div>
+<p>En allant regarder dans les logs d’erreur :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>cat<span class="w"> </span>/var/log/glusterfs/media-MyGlusterRAID1.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39; E &#39;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="m">2016</span>-12-14<span class="w"> </span><span class="m">14</span>:43:55.901290<span class="o">]</span><span class="w"> </span>E<span class="w"> </span><span class="o">[</span>socket.c:2309:socket_connect_finish<span class="o">]</span><span class="w"> </span><span class="m">0</span>-glusterfs:<span class="w"> </span>connection<span class="w"> </span>to<span class="w"> </span><span class="m">10</span>.20.16.1:24007<span class="w"> </span>failed<span class="w"> </span><span class="o">(</span>Connexion<span class="w"> </span>refusée<span class="o">)</span>
+<span class="o">[</span><span class="m">2016</span>-12-14<span class="w"> </span><span class="m">14</span>:43:55.901332<span class="o">]</span><span class="w"> </span>E<span class="w"> </span><span class="o">[</span>glusterfsd-mgmt.c:1902:mgmt_rpc_notify<span class="o">]</span><span class="w"> </span><span class="m">0</span>-glusterfsd-mgmt:<span class="w"> </span>failed<span class="w"> </span>to<span class="w"> </span>connect<span class="w"> </span>with<span class="w"> </span>remote-host:<span class="w"> </span>peer1<span class="w"> </span><span class="o">(</span>Noeud<span class="w"> </span>final<span class="w"> </span>de<span class="w"> </span>transport<span class="w"> </span>n<span class="err">&#39;</span>est<span class="w"> </span>pas<span class="w"> </span>connecté<span class="o">)</span>
+</pre></div>
+</div>
+<p>Etant donné que notre volume est reparti sur 4 serveurs dont 1 indisponible, nous pouvons monter le partage en utilisant l’option <code class="docutils literal notranslate"><span class="pre">backup-volfile-servers</span></code> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>-obackup-volfile-servers<span class="o">=</span>peer1:peer2:peer3:peer4,noatime<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1/
+</pre></div>
+</div>
+<p>Le volume se monte et les données sont accessibles.</p>
+<p>Réactivons quand même le service GlusterFS sur <strong>peer1</strong> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>glusterfs-server.service
+</pre></div>
+</div>
+<p>Vérifions que le démon est bien opérationnel par <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">root&#64;peer1</span> <span class="pre">gluster</span> <span class="pre">volume</span> <span class="pre">info</span> <span class="pre">MyGlusterRAID1</span></code></p>
+</section>
+<section id="controle-d-acces-par-adresse">
+<h3>Contrôle d’accès par adresse<a class="headerlink" href="#controle-d-acces-par-adresse" title="Lien vers cette rubrique">¶</a></h3>
+<p>Objectif : filtrer l’accès au volume GlusterFS par adresse IP</p>
+<p>Démontons le volume du client</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>umount<span class="w"> </span>/media/MyGlusterRAID1
+</pre></div>
+</div>
+<p>Détermination de l’IP des machines</p>
+<p>Les serveurs disposent d’une adresse de <strong>10.20.16.1</strong> à <strong>10.20.16.4</strong>.</p>
+<p>Restriction à uniquement les serveurs du pool avec l’attribut <code class="docutils literal notranslate"><span class="pre">auth.allow</span></code> définit à toutes les IP des serveurs de <strong>peer1</strong> à <strong>peer4</strong>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span><span class="nb">set</span><span class="w"> </span>MyGlusterRAID1<span class="w"> </span>auth.allow<span class="w"> </span><span class="m">10</span>.20.16.1,10.20.16.2,10.20.16.3,10.20.16.4
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gluster<span class="w"> </span>volume<span class="w"> </span>info
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterRAID1
+Type:<span class="w"> </span>Distributed-Replicate
+Volume<span class="w"> </span>ID:<span class="w"> </span>7bb3b6dd-a82c-45bd-bb28-5f9545438d84
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">2</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterRAID1
+Brick2:<span class="w"> </span>peer3:/MyGlusterRAID1
+Brick3:<span class="w"> </span>peer2:/MyGlusterRAID1
+Brick4:<span class="w"> </span>peer4:/MyGlusterRAID1
+Options<span class="w"> </span>Reconfigured:
+auth.allow:<span class="w"> </span><span class="m">10</span>.20.16.1,10.20.16.2,10.20.16.3,10.20.16.4
+nfs.disable:<span class="w"> </span>on
+performance.readdir-ahead:<span class="w"> </span>on
+transport.address-family:<span class="w"> </span>inet
+</pre></div>
+</div>
+<p>Lançons la commande de montage sur le client</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1/
+</pre></div>
+</div>
+<p>La commande s’exécute mais rien ne se monte : <code class="docutils literal notranslate"><span class="pre">df</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">MyGlusterRAID1</span></code> permet de s’en assurer…</p>
+<p>Si nous rajoutons l’IP du client <strong>10.20.16.254</strong>, avec la commande :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span><span class="nb">set</span><span class="w"> </span>MyGlusterRAID1<span class="w"> </span>auth.allow<span class="w"> </span><span class="m">10</span>.20.16.1,10.20.16.2,10.20.16.3,10.20.16.4,10.20.16.254
+</pre></div>
+</div>
+<p>Nous pouvons monter le volume <code class="docutils literal notranslate"><span class="pre">MyGlusterRAID1</span></code>.</p>
+<p>Pour réinitialiser une valeur, nous utilisons : la commande <code class="docutils literal notranslate"><span class="pre">reset</span></code> sur l’attribut, ici <code class="docutils literal notranslate"><span class="pre">auth.allow</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>reset<span class="w"> </span>MyGlusterRAID1<span class="w"> </span>auth.allow
+</pre></div>
+</div>
+<p>Démontage du volume du client par <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">umount</span> <span class="pre">/media/MyGlusterRAID1</span></code></p>
+</section>
+<section id="chiffrement-de-la-communication">
+<h3>Chiffrement de la communication<a class="headerlink" href="#chiffrement-de-la-communication" title="Lien vers cette rubrique">¶</a></h3>
+<p>Objectif : assurer une confidentialité forte sur l’accès et le transit</p>
+<p>Démontage de</p>
+<p>Création de la clé OpenSSL, des certificats serveurs et client</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>glusterfs.key<span class="w"> </span><span class="m">1024</span>
+openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-x509<span class="w"> </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span>-key<span class="w"> </span>glusterfs.key<span class="w"> </span>-subj<span class="w"> </span>/CN<span class="o">=</span>gluster-client<span class="w"> </span>-out<span class="w"> </span>gluster-client.pem
+seq<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-x509<span class="w"> </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span>-key<span class="w"> </span>glusterfs.key<span class="w"> </span>-subj<span class="w"> </span>/CN<span class="o">=</span>peer<span class="s1">&#39;{}&#39;</span><span class="w"> </span>-out<span class="w"> </span>peer<span class="s1">&#39;{}&#39;</span>.pem
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>peer*<span class="w"> </span>&gt;&gt;<span class="w"> </span>glusterfs.ca
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>seq<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>scp<span class="w"> </span>glusterfs.key<span class="w"> </span>root@peer<span class="s1">&#39;{}&#39;</span>:/etc/ssl
+seq<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>scp<span class="w"> </span>glusterfs.ca<span class="w"> </span>root@peer<span class="s1">&#39;{}&#39;</span>:/etc/ssl
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span><span class="nb">set</span><span class="w"> </span>MyGlusterRAID1<span class="w"> </span>client.ssl<span class="w"> </span>on
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span><span class="nb">set</span><span class="w"> </span>MyGlusterRAID1<span class="w"> </span>server.ssl<span class="w"> </span>on
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span><span class="nb">set</span><span class="w"> </span>MyGlusterRAID1<span class="w"> </span>ssl.own-cert<span class="w"> </span>/etc/ssl/glusterfs.ca
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterRAID1
+Type:<span class="w"> </span>Distributed-Replicate
+Volume<span class="w"> </span>ID:<span class="w"> </span>7bb3b6dd-a82c-45bd-bb28-5f9545438d84
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">2</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterRAID1
+Brick2:<span class="w"> </span>peer3:/MyGlusterRAID1
+Brick3:<span class="w"> </span>peer2:/MyGlusterRAID1
+Brick4:<span class="w"> </span>peer4:/MyGlusterRAID1
+Options<span class="w"> </span>Reconfigured:
+ssl.own-cert:<span class="w"> </span>/etc/ssl/glusterfs.ca
+server.ssl:<span class="w"> </span>on
+client.ssl:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+performance.readdir-ahead:<span class="w"> </span>on
+transport.address-family:<span class="w"> </span>inet
+</pre></div>
+</div>
+<p>Création des points de montage &amp; montage sur les serveurs :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>mkdir<span class="w"> </span>/media/MyGlusterRAID1
+clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1
+</pre></div>
+</div>
+<p>Normalement, cela ne fonctionne pas et cela donne les messages suivants :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@peer2:<span class="w"> </span>Mount<span class="w"> </span>failed.<span class="w"> </span>Please<span class="w"> </span>check<span class="w"> </span>the<span class="w"> </span>log<span class="w"> </span>file<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>details.
+clush:<span class="w"> </span>root@peer2:<span class="w"> </span>exited<span class="w"> </span>with<span class="w"> </span><span class="nb">exit</span><span class="w"> </span>code<span class="w"> </span><span class="m">1</span>
+root@peer4:<span class="w"> </span>Mount<span class="w"> </span>failed.<span class="w"> </span>Please<span class="w"> </span>check<span class="w"> </span>the<span class="w"> </span>log<span class="w"> </span>file<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>details.
+clush:<span class="w"> </span>root@peer4:<span class="w"> </span>exited<span class="w"> </span>with<span class="w"> </span><span class="nb">exit</span><span class="w"> </span>code<span class="w"> </span><span class="m">1</span>
+root@peer3:<span class="w"> </span>Mount<span class="w"> </span>failed.<span class="w"> </span>Please<span class="w"> </span>check<span class="w"> </span>the<span class="w"> </span>log<span class="w"> </span>file<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>details.
+clush:<span class="w"> </span>root@peer3:<span class="w"> </span>exited<span class="w"> </span>with<span class="w"> </span><span class="nb">exit</span><span class="w"> </span>code<span class="w"> </span><span class="m">1</span>
+root@peer1:<span class="w"> </span>Mount<span class="w"> </span>failed.<span class="w"> </span>Please<span class="w"> </span>check<span class="w"> </span>the<span class="w"> </span>log<span class="w"> </span>file<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>details.
+clush:<span class="w"> </span>root@peer1:<span class="w"> </span>exited<span class="w"> </span>with<span class="w"> </span><span class="nb">exit</span><span class="w"> </span>code<span class="w"> </span><span class="m">1</span>
+</pre></div>
+</div>
+<p>Il est en effet nécessaire d’arrêter et redémarrer le volume GlusterFS pour permettre l’accès au volume chiffré :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span><span class="s2">&quot;echo y | gluster volume stop MyGlusterRAID1&quot;</span>
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>start<span class="w"> </span>MyGlusterRAID1
+</pre></div>
+</div>
+<p>Après cette opération :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1
+clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>df<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>MyGlusterRAID1
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@peer1:<span class="w"> </span>peer1:MyGlusterRAID1<span class="w">     </span><span class="m">3903488</span><span class="w"> </span><span class="m">1730432</span><span class="w">    </span><span class="m">1934592</span><span class="w">  </span><span class="m">48</span>%<span class="w"> </span>/media/MyGlusterRAID1
+root@peer3:<span class="w"> </span>peer1:MyGlusterRAID1<span class="w">     </span><span class="m">3903488</span><span class="w"> </span><span class="m">1730432</span><span class="w">    </span><span class="m">1934592</span><span class="w">  </span><span class="m">48</span>%<span class="w"> </span>/media/MyGlusterRAID1
+root@peer4:<span class="w"> </span>peer1:MyGlusterRAID1<span class="w">     </span><span class="m">3903488</span><span class="w"> </span><span class="m">1730432</span><span class="w">    </span><span class="m">1934592</span><span class="w">  </span><span class="m">48</span>%<span class="w"> </span>/media/MyGlusterRAID1
+root@peer2:<span class="w"> </span>peer1:MyGlusterRAID1<span class="w">     </span><span class="m">3903488</span><span class="w"> </span><span class="m">1730432</span><span class="w">    </span><span class="m">1934592</span><span class="w">  </span><span class="m">48</span>%<span class="w"> </span>/media/MyGlusterRAID1
+</pre></div>
+</div>
+<p>Essayons maintenant de monter le volume chiffré sur le client :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1
+</pre></div>
+</div>
+<p>Le message d’erreur est sans équivoque</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Mount<span class="w"> </span>failed.<span class="w"> </span>Please<span class="w"> </span>check<span class="w"> </span>the<span class="w"> </span>log<span class="w"> </span>file<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>details.
+</pre></div>
+</div>
+<p>Si vous regardons les logs d’erreurs, nous trouvons :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="m">2016</span>-12-14<span class="w"> </span><span class="m">15</span>:16:13.200191<span class="o">]</span><span class="w"> </span>E<span class="w"> </span><span class="o">[</span>dht-helper.c:1666:dht_inode_ctx_time_update<span class="o">]</span><span class="w"> </span><span class="o">(</span>--&gt;/usr/lib/x86_64-linux-gnu/glusterfs/3.8.4/xlator/cluster/replicate.so<span class="o">(</span>+0x4b19a<span class="o">)</span><span class="w"> </span><span class="o">[</span>0x7fa7a4b3c19a<span class="o">]</span><span class="w"> </span>--&gt;/usr/lib/x86_64-linux-gnu/glusterfs/3.8.4/xlator/cluster/distribute.so<span class="o">(</span>+0x33d09<span class="o">)</span><span class="w"> </span><span class="o">[</span>0x7fa7a489cd09<span class="o">]</span><span class="w"> </span>--&gt;/usr/lib/x86_64-linux-gnu/glusterfs/3.8.4/xlator/cluster/distribute.so<span class="o">(</span>+0xa464<span class="o">)</span><span class="w"> </span><span class="o">[</span>0x7fa7a4873464<span class="o">]</span><span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="m">0</span>-MyGlusterRAID1-dht:<span class="w"> </span>invalid<span class="w"> </span>argument:<span class="w"> </span>inode<span class="w"> </span><span class="o">[</span>Argument<span class="w"> </span>invalide<span class="o">]</span>
+</pre></div>
+</div>
+<p>Ceci est dû au fait que, lorsque nous avons agrégé les certificats (commande <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">peer*.pem</span> <span class="pre">&gt;&gt;</span> <span class="pre">glusterfs.ca</span></code>, nous avons omis celui du client <code class="docutils literal notranslate"><span class="pre">gluster-client.pem</span></code>.</p>
+<p>Effectuons les opérations suivantes :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Demontage des volumes montes</span>
+clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>umount<span class="w"> </span>/media/MyGlusterRAID1
+<span class="c1"># Arret du volume MyGlusterRAID1</span>
+ssh<span class="w"> </span>root@peer1<span class="w"> </span><span class="s2">&quot;echo y | gluster volume stop MyGlusterRAID1&quot;</span>
+<span class="c1"># Creation du nouvel agregat de certificats</span>
+cat<span class="w"> </span>peer*pem<span class="w"> </span>gluster-client.pem<span class="w"> </span>&gt;&gt;<span class="w"> </span>glusterfs.ca
+<span class="c1"># Diffusion de l&#39;agregat de certificats</span>
+seq<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>scp<span class="w"> </span>glusterfs.ca<span class="w"> </span>root@peer<span class="s1">&#39;{}&#39;</span>:/etc/ssl
+<span class="c1"># Copie locale de la clé dans le bon dossier</span>
+sudo<span class="w"> </span>cp<span class="w"> </span>glusterfs.key<span class="w"> </span>/etc/ssl
+<span class="c1"># Copie locale de l&#39;agregat de certificat</span>
+sudo<span class="w"> </span>cp<span class="w"> </span>glusterfs.ca<span class="w"> </span>/etc/ssl
+<span class="c1"># Demarrage du volume MyGlusterRAID1</span>
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>start<span class="w"> </span>MyGlusterRAID1
+</pre></div>
+</div>
+<p>Nous pouvons (enfin) monter le volume de manière chiffrée :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>peer1:MyGlusterRAID1<span class="w"> </span>/media/MyGlusterRAID1
+</pre></div>
+</div>
+<p>Et vérifier son accès :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>md5sum<span class="w"> </span>/media/MyGlusterRAID1/File.*
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>e0cebe0d913746ff4b506a4da55f986c<span class="w">  </span>/media/MyGlusterRAID1/File.01
+e49e69ae967bc7bc0ffad0aa8e713300<span class="w">  </span>/media/MyGlusterRAID1/File.02
+6e34c25900be11e3ed58ddee62f3d241<span class="w">  </span>/media/MyGlusterRAID1/File.03
+de5256d745e9edcd0b006303fd7a9f7f<span class="w">  </span>/media/MyGlusterRAID1/File.04
+fa748e331d8c0fd6fd87f7b7f9299cc3<span class="w">  </span>/media/MyGlusterRAID1/File.05
+407a43d7a3fa120faff14357c2724503<span class="w">  </span>/media/MyGlusterRAID1/File.06
+cb5432658b53aa208fcd9289bffb7106<span class="w">  </span>/media/MyGlusterRAID1/File.07
+93949c9c1b1f685a2feff0572afff008<span class="w">  </span>/media/MyGlusterRAID1/File.08
+eefcff95428ca6d18fdaf0562a43b33e<span class="w">  </span>/media/MyGlusterRAID1/File.09
+0130dc26e947eb016197bad4a8f6d0ee<span class="w">  </span>/media/MyGlusterRAID1/File.10
+</pre></div>
+</div>
+</section>
+</section>
+<section id="fonctionnalites-avancees">
+<h2>Fonctionnalités avancées<a class="headerlink" href="#fonctionnalites-avancees" title="Lien vers cette rubrique">¶</a></h2>
+<section id="gestion-du-tiering">
+<h3>Gestion du tiering<a class="headerlink" href="#gestion-du-tiering" title="Lien vers cette rubrique">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span>mkdir<span class="w"> </span>/MyGlusterReplica
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>MyGlusterReplica<span class="w"> </span>replica<span class="w"> </span><span class="m">2</span><span class="w"> </span>transport<span class="w"> </span>tcp<span class="w"> </span>peer1:/MyGlusterReplica<span class="w"> </span>peer3:/MyGlusterReplica<span class="w"> </span>force
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>start<span class="w"> </span>MyGlusterReplica
+ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterReplica
+Type:<span class="w"> </span>Replicate
+Volume<span class="w"> </span>ID:<span class="w"> </span><span class="m">93689088</span>-b6b5-413f-8a4b-3b395f6b965c
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">1</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+Transport-type:<span class="w"> </span>tcp
+Bricks:
+Brick1:<span class="w"> </span>peer1:/MyGlusterReplica
+Brick2:<span class="w"> </span>peer3:/MyGlusterReplica
+Options<span class="w"> </span>Reconfigured:
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Activation du //tiering// sur les deux autres pairs <strong>peer2</strong> et <strong>peer4</strong> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>tier<span class="w"> </span>MyGlusterReplica<span class="w"> </span>attach<span class="w"> </span>replica<span class="w"> </span><span class="m">2</span><span class="w"> </span>peer2:/MyGlusterReplica<span class="w"> </span>peer4:/MyGlusterReplica<span class="w"> </span>force
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Tiering<span class="w"> </span>Migration<span class="w"> </span>Functionality:<span class="w"> </span>MyGlusterReplica:<span class="w"> </span>success:<span class="w"> </span>Attach<span class="w"> </span>tier<span class="w"> </span>is<span class="w"> </span>successful<span class="w"> </span>on<span class="w"> </span>MyGlusterReplica.<span class="w"> </span>use<span class="w"> </span>tier<span class="w"> </span>status<span class="w"> </span>to<span class="w"> </span>check<span class="w"> </span>the<span class="w"> </span>status.
+ID:<span class="w"> </span>f1084e85-f5cb-475e-8457-fe258dca4533
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>tier<span class="w"> </span>status
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>tier<span class="w"> </span>MyGlusterReplica<span class="w"> </span>status
+Node<span class="w">                 </span>Promoted<span class="w"> </span>files<span class="w">       </span>Demoted<span class="w"> </span>files<span class="w">        </span>Status
+---------<span class="w">            </span>---------<span class="w">            </span>---------<span class="w">            </span>---------
+localhost<span class="w">            </span><span class="m">0</span><span class="w">                    </span><span class="m">0</span><span class="w">                    </span><span class="k">in</span><span class="w"> </span>progress
+peer4<span class="w">                </span><span class="m">0</span><span class="w">                    </span><span class="m">0</span><span class="w">                    </span><span class="k">in</span><span class="w"> </span>progress
+peer3<span class="w">                </span><span class="m">0</span><span class="w">                    </span><span class="m">0</span><span class="w">                    </span><span class="k">in</span><span class="w"> </span>progress
+peer2<span class="w">                </span><span class="m">0</span><span class="w">                    </span><span class="m">0</span><span class="w">                    </span><span class="k">in</span><span class="w"> </span>progress
+Tiering<span class="w"> </span>Migration<span class="w"> </span>Functionality:<span class="w"> </span>MyGlusterReplica:<span class="w"> </span>success
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>root@peer1<span class="w"> </span>gluster<span class="w"> </span>volume<span class="w"> </span>info
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Volume<span class="w"> </span>Name:<span class="w"> </span>MyGlusterReplica
+Type:<span class="w"> </span>Tier
+Volume<span class="w"> </span>ID:<span class="w"> </span>4502aaf9-f9c6-4eec-9c73-a889f3b457c7
+Status:<span class="w"> </span>Started
+Snapshot<span class="w"> </span>Count:<span class="w"> </span><span class="m">0</span>
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">4</span>
+Transport-type:<span class="w"> </span>tcp
+Hot<span class="w"> </span>Tier<span class="w"> </span>:
+Hot<span class="w"> </span>Tier<span class="w"> </span>Type<span class="w"> </span>:<span class="w"> </span>Replicate
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">1</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+Brick1:<span class="w"> </span>peer4:/MyGlusterReplica
+Brick2:<span class="w"> </span>peer2:/MyGlusterReplica
+Cold<span class="w"> </span>Tier:
+Cold<span class="w"> </span>Tier<span class="w"> </span>Type<span class="w"> </span>:<span class="w"> </span>Replicate
+Number<span class="w"> </span>of<span class="w"> </span>Bricks:<span class="w"> </span><span class="m">1</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+Brick3:<span class="w"> </span>peer1:/MyGlusterReplica
+Brick4:<span class="w"> </span>peer3:/MyGlusterReplica
+Options<span class="w"> </span>Reconfigured:
+cluster.tier-mode:<span class="w"> </span>cache
+features.ctr-enabled:<span class="w"> </span>on
+transport.address-family:<span class="w"> </span>inet
+performance.readdir-ahead:<span class="w"> </span>on
+nfs.disable:<span class="w"> </span>on
+</pre></div>
+</div>
+<p>Montage du volume sur le client</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mkdir<span class="w"> </span>/media/MyGlusterReplica
+sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>glusterfs<span class="w"> </span>-o<span class="w"> </span>noatime<span class="w"> </span>peer1:MyGlusterReplica<span class="w"> </span>/media/MyGlusterReplica
+sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>/media/MyGlusterReplica
+sudo<span class="w"> </span>chmod<span class="w"> </span>o+t<span class="w"> </span>/media/MyGlusterReplica
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>seq<span class="w"> </span>-w<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/bin/time<span class="w"> </span>xargs<span class="w"> </span>-P<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;echo Hello File &#39;{}&#39; &gt; /media/MyGlusterReplica/File.&#39;{}&#39;&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clush<span class="w"> </span>-w<span class="w"> </span>root@peer<span class="o">[</span><span class="m">1</span>-4<span class="o">]</span><span class="w"> </span><span class="s1">&#39;ls /MyGlusterReplica/File.* | wc -l&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@peer1:<span class="w"> </span><span class="m">1000</span>
+root@peer3:<span class="w"> </span><span class="m">1000</span>
+root@peer4:<span class="w"> </span><span class="m">1000</span>
+root@peer2:<span class="w"> </span><span class="m">1000</span>
+</pre></div>
+</div>
+<p>Résilience des disques</p>
+<p>Gestion des disques par LVM</p>
+<p>Localiser son fichier</p>
+<p>getfattr  -n trusted.glusterfs.pathinfo -e text /media/MyGluster/File.txt</p>
+<p><a class="reference external" href="https://access.redhat.com/documentation/en-US/Red">https://access.redhat.com/documentation/en-US/Red</a> Hat Storage/3.1/html/Administration Guide/ch26s02.html</p>
+<p>Voir les fichiers accédés</p>
+<p><a class="reference external" href="https://access.redhat.com/documentation/en-US/Red">https://access.redhat.com/documentation/en-US/Red</a> Hat Storage/2.0/html/Administration Guide/sect-User Guide-Monitor Workload-Displaying Volume Status.html</p>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Autres/tpglusterFS.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

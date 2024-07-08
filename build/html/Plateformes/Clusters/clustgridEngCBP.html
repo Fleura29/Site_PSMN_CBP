@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Utilisation du Cluster (et GridEngine) au Centre Blaise Pascal &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="utilisation-du-cluster-et-gridengine-au-centre-blaise-pascal">
+<span id="clustgridcbp"></span><h1>Utilisation du Cluster (et GridEngine) au Centre Blaise Pascal<a class="headerlink" href="#utilisation-du-cluster-et-gridengine-au-centre-blaise-pascal" title="Lien vers cette rubrique">¶</a></h1>
+<div class="note note-imp docutils container">
+<p>Avant de lancer votre calcul, ayez un aperçu de l”<a class="reference external" href="http://styx.cbp.ens-lyon.fr/ganglia/?r=hour&amp;c=Nodes">état des noeuds</a> (site accessible seulement sur site)</p>
+</div>
+<section id="ce-qu-il-faut-retenir">
+<h2>Ce qu’il faut retenir !<a class="headerlink" href="#ce-qu-il-faut-retenir" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>pour se connecter sur la passerelle de cluster :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>&lt;login&gt;@lethe.cbp.ens-lyon.fr
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>pour connaître les noeuds disponibles : <cite>qhost</cite></p></li>
+<li><p>pour connaître l’état des tâches : <cite>qstat</cite></p></li>
+<li><p>pour connaître la listes des queues : <cite>qconf -sql</cite></p></li>
+<li><p>pour lancer une tâche définie par le script GridEngine <cite>MyJob.qsub</cite> : <cite>qsub MyJob.qsub</cite></p></li>
+</ul>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le Centre Blaise Pascal dispose de plateaux techniques, notamment  des noeuds de clusters, destinés :</p>
+<ul class="simple">
+<li><p>à l’initiation au calcul scientifique, notamment <a class="reference external" href="http://en.wikipedia.org/wiki/Message_Passing_Interface">MPI</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/OpenMP">OpenMP</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/CUDA">CUDA</a> <a class="reference external" href="http://en.wikipedia.org/wiki/Opencl">OpenCL</a></p></li>
+<li><p>au développement d’applications dans le domaine du calcul scientifique</p></li>
+<li><p>à l’intégration de démonstrateurs agrégeant des technologies matures dans un ensemble original</p></li>
+<li><p>au passage de l’expérience scientifique (« la paillasse ») à la technologie de production (« le génie des procédés »)</p></li>
+<li><p>à l’exploration de « domaine de vol » des applications scientifiques (paramètres de parallélisation, audit de code)</p></li>
+<li><p>à la réalisation de prototypes pour la mise en place de nouveaux services informatiques</p></li>
+</ul>
+<p>Le Centre Blaise Pascal n’a pas vocation à voir ses infrastructures utilisées :</p>
+<ul class="simple">
+<li><p>pour de longs calculs de production (de l’ordre de la semaine)</p></li>
+<li><p>pour des calculs sur de très grands nombres de coeurs (de l’ordre du millier)</p></li>
+</ul>
+<p>Pour ces deux exigences, le <a class="reference external" href="#">PSMN dispose d’une infrastructure de production</a>.</p>
+<p>Les équipements mis à disposition derrière le soumissionneur GridEngine se composent de 166 noeuds dans 8 groupes différents pour un total de 1416 coeurs et 6016 Go de RAM.</p>
+<p>Sur les 52 noeuds R410 arrivés entre le printemps 2014 et l’automne 2015, tous sont disponibles via le gestionnaire GridEngine.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Cluster</strong></p></th>
+<th class="head"><p><strong>Marque</strong></p></th>
+<th class="head"><p><strong>Modèle</strong></p></th>
+<th class="head"><p><strong>Noeuds</strong></p></th>
+<th class="head"><p><strong>Coeurs /Noeud</strong></p></th>
+<th class="head"><p><strong>RAM /Noeud</strong></p></th>
+<th class="head"><p><strong>Réseau GE</strong></p></th>
+<th class="head"><p><strong>Réseau IB</strong></p></th>
+<th class="head"><p><strong>Total Coeurs</strong></p></th>
+<th class="head"><p><strong>Total RAM</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>r410qdr</strong></p></td>
+<td><p>Dell</p></td>
+<td><p>R410</p></td>
+<td><p>32</p></td>
+<td><p>8</p></td>
+<td><p>24 Go</p></td>
+<td><p>GE</p></td>
+<td><p>IB QDR</p></td>
+<td><p>256</p></td>
+<td><p>1536 Go</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>r410ddr</strong></p></td>
+<td><p>Dell</p></td>
+<td><p>R410</p></td>
+<td><p>4</p></td>
+<td><p>8</p></td>
+<td><p>24 Go</p></td>
+<td><p>GE</p></td>
+<td><p>IB DDR</p></td>
+<td><p>32</p></td>
+<td><p>96 Go</p></td>
+</tr>
+</tbody>
+</table>
+<p>Ces clusters partagent exactement la même image de système, <a class="reference external" href="#">Sidus</a> (pour Single Instance Distributing Universal System), un système complet Debian intégrant tous les paquets scientifiques ainsi que de nombreux paquets de développement.</p>
+</section>
+<section id="acces-aux-clusters">
+<h2>Accès aux clusters<a class="headerlink" href="#acces-aux-clusters" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’accès aux clusters se fait via la passerelle <cite>lethe.cbp.ens-lyon.fr</cite>, par le protocole SSH :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>-X<span class="w"> </span>&lt;login&gt;@lethe.cbp.ens-lyon.fr
+</pre></div>
+</div>
+<p>ou via <a class="reference external" href="http://wiki.x2go.org/doku.php">x2go</a> sur la même adresse. Il est donc préalablement nécessaire d’installer sur sa machine un client SSH ou x2go pour accéder à la passerelle.</p>
+<p>En outre, cette passerelle n’est accessible que de l’intérieur de l’ENS : il est nécessaire de passer par la passerelle de l’ENS <cite>ssh.ens-lyon.fr</cite> ou par le Virtual Private Network par OpenVPN pour y accéder.</p>
+<p>Notons que l’outil x2go permet de paramétrer directement la passerelle <cite>ssh.ens-lyon.fr</cite> et d’obtenir directement le bureau graphique.</p>
+</section>
+<section id="dossiers-personnels">
+<h2>Dossiers personnels<a class="headerlink" href="#dossiers-personnels" title="Lien vers cette rubrique">¶</a></h2>
+<p>Sur la passerelle <cite>lethe</cite>, chaque utilisateur dispose de 4 espaces utilisateurs :</p>
+<ul class="simple">
+<li><p>un local dans <cite>/home/&lt;login&gt;</cite></p></li>
+<li><p>un général dans <cite>/cbp/&lt;login&gt;</cite></p></li>
+<li><p>un rapide dans <cite>/scratch</cite></p></li>
+<li><p>un projet dans <cite>/projects</cite></p></li>
+</ul>
+<p>Le second, <cite>/cbp/&lt;login&gt;/</cite> correspond à l’espace utilisateur de ressources informatiques du CBP lorsqu’il se connecte :</p>
+<ul class="simple">
+<li><p>aux 28 stations de travail de la salle libre service</p></li>
+<li><p>à la station graphique 3D de la petite salle de réunion</p></li>
+<li><p>aux machines à la demande SIDUS (Single Instance Distributing Universal System)</p></li>
+<li><dl class="simple">
+<dt>aux serveurs d’intégration, de compilation, de tests</dt><dd><ul>
+<li><p>sous différentes architectures matérielles : x86_64, AMD64, ARM, (PowerPC, Sparc)</p></li>
+<li><p>sous différents systèmes 32 bits ou 64 bits</p></li>
+<li><p>sous différentes distributions Debian : Lenny, Squeeze, Wheezy, Jessie et Sid</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="parametrage-de-l-acces-aux-grappes-de-calcul">
+<h2>Paramétrage de l’accès aux grappes de calcul<a class="headerlink" href="#parametrage-de-l-acces-aux-grappes-de-calcul" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Création d’une clé publique par <cite>ssh-keygen -t rsa</cite> dans mot de passe</p></li>
+<li><p>Pression 2 fois sur la touche <cite>&lt;Entrée&gt;</cite> pour entrer un mot de passe vide</p></li>
+<li><p>La commande précédente présente une sortie comparable à la suivante :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Generating<span class="w"> </span>public/private<span class="w"> </span>rsa<span class="w"> </span>key<span class="w"> </span>pair.
+Enter<span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>which<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>key<span class="w"> </span><span class="o">(</span>/home/&lt;MonLogin&gt;/.ssh/id_rsa<span class="o">)</span>:
+Enter<span class="w"> </span>passphrase<span class="w"> </span><span class="o">(</span>empty<span class="w"> </span><span class="k">for</span><span class="w"> </span>no<span class="w"> </span>passphrase<span class="o">)</span>:
+Enter<span class="w"> </span>same<span class="w"> </span>passphrase<span class="w"> </span>again:
+Your<span class="w"> </span>identification<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>saved<span class="w"> </span><span class="k">in</span><span class="w"> </span>/home/&lt;MonLogin&gt;/.ssh/id_rsa.
+Your<span class="w"> </span>public<span class="w"> </span>key<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>saved<span class="w"> </span><span class="k">in</span><span class="w"> </span>/home/&lt;MonLogin&gt;/.ssh/id_rsa.pub.
+The<span class="w"> </span>key<span class="w"> </span>fingerprint<span class="w"> </span>is:
+9b:96:69:95:29:0e:0e:ff:a8:77:ce:ca:c5:3b:92:55<span class="w"> </span>&lt;MonLogin&gt;@lethe
+The<span class="w"> </span>key<span class="err">&#39;</span>s<span class="w"> </span>randomart<span class="w"> </span>image<span class="w"> </span>is:
++---<span class="o">[</span>RSA<span class="w"> </span><span class="m">2048</span><span class="o">]</span>----+
+<span class="p">|</span><span class="w">                 </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>.<span class="w"> </span>.<span class="w">             </span><span class="p">|</span>
+<span class="p">|</span>.<span class="w"> </span>.<span class="w"> </span>.<span class="w">            </span><span class="p">|</span>
+<span class="p">|</span>.<span class="w">    </span>.E<span class="w">    </span>o<span class="w">     </span><span class="p">|</span>
+<span class="p">|</span>.<span class="w"> </span>.<span class="w"> </span>o..<span class="w"> </span>S<span class="w"> </span>+<span class="w">      </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>.<span class="w"> </span><span class="o">=</span>.o<span class="w"> </span>o<span class="w"> </span>B<span class="w">       </span><span class="p">|</span>
+<span class="p">|</span><span class="w">   </span>o*<span class="w"> </span>.<span class="w"> </span>O<span class="w">        </span><span class="p">|</span>
+<span class="p">|</span><span class="w">  </span>o+..<span class="w"> </span>o<span class="w">         </span><span class="p">|</span>
+<span class="p">|</span><span class="w">  </span>....<span class="w">           </span><span class="p">|</span>
++-----------------+
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Copie de la clé publique comme clé d’autorisation de connexion sans mot de passe :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/.ssh
+cp<span class="w"> </span>id_rsa.pub<span class="w"> </span>authorized_keys
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Test de connexion locale :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>lethe
+</pre></div>
+</div>
+</section>
+<section id="acces-aux-ressources">
+<h2>Accès aux ressources<a class="headerlink" href="#acces-aux-ressources" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’utilisation de <a class="reference external" href="http://gridscheduler.sourceforge.net/">GridEngine</a> permet de :</p>
+<ul class="simple">
+<li><p>connaître les ressources disponibles : commande <cite>qhost</cite> et ses options</p></li>
+<li><p>connaître l’état des calculs en cours : commande <cite>qstat</cite> et ses options</p></li>
+<li><p>lancer un calcul autonome (sous forme de batch) : commande <cite>qsub</cite> et ses options</p></li>
+</ul>
+<section id="connaitre-les-ressources-disponibles">
+<h3>Connaître les ressources disponibles<a class="headerlink" href="#connaitre-les-ressources-disponibles" title="Lien vers cette rubrique">¶</a></h3>
+<p>La commande <cite>qhost</cite> permet de connaître l’état des noeuds gérés par le gestionnaire de tâches. Chaque ressource représente un coeur. Il existe donc plus entrées par noeud.</p>
+<section id="qhost-pour-toute-l-infrastructure">
+<h4>« qhost » pour toute l’infrastructure<a class="headerlink" href="#qhost-pour-toute-l-infrastructure" title="Lien vers cette rubrique">¶</a></h4>
+<p>La commande  fournit en sortie :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>HOSTNAME<span class="w">                </span>ARCH<span class="w">         </span>NCPU<span class="w">  </span>LOAD<span class="w">  </span>MEMTOT<span class="w">  </span>MEMUSE<span class="w">  </span>SWAPTO<span class="w">  </span>SWAPUS
+-------------------------------------------------------------------------------
+global<span class="w">                  </span>-<span class="w">               </span>-<span class="w">     </span>-<span class="w">       </span>-<span class="w">       </span>-<span class="w">       </span>-<span class="w">       </span>-
+c6100gpu-1.cluster.zone<span class="w"> </span>lx26-amd64<span class="w">     </span><span class="m">24</span><span class="w">     </span>-<span class="w">   </span><span class="m">47</span>.3G<span class="w">       </span>-<span class="w">     </span><span class="m">0</span>.0<span class="w">       </span>-
+...<span class="w"> </span>&lt;snip&gt;&lt;snip&gt;
+c6100gpu-4.cluster.zone<span class="w"> </span>lx26-amd64<span class="w">     </span><span class="m">24</span><span class="w">     </span>-<span class="w">   </span><span class="m">47</span>.3G<span class="w">       </span>-<span class="w">     </span><span class="m">0</span>.0<span class="w">       </span>-
+lethe.cluster.zone<span class="w">      </span>lx26-amd64<span class="w">      </span><span class="m">4</span><span class="w">  </span><span class="m">0</span>.31<span class="w">   </span><span class="m">15</span>.7G<span class="w">    </span><span class="m">3</span>.0G<span class="w">   </span><span class="m">17</span>.2G<span class="w">    </span><span class="m">2</span>.9M
+r410node1.cluster.zone<span class="w">  </span>lx26-amd64<span class="w">     </span><span class="m">16</span><span class="w">     </span>-<span class="w">   </span><span class="m">23</span>.6G<span class="w">       </span>-<span class="w">     </span><span class="m">0</span>.0<span class="w">       </span>-
+...<span class="w"> </span>&lt;snip&gt;&lt;snip&gt;
+r410node9.cluster.zone<span class="w">  </span>lx26-amd64<span class="w">     </span><span class="m">16</span><span class="w">  </span><span class="m">0</span>.01<span class="w">   </span><span class="m">23</span>.6G<span class="w">  </span><span class="m">303</span>.9M<span class="w">     </span><span class="m">0</span>.0<span class="w">     </span><span class="m">0</span>.0
+x41z1.cluster.zone<span class="w">      </span>lx26-amd64<span class="w">      </span><span class="m">8</span><span class="w">     </span>-<span class="w">   </span><span class="m">31</span>.5G<span class="w">       </span>-<span class="w">     </span><span class="m">0</span>.0<span class="w">       </span>-
+...<span class="w"> </span>&lt;snip&gt;&lt;snip&gt;
+x41z9.cluster.zone<span class="w">      </span>lx26-amd64<span class="w">      </span><span class="m">8</span><span class="w">  </span><span class="m">2</span>.16<span class="w">   </span><span class="m">13</span>.7G<span class="w">  </span><span class="m">286</span>.5M<span class="w">     </span><span class="m">0</span>.0<span class="w">     </span><span class="m">0</span>.0
+&lt;/code&gt;
+</pre></div>
+</div>
+</section>
+<section id="qhost-noeud-pour-un-noeud-unique">
+<h4>« qhost &lt;noeud&gt; » pour un noeud unique<a class="headerlink" href="#qhost-noeud-pour-un-noeud-unique" title="Lien vers cette rubrique">¶</a></h4>
+<p>Par exemple, la commande <cite>qhost x41z7.cluster.zone</cite> pour examiner les ressources offertes par le noeud <strong>x41z7</strong> sort :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>HOSTNAME<span class="w">                </span>ARCH<span class="w">         </span>NCPU<span class="w">  </span>LOAD<span class="w">  </span>MEMTOT<span class="w">  </span>MEMUSE<span class="w">  </span>SWAPTO<span class="w">  </span>SWAPUS
+-------------------------------------------------------------------------------
+global<span class="w">                  </span>-<span class="w">               </span>-<span class="w">     </span>-<span class="w">       </span>-<span class="w">       </span>-<span class="w">       </span>-<span class="w">       </span>-
+x41z7.cluster.zone<span class="w">      </span>lx26-amd64<span class="w">      </span><span class="m">8</span><span class="w">  </span><span class="m">0</span>.05<span class="w">   </span><span class="m">31</span>.5G<span class="w">  </span><span class="m">342</span>.7M<span class="w">     </span><span class="m">0</span>.0<span class="w">     </span><span class="m">0</span>.0
+&lt;/code&gt;
+
+Donc,<span class="w"> </span>le<span class="w"> </span>noeud<span class="w"> </span>x41z7<span class="w"> </span>offre<span class="w"> </span><span class="m">8</span><span class="w"> </span>CPU<span class="w"> </span>et<span class="w"> </span>une<span class="w"> </span>mémoire<span class="w"> </span>vive<span class="w"> </span>de<span class="w"> </span><span class="m">31</span>.5<span class="w"> </span>Go.
+</pre></div>
+</div>
+</section>
+<section id="qconf-pour-lister-toutes-les-grappes">
+<h4>qconf pour lister toutes les grappes<a class="headerlink" href="#qconf-pour-lister-toutes-les-grappes" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour lister toutes les grappes de calcul, on applique la commande <cite>qconf -shgrpl</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@c6100
+@r410
+@x41z
+</pre></div>
+</div>
+</section>
+<section id="qconf-shhrp-grappe-pour-lister-les-noeuds-d-une-grappe-particuliere">
+<h4>« qconf -shhrp &#64;&lt;grappe&gt; » pour lister les noeuds d’une grappe particulière<a class="headerlink" href="#qconf-shhrp-grappe-pour-lister-les-noeuds-d-une-grappe-particuliere" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour lister les noeuds de la grappe <strong>x41z</strong>, on applique la commande <cite>qconf -shgrp &#64;x41z</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>group_name<span class="w"> </span>@x41z
+hostlist<span class="w"> </span>x41z1.cluster.zone<span class="w"> </span>x41z10.cluster.zone<span class="w"> </span>x41z11.cluster.zone<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>x41z12.cluster.zone<span class="w"> </span>x41z13.cluster.zone<span class="w"> </span>x41z14.cluster.zone<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>x41z15.cluster.zone<span class="w"> </span>x41z16.cluster.zone<span class="w"> </span>x41z2.cluster.zone<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>x41z3.cluster.zone<span class="w"> </span>x41z4.cluster.zone<span class="w"> </span>x41z5.cluster.zone<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>x41z6.cluster.zone<span class="w"> </span>x41z7.cluster.zone<span class="w"> </span>x41z8.cluster.zone<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>x41z9.cluster.zone
+</pre></div>
+</div>
+</section>
+<section id="qconf-sql-pour-lister-les-queues-de-calcul">
+<h4>« qconf -sql » pour lister les queues de calcul<a class="headerlink" href="#qconf-sql-pour-lister-les-queues-de-calcul" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour lister toutes les queues, on applique la commande <cite>qconf -sql</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>c6100
+r410
+x41z
+</pre></div>
+</div>
+</section>
+<section id="qconf-sq-queue-pour-detailler-une-queue">
+<h4>« qconf -sq &lt;Queue&gt; » pour détailler une queue<a class="headerlink" href="#qconf-sq-queue-pour-detailler-une-queue" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour lister toutes les queues, on applique la commande <cite>qconf -sq x41z</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>qname<span class="w">                 </span>x41z
+hostlist<span class="w">              </span>@x41z
+seq_no<span class="w">                </span><span class="m">0</span>
+load_thresholds<span class="w">       </span><span class="nv">np_load_avg</span><span class="o">=</span><span class="m">1</span>.75
+suspend_thresholds<span class="w">    </span>NONE
+nsuspend<span class="w">              </span><span class="m">1</span>
+suspend_interval<span class="w">      </span><span class="m">00</span>:05:00
+priority<span class="w">              </span><span class="m">0</span>
+min_cpu_interval<span class="w">      </span><span class="m">00</span>:05:00
+processors<span class="w">            </span>UNDEFINED
+qtype<span class="w">                 </span>BATCH<span class="w"> </span>INTERACTIVE
+ckpt_list<span class="w">             </span>NONE
+pe_list<span class="w">               </span>sequential<span class="w"> </span>x41zhybrid
+rerun<span class="w">                 </span>FALSE
+slots<span class="w">                 </span><span class="m">8</span>
+tmpdir<span class="w">                </span>/tmp
+shell<span class="w">                 </span>/bin/bash
+prolog<span class="w">                </span>NONE
+epilog<span class="w">                </span>NONE
+shell_start_mode<span class="w">      </span>posix_compliant
+starter_method<span class="w">        </span>NONE
+suspend_method<span class="w">        </span>NONE
+resume_method<span class="w">         </span>NONE
+terminate_method<span class="w">      </span>NONE
+notify<span class="w">                </span><span class="m">00</span>:00:60
+owner_list<span class="w">            </span>NONE
+user_lists<span class="w">            </span>NONE
+xuser_lists<span class="w">           </span>NONE
+subordinate_list<span class="w">      </span>NONE
+complex_values<span class="w">        </span>NONE
+projects<span class="w">              </span>NONE
+xprojects<span class="w">             </span>NONE
+calendar<span class="w">              </span>NONE
+initial_state<span class="w">         </span>default
+s_rt<span class="w">                  </span>INFINITY
+h_rt<span class="w">                  </span>INFINITY
+s_cpu<span class="w">                 </span>INFINITY
+h_cpu<span class="w">                 </span>INFINITY
+s_fsize<span class="w">               </span>INFINITY
+h_fsize<span class="w">               </span>INFINITY
+s_data<span class="w">                </span>INFINITY
+h_data<span class="w">                </span>INFINITY
+s_stack<span class="w">               </span>INFINITY
+h_stack<span class="w">               </span>INFINITY
+s_core<span class="w">                </span>INFINITY
+h_core<span class="w">                </span>INFINITY
+s_rss<span class="w">                 </span>INFINITY
+h_rss<span class="w">                 </span>INFINITY
+s_vmem<span class="w">                </span>INFINITY
+h_vmem<span class="w">                </span>INFINITY
+</pre></div>
+</div>
+</section>
+<section id="qconf-spl-pour-lister-tous-les-environnements-paralleles">
+<h4>« qconf -spl » pour lister tous les environnements parallèles<a class="headerlink" href="#qconf-spl-pour-lister-tous-les-environnements-paralleles" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour lister toutes les queues, on applique la commande <cite>qconf -spl</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>r410hybrid
+sequential
+x41zhybrid
+</pre></div>
+</div>
+</section>
+<section id="qconf-sp-environnement-parallele-pour-detailler-un-environnement-parallele">
+<h4>« qconf -sp &lt;Environnement Parallèle&gt; » pour détailler un environnement parallèle<a class="headerlink" href="#qconf-sp-environnement-parallele-pour-detailler-un-environnement-parallele" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour lister toutes les queues, on applique la commande <cite>qconf -sp x41zhybrid</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pe_name<span class="w">            </span>x41zhybrid
+slots<span class="w">              </span><span class="m">128</span>
+user_lists<span class="w">         </span>NONE
+xuser_lists<span class="w">        </span>NONE
+start_proc_args<span class="w">    </span>/bin/true
+stop_proc_args<span class="w">     </span>/bin/true
+allocation_rule<span class="w">    </span><span class="m">8</span>
+control_slaves<span class="w">     </span>TRUE
+job_is_first_task<span class="w">  </span>TRUE
+urgency_slots<span class="w">      </span>min
+accounting_summary<span class="w"> </span>TRUE
+</pre></div>
+</div>
+</section>
+</section>
+<section id="connaitre-l-etat-des-calculs-en-cours-qstat">
+<h3>Connaître l’état des calculs en cours qstat<a class="headerlink" href="#connaitre-l-etat-des-calculs-en-cours-qstat" title="Lien vers cette rubrique">¶</a></h3>
+<section id="pour-connaitre-l-etat-general">
+<h4>Pour connaître l’état général<a class="headerlink" href="#pour-connaitre-l-etat-general" title="Lien vers cette rubrique">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>qstat
+</pre></div>
+</div>
+</section>
+<section id="pour-avoir-l-information-sur-une-tache-particuliere">
+<h4>Pour avoir l’information sur une tâche particulière<a class="headerlink" href="#pour-avoir-l-information-sur-une-tache-particuliere" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour connaître toutes les informations sur la tâche 9, par exemple, <cite>qstat -j 9</cite></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+</pre></div>
+</div>
+<p>On voit ainsi que la tâche a commencé le 5 février 2013 à 15h51 pour se terminer à 15h58 et qu’elle s’est exécutée sur 4 noeuds x41z.</p>
+</section>
+</section>
+<section id="lancer-un-calcul-autonome-mode-batch">
+<h3>Lancer un calcul autonome (mode batch)<a class="headerlink" href="#lancer-un-calcul-autonome-mode-batch" title="Lien vers cette rubrique">¶</a></h3>
+<p>Il est possible de lancer un batch en précisant les paramètres (queue, environnement parallèle, etc) mais il est nécessaire de toutes façons de créer un script shell.</p>
+<p>Autant créer un script de lancement GridEngine lequel sera utilisé pour déclarer tout d’un bloc.</p>
+<section id="lancer-un-batch-sequentiel">
+<h4>Lancer un batch séquentiel<a class="headerlink" href="#lancer-un-batch-sequentiel" title="Lien vers cette rubrique">¶</a></h4>
+<p>Le propre d’un programme séquentiel est qu’il ne peut pas se distribuer sur plusieurs noeuds.</p>
+<p>Nous voulons exécuter le programme MPI <cite>MyJob</cite> sur 1 seul coeur, sur la queue des x41z.</p>
+<p>Nous voulons que le nom de fichiers de de sortie soit préfixés de <cite>MyJob</cite>.</p>
+<p>Le lancement de batch se fait par :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>qsub<span class="w"> </span>MyJob.qsub
+</pre></div>
+</div>
+<p>Le script de batch <cite>MyJob.qsub</cite> est le suivant :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Nom du programme pour les sorties (sortie standard et sortie erreur Posix)</span>
+<span class="c1">#$ -N MyJob</span>
+<span class="c1"># Nom de la queue (ici, la queue des x41z)</span>
+<span class="c1">#$ -q x41z</span>
+<span class="c1"># Messages a expedier : il est expedie lorsqu&#39;il demarre, termine ou avorte</span>
+<span class="c1">#$ -m bea</span>
+<span class="c1"># specify your email address</span>
+<span class="c1">#$ -M &lt;prenom&gt;.&lt;nom&gt;@ens-lyon.fr</span>
+<span class="c1">#$ -cwd</span>
+<span class="c1">#$ -V</span>
+<span class="c1"># Lancement du programme</span>
+/usr/bin/time<span class="w"> </span>./MyJob
+<span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
+</pre></div>
+</div>
+</section>
+<section id="lancer-un-batch-parallele">
+<h4>Lancer un batch parallèle<a class="headerlink" href="#lancer-un-batch-parallele" title="Lien vers cette rubrique">¶</a></h4>
+<p>Nous voulons exécuter le programme MPI <cite>MyJob</cite> sur 32 coeurs sur la queue des x41z.</p>
+<p>Nous voulons que le nom de fichiers de de sortie soit préfixés de <cite>MyJob</cite>.</p>
+<p>Nous créons le script suivant sous le nom (très original) de <cite>MyJob.qsub</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Nom du programme pour les sorties (sortie standard et sortie erreur Posix)</span>
+<span class="c1">#$ -N MyJob</span>
+<span class="c1"># Nom de la queue (ici, la queue des x41z)</span>
+<span class="c1">#$ -q x41z</span>
+<span class="c1"># Nom de l&#39;environnement parallèle avec le nombre de slots : x41zhybrid avec 32 ressources</span>
+<span class="c1">#$ -pe x41zhybrid 32</span>
+<span class="c1"># Messages a expedier : il est expedie lorsqu&#39;il demarre, termine ou avorte</span>
+<span class="c1">#$ -m bea</span>
+<span class="c1"># Adresse electronique d&#39;expedition</span>
+<span class="c1">#$ -M &lt;prenom&gt;.&lt;nom&gt;@ens-lyon.fr</span>
+<span class="c1">#$ -cwd</span>
+<span class="c1">#$ -V</span>
+/usr/bin/time<span class="w"> </span>mpirun.openmpi<span class="w"> </span>-np<span class="w"> </span><span class="m">32</span><span class="w"> </span>-mca<span class="w"> </span>btl<span class="w"> </span>self,openib,sm<span class="w"> </span>./MyJob
+<span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
+</pre></div>
+</div>
+<p>Le programme se lance en utilisant la commande de soumission <cite>qsub ./MyJob.qsub</cite>.</p>
+<p>La commande d’examen des tâches en cours <cite>qstat</cite> permet ensuite de savoir que le job a bien été pris en compte.</p>
+</section>
+<section id="recuperer-les-informations-sur-ses-jobs-executes">
+<h4>Récupérer les informations sur ses jobs exécutés<a class="headerlink" href="#recuperer-les-informations-sur-ses-jobs-executes" title="Lien vers cette rubrique">¶</a></h4>
+<p>Dans le fichier de batch (celui qui définit les commandes à exécuter avec la queue, l’environnement, etc…) apparait le paramètre préfixé de <cite>-N</cite>. Ce paramètre est très utile parce que, comme le précise les exemples ci-dessus, les sorties POSIX <cite>stdout</cite> et <cite>stderr</cite> sont sauvegardées dans ces fichiers.</p>
+<p>Ainsi, en exécutant l’exemple ci-dessus, si son numéro de job était le 528491, les fichiers de sortie seraient les suivants :</p>
+<ul class="simple">
+<li><p><cite>MyJob.o528491</cite> pour la sortie standard <cite>stdout</cite>, l’ensemble des messages du terminal</p></li>
+<li><p><cite>MyJob.e528491</cite> pour l’erreur standard <cite>stderr</cite>, l’ensemble des messages en erreur du terminal</p></li>
+</ul>
+<p>En fouillant dans ces fichiers, il est possible de voir l’évolution de l’exécution de son job et ses erreurs au besoin.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Clusters/clustgridEngCBP.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

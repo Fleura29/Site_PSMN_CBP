@@ -5,16 +5,13 @@ Signaler un problème
 
 ou poser une question...
 
-.. container:: text-center
+.. container:: note note-imp
 
-    .. container:: d-inline-block bg-warning-subtle pt-3 rounded fs-13
+    Seuls les emails **professionnels**, en relation avec les laboratoires membres, sont acceptés (pas de gmail, hotmail, yahoo…). 
 
-        Seuls les emails **professionnels**, en relation avec les laboratoires membres, sont acceptés (pas de gmail, hotmail, yahoo…). 
-
-    .. container:: d-inline-block bg-body-secondary pt-3 my-3 rounded fs-13
-          
-        **N'oubliez pas de préciser, quand vous les connaissez, le job_id, le nom de la machine, du cluster et tout ce qui est pertinent pour régler votre problème.**
-
+.. container:: note note-info
+        
+    **N'oubliez pas de préciser, quand vous les connaissez, le job_id, le nom de la machine, du cluster et tout ce qui est pertinent pour régler votre problème.**
 
 .. container:: border-form
 
@@ -56,14 +53,14 @@ ou poser une question...
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control textArea" id="textAreaCommentaire" name="commentaire"></textarea>
+                <textarea class="form-control textarea" id="textAreaCommentaire" name="commentaire"></textarea>
                 <label for="textAreaCommentaire">Commentaire</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question2"></label>
+                <label class="me-1" for="human" id="human-question"></label>
                 <input id="human-answer" type="text"/> 
             </div>
 
@@ -71,7 +68,7 @@ ou poser une question...
             <script src="../../_static/Formulaires/Formulaires.js"></script>
 
             <div class="text-center mt-2">
-                <button class="btn btn-submit mb-3" type="submit" value="submit" >Soumettre</button>
+                <button class="btn btn-submit mb-3" type="submit" value="submit">Soumettre</button>
             </div>
         </form>   
 

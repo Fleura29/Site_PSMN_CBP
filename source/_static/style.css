@@ -134,6 +134,9 @@ a:hover{
     .dropdown-menu{
         border: none;
     }
+    .note{
+        width: 100% !important;
+    }
 }
 
 @media screen and (min-width:992) and (max-width:1058px){
@@ -147,6 +150,7 @@ a:hover{
 h1{
     font-size: 1.7rem;
     text-decoration: underline; 
+    margin-bottom: 1rem !important;
 }
 
 h2{
@@ -173,6 +177,7 @@ h3{
 h4{
     font-size: 1rem;
     font-weight: bold;
+    margin-left: 1rem;
 }
 
 /*---------- Taille de police ----------*/
@@ -293,6 +298,11 @@ th, td{
     font-weight: bolder;
 }
 
+.color-bold-red{
+    color: red;
+    font-weight: bolder;
+}
+
 /*---------- Ajouts Sphinx ----------*/
 
 .highlighted{
@@ -307,6 +317,55 @@ a.headerlink{
     display: none;
 }
 
+/*---------- Note ----------*/
+
+.note{ /* rouge */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.1rem;
+    border-radius: var(--bs-border-radius);
+    font-size: 13px;
+    width: 65%;
+}
+
+/*
+.note ul{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    text-align: initial;
+}
+
+.note ul ul{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: initial;
+}*/
+
+.note-important{ /* rouge */
+    background-color: var(--bs-danger-bg-subtle);
+}
+
+.note-info{ /* gris */
+    background-color: var(--bs-secondary-bg-subtle);
+}
+
+.note-tip{ /* vert */
+    background-color: var(--bs-success-bg-subtle);
+}
+
+.note-imp{ /* jaune */
+    background-color: var(--bs-warning-bg-subtle);
+}
+
+.note-note{ /* bleu */
+    background-color: var(--bs-primary-bg-subtle);
+}
+
 /*---------- Autres ----------*/
 
 .border-dashed{
@@ -316,10 +375,20 @@ a.headerlink{
     padding-top: 0.7rem;
 }
 
+.highlight-bash > .highlight > pre{
+    border: dashed #E69645 1px;
+    margin-bottom: 10px;
+    padding: 0.7rem;
+}
+
 .cursor{
     cursor: pointer;
 }
 
 .border-top{
     border-top: 2px solid #484848 !important;
+}
+
+ul p{
+    margin-bottom: 0.1rem;
 }

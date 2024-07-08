@@ -1,3 +1,5 @@
+.. _plattech:
+
 Plateaux techniques
 ===================
 

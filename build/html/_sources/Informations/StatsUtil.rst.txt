@@ -1,3 +1,5 @@
+.. _statsutil:
+
 Statistiques d'utilisation des clusters
 =======================================
 

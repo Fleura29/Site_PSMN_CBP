@@ -1,3 +1,5 @@
+.. _news:
+
 Fil des news
 ============
 

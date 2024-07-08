@@ -5,7 +5,7 @@ Demande d'installation ou de mise à jour d'un logiciel
 
    <br>
 
-.. container:: text-center d-inline-block bg-warning-subtle pt-3 mb-3 rounded fs-13
+.. container:: note note-imp
 
     **IMPORTANT NOTICE** |br|
     We (psmn administrators) **DO NOT** register for softwares. |br|

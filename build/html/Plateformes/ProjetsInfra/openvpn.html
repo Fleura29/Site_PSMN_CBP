@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Création d’un serveur OpenVPN &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="creation-d-un-serveur-openvpn">
+<span id="openvpn"></span><h1>Création d’un serveur OpenVPN<a class="headerlink" href="#creation-d-un-serveur-openvpn" title="Lien vers cette rubrique">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique">¶</a></h2>
+<p>Dans le cadre de la pandémie grippale de 2009, les établissements de l’enseignement supérieur ont imposé des plans de continuité d’activité.</p>
+<p>Pour proposer aux personnels administratifs un accès aux ressources de l’établissement leur permettant d’effectuer les missions décidées comme stratégiques, il a été proposé de généraliser l’usage de VPN. Cependant, si les établissements disposent de VPN de type concentrateur VPN IPsec, ces derniers sont rarement dimensionnés pour absorber plusieurs dizaines voire centaines d’utilisateurs.</p>
+<p>Il apparaît indispensable de pouvoir proposer une alternative à ces plate-formes souvent onéreuses pour faire face rapidement à la pandémie. La solution décrite ci-après utilise une solution complètement libre et ouverte, basée sur OpenVPN.</p>
+</section>
+<section id="cqqcoqp">
+<h2>CQQCOQP<a class="headerlink" href="#cqqcoqp" title="Lien vers cette rubrique">¶</a></h2>
+<p>Comme tout projet qui se respecte, et pour définir sa portée plus que le simple tryptique « où on en est ? Où on va ? Comment on y va ? », il est préférable de se rapprocher de l’allographe <a class="reference external" href="http://fr.wikipedia.org/wiki/CQQCOQP">http://fr.wikipedia.org/wiki/CQQCOQP</a> .</p>
+<ul class="simple">
+<li><p><strong>Pourquoi</strong> : permettre un accès VPN complet en appui de l’accès VPN IPsec déjà disponible</p></li>
+<li><p><strong>Quoi</strong> : étudier le déploiement d’une passerelle OpenVPN et vérifier que les clients des 3 plates-formes classiques du campus (Linux, MacOSX et Windows) peuvent bien l’utiliser</p></li>
+<li><p><strong>Quand</strong> : rendre opérationnelle cette nouvelle passerelle avant que la pandémie n’oblige les personnels à organiser le télétravail</p></li>
+<li><p><strong>Qui</strong> : la totalité des personnes disposant d’un compte à l’ENS-Lyon doit pouvoir utiliser cette passerelle. L’authentification doit utiliser les modes couramment utilisés (Ldap)</p></li>
+<li><p><strong>Combien</strong> : l’utilisation de logiciels libres étant privilégiée dans le déploiement de nouveaux outils, le coût se limitera à une machine virtuelle hébergée sur un des Dom0 et le temps passé à son élaboration</p></li>
+<li><p><strong>Où</strong> : la passerelle devra être accessible de partout sur Internet. Le client OpenVPN sera installé à discrétion sur tous les postes utilisateurs nécessitant cet accès.</p></li>
+<li><p><strong>Comment</strong> : les phases classiques seront utilisées dans l’élaboration de ce projet : prototypage sur une machine virtuelle de l’ENS, étude de l’accessibilité des différents clients sur les différentes plate-formes, proposition de la plate-forme en test, déploiement sur une plate-forme de production, test de montée en charge, publication de la disponibilité.</p></li>
+</ul>
+</section>
+<section id="pourquoi-openvpn">
+<h2>Pourquoi OpenVPN<a class="headerlink" href="#pourquoi-openvpn" title="Lien vers cette rubrique">¶</a></h2>
+<p>La solution de VPN OpenVPN se distingue des autres solutions par la nécessité d’installer un composant logiciel complémentaire.</p>
+<p>Si cette caractéristique peut apparaître à certains comme un inconvénient, OpenVPN a cependant bien des avantages :</p>
+<ul class="simple">
+<li><p>nécessitant uniquement les librairies OpenSSL pour le chiffrement</p></li>
+<li><p>portable sur toutes les plates-formes systèmes</p></li>
+<li><p>fonctionnant soit en UDP/IP, soit en TCP/IP sur un port réservé et publié dans une RFC (le port 1194)</p></li>
+<li><p>permettant le fonctionnement en tunnel (TUN) ou en pont Ethernet (TAP)</p></li>
+<li><p>s’authentifiant grâce à PAM donc permettant presque toutes les authentifications possibles.</p></li>
+</ul>
+</section>
+<section id="liens-utiles">
+<h2>Liens Utiles<a class="headerlink" href="#liens-utiles" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Le site source : <a class="reference external" href="http://www.openvpn.net/">http://www.openvpn.net/</a></p></li>
+<li><p>Le site Debian du paquet pour la distribution éponyme : <a class="reference external" href="http://packages.debian.org/search?keywords=openvpn">http://packages.debian.org/search?keywords=openvpn</a></p></li>
+<li><p>Le site de la version pour MacOSX avec une interface graphique : <a class="reference external" href="http://code.google.com/p/tunnelblick/">http://code.google.com/p/tunnelblick/</a></p></li>
+<li><p>Le site de la version pour Windows avec une interface graphique : <a class="reference external" href="http://openvpn.se/">http://openvpn.se/</a></p></li>
+<li><p>Un site présentant une expérience de configuration <a class="reference external" href="http://www.vogelweith.com/debian_server/10_openvpn.php">VogelWeith</a></p></li>
+</ul>
+</section>
+<section id="configuration-generale-du-serveur">
+<h2>Configuration générale du serveur<a class="headerlink" href="#configuration-generale-du-serveur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les spécifications fonctionnelles suivantes doivent être respectées :</p>
+<ul class="simple">
+<li><p>la totalité du trafic réseau transite via le tunnel VPN une fois son activation</p></li>
+<li><p>l’authentification utilisera le tuple identifiant/mot de passe traditionnel</p></li>
+<li><p>il sera possible de tester la validité de la configuration lors d’une installation sur site facilement.</p></li>
+</ul>
+<p>Les spécifications logicielles et matérielles suivantes seront utilisées :</p>
+<ul>
+<li><p>favoriser le COTS : <em>Component On The Shelf</em> (composant sur étagère…)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>utilisation d’une plate-forme virtuelle DomU sur Xen sur une Debian Lenny</p></li>
+<li><p>utilisation du paquet Debian standard OpenVPN</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>aménager de la configuration</p>
+<blockquote>
+<div><ul>
+<li><p>utilisation de la classe non-routée 10.140.77.0/24 pour les tunnels des clients VPN</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>il est nécessaire de choisir une classe ne permettant pas d’ambiguité avec les classes généralement utilisées sur les sites : proscrire donc les 192.168.0.0/24, les 172.16.0.0/24 ou les 10.0.0.0/24</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>utilisation d’un NAT avec Masquerading : tout le trafic des machines clientes apparaîtra comme venant de la passerelle</p></li>
+<li><p>déclaration d’une interface Ethernet correspondant à la classe utilisée dans le tunnel pour maintenir l’interface visible</p></li>
+<li><p>utilisation de l’authentification PAM pour la passerelle OpenVPN</p></li>
+<li><p>utilisation du protocole Ldap pour l’authentification PAM</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<section id="installation-de-l-autorite-de-certification-de-globalsign">
+<h3>Installation de l’autorité de certification de GlobalSign<a class="headerlink" href="#installation-de-l-autorite-de-certification-de-globalsign" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Importation du fichier <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/GlobalSign_Educational_CA.crt">GlobalSign_Educational_CA.crt</a> dans le document : <strong>/etc/ssl/certs/GlobalSign_Educational_CA.crt</strong></p></li>
+<li><p>Changement des droits sur le fichier :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>/etc/ssl/certs/GlobalSign_Educational_CA.crt
+</pre></div>
+</div>
+</section>
+<section id="configuration-de-openvpn">
+<h3>Configuration de OpenVPN<a class="headerlink" href="#configuration-de-openvpn" title="Lien vers cette rubrique">¶</a></h3>
+</section>
+<section id="installation-de-openvpn">
+<h3>Installation de OpenVPN<a class="headerlink" href="#installation-de-openvpn" title="Lien vers cette rubrique">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt-get<span class="w"> </span>install<span class="w"> </span>openvpn
+</pre></div>
+</div>
+<p>La configuration de OpenVPN se compose des fichiers de configuration suivants :</p>
+<ul>
+<li><p><strong>dh1024.pem</strong> : fichier de paramètre Diffie Hellman propre au serveur, généré par la commande suivante :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openssl<span class="w"> </span>dhparam<span class="w"> </span>-out<span class="w"> </span>dh1024.pem<span class="w"> </span><span class="m">1024</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>openvpn.ens-lyon.fr.key</strong> : clé OpenSSL générée localement par le RSSI</p></li>
+<li><p><strong>openvpn.ens-lyon.fr.pem</strong> : certificat signé par GlobalSign</p></li>
+<li><p><strong>cle_serveur.key</strong> : clé symétrique générée par</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openvpn<span class="w"> </span>--genkey<span class="w"> </span>--secret<span class="w"> </span><span class="m">2009</span>.key
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>openvpn.conf</strong> : configuration générale du serveur</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># OpenVPN pour l&#39;acces a l&#39;entite</span>
+<span class="c1"># Adresse IP locale</span>
+<span class="nb">local</span><span class="w"> </span>&lt;Mon&gt;.&lt;IP&gt;.&lt;Quatre&gt;.&lt;Octets&gt;
+<span class="c1"># port d&#39;attaque de la passerelle, fourni par la RFC</span>
+port<span class="w"> </span><span class="m">1194</span>
+<span class="c1"># utilisation du VPN de type IP (pas le tap de type Ethernet)</span>
+dev<span class="w"> </span>tun0
+<span class="c1"># indication de l&#39;utilisation en serveur</span>
+tls-server
+mode<span class="w"> </span>server
+<span class="c1"># configuration de la liaison tunnel PPP entre le serveur et le client</span>
+ifconfig<span class="w"> </span><span class="m">10</span>.140.77.3<span class="w"> </span><span class="m">10</span>.140.77.4
+<span class="c1"># domaine de distributions des adresses IP</span>
+ifconfig-pool<span class="w"> </span><span class="m">10</span>.140.77.5<span class="w"> </span><span class="m">10</span>.140.77.254
+script-security<span class="w"> </span><span class="m">2</span>
+<span class="c1"># definition de l&#39;authentification PAM</span>
+plugin<span class="w"> </span>/usr/lib/openvpn/openvpn-auth-pam.so<span class="w"> </span>openvpn
+<span class="c1"># utilisation de l&#39;identifiant comme login</span>
+username-as-common-name
+client-cert-not-required
+<span class="c1"># certificat propre au serveur Diffie Hellman</span>
+<span class="c1"># generation par : openssl dhparam -out dh1024.pem 1024</span>
+dh<span class="w"> </span>/etc/openvpn/dh1024.pem
+<span class="c1"># pour l&#39;instant, on utilise une cle symetrique</span>
+<span class="c1"># generation par : openvpn --genkey --secret cle_serveur.key</span>
+tls-auth<span class="w"> </span>/etc/openvpn/cle_serveur.key<span class="w"> </span><span class="m">0</span>
+<span class="c1"># definition de l&#39;autorite de certification</span>
+ca<span class="w"> </span>/etc/ssl/certs/GlobalSign_Educational_CA.crt
+<span class="c1"># definition du certificat signe</span>
+cert<span class="w"> </span>/etc/openvpn/openvpn.chez-moi.fr.pem
+<span class="c1"># definition de la cle du serveur</span>
+key<span class="w"> </span>/etc/openvpn/openvpn.chez-moi.fr.key
+duplicate-cn
+<span class="c1"># definition du nombre maximum de clients</span>
+max-clients<span class="w"> </span><span class="m">100</span>
+<span class="c1"># pour l&#39;activation du Masquerading</span>
+<span class="c1"># activation d&#39;un script externe</span>
+up<span class="w"> </span><span class="s2">&quot;/etc/scripts/openvpn-start.sh&quot;</span>
+down<span class="w"> </span><span class="s2">&quot;/etc/scripts/openvpn-stop.sh&quot;</span>
+<span class="c1"># pour l&#39;ajout de la route en local sur la passerelle</span>
+route-up<span class="w"> </span><span class="s2">&quot;/sbin/route add -net 10.140.77.0/24 tun0&quot;</span>
+<span class="c1"># pour l&#39;ajout de la route sur le client</span>
+push<span class="w"> </span><span class="s2">&quot;route 10.140.77.0 255.255.255.0&quot;</span>
+<span class="c1"># redirection totale</span>
+push<span class="w"> </span><span class="s2">&quot;redirect-gateway&quot;</span>
+<span class="c1"># fourniture du DNS local</span>
+push<span class="w"> </span><span class="s2">&quot;dhcp-option DNS &lt;Mon&gt;.&lt;IP&gt;.&lt;DNS&gt;.&lt;Interne&gt;&quot;</span>
+
+persist-tun
+persist-key
+<span class="c1"># autorisation de test pour estimer le MTU optimal</span>
+mtu-test
+mssfix<span class="w"> </span><span class="m">1450</span>
+<span class="c1"># compression de la liaison</span>
+comp-lzo
+status-version<span class="w"> </span><span class="m">2</span>
+<span class="c1"># definition des fichiers de logs</span>
+status<span class="w"> </span>/var/log/openvpn/openvpn-status.log
+log-append<span class="w">  </span>/var/log/openvpn/openvpn.log
+verb<span class="w"> </span><span class="m">4</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Création du répertoire de log :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/var/log/openvpn
+</pre></div>
+</div>
+</section>
+<section id="configuration-de-l-authentification-par-pam">
+<h3>Configuration de l’authentification par PAM<a class="headerlink" href="#configuration-de-l-authentification-par-pam" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Dans <strong>/etc/pam.d</strong>, créer un fichier <strong>openvpn</strong> contenant les références à l’authentification Ldap :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>auth<span class="w">       </span>required<span class="w">     </span>pam_env.so<span class="w"> </span><span class="c1"># [1]</span>
+auth<span class="w">       </span>required<span class="w">     </span>pam_env.so<span class="w"> </span><span class="nv">envfile</span><span class="o">=</span>/etc/default/locale
+auth<span class="w">    </span>sufficient<span class="w">      </span>pam_ldap.so
+account<span class="w">    </span>required<span class="w">     </span>pam_nologin.so
+account<span class="w">    </span>sufficient<span class="w">     </span>pam_ldap.so
+session<span class="w">    </span>sufficient<span class="w">     </span>pam_ldap.so
+session<span class="w">    </span>optional<span class="w">     </span>pam_motd.so<span class="w"> </span><span class="c1"># [1]</span>
+session<span class="w">    </span>optional<span class="w">     </span>pam_mail.so<span class="w"> </span>standard<span class="w"> </span>noenv<span class="w"> </span><span class="c1"># [1]</span>
+session<span class="w">    </span>required<span class="w">     </span>pam_limits.so
+</pre></div>
+</div>
+</section>
+<section id="configuration-du-serveur-ldap-pour-le-pam">
+<h3>Configuration du serveur Ldap pour le PAM<a class="headerlink" href="#configuration-du-serveur-ldap-pour-le-pam" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Installer les composants permettant une authentification Ldap</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt-get<span class="w"> </span>install<span class="w"> </span>libpam-ldap
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Configurer l’accès au serveur Ldap dans le fichier <strong>/etc/ldap/ldap.conf</strong> :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># LDAP Defaults</span>
+<span class="c1">#</span>
+BASE<span class="w">        </span>ldap://ldap.chez-moi.fr:389<span class="w"> </span>ldaps://ldap.chez-moi.fr:636
+TLS_CACERT<span class="w"> </span>/etc/ssl/certs/GlogalSign_Educational_CA.crt
+
+SIZELIMIT<span class="w">    </span><span class="m">10000</span>
+TIMELIMIT<span class="w"> </span><span class="m">15</span>
+DEREF<span class="w"> </span>never
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Configurer l’authentification par Ldap sous PAM dans le fichier <strong>/etc/pam_ldap.conf</strong> :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>base<span class="w"> </span><span class="nv">ou</span><span class="o">=</span>people,dc<span class="o">=</span>chez-moi,dc<span class="o">=</span>fr
+uri<span class="w"> </span>ldaps://ldap.chez-moi.fr/
+ldap_version<span class="w"> </span><span class="m">3</span>
+scope<span class="w"> </span>sub
+pam_password<span class="w"> </span>crypt
+ssl<span class="w"> </span>on
+tls_checkpeer<span class="w"> </span>yes
+tls_cacertdir<span class="w"> </span>/etc/ssl/certs
+</pre></div>
+</div>
+</section>
+<section id="configuration-reseau">
+<h3>Configuration réseau<a class="headerlink" href="#configuration-reseau" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Définition des interfaces réseau dans <strong>/etc/network/interfaces</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># This file describes the network interfaces available on your system</span>
+<span class="c1"># and how to activate them. For more information, see interfaces(5).</span>
+
+<span class="c1"># The loopback network interface</span>
+auto<span class="w"> </span>lo
+iface<span class="w"> </span>lo<span class="w"> </span>inet<span class="w"> </span>loopback
+
+<span class="c1"># The primary network interface</span>
+auto<span class="w"> </span>eth0
+iface<span class="w"> </span>eth0<span class="w"> </span>inet<span class="w"> </span>static
+address<span class="w"> </span>&lt;Mon&gt;.&lt;IP&gt;.&lt;Publique&gt;.&lt;Locale&gt;
+gateway<span class="w"> </span>&lt;Ma&gt;.&lt;Passerelle&gt;.&lt;IP&gt;.&lt;Locale&gt;
+netmask<span class="w"> </span><span class="m">255</span>.255.255.0
+
+<span class="c1"># The OpenVPN network interface</span>
+auto<span class="w"> </span>eth1
+iface<span class="w"> </span>eth1<span class="w"> </span>inet<span class="w"> </span>static
+address<span class="w"> </span><span class="m">10</span>.140.77.1
+netmask<span class="w"> </span><span class="m">255</span>.255.255.0
+</pre></div>
+</div>
+<ul>
+<li><p>Définition de l’activation ou de l’arrêt du masquage d’adresse contrôlé par OpenVPN</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>création d’un répertoire de scripts :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/etc/scripts
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>création de l’activation du NAT : <strong>/etc/scripts/openvpn-start.sh</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+<span class="nv">DNS</span><span class="o">=</span><span class="m">140</span>.77.167.2
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span>.140.77.0/24<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>--dport<span class="w"> </span><span class="m">53</span><span class="w"> </span>-j<span class="w"> </span>DNAT<span class="w"> </span>--to<span class="w"> </span><span class="nv">$DNS</span>:53
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span>.140.77.0/24<span class="w"> </span>-p<span class="w"> </span>udp<span class="w"> </span>--dport<span class="w"> </span><span class="m">53</span><span class="w"> </span>-j<span class="w"> </span>DNAT<span class="w"> </span>--to<span class="w"> </span><span class="nv">$DNS</span>:53
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>POSTROUTING<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span>.140.77.0/24<span class="w"> </span>-o<span class="w"> </span>eth0<span class="w"> </span>-j<span class="w"> </span>MASQUERADE
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>création de la désactivation du NAT : <strong>/etc/scripts/openvpn-stop.sh</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-F
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>modification des droits des fichiers :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>/etc/scripts/openvpn-st*
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>activation du proxy-arp dans le noyau (entre eth1 et le tunnel tun0) :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rajouter dans <strong>/etc/sysctl.conf</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>net.ipv4.conf.default.proxy_arp<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+net.ipv4.conf.all.proxy_arp<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>activation de l’option :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/etc/init.d/procps<span class="w"> </span>restart
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>activation du routage dans le noyau :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>décommenter dans <strong>/etc/sysctl.conf</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>activation de l’option :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/etc/init.d/procps<span class="w"> </span>restart
+</pre></div>
+</div>
+</div></blockquote>
+<ul>
+<li><p>Activation de l’enregistrement des traces par ULog :</p>
+<ul class="simple">
+<li><p>Installation de Ulog-acctd :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt-get<span class="w"> </span>install<span class="w"> </span>ulog-acctd
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Création d’un script d’activation dans NetFilter : <strong>/etc/scripts/ulog.sh</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+/sbin/iptables<span class="w"> </span>-A<span class="w"> </span>INPUT<span class="w"> </span>-i<span class="w"> </span>!<span class="w"> </span>lo<span class="w"> </span>-j<span class="w"> </span>ULOG
+/sbin/iptables<span class="w"> </span>-A<span class="w"> </span>OUTPUT<span class="w"> </span>-o<span class="w"> </span>!<span class="w"> </span>lo<span class="w"> </span>-j<span class="w"> </span>ULOG
+/sbin/iptables<span class="w"> </span>-A<span class="w"> </span>FORWARD<span class="w"> </span>-i<span class="w"> </span>!<span class="w"> </span>lo<span class="w"> </span>-o<span class="w"> </span>!<span class="w"> </span>lo<span class="w"> </span>-j<span class="w"> </span>ULOG
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Modification des droits d’exécution :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>/etc/scripts/ulog.sh
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Ajout dans <strong>/etc/network/interfaces</strong> dans la définition de eth0 :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>post-up<span class="w"> </span>/etc/scripts/ulog.sh
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="configuration-des-services-internes">
+<h3>Configuration des services internes<a class="headerlink" href="#configuration-des-services-internes" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p>Installer le serveur NTP</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ntp
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Installer une métrologie de l’usage du tunnel OpenVPN</p></li>
+</ul>
+</section>
+</section>
+<section id="configurations-complementaires">
+<h2>Configurations complémentaires<a class="headerlink" href="#configurations-complementaires" title="Lien vers cette rubrique">¶</a></h2>
+<section id="addition-filtrage-ldap">
+<h3>Addition Filtrage Ldap<a class="headerlink" href="#addition-filtrage-ldap" title="Lien vers cette rubrique">¶</a></h3>
+<p>Afin de ne pas ouvrir à tout l’annuaire Ldap l’accès à ce service, il peut être utilisé un filtrage sur un champ Ldap.</p>
+<section id="quels-champs-ldap">
+<h4>Quels champs Ldap ?<a class="headerlink" href="#quels-champs-ldap" title="Lien vers cette rubrique">¶</a></h4>
+<p>L’examen des attributs d’un Ldap standard présente 2 possibilités :</p>
+<ul class="simple">
+<li><p>“”dialupAccess”” semble le plus approprié. Il est placé à “”TRUE”” pour un utilisateur disposant d’un accès ou “”FALSE”” dans le cas contraire.</p></li>
+<li><p>“”radiusFramedProtocol”” peut aussi être utilisé. Il est placé à “”PPP”” pour un ayant droit, et n’existe pas dans le cas contraire, pour ceux disposant d’un annuaire Radius configuré pour un accès PPP.</p></li>
+</ul>
+</section>
+<section id="comment-le-configurer">
+<h4>Comment le configurer ?<a class="headerlink" href="#comment-le-configurer" title="Lien vers cette rubrique">¶</a></h4>
+<p>Dans “”/etc/pam_ldap.conf””, il est seulement nécessaire de rajouter la ligne</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pam_filter<span class="w"> </span><span class="nv">radiusFramedProtocol</span><span class="o">=</span>PPP
+</pre></div>
+</div>
+<p>ou</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pam_filter<span class="w"> </span><span class="nv">dialupAccess</span><span class="o">=</span>TRUE
+</pre></div>
+</div>
+<p>pour activer le filtrage.</p>
+</section>
+</section>
+<section id="addition-d-un-support-tcp">
+<h3>Addition d’un support TCP<a class="headerlink" href="#addition-d-un-support-tcp" title="Lien vers cette rubrique">¶</a></h3>
+<p>Après quelques mois d’exploitation, il apparaît que l’utilisation de l’UDP standard pour OpenVPN pose des difficultés dans la pratique : des sites s’obstinent à empêcher l’utilisation de connexions sortantes en UDP.</p>
+<p>Pour contrer cette difficulté, il est possible d’associer un second serveur OpenVPN au premier, en TCP celui là. Le client n’aura qu’à remplacer UDP par TCP dans sa configuration pour disposer du même service.</p>
+<ul class="simple">
+<li><p><strong>openvpn.conf</strong> : configuration générale du serveur</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># OpenVPN pour l&#39;acces a l&#39;entite</span>
+<span class="c1"># Adresse IP locale</span>
+<span class="nb">local</span><span class="w"> </span>&lt;Mon&gt;.&lt;IP&gt;.&lt;Quatre&gt;.&lt;Octets&gt;
+<span class="c1"># port d&#39;attaque de la passerelle, fourni par la RFC</span>
+port<span class="w"> </span><span class="m">1194</span>
+<span class="c1"># utilisation du VPN de type IP (pas le tap de type Ethernet)</span>
+<span class="c1"># une nouvelle interface tun1 est utilisee</span>
+dev<span class="w"> </span>tun1
+<span class="c1"># utilisation en TCP</span>
+proto<span class="w"> </span>tcp-server
+<span class="c1"># indication de l&#39;utilisation en serveur</span>
+tls-server
+mode<span class="w"> </span>server
+<span class="c1"># configuration de la liaison tunnel PPP entre le serveur et le client</span>
+<span class="c1"># une nouvelle classe est utilisee pour ce nouveau tunnel</span>
+ifconfig<span class="w"> </span><span class="m">10</span>.140.78.3<span class="w"> </span><span class="m">10</span>.140.78.4
+<span class="c1"># domaine de distributions des adresses IP</span>
+<span class="c1"># pendant de la nouvelle classe utilisee</span>
+ifconfig-pool<span class="w"> </span><span class="m">10</span>.140.78.5<span class="w"> </span><span class="m">10</span>.140.78.254
+script-security<span class="w"> </span><span class="m">2</span>
+<span class="c1"># definition de l&#39;authentification PAM</span>
+plugin<span class="w"> </span>/usr/lib/openvpn/openvpn-auth-pam.so<span class="w"> </span>openvpn
+<span class="c1"># utilisation de l&#39;identifiant comme login</span>
+username-as-common-name
+client-cert-not-required
+<span class="c1"># certificat propre au serveur Diffie Hellman</span>
+<span class="c1"># generation par : openssl dhparam -out dh1024.pem 1024</span>
+dh<span class="w"> </span>/etc/openvpn/dh1024.pem
+<span class="c1"># pour l&#39;instant, on utilise une cle symetrique</span>
+<span class="c1"># generation par : openvpn --genkey --secret cle_serveur.key</span>
+tls-auth<span class="w"> </span>/etc/openvpn/cle_serveur.key<span class="w"> </span><span class="m">0</span>
+<span class="c1"># definition de l&#39;autorite de certification</span>
+ca<span class="w"> </span>/etc/ssl/certs/GlobalSign_Educational_CA.crt
+<span class="c1"># definition du certificat signe</span>
+cert<span class="w"> </span>/etc/openvpn/openvpn.chez-moi.fr.pem
+<span class="c1"># definition de la cle du serveur</span>
+key<span class="w"> </span>/etc/openvpn/openvpn.chez-moi.fr.key
+duplicate-cn
+<span class="c1"># definition du nombre maximum de clients</span>
+max-clients<span class="w"> </span><span class="m">100</span>
+<span class="c1"># pour l&#39;activation du Masquerading</span>
+<span class="c1"># activation d&#39;un script externe</span>
+up<span class="w"> </span><span class="s2">&quot;/etc/scripts/openvpn-start.sh&quot;</span>
+down<span class="w"> </span><span class="s2">&quot;/etc/scripts/openvpn-stop.sh&quot;</span>
+<span class="c1"># pour l&#39;ajout de la route en local sur la passerelle</span>
+route-up<span class="w"> </span><span class="s2">&quot;/sbin/route add -net 10.140.78.0/24 tun1&quot;</span>
+<span class="c1"># pour l&#39;ajout de la route sur le client</span>
+push<span class="w"> </span><span class="s2">&quot;route 10.140.78.0 255.255.255.0&quot;</span>
+<span class="c1"># redirection totale</span>
+push<span class="w"> </span><span class="s2">&quot;redirect-gateway&quot;</span>
+<span class="c1"># fourniture du DNS local</span>
+push<span class="w"> </span><span class="s2">&quot;dhcp-option DNS &lt;Mon&gt;.&lt;IP&gt;.&lt;DNS&gt;.&lt;Interne&gt;&quot;</span>
+
+persist-tun
+persist-key
+<span class="c1"># autorisation de test pour estimer le MTU optimal</span>
+mtu-test
+mssfix<span class="w"> </span><span class="m">1450</span>
+<span class="c1"># compression de la liaison</span>
+comp-lzo
+status-version<span class="w"> </span><span class="m">2</span>
+<span class="c1"># definition des fichiers de logs</span>
+status<span class="w"> </span>/var/log/openvpn/openvpn-TCP-status.log
+log-append<span class="w">  </span>/var/log/openvpn/openvpn-TCP.log
+verb<span class="w"> </span><span class="m">4</span>
+</pre></div>
+</div>
+<p>Même chose pour la configuration des scripts de démarrage et d’arrêt pour la mise en place du masquage d’adresses :</p>
+<ul class="simple">
+<li><p>création de l’activation du NAT : <strong>/etc/scripts/openvpn-TCP-start.sh</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+<span class="nv">DNS</span><span class="o">=</span><span class="m">140</span>.77.167.2
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span>.140.78.0/24<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>--dport<span class="w"> </span><span class="m">53</span><span class="w"> </span>-j<span class="w"> </span>DNAT<span class="w"> </span>--to<span class="w"> </span><span class="nv">$DNS</span>:53
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span>.140.78.0/24<span class="w"> </span>-p<span class="w"> </span>udp<span class="w"> </span>--dport<span class="w"> </span><span class="m">53</span><span class="w"> </span>-j<span class="w"> </span>DNAT<span class="w"> </span>--to<span class="w"> </span><span class="nv">$DNS</span>:53
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>POSTROUTING<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span>.140.78.0/24<span class="w"> </span>-o<span class="w"> </span>eth0<span class="w"> </span>-j<span class="w"> </span>MASQUERADE
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>création de la désactivation du NAT : <strong>/etc/scripts/openvpn-TCP-stop.sh</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+/sbin/iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-F
+</pre></div>
+</div>
+</section>
+</section>
+<section id="configuration-des-clients">
+<h2>Configuration des clients<a class="headerlink" href="#configuration-des-clients" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les clients nécessitent deux ou trois fichiers de configurations :</p>
+<ul class="simple">
+<li><p>openvpn.conf ou openvpn.ovpn pour la configuration générale</p></li>
+<li><p>cle_serveur.key pour la clé associée au</p></li>
+<li><p>le certificat de l’autorité de certification (pas nécessaire)</p></li>
+</ul>
+<section id="configuration-pour-gnu-linux-debian-files-only">
+<h3>Configuration pour GNU/Linux Debian : « files only »<a class="headerlink" href="#configuration-pour-gnu-linux-debian-files-only" title="Lien vers cette rubrique">¶</a></h3>
+<ul>
+<li><p>Installer le client :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>sous Debian Linux :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>openvpn
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>sous les autres distributions Linux, …</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Installer les certificats des autorités de certifications :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>sous Debian Linux :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ca-certificates
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>sous les autres distributions Linux, …</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Télécharger les fichiers de configuration :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/openvpn_MacOSX.conf">openvpn_Linux.conf</a></p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/cle_serveur.key">cle_serveur.key</a></p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/GlobalSign_Educational_CA.crt">GlobalSign_Educational_CA.crt</a></p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/pwd.txt">pwd.txt</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Copier les fichiers de configurations dans le répertoire de configuration :</p></li>
+<li><p>Remplacer dans <strong>/etc/openvpn/pwd.txt</strong> <em>&lt;identifiant&gt;</em> par votre identifiant et <em>&lt;mot de passe&gt;</em> par votre mot de passe</p></li>
+<li><p>Changer les droits en lecture seule pour root de ce fichier :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Taper :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/etc/openvpn/pwd.txt
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Démarrer OpenVPN :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/etc/init.d/openvpn<span class="w"> </span>restart
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<div class="note note-imp docutils container">
+<p>Certaines implémentations d’OpenVPN sur des distributions Linux empêchent catégoriquement le recours à ce fichier texte. Il est donc nécessaire d’entrer sont identifiant/mot de passe à chaque lancement</p>
+</div>
+</section>
+<section id="configuration-pour-gnu-linux-via-networkmanager">
+<h3>Configuration pour GNU/Linux : via NetworkManager<a class="headerlink" href="#configuration-pour-gnu-linux-via-networkmanager" title="Lien vers cette rubrique">¶</a></h3>
+<p>La configuration se réalise via l’interface gnome-network-manager. TBD</p>
+</section>
+<section id="configuration-pour-macosx">
+<h3>Configuration pour MacOSX<a class="headerlink" href="#configuration-pour-macosx" title="Lien vers cette rubrique">¶</a></h3>
+<ul>
+<li><p>Télécharger le client Tunnelblick : cliquer sur <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/Tunnelblick_3.0b16.dmg">Tunnelblick version 3.0</a></p></li>
+<li><p>Installer le client Tunnelblick</p></li>
+<li><p>Télécharger les fichiers de configuration :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/openvpn_MacOSX.conf">openvpn_MacOSX.conf</a></p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/cle_serveur.key">cle_serveur.key</a></p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/GlobalSign_Educational_CA.crt">GlobalSign_Educational_CA.crt</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Créer le dossier de configuration de openvpn pour l’utilisateur :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ouvrir un terminal</p></li>
+<li><p>Taper :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>Library/openvpn
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Copier les fichiers de configurations dans le répertoire de configuration :</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p>Taper :</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Library/openvpn
+tar<span class="w"> </span>xvzf<span class="w"> </span>~/Downloads/OpenVPN-MacOSX.tgz
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Démarrer Tunnelblick : une icône en haut à droite sous forme d’une entrée de tunnel s’affiche en grisé</p></li>
+<li><p>Sélectionner ens-lyon dans la liste des VPN disponibles</p></li>
+<li><p>A l’invite, entrer son idenfiant et son mot de passe : si l’authentification est exacte et le tunnel opérationnelle, l’icône du tunnel semble s’ouvrir</p></li>
+</ul>
+</section>
+<section id="configuration-pour-windows">
+<h3>Configuration pour Windows<a class="headerlink" href="#configuration-pour-windows" title="Lien vers cette rubrique">¶</a></h3>
+<ul>
+<li><p>Télécharger le client OpenVPN : cliquer sur <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/openvpn-2.0.9-gui-1.0.3-install.exe">OpenVPN GUI version 2.0.9</a></p></li>
+<li><p>Installer le client OpenVPN</p></li>
+<li><p>Télécharger les fichiers de configuration :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/openvpn.ovpn">openvpn.ovpn</a></p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/cle_serveur.key">cle_serveur.key</a></p></li>
+<li><p><a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/OpenVPN/configurations/GlobalSign_Educational_CA.crt">GlobalSign_Educational_CA.crt</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Copier les fichiers dans <strong>C:Program FilesOpenVPNconfig</strong></p></li>
+<li><p>Démarrer OpenVPN : une icône en bas à droite de couleur avec des moniteurs de couleur rouge s’affiche</p></li>
+<li><p>Sélectionner <strong>ens-lyon</strong> dans la liste des VPN disponibles</p></li>
+<li><p>A l’invite, entrer son idenfiant et son mot de passe : si l’authentification est exacte et le tunnel opérationnelle, l’icône devient jaune</p></li>
+</ul>
+</section>
+</section>
+<section id="licence">
+<h2>Licence<a class="headerlink" href="#licence" title="Lien vers cette rubrique">¶</a></h2>
+<p>Cette documentation est distribuée sous FDL.</p>
+<p>L’auteur remercie les auteurs de OpenVPN et tous ceux qui, par la lecture de ces lignes, déploieront de manière opérationnelle cet outil.</p>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/ProjetsInfra/openvpn.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

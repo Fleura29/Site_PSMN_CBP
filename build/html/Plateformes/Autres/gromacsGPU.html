@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Compilation et exécution du programme Gromacs en mode GPU &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="compilation-et-execution-du-programme-gromacs-en-mode-gpu">
+<span id="gromacsgpu"></span><h1>Compilation et exécution du programme Gromacs en mode GPU<a class="headerlink" href="#compilation-et-execution-du-programme-gromacs-en-mode-gpu" title="Lien vers cette rubrique">¶</a></h1>
+<p><a class="reference internal" href="INSAGPU2020.html#insagpu2020"><span class="std std-ref">Retour aux travaux pratiques</span></a></p>
+<section id="compilation-du-programme-dans-l-environnement-du-cbp">
+<h2>Compilation du programme dans l’environnement du CBP<a class="headerlink" href="#compilation-du-programme-dans-l-environnement-du-cbp" title="Lien vers cette rubrique">¶</a></h2>
+<p>La recette pour compiler Gromacs  avec un support GPU sur du Debian Buster est la suivante :</p>
+<ol class="arabic">
+<li><p>Définition de la variable TIME pour la métrologie :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">TIME</span><span class="o">=</span><span class="k">$(</span>cat<span class="w"> </span><span class="s1">&#39;/etc/time_command.cfg&#39;</span><span class="k">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Création du dossier utilisateur :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/local/<span class="nv">$USER</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Placement dans le dossier créé :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/local/<span class="nv">$USER</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Récupération du source</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>ftp://ftp.gromacs.org/pub/gromacs/gromacs-2019.3.tar.gz
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Expansion de l’archive :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar<span class="w"> </span>xzf<span class="w"> </span>gromacs-2019.3.tar.gz
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Définition d’une variable d’environnement pour ce dossier :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">GMXSRC</span><span class="o">=</span><span class="nv">$PWD</span>/gromacs-2019.3
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Création d’un dossier de construction :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>gromacs-2019.3_build
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Définition d’une variable d’environnement pour ce dossier :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">GMXBUILD</span><span class="o">=</span><span class="nv">$PWD</span>/gromacs-2019.3_build
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Création d’un dossier d’installation :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>gromacs-2019.3_install
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Définition d’une variable d’environnement pour ce dossier :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">GMXINSTALL</span><span class="o">=</span><span class="nv">$PWD</span>/gromacs-2019.3_install
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Déplacement dans le dossier de construction :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$GMXBUILD</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Définition des outils des compilation :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">CC</span><span class="o">=</span>/usr/bin/gcc-7
+<span class="nb">export</span><span class="w"> </span><span class="nv">CXX</span><span class="o">=</span>/usr/bin/g++-7
+<span class="nb">export</span><span class="w"> </span><span class="nv">CPP</span><span class="o">=</span>/usr/bin/cpp-7
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Construction des tâches de compilation :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span><span class="nv">$GMXSRC</span><span class="w"> </span>-DGMX_OPENMP<span class="o">=</span>ON<span class="w"> </span>-DGMX_GPU<span class="o">=</span>ON<span class="w"> </span>-DGMX_BUILD_OWN_FFTW<span class="o">=</span>ON<span class="w"> </span>-DGMX_MPI<span class="o">=</span>on<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span><span class="nv">$GMXINSTALL</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Compilation du programme en mode parallèle :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>-j<span class="w"> </span><span class="m">16</span><span class="w"> </span>&gt;<span class="w"> </span>GMX-Compile-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Exécution des tests :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>check<span class="w"> </span>&gt;<span class="w"> </span>GMX-Check-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Installation du programme et ses dépendances :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>install<span class="w"> </span>&gt;<span class="w"> </span>GMX-Install-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="execution-de-l-exemple-exploite-par-nvidia-dans-l-environnement-du-cbp">
+<h2>Exécution de l’exemple exploité par Nvidia dans l’environnement du CBP<a class="headerlink" href="#execution-de-l-exemple-exploite-par-nvidia-dans-l-environnement-du-cbp" title="Lien vers cette rubrique">¶</a></h2>
+<ol class="arabic">
+<li><p>Création du dossier de tests à la date du jour :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>/local/<span class="nv">$USER</span>/tests-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d&quot;</span><span class="k">)</span>&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Placement dans le dossier créé :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/local/<span class="nv">$USER</span>/tests-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d&quot;</span><span class="k">)</span>&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Récupération des entrées Gromacs pour le test :</p>
+<blockquote>
+<div><div class="highlight-bas notranslate"><div class="highlight"><pre><span></span>hwget ftp://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Expansion de l’archive récupérée :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar<span class="w"> </span>xzf<span class="w"> </span>water_GMX50_bare.tar.gz&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Passage dans le dossier de paramètres :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>water-cut1.0_GMX50_bare/1536&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Paramétrage de l’environnement :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/GMXRC&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Lancement de l’exemple sur GPU :</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Initialisation de GROMACS :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">$GMXINSTALL</span>/bin/gmx-mpi<span class="w"> </span>grompp<span class="w"> </span>-f<span class="w"> </span>pme.mdp&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Lancement du calcul sur GPU :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/usr/bin/time<span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>mdrun<span class="w"> </span>-resethway<span class="w"> </span>-noconfout<span class="w"> </span>-nsteps<span class="w"> </span><span class="m">4000</span><span class="w"> </span>-v<span class="w"> </span>-gpu_id<span class="w"> </span><span class="m">0</span><span class="w"> </span>&gt;<span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="s1">&#39;_&#39;</span><span class="k">)</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span>.out<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Lancement du code sur CPU :</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Effacement des fichiers créés par la simulation sur GPU :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>.<span class="w"> </span>-mtime<span class="w"> </span>-1<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="s2">&quot;_&quot;</span><span class="k">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>rm<span class="w"> </span><span class="s1">&#39;{}&#39;</span>&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Initialisation de GROMACS :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>grompp<span class="w"> </span>-f<span class="w"> </span>pme.mdp&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Lancement du calcul sur GPU :</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/usr/bin/time<span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>mdrun<span class="w"> </span>-resethway<span class="w"> </span>-noconfout<span class="w"> </span>-nsteps<span class="w"> </span><span class="m">4000</span><span class="w"> </span>-v<span class="w"> </span>-nb<span class="w"> </span>cpu<span class="w"> </span>&gt;<span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="s1">&#39;_&#39;</span><span class="k">)</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span>.out<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>&lt;/code&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<p>Les deux fichiers de sortie en <code class="docutils literal notranslate"><span class="pre">*.out</span></code> donnent les informations sur les exécutions et la métrologie associée. Un <code class="docutils literal notranslate"><span class="pre">grep</span></code> sur le mot <code class="docutils literal notranslate"><span class="pre">Elapsed</span></code> extrait les temps d’exécution sur GPU et CPU.</p>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Autres/gromacsGPU.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Practical session for Astrosim 2017 &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <section id="practical-session-for-astrosim-2017">
+<span id="gpu4dummies"></span><h1>Practical session for Astrosim 2017<a class="headerlink" href="#practical-session-for-astrosim-2017" title="Lien vers cette rubrique">¶</a></h1>
+<p>Practical work support for <a class="reference external" href="https://astrosim.sciencesconf.org/">Astrosim 2017</a></p>
+<section id="w-2h-why-what-where-when-who-how-much-how">
+<h2>5 W/2H : Why ? What ? Where ? When ? Who ? How much ? How ?<a class="headerlink" href="#w-2h-why-what-where-when-who-how-much-how" title="Lien vers cette rubrique">¶</a></h2>
+<p>5W/2H : CQQCOQP (Comment ? Quoi ? Qui, Combien ? Où ? Quand ? Pourquoi ?) in french…</p>
+<ul class="simple">
+<li><p><strong>Why ?</strong> Have a look on GPUs and improve investigations process</p></li>
+<li><p><strong>What ?</strong> Test with dummie examples</p></li>
+<li><p><strong>When ?</strong> Friday, the 7th of July in the afternoon</p></li>
+<li><p><strong>How much ?</strong> Nothing, Blaise Pascal Center provides GPU inside workstations &amp; cluster nodes</p></li>
+<li><p><strong>Where ?</strong> On workstations, cluster nodes, laptop (well configured), inside terminals</p></li>
+<li><p><strong>Who ?</strong> For people who want to open the hood</p></li>
+<li><p><strong>How ?</strong> Applying some simple commands (essentially shell ones)</p></li>
+</ul>
+</section>
+<section id="session-goal">
+<h2>Session Goal<a class="headerlink" href="#session-goal" title="Lien vers cette rubrique">¶</a></h2>
+<p>It’s to take in the hands GPU components inside machines and compare performances to classical CPU trough simplistic examples and production codes.</p>
+</section>
+<section id="starting-the-session">
+<h2>Starting the session<a class="headerlink" href="#starting-the-session" title="Lien vers cette rubrique">¶</a></h2>
+<section id="prerequisites-hardware-software-and-humanware">
+<h3>Prerequisites hardware, software and humanware<a class="headerlink" href="#prerequisites-hardware-software-and-humanware" title="Lien vers cette rubrique">¶</a></h3>
+<p>In order to get a complete functional environment, Blaise Pascal Center provides hardware, software, and OS well designed. People who want to achieve this practical session on their own laptop must have a real Unix Operating System.</p>
+<section id="prerequisite-for-hardware">
+<h4>Prerequisite for hardware<a class="headerlink" href="#prerequisite-for-hardware" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>If using CBP resources, nothing… Just login…</p></li>
+<li><p>If NOT using CBP resources, a machine relatively recent with onboard GPU inside, Nvidia one are preferred</p></li>
+</ul>
+</section>
+<section id="prerequisite-for-software">
+<h4>Prerequisite for software<a class="headerlink" href="#prerequisite-for-software" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Open graphical session on one workstation, several terminals and your favorite browser</p></li>
+<li><p>If NOT using CBP resources, a GNU/Linux Operating System well configured with all GPU, Nvidia, OpenCL, PyOpenCL, PyCuda stuff</p></li>
+</ul>
+<p>People who want to use huge GPU, GPGPU or accelerator can use connect to the following machines.</p>
+<ul class="simple">
+<li><p><strong>gtx1080alpha</strong>, <strong>gtx1080beta</strong>, <strong>gtx1080gamma</strong>, <strong>gtx1080delta</strong> : virtual workstations with dedicated Nvidia GTX 1080</p></li>
+<li><p><strong>k80alpha</strong>, <strong>k80beta</strong>, <strong>k80gamma</strong> : virtual workstations with dedicated one, one and two GPU inside Nvidia Tesla K80</p></li>
+<li><p><strong>p100alpha</strong>, <strong>p100beta</strong> : virtual workstations with dedicated one Nvidia Tesla P100</p></li>
+<li><p><strong>k40m</strong> : virtual workstations with dedicated one Nvidia Tesla K40m</p></li>
+</ul>
+<p>Have a look to <a class="reference external" href="http://styx.cbp.ens-lyon.fr/ganglia/?r=hour&amp;cs=&amp;ce=&amp;m=load_one&amp;s=by+name&amp;c=Workstations">Monitoring website for workstations</a> before connecting and launch your jobs! Huge requests may create DoS!</p>
+</section>
+<section id="prerequisite-for-humanware">
+<h4>Prerequisite for humanware<a class="headerlink" href="#prerequisite-for-humanware" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>An allergy to command line will severely restrict the range of this practical session.</p></li>
+<li><p>A practice of shell scripts would be a asset, but you will improve it in this session!</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="investigate-gpu-hardware">
+<h2>Investigate GPU Hardware<a class="headerlink" href="#investigate-gpu-hardware" title="Lien vers cette rubrique">¶</a></h2>
+<section id="what-inside-my-host">
+<h3>What inside my host ?<a class="headerlink" href="#what-inside-my-host" title="Lien vers cette rubrique">¶</a></h3>
+<p>Hardware in computing science is defined by <a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Von_Neumann_Architecture.svg">Von Neumann architecture</a>:</p>
+<ul class="simple">
+<li><p>CPU (Central Processing Unit) with CU (Control Unit) and ALU (Arithmetic and Logic Unit)</p></li>
+<li><p>MU (Memory Unit)</p></li>
+<li><p>Input and Output Devices</p></li>
+</ul>
+<p>GPU are normally considered as Input/Output devices. As mainly peripherals installed on PC machines, they use a interconnection bus, <a class="reference external" href="https://en.wikipedia.org/wiki/Conventional_PCI">PCI</a> or <a class="reference external" href="https://en.wikipedia.org/wiki/PCI_Express">PCI Express</a>.</p>
+<p>To get the list of PCI devices, use <code class="docutils literal notranslate"><span class="pre">lspci</span> <span class="pre">-nn</span></code> command. Inside this huge list appear some <strong>VGA</strong> or <strong>3D</strong> devices. These are GPU or GPGPU devices.</p>
+<p>This is an output of <code class="docutils literal notranslate"><span class="pre">lspci</span> <span class="pre">-nn</span> <span class="pre">|</span> <span class="pre">egrep</span> <span class="pre">'(VGA|3D)'</span></code> command
+&lt;code&gt;
+06:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Fiji [Radeon R9 FURY / NANO Series] (rev ca)
+82:00.0 VGA compatible controller: NVIDIA Corporation Device 1b06 (rev a1)
+&lt;/code&gt;</p>
+<section id="exercice-1-get-the-list-of-gp-gpu-devices">
+<h4>Exercice #1: get the list of (GP)GPU devices<a class="headerlink" href="#exercice-1-get-the-list-of-gp-gpu-devices" title="Lien vers cette rubrique">¶</a></h4>
+<ul>
+<li><p>How many VGA devices are listed ? How many 3D devices are listed ?</p></li>
+<li><p>Get the model of GPU device, its long name.</p></li>
+<li><p>Retreive on the www the following informations:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the number of compute units</p></li>
+<li><p>the base frequency of the cores</p></li>
+<li><p>the base frequency of the memory</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>All of the <code class="docutils literal notranslate"><span class="pre">huge</span></code> workstations hold Nvidia boards.</p>
+<p>In Posix operating systems, everything is file. Informations about Nvidia board and its discovery by the operating system on boot time can be get by a <code class="docutils literal notranslate"><span class="pre">grep</span></code> in <code class="docutils literal notranslate"><span class="pre">dmesg</span></code>.</p>
+<p>You can get kabalistic informations which are very important to</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="w">   </span><span class="m">19</span>.545688<span class="o">]</span><span class="w"> </span>NVRM:<span class="w"> </span>The<span class="w"> </span>NVIDIA<span class="w"> </span>GPU<span class="w"> </span><span class="m">0000</span>:82:00.0<span class="w"> </span><span class="o">(</span>PCI<span class="w"> </span>ID:<span class="w"> </span>10de:1b06<span class="o">)</span>
+<span class="w">            </span>NVRM:<span class="w"> </span>NVIDIA<span class="w"> </span>Linux<span class="w"> </span>driver<span class="w"> </span>release.<span class="w">  </span>Please<span class="w"> </span>see<span class="w"> </span><span class="s1">&#39;Appendix</span>
+<span class="s1">            NVRM: A - Supported NVIDIA GPU Products&#39;</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>this<span class="w"> </span>release<span class="err">&#39;</span>s
+<span class="w">            </span>NVRM:<span class="w"> </span>at<span class="w"> </span>www.nvidia.com.
+<span class="o">[</span><span class="w">   </span><span class="m">19</span>.545903<span class="o">]</span><span class="w"> </span>nvidia:<span class="w"> </span>probe<span class="w"> </span>of<span class="w"> </span><span class="m">0000</span>:82:00.0<span class="w"> </span>failed<span class="w"> </span>with<span class="w"> </span>error<span class="w"> </span>-1
+<span class="o">[</span><span class="w">   </span><span class="m">19</span>.546254<span class="o">]</span><span class="w"> </span>NVRM:<span class="w"> </span>The<span class="w"> </span>NVIDIA<span class="w"> </span>probe<span class="w"> </span>routine<span class="w"> </span>failed<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>device<span class="o">(</span>s<span class="o">)</span>.
+<span class="o">[</span><span class="w">   </span><span class="m">19</span>.546491<span class="o">]</span><span class="w"> </span>NVRM:<span class="w"> </span>None<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>NVIDIA<span class="w"> </span>graphics<span class="w"> </span>adapters<span class="w"> </span>were<span class="w"> </span>initialized!
+<span class="o">[</span><span class="w">   </span><span class="m">19</span>.782970<span class="o">]</span><span class="w"> </span>nvidia-nvlink:<span class="w"> </span>Nvlink<span class="w"> </span>Core<span class="w"> </span>is<span class="w"> </span>being<span class="w"> </span>initialized,<span class="w"> </span>major<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">244</span>
+<span class="o">[</span><span class="w">   </span><span class="m">19</span>.783084<span class="o">]</span><span class="w"> </span>NVRM:<span class="w"> </span>loading<span class="w"> </span>NVIDIA<span class="w"> </span>UNIX<span class="w"> </span>x86_64<span class="w"> </span>Kernel<span class="w"> </span>Module<span class="w">  </span><span class="m">375</span>.66<span class="w">  </span>Mon<span class="w"> </span>May<span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">15</span>:29:16<span class="w"> </span>PDT<span class="w"> </span><span class="m">2017</span><span class="w"> </span><span class="o">(</span>using<span class="w"> </span>threaded<span class="w"> </span>interrupts<span class="o">)</span>
+<span class="o">[</span><span class="w">   </span><span class="m">19</span>.814046<span class="o">]</span><span class="w"> </span>nvidia-modeset:<span class="w"> </span>Loading<span class="w"> </span>NVIDIA<span class="w"> </span>Kernel<span class="w"> </span>Mode<span class="w"> </span>Setting<span class="w"> </span>Driver<span class="w"> </span><span class="k">for</span><span class="w"> </span>UNIX<span class="w"> </span>platforms<span class="w">  </span><span class="m">375</span>.66<span class="w">  </span>Mon<span class="w"> </span>May<span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">14</span>:33:30<span class="w"> </span>PDT<span class="w"> </span><span class="m">2017</span>
+<span class="o">[</span><span class="w">   </span><span class="m">20</span>.264453<span class="o">]</span><span class="w"> </span><span class="o">[</span>drm<span class="o">]</span><span class="w"> </span><span class="o">[</span>nvidia-drm<span class="o">]</span><span class="w"> </span><span class="o">[</span>GPU<span class="w"> </span>ID<span class="w"> </span>0x00008200<span class="o">]</span><span class="w"> </span>Loading<span class="w"> </span>driver
+<span class="o">[</span><span class="w">   </span><span class="m">23</span>.360807<span class="o">]</span><span class="w"> </span>input:<span class="w"> </span>HDA<span class="w"> </span>NVidia<span class="w"> </span>HDMI/DP,pcm<span class="o">=</span><span class="m">3</span><span class="w"> </span>as<span class="w"> </span>/devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input19
+<span class="o">[</span><span class="w">   </span><span class="m">23</span>.360885<span class="o">]</span><span class="w"> </span>input:<span class="w"> </span>HDA<span class="w"> </span>NVidia<span class="w"> </span>HDMI/DP,pcm<span class="o">=</span><span class="m">7</span><span class="w"> </span>as<span class="w"> </span>/devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input20
+<span class="o">[</span><span class="w">   </span><span class="m">23</span>.360996<span class="o">]</span><span class="w"> </span>input:<span class="w"> </span>HDA<span class="w"> </span>NVidia<span class="w"> </span>HDMI/DP,pcm<span class="o">=</span><span class="m">8</span><span class="w"> </span>as<span class="w"> </span>/devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input21
+<span class="o">[</span><span class="w">   </span><span class="m">23</span>.361065<span class="o">]</span><span class="w"> </span>input:<span class="w"> </span>HDA<span class="w"> </span>NVidia<span class="w"> </span>HDMI/DP,pcm<span class="o">=</span><span class="m">9</span><span class="w"> </span>as<span class="w"> </span>/devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input22
+<span class="o">[</span><span class="w">   </span><span class="m">32</span>.896510<span class="o">]</span><span class="w"> </span><span class="o">[</span>drm<span class="o">]</span><span class="w"> </span><span class="o">[</span>nvidia-drm<span class="o">]</span><span class="w"> </span><span class="o">[</span>GPU<span class="w"> </span>ID<span class="w"> </span>0x00008200<span class="o">]</span><span class="w"> </span>Unloading<span class="w"> </span>driver
+<span class="o">[</span><span class="w">   </span><span class="m">32</span>.935658<span class="o">]</span><span class="w"> </span>nvidia-modeset:<span class="w"> </span>Unloading
+<span class="o">[</span><span class="w">   </span><span class="m">32</span>.967939<span class="o">]</span><span class="w"> </span>nvidia-nvlink:<span class="w"> </span>Unregistered<span class="w"> </span>the<span class="w"> </span>Nvlink<span class="w"> </span>Core,<span class="w"> </span>major<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">244</span>
+<span class="o">[</span><span class="w">   </span><span class="m">33</span>.034671<span class="o">]</span><span class="w"> </span>nvidia-nvlink:<span class="w"> </span>Nvlink<span class="w"> </span>Core<span class="w"> </span>is<span class="w"> </span>being<span class="w"> </span>initialized,<span class="w"> </span>major<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">244</span>
+<span class="o">[</span><span class="w">   </span><span class="m">33</span>.034724<span class="o">]</span><span class="w"> </span>NVRM:<span class="w"> </span>loading<span class="w"> </span>NVIDIA<span class="w"> </span>UNIX<span class="w"> </span>x86_64<span class="w"> </span>Kernel<span class="w"> </span>Module<span class="w">  </span><span class="m">375</span>.66<span class="w">  </span>Mon<span class="w"> </span>May<span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">15</span>:29:16<span class="w"> </span>PDT<span class="w"> </span><span class="m">2017</span><span class="w"> </span><span class="o">(</span>using<span class="w"> </span>threaded<span class="w"> </span>interrupts<span class="o">)</span>
+<span class="o">[</span><span class="w">   </span><span class="m">33</span>.275804<span class="o">]</span><span class="w"> </span>nvidia-nvlink:<span class="w"> </span>Unregistered<span class="w"> </span>the<span class="w"> </span>Nvlink<span class="w"> </span>Core,<span class="w"> </span>major<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">244</span>
+<span class="o">[</span><span class="w">   </span><span class="m">33</span>.993460<span class="o">]</span><span class="w"> </span>nvidia-nvlink:<span class="w"> </span>Nvlink<span class="w"> </span>Core<span class="w"> </span>is<span class="w"> </span>being<span class="w"> </span>initialized,<span class="w"> </span>major<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">244</span>
+<span class="o">[</span><span class="w">   </span><span class="m">33</span>.993486<span class="o">]</span><span class="w"> </span>NVRM:<span class="w"> </span>loading<span class="w"> </span>NVIDIA<span class="w"> </span>UNIX<span class="w"> </span>x86_64<span class="w"> </span>Kernel<span class="w"> </span>Module<span class="w">  </span><span class="m">375</span>.66<span class="w">  </span>Mon<span class="w"> </span>May<span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">15</span>:29:16<span class="w"> </span>PDT<span class="w"> </span><span class="m">2017</span><span class="w"> </span><span class="o">(</span>using<span class="w"> </span>threaded<span class="w"> </span>interrupts<span class="o">)</span>
+<span class="o">[</span><span class="w">   </span><span class="m">35</span>.110461<span class="o">]</span><span class="w"> </span>nvidia-modeset:<span class="w"> </span>Loading<span class="w"> </span>NVIDIA<span class="w"> </span>Kernel<span class="w"> </span>Mode<span class="w"> </span>Setting<span class="w"> </span>Driver<span class="w"> </span><span class="k">for</span><span class="w"> </span>UNIX<span class="w"> </span>platforms<span class="w">  </span><span class="m">375</span>.66<span class="w">  </span>Mon<span class="w"> </span>May<span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">14</span>:33:30<span class="w"> </span>PDT<span class="w"> </span><span class="m">2017</span>
+<span class="o">[</span><span class="w">   </span><span class="m">35</span>.111628<span class="o">]</span><span class="w"> </span>nvidia-modeset:<span class="w"> </span>Allocated<span class="w"> </span>GPU:0<span class="w"> </span><span class="o">(</span>GPU-ccc95482-6681-052e-eb30-20b138412b92<span class="o">)</span><span class="w"> </span>@<span class="w"> </span>PCI:0000:82:00.0
+<span class="o">[</span><span class="m">349272</span>.210486<span class="o">]</span><span class="w"> </span>nvidia-uvm:<span class="w"> </span>Loaded<span class="w"> </span>the<span class="w"> </span>UVM<span class="w"> </span>driver<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">8</span><span class="w"> </span>mode,<span class="w"> </span>major<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">243</span>
+</pre></div>
+</div>
+</section>
+<section id="exercice-2-get-the-informations-on-your-host-with-dmesg-grep-i-nvidia-command">
+<h4>Exercice #2 : get the informations on your host with <code class="docutils literal notranslate"><span class="pre">dmesg</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">-i</span> <span class="pre">nvidia</span></code> command<a class="headerlink" href="#exercice-2-get-the-informations-on-your-host-with-dmesg-grep-i-nvidia-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>What version of driver did the kernel load ?</p></li>
+<li><p>What represents, if it exists, the <code class="docutils literal notranslate"><span class="pre">input:</span> <span class="pre">HDA</span> <span class="pre">NVidia</span></code> device ? Is it a graphical one ?</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">lsmod</span></code> provides the list of modules loaded. Modules are small programs dedicated to the support of on function in a kernel, the engine of the Operating System. The support of a device needs one or several modules.</p>
+<p>An example of <code class="docutils literal notranslate"><span class="pre">lsmod</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">nvidia</span></code> on a workstation:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nvidia_uvm<span class="w">            </span><span class="m">638976</span><span class="w">  </span><span class="m">0</span>
+nvidia_modeset<span class="w">        </span><span class="m">790528</span><span class="w">  </span><span class="m">2</span>
+nvidia<span class="w">              </span><span class="m">12312576</span><span class="w">  </span><span class="m">42</span><span class="w"> </span>nvidia_modeset,nvidia_uvm
+</pre></div>
+</div>
+<p>We see that 3 modules are loaded. The last column (empty for the two first lines) lists the dependencies between modules. Here, <code class="docutils literal notranslate"><span class="pre">nvidia_modeset</span></code> and <code class="docutils literal notranslate"><span class="pre">nvidia_uvm</span></code> depend on <code class="docutils literal notranslate"><span class="pre">nvidia</span></code> module.</p>
+</section>
+<section id="exercice-3-get-the-informations-on-your-host-with-lsmod-grep-nvidia-command">
+<h4>Exercice #3 : get the informations on your host with <code class="docutils literal notranslate"><span class="pre">lsmod</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">nvidia</span></code> command<a class="headerlink" href="#exercice-3-get-the-informations-on-your-host-with-lsmod-grep-nvidia-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Are the informations on devices identical to the above ? Character by Character ?</p></li>
+</ul>
+<p>The device also appears in <code class="docutils literal notranslate"><span class="pre">/dev</span></code> the root folder for devices.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span> <span class="pre">/dev/nvidia*</span></code> provides this kind of informations</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">195</span>,<span class="w">   </span><span class="m">0</span><span class="w"> </span>Jun<span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="m">18</span>:17<span class="w"> </span>/dev/nvidia0
+crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">195</span>,<span class="w"> </span><span class="m">255</span><span class="w"> </span>Jun<span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="m">18</span>:17<span class="w"> </span>/dev/nvidiactl
+crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">195</span>,<span class="w"> </span><span class="m">254</span><span class="w"> </span>Jun<span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="m">18</span>:17<span class="w"> </span>/dev/nvidia-modeset
+crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">243</span>,<span class="w">   </span><span class="m">0</span><span class="w"> </span>Jul<span class="w">  </span><span class="m">4</span><span class="w"> </span><span class="m">19</span>:17<span class="w"> </span>/dev/nvidia-uvm
+crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">243</span>,<span class="w">   </span><span class="m">1</span><span class="w"> </span>Jul<span class="w">  </span><span class="m">4</span><span class="w"> </span><span class="m">19</span>:17<span class="w"> </span>/dev/nvidia-uvm-tools
+</pre></div>
+</div>
+<p>We can see that everybody can access to the device. There is only one NVIDIA device, <code class="docutils literal notranslate"><span class="pre">nvidia0</span></code>. On a multiple Nvidia GPU machine, we got <code class="docutils literal notranslate"><span class="pre">nvidia0</span></code>, <code class="docutils literal notranslate"><span class="pre">nvidia1</span></code>, etc…</p>
+</section>
+<section id="exercice-3-get-the-informations-on-your-host-with-dmesg-grep-i-nvidia-command">
+<h4>Exercice #3 : get the informations on your host with <code class="docutils literal notranslate"><span class="pre">dmesg</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">-i</span> <span class="pre">nvidia</span></code> command<a class="headerlink" href="#exercice-3-get-the-informations-on-your-host-with-dmesg-grep-i-nvidia-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>How many <code class="docutils literal notranslate"><span class="pre">/dev/nvidia&lt;number&gt;</span></code> do you get ?</p></li>
+<li><p>Is this information coherent to the 3 previous commands ?</p></li>
+</ul>
+<p>Nvidia provides information about its recognized devices via <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code> command. This command can also be used to configure some tricks inside the GPU.</p>
+<p>An example of <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code> output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Fri<span class="w"> </span>Jul<span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">07</span>:46:56<span class="w"> </span><span class="m">2017</span>
++-----------------------------------------------------------------------------+
+<span class="p">|</span><span class="w"> </span>NVIDIA-SMI<span class="w"> </span><span class="m">375</span>.66<span class="w">                 </span>Driver<span class="w"> </span>Version:<span class="w"> </span><span class="m">375</span>.66<span class="w">                    </span><span class="p">|</span>
+<span class="p">|</span>-------------------------------+----------------------+----------------------+
+<span class="p">|</span><span class="w"> </span>GPU<span class="w">  </span>Name<span class="w">        </span>Persistence-M<span class="p">|</span><span class="w"> </span>Bus-Id<span class="w">        </span>Disp.A<span class="w"> </span><span class="p">|</span><span class="w"> </span>Volatile<span class="w"> </span>Uncorr.<span class="w"> </span>ECC<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>Fan<span class="w">  </span>Temp<span class="w">  </span>Perf<span class="w">  </span>Pwr:Usage/Cap<span class="p">|</span><span class="w">         </span>Memory-Usage<span class="w"> </span><span class="p">|</span><span class="w"> </span>GPU-Util<span class="w">  </span>Compute<span class="w"> </span>M.<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="o">===============================</span>+<span class="o">======================</span>+<span class="o">======================</span><span class="p">|</span>
+<span class="p">|</span><span class="w">   </span><span class="m">0</span><span class="w">  </span>GeForce<span class="w"> </span>GTX<span class="w"> </span><span class="m">108</span>...<span class="w">  </span>Off<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="m">0000</span>:82:00.0<span class="w">      </span>On<span class="w"> </span><span class="p">|</span><span class="w">                  </span>N/A<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span><span class="m">23</span>%<span class="w">   </span>31C<span class="w">    </span>P8<span class="w">    </span>10W<span class="w"> </span>/<span class="w"> </span>250W<span class="w"> </span><span class="p">|</span><span class="w">     </span>35MiB<span class="w"> </span>/<span class="w"> </span>11172MiB<span class="w"> </span><span class="p">|</span><span class="w">      </span><span class="m">0</span>%<span class="w">      </span>Default<span class="w"> </span><span class="p">|</span>
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+<span class="p">|</span><span class="w"> </span>Processes:<span class="w">                                                       </span>GPU<span class="w"> </span>Memory<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="w">  </span>GPU<span class="w">       </span>PID<span class="w">  </span>Type<span class="w">  </span>Process<span class="w"> </span>name<span class="w">                               </span>Usage<span class="w">      </span><span class="p">|</span>
+<span class="p">|</span><span class="o">=============================================================================</span><span class="p">|</span>
+<span class="p">|</span><span class="w">    </span><span class="m">0</span><span class="w">      </span><span class="m">4108</span><span class="w">    </span>G<span class="w">   </span>/usr/lib/xorg/Xorg<span class="w">                              </span>32MiB<span class="w"> </span><span class="p">|</span>
++-----------------------------------------------------------------------------+
+</pre></div>
+</div>
+<p>Lots of informations are available in this output:</p>
+<ul class="simple">
+<li><p>version of driver and <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code> software</p></li>
+<li><p>the <code class="docutils literal notranslate"><span class="pre">id</span></code> of GPU,</p></li>
+<li><p>its name,</p></li>
+<li><p>its bus location,</p></li>
+<li><p>its fan speed,</p></li>
+<li><p>its temperature,</p></li>
+<li><p>its instantly and maximum consumption,</p></li>
+<li><p>its occupied and available</p></li>
+<li><p>its processus and their location on GPU</p></li>
+</ul>
+</section>
+<section id="exercice-4-get-the-informations-with-nvidia-smi-command">
+<h4>Exercice #4 : get the informations with <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code> command<a class="headerlink" href="#exercice-4-get-the-informations-with-nvidia-smi-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Identify the above characteristics and compare the elements</p></li>
+<li><p>How many process are listed in the bottom list ?</p></li>
+</ul>
+<p>As we see in the introduction on GPU, programming them can be achieved with several ways. The first, for Nvidia devices, is to use CUDA environment. The problem is that it’s impossible to reuse your program on other platform or compare directly with CPU. <a class="reference external" href="https://www.khronos.org/opencl/">OpenCL</a> is a more agnostic way.</p>
+<p>On the workstations in CBP, all available implementations of OpenCL are available.</p>
+<p>The command <code class="docutils literal notranslate"><span class="pre">clinfo</span></code> provides informations about devices. Here is an example of a short output with <code class="docutils literal notranslate"><span class="pre">clinfo</span> <span class="pre">'-l'</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Platform<span class="w"> </span><span class="c1">#0: Clover</span>
+Platform<span class="w"> </span><span class="c1">#1: Portable Computing Language</span>
+<span class="sb">`</span>--<span class="w"> </span>Device<span class="w"> </span><span class="c1">#0: pthread-Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz</span>
+Platform<span class="w"> </span><span class="c1">#2: NVIDIA CUDA</span>
+<span class="sb">`</span>--<span class="w"> </span>Device<span class="w"> </span><span class="c1">#0: GeForce GTX 1080 Ti</span>
+Platform<span class="w"> </span><span class="c1">#3: Intel(R) OpenCL</span>
+<span class="sb">`</span>--<span class="w"> </span>Device<span class="w"> </span><span class="c1">#0:        Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz</span>
+Platform<span class="w"> </span><span class="c1">#4: AMD Accelerated Parallel Processing</span>
+<span class="sb">`</span>--<span class="w"> </span>Device<span class="w"> </span><span class="c1">#0: Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">#0</span></code> <strong>Clover</strong> implementation is a GPU one, based on Open Source drivers of GNU/Linux and provided by <a class="reference external" href="https://en.wikipedia.org/wiki/Mesa_%28computer_graphics%29">Mesa</a></p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">#1</span></code> <strong>Portable Computing Language</strong> is a CPU one. Not very efficient but Open Source.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">#2</span></code> <strong>NVIDIA CUDA</strong> implementation is a GPU one. The devices detected are listed below</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">#3</span></code> <strong>Intel(R) OpenCL</strong> implementation is a CPU one. Provided by Intel, very efficient but FP results are sometimes strange.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">#4</span></code> <strong>AMD Accelerated Parallel Processing</strong> is a CPU one. Provided by AMD, rather efficient, the oldest one.</p></li>
+</ul>
+</section>
+<section id="exercice-5-get-the-informations-with-clinfo-l-command">
+<h4>Exercice #5 : get the informations with <code class="docutils literal notranslate"><span class="pre">clinfo</span> <span class="pre">-l</span></code> command<a class="headerlink" href="#exercice-5-get-the-informations-with-clinfo-l-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Identify and compare with list above.</p></li>
+<li><p>How many graphical devices do you get ?</p></li>
+</ul>
+<p>The command <code class="docutils literal notranslate"><span class="pre">clinfo</span></code> without options provides lots (to much…) informations. You can restrict them for example to several attributes as <code class="docutils literal notranslate"><span class="pre">Platform</span> <span class="pre">Name</span></code>, <code class="docutils literal notranslate"><span class="pre">Device</span> <span class="pre">Name</span></code>, <code class="docutils literal notranslate"><span class="pre">Max</span> <span class="pre">compute</span></code>, <code class="docutils literal notranslate"><span class="pre">Max</span> <span class="pre">clock</span></code>.</p>
+<p>On the example platform, the command <code class="docutils literal notranslate"><span class="pre">clinfo</span> <span class="pre">|</span> <span class="pre">egrep</span> <span class="pre">'(Platform</span> <span class="pre">Name|Device</span> <span class="pre">Name|Max</span> <span class="pre">compute|Max</span> <span class="pre">clock)'</span></code> provides the output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Platform<span class="w"> </span>Name<span class="w">                                   </span>Clover
+Platform<span class="w"> </span>Name<span class="w">                                   </span>Portable<span class="w"> </span>Computing<span class="w"> </span>Language
+Platform<span class="w"> </span>Name<span class="w">                                   </span>NVIDIA<span class="w"> </span>CUDA
+Platform<span class="w"> </span>Name<span class="w">                                   </span>Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>OpenCL
+Platform<span class="w"> </span>Name<span class="w">                                   </span>AMD<span class="w"> </span>Accelerated<span class="w"> </span>Parallel<span class="w"> </span>Processing
+Platform<span class="w"> </span>Name<span class="w">                                   </span>Clover
+Platform<span class="w"> </span>Name<span class="w">                                   </span>Portable<span class="w"> </span>Computing<span class="w"> </span>Language
+Device<span class="w"> </span>Name<span class="w">                                     </span>pthread-Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>Xeon<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>CPU<span class="w"> </span>E5-2665<span class="w"> </span><span class="m">0</span><span class="w"> </span>@<span class="w"> </span><span class="m">2</span>.40GHz
+Max<span class="w"> </span>compute<span class="w"> </span>units<span class="w">                               </span><span class="m">32</span>
+Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w">                             </span>2401MHz
+Platform<span class="w"> </span>Name<span class="w">                                   </span>NVIDIA<span class="w"> </span>CUDA
+Device<span class="w"> </span>Name<span class="w">                                     </span>GeForce<span class="w"> </span>GTX<span class="w"> </span><span class="m">1080</span><span class="w"> </span>Ti
+Max<span class="w"> </span>compute<span class="w"> </span>units<span class="w">                               </span><span class="m">28</span>
+Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w">                             </span>1582MHz
+Platform<span class="w"> </span>Name<span class="w">                                   </span>Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>OpenCL
+Device<span class="w"> </span>Name<span class="w">                                     </span>Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>Xeon<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>CPU<span class="w"> </span>E5-2665<span class="w"> </span><span class="m">0</span><span class="w"> </span>@<span class="w"> </span><span class="m">2</span>.40GHz
+Max<span class="w"> </span>compute<span class="w"> </span>units<span class="w">                               </span><span class="m">32</span>
+Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w">                             </span>2400MHz
+Platform<span class="w"> </span>Name<span class="w">                                   </span>AMD<span class="w"> </span>Accelerated<span class="w"> </span>Parallel<span class="w"> </span>Processing
+Device<span class="w"> </span>Name<span class="w">                                     </span>Intel<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>Xeon<span class="o">(</span>R<span class="o">)</span><span class="w"> </span>CPU<span class="w"> </span>E5-2665<span class="w"> </span><span class="m">0</span><span class="w"> </span>@<span class="w"> </span><span class="m">2</span>.40GHz
+Max<span class="w"> </span>compute<span class="w"> </span>units<span class="w">                               </span><span class="m">32</span>
+Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w">                             </span>1200MHz
+</pre></div>
+</div>
+</section>
+<section id="exercice-6-get-the-informations-with-the-previous-and-filtered-clinfo-command">
+<h4>Exercice #6 : get the informations with the previous and filtered <code class="docutils literal notranslate"><span class="pre">clinfo</span></code> command<a class="headerlink" href="#exercice-6-get-the-informations-with-the-previous-and-filtered-clinfo-command" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Compare the informations between CPU implementations. Why these differencies ?</p></li>
+<li><p>Compare the number of compute units to the number you find on WWW.</p></li>
+<li><p>Compare the frequencies to the frequencies found on WWW.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="exploration-with-original-one-xgemm">
+<h2>Exploration with original one : xGEMM<a class="headerlink" href="#exploration-with-original-one-xgemm" title="Lien vers cette rubrique">¶</a></h2>
+<section id="from-blas-to-xgemm-implementations">
+<h3>From BLAS to xGEMM : implementations<a class="headerlink" href="#from-blas-to-xgemm-implementations" title="Lien vers cette rubrique">¶</a></h3>
+<p>In the lecture about the GPUs, we present the GPU as a great matrix multiplier. On of the most common Linear Algebra librairies is BLAS one, formelly <a class="reference external" href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms">Basic Linear Algebra Subprograms</a>.</p>
+<p>These subprograms can be considered as //standard// one. Lots of implementations exist on all architectures. On GPU, Nvidia provides its version with <a class="reference external" href="http://docs.nvidia.com/cuda/cublas/index.html">cuBLAS</a> and AMD release in Open Source its OpenCL implementation <a class="reference external" href="https://github.com/clMathLibraries/clBLAS">clBLAS</a>.</p>
+<p>On CPU, Intel sells its optimized implementation in <a class="reference external" href="https://software.intel.com/en-us/mkl">MKL librairies</a> but an Open Source equivalent, <a class="reference external" href="http://www.openblas.net/">OpenBLAS</a>. Several others implementations exist and are deployed on CBP machines : <a class="reference external" href="http://math-atlas.sourceforge.net/">ATLAS</a> and <a class="reference external" href="https://www.gnu.org/software/gsl/">GSL</a>.</p>
+<p>The implementation on Matrix Multiply in BLAS librairies is <code class="docutils literal notranslate"><span class="pre">xGEMM</span></code>, with <code class="docutils literal notranslate"><span class="pre">x</span></code> to be replaced by <code class="docutils literal notranslate"><span class="pre">S</span></code>, <code class="docutils literal notranslate"><span class="pre">D</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span></code> and <code class="docutils literal notranslate"><span class="pre">Z</span></code> respectively for Simple precision (32 bits), Double precision (64 bits), Complex &amp; Simple precision, Complex &amp; Double precision.</p>
+</section>
+<section id="test-examples">
+<h3>Test examples<a class="headerlink" href="#test-examples" title="Lien vers cette rubrique">¶</a></h3>
+<p>Inside <code class="docutils literal notranslate"><span class="pre">/scratch/Astrosim2017/xGEMM</span></code> are programs implementing xGEMM for simple <code class="docutils literal notranslate"><span class="pre">xGEMM_SP_&lt;version&gt;</span></code> or double <code class="docutils literal notranslate"><span class="pre">xGEMM_DP_&lt;version&gt;</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fblas</span></code> using ATLAS libraries</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">openblas</span></code> using OpenBLAS libraries</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gsl</span></code> using GSL librairies</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cublas</span></code> using cuBLAS libraries with internal memory management</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">thunking</span></code> using cuBLAS libraries with external memory management</p></li>
+</ul>
+<p>The source code and <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> using to compile these examples is available in tarball at:</p>
+<ul class="simple">
+<li><p>on workstations: <code class="docutils literal notranslate"><span class="pre">/scratch/AstroSim2017/xGEMM_EQ_170707.tgz</span></code></p></li>
+<li><p>on website: <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Astrosim2017/xGEMM_EQ_170707.tgz">xGEMM_EQ_170707.tgz</a></p></li>
+</ul>
+<p>The program call with <code class="docutils literal notranslate"><span class="pre">-h</span></code> option provides tiny informations to launch it. Input parameters are:</p>
+<ul class="simple">
+<li><p>size of square matrix</p></li>
+<li><p>number of iterations</p></li>
+</ul>
+<p>The output provides:</p>
+<ul class="simple">
+<li><p>the mean elapsed time of each cycle</p></li>
+<li><p>the number of estimated GFlops</p></li>
+<li><p>the error estimated by the difference between trace of matrix multiply results</p></li>
+</ul>
+<p>Examples on runs on the several implementations:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># ./xGEMM_SP_fblas 1000 10 1 0</span>
+Using<span class="w"> </span>FBLAS:<span class="w"> </span><span class="m">10</span><span class="w"> </span>iterations<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000x1000<span class="w"> </span>matrix
+
+Duration<span class="w"> </span>of<span class="w"> </span>each<span class="w"> </span>cycle<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.2133281000<span class="w"> </span>s
+Number<span class="w"> </span>of<span class="w"> </span>GFlops<span class="w"> </span>:<span class="w"> </span><span class="m">18</span>.741
+Error<span class="w"> </span><span class="m">0</span>.0000000000
+
+<span class="c1"># ./xGEMM_SP_gsl 1000 10 1 0</span>
+Using<span class="w"> </span>GSL:<span class="w"> </span><span class="m">10</span><span class="w"> </span>iterations<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000x1000<span class="w"> </span>matrix
+
+Duration<span class="w"> </span>of<span class="w"> </span>each<span class="w"> </span>cycle<span class="w"> </span>:<span class="w"> </span><span class="m">8</span>.1447937000<span class="w"> </span>s
+Number<span class="w"> </span>of<span class="w"> </span>GFlops<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.491
+Error<span class="w"> </span><span class="m">0</span>.0000000000
+
+<span class="c1"># ./xGEMM_SP_openblas 1000 1000 1 0</span>
+Using<span class="w"> </span>CBLAS:<span class="w"> </span><span class="m">1000</span><span class="w"> </span>iterations<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000x1000<span class="w"> </span>matrix
+
+Duration<span class="w"> </span>of<span class="w"> </span>each<span class="w"> </span>cycle<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.0161011820<span class="w"> </span>s
+Number<span class="w"> </span>of<span class="w"> </span>GFlops<span class="w"> </span>:<span class="w"> </span><span class="m">248</span>.305
+Error<span class="w"> </span><span class="m">0</span>.0000000000
+
+<span class="c1"># ./xGEMM_SP_cublas 1000 1000 1 0</span>
+Using<span class="w"> </span>CuBLAS:<span class="w"> </span><span class="m">1000</span><span class="w"> </span>iterations<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000x1000<span class="w"> </span>matrix
+
+Duration<span class="w"> </span>of<span class="w"> </span>memory<span class="w"> </span>allocation<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.6675190000<span class="w"> </span>s
+Duration<span class="w"> </span>of<span class="w"> </span>memory<span class="w"> </span>free<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.0004700000<span class="w"> </span>s
+Duration<span class="w"> </span>of<span class="w"> </span>each<span class="w"> </span>cycle<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.0005507960<span class="w"> </span>s
+Number<span class="w"> </span>of<span class="w"> </span>GFlops<span class="w"> </span>:<span class="w"> </span><span class="m">7258</span>.586
+Error<span class="w"> </span><span class="m">0</span>.0000000000
+
+<span class="c1"># ./xGEMM_SP_thunking 1000 1000 1 0</span>
+Using<span class="w"> </span>CuBLAS/Thunking:<span class="w"> </span><span class="m">1000</span><span class="w"> </span>iterations<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000x1000<span class="w"> </span>matrix
+
+Duration<span class="w"> </span>of<span class="w"> </span>each<span class="w"> </span>cycle<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.0143951160<span class="w"> </span>s
+Number<span class="w"> </span>of<span class="w"> </span>GFlops<span class="w"> </span>:<span class="w"> </span><span class="m">277</span>.733
+Error<span class="w"> </span><span class="m">0</span>.0000000000
+
+<span class="c1"># ./xGEMM_SP_clblas 1000 1000 1 0</span>
+Using<span class="w"> </span>CLBLAS:<span class="w"> </span><span class="m">1000</span><span class="w"> </span>iterations<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000x1000<span class="w"> </span>matrix<span class="w"> </span>on<span class="w"> </span><span class="o">(</span><span class="m">1</span>,0<span class="o">)</span>
+Device<span class="w"> </span><span class="o">(</span><span class="m">1</span>,0<span class="o">)</span>:<span class="w"> </span>GeForce<span class="w"> </span>GTX<span class="w"> </span><span class="m">1080</span><span class="w"> </span>Ti
+
+Duration<span class="w"> </span>of<span class="w"> </span>memory<span class="w"> </span>allocation<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.6057190000<span class="w"> </span>s
+Duration<span class="w"> </span>of<span class="w"> </span>memory<span class="w"> </span>free<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.0049670000<span class="w"> </span>s
+Duration<span class="w"> </span>of<span class="w"> </span>each<span class="w"> </span>cycle<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.0029998720<span class="w"> </span>s
+Number<span class="w"> </span>of<span class="w"> </span>GFlops<span class="w"> </span>:<span class="w"> </span><span class="m">1332</span>.724
+Error<span class="w"> </span><span class="m">0</span>.0000000000
+</pre></div>
+</div>
+<section id="exercice-6-launch-xgemm-precision-implementation-with-different-sizes-and-iterations">
+<h4>Exercice #6 : launch <code class="docutils literal notranslate"><span class="pre">xGEMM_&lt;precision&gt;_&lt;implementation&gt;</span></code> with different sizes and iterations<a class="headerlink" href="#exercice-6-launch-xgemm-precision-implementation-with-different-sizes-and-iterations" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Which on the CPU implementations is the powerful</p></li>
+<li><p>Increase the size of matrix to <code class="docutils literal notranslate"><span class="pre">2000</span></code>, <code class="docutils literal notranslate"><span class="pre">4000</span></code>, <code class="docutils literal notranslate"><span class="pre">8000</span></code> on GPU and check the results</p></li>
+<li><p>Move from simple precision to double precision (SP to DP) and examine the elapsed time on CPU</p></li>
+<li><p>Move from simple precision to double precision (SP to DP) and examine the elapsed time on GPU</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="exploration-with-dummie-codes">
+<h2>Exploration with dummie codes<a class="headerlink" href="#exploration-with-dummie-codes" title="Lien vers cette rubrique">¶</a></h2>
+<section id="pi-monte-carlo-a-compute-bound-example">
+<h3>Pi Monte Carlo, a Compute Bound Example<a class="headerlink" href="#pi-monte-carlo-a-compute-bound-example" title="Lien vers cette rubrique">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> code is a implementation of PiMC Pi Dart Dash on GPU, on OpenCL and CUDA devices. It’s useful to evaluate que compute power of <a href="#id1"><span class="problematic" id="id2">*</span></a>PU devices as, CPU, GPU (both Nvidia, AMD and Intel), and CPU through the 3 implementations.</p>
+<p>It’s available on:</p>
+<ul class="simple">
+<li><p>on file: <code class="docutils literal notranslate"><span class="pre">/scratch/AstroSim2017/PiXPU.py</span></code> on workstations</p></li>
+<li><p>on website: <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Astrosim2017/PiXPU.py">PiXPU.py</a></p></li>
+</ul>
+<p>Copy the <code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> inside your folder to use it</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/scratch/<span class="nv">$USER</span>
+<span class="nb">cd</span><span class="w"> </span>/scratch/<span class="nv">$USER</span>
+cp<span class="w"> </span>/scratch/AstroSim2017/PiXPU.py<span class="w"> </span>/scratch/<span class="nv">$USER</span>
+</pre></div>
+</div>
+<p>The documentation is available by the call of <code class="docutils literal notranslate"><span class="pre">/scratch/$USER/PiXPU.py</span> <span class="pre">-h</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PiXPU.py<span class="w"> </span>-o<span class="w"> </span><span class="o">(</span>Out<span class="w"> </span>of<span class="w"> </span>Core<span class="w"> </span>Metrology<span class="o">)</span><span class="w"> </span>-c<span class="w"> </span><span class="o">(</span>Print<span class="w"> </span>Curves<span class="o">)</span><span class="w"> </span>-d<span class="w"> </span>&lt;DeviceId&gt;<span class="w"> </span>-g<span class="w"> </span>&lt;CUDA/OpenCL&gt;<span class="w"> </span>-i<span class="w"> </span>&lt;Iterations&gt;<span class="w"> </span>-b<span class="w"> </span>&lt;BlocksBegin&gt;<span class="w"> </span>-e<span class="w"> </span>&lt;BlocksEnd&gt;<span class="w"> </span>-s<span class="w"> </span>&lt;BlocksStep&gt;<span class="w"> </span>-f<span class="w"> </span>&lt;ThreadsFirst&gt;<span class="w"> </span>-l<span class="w"> </span>&lt;ThreadsLast&gt;<span class="w"> </span>-t<span class="w"> </span>&lt;ThreadssTep&gt;<span class="w"> </span>-r<span class="w"> </span>&lt;RedoToImproveStats&gt;<span class="w"> </span>-m<span class="w"> </span>&lt;SHR3/CONG/MWC/KISS&gt;<span class="w"> </span>-v<span class="w"> </span>&lt;INT32/INT64/FP32/FP64&gt;
+
+Informations<span class="w"> </span>about<span class="w"> </span>devices<span class="w"> </span>detected<span class="w"> </span>under<span class="w"> </span>OpenCL<span class="w"> </span>API:
+Device<span class="w"> </span><span class="c1">#0 from The pocl project of type *PU : pthread-Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz</span>
+Device<span class="w"> </span><span class="c1">#1 from NVIDIA Corporation of type *PU : GeForce GTX TITAN</span>
+Device<span class="w"> </span><span class="c1">#2 from Intel(R) Corporation of type *PU : Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz</span>
+Device<span class="w"> </span><span class="c1">#3 from Advanced Micro Devices, Inc. of type *PU : Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz</span>
+
+Informations<span class="w"> </span>about<span class="w"> </span>devices<span class="w"> </span>detected<span class="w"> </span>under<span class="w"> </span>CUDA<span class="w"> </span>API:
+Device<span class="w"> </span><span class="c1">#0 of type GPU : GeForce GTX TITAN</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">-h</span></code> also detects the OpenCL and CUDA devices and sends each an ID which must be used for their specific call.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Devices<span class="w"> </span>Identification<span class="w"> </span>:<span class="w"> </span><span class="o">[</span><span class="m">0</span><span class="o">]</span>
+GpuStyle<span class="w"> </span>used<span class="w"> </span>:<span class="w"> </span>OpenCL
+Iterations<span class="w"> </span>:<span class="w"> </span><span class="m">1000000</span>
+Number<span class="w"> </span>of<span class="w"> </span>Blocks<span class="w"> </span>on<span class="w"> </span>begin<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>
+Number<span class="w"> </span>of<span class="w"> </span>Blocks<span class="w"> </span>on<span class="w"> </span>end<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>
+Step<span class="w"> </span>on<span class="w"> </span>Blocks<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>
+Number<span class="w"> </span>of<span class="w"> </span>Threads<span class="w"> </span>on<span class="w"> </span>begin<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>
+Number<span class="w"> </span>of<span class="w"> </span>Threads<span class="w"> </span>on<span class="w"> </span>end<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>
+Step<span class="w"> </span>on<span class="w"> </span>Threads<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>
+Number<span class="w"> </span>of<span class="w"> </span>redo<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>
+Metrology<span class="w"> </span><span class="k">done</span><span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span>XPU<span class="w"> </span>:<span class="w"> </span>False
+Type<span class="w"> </span>of<span class="w"> </span>Marsaglia<span class="w"> </span>RNG<span class="w"> </span>used<span class="w"> </span>:<span class="w"> </span>MWC
+Type<span class="w"> </span>of<span class="w"> </span>variable<span class="w"> </span>:<span class="w"> </span>FP32
+Device<span class="w"> </span><span class="c1">#0 from The pocl project of type xPU : pthread-Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz</span>
+Device<span class="w"> </span><span class="c1">#1 from NVIDIA Corporation of type xPU : GeForce GTX 1080 Ti</span>
+Device<span class="w"> </span><span class="c1">#2 from Intel(R) Corporation of type xPU : Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz</span>
+Device<span class="w"> </span><span class="c1">#3 from Advanced Micro Devices, Inc. of type xPU : Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz</span>
+<span class="o">(</span><span class="s1">&#39;CPU/GPU selected: &#39;</span>,<span class="w"> </span><span class="s1">&#39;pthread-Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz&#39;</span><span class="o">)</span>
+Pi<span class="w"> </span>estimation<span class="w"> </span><span class="m">3</span>.14192800
+<span class="m">0</span>.03<span class="w"> </span><span class="m">0</span>.03<span class="w"> </span><span class="m">0</span>.00<span class="w"> </span><span class="m">0</span>.03<span class="w"> </span><span class="m">0</span>.03<span class="w"> </span><span class="m">37357749</span><span class="w"> </span><span class="m">37357749</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">37357749</span><span class="w"> </span><span class="m">37357749</span>
+</pre></div>
+</div>
+<p>Two file are created by default:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Pi_FP32_MWC_xPU_OpenCL_1_1_1_1_01000000_Device0_InMetro_titan.npz</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Pi_FP32_MWC_xPU_OpenCL_1_1_1_1_01000000_Device0_InMetro_titan</span></code></p></li>
+</ul>
+<section id="exercice-7-explore-pixpu-py-with-several-simple-configurations-pour-pr-1">
+<h4>Exercice #7 : explore <code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> with several simple configurations pour <code class="docutils literal notranslate"><span class="pre">PR=1</span></code><a class="headerlink" href="#exercice-7-explore-pixpu-py-with-several-simple-configurations-pour-pr-1" title="Lien vers cette rubrique">¶</a></h4>
+<ul>
+<li><p>Without any parameters (the default ones) :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>what is the selected device ? How many itops (iterative operations per second) do you reach ?</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>With only the device parameter as <code class="docutils literal notranslate"><span class="pre">-d</span> <span class="pre">1</span></code> to select <code class="docutils literal notranslate"><span class="pre">#1</span></code> for all the available devices :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>What are the different ratios between the devices ? Which one is the most powerful ?</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>With the selector of device and increasing the number of iterations and the number of redo :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>What arrive to itops values ? What is the typical variability on results ?</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/scratch/<span class="nv">$USER</span>/PiXPU.py
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/scratch/<span class="nv">$USER</span>/PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span>
+/scratch/<span class="nv">$USER</span>/PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">2</span>
+/scratch/<span class="nv">$USER</span>/PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">3</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/scratch/<span class="nv">$USER</span>/PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">0</span><span class="w"> </span>-i<span class="w"> </span><span class="m">100000000</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span>
+/scratch/<span class="nv">$USER</span>/PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-i<span class="w"> </span><span class="m">100000000</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span>
+/scratch/<span class="nv">$USER</span>/PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">2</span><span class="w"> </span>-i<span class="w"> </span><span class="m">100000000</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span>
+/scratch/<span class="nv">$USER</span>/PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">3</span><span class="w"> </span>-i<span class="w"> </span><span class="m">100000000</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span>
+</pre></div>
+</div>
+</section>
+<section id="exercice-8-explore-pixpu-py-by-increasing-the-parallel-rate-pr">
+<h4>Exercice #8 : explore <code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> by increasing the Parallel Rate <code class="docutils literal notranslate"><span class="pre">PR</span></code><a class="headerlink" href="#exercice-8-explore-pixpu-py-by-increasing-the-parallel-rate-pr" title="Lien vers cette rubrique">¶</a></h4>
+<ul>
+<li><p>With a PR from <code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">64</span></code> set by <code class="docutils literal notranslate"><span class="pre">-b</span></code> and <code class="docutils literal notranslate"><span class="pre">-e</span></code>, a the number of iterations of 1 billion, and 10 times and on default device</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>How decrease the elapsed time of</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>With the selector of device and increasing the number of iterations and the number of redo :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>What arrive to itops values ? What is the typical variability on results ?</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">0</span><span class="w"> </span>-b<span class="w"> </span><span class="m">1</span><span class="w"> </span>-e<span class="w"> </span><span class="m">32</span><span class="w"> </span>-i<span class="w"> </span><span class="m">1000000000</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span>
+</pre></div>
+</div>
+<p>In this case, we define a gnuplot config file as follow. Adapt to your files and configuration.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="w"> </span>xlabel<span class="w"> </span><span class="s1">&#39;Parallel Rate&#39;</span>
+<span class="nb">set</span><span class="w"> </span>ylabel<span class="w"> </span><span class="s1">&#39;Itops&#39;</span>
+plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_64_1_1_1000000000_Device0_InMetro_titan&#39;</span><span class="w"> </span>using<span class="w"> </span><span class="m">1</span>:9<span class="w"> </span>title<span class="w"> </span><span class="s1">&#39;CPU with OpenCL&#39;</span>
+</pre></div>
+</div>
+<img alt="Image pimc_1_64_cpu" class="img-fluid center" src="../../_images/pimc_1_64_cpu.png" />
+</section>
+<section id="exercice-9-explore-pixpu-py-with-large-pr-on-gpu-mostly-power-of-2">
+<h4>Exercice #9 : explore <code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> with large PR on GPU (mostly power of 2)<a class="headerlink" href="#exercice-9-explore-pixpu-py-with-large-pr-on-gpu-mostly-power-of-2" title="Lien vers cette rubrique">¶</a></h4>
+<ul class="simple">
+<li><p>Explore with <code class="docutils literal notranslate"><span class="pre">PR</span></code> from <code class="docutils literal notranslate"><span class="pre">2048</span></code> to <code class="docutils literal notranslate"><span class="pre">32768</span></code> with a 128 step</p></li>
+<li><p>For which <code class="docutils literal notranslate"><span class="pre">PR</span></code> the itops is the higher on you device ?</p></li>
+</ul>
+<p>To explore on this platform the GPU device (device #1) from 2048 to 32768 as parallel rates with a step of 128 and 1000000000 iterations:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-b<span class="w"> </span><span class="m">2048</span><span class="w"> </span>-e<span class="w"> </span><span class="k">$((</span><span class="m">2048</span><span class="o">*</span><span class="m">16</span><span class="k">))</span><span class="w"> </span>-s<span class="w"> </span><span class="m">128</span><span class="w"> </span>-i<span class="w"> </span><span class="m">10000000000</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span>
+</pre></div>
+</div>
+<p>Output files are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Pi_FP32_MWC_xPU_OpenCL_2048_32768_1_1_1000000000_Device1_InMetro_titan.npz</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Pi_FP32_MWC_xPU_OpenCL_2048_32768_1_1_1000000000_Device1_InMetro_titan</span></code></p></li>
+</ul>
+<p>In this case, you can define a gnuplot config file</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="w"> </span>xlabel<span class="w"> </span><span class="s1">&#39;Parallel Rate&#39;</span>
+<span class="nb">set</span><span class="w"> </span>ylabel<span class="w"> </span><span class="s1">&#39;Itops&#39;</span>
+plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_2048_32768_1_1_10000000000_Device1_InMetro_titan&#39;</span><span class="w"> </span>using<span class="w"> </span><span class="m">1</span>:9<span class="w"> </span>title<span class="w"> </span><span class="s1">&#39;GTX 1080 Ti&#39;</span>
+</pre></div>
+</div>
+<img alt="Image pimc_2048_32768_gtx1080ti" class="img-fluid center" src="../../_images/pimc_2048_32768_gtx1080ti.png" />
+</section>
+<section id="exercice-10-explore-pixpu-py-with-around-a-large-pr">
+<h4>Exercice #10 : explore <code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> with around a large <code class="docutils literal notranslate"><span class="pre">PR</span></code><a class="headerlink" href="#exercice-10-explore-pixpu-py-with-around-a-large-pr" title="Lien vers cette rubrique">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-b<span class="w"> </span><span class="k">$((</span><span class="m">2048</span><span class="o">-</span><span class="m">8</span><span class="k">))</span><span class="w"> </span>-e<span class="w"> </span><span class="k">$((</span><span class="m">2048</span><span class="o">+</span><span class="m">8</span><span class="k">))</span><span class="w"> </span>-i<span class="w"> </span><span class="m">10000000000</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Pi_FP32_MWC_xPU_OpenCL_2040_2056_1_1_10000000000_Device1_InMetro_titan</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Pi_FP32_MWC_xPU_OpenCL_2040_2056_1_1_10000000000_Device1_InMetro_titan.npz</span></code></p></li>
+</ul>
+<p>In this case, you can define a gnuplot config file</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="w"> </span>xlabel<span class="w"> </span><span class="s1">&#39;Parallel Rate&#39;</span>
+<span class="nb">set</span><span class="w"> </span>ylabel<span class="w"> </span><span class="s1">&#39;Itops&#39;</span>
+plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_2040_2056_1_1_10000000000_Device1_InMetro_titan&#39;</span><span class="w"> </span>using<span class="w"> </span><span class="m">1</span>:9<span class="w"> </span>title<span class="w"> </span><span class="s1">&#39;GTX 1080 Ti&#39;</span>
+</pre></div>
+</div>
+<img alt="Image pimc_2040_2056_gtx1080ti" class="img-fluid center" src="../../_images/pimc_2040_2056_gtx1080ti.png" />
+</section>
+</section>
+<section id="nbody-a-simplistic-simulator">
+<h3>NBody, a simplistic simulator<a class="headerlink" href="#nbody-a-simplistic-simulator" title="Lien vers cette rubrique">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">NBody.py</span></code> code is a implementation of N-Body kepkerian system on OpenCL devices.</p>
+<p>It’s available on:</p>
+<ul class="simple">
+<li><p>on file: <code class="docutils literal notranslate"><span class="pre">/scratch/AstroSim2017/NBody.py</span></code> on workstations</p></li>
+<li><p>on website: <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/Astrosim2017/NBody.py">NBody.py</a></p></li>
+</ul>
+<p>Launch the code with a <code class="docutils literal notranslate"><span class="pre">N=2</span></code> on <code class="docutils literal notranslate"><span class="pre">1000</span></code> iterations with a graphical output</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>NBody.py<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>-g<span class="w"> </span>-i<span class="w"> </span><span class="m">1000</span>
+</pre></div>
+</div>
+<img alt="Image nbody_n2_gpu" class="img-fluid center" src="../../_images/nbody_n2_gpu.png" />
+<section id="exercice-10-explore-nbody-py-with-different-devices">
+<h4>Exercice #10 : explore <code class="docutils literal notranslate"><span class="pre">NBody.py</span></code> with different devices<a class="headerlink" href="#exercice-10-explore-nbody-py-with-different-devices" title="Lien vers cette rubrique">¶</a></h4>
+</section>
+<section id="exercice-11-explore-nbody-py-with-steps-and-iterations">
+<h4>Exercice #11 : explore <code class="docutils literal notranslate"><span class="pre">NBody.py</span></code> with steps and iterations<a class="headerlink" href="#exercice-11-explore-nbody-py-with-steps-and-iterations" title="Lien vers cette rubrique">¶</a></h4>
+</section>
+<section id="exercice-12-explore-nbody-py-with-double-precision">
+<h4>Exercice #12 : explore <code class="docutils literal notranslate"><span class="pre">NBody.py</span></code> with Double Precision<a class="headerlink" href="#exercice-12-explore-nbody-py-with-double-precision" title="Lien vers cette rubrique">¶</a></h4>
+</section>
+</section>
+</section>
+<section id="exploration-with-production-codes">
+<h2>Exploration with production codes<a class="headerlink" href="#exploration-with-production-codes" title="Lien vers cette rubrique">¶</a></h2>
+<section id="pkdgrav3">
+<h3>PKDGRAV3<a class="headerlink" href="#pkdgrav3" title="Lien vers cette rubrique">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/Autres/gpu4dummies.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

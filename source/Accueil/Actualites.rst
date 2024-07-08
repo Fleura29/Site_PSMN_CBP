@@ -24,7 +24,7 @@ Le PSMN est partenaire de deux projets financés:
 Actualités récurentes:
     * Les :ref:`Journées CBP & PSMN - cycle de rencontres thématiques <thematique>`  
     * Les :ref:`Cafés du jeudi <cafe>` organisés par le pôle.
-    * Les `dates de formation <#>`_. 
+    * Les :ref:`dates de formation <dateform>`. 
 
 Pour une présentation du PSMN et du CBP, veuillez consulter `cette page <../index.html>`_.
 
@@ -33,7 +33,7 @@ Les formations
 
 Voir `la page dédiée aux formations <formations>`_
 
-.. container:: d-inline-block bg-danger-subtle pt-3 mb-3 rounded fs-13 text-center
+.. container:: note note-important
 
     Les formations PSMN sont proposées en présentiel (ou visioconférence), en général, le mardi après-midi ou le jeudi après-midi, à la demande des utilisateurs. |br|
     **Inscriptions** : `Cerasela Calugaru <mailto:cerasela.iliana.calugaru@ens-lyon.fr>`_

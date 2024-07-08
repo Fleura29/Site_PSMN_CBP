@@ -13,8 +13,10 @@ Banc d'essais
 Le principal "banc d'essai" est le socle système Sidus (Single Instance Distributing Universal System).
 
 Le Sidus permet le lancement de n'importe quel équipement démarrant par le réseau via le protocole PXE. C'est un socle :
-  * **pour les matériels** : le noyau Linux intégré à la Debian est si générique qu'il permet le lancement sans modification notable de presque tous les équipements
-  * **pour les logiciels** : exploitant largement la distribution Linux la plus complète, la Debian, elle offre les fondations génériques
+* **pour les matériels** : le noyau Linux intégré à la Debian est si générique qu'il permet le lancement sans modification notable de presque tous les équipements
+* **pour les logiciels** : exploitant largement la distribution Linux la plus complète, la Debian, elle offre les fondations génériques
+
+.. _qualificationmat:
 
 Qualification Matérielle
 ------------------------
@@ -156,6 +158,8 @@ Equipements Micro-serveurs
 +---------------+--------------+------------------------+--------------------+--------------+
 |  Hard Kernel  |  Odroid-XU   |  Wheezy                |  ARMv7 Exynos 5120 |  en service  |
 +---------------+--------------+------------------------+--------------------+--------------+
+
+.. _qualificationlog:
 
 Qualification Logicielle
 ------------------------
