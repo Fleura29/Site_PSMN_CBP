@@ -1,0 +1,71 @@
+.. _tt2014:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Tutoriels 2014
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/Tutos/houches.png
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Houches
+
+:ref:`4th Les Houches School in computational physics: From quantum gases to strongly correlated systems <tutohouches2014>` |br|
+Les Houches/Rhone-Alpes/France |br|
+**June 23 - July 4, 2014**
+
+* Markus Holzmann (UPMC, Paris, UJF, Grenoble)
+* Tommaso Roscilde (ENS, Lyon)
+* Jean-Louis Barrat (UJF, Grenoble)
+
+----
+
+.. image:: ../../_static/Animations/Tutos/grid_logo.png
+  :class: img-float pe-2
+  :width: 140px
+  :alt: Logo Grid
+
+:ref:`Grid'5000: Summer school 2014 <grid5000>` |br| 
+
+**June 17-19, 2014** - ENS Lyon, France
+
+----
+
+.. image:: ../../_static/Animations/Tutos/latticemodelab.png
+  :class: img-float pe-3
+  :width: 150px
+  :alt: latticemodelab
+
+:ref:`Lattice Dynamics of Solids with ABINIT <ldsabinit>` |br|
+**May 12-16, 2014** Centre Blaise Pascal, ENS Lyon, France 
+
+* Razvan Caracas, ENS de Lyon, France
+* Xavier Gonze, UC Louvain, Belgium
+* Philippe Ghosez, Univ. Liege, Belgium
+* Matthieu Verstraete, Univ. Liege, Belgium
+* Eric Bousquet, Univ. Liege, Belgium
+
+----
+
+.. image:: ../../_static/Animations/Tutos/psmn_logo.jpg
+  :class: img-float pe-2
+  :width: 150px
+  :alt: Logo PSMN
+
+**Formation a l'utilisation du PSMN** |br|
+Salle de travaux pratiques (LR6 D 014); Centre Blaise Pascal, ENS Lyon, France 
+
+**- le 16 Janvier 2014** |br|
+**- le 6 Février 2014** |br|
+**- le 10 Avril 2014** |br|
+**- le 22 Mai 2014** |br|
+**- le 24 Juin 2014** |br|
+**- le 06 Octobre 2014** |br| 
+**- le 26 Novembre 2014**
+
+* Cerasela Calugaru, Centre Blaise Pascal / PSMN, École Normale Supérieure de Lyon, France
+* Hervé Gilquin, PSMN, École Normale Supérieure de Lyon, France

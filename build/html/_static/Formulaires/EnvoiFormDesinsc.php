@@ -2,7 +2,6 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $email = htmlspecialchars($_POST["emailDesinscription"]);
-    echo $email;
 
     $to = "charlotte.ruiz@hotmail.fr"; 
     $subject = "Desinscription de la liste de diffusion CBP";

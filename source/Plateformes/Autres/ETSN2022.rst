@@ -3,7 +3,7 @@
 ETSN 2022 : les GPU, la technologie disruptive du 21ème siècle
 ==============================================================
 
-.. container:: note note-important
+.. container:: note note-warning
     
     Contient certainement encore un nombre non négligeable de coquilles... Merci de votre compréhension. Mon adresse de courriel est en bas pour vous permettre d'en assurer l'amélioration !
 
@@ -72,9 +72,9 @@ Prérequis pour le logiciel
 
 Pour choisir "judicieusement" une machine parmi les plus de 130 de machines à disposition, consultez la page `Cloud@CBP <https://www.cbp.ens-lyon.fr/python/forms/CloudCBP>`_. Il est recommandé de prendre une machine disposant d'une GPU de type "Gamer" ou d'une "GPGPU". Les sélecteurs de la page précédente peuvent vous aider dans ce choix. Coordonnez-vous entre vous pour être si possible chacun sur la vôtre. Ensuite, une fois connecté via x2go, il peut être intéressant de se connecter sur une autre machine de configuration différente pour comparer les résultats de vos expérimentations.
 
-.. container:: note note-important 
+.. container:: note note-warning 
     
-    Etant donné la combinatoire des machines, leurs matériels respectifs et la galaxie des OS GNU/Linux et leurs versions, cela peut prendre de quelques minutes à plusieurs heures (voire jamais) de s'assurer de la compatibilité de sa machine avec le prérequis logiciel. Donc l'exploitation de l'environnement du CBP, exactement construit pour suivre ces travaux pratiques, est TRES FORTEMENT recommandée.
+  Etant donné la combinatoire des machines, leurs matériels respectifs et la galaxie des OS GNU/Linux et leurs versions, cela peut prendre de quelques minutes à plusieurs heures (voire jamais) de s'assurer de la compatibilité de sa machine avec le prérequis logiciel. Donc l'exploitation de l'environnement du CBP, exactement construit pour suivre ces travaux pratiques, est TRES FORTEMENT recommandée.
 
 Prérequis pour l'humain 
 """""""""""""""""""""""
@@ -105,7 +105,7 @@ Voici une sortie de la commande 'lspci -nn | egrep '(VGA|3D)' ' :
     3b:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] [10de:1b06] (rev a1)
     a1:00.0 VGA compatible controller [0300]: NVIDIA Corporation GK107GL [Quadro K420] [10de:0ff3] (rev a1)
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.1: récuperez la liste des périphériques (GP)GPU**
 
@@ -125,34 +125,34 @@ Si le démarrage de la machine n'est pas trop ancien, vous disposez des informat
 
 .. code-block:: bash
 
-    [   19.545688] NVRM: The NVIDIA GPU 0000:82:00.0 (PCI ID: 10de:1b06)
-                NVRM: NVIDIA Linux driver release.  Please see 'Appendix
-                NVRM: A - Supported NVIDIA GPU Products' in this release's
-                NVRM: at www.nvidia.com.
-    [   19.545903] nvidia: probe of 0000:82:00.0 failed with error -1
-    [   19.546254] NVRM: The NVIDIA probe routine failed for 1 device(s).
-    [   19.546491] NVRM: None of the NVIDIA graphics adapters were initialized!
-    [   19.782970] nvidia-nvlink: Nvlink Core is being initialized, major device number 244
-    [   19.783084] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  375.66  Mon May  1 15:29:16 PDT 2017 (using threaded interrupts)
-    [   19.814046] nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  375.66  Mon May  1 14:33:30 PDT 2017
-    [   20.264453] [drm] [nvidia-drm] [GPU ID 0x00008200] Loading driver
-    [   23.360807] input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input19
-    [   23.360885] input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input20
-    [   23.360996] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input21
-    [   23.361065] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input22
-    [   32.896510] [drm] [nvidia-drm] [GPU ID 0x00008200] Unloading driver
-    [   32.935658] nvidia-modeset: Unloading
-    [   32.967939] nvidia-nvlink: Unregistered the Nvlink Core, major device number 244
-    [   33.034671] nvidia-nvlink: Nvlink Core is being initialized, major device number 244
-    [   33.034724] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  375.66  Mon May  1 15:29:16 PDT 2017 (using threaded interrupts)
-    [   33.275804] nvidia-nvlink: Unregistered the Nvlink Core, major device number 244
-    [   33.993460] nvidia-nvlink: Nvlink Core is being initialized, major device number 244
-    [   33.993486] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  375.66  Mon May  1 15:29:16 PDT 2017 (using threaded interrupts)
-    [   35.110461] nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  375.66  Mon May  1 14:33:30 PDT 2017
-    [   35.111628] nvidia-modeset: Allocated GPU:0 (GPU-ccc95482-6681-052e-eb30-20b138412b92) @ PCI:0000:82:00.0
-    [349272.210486] nvidia-uvm: Loaded the UVM driver in 8 mode, major device number 243
+  [   19.545688] NVRM: The NVIDIA GPU 0000:82:00.0 (PCI ID: 10de:1b06)
+              NVRM: NVIDIA Linux driver release.  Please see 'Appendix
+              NVRM: A - Supported NVIDIA GPU Products' in this release's
+              NVRM: at www.nvidia.com.
+  [   19.545903] nvidia: probe of 0000:82:00.0 failed with error -1
+  [   19.546254] NVRM: The NVIDIA probe routine failed for 1 device(s).
+  [   19.546491] NVRM: None of the NVIDIA graphics adapters were initialized!
+  [   19.782970] nvidia-nvlink: Nvlink Core is being initialized, major device number 244
+  [   19.783084] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  375.66  Mon May  1 15:29:16 PDT 2017 (using threaded interrupts)
+  [   19.814046] nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  375.66  Mon May  1 14:33:30 PDT 2017
+  [   20.264453] [drm] [nvidia-drm] [GPU ID 0x00008200] Loading driver
+  [   23.360807] input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input19
+  [   23.360885] input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input20
+  [   23.360996] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input21
+  [   23.361065] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:80/0000:80:02.0/0000:82:00.1/sound/card2/input22
+  [   32.896510] [drm] [nvidia-drm] [GPU ID 0x00008200] Unloading driver
+  [   32.935658] nvidia-modeset: Unloading
+  [   32.967939] nvidia-nvlink: Unregistered the Nvlink Core, major device number 244
+  [   33.034671] nvidia-nvlink: Nvlink Core is being initialized, major device number 244
+  [   33.034724] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  375.66  Mon May  1 15:29:16 PDT 2017 (using threaded interrupts)
+  [   33.275804] nvidia-nvlink: Unregistered the Nvlink Core, major device number 244
+  [   33.993460] nvidia-nvlink: Nvlink Core is being initialized, major device number 244
+  [   33.993486] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  375.66  Mon May  1 15:29:16 PDT 2017 (using threaded interrupts)
+  [   35.110461] nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  375.66  Mon May  1 14:33:30 PDT 2017
+  [   35.111628] nvidia-modeset: Allocated GPU:0 (GPU-ccc95482-6681-052e-eb30-20b138412b92) @ PCI:0000:82:00.0
+  [349272.210486] nvidia-uvm: Loaded the UVM driver in 8 mode, major device number 243
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.2 : récupérez les informations de votre machine avec 'dmesg | grep -i nvidia'**
 
@@ -166,17 +166,17 @@ Un exemple de 'lsmod | grep nvidia' sur une station de travail :
 
 .. code-block:: bash
 
-    nvidia_uvm            778240  0
-    nvidia_drm             40960  4
-    nvidia_modeset       1044480  3 nvidia_drm
-    nvidia              16797696  108 nvidia_modeset,nvidia_uvm
-    ipmi_msghandler        49152  1 nvidia
-    drm_kms_helper        155648  1 nvidia_drm
-    drm                   360448  7 nvidia_drm,drm_kms_helper
+  nvidia_uvm            778240  0
+  nvidia_drm             40960  4
+  nvidia_modeset       1044480  3 nvidia_drm
+  nvidia              16797696  108 nvidia_modeset,nvidia_uvm
+  ipmi_msghandler        49152  1 nvidia
+  drm_kms_helper        155648  1 nvidia_drm
+  drm                   360448  7 nvidia_drm,drm_kms_helper
 
 Nous voyons que 4 modules sont chargés. La dernière colonne (vide pour les deux premières lignes) liste les dépendances entre les modules. Ici ``nvidia_modeset`` and ``nvidia_uvm`` dépendent du module ``nvidia``.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.3 : récupérez les informations de l'hôte par la commande ``lsmod | grep nvidia``**
 
@@ -188,20 +188,20 @@ Un 'ls -l /dev/nvidia*' offre ce genre d'informations :
 
 .. code-block:: bash
 
-    crw-rw-rw- 1 root root 195,   0 Jun 30 18:17 /dev/nvidia0
-    crw-rw-rw- 1 root root 195, 255 Jun 30 18:17 /dev/nvidiactl
-    crw-rw-rw- 1 root root 195, 254 Jun 30 18:17 /dev/nvidia-modeset
-    crw-rw-rw- 1 root root 243,   0 Jul  4 19:17 /dev/nvidia-uvm
-    crw-rw-rw- 1 root root 243,   1 Jul  4 19:17 /dev/nvidia-uvm-tools
+  crw-rw-rw- 1 root root 195,   0 Jun 30 18:17 /dev/nvidia0
+  crw-rw-rw- 1 root root 195, 255 Jun 30 18:17 /dev/nvidiactl
+  crw-rw-rw- 1 root root 195, 254 Jun 30 18:17 /dev/nvidia-modeset
+  crw-rw-rw- 1 root root 243,   0 Jul  4 19:17 /dev/nvidia-uvm
+  crw-rw-rw- 1 root root 243,   1 Jul  4 19:17 /dev/nvidia-uvm-tools
 
 Vous pouvez voir que chacun peut accéder au périphérique, à la fois en lecture ET en écriture (le 'RW'). Ici, vous avez un seul périphérique Nvidia, 'nvidia0'. Sur une machine disposant de plusieurs périphériques Nvidia, nous aurions : 'nvidia0', 'nvidia1', etc...
 
-.. container:: note note-important
+.. container:: note note-warning
 
-    **Exercice #1.4 : récupérez les informations de votre machine avec 'ls -l /dev/* | grep -i nvidia'**
+  **Exercice #1.4 : récupérez les informations de votre machine avec 'ls -l /dev/* | grep -i nvidia'**
 
-        * Combien de '/dev/nvidia<number>' avez-vous ?
-        * Cette information est-elle cohérente avec les 3 précédentes ?
+      * Combien de '/dev/nvidia<number>' avez-vous ?
+      * Cette information est-elle cohérente avec les 3 précédentes ?
 
 Nvidia présente des informations sur l'usage instantané de ses circuits avec la commande 'nvidia-smi'. Cette commande peut aussi être exploitée pour régler certains paramètres de la GPU.
 
@@ -209,23 +209,23 @@ Voici un exemple de sortie de la commande 'nvidia-smi' :
 
 .. code-block:: bash
 
-    Fri Jul  7 07:46:56 2017       
-    +-----------------------------------------------------------------------------+
-    | NVIDIA-SMI 375.66                 Driver Version: 375.66                    |
-    |-------------------------------+----------------------+----------------------+
-    | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-    | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-    |===============================+======================+======================|
-    |   0  GeForce GTX 108...  Off  | 0000:82:00.0      On |                  N/A |
-    | 23%   31C    P8    10W / 250W |     35MiB / 11172MiB |      0%      Default |
-    +-------------------------------+----------------------+----------------------+
-                                                                                
-    +-----------------------------------------------------------------------------+
-    | Processes:                                                       GPU Memory |
-    |  GPU       PID  Type  Process name                               Usage      |
-    |=============================================================================|
-    |    0      4108    G   /usr/lib/xorg/Xorg                              32MiB |
-    +-----------------------------------------------------------------------------+
+  Fri Jul  7 07:46:56 2017       
+  +-----------------------------------------------------------------------------+
+  | NVIDIA-SMI 375.66                 Driver Version: 375.66                    |
+  |-------------------------------+----------------------+----------------------+
+  | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+  | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+  |===============================+======================+======================|
+  |   0  GeForce GTX 108...  Off  | 0000:82:00.0      On |                  N/A |
+  | 23%   31C    P8    10W / 250W |     35MiB / 11172MiB |      0%      Default |
+  +-------------------------------+----------------------+----------------------+
+                                                                              
+  +-----------------------------------------------------------------------------+
+  | Processes:                                                       GPU Memory |
+  |  GPU       PID  Type  Process name                               Usage      |
+  |=============================================================================|
+  |    0      4108    G   /usr/lib/xorg/Xorg                              32MiB |
+  +-----------------------------------------------------------------------------+
 
 Beaucoup d'informations sont disponibles sur cette sortie :
 
@@ -239,7 +239,7 @@ Beaucoup d'informations sont disponibles sur cette sortie :
 * ses "occupations" mémoire : instantanée et maximale
 * les processus les exploitant, leur consommation de mémoire et la GPU associée
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.5 : récupérez les informations avec la commande 'nvidia-smi'**
 
@@ -259,15 +259,15 @@ Voici une sortie de 'clinfo '-l' ' pour une des stations de travail :
 
 .. code-block:: bash
 
-    Platform #0: AMD Accelerated Parallel Processing
-    `-- Device #0: Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz
-    Platform #1: Portable Computing Language
-    `-- Device #0: pthread-Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz
-    Platform #2: NVIDIA CUDA
-    +-- Device #0: GeForce GTX 1080 Ti
-    `-- Device #1: Quadro K420
-    Platform #3: Intel(R) OpenCL
-    `-- Device #0: Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz
+  Platform #0: AMD Accelerated Parallel Processing
+  `-- Device #0: Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz
+  Platform #1: Portable Computing Language
+  `-- Device #0: pthread-Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz
+  Platform #2: NVIDIA CUDA
+  +-- Device #0: GeForce GTX 1080 Ti
+  `-- Device #1: Quadro K420
+  Platform #3: Intel(R) OpenCL
+  `-- Device #0: Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz
 
 * '#0,#0' **AMD Accelerated Parallel Processing** : implémentation CPU de AMD, la plus ancienne, très proche de OpenMP en performances
 * '#1,#0' **Portable Computing Language** : implémentation CPU OpenSource. Pas vraiment efficace
@@ -277,7 +277,7 @@ Voici une sortie de 'clinfo '-l' ' pour une des stations de travail :
 
 Ainsi, dans cette machine, 5 périphériques OpenCL sont accessibles, 3 permettent de s'adresser au processeur (vu pour le coup comme un périphérique) et 2 sont des GPU Nvidia.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.6 : récupérez les informations avec la commande 'clinfo -l'**
 
@@ -337,7 +337,7 @@ Ainsi, le nombre d'ALU dans chaque *Compute Unit* varie de 64 à 192 selon les g
     :class: img-fluid center
     :alt: Diagramme gp102
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.7 : récupérez les informations à l'aide de deux commandes précédentes utilisant 'clinfo'**
 
@@ -366,7 +366,7 @@ La commande 'nvidia-smi' offrait une liste de périphériques Nvidia identifiés
     # N'exploiter aucune GPU
     CUDA_VISIBLE_DEVICES=`` <MonProgramme>
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.8 : récupérez les informations avec ``clinfo -l`` préfixée de CUDA_VISIBLE_DEVICES**
 
@@ -379,7 +379,7 @@ La commande 'nvidia-smi' offrait une liste de périphériques Nvidia identifiés
 
 Durant toutes les séances de travaux pratiques, l'accent sera mis sur la sollicitation de ressources matérielles, CPU ou GPU, lors des exécutions. Pour avoir une idée des ressources exploitées en temps réel sur la machine sollicitée, il est intéressant d'exploiter les commandes ``dstat`` et ``nvidia-smi`` (déjà connue) dans deux terminaux sur votre bureau à distance avec les options ``-cim`` pour la première et ``dmon`` pour la seconde.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1.9 : lancez les commandes suivantes**
 
@@ -493,7 +493,7 @@ L'information importante ici est l'exploitation possible d'une variable d'enviro
 
 Nous verrons par la suite la possibilité de directement choisir le périphérique à l'intérieur même du code. Mais, cette opération étant un peu *technique*, nous nous contenterons de la variable d'environnement ``PYOPENCL_CTX`` préfixant la commande dans un premier temps.
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #2.1 : première exécution**
 
@@ -527,7 +527,7 @@ En ne modifiant pas encore les *sorties* du programme (``stdin`` et ``stdout``),
 
 Le travail suivant va être d'effectuer les opérations précédentes sur ``MySteps_0.py`` afin d'obtenir les mêmes sorties (au caractère près) que celles que nous avons déjà obtenues.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #2.2 : modifier sans changer la sortie**
 
@@ -577,7 +577,7 @@ Sur le CPU avec l'implémentation Intel, la commande ``PYOPENCL_CTX=3 ./MySteps_
     [0. 0. 0. ... 0. 0. 0.]
     0.0
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #2.3 : instrumentation minimale du code**
 
@@ -691,7 +691,7 @@ Pire, sur GPU, sur une GTX Titan avec 6GB de RAM, le programme a planté. Ce cas
 
 Toutefois, intéressante consolation, nous notons que, lorsque nous augmentons la taille de nos vecteurs, la performance ne cesse d'augmenter pour les implémentations OpenCL : 
 
-.. container:: note note-imp
+.. container:: note note-important
 
     Utiliser OpenCL, autant sur CPU que sur GPU, exige :
     un **nombre d'éléments** sur lesquels s'exécutent les opérations élémentaires est **conséquent** en fonction du périphérique de calcul (de plusieurs milliers à plusieurs millions) ; un **nombre d'opérations élémentaires** à effectuer pour chaque élément d'une **densité arithmétique "suffisante"** (supérieures à la dizaine).
@@ -719,7 +719,7 @@ Ainsi, les modifications du programme à effectuer sont les suivantes :
 - rajouter la fonction ``sillysum`` sur la base de ``sum`` dans le noyau OpenCL
 - rajouter la fonction ``OpenCLSillyAddition`` sur la base de ``OpenCLAddition`` dans le programme
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #2.4 :**
 
@@ -878,7 +878,7 @@ Les modifications du programme ``MySteps_3.py`` sont les suivantes :
     * cette précaution permet d'empêcher un plantage
 - dupliquer et adapter à CUDA les éléments de contrôle de cohérence des résultats 
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #3.1 :**
     - Modifiez ``MySteps_3.py`` suivant les 3 spécifications ci-dessus
@@ -924,7 +924,7 @@ Il faudra donc modifier le programme ``MySteps_4.py`` (copie de ``MySteps_3.py``
 - remplacer dans l'appel de ``sum`` : ``block=(a_np.size,1,1)`` par ``block=(1,1,1)``
 - remplacer dans l'appel de ``sum`` : ``grid=(1,1)`` par ``grid=(a_np.size)``
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #3.2 :**
     
@@ -987,7 +987,7 @@ Pour il convient de modifier le code ``MySteps_5.py`` (copie de ``MySteps_4.py``
 
     * pour les 3 implémentations ``Native``, ``OpenCL`` et ``CUDA``
 
-.. container:: note note-important
+.. container:: note note-warning
     
   **Exercice #3.3 :**
   
@@ -1074,7 +1074,7 @@ Ainsi, pour implémenter une DFT "naïve", nous devons :
 
 Il sera alors possible d'estimer l'erreur numérique à ce calcul.
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #4.1 : implémentation Python "naïve"**
 
@@ -1115,7 +1115,7 @@ Pour cela, il est proposé de :
 - appeler la fonction``NumpyDFT`` avec les mêmes arguments
 - comparer les résultats entre les deux avec ``linalg.norm``
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #4.2 : implémentation Python Numpy**
 
@@ -1147,7 +1147,7 @@ Dans notre cas, il suffira de :
 - préciser l'appel du *décorateur* sur CPU : ``@numba.njit(parallel=True)``
 - changer le domaine d'itération pour la boucle : ``range()`` par ``numba.prange()``
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #4.3 : implémentation Python Numpy**
 
@@ -1181,7 +1181,7 @@ Nous disposons également d'un message d'erreur mais pas vraiment grave... Ca fo
 
 Pour l'implémentation OpenCL, la version "naïve" de l'implémentation va servir. Pour cela, il suffit de reprendre la définition de la méthode naïve et de l'implémenter en C dans un noyau OpenCL. A noter que Pi n'étant dans une variable définie, il faut explicitement la détailler dans le noyau OpenCL. Autre détail important : le *cast*. De manière a éviter tout effet de bord, il est fortement recommandé de *caster* les opérations dans la précision flottante souhaitée pour des opérations sur des indices entiers.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #4.4 : implémentation Python OpenCL**
 
@@ -1288,7 +1288,7 @@ Il faudra, comme pour l'implémentation OpenCL, veiller à :
 * intégrer la valeur de PI comme constante
 * modifier les vecteurs en sortie (2 vecteurs)
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #4.5 : implémentation Python CUDA**
   
@@ -1445,7 +1445,7 @@ A cela s'ajoute également la possibilité d'ajouter des options au lancement du
 
 L'objectif est donc de reprendre notre exemple le plus abouti de notre DFT et d'y ajouter ces éléments. Pour cela, les programmes ``PiXPU.py`` et ``TrouNoir.py`` vont être explorés pour voir comment faire.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #5.1 : exploration de PiXPU.py**
 
@@ -1467,7 +1467,7 @@ Une fois ces portions identifiées, la modification du programme ``MyDFT_6.py`` 
 - Sélectionner le périphérique OpenCL ou CUDA (énumération directe) avec ``-d``
 - Sélectionner une exécution sous OpenCL ou CUDA avec l'option ``-g``
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #5.2 : modification du programme ``MyDFT_6.py``**
 
@@ -1514,7 +1514,7 @@ En regardant en détail la sélection du périphérique, elle est assez simple d
         print("No XPU #%i found in all of %i devices, sorry..." % (Device,Id-1))
         sys.exit()  
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #5.3 : modification du programme ``MyDFT_7.py``**
 
@@ -1593,7 +1593,7 @@ Maintenant, passons à la sélection du périphérique CUDA. Dans l'analuse de `
 
 Nous allons effectuer ces opérations sur ``MyDFT_8.py`` (copie de ``MyDFT7.py``).
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #5.4 : modification du programme MyDFT_8.py**
 
@@ -1713,7 +1713,7 @@ Le source
 
 Le programme source ``xGEMM.c`` a été conçu pour fonctionner avec n'importe quelle implémentation. Si vous l'éditez, vous réalisez qu'il n'est pas si simple d'avoir un programme qui s'exécute indifféremment quelle que soit la librairie. Même si les appels sont comparables (même nombre d'attributs dans les fonctions), leur nom change de librairie à librairie. Pour n'avoir qu'un seul source, les directives sont largement exploitées. C'est donc le ``Makefile`` qui va permettre de ne compiler que telle ou telle portion du programme source.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #6.1 : éditez le source du programme ``xGEMM.c`` et repérez les éléments suivants**
 
@@ -2006,7 +2006,7 @@ Le ratio entre performances en simple sur double précision illustre la grosse d
   :class: img-fluid center
   :alt: Image xgemm_ratio_spdp
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #6.2 : lancez les ``xGEMM_<precision>_<implementation>`` avec une taille de 1000**
 
@@ -2026,7 +2026,7 @@ Il est aussi intéressant de constater que la performance dépend non seulement 
   :class: img-fluid center
   :alt: Image xgemm_sp_size
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #6.3 : lancez les programmes précédents pour différentes tailles**
 
@@ -2068,7 +2068,7 @@ La commande précédente "paramètre" les variables d'environnement nécessaires
 
 L'objectif est de "jouer" le `tutoriel <https://www.tensorflow.org/tutorials/images/cnn>`_ exploitant la base d'images CIFAR10 pour un apprentissage convolutif.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #7.1 :**
 
@@ -2093,7 +2093,7 @@ L'objectif est de "jouer" le `tutoriel <https://www.tensorflow.org/tutorials/ima
 
 En regardant l'activité du GPU, il apparaît que le gain est substanciel par rapport à une "petite" configuration GPU. Cependant, la nature du réseau créé n'exploitait pas de manière optimale la GPU par rapport à la CPU. Une petite modification de notre réseau va permettre de mettre cela en évidence, en modifiant le nombre de poids d'une des couches neuronales.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #7.2 :**
 
@@ -2119,7 +2119,7 @@ Présenté comme exploitant massivement les GPU, il est disponible sur `bitbucke
 C'est un programme *hybride* (exploitant 2 stratégies de parallélisation), et même *trhybride* dans la mesure où il exploite les GPU de type Nvidia avec CUDA, la distribution sur les coeurs via `OpenMP <https://fr.wikipedia.org/wiki/OpenMP>`_ et la distribution sur des noeuds différents via `passage de messages MPI <https://fr.wikipedia.org/wiki/Message_Passing_Interface>`_.
 Le code source est accessible à l'adresse : https://www.r-ccs.riken.jp/labs/cbrt/download/genesis-version-1-5/ 
 
-.. container:: note note-important
+.. container:: note note-warning
   
   **Exercice #8.1 : Récupérez et compilez le code suivant la documentation fournie**
 
@@ -2140,7 +2140,7 @@ De plus, ce programme est aussi parallélisé avec OpenMP : il va donc "aussi" e
 
 Pour finir, dans comme ce programme est "aussi" *gépufié* (porté sur GPU), il risque d'y avoir un goulet d'étranglement pour l'accès au GPU pour les 64 tâches simultanées. Ainsi, les programmes "fortement" parallélisés exigent de choisir judicieusement les différents paramètres de parallélisation tout comme nous avons vue que, pour les GPU, il fallait découper la tâche en un nombre optimal de sous-tâches.
 
-.. container:: note note-important
+.. container:: note note-warning
   
   **Exercice #8.2 : Exécutez l'exemple ``alad_water``**
 
@@ -2174,7 +2174,7 @@ Intégration et exploitation du code Gromacs
 
 Nous allons tenter de reproduire une `expérience de Nvidia <https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/gromacs/>`_ vantant l'efficacité des GPGPU pour le logiciel de `dynamique moléculaire <https://fr.wikipedia.org/wiki/Dynamique_mol%C3%A9culaire>`_ `Gromacs <http://www.gromacs.org/>`_.
 
-.. container:: note note-important
+.. container:: note note-warning
   
   **Exercice #9.1 : appliquez la "recette" de Nvidia**
 
@@ -2191,7 +2191,7 @@ Nous allons tenter de reproduire une `expérience de Nvidia <https://www.nvidia.
 
 En cas de difficultés, appliquez la :ref:`recette de Gromacs pour Debian Buster <gromacsgpu>` ;-)
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #9.2 : Exécutez l'exemple ``1536``** 
 
@@ -2257,7 +2257,7 @@ Implémentation C/OpenCL
 
 Le programme ``bench4gpu/Pi/C/OpenCL/PiOpenCL.c`` est une implémentation en C "pur" : il permet de juger de la difficulté d'appropriation de OpenCL. En effet, une grande partie du code est destinée à définir quelle plateforme et quel périphérique utiliser, placer les données à traîter.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #10.1 : exploration du code OpenCL**
 
@@ -2347,7 +2347,7 @@ Cette sortie montre également les options (au moins 2) à entrer pour exploiter
 
 Il est donc nécessaire de préciser uniquement le tuple ``(plateforme,périphérique)`` pour exécuter le programme.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #10.2 : compilation et première exécution**
 
@@ -2381,7 +2381,7 @@ Il est assez intéressant que les implémentations CPU offrent quasiment la mêm
 
 Il est aussi intéressant qu'étrange que le nombre de "coups" à l'intérieur du quadrant d'exploration ne soit pas le même pour toutes les implémentations. C'est un artéfact lié à la multiplication du *RNG* par la constante pour le placer entre 0 et 1. 
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #10.3 : exécution sur tous les périphériques pour un PR=1**
 
@@ -2412,7 +2412,7 @@ Nous pouvons maintenant explorer la réponse des périphériques, notamment pour
 
 Cette seconde expérience montre de manière assez spectaculaire que les GPU ne dévoilent leur puissance "que" pour des régimes de parallélisme élevé. Notons aussi que les implémentations sur CPU ont des performances très très disparates.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #10.4 : exécution sur tous les périphériques pour un PR=1024**
 
@@ -2440,7 +2440,7 @@ Dans notre exemple, la GTX 1080 Ti dispose de 3584 *cuda cores*. La Quadro K420 
 
 Ce graphique montre sans ambiguité la puissance "brute" qu'offre une GPU de gamer en comparaison de CPU traditionnelle (33x dans la meilleure implémentation CPU, celle d'Intel). Notons également que GPU n'est pas synonyme de puissance brute : la "petite" Quadro K420, bien que "professionnelle" présente des performances 77x inférieures.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #10.5 : exécution sur tous les périphériques pour un PR optimal**
 
@@ -2476,7 +2476,7 @@ Nous avons présenté dans le cours qu'un mauvais choix de régime de paralléli
 
 Par exemple, regardons pour la meilleure implémentation de CPU et pour la GPU la plus puissante, quelle influence a le choix du régime de parallélisme autour du régime de parallélisme optimal.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #10.6 : exécution sur tous les périphériques pour un PR optimal en double précision**
 
@@ -2581,7 +2581,7 @@ Le premier est uniquement lisible avec Python, le second est utilisable directem
 Examen du code source
 """""""""""""""""""""
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #11.1 : récupération des éléments dans le code source**
 
@@ -2626,7 +2626,7 @@ Il existe un bouton d'export du graphique en image au format PNG ou SVG. Nous ob
 
 Nous observons que la scalabilité pour un code aussi simple n'est pas si triviale que cela à analyser. Il n'y a pas continuité en fonction de PR croissant. Notons une pseudo-période correspondant au nombre de coeurs physiques, avec des maximums locaux pour les multiples de cette valeur (le *handsaw curve effect*).
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #11.2 : étude de la scalabilité d'une implémentation CPU**
   
@@ -2648,7 +2648,7 @@ Nous obtenons pour notre GTX 1080 Ti les résultats suivants :
 
 Nous pouvons constater que la scalabilité est très peu continue, encore moins que pour la scalabilité étudiée des CPU. Nous constatons également que des pseudo-lignes se chevauchent. Le PR optimal était autour de 4x le nombre de *cuda cores* et offrait une performance de **268 Gitops**.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #11.3 : étude de la scalabilité d'une GPU**
 
@@ -2665,7 +2665,7 @@ La seule manière de retrouver une performance comparable en CUDA est de sollici
 
 En relançant le calcul précédent, nous parvenons à **271 Gitops** soit plus que l'implémentation OpenCL.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #11.4 : étude de l'implémentation CUDA autour du PR optimal**
 
@@ -2689,7 +2689,7 @@ En lançant cette exploration suivante, nous obtenons :
 
 Alors que l'optimum de performance est atteint autour d'un PR de 14336 avec **258 Gitops**, nous n'obtenons un Itops que de **8.5 Gitops** (soit 30x moins) sur 5 valeurs particulières : 14321, 14323, 14327, 14341, 14347. Le point commun entre ces valeurs de PR est à rechercher sur le site `de mathématiques <http://www.math.com/students/calculators/source/prime-number.htm>`_
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #11.4 : étude de valeurs particulières de PR**
 
@@ -2813,7 +2813,7 @@ Lors de l'initialisation du "système N-Corps", plusieurs opérations sont effec
 * la distribution semi-aléatoire des vitesses en fonction du Viriel
 * l'évolution du système
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #12.1 : étude du source de ``NBody.py``**
 
@@ -2851,7 +2851,7 @@ La figure ci-dessus illustre l'écrasante performance de la GTX 1080 Ti en compa
 
 Seule une représentation en log permet de ne pas trop écraser les performances des implémentations CPU.
 
-.. container:: note note-important
+.. container:: note note-warning
 
   **Exercice #12.2 : lancement de ``NBody.py`` pour 32768 particules**
 
@@ -2886,7 +2886,7 @@ Si nous changeons de manière insignifiante le nombre de particules (de 8192 à 
   :class: img-fluid center
   :alt: Image nbody_007
 
-.. container:: note note-important
+.. container:: note note-warning
   
   **Exercice #12.3 : lancement de ``NBody.py`` en mode ``-g``**
 
@@ -2907,6 +2907,6 @@ Conclusion
 
 Comme vous l'aurez remarqué au cours de ces Travaux Pratiques, l'exploitation peut être pleine de surprises : une métrologie pertinente ne peut se passer de la connaissance du matériel exploité.
 
-L'exploitation de "codes métier" vous aura aussi permis d'entrevoir la difficulté d'intégrer et d'exécuter des programmes dans des environnements pourtant bien homogènes : toutes les stations exploitées ont exactement le même système d'exploitation, ` <developpement:productions:SIDUS|SIDUS]]. Les "astuces" permettant de simplement pouvoir exécuter les programmes illustraient aussi que, sans expérience, difficile de s'en sortir.
+L'exploitation de "codes métier" vous aura aussi permis d'entrevoir la difficulté d'intégrer et d'exécuter des programmes dans des environnements pourtant bien homogènes : toutes les stations exploitées ont exactement le même système d'exploitation, :ref:`SIDUS <sidusdoc>`. Les "astuces" permettant de simplement pouvoir exécuter les programmes illustraient aussi que, sans expérience, difficile de s'en sortir.
 
 --- `Emmanuel Quemener <emmanuel.quemener@ens-lyon.fr>`_ 2022/07/20 15:13

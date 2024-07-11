@@ -7,7 +7,7 @@ Compilation de XHPL sous Debian
 
    <br>
 
-.. container:: note note-imp
+.. container:: note note-important
 
     Pour utiliser xHPL, mieux vaut directement aller sur le projet de la forge du CBP dédiée : https://forge.cbp.ens-lyon.fr/redmine/projects/hpl4all
 

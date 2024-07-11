@@ -5,7 +5,7 @@ Réservation de la salle de TP numériques du CBP
 
 `Calendrier de disponibilité de la salle de TP numériques du CBP <calendrier>`_ 
 
-.. container:: note note-info
+.. container:: note note-info text-center
 
     N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
 
@@ -13,7 +13,7 @@ Réservation de la salle de TP numériques du CBP
     
     .. raw:: html
 
-        <form id="userForm" method="post" class="ms-2 me-2" data-nom="salleTP">
+        <form id="userForm" method="post" class="mx-2" data-nom="salleTP">
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -88,7 +88,7 @@ Réservation de la salle de TP numériques du CBP
             </div>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question"></label>
+                <label class="me-2" for="human" id="human-question"></label>
                 <input id="human-answer" type="text"/> 
             </div>
             <div id="bloc" class="text-center"></div>
@@ -99,6 +99,6 @@ Réservation de la salle de TP numériques du CBP
             </div>    
         </form>          
 
-.. container:: mt-3 fs-13
+.. container:: note note-important text-center mt-3 
 
     L'équipement de la salle M1H19 a été réalisé dans le cadre du programme COMESUP avec le concours financier de la `Région Auvergne-Rhône-Alpes <https://www.auvergnerhonealpes.fr/>`_ .  

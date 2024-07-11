@@ -1,0 +1,52 @@
+.. _tt2016:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Tutoriels/Formations 2016
+=========================
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/Tutos/logo_isa.png
+    :class: img-float pe-2
+    :alt: Logo ISA
+
+**SIDUS : de son utilisation locale à son exploitation sur cluster** |br|
+Institut 16-27, 2016 |br|
+`Institut des Sciences Analytiques <http://isa-lyon.fr/>`_, du 13 au 17 juin 2016 
+
+* Emmanuel Quemener, Centre Blaise Pascal, ENS-Lyon
+
+----
+
+.. image:: ../../_static/Animations/Tutos/psmn_logo.jpg
+    :class: img-float pe-2
+    :alt: Logo PSMN
+
+**Formation a l'utilisation du PSMN** |br|
+Salle de travaux pratiques (LR6 D 014); Centre Blaise Pascal, ENS Lyon, France 
+
+**- le 19 Janvier 2016** |br|
+**- le 26 janvier 2016** |br|
+**- le 3 mars 2016** |br|
+**- le 14 avril 2016** |br|
+**- le 12 mai 2016 2016** |br|
+**- le 16 juin 2016**
+ 
+* Cerasela Calugaru, Centre Blaise Pascal / PSMN, École Normale Supérieure de Lyon, France
+* Hervé Gilquin, PSMN, École Normale Supérieure de Lyon, France
+* Lois Taulelle, PSMN, École Normale Supérieure de Lyon, France
+
+----
+
+.. image:: ../../_static/Animations/Tutos/houches.png
+    :class: img-float pe-2
+    :alt: Houches
+
+**6th Les Houches School in computational astrophysics** |br|
+Les Houches Physics School - May 16-27, 2016 |br|
+`Website <http://comp-phys-2016.sciencesconf.org/>`_
+
+* Emmanuel Quemener, Centre Blaise Pascal, ENS-Lyon `Pragmatic Parallelism <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/H2016_Parallelism_20160523.pdf>`_ & `GPU, a disruptive technology <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/H2016_GPU_20160524.pdf>`_

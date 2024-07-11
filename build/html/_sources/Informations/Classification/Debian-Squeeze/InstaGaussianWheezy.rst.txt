@@ -7,7 +7,7 @@ Installation de Gaussian sous Debian Wheezy
 
    <br>
 
-.. container:: note note-imp
+.. container:: note note-important
 
     Modification le 5 février 2014 : compilation de la version G09 D01. 
 

@@ -5,7 +5,7 @@ Configuration matérielle des clusters
 
 Description du matériel disponible dans les différents clusters du PSMN. 
 
-.. container:: note note-imp
+.. container:: note note-important
 
 `New Documentation (Debian 11 / Slurm) <http://www.ens-lyon.fr/PSMN/Documentation/>`_
 

@@ -1,6 +1,6 @@
 .. _tutohouches2014:
 
-* :ref:`Tutoriels 2014 <#>`
+* :ref:`Tutoriels 2014 <tt2014>`
 
 4th Les Houches School in computational physics: From quantum gases to strongly correlated systems
 ==================================================================================================

@@ -56,7 +56,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <a class="nav-link dropdown-toggle" aria-current="page">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
                                     <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
@@ -65,7 +65,7 @@
                                     <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
                                     <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
                                     <li class="nav-item dropend">
-                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
                                         <div class="dropdown-menu">
                                             <ul>
                                                 <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
@@ -90,6 +90,7 @@
                                     <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
                                     <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calculer.html">Pour calculer</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
                                     <li class="nav-item dropend">
                                         <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
@@ -113,7 +114,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                </ul>   
+                                </ul>       
                             </div>
                         </li> 
                     
@@ -130,10 +131,10 @@
                                         <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
                                         <div class="dropdown-menu">
                                             <ul>   
-                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
-                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
-                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
-                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">En humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Administratif, financier et juridique</a></li>
                                             </ul>                                        
                                         </div>
                                     </li>  
@@ -239,8 +240,7 @@
 <section id="w-2h-why-what-where-when-who-how-much-how">
 <h2>5 W/2H : Why ? What ? Where ? When ? Who ? How much ? How ?<a class="headerlink" href="#w-2h-why-what-where-when-who-how-much-how" title="Lien vers cette rubrique">¶</a></h2>
 <p>5W/2H : CQQCOQP (Comment ? Quoi ? Qui, Combien ? Où ? Quand ? Pourquoi ?) in french…</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p><strong>Why ?</strong> Have a look to parallelism on machines and improve investigations process</p></li>
 <li><p><strong>What ?</strong> Test with dummie examples</p></li>
 <li><p><strong>When ?</strong> Friday, the 30th of June in the afternoon</p></li>
@@ -249,7 +249,6 @@
 <li><p><strong>Who ?</strong> For people who want to open the hood</p></li>
 <li><p><strong>How ?</strong> Applying some simple commands (essentially shell ones)</p></li>
 </ul>
-</div></blockquote>
 </section>
 <section id="session-goal">
 <h2>Session Goal<a class="headerlink" href="#session-goal" title="Lien vers cette rubrique">¶</a></h2>
@@ -452,7 +451,7 @@ Flags:<span class="w">                 </span>fpu<span class="w"> </span>vme<spa
 </section>
 <section id="tiny-metrology-with-usr-bin-time">
 <h3>Tiny metrology with <code class="docutils literal notranslate"><span class="pre">/usr/bin/time</span></code><a class="headerlink" href="#tiny-metrology-with-usr-bin-time" title="Lien vers cette rubrique">¶</a></h3>
-<div class="note note-imp docutils container">
+<div class="note note-important docutils container">
 <p>Be careful, there is a difference between <code class="docutils literal notranslate"><span class="pre">time</span></code> included as command in shells and <code class="docutils literal notranslate"><span class="pre">time</span></code> as standalone program. In order not to get difficulties, the program <code class="docutils literal notranslate"><span class="pre">time</span></code> has to be resquested by <code class="docutils literal notranslate"><span class="pre">/usr/bin/time</span></code>!</p>
 </div>
 <p>Difference between <code class="docutils literal notranslate"><span class="pre">time</span></code> build in command and <code class="docutils literal notranslate"><span class="pre">time</span></code> standalone program.</p>
@@ -1092,7 +1091,7 @@ TIME<span class="w"> </span>Elapsed<span class="w"> </span><span class="o">(</sp
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>hwloc-bind<span class="w"> </span>-p<span class="w"> </span>pu:0-0<span class="w"> </span>pu:7-7<span class="w"> </span>./MyParallelApplication
 </pre></div>
 </div>
-<div class="note note-imp docutils container">
+<div class="note note-important docutils container">
 <p>You can control the selection by watching in another terminal the <code class="docutils literal notranslate"><span class="pre">htop</span></code> activity of cores</p>
 </div>
 <section id="exercice-15-launch-the-previous-program-on-a-slice-of-machine">

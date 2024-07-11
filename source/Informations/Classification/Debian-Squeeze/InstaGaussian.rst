@@ -7,7 +7,7 @@ Installation de Gaussian sous Debian Squeeze (et Ubuntu)
 
    <br>
 
-.. container:: note note-imp
+.. container:: note note-important
     
     Cette documentation s'applique à Gaussian 09 version A01.
 
@@ -24,7 +24,7 @@ Tout individu s'étant risqué dans la compilation de Gaussian sait ce que signi
 
 Les notes qui vont suivre permettent pas à pas, moyennant des opérations assez lourdes (patcher un code propriétaire directement n'est pas une étape anodine), de récupérer un Gaussian fonctionnel...
 
-.. container:: note note-imp
+.. container:: note note-important
 
     En construction : pour l'instant, seule la version 64 bits (soit amd64 chez Debian) a été validée. Elle semble opérationnelle pour les versions Debian Lenny et Squeeze et les versions 10.04 et 10.10 de Ubuntu.
 

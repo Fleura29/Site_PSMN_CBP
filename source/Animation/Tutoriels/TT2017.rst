@@ -1,0 +1,42 @@
+.. _tt2017:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Tutoriels 2017
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+**30/03/2017** |br|
+`JOURNÉE MUMPS : Utilisation de la bibliothèque MUMPS <https://cbppsmndays.sciencesconf.org/resource/page/id/1>`_ |br|
+CBP, ENS de Lyon 
+
+**12/06/2017** |br|
+`JOURNÉE ABINIT : Utilisation du logiciel ABINIT <https://https://cbppsmndays.sciencesconf.org/resource/page/id/2>`_ |br|
+CBP, ENS de Lyon 
+
+**26/06 - 07/07/2017** |br|
+`ASTROSIM Ecole astrophysique numérique <https://astrosim.sciencesconf.org/>`_ |br|
+CBP, ENS de Lyon 
+
+**09-13/10/2017** |br|
+`Ecole Thematique du CNRS en modelisation physico-chimique <#>`_ |br|
+CBP, ENS de Lyon 
+
+`Formation a l'utilisation du PSMN <http://www.ens-lyon.fr/PSMN/doku.php>`_ |br|
+Salle de travaux pratiques (LR6 D 014); Centre Blaise Pascal, ENS Lyon, France 
+
+**- Mercredi 11 janvier 2017** |br|
+**- Jeudi 12 janvier 2017** |br|
+**- Jeudi 23 février 2017** |br|
+**- Jeudi 16 mars 2017** |br|
+**- Jeudi 13 avril 2017** |br|
+**- Mardi 09 mai 2017** |br|
+**- Jeudi 18 mai 2017** |br|
+**- Jeudi 22 juin 2017**
+
+* Cerasela Calugaru, Centre Blaise Pascal / CBP&PSMN, École Normale Supérieure de Lyon, France
+* Hervé Gilquin, PSMN, École Normale Supérieure de Lyon, France
+* Lois Taulelle, PSMN, École Normale Supérieure de Lyon, France

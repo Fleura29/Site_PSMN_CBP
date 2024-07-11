@@ -1,0 +1,50 @@
+.. _se2009:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Séminaires 2009
+===============
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/SE/mathematica.png
+    :class: img-float pe-2
+    :width: 110px
+    :alt: mathematica
+
+**MATHEMATICA 7 - Séminaires online** |br|
+Location: Centre Blaise Pascal, ENS-Lyon, France |br|
+**Juillet -Août, 2009** 
+
+* Jamie Peterson, Wolfram Education Group
+
+----
+
+.. image:: ../../_static/Animations/SE/chabrier.jpg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: gasphase
+
+**(Magneto)-hydrodynamics problems in stellar astrophysics - Planeto-Astro MHD in the lab** |br|
+Location: Centre Blaise Pascal, ENS-Lyon, France |br|
+**Juin 25, 2009 (15h30)** 
+
+* Gilles CHABRIER, ENS Lyon, France
+* Jean-François PINTON, ENS Lyon, France
+
+----
+
+.. image:: ../../_static/Animations/SE/reactiondiffusion.png
+    :class: img-float pe-2
+    :width: 140px
+    :alt: reactiondiffusion
+
+**Résolution Numérique de systèmes de Réaction--Diffusion multi-échelles. Application aux accidents vasculaires cérébraux et à la chimie complexe** |br|
+Location : Centre Blaise Pascal, ENS-Lyon, France |br|
+**Mai 28, 2009 (15h30)** 
+
+* Thierry DUMONT, ICJ LYON, France
+
+Résumé: Les modèles d'AVC et les modèles de chimie complexe sont caractérisés par la présence de termes réactifs particulièrement raides, et un très grand nombre d'inconnues. Les méthodes classiques de décomposition d'opérateurs doivent être réévaluées dans ce cadre, et l'implémentation des calculs adaptée. L'exposé comportera une introductions aux modèles, une présentation des méthodes numériques développées ainsi que quelques pistes pour la parallélisation de ces calculs. Ce travail est réalisé en collaboration avec V. Louvet (ICJ), M. Massot (ECP), S. Descombes (U. Nice) pour la partie mathématique, M-A Dronne (UCBL), E. Grenier (ENSL) pour les AVC.

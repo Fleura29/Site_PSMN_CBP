@@ -1,0 +1,27 @@
+.. _se2018:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Séminaires/Colloquium 2018
+==========================
+
+Using path sampling for atomistic insights into the Watson-Crick to Hoogsteen transition in DNA
+-----------------------------------------------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 160px
+    :alt: Logo CBP
+
+**17 octobre 2018 de 15h00 à 16h00** 
+
+COLLOQUIUM Centre Blaise Pascal 
+
+ENS Lyon, France 
+
+**David Swensen**, ENS de Lyon
+
+**Organisateurs :** 
+
+* Ralf Everaers (Laboratoire de Physique & Centre Blaise Pascal, ENS de Lyon) 
+  

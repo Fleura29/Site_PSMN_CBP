@@ -21,6 +21,3 @@ Financements
 Plan Campus pour l'infrastructure.
 
 Fonds propres pour l'urbanisation.
-
-
-

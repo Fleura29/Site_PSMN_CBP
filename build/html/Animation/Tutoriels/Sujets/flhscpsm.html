@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>First Les Houches school in computational physics - soft matter &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calculer.html">Pour calculer</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>       
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">En humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="flhscpsm">
+<li><p><a class="reference internal" href="../TT2011.html#tt2011"><span class="std std-ref">Tutoriels 2011</span></a></p></li>
+</ul>
+<section id="first-les-houches-school-in-computational-physics-soft-matter">
+<h1>First Les Houches school in computational physics - soft matter<a class="headerlink" href="#first-les-houches-school-in-computational-physics-soft-matter" title="Lien vers cette rubrique">¶</a></h1>
+<p>Jun 20, 2011 - Jul 01, 2011</p>
+<p>Location: <a class="reference internal" href="Autre/venue.html#venue"><span class="std std-ref">Les Houches/Rhone-Alpes/France</span></a></p>
+<img alt="Ecole des houches" class="img-fluid center" src="../../../_images/ecole_des_houches.png" />
+<p>Organizers:</p>
+<ul class="simple">
+<li><p>Jean-Louis BARRAT (Université Lyon 1)</p></li>
+<li><p>Ralf EVERAERS (École Normale Supérieure de Lyon)</p></li>
+<li><p>Werner KRAUTH (École Normale Supérieure, Paris)</p></li>
+</ul>
+<section id="introduction-and-format">
+<h2>Introduction and Format<a class="headerlink" href="#introduction-and-format" title="Lien vers cette rubrique">¶</a></h2>
+<p>The school will present computational methods for the study of soft matter. It is the first of a series proposed within the prestigious settings of the Les Houches physics center, and intended to disseminate the methods of atomic and molecular simulation in an audience of advanced undergaduate (second year of master) and PhD students. Such methods are rarely presented in the typical curriculum of physics or chemistry students.</p>
+<p>The aim of the school is to make the students familiar with the numerical techniques used in their field of (condensed matter) physics and the physical concepts underlyiong these methods, and to allow them to gain some practice by actually implementing some of these numerical techniques.</p>
+<p>Although the school will be centered on methodological issues a general theme in terms of physical applications will be maintained within each session, so that the lectures can include physical examples of general interest to the audience. Some of the lectures (e.g. MD or MC) could be repeated in several sessions.</p>
+<p>Format : typically 5-6 lectures of 4x1h30, 2 weeks (10 days) ; the students would be expected to carry out a numerical project in relation with one of the lectures, supervised by one of the lecturers. Suggesting a project will be part of the application procedure. The last two days would be devoted to presentations made by students. Lecturers stay for the whole duration of the school. Lecture notes/slides would be made available electronically but not published.</p>
+</section>
+<section id="full-plan-of-lectures">
+<h2>Full plan of lectures<a class="headerlink" href="#full-plan-of-lectures" title="Lien vers cette rubrique">¶</a></h2>
+<section id="lecture-1-introduction-to-monte-carlo-and-molecular-dynamics-walter-kob">
+<h3>Lecture 1: Introduction to Monte-Carlo and Molecular Dynamics, Walter Kob<a class="headerlink" href="#lecture-1-introduction-to-monte-carlo-and-molecular-dynamics-walter-kob" title="Lien vers cette rubrique">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Monte Carlo Technique</p></li>
+</ol>
+<ul class="simple">
+<li><p>master equations and detailed balance</p></li>
+<li><p>the Monte Carlo Method</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Molecular Dynamics</p></li>
+</ol>
+<ul class="simple">
+<li><p>Basic idea and various issues</p></li>
+<li><p>The Verlet algorithm</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Practical Issues</p></li>
+</ol>
+<ul class="simple">
+<li><p>potential and forces</p></li>
+<li><p>periodic boundary conditions</p></li>
+<li><p>neighbor lists</p></li>
+<li><p>random number generators</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Advanced techniques</p></li>
+</ol>
+<ul class="simple">
+<li><p>simulation at constant pressure, temperature</p></li>
+<li><p>Gibbs ensemble technique</p></li>
+<li><p>rare events</p></li>
+</ul>
+</section>
+</section>
+<section id="lecture-2-soft-matter-on-a-lattice-from-generic-properties-to-semi-quantitative-models-ralf-everaers">
+<h2>Lecture 2: Soft Matter on a Lattice: From generic properties to semi-quantitative models, Ralf Everaers<a class="headerlink" href="#lecture-2-soft-matter-on-a-lattice-from-generic-properties-to-semi-quantitative-models-ralf-everaers" title="Lien vers cette rubrique">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Generic Polymer models / Monte Carlo techniques</p></li>
+</ol>
+<ul class="simple">
+<li><p>Exact Enumeration</p></li>
+<li><p>Simple Sampling</p></li>
+<li><p>Dynamic Algorithms / Importance Sampling</p></li>
+<li><p>Dimerization</p></li>
+<li><p>Configurational Bias, Rosenbluth, PERM</p></li>
+<li><p>Performance of the different algorithms for simulating self-avoiding walks</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>1d Poland-Sheraga model of cooperatively folding biopolymers</p></li>
+<li><p>2d Lattice models of biomembranes</p></li>
+<li><p>3d Lattice models of biopolymers</p></li>
+</ol>
+<ul class="simple">
+<li><p>Generic aspects of protein folding</p></li>
+<li><p>A semi-quantitative lattice model of RNA and DNA melting, folding &amp; association</p></li>
+</ul>
+<section id="lecture-3-molecular-simulation-approaches-to-polymer-systems-j-baschnagel">
+<h3>Lecture 3: Molecular simulation approaches to polymer systems, J. Baschnagel<a class="headerlink" href="#lecture-3-molecular-simulation-approaches-to-polymer-systems-j-baschnagel" title="Lien vers cette rubrique">¶</a></h3>
+<p>This course intends to give an introduction to molelcular simulation approaches of polymer systems. The computational study of the physical properties of polymers is challenging because of the extremely broad spectra of length and time scales governing their structure and dynamics.
+Therefore, the simulation models used in current research are obtained by some kind of coarse-graining procedure, designed to eliminate fast degrees of freedom. The resulting models can address phenomena over a specific window of time and length scales. This model-building step can take different levels of complexity, ranging from chemicallly realistic models over generic bead-spring models to coarse-grained representations of polymer systems inspired by self-consistent field theory or similar theoretical concepts and also tohierachical models encompassing many interconnected levels. After a brief introduction to polymer physics, serving as a justification for the coarse-graining idea, the course will discuss each level of modeling alluded to above, present adapted simulation strategies, and give example applications.</p>
+</section>
+<section id="lecture-4-coarse-grained-dynamics-ignacio-pagonnabaraga">
+<h3>Lecture 4: Coarse-grained dynamics, Ignacio Pagonnabaraga<a class="headerlink" href="#lecture-4-coarse-grained-dynamics-ignacio-pagonnabaraga" title="Lien vers cette rubrique">¶</a></h3>
+<p>In these lectures I will describe the physical basis of kinetic based coarse grained methods to describe the dynamics of materials in the mesoscale. In particular, I will analyze the relationship between lattice gases and the lattice Boltzman approaches. I will explore the flexibility that these approaches offer to model a variety of complex fluids, including binary mixtures, colloidal suspensions and electrolytes.</p>
+<p>I will also address kinetically based methods which build on the knowldege of molecular modelling. In particular, MPCD combine the insight of Bird’s approach to the Boltzmann equation with the knowledge developed in past decades on molecular modelling. Understanding the basic collision process from a more general perspective, MPCD can be applied to dense fluid systems, in regimes far beyond those which can be covered with the original Boltzmann equation.
+Momentum conserving thermostats (like dissipative particle dynamics or lowe-anderson thermostat) offer natural alternatives to model coarse grained fluids, and constitutive natural venues to explore the dynamics of complex fluids in the mesoscale .
+I will analyze critically the different approaches, their potentialities and limitations discussing representative examples.</p>
+</section>
+<section id="lecture-5-phase-field-models-thierry-biben">
+<h3>Lecture 5: Phase field models, Thierry Biben<a class="headerlink" href="#lecture-5-phase-field-models-thierry-biben" title="Lien vers cette rubrique">¶</a></h3>
+<p>Phase field models are very efficient tools to investigate the dynamics of a system undergoing a phase transition, or simply to solve a problem with free boundaries (moving interfaces for example). They are essentially based on two ingredients: the phase-field, a local order parameter field, and the corresponding dynamical equations. The goal of this lecture is to give an overview of the wide range of problems that can be treated with these models and to provide a practical experience on the way to design phase field models and to avoid the main dangers. We shall thus illustrate the different parts of the lecture with examples, and use the problem of the dendric growth as a basic example</p>
+<p>Outline:
+1 - Introduction: why and when is it interesting to use phase-field models?
+2 - The Phase-Field:
+a - Interfaces: Phase equilibrium, the square gradient theory and surface tension.
+b - Allen-Cahn and Cahn-Hilliard equations.
+3 - Conservation equations.
+4 - An elementary example: Dendritic growth and implementation.
+5 - Control of the model.
+a - The Sharp Interface limit.
+b - The « smooth interface problem » and possible solution.
+6 - Various examples involving hydrodynamics, elasticity or heat transfer.</p>
+</section>
+</section>
+<section id="basic-literature">
+<h2>Basic literature<a class="headerlink" href="#basic-literature" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>Allen and Tildesley, <em>Computer simulation of liquids</em></p></li>
+<li><p>Frenkel and Smit, <em>Understanding Molecular simulation</em></p></li>
+<li><p>Krauth, <em>Statistical Mechanics, computations and algorithms</em></p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Animation/Tutoriels/Sujets/flhscpsm.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

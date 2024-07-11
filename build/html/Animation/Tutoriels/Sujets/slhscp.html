@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Second Les Houches school in computational physics - Ab initio quantum simulations in condensed matter physics &#8212; Documentation PSMN-CBP </title>
+    <script src="../../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../../index.html">
+                <img class="img-fluid" src="../../../_static/header/cbpsmn_logo.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+        <div class="wid-header">
+            <div class="d-flex justify-content-end container-language">
+                <div class="px-2">
+                    <img class="img-fluid cursor" src="../../../_static/header/fr.png" alt="français">
+                </div>
+                <div>
+                    <img class="img-fluid cursor" src="../../../_static/header/en.png" alt="anglais">
+                </div>
+            </div>
+            <a href="https://www.ens-lyon.fr/">
+                <img class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon.png" alt="logo CBP-PSMN">
+            </a>
+        </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page">Accueil</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
+                                    <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                                <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Informations/News.html">Fil des news</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calculer.html">Pour calculer</a></li>
+                                    <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                        <div class="dropdown-menu">
+                                            <ul> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>       
+                            </div>
+                        </li> 
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/DataCenter.html">Data Center</a></li>
+                                    <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/EquipInfo.html">Equipements informatique</a></li>
+                                    <li><a class="dropdown-item" href="../../../Plateformes/ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                        <div class="dropdown-menu">
+                                            <ul>   
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">En humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Administratif, financier et juridique</a></li>
+                                            </ul>                                        
+                                        </div>
+                                    </li>  
+                                </ul>   
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Formation/Formation.html">Formation</a></li>
+                                    <li><a class="dropdown-item" href="../../../Formation/Stage.html">Propositions de stage</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Science</a>
+                            <div class="dropdown-menu">
+                                <ul> 
+                                    <li><a class="dropdown-item" href="../../../Science/Publications2024.html">Publications</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Theses.html">Thèses</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                    <li><a class="dropdown-item" href="../../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../EvenementsScient.html">Évènements scientifiques</a></li>
+                                    <li><a class="dropdown-item" href="../../Services.html">Services proposés aux organisateurs</a></li>
+                                    <li><a class="dropdown-item" href="../../PAS.html">Projets d'animation scientifique</a></li>
+                                    <li><a class="dropdown-item" href="../../Appels.html">Appel à projets</a></li>
+                                    <li><a class="dropdown-item" href="../../Media.html">Médias</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="../../Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                                <li><a class="dropdown-item" href="../../Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/ACT.html">Chimie Théorique</a></li>
+                                                <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                                <li><a class="dropdown-item" href="../../Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                    <li><a class="dropdown-item" href="../../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                    <li><a class="dropdown-item" href="../../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                    <li><a class="dropdown-item" href="../../../Contacts/Formulaires.html">Formulaires</a></li>
+                                </ul>   
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="slhscp">
+<li><p><a class="reference internal" href="../TT2012.html#tt2012"><span class="std std-ref">Tutoriels 2012</span></a></p></li>
+</ul>
+<section id="second-les-houches-school-in-computational-physics-ab-initio-quantum-simulations-in-condensed-matter-physics">
+<h1>Second Les Houches school in computational physics - Ab initio quantum simulations in condensed matter physics<a class="headerlink" href="#second-les-houches-school-in-computational-physics-ab-initio-quantum-simulations-in-condensed-matter-physics" title="Lien vers cette rubrique">¶</a></h1>
+<p>June 19, 2012 - June 29, 2012 <br>
+Location: <a class="reference internal" href="Autre/venue.html#venue"><span class="std std-ref">Les Houches/Rhone-Alpes/France</span></a></p>
+<img alt="Ecole des houches" class="img-fluid center" src="../../../_images/ecole_des_houches.png" />
+<p>The school ackowledges support and funding from CNRS via the GDR CoDFT and the « Formation permanente », funding from the Centre des Houches, and funding from the French Rhône-Alpes CECAM node. This school has received a « Ecole doctorale » label and is a « Ecole thematique 2012 » CNRS.</p>
+<p>Organisers:</p>
+<ul class="simple">
+<li><p><strong>Xavier Blase</strong> (Institut Néel, CNRS/UJF, Grenoble, France)</p></li>
+<li><p><strong>Thierry Deutsch</strong> (L_Sim, CEA/INAC, Grenoble, France)</p></li>
+<li><p><strong>Jean-Louis Barrat</strong> (Liphy, UJF, Grenoble, France)</p></li>
+</ul>
+<p>Administrative coordination:</p>
+<ul class="simple">
+<li><p><strong>Brigitte Rousset</strong>, École de physique des Houches (<a class="reference external" href="mailto:brigitte&#46;rousset&#37;&#52;&#48;ujf-grenoble&#46;fr">brigitte<span>&#46;</span>rousset<span>&#64;</span>ujf-grenoble<span>&#46;</span>fr</a>)</p></li>
+</ul>
+<p>Web site:</p>
+<ul class="simple">
+<li><p><strong>Cerasela Calugaru</strong>, Centre Blaise Pascal, ENS Lyon.</p></li>
+</ul>
+<p>Computer wizard:</p>
+<ul class="simple">
+<li><p><strong>Emmanuel Quemener</strong>, Centre Blaise Pascal, ENS Lyon.</p></li>
+</ul>
+<p>Scientific committee: Mebarek Alouani (IPCMS, Strasbourg); Bernard Amadon (CEA, Bruyères le Châtel); Cyrille Barreteau (SPCSI, CEA-Saclay); Fabien Bruneval (SRMP, CEA-Saclay); Eric Cances Cermics, ENPC, Champs sur Marne); Christophe Delerue (IEMN, Lille); Marie-Liesse Doublet (Institut Charles Gerhardt, Montpellier); Vincent Robert (Lab. Chimie Quantique, Institut de Chimie, Strasbourg); Valérie Veniard(external link) (LSI et ETSF, Ecole Polytechnique)</p>
+<section id="introduction-and-format">
+<h2>Introduction and Format<a class="headerlink" href="#introduction-and-format" title="Lien vers cette rubrique">¶</a></h2>
+<p>This school is the second of a series of events devoted to Computational physics and hosted by the prestigious Ecole de Physique des Houches (Rhône-Alpes, France) located 1h30/2h00/2h30 mns away from Lausanne/Grenoble/Lyon. This session will be devoted to Ab initio quantum simulations in the condensed matter. From basic theories to tutorials on well-distributed computational packages, the aim is to take advantage of the 10 days reserved at Les Houches to offer a large panorama of the theories and techniques used in our community. From PhD students, postdoctoral fellows, to permanent researchers aiming at understanding and using ab initio quantum simulation tools, the public is expected to be rather large and diversified.</p>
+<p>Sponsors
+The school acknowledges funding from the French National Center for Scientific Research (CNRS) through the « Groupement de Recherche CoDFT » and the « Formation permanente », from the Rhône-Alpes CECAM (centre Européen de Calcul Atomique et Moléculaire) node, and from Université Josheph Fourier. This school has received a label « Formation doctorale » and is a « Ecole thématique CNRS 2012 ». Bags and booknotes have been graciously provided by Bull and the USB keys by the Ecole Normale Supérieure de Lyon.</p>
+</section>
+<section id="full-plan-of-lectures">
+<h2>Full plan of lectures<a class="headerlink" href="#full-plan-of-lectures" title="Lien vers cette rubrique">¶</a></h2>
+<p>The school will be composed of formal lectures, on-the-board exercices, and tutorials on well distributed codes.</p>
+<ul class="simple">
+<li><p>Hartree‐Fock</p></li>
+<li><p>Density functional theory</p></li>
+<li><p>Exchange‐correlation functionals</p></li>
+<li><p>Pseudopotentials, basis, algorithms</p></li>
+<li><p>Density functional perturbative theory (DFPT: phonons, dielectric response, etc.)</p></li>
+<li><p>Time‐dependent DFT (TDDFT)</p></li>
+<li><p>Molecular dynamics</p></li>
+<li><p>Searching the saddle‐points</p></li>
+<li><p>Electron‐phonon coupling</p></li>
+<li><p>Electronic transport</p></li>
+<li><p>Quasiparticle properties (GW)</p></li>
+<li><p>Excitonic properties (Bethe‐ Salpeter)</p></li>
+<li><p>Dynamical mean‐field theory (DMFT)</p></li>
+<li><p>Quantum Monte Carlo (QMC)</p></li>
+<li><p>Many‐body quantum chemistry</p></li>
+<li><p>Tutorials: due to available experts during the two weeks, we will certainly focus on the Abinit and Siesta code (during part of the second week). Other codes (QuantumEspresso, BigDFT, etc.) will be presented (in construction).</p></li>
+</ul>
+</section>
+<section id="detailed-program">
+<h2>Detailed program<a class="headerlink" href="#detailed-program" title="Lien vers cette rubrique">¶</a></h2>
+<p>Breakfast: 8h-8h45 / Lunch: 12h30 / Diner: 19:30</p>
+<p><strong>Monday 18th</strong></p>
+<p>Arrival at Les Houches after 2 pm. Reception of your rooms. Diner will be served at 19:30.</p>
+<p><strong>Tuesday 19th</strong></p>
+<p>8h45-9h00: Welcome <br>
+9h00-10h30: Hartree-Fock (Lecture Notes / Exercices, Vincent Robert) <br>
+10h30-11h00: Break <br>
+11h00-12h25: DFT (I) (Lecture Notes, Xavier Blase)</p>
+<p>14h00-16h00: DFT (II) (Lecture , Xavier Blase) <br>
+16h00-16h30: Break <br>
+16h30-19h00: Tutorials and computer set-up (Emmanuel Quemener, CBP center/Introduction to codes (T. Deutsch/D. Caliste)/Introduction to Abinit keywords (Damien Caliste)</p>
+<p><strong>Wednesday 20th</strong></p>
+<p>8h45-10h15: Pseudopotentials/Bases ( lecture, Thierry Deutsch) <br>
+10h15-10h45: Break <br>
+10h45-12h15: Functionals (I) (lecture, Miguel Marques)</p>
+<p>14h00-16h00: Functionals (II) (lecture, Miguel Marques) <br>
+16h00-16h30: Break <br>
+16h30-19h00: First AbInit tutorial</p>
+<p>19:00: Welcome drink offered by Les Houches</p>
+<p><strong>Thursday 21st</strong></p>
+<p>8h45-10h15: Molecular dynamics (I) (lecture, M. Saitta) <br>
+10h15-10h45: Break <br>
+10h45-12h15: Molecular dynamics (II) (lecture, M. Saitta)</p>
+<p>14h00-16h00: Algorythms (lecture, E. Cances) <br>
+16h00-16h30: Break <br>
+16h30-19h30: Second AbInit tutorial</p>
+<p>19:30: Diner « savoyard »</p>
+<p><strong>Friday 22nd</strong></p>
+<p>8h45-10h15: DFPT and phonons (I) (Lecture Notes) <br>
+(M. Calandra broke his ankle. Replaced by X. Blase) <br>
+10h15-10h45: Break <br>
+10h45-12h15: DFPT and phonons (II) (lecture)</p>
+<p>14h00-16h00: Third AbInit tutorial <br>
+16h00-16h30: Break <br>
+16h30-19h30: Third AbInit tutorial</p>
+<p><strong>Saturday 23rd</strong></p>
+<p>8h45-10h15: Global minima (lecture,S. Goedecker) <br>
+10h15-10h45: Break <br>
+10h45-12h15: Saddle points (lecture, N. Mousseau)</p>
+<p>Saturday afternoon and Sunday: free time</p>
+<p><strong>Monday 25th</strong></p>
+<p>8h45-10h15: Time-dependent DFT I (lecture, M. Casida) <br>
+10h15-10h45: Break <br>
+10h45-12h15: Time-dependent DFT II (lecture, M. Casida)</p>
+<p>14h00-16h00: Quantum Monte Carlo: an introduction (lecture, M. Holzmann) <br>
+16h00-16h30: Break <br>
+16h30-19h30: Tutorial</p>
+<p><strong>Tuesday 26th</strong></p>
+<p>8h45-10h15: Density Functional Perturbation Theory (DFT): polarization (lecture, E. Bouquet) <br>
+10h15-10h45: Break <br>
+10h45-12h15: Density Functional Perturbation Theory (DFT): polarization II (lecture, E. Bouquet)</p>
+<p>14h00-16h00: Dynamical Mean Field Thoery (DMFT): an introduction (lecture, B. Amadon) <br>
+16h00-16h30: Break <br>
+16h30-19h30: Tutorial</p>
+<p><strong>Wednesday 27th</strong></p>
+<p>8h45-10h15: Electronic transport I (lecture, P. Ordejon) <br>
+10h15-10h45: Break <br>
+10h45-12h15: Electronic transport II and Transiesta (lecture, P. Ordejon) <br></p>
+<p>14h00-16h00: An introduction to post-Hartree-Fock quantum chemistry I (E. Fromager, lecture) <br>
+16h00-16h30: Break <br>
+16h30-19h30: Tutorial Siesta</p>
+<p><strong>Thursday 28th</strong></p>
+<p>8h45-10h15: An introduction to Green’s function (V. Olévano, Lecture Notes) <br>
+10h15-10h45: Break <br>
+10h45-12h15: The GW formalism (V. Olévano, Lecture Notes)</p>
+<p>14h00-16h00: An introduction to post-Hartree-Fock quantum chemistry II (E. Fromager, lecture) <br>
+16h00-16h30: Break <br>
+16h30-19h30: Tutorial</p>
+<p><strong>Friday 29th</strong></p>
+<p>9h00-11h00: Optical absorption and excitons: The Bethe-Salpeter formalism (C. Attaccalite, lecture ) <br>
+11h00-11h15: Closing of the school.</p>
+<p>Lunch will be served the last day (12h30). It is not possible to stay on the friday 29th night.</p>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/Animation/Tutoriels/Sujets/slhscp.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../../_static/main.js"></script>
+  <script src="../../../_static/jquery.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

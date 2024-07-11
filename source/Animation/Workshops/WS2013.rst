@@ -1,3 +1,5 @@
+.. _ws2013:
+
 Workshops 2013
 ==============
 
@@ -10,7 +12,7 @@ Workshops 2013
     :width: 170px
     :alt: Image alderprice
 
-`Journée en l'honneur de Jean-Pierre Hansen <#>`_ |br|
+:ref:`Journée en l'honneur de Jean-Pierre Hansen <hansen>` |br|
 **December 13, 2013** - Institut Henry Poincaré, Paris, France 
 
 * Jean-Louis Barrat, UJF Grenoble
@@ -27,7 +29,7 @@ Workshops 2013
     :width: 170px
     :alt: Image cbp_ens
 
-`Journées du Centre Blaise Pascal - Data Analysis and Modeling in Life Sciences <#>`_ |br|
+:ref:`Journées du Centre Blaise Pascal - Data Analysis and Modeling in Life Sciences <jcbpamd>` |br|
 **November 28, 2013** |br|
 Centre Blaise Pascal, ENS Lyon, France 
 
@@ -42,7 +44,7 @@ Centre Blaise Pascal, ENS Lyon, France
     :width: 170px
     :alt: Image image_2_fluidgrains
 
-`Workshop on Numerical Modelling of Grains/Fluid Flows <#>`_ |br|
+:ref:`Workshop on Numerical Modelling of Grains/Fluid Flows <wnmgff>` |br|
 **November 5-6, 2013** |br|
 Centre Blaise Pascal, ENS Lyon, France 
 
@@ -55,7 +57,7 @@ Centre Blaise Pascal, ENS Lyon, France
     :width: 170px
     :alt: Image flmsn
 
-`Inauguration de la nouvelle plateforme de calcul de la FLMSN <#>`_ |br|
+:ref:`Inauguration de la nouvelle plateforme de calcul de la FLMSN <inpc>` |br|
 **October 16, 2013** - Université Claude Bernard Lyon 1, France |br|
 **October 17, 2013** - Ecole normale supérieure de Lyon, France 
 
@@ -66,7 +68,7 @@ Centre Blaise Pascal, ENS Lyon, France
     :width: 200px
     :alt: Image pde
 
-`Efficient solution of large systems of non-linear PDEs in science <#>`_ |br|
+:ref:`Efficient solution of large systems of non-linear PDEs in science <eslsnlpde>` |br|
 **October 7-9, 2013** |br|
 Centre Blaise Pascal, ENS Lyon, France 
 
@@ -83,7 +85,7 @@ Centre Blaise Pascal, ENS Lyon, France
     :width: 170px
     :alt: Image imagegeoturb
 
-`Geoturb: Numerical Modeling and theoretical challenges in atmosphere and ocean turbulence <#>`_ 
+:ref:`Geoturb: Numerical Modeling and theoretical challenges in atmosphere and ocean turbulence <gnmtcaot>` 
 
 **October 2-4, 2013** 
 
@@ -99,7 +101,7 @@ Centre Blaise Pascal, ENS-Lyon, France
     :width: 170px
     :alt: Image confine
 
-`Influence of Interfacial Interactions on Structural and Rheological Properties of Confined Liquids <#>`_ 
+:ref:`Influence of Interfacial Interactions on Structural and Rheological Properties of Confined Liquids <iiisrpcl>` 
 
 **September 23, 2013** 
 
@@ -114,7 +116,7 @@ Centre Blaise Pascal, ENS Lyon, France
     :width: 170px
     :alt: Image topological_insulator
 
-`Journées de Physique Mathémathique Lyon: Topological insulators <#>`_ |br|
+:ref:`Journées de Physique Mathémathique Lyon: Topological insulators <jpmlti>` |br|
 **11-13 september 2013**  |br|
 Institut Camille Jordan, Lyon, France
 
@@ -129,7 +131,7 @@ Institut Camille Jordan, Lyon, France
     :width: 170px
     :alt: Image plasmalogo
 
-`Shocks, Reconnection, and Particle Acceleration in Plasma-fluids <#>`_ |br|
+:ref:`Shocks, Reconnection, and Particle Acceleration in Plasma-fluids <srpapf>` |br|
 **June 20-21, 2013** |br|
 Centre Blaise Pascal, ENS Lyon, France 
 
@@ -143,7 +145,7 @@ Centre Blaise Pascal, ENS Lyon, France
     :width: 180px
     :alt: Image lyoncalcul
 
-`Réseau "LyonCalcul" : 2nde matinée de rencontres des acteurs du calcul à Lyon <#>`_ |br|
+:ref:`Réseau "LyonCalcul" : 2nde matinée de rencontres des acteurs du calcul à Lyon <rlyoncalcul>` |br|
 **16 avril 2013** de 10h à 12h |br|
 Centre Blaise Pascal  
 
@@ -154,7 +156,7 @@ Centre Blaise Pascal
     :width: 170px
     :alt: Image lyoncalcul
 
-`Colloque SIERRA : "Avancées récentes autour de l'extraction de modes" <#>`_ |br|
+:ref:`Colloque SIERRA : "Avancées récentes autour de l'extraction de modes" <csierras>` |br|
 **March 13, 2013** |br|
 Centre Blaise Pascal, ENS de Lyon, France 
 

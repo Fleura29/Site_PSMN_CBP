@@ -3,7 +3,7 @@
 Utilisation du Cluster (et GridEngine) au Centre Blaise Pascal
 ==============================================================
 
-.. container:: note note-imp
+.. container:: note note-important
 
     Avant de lancer votre calcul, ayez un aperçu de l'`état des noeuds <http://styx.cbp.ens-lyon.fr/ganglia/?r=hour&c=Nodes>`_ (site accessible seulement sur site)
 
@@ -38,7 +38,7 @@ Le Centre Blaise Pascal n'a pas vocation à voir ses infrastructures utilisées 
 * pour de longs calculs de production (de l'ordre de la semaine)
 * pour des calculs sur de très grands nombres de coeurs (de l'ordre du millier)
 
-Pour ces deux exigences, le `PSMN dispose d'une infrastructure de production <#>`_.
+Pour ces deux exigences, le :ref:`PSMN dispose d'une infrastructure de production <clustserv>`.
 
 Les équipements mis à disposition derrière le soumissionneur GridEngine se composent de 166 noeuds dans 8 groupes différents pour un total de 1416 coeurs et 6016 Go de RAM.
 
@@ -52,7 +52,7 @@ Sur les 52 noeuds R410 arrivés entre le printemps 2014 et l'automne 2015, tous 
 | **r410ddr** | Dell       | R410       | 4          | 8                 |  24 Go         | GE            | IB DDR        | 32               | 96 Go         |
 +-------------+------------+------------+------------+-------------------+----------------+---------------+---------------+------------------+---------------+
 
-Ces clusters partagent exactement la même image de système, `Sidus <#>`_ (pour Single Instance Distributing Universal System), un système complet Debian intégrant tous les paquets scientifiques ainsi que de nombreux paquets de développement.
+Ces clusters partagent exactement la même image de système, :ref:`Sidus <sidusdoc>` (pour Single Instance Distributing Universal System), un système complet Debian intégrant tous les paquets scientifiques ainsi que de nombreux paquets de développement.
 
 Accès aux clusters
 ------------------

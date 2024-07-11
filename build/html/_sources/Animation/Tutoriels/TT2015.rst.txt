@@ -1,5 +1,7 @@
 .. _tt2015:
 
+* :ref:`Évènements scientifiques <eventsci>`
+
 Tutoriels 2015 
 ==============
 
@@ -31,13 +33,13 @@ Les Houches, Rhone-Alpes, France
 
 Salle de travaux pratiques (LR6 D 014); Centre Blaise Pascal, ENS Lyon, France 
 
-* **le 22 Janvier 2015**
-* **le 26 Février 2015**
-* **le 27 Avril 2015**
-* **le 18 Juin 2015**
-* **le 24 Septembre 2015**
-* **le 15 Octobre 2015**
-* **le 03 Décembre 2015**
+**- le 22 Janvier 2015** |br|
+**- le 26 Février 2015** |br|
+**- le 27 Avril 2015** |br|
+**- le 18 Juin 2015** |br|
+**- le 24 Septembre 2015** |br|
+**- le 15 Octobre 2015** |br|
+**- le 03 Décembre 2015**
 
 Cerasela Calugaru, Centre Blaise Pascal / PSMN, École Normale Supérieure de Lyon, France |br|
 Hervé Gilquin, PSMN, École Normale Supérieure de Lyon, France |br|

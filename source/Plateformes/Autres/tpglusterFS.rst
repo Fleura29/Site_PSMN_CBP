@@ -928,7 +928,7 @@ Effaçons ces fichiers et démontons le volume monté sur le client :
     rm /media/MyGlusterLinear/File.*
     sudo umount /media/MyGlusterLinear
 
-.. container:: note note-imp
+.. container:: note note-important
 
     Il ne faut utiliser la commande ``replace-brick`` **uniquement** dans le cadre d'un volume ``replica`` !</note>
 

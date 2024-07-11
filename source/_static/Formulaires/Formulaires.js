@@ -70,7 +70,7 @@ switch(formulaire.dataset.nom){
     case 'doce':
         lien = "EnvoiFormDemandeOuverture.php";
         break;
-    case 'dar':
+    case 'dr':
         lien = "EnvoiFormDemandeRessources.php";
         break;
     case 'faq':

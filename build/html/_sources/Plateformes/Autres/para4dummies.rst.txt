@@ -10,13 +10,13 @@ Practical work support for `Astrosim 2017 <https://astrosim.sciencesconf.org/>`_
 
 5W/2H : CQQCOQP (Comment ? Quoi ? Qui, Combien ? Où ? Quand ? Pourquoi ?) in french...
 
-  * **Why ?** Have a look to parallelism on machines and improve investigations process
-  * **What ?** Test with dummie examples 
-  * **When ?** Friday, the 30th of June in the afternoon
-  * **How much ?** Nothing, Blaise Pascal Center provides workstations & cluster nodes 
-  * **Where ?** On workstations, cluster nodes, laptop (well configured), inside terminals
-  * **Who ?** For people who want to open the hood 
-  * **How ?** Applying some simple commands (essentially shell ones)
+* **Why ?** Have a look to parallelism on machines and improve investigations process
+* **What ?** Test with dummie examples 
+* **When ?** Friday, the 30th of June in the afternoon
+* **How much ?** Nothing, Blaise Pascal Center provides workstations & cluster nodes 
+* **Where ?** On workstations, cluster nodes, laptop (well configured), inside terminals
+* **Who ?** For people who want to open the hood 
+* **How ?** Applying some simple commands (essentially shell ones)
 
 Session Goal
 ------------
@@ -228,7 +228,7 @@ Exercice #5: open ``htop`` and ``top`` in two terminals
 Tiny metrology with ``/usr/bin/time``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. container:: note note-imp 
+.. container:: note note-important
 
     Be careful, there is a difference between ``time`` included as command in shells and ``time`` as standalone program. In order not to get difficulties, the program ``time`` has to be resquested by ``/usr/bin/time``!
 
@@ -930,7 +930,7 @@ If you want to select several non adjacent cores, the first and the last ones, f
 
     hwloc-bind -p pu:0-0 pu:7-7 ./MyParallelApplication
 
-.. container:: note note-imp
+.. container:: note note-important
 
     You can control the selection by watching in another terminal the ``htop`` activity of cores
 

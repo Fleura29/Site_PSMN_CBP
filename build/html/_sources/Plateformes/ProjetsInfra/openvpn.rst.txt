@@ -542,7 +542,7 @@ Configuration pour GNU/Linux Debian : "files only"
     
         /etc/init.d/openvpn restart
 
-.. container:: note note-imp 
+.. container:: note note-important
 
     Certaines implémentations d'OpenVPN sur des distributions Linux empêchent catégoriquement le recours à ce fichier texte. Il est donc nécessaire d'entrer sont identifiant/mot de passe à chaque lancement
 

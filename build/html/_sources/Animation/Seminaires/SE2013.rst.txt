@@ -1,0 +1,40 @@
+.. _se2013:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Séminaires 2013
+===============
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/SE/ixxi_logo.png
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo IXXI
+
+**Séminaire lyonnais de l’IXXI: “Non-standard Transport Processes”**  |br|
+10h15-16h45, September 20, 2013 |br|
+IXXI, ENS de Lyon, France |br|
+`Plus d'information <http://www.ixxi.fr/?p=2252&lang=fr>`_
+
+While standard transport processes (e.g. convection, diffusion) are fundamentals in simple physical systems, non-standard processes are often observed in complex biophysical systems such as living biological cells or colonies of bacteria. During this meeting, we will focus on how such transport processes (e.g. anomalous diffusion) can be modeled and analyzed by tools coming from physical sciences, typically statistical mechanics, with various applications including intracellular dynamics, crowding and collective dynamics, and colloidal suspensions.
+
+**Program:**
+10h15-10h30: Welcome (0h15) 
+
+10h30-11h15: Julien Valette (CEA Saclay) |br|
+11h15-12h00: Raphael Voituriez (Université Pierre et Marie Curie – LPTMC) 
+
+12h00-13h30: Wine and cheese (1h30) 
+
+13h30-14h15: Ralf Metzler (University of Potsdam – Institute for Physics&  Astronomy) |br|
+14h15-15h00: Fernando Peruani (Université de Nice Sophia Antipolis – J.A.Dieudonné) 
+
+15h00-15h15: Coffee break (0h15) 
+
+15h15-16h00: Sergei Fedotov (University of Manchester – School of Mathematics) |br|
+16h00-16h45: Berengère Abou (Université Paris Diderot – MSC) 
+
+

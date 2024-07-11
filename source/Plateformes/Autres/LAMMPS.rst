@@ -59,7 +59,7 @@ LAMMPS
 |                           | **modulefile** : LAMMPS/3Mar20-quip-gap-iomkl-2017.4-3.0.0                                                                                         |
 +---------------------------+------------------------------+------------------+-------------------------------------------------------------------------------------+------------+
 
-.. container:: note note-imp 
+.. container:: note note-important
 
     Pour utiliser les modules, consulter `Environment Modules <#>`_
 

@@ -5,7 +5,7 @@ Signaler un problème
 
 ou poser une question...
 
-.. container:: note note-imp
+.. container:: note note-important
 
     Seuls les emails **professionnels**, en relation avec les laboratoires membres, sont acceptés (pas de gmail, hotmail, yahoo…). 
 
@@ -17,7 +17,7 @@ ou poser une question...
 
     .. raw:: html
 
-        <form id="userForm" method="post" class="ms-2 me-2" data-nom="probleme">
+        <form id="userForm" method="post" class="mx-2" data-nom="probleme">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -60,7 +60,7 @@ ou poser une question...
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question"></label>
+                <label class="me-2" for="human" id="human-question"></label>
                 <input id="human-answer" type="text"/> 
             </div>
 

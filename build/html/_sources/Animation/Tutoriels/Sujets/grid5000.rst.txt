@@ -1,0 +1,23 @@
+.. _grid5000:
+
+* :ref:`Tutoriels 2014 <tt2014>`
+
+Grid'5000: Summer school 2014
+=============================
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/Tutos/grid_logo.png
+  :class: img-float pe-2
+  :width: 140px
+  :alt: Logo Grid
+
+June 17-19, 2014 |br|
+Location: ENS Lyon, France |br|
+`Website of Grid'5000 School <https://www.grid5000.fr/mediawiki/index.php/Grid5000:School2014>`_
+
+After the successful 2006, 2009, 2010, 2011 and 2012 editions (respectively 100, 72, 80, 67 and 75 registered participants), Grid'5000 practitioners and future users are invited to gather, learn and share experience around the usage of Grid'5000 as a scientific instrument.
+
+Hosted by Ecole Normale Supérieure, from June 16th to June 20th 2014, this 6th edition of the Grid'5000 school will bring together, but is not limited to, Grid'5000's newbies as well as expert-users, technical team and executive committee for 4 days of tutorials and talks focusing on best-practices and results. Presentations and practical sessions will cover basic and advanced usages of the platform as well as lessons on experiment control at large-scale. A challenge to showcase tools and environments demonstrating the deployment of distributed systems on Grid'5000 (including large-scale middleware, parallel and cloud applications, etc.) will be held this year for the third time. Language for the school will be English. 

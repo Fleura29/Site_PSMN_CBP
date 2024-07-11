@@ -6,7 +6,7 @@ Stockage Informatique pour les laboratoires du site Monod
 .. role:: line
     :class: line
 
-.. container:: note note-imp
+.. container:: note note-important
 
     L'enquête est terminée. Le rapport pré-final a été remis à la direction de la recherche le 31 mars dernier. Merci à tous ceux qui se sont mobilisés pour cette étude. Dommage pour les autres...
 
@@ -36,7 +36,7 @@ Circuit des données numériques
     :class: img-fluid center
     :alt: Synoptique des processus 
 
-.. container:: note note-imp
+.. container:: note note-important
     
     Le questionnaire se **focalise** plus sur les **processus** que sur les **données**.
 
@@ -64,7 +64,7 @@ Pour qu'aucune information importante n'échappe à l'étude préliminaire a ét
 Les questionnaires
 ------------------
 
-.. container:: note note-imp
+.. container:: note note-important
     
     L'échéance proche de fin février impose de limiter les questionnaires aux plates-formes expérimentales et à celles réalisant les traitements
 
@@ -73,13 +73,9 @@ Questionnaires en ligne
 
 :line:`Sondages, ancienne version, disponibles uniquement dans l'ENS :`
 
-.. raw:: html 
-
-    <ul class="simple"> 
-        <li> <del><a href="http://sondages.ljc.ens-lyon.fr/phpesp/public/survey.php?name=Storage4Labs4ExperiencesV2">Plates-formes expérimentales</a></del>, prioritaire` </li>
-        <li> <del><a href="http://sondages.ljc.ens-lyon.fr/phpesp/public/survey.php?name=Storage4Labs4ProcessV2">Plates-formes de traitement</a></del>, prioritaire` </li>
-        <li> <del><a href="http://sondages.ljc.ens-lyon.fr/phpesp/public/survey.php?name=Storage4Labs4UseV2">Exploitation des résultats de la recherche</a></del>, prioritaire` </li>
-    </ul>
+* | `Plates-formes expérimentales <http://sondages.ljc.ens-lyon.fr/phpesp/public/survey.php?name=Storage4Labs4ExperiencesV2>`_ , prioritaire
+* | `Plates-formes de traitement <http://sondages.ljc.ens-lyon.fr/phpesp/public/survey.php?name=Storage4Labs4ProcessV2>`_ , prioritaire
+* | `Exploitation des résultats de la recherche <http://sondages.ljc.ens-lyon.fr/phpesp/public/survey.php?name=Storage4Labs4UseV2>`_ , prioritaire
 
 Sondages, nouvelle version, disponibles de partout :
 
@@ -87,7 +83,7 @@ Sondages, nouvelle version, disponibles de partout :
 * `Plates-formes de traitement <http://limesurvey.cbp.ens-lyon.fr/limesurvey/index.php?sid=39829&lang=en>`_, prioritaire
 * `Exploitation des résultats de la recherche <http://limesurvey.cbp.ens-lyon.fr/limesurvey/index.php?sid=42114&lang=en>`_, secondaire
 
-.. container:: note note-important
+.. container:: note note-warning
  
     La **"valorisation"** : si son importance est capitale, les contraintes techniques associées à leur gestion (volume de données, débit nécessaire, contrôle d'accès, etc...) sont moins importantes que pour les 3 autres processus. Elle sera donc étudiée au besoin ultérieurement
 
@@ -111,6 +107,6 @@ Résultats
 * `Document final v1 <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ENSL-Storage4labs-100415.pdf>`_ : issu du rapport remis le 31 mars 2010 à la direction de la recherche, corrigé de quelques coquilles
 * `Document final v2 <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ENSL-Storage4labs-100607.pdf>`_ : issu du rapport remis le 7 juin 2010 à la direction de la recherche, modifié suite aux ajustements du LBMC.
  
-.. container:: note note-important
+.. container:: note note-warning
     
     Tous ces documents, textes et schémas exigent l'accord préalable de l'auteur pour leur exploitation dans une quelconque autre étude.

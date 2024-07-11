@@ -9,7 +9,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
 
     .. raw:: html
 
-        <form id="userForm" method="post" class="ms-2 me-2" data-nom="cafe">
+        <form id="userForm" method="post" class="mx-2" data-nom="cafe">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -40,14 +40,14 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control textArea" id="textAreaQuestion" name="question" required></textarea>
+                <textarea class="form-control textarea" id="textAreaQuestion" name="question" required></textarea>
                 <label for="textAreaQuestion">Question ou thème : *</label>
             </div>
 
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question"></label>
+                <label class="me-2" for="human" id="human-question"></label>
                 <input id="human-answer" type="text"/> 
             </div>
             <div id="bloc" class="text-center"></div>

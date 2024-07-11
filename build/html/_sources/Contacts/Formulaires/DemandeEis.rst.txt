@@ -13,7 +13,7 @@ Demande d'expertise en informatique scientifique
 
     .. raw:: html
 
-        <form id="userForm" method="post" class="ms-2 me-2" data-nom="eis">
+        <form id="userForm" method="post" class="mx-2" data-nom="eis">
             <div class="row ">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -72,7 +72,7 @@ Demande d'expertise en informatique scientifique
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question"></label>
+                <label class="me-2" for="human" id="human-question"></label>
                 <input id="human-answer" type="text"/> 
             </div>
 

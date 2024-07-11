@@ -68,7 +68,7 @@ L'utilisateur dispose sur les machines `Cloud@CBP <https://www.cbp.ens-lyon.fr/p
 * l'espace vrac récent **/distonet**: **partagé entre les machines**, de **120 TB**, ni archivé mais sauvegardé. Il dispose d'un accès rapide sur le réseau de la salle (autour de 100 MB/s) et très très rapide sur le réseau du cluster (autour de 2 GB/s). Ne JAMAIS l'exploiter pour des traitements générant ou traitant au delà de 10000 fichiers ! Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /distonet/$USER"
 * l'espace projets **/projects**: **partagé entre les machines**, de **12 TB**, archivé mais non sauvegardé. C'est un espace collaboratif. Il dispose d'un accès rapide sur le réseau de la salle et sur le réseau du cluster. Pour l'exploiter, créer un dossier correspondant à son identifiant : "mkdir /projects/users/$USER"
 
-.. container:: note note-imp
+.. container:: note note-important
 
     La règle la plus importante pour le stockage est : "On ne travaille PAS dans son $HOME"
 

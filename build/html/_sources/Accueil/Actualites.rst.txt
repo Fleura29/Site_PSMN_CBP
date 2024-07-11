@@ -17,14 +17,16 @@ Actualités du Pôle Scientifique de Modélisation Numérique
 Financements PIA3 Equipex+:
 
 Le PSMN est partenaire de deux projets financés:
-    * **Spatial-Cell-ID**, projet porté par l'ENS de Lyon.
-    * **MuDiS4LS**, Mutualised Digital Spaces for FAIR data in Life and Health Sciences.
-    * https://www.france-bioinformatique.fr/en/news/mudis4ls-the-project-for-shared-digital-spaces-for-life-sciences/
+
+* **Spatial-Cell-ID**, projet porté par l'ENS de Lyon.
+* **MuDiS4LS**, Mutualised Digital Spaces for FAIR data in Life and Health Sciences.
+* https://www.france-bioinformatique.fr/en/news/mudis4ls-the-project-for-shared-digital-spaces-for-life-sciences/
 
 Actualités récurentes:
-    * Les :ref:`Journées CBP & PSMN - cycle de rencontres thématiques <thematique>`  
-    * Les :ref:`Cafés du jeudi <cafe>` organisés par le pôle.
-    * Les :ref:`dates de formation <dateform>`. 
+
+* Les :ref:`Journées CBP & PSMN - cycle de rencontres thématiques <thematique>`  
+* Les :ref:`Cafés du jeudi <cafe>` organisés par le pôle.
+* Les :ref:`dates de formation <dateform>`. 
 
 Pour une présentation du PSMN et du CBP, veuillez consulter `cette page <../index.html>`_.
 
@@ -33,7 +35,7 @@ Les formations
 
 Voir `la page dédiée aux formations <formations>`_
 
-.. container:: note note-important
+.. container:: note note-warning text-center
 
     Les formations PSMN sont proposées en présentiel (ou visioconférence), en général, le mardi après-midi ou le jeudi après-midi, à la demande des utilisateurs. |br|
     **Inscriptions** : `Cerasela Calugaru <mailto:cerasela.iliana.calugaru@ens-lyon.fr>`_

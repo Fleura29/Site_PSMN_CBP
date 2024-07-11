@@ -58,7 +58,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <a class="nav-link dropdown-toggle" aria-current="page">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
                                     <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
@@ -67,7 +67,7 @@
                                     <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
                                     <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
                                     <li class="nav-item dropend">
-                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
                                         <div class="dropdown-menu">
                                             <ul>
                                                 <li><a class="dropdown-item" href="../../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
@@ -92,6 +92,7 @@
                                     <li><a class="dropdown-item" href="../../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
                                     <li><a class="dropdown-item" href="../../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="../../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="../../../Informations/Calculer.html">Pour calculer</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
                                     <li class="nav-item dropend">
                                         <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
@@ -115,7 +116,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                </ul>   
+                                </ul>       
                             </div>
                         </li> 
                     
@@ -132,10 +133,10 @@
                                         <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
                                         <div class="dropdown-menu">
                                             <ul>   
-                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
-                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
-                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">Support en humanités numériques</a></li>
-                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RCS.html">Recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/RIS.html">Recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/HN.html">En humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../../../Plateformes/Supports/AFJ.html">Administratif, financier et juridique</a></li>
                                             </ul>                                        
                                         </div>
                                     </li>  
@@ -243,8 +244,8 @@
 <h2>“”Next-Server”” page 102<a class="headerlink" href="#next-server-page-102" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 102, il est proposé comme adresse de serveur TFTP “”172.16.20.251””. Elle est incohérente avec le reste de l’article.</p>
 <p>Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le “”next-server””, dans “”/etc/dhcp/dhcpd.conf”” est à remplacer comme suit :</p>
-<div class="border-dashed docutils container">
-<p>next-server 10.13.20.13;</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>next-server<span class="w"> </span><span class="m">10</span>.13.20.13<span class="p">;</span>
+</pre></div>
 </div>
 </section>
 <section id="myinclude-myexclude-page-104">
@@ -252,13 +253,13 @@
 <p>Page 104, il est proposé d’utiliser les variables “”MyInclude”” et “”MyExclude”” pour installer dès le <a class="reference external" href="https://wiki.debian.org/Debootstrap">debootstrap</a> un certain nombre de paquets.</p>
 <p>Certains sont installés « de base » par “”debootstrap””. SIDUS exige le noyau (“”linux-image-3.2.0-4-amd64”” pour architecture AMD64) et les outils initrd (“”initramfs-tools””). D’autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.</p>
 <p>Voici ce que nous proposons pour MyInclude :</p>
-<div class="border-dashed docutils container">
-<p>export MyInclude= »adduser,apt,apt-utils,aptitude,aptitude-common,aspell,aspell-en,aufs-tools,bsdmainutils,btrfs-tools,busybox,ca-certificates,clusterssh,console-setup,cpio,cron,cups-pdf,debian-archive-keyring,dmidecode,dselect,emacs,environment-modules,ethtool,firmware-bnx2,firmware-linux,firmware-linux-nonfree,gnupg,gpgv,groff-base,htop,hwinfo,hwloc,iftop,ifupdown,info,initramfs-tools,install-info,iotop,iperf,ipmitool,iproute,iptables,iputils-ping,isc-dhcp-client,isc-dhcp-common,kmod,ldap-utils,less,libapt-inst1.5,libapt-pkg4.12,libboost-iostreams1.49.0,libcwidget3,libept1.4.12,libgcrypt11,libgdbm3,libgnutls26,libgpg-error0,libidn11,libkmod2,libncursesw5,libnet-ldap-perl,libnewt0.52,libnfnetlink0,libnss-ldap,libp11-kit0,libpam-ldap,libpipeline1,libpopt0,libprocps0,libreadline6,libsigc++-2.0-0c2a,libsqlite3-0,libssl1.0.0,libstdc++6,libtasn1-3,libudev0,libusb-0.1-4,libxapian22,linux-headers-3.2.0-4-amd64,linux-image-3.2.0-4-amd64,locales,logrotate,lsof,man-db,manpages,mbw,mtr,mutt,nano,net-tools,netbase,netcat-traditional,nfs-common,nscd,ntpdate,open-iscsi,openssh-server,pciutils,procps,python-ldap,readline-common,rsyslog,screen,scsitools,sdparm,ssh,ssmtp,sudo,tasksel,tasksel-data,tmux,traceroute,tshark,udev,usbutils,vim,wget,whiptail,xinit,python-html2text »</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">MyInclude</span><span class="o">=</span><span class="s2">&quot;adduser,apt,apt-utils,aptitude,aptitude-common,aspell,aspell-en,aufs-tools,bsdmainutils,btrfs-tools,busybox,ca-certificates,clusterssh,console-setup,cpio,cron,cups-pdf,debian-archive-keyring,dmidecode,dselect,emacs,environment-modules,ethtool,firmware-bnx2,firmware-linux,firmware-linux-nonfree,gnupg,gpgv,groff-base,htop,hwinfo,hwloc,iftop,ifupdown,info,initramfs-tools,install-info,iotop,iperf,ipmitool,iproute,iptables,iputils-ping,isc-dhcp-client,isc-dhcp-common,kmod,ldap-utils,less,libapt-inst1.5,libapt-pkg4.12,libboost-iostreams1.49.0,libcwidget3,libept1.4.12,libgcrypt11,libgdbm3,libgnutls26,libgpg-error0,libidn11,libkmod2,libncursesw5,libnet-ldap-perl,libnewt0.52,libnfnetlink0,libnss-ldap,libp11-kit0,libpam-ldap,libpipeline1,libpopt0,libprocps0,libreadline6,libsigc++-2.0-0c2a,libsqlite3-0,libssl1.0.0,libstdc++6,libtasn1-3,libudev0,libusb-0.1-4,libxapian22,linux-headers-3.2.0-4-amd64,linux-image-3.2.0-4-amd64,locales,logrotate,lsof,man-db,manpages,mbw,mtr,mutt,nano,net-tools,netbase,netcat-traditional,nfs-common,nscd,ntpdate,open-iscsi,openssh-server,pciutils,procps,python-ldap,readline-common,rsyslog,screen,scsitools,sdparm,ssh,ssmtp,sudo,tasksel,tasksel-data,tmux,traceroute,tshark,udev,usbutils,vim,wget,whiptail,xinit,python-html2text&quot;</span>
+</pre></div>
 </div>
 <p>Dans MyExclude, nous excluons des paquets généralement entrant en conflit avec d’autres dans cette phase, des serveurs que nous ne désirons pas lancer sur le client SIDUS.</p>
 <p>Voici ce que nous proposons pour MyExclude :</p>
-<div class="border-dashed docutils container">
-<p>export MyExclude= »nano,exim,mysql-server,mysql-server-5.5,mysql-server-core-5.5,network-manager,apache2,apache2-mpm-worker,apache2-utils,apache2.2-bin,apache2.2-common,libapache2-mod-dnssd,libapache2-mod-php5,r-cran-fecofin,libmpich1.0gf,gerris,gspiceui,qucs,ktimetrace,kseg,ghdl,earth3d,libopenigtlink1,qtdmm,scilab-overload,gmsh,klogic,g++-doc,openturns-wrapper,xorsa,r-cran-rpvm,labplot,zygrib,libteem1,magnus,libcomplearn-dev,libtorque2,torque-common,torque-server,gridengine-client,gridengine-exec,gridengine-master,gridengine-qmon,gnuplot,gnuplot-nox,rtai,rtai-doc,libhdf5-dev,libhdf5-1.8,libgd2-xpm »</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">MyExclude</span><span class="o">=</span><span class="s2">&quot;nano,exim,mysql-server,mysql-server-5.5,mysql-server-core-5.5,network-manager,apache2,apache2-mpm-worker,apache2-utils,apache2.2-bin,apache2.2-common,libapache2-mod-dnssd,libapache2-mod-php5,r-cran-fecofin,libmpich1.0gf,gerris,gspiceui,qucs,ktimetrace,kseg,ghdl,earth3d,libopenigtlink1,qtdmm,scilab-overload,gmsh,klogic,g++-doc,openturns-wrapper,xorsa,r-cran-rpvm,labplot,zygrib,libteem1,magnus,libcomplearn-dev,libtorque2,torque-common,torque-server,gridengine-client,gridengine-exec,gridengine-master,gridengine-qmon,gnuplot,gnuplot-nox,rtai,rtai-doc,libhdf5-dev,libhdf5-1.8,libgd2-xpm&quot;</span>
+</pre></div>
 </div>
 </section>
 <section id="hook-policy-rc-d-page-104">
@@ -270,18 +271,18 @@
 <h2>“”rootaufs”” page 106<a class="headerlink" href="#rootaufs-page-106" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 106, le “”wget”” proposé pour télécharger et installer <em>coeur</em> de démarrage de SIDUS dans le “”initrd”” est incomplet. De plus, le mettre exécutable est un plus !</p>
 <p>Il faut remplacer cette ligne par :</p>
-<div class="border-dashed docutils container">
-<p>wget -O ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs <a class="reference external" href="http://www.cbp.ens-lyon.fr/sidus/rootaufs">http://www.cbp.ens-lyon.fr/sidus/rootaufs</a>
-chmod 755 ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-O<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/etc/initramfs-tools/scripts/init-bottom/rootaufs<span class="w"> </span>http://www.cbp.ens-lyon.fr/sidus/rootaufs
+chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/etc/initramfs-tools/scripts/init-bottom/rootaufs
+</pre></div>
 </div>
 </section>
 <section id="vmlinux-sidus-et-initrd-sidus-page-107">
 <h2>“”vmlinux-Sidus”” et “”initrd-Sidus”” page 107<a class="headerlink" href="#vmlinux-sidus-et-initrd-sidus-page-107" title="Lien vers cette rubrique">¶</a></h2>
 <p>Page 107, il y a une référence à “”vmlinux-Sidus”” et “”initrd-Sidus”” pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du “”/srv/tftp/pxelinux.cfg/default””.</p>
 <p>Il faut remplacer cette ligne par :</p>
-<div class="border-dashed docutils container">
-<p>cp ${SIDUS}/vmlinuz /srv/tftp/vmlinuz-Sidus
-cp ${SIDUS}/srv/nfsroot/boot/initrd /srv/tftp/initrd.img-Sidus</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/vmlinuz<span class="w"> </span>/srv/tftp/vmlinuz-Sidus
+cp<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/srv/nfsroot/boot/initrd<span class="w"> </span>/srv/tftp/initrd.img-Sidus
+</pre></div>
 </div>
 <i><a href="mailto:emmanuel.quemener@ens-lyon.fr">Emmanuel Quemener</a> 2013/11/07 10:55</i></section>
 </section>

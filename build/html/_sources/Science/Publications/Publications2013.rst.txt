@@ -139,7 +139,7 @@ CBP
 
 `Journées Succes 2013 - Présentation de SIDUS : outil de reproductibilité <http://succes2013.sciencesconf.org/>`_
 
-**November 14, 2013**, à l'`INPG <http://www.ipgp.fr/>`_ par `Emmanuel Quemener <#>`_ |br|
+**November 14, 2013**, à l'`INPG <http://www.ipgp.fr/>`_ par :ref:`Emmanuel Quemener <ris>` |br|
 `article <http://succes2013.sciencesconf.org/24312/document>`_, `transparents <http://succes2013.sciencesconf.org/conference/succes2013/Succes_20131114_EQ.pdf>`_ et `vidéo <http://webcast.in2p3.fr/videos-JSFG2013_sidius>`_
 
 .. image:: ../../_static/cover235linuxmag.jpg

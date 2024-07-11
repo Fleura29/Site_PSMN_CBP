@@ -1,0 +1,80 @@
+.. _tt2010:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Tutoriels 2010
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/Tutos/idecat.jpg
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Idecat
+
+**IDECAT Summerschool on Computational Methods for Catalysis and Materials Science** |br|
+Location: ENS-Lyon, France |br|
+**May 25, 2010 - May 28, 2010**
+
+* R.A. van Santen, Eindhoven University of Technology, The Netherlands
+* P. Sautet, Ecole Normale Supérieure de Lyon, France
+
+----
+
+.. image:: ../../_static/Animations/Tutos/psmn_logo.jpg
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Logo PSMN
+
+**Fonctionnalités, utilisation, ... du nouveau site web du PSMN** |br|
+Location : Salle de Réunions LR6 1027, Centre Blaise Pascal, ENS-Lyon, France |br|
+**27 Mai 2010 (11h-12h) - 3 Juin 2010 (14h-15h) - 8 Juin 2010 (14h-15h) |br|
+16 Juin 2010 (11h-12h) - 21 Juin 2010 (14h-15h)** 
+
+* Cerasela Calugaru, Centre Blaise Pascal / PSMN, École Normale Supérieure de Lyon, France
+
+----
+
+.. image:: ../../_static/Animations/Tutos/linux.jpg
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Linux
+
+**Formation LINUX** |br|
+Location: Centre Blaise Pascal, ENS-Lyon, France |br|
+August 30-September 03, 2010
+
+* Tristan Albaret, University Lyon 1, France
+
+----
+
+.. image:: ../../_static/Animations/Tutos/psmn_logo.jpg
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Logo PSMN
+
+**Formation a l'utilisation du PSMN** |br|
+**13-17 Septembre 2010 - 11-15 Octobre 2010** |br|
+**15-19 Novembre 2010 - 6-10 Decembre 2010**
+
+* Hervé Gilquin, PSMN, École Normale Supérieure de Lyon, France
+* Cerasela Calugaru, Centre Blaise Pascal / PSMN, École Normale Supérieure de Lyon, France
+
+----
+
+.. image:: ../../_static/Animations/Tutos/psmn_logo.jpg
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Logo PSMN
+
+**Outils pour le Calcul Scientifique** |br|
+Location: Salle de Réunions LR6 1027, Centre Blaise Pascal, ENS-Lyon, France |br|
+
+`Comment soumettre un job au système de batch du PSMN <../../_static/Animations/Tutos/systemedebatch.pdf>`_ **24 Septembre 2010** |br|
+`Comment compiler. Compilateurs Intel <../../_static/Animations/Tutos/compilation.pdf>`_ **29 Octobre 2010** |br|
+`Les bibliothèques scientifiques <../../_static/Animations/Tutos/compilation.pdf>`_ **26 Novembre 2010** |br|
+
+* Hervé Gilquin, PSMN, École Normale Supérieure de Lyon, France
+* Cerasela Calugaru, Centre Blaise Pascal / PSMN, École Normale Supérieure de Lyon, France

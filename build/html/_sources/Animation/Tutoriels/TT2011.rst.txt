@@ -1,0 +1,53 @@
+.. _tt2011:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Tutoriels 2011
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/Tutos/gpgpu.jpg
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Gpgpu
+
+:ref:`Introduction au GPU <introgpu>` |br|
+Location : Centre Blaise Pascal, ENS de Lyon, France |br|
+**7 Novembre, 2011** 
+
+* CIRA ( Calcul Intensif en Rhône Alpes ) 
+
+----
+
+.. image:: ../../_static/Animations/Tutos/houches.png
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Houches
+
+:ref:`First Les Houches school in computational physics - soft matter <flhscpsm>` |br|
+Location: Les Houches, Rhone-Alpes, France  |br|
+**June 20, 2011 - July 1, 2011** 
+
+* Jean-Louis Barrat, Université de Lyon 1, France
+* Ralf Everaers, École Normale Supérieure de Lyon, France
+* Werner Krauth, École Normale Supérieure de Paris, France
+
+----
+
+.. image:: ../../_static/Animations/Tutos/psmn_logo.jpg
+  :class: img-float pe-2
+  :width: 160px
+  :alt: Logo PSMN
+
+**Formation a l'utilisation du PSMN** |br|
+Location: Salle de travaux pratiques (LR6 D 014); Centre Blaise Pascal, ENS Lyon, France 
+
+**- le 22 Février 2011** |br|
+**- le 5 Avril 2011** |br|
+**- Une formation complémentaire, à la demande, (compilateurs, bibliothèques scientifiques, système de batch, ...) aura lieu en même temps pour les utilisateurs confirmés.**
+
+* Hervé Gilquin, PSMN, École Normale Supérieure de Lyon, France
+* Cerasela Calugaru, Centre Blaise Pascal / PSMN, École Normale Supérieure de Lyon, France

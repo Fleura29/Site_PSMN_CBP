@@ -3,9 +3,9 @@
 Stockage Informatique pour les laboratoires du site Descartes et Pôle de Diffusion des Savoirs
 ==============================================================================================
 
-.. container:: note note-imp 
+.. container:: note note-important
     
-    L'enquête est terminée. Les résultats ont été rendus à la direction de la recherche comme spécifiée lors de la lettre de mission.</note>
+    L'enquête est terminée. Les résultats ont été rendus à la direction de la recherche comme spécifiée lors de la lettre de mission.
 
 Introduction
 ------------
@@ -32,7 +32,7 @@ Circuit des données numériques
     :class: img-fluid center
     :alt: Synoptique des processus 
 
-.. container:: note note-imp 
+.. container:: note note-important
     
     Le questionnaire se **focalise** plus sur les **processus** que sur les **données**.
 
@@ -65,7 +65,7 @@ L'enquête est terminée. Les livrables sont présentés en libre accès, ci-des
 * `Document  v0, site Descartes <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ENSL-Storage4labs2Descartes-100528.pdf>`_ : issu du rapport remis le 28 mai 2010 à la direction de la recherche
 * `Document v0, Pôle de diffusion des savoirs <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ENSL-Storage4labs2PDS-100528.pdf>`_ : issu du rapport remis le 28 mai 2010 à la direction de la recherche
  
-.. container:: note note-important 
+.. container:: note note-warning 
 
     Tous ces documents, textes et schémas exigent l'accord préalable de l'auteur pour leur exploitation dans une quelconque autre étude.
 

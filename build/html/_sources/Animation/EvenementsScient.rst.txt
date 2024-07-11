@@ -1,3 +1,5 @@
+.. _eventsci:
+
 Evènements Scientifiques
 ========================
 
@@ -75,23 +77,23 @@ Séminaires
     
     .. container:: col col-6 col-lg-3
 
-        * `Séminaires 2019 <#>`_ 
-        * `Séminaires 2018 <#>`_ 
-        * `Séminaires 2017 <#>`_ 
-        * `Séminaires 2016 <#>`_ 
+        * :ref:`Séminaires 2019 <se2019>`
+        * :ref:`Séminaires 2018 <se2018>` 
+        * :ref:`Séminaires 2017 <se2017>` 
+        * :ref:`Séminaires 2016 <se2016>`
 
     .. container:: col col-6 col-lg-3
 
-        * `Séminaires 2015 <#>`_ 
-        * `Séminaires 2014 <#>`_ 
-        * `Séminaires 2013 <#>`_ 
-        * `Séminaires 2012 <#>`_ 
+        * :ref:`Séminaires 2015 <se2015>`
+        * :ref:`Séminaires 2014 <se2014>`
+        * :ref:`Séminaires 2013 <se2013>`
+        * :ref:`Séminaires 2012 <se2012>`
 
     .. container:: col col-6 col-lg-3
 
-        * `Séminaires 2011 <#>`_ 
-        * `Séminaires 2010 <#>`_ 
-        * `Séminaires 2009 <#>`_
+        * :ref:`Séminaires 2011 <se2011>` 
+        * :ref:`Séminaires 2010 <se2010>`
+        * :ref:`Séminaires 2009 <se2009>`
 
 Tutoriels & Formations
 ----------------------
@@ -106,18 +108,18 @@ Tutoriels & Formations
 
     .. container:: col col-12 col-sm-6 col-lg-4
 
-        * `Tutoriels/Formations 2018 <#>`_
-        * `Tutoriels/Formations 2017 <#>`_
-        * `Tutoriels/Formations 2016 <#>`_
+        * :ref:`Tutoriels/Formations 2018 <tt2018>`
+        * :ref:`Tutoriels/Formations 2017 <tt2017>`
+        * :ref:`Tutoriels/Formations 2016 <tt2016>`
         * :ref:`Tutoriels/Formations 2015 <tt2015>`
-        * `Tutoriels/Formations 2014 <#>`_
+        * :ref:`Tutoriels/Formations 2014 <tt2014>`
         
     .. container:: col col-12 col-lg-4
 
-        * `Tutoriels/Formations 2013 <#>`_
-        * `Tutoriels/Formations 2012 <#>`_
-        * `Tutoriels/Formations 2011 <#>`_
-        * `Tutoriels/Formations 2010 <#>`_
-        * `Tutoriels/Formations 2009 <#>`_
+        * :ref:`Tutoriels/Formations 2013 <tt2013>`
+        * :ref:`Tutoriels/Formations 2012 <tt2012>`
+        * :ref:`Tutoriels/Formations 2011 <tt2011>`
+        * :ref:`Tutoriels/Formations 2010 <tt2010>`
+        * :ref:`Tutoriels/Formations 2009 <tt2009>`
 
 

@@ -89,7 +89,7 @@ Voici une sortie de la commande ``lspci -nn | egrep '(VGA|3D)'`` :
     3b:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] [10de:1b06] (rev a1)
     a1:00.0 VGA compatible controller [0300]: NVIDIA Corporation GK107GL [Quadro K420] [10de:0ff3] (rev a1)
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #1: récuperez la liste des périphériques (GP)GPU**
 
@@ -136,7 +136,7 @@ Si le démarrage de la machine n'est pas trop ancien, vous disposez des informat
     [   35.111628] nvidia-modeset: Allocated GPU:0 (GPU-ccc95482-6681-052e-eb30-20b138412b92) @ PCI:0000:82:00.0
     [349272.210486] nvidia-uvm: Loaded the UVM driver in 8 mode, major device number 243
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #2 : récupérez les informations de votre machine avec `dmesg | grep -i nvidia`**
 
@@ -162,7 +162,7 @@ Un exemple de ``lsmod | grep nvidia`` sur une station de travail :
 
 Nous voyons que 4 modules sont chargés. La dernière colonne (vide pour les deux premières lignes) liste les dépendances entre les modules. Ici ``nvidia_modeset`` and ``nvidia_uvm`` dépendent du module ``nvidia``.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #3 : récupérez les informations de l'hôte par la commande `lsmod | grep nvidia`**
 
@@ -182,7 +182,7 @@ Un ``ls -l /dev/nvidia*`` offre ce genre d'informations :
 
 Vous pouvez voir que chacun peut accéder au périphérique, à la fois en lecture ET en écriture (le ``RW``). Ici, vous avez un seul périphérique Nvidia, ``nvidia0``. Sur une machine disposant de plusieurs périphériques Nvidia, nous aurions : ``nvidia0``, ``nvidia1``, etc...
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #4 : récupérez les informations de votre machine avec `ls -l /dev/* | grep -i nvidia`**
 
@@ -225,7 +225,7 @@ Beaucoup d'informations sont disponibles sur cette sortie :
 * ses "occupations" mémoire : instantanée et maximale
 * les processus les exploitant, leur consommation de mémoire et le GPU associé
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #5 : récupérez les informations avec la commande `nvidia-smi`**
 
@@ -263,7 +263,7 @@ Voici une sortie de ``clinfo '-l'`` pour une des stations de travail :
 
 Ainsi, dans cette machine, 5 périphériques OpenCL sont accessibles, 3 permettent de s'adresser au processeur (vu pour le coup comme un périphérique) et 2 sont des GPU Nvidia.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #6 : récupérez les informations avec la commande `clinfo -l`**
 
@@ -323,7 +323,7 @@ Ainsi, le nombre d'ALU dans chaque *Compute Unit* varie de 64 à 192 selon les g
     :class: img-fluid center
     :alt: Diagramme GP102
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #7 : récupérez les informations à l'aide de deux commandes précédentes utilisant `clinfo`**
 
@@ -352,7 +352,7 @@ La commande ``nvidia-smi`` offrait une liste de périphériques Nvidia identifi�
     # N'exploiter aucun GPU
     CUDA_VISIBLE_DEVICES=`` <MonProgramme>
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #8 : récupérez les informations avec `clinfo -l` préfixée de CUDA_VISIBLE_DEVICES**
 
@@ -417,7 +417,7 @@ Le source
 
 Le programme source ``xGEMM.c`` a été conçu pour fonctionner avec n'importe quelle implémentation. Si vous l'éditez, vous réalisez qu'il n'est pas si simple d'avoir un programme qui s'exécute indifféremment quelle que soit la librairie. Même si les appels sont comparables (même nombre d'attributs dans les fonctions), leur nom change de librairie à librairie. Pour n'avoir qu'un seul source, les directives sont largement exploitées. C'est donc le ``Makefile`` qui va permettre de ne compiler que telle ou telle portion du programme source.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #9 : éditez le source du programme `xGEMM.c` et repérez les éléments suivants**
 
@@ -709,7 +709,7 @@ Le ratio entre performances en simple sur double précision illustre la grosse d
     :class: img-fluid center
     :alt: xgemm_ratio_spdp
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #10 : lancez les `xGEMM_<precision>_<implementation>` avec une taille de 1000**
 
@@ -729,7 +729,7 @@ Il est aussi intéressant de constater que la performance dépend non seulement 
     :class: img-fluid center
     :alt: xgemm_sp_size
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #11 : lancez les programmes précédents pour différentes tailles**
 
@@ -800,7 +800,7 @@ Implémentation C/OpenCL
 
 Le programme ``bench4gpu/Pi/OpenCL/PiOpenCL.c`` est une implémentation en C "pur" : il permet de juger de la difficulté d'appropriation de OpenCL. En effet, une grande partie du code est destinée à définir quelle plateforme et quel périphérique utiliser, placer les données à traîter.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #12 : exploration du code OpenCL**
 
@@ -890,7 +890,7 @@ Cette sortie montre également les options (au moins 2) à entrer pour exploiter
 
 Il est donc nécessaire de préciser uniquement le tuple ``(plateforme,périphérique)`` pour exécuter le programme.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #13 : compilation et première exécution**
 
@@ -924,7 +924,7 @@ Il est assez intéressant que les implémentations CPU offrent quasiment la mêm
 
 Il est aussi intéressant qu'étrange que le nombre de "coups" à l'intérieur du quadrant d'exploration ne soit pas le même pour toutes les implémentations. C'est un artéfact lié à la multiplication du *RNG* par la constante pour le placer entre 0 et 1. 
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #14 : exécution sur tous les périphériques pour un PR=1**
 
@@ -955,7 +955,7 @@ Nous pouvons maintenant explorer la réponse des périphériques, notamment pour
 
 Cette seconde expérience montre de manière assez spectaculaire que les GPU ne dévoilent leur puissance "que" pour des régimes de parallélisme élevé. Notons aussi que les implémentations sur CPU ont des performances très très disparates.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #15 : exécution sur tous les périphériques pour un PR=1024**
 
@@ -982,7 +982,7 @@ Dans notre exemple, la GTX 1080 Ti dispose de 3584 *cuda cores*. La Quadro K420 
 
 Ce graphique montre sans ambiguité la puissance "brute" qu'offre un GPU de gamer en comparaison de CPU traditionnel (33x dans la meilleure implémentation CPU, celle d'Intel). Notons également que GPU n'est pas synonyme de puissance brute : la "petite" Quadro K420, bien que "professionnelle" présente des performances 77x inférieures.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #16 : exécution sur tous les périphériques pour un PR optimal**
 
@@ -1018,7 +1018,7 @@ Nous avons présenté dans le cours qu'un mauvais choix de régime de paralléli
 
 Par exemple, regardons pour la meilleure implémentation de CPU et pour le GPU le plus puissant, quelle influence a le choix du régime de parallélisme autour du régime de parallélisme optimal.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #17 : exécution sur tous les périphériques pour un PR optimal en double précision**
 
@@ -1122,7 +1122,7 @@ Le premier est uniquement lisible avec Python, le second est utilisable directem
 Examen du code source
 """""""""""""""""""""
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #18 : récupération des éléments dans le code source**
 
@@ -1171,7 +1171,7 @@ Il existe un bouton d'export du graphique en image au format PNG ou SVG. Nous ob
 
 Nous observons que la scalabilité pour un code aussi simple n'est pas si triviale que cela à analyser. Il n'y a pas continuité en fonction de PR croissant. Notons une pseudo-période correspondant au nombre de coeurs physiques, avec des maximums locaux pour les multiples de cette valeur (le *handsaw curve effect*).
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #19 : étude de la scalabilité d'une implémentation CPU**
 
@@ -1194,7 +1194,7 @@ Nous obtenons pour notre GTX 1080 Ti les résultats suivants :
 
 Nous pouvons constater que la scalabilité est très peu continue, encore moins que pour la scalabilité étudiée des CPU. Nous constatons également que des pseudo-lignes se chevauchent. Le PR optimal était autour de 4x le nombre de *cuda cores* et offrait une performance de **268 Gitops**.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #20 : étude de la scalabilité d'un GPU**
 
@@ -1225,7 +1225,7 @@ Et ce n'est pas tout ! La distribution Debian utilisée intègre par défaut un 
 
 En relançant le calcul précédent, nous parvenons à **271 Gitops** soit plus que l'implémentation OpenCL.
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #21 : étude de l'implémentation CUDA autour du PR optimal**
 
@@ -1249,7 +1249,7 @@ En lançant cette exploration suivante, nous obtenons :
 
 Alors que l'optimum de performance est atteint autour d'un PR de 14336 avec **258 Gitops**, nous n'obtenons un Itops que de **8.5 Gitops** (soit 30x moins) sur 5 valeurs particulières : 14321, 14323, 14327, 14341, 14347. Le point commun entre ces valeurs de PR est à rechercher sur le site `de mathématiques <http://www.math.com/students/calculators/source/prime-number.htm>`_
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #22 : étude de valeurs particulières de PR**
 
@@ -1372,7 +1372,7 @@ Lors de l'initialisation du "système N-Corps", plusieurs opérations sont effec
 * la distribution semi-aléatoire des vitesses en fonction du Viriel
 * l'évolution du système
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #23 : étude du source de ``NBody.py``**
 
@@ -1410,7 +1410,7 @@ La figure ci-dessus illustre l'écrasante performance de la GTX 1080 Ti en compa
 
 Seule une représentation en log permet de ne pas trop écraser les performances des implémentations CPU.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     **Exercice #24 : lancement de ``NBody.py`` pour 32768 particules**
 
@@ -1445,7 +1445,7 @@ Si nous changeons de manière insignifiante le nombre de particules (de 8192 à 
     :class: img-fluid center
     :alt: nbody_007
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #25 : lancement de ``NBody.py`` en mode ``-g``**
 
@@ -1618,7 +1618,7 @@ Dans le cas d'une exécution uniquement sur CPU (ici 2 Xeon E5-2637 v4 @ 3.50GHz
     TIME Page size (bytes): 4096
     TIME Exit status: 0
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #26 : appliquez les commandes ci-dessus**
 
@@ -1655,7 +1655,7 @@ Intégration et exploitation du code Gromacs
 
 Nous allons tenter de reproduire une `expérience de Nvidia <https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/gromacs/>`_ vantant l'efficacité des GPGPU pour le logiciel de `dynamique moléculaire <https://fr.wikipedia.org/wiki/Dynamique_mol%C3%A9culaire>`_ `Gromacs <http://www.gromacs.org/>`_.
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #27 : appliquez la "recette" de Nvidia**
 
@@ -1673,7 +1673,7 @@ Nous allons tenter de reproduire une `expérience de Nvidia <https://www.nvidia.
 
 En cas de difficultés, appliquez la :ref:`recette de Gromacs pour Debian Stretch <gromacsgpu>` ;-)
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #28 : Exécutez l'exemple `1536`** 
 
@@ -1688,7 +1688,7 @@ Le code PKDGRAV3 est un logiciel de simulation hydrodynamique à la large couver
 
 Le code source est accessible par ``git`` à l'adresse : https://bitbucket.org/dpotter/pkdgrav3.git
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #29 : Récupérez et compilez le code suivant la documentation fournie**
 
@@ -1709,7 +1709,7 @@ Le code source est accessible par ``git`` à l'adresse : https://bitbucket.org/d
 
 L'exécution du programme s'effectue en associant l'exécutable ``pkdgrav3`` au fichier de paramètres ``cosmology.par`` dans le dossiers ``examples``.
 
-.. container:: note note-important
+.. container:: note note-warning
     
     **Exercice #30 : Exécutez l'exemple `cosmology.par`**
 

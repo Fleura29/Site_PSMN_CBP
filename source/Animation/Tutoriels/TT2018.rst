@@ -1,0 +1,36 @@
+.. _tt2018:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Tutoriels/Formations 2018
+=========================
+
+.. |br| raw:: html
+
+   <br>
+
+* **16/10/2018 - Atelier** `Analyse de données <https://www.alphavisa.com/afc/2018/atelier-5.php>`_ **dans le cadre de** `AFC 2018 <https://www.alphavisa.com/afc/2018/>`_
+
+* **Formation dédiée aux nouveaux utilisateurs du PSMN :**
+
+(Salle de travaux pratiques (M7 étage 1H), Centre Blaise Pascal, ENS-Lyon) |br|
+Inscriptions : 	https://doodle.com/poll/82gz2ud3tnf9t5s4
+
+**18 janvier 2018** |br|
+**15 février 2018** |br|
+**01 mars 2018** |br|
+**15 mars 2018** |br|
+**22 mars 2018** |br|
+**12 avril 2018** |br|
+**27 avril 2018** |br|
+**17 mai 2018** |br|
+**31 mai 2018** |br|
+**14 juin 2018** |br|
+**28 juin 2018** |br|
+**20 septembre 2018** |br|
+**05 octobre 2018 (en français et anglais)** |br|
+**22 octobre 2018 (en français et anglais)** |br|
+**15 novembre 2018** |br|
+**23 novembre 2018** (de 10h à 13h : outils pour les codes parallèles, etc.; l'utilisation du logiciel LAMMPS  installé sous les serveurs du PSMN ) |br|
+**06 décembre 2018** |br|
+**20 décembre 2018** 

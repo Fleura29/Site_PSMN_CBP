@@ -3,7 +3,7 @@
 FORMATIONS
 ==========
 
-.. container:: note note-imp
+.. container:: note note-important
     
     Les formations PSMN sont proposées en présentiel (ou visioconférence), en général, les mardi après-midi, à la demande des utilisateurs.
 
@@ -12,11 +12,11 @@ FORMATIONS
 PRÉ REQUIS :
 ------------
 
-.. container:: note note-important
+.. container:: note note-warning
 
     Pour ces formations, **VOUS DEVEZ** `AVOIR UN COMPTE <http://www.ens-lyon.fr/PSMN/doku.php?id=contact:forms:inscription>`_ sur les serveurs du PSMN. Si vous n'avez pas un compte, il faut en faire la demande **AVANT** cette formation.
 
-.. container:: note note-important
+.. container:: note note-warning
 
     Pour les formations dédiées a l'utilisation d'un logiciel spécifique déjà installé sous les serveurs du PSMN, vous devez nous préciser le logiciel avant la formation.
 

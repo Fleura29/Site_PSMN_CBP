@@ -11,7 +11,7 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
 
     .. raw:: html
         
-        <form id="userForm" method="post" class="ms-2 me-2" data-nom="liste_inscr">
+        <form id="userForm" method="post" class="mx-2" data-nom="liste_inscr">
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <div class="mb-2">
@@ -37,7 +37,7 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
             <p class="mt-2 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-question"></label>
+                <label class="me-2" for="human" id="human-question"></label>
                 <input id="human-answer" type="text"/> 
             </div>
 
@@ -57,7 +57,7 @@ Si vous souhaitez vous **désinscrire**, merci de valider le formulaire suivant 
 
     .. raw:: html
 
-        <form id="userForm2" method="post" class="ms-2 me-2" data-nom="liste_desinscr">
+        <form id="userForm2" method="post" class="mx-2" data-nom="liste_desinscr">
             <div class="mb-2">
                 <label for="inputEmail2">Email*</label>
                 <input type="text" class="form-control form-style" id="inputEmail2" name="emailDesinscription" required>
@@ -65,7 +65,7 @@ Si vous souhaitez vous **désinscrire**, merci de valider le formulaire suivant 
             <p class="mt-2 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
-                <label class="me-1" for="human" id="human-questio2"></label>
+                <label class="me-2" for="human" id="human-questio2"></label>
                 <input id="human-answer2" type="text"/> 
             </div>
 

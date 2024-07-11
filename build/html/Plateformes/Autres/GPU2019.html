@@ -56,7 +56,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" role="button">Accueil</a>
+                            <a class="nav-link dropdown-toggle" aria-current="page">Accueil</a>
                             <div class="dropdown-menu">
                                 <ul>
                                     <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
@@ -65,7 +65,7 @@
                                     <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
                                     <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
                                     <li class="nav-item dropend">
-                                        <a class="dropdown-toggle dropdown-item" href="#" role="button">Partenaires</a>
+                                        <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
                                         <div class="dropdown-menu">
                                             <ul>
                                                 <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
@@ -90,6 +90,7 @@
                                     <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
                                     <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
                                     <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                    <li><a class="dropdown-item" href="../../Informations/Calculer.html">Pour calculer</a></li>
                                     <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
                                     <li class="nav-item dropend">
                                         <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
@@ -113,7 +114,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                </ul>   
+                                </ul>       
                             </div>
                         </li> 
                     
@@ -130,10 +131,10 @@
                                         <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
                                         <div class="dropdown-menu">
                                             <ul>   
-                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Support et recherche en calcul scientifique</a></li> 
-                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Support et recherche en informatique scientifique</a></li>
-                                                <li><a class="dropdown-item" href="../Supports/HN.html">Support en humanités numériques</a></li>
-                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Support administratif, financier et juridique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/RCS.html">Recherche en calcul scientifique</a></li> 
+                                                <li><a class="dropdown-item" href="../Supports/RIS.html">Recherche en informatique scientifique</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/HN.html">En humanités numériques</a></li>
+                                                <li><a class="dropdown-item" href="../Supports/AFJ.html">Administratif, financier et juridique</a></li>
                                             </ul>                                        
                                         </div>
                                     </li>  
@@ -329,7 +330,7 @@
 a1:00.0<span class="w"> </span>VGA<span class="w"> </span>compatible<span class="w"> </span>controller<span class="w"> </span><span class="o">[</span><span class="m">0300</span><span class="o">]</span>:<span class="w"> </span>NVIDIA<span class="w"> </span>Corporation<span class="w"> </span>GK107GL<span class="w"> </span><span class="o">[</span>Quadro<span class="w"> </span>K420<span class="o">]</span><span class="w"> </span><span class="o">[</span>10de:0ff3<span class="o">]</span><span class="w"> </span><span class="o">(</span>rev<span class="w"> </span>a1<span class="o">)</span>
 </pre></div>
 </div>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #1: récuperez la liste des périphériques (GP)GPU</strong></p>
 <ul class="simple">
 <li><p>Combien de périphériques VGA sont listés ?</p></li>
@@ -377,7 +378,7 @@ a1:00.0<span class="w"> </span>VGA<span class="w"> </span>compatible<span class=
 <span class="o">[</span><span class="m">349272</span>.210486<span class="o">]</span><span class="w"> </span>nvidia-uvm:<span class="w"> </span>Loaded<span class="w"> </span>the<span class="w"> </span>UVM<span class="w"> </span>driver<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">8</span><span class="w"> </span>mode,<span class="w"> </span>major<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">243</span>
 </pre></div>
 </div>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #2 : récupérez les informations de votre machine avec `dmesg | grep -i nvidia`</strong></p>
 <ul class="simple">
 <li><p>Quelle est la version de pilote chargée par le noyau ?</p></li>
@@ -397,7 +398,7 @@ drm<span class="w">                   </span><span class="m">360448</span><span 
 </pre></div>
 </div>
 <p>Nous voyons que 4 modules sont chargés. La dernière colonne (vide pour les deux premières lignes) liste les dépendances entre les modules. Ici <code class="docutils literal notranslate"><span class="pre">nvidia_modeset</span></code> and <code class="docutils literal notranslate"><span class="pre">nvidia_uvm</span></code> dépendent du module <code class="docutils literal notranslate"><span class="pre">nvidia</span></code>.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #3 : récupérez les informations de l’hôte par la commande `lsmod | grep nvidia`</strong></p>
 <ul class="simple">
 <li><p>Les informations sont-elles identiques à celles ci-dessus ? Caractère par caractère ?</p></li>
@@ -413,7 +414,7 @@ crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </spa
 </pre></div>
 </div>
 <p>Vous pouvez voir que chacun peut accéder au périphérique, à la fois en lecture ET en écriture (le <code class="docutils literal notranslate"><span class="pre">RW</span></code>). Ici, vous avez un seul périphérique Nvidia, <code class="docutils literal notranslate"><span class="pre">nvidia0</span></code>. Sur une machine disposant de plusieurs périphériques Nvidia, nous aurions : <code class="docutils literal notranslate"><span class="pre">nvidia0</span></code>, <code class="docutils literal notranslate"><span class="pre">nvidia1</span></code>, etc…</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #4 : récupérez les informations de votre machine avec `ls -l /dev/* | grep -i nvidia`</strong></p>
 <ul class="simple">
 <li><p>Combien de <code class="docutils literal notranslate"><span class="pre">/dev/nvidia&lt;number&gt;</span></code> avez-vous ?</p></li>
@@ -453,7 +454,7 @@ crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </spa
 <li><p>ses « occupations » mémoire : instantanée et maximale</p></li>
 <li><p>les processus les exploitant, leur consommation de mémoire et le GPU associé</p></li>
 </ul>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #5 : récupérez les informations avec la commande `nvidia-smi`</strong></p>
 <ul class="simple">
 <li><p>Identifiez les caractéristiques ci-dessus et comparer les éléments</p></li>
@@ -485,7 +486,7 @@ Platform<span class="w"> </span><span class="c1">#3: Intel(R) OpenCL</span>
 <li><p><code class="docutils literal notranslate"><span class="pre">#3,#0</span></code> <strong>Intel(R) OpenCL</strong> : implémentation CPU Intel, plutôt très efficace</p></li>
 </ul>
 <p>Ainsi, dans cette machine, 5 périphériques OpenCL sont accessibles, 3 permettent de s’adresser au processeur (vu pour le coup comme un périphérique) et 2 sont des GPU Nvidia.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #6 : récupérez les informations avec la commande `clinfo -l`</strong></p>
 <ul class="simple">
 <li><p>Identifiez et comparez votre sortie avec la liste ci-dessus</p></li>
@@ -532,7 +533,7 @@ Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w"
 <p>Ces unités de traitement disposent (autant pour les GPU que les CPU) d’unités arithmétiques et logiques (<em>Arithmetic and Login Unit</em>) lesquelles sont <em>vraiment</em> en charge du traitement des opérations.</p>
 <p>Ainsi, le nombre d’ALU dans chaque <em>Compute Unit</em> varie de 64 à 192 selon les générations de GPU. Ainsi, pour le GPU ci-dessus GTX 1080 Ti, le nombre de <em>Compute Unit</em> mentionné est 28, et le nombre d’ALU (appelé également <em>cuda core</em> par Nvidia) est de 3584 soit 28*128. Le schéma du constructeur du circuit GP102 suivant est trompeur : en fait, il dispose de 30 unités SM, mais sur un GP102, seuls 28 sont activés.</p>
 <img alt="Image GP102" class="img-fluid center mb-3" src="../../_images/gp102-block-diagram.jpg" />
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #7 : récupérez les informations à l’aide de deux commandes précédentes utilisant `clinfo`</strong></p>
 <ul class="simple">
 <li><p>Comparez les informations entre les implémentations CPU. Pourquoi ces différences ?</p></li>
@@ -559,7 +560,7 @@ Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w"
 <span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="w"> </span>&lt;MonProgramme&gt;
 </pre></div>
 </div>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #8 : récupérez les informations avec `clinfo -l` préfixée de CUDA_VISIBLE_DEVICES</strong></p>
 <ul class="simple">
 <li><p>Mettez <code class="docutils literal notranslate"><span class="pre">CUDA_VISIBLE_DEVICES=0</span> <span class="pre">clinfo</span> <span class="pre">-l</span></code> et observez la sortie</p></li>
@@ -609,7 +610,7 @@ Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w"
 <section id="le-source">
 <h4>Le source<a class="headerlink" href="#le-source" title="Lien vers cette rubrique">¶</a></h4>
 <p>Le programme source <code class="docutils literal notranslate"><span class="pre">xGEMM.c</span></code> a été conçu pour fonctionner avec n’importe quelle implémentation. Si vous l’éditez, vous réalisez qu’il n’est pas si simple d’avoir un programme qui s’exécute indifféremment quelle que soit la librairie. Même si les appels sont comparables (même nombre d’attributs dans les fonctions), leur nom change de librairie à librairie. Pour n’avoir qu’un seul source, les directives sont largement exploitées. C’est donc le <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> qui va permettre de ne compiler que telle ou telle portion du programme source.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #9 : éditez le source du programme `xGEMM.c` et repérez les éléments suivants</strong></p>
 <ul class="simple">
 <li><p>Identifiez dans <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> quelles directives (précédées par <code class="docutils literal notranslate"><span class="pre">-D</span></code>) sont associées aux différentes implémentations</p></li>
@@ -863,7 +864,7 @@ Error<span class="w"> </span><span class="m">0</span>.0000000000
 <img alt="Image xgemm_dp" class="img-fluid center" src="../../_images/xgemm_dp.png" />
 <p>Le ratio entre performances en simple sur double précision illustre la grosse différence entre CPU et GPU.</p>
 <img alt="Image xgemm_ratio_spdp" class="img-fluid center" src="../../_images/xgemm_ratio_spdp.png" />
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #10 : lancez les `xGEMM_&lt;precision&gt;_&lt;implementation&gt;` avec une taille de 1000</strong></p>
 <ul class="simple">
 <li><p>Variez le nombre d’itérations pour obtenir une durée d’exécution d’une dizaine de secondes ?</p></li>
@@ -879,7 +880,7 @@ Error<span class="w"> </span><span class="m">0</span>.0000000000
 </div>
 <p>Il est aussi intéressant de constater que la performance dépend non seulement de l’implémentation, du périphérique mais aussi de sa sollicitation. Voici la performance pour l’implémentation CPU avec OpenBLAS et les implémentations cuBLAS et <em>Thunking</em> sur la GTX 1080 Ti.</p>
 <img alt="Image xgemm_sp_size" class="img-fluid center" src="../../_images/xgemm_sp_size.png" />
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #11 : lancez les programmes précédents pour différentes tailles</strong></p>
 <ul class="simple">
 <li><p>Diminuez la taille aux valeurs suivantes <code class="docutils literal notranslate"><span class="pre">125</span></code>, <code class="docutils literal notranslate"><span class="pre">250</span></code>, <code class="docutils literal notranslate"><span class="pre">500</span></code> et exécutez les programmes</p></li>
@@ -947,7 +948,7 @@ Error<span class="w"> </span><span class="m">0</span>.0000000000
 <section id="implementation-c-opencl">
 <h3>Implémentation C/OpenCL<a class="headerlink" href="#implementation-c-opencl" title="Lien vers cette rubrique">¶</a></h3>
 <p>Le programme <code class="docutils literal notranslate"><span class="pre">bench4gpu/Pi/OpenCL/PiOpenCL.c</span></code> est une implémentation en C « pur » : il permet de juger de la difficulté d’appropriation de OpenCL. En effet, une grande partie du code est destinée à définir quelle plateforme et quel périphérique utiliser, placer les données à traîter.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #12 : exploration du code OpenCL</strong></p>
 <ul class="simple">
 <li><p>Repérez dans le programme source le <strong>noyau</strong> OpenCL réalisant le calcul</p></li>
@@ -1033,7 +1034,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 <li><p>#6 le type de variable: INT32, INT64, FP32, FP64 (par défault FP32)</p></li>
 </ul>
 <p>Il est donc nécessaire de préciser uniquement le tuple <code class="docutils literal notranslate"><span class="pre">(plateforme,périphérique)</span></code> pour exécuter le programme.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #13 : compilation et première exécution</strong></p>
 <ul class="simple">
 <li><p>Compilez le programme avec la ligne de compilation précisée ci-dessus</p></li>
@@ -1082,7 +1083,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 <img alt="Image opencluster2_qpu1" class="img-fluid center" src="../../_images/opencluster2_qpu1.png" />
 <p>Il est assez intéressant que les implémentations CPU offrent quasiment la même performance. Par contre les GPU offrent une performance bien moindre (6x moins pour la GTX 1080 Ti et presque 30x moins pour la Quadro K420).</p>
 <p>Il est aussi intéressant qu’étrange que le nombre de « coups » à l’intérieur du quadrant d’exploration ne soit pas le même pour toutes les implémentations. C’est un artéfact lié à la multiplication du <em>RNG</em> par la constante pour le placer entre 0 et 1.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #14 : exécution sur tous les périphériques pour un PR=1</strong></p>
 <ul class="simple">
 <li><p>Exécutez le programme sur tous (GPU &amp; CPU) avec un nombre d’itérations de 1 milliard</p></li>
@@ -1130,7 +1131,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 </table>
 <img alt="Image opencluster2_qpu1024" class="img-fluid center" src="../../_images/opencluster2_qpu1024.png" />
 <p>Cette seconde expérience montre de manière assez spectaculaire que les GPU ne dévoilent leur puissance « que » pour des régimes de parallélisme élevé. Notons aussi que les implémentations sur CPU ont des performances très très disparates.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #15 : exécution sur tous les périphériques pour un PR=1024</strong></p>
 <ul class="simple">
 <li><p>Exécutez le programme sur tous (GPU &amp; CPU) avec un nombre d’itérations de 10 milliards</p></li>
@@ -1164,7 +1165,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 </table>
 <img alt="Image opencluster2_epu" class="img-fluid center" src="../../_images/opencluster2_epu.png" />
 <p>Ce graphique montre sans ambiguité la puissance « brute » qu’offre un GPU de gamer en comparaison de CPU traditionnel (33x dans la meilleure implémentation CPU, celle d’Intel). Notons également que GPU n’est pas synonyme de puissance brute : la « petite » Quadro K420, bien que « professionnelle » présente des performances 77x inférieures.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #16 : exécution sur tous les périphériques pour un PR optimal</strong></p>
 <ul class="simple">
 <li><p>Reprenez les spécifications des GPU et isolez le nombre de <em>cuda cores</em></p></li>
@@ -1215,7 +1216,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 <img alt="Image piopencl_dp" class="img-fluid center" src="../../_images/piopencl_dp.png" />
 <p>Nous avons présenté dans le cours qu’un mauvais choix de régime de parallélisme pouvait largement influencer la performance.</p>
 <p>Par exemple, regardons pour la meilleure implémentation de CPU et pour le GPU le plus puissant, quelle influence a le choix du régime de parallélisme autour du régime de parallélisme optimal.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #17 : exécution sur tous les périphériques pour un PR optimal en double précision</strong></p>
 <ul class="simple">
 <li><p>Reprenez les expériences ci-dessus en précisant un calcul en double précision</p></li>
@@ -1308,7 +1309,7 @@ Pi<span class="w"> </span>estimation<span class="w"> </span><span class="m">3</s
 <p>Le premier est uniquement lisible avec Python, le second est utilisable directement, pas exemple avec GNUplot.</p>
 <section id="examen-du-code-source">
 <h4>Examen du code source<a class="headerlink" href="#examen-du-code-source" title="Lien vers cette rubrique">¶</a></h4>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #18 : récupération des éléments dans le code source</strong></p>
 <ul class="simple">
 <li><p>Editez le code source avec l’outil <code class="docutils literal notranslate"><span class="pre">gedit</span></code></p></li>
@@ -1348,7 +1349,7 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 <p>Il existe un bouton d’export du graphique en image au format PNG ou SVG. Nous obtenons le suivant :</p>
 <img alt="Image amd_opencluster2_insa" class="img-fluid center" src="../../_images/amd_opencluster2_insa.png" />
 <p>Nous observons que la scalabilité pour un code aussi simple n’est pas si triviale que cela à analyser. Il n’y a pas continuité en fonction de PR croissant. Notons une pseudo-période correspondant au nombre de coeurs physiques, avec des maximums locaux pour les multiples de cette valeur (le <em>handsaw curve effect</em>).</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #19 : étude de la scalabilité d’une implémentation CPU</strong></p>
 <ul class="simple">
 <li><p>Identifiez avec <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">PiXPU.py</span> <span class="pre">-h</span></code> un périphérique CPU</p></li>
@@ -1363,7 +1364,7 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 <p>Nous obtenons pour notre GTX 1080 Ti les résultats suivants :</p>
 <img alt="Image gtx1080ti_opencluster2_insa" class="img-fluid center" src="../../_images/gtx1080ti_opencluster2_insa.png" />
 <p>Nous pouvons constater que la scalabilité est très peu continue, encore moins que pour la scalabilité étudiée des CPU. Nous constatons également que des pseudo-lignes se chevauchent. Le PR optimal était autour de 4x le nombre de <em>cuda cores</em> et offrait une performance de <strong>268 Gitops</strong>.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #20 : étude de la scalabilité d’un GPU</strong></p>
 <ul class="simple">
 <li><p>Identifiez avec <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">PiXPU.py</span> <span class="pre">-h</span></code> un périphérique GPU</p></li>
@@ -1386,7 +1387,7 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 </pre></div>
 </div>
 <p>En relançant le calcul précédent, nous parvenons à <strong>271 Gitops</strong> soit plus que l’implémentation OpenCL.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #21 : étude de l’implémentation CUDA autour du PR optimal</strong></p>
 <ul class="simple">
 <li><p>Identifiez avec <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">PiXPU.py</span> <span class="pre">-h</span></code> le périphérique GPU déjà utilisé en CUDA</p></li>
@@ -1403,7 +1404,7 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 </div>
 <img alt="Image gtx1080ti_aroundepu_opencluster2_insa" class="img-fluid center" src="../../_images/gtx1080ti_aroundepu_opencluster2_insa.png" />
 <p>Alors que l’optimum de performance est atteint autour d’un PR de 14336 avec <strong>258 Gitops</strong>, nous n’obtenons un Itops que de <strong>8.5 Gitops</strong> (soit 30x moins) sur 5 valeurs particulières : 14321, 14323, 14327, 14341, 14347. Le point commun entre ces valeurs de PR est à rechercher sur le site <a class="reference external" href="http://www.math.com/students/calculators/source/prime-number.htm">de mathématiques</a></p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #22 : étude de valeurs particulières de PR</strong></p>
 <ul class="simple">
 <li><p>Exécutez <code class="docutils literal notranslate"><span class="pre">PiXPU.py</span></code> autour du PR égal à 4x le nombre de <em>cuda cores</em> (16 avant et 16 après)</p></li>
@@ -1518,7 +1519,7 @@ Squertz<span class="w"> </span><span class="k">in</span><span class="w"> </span>
 <li><p>la distribution semi-aléatoire des vitesses en fonction du Viriel</p></li>
 <li><p>l’évolution du système</p></li>
 </ul>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #23 : étude du source de `NBody.py`</strong></p>
 <ul class="simple">
 <li><p>Editez le programme avec gedit</p></li>
@@ -1563,7 +1564,7 @@ Squertz<span class="w"> </span><span class="k">in</span><span class="w"> </span>
 <p>La figure ci-dessus illustre l’écrasante performance de la GTX 1080 Ti en comparaison de toutes les autres implémentations : plus d’un facteur 22 en simple précision et presque un facteur 2 en double précision pour la meilleure des implémentations CPU.</p>
 <img alt="Image nbody_log_opencluster2" class="img-fluid center mb-3" src="../../_images/nbody_log_opencluster2.png" />
 <p>Seule une représentation en log permet de ne pas trop écraser les performances des implémentations CPU.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #24 : lancement de `NBody.py` pour 32768 particules</strong></p>
 <ul class="simple">
 <li><p>Exécutez le programme pour tous les périphériques détectés</p></li>
@@ -1582,7 +1583,7 @@ Squertz<span class="w"> </span><span class="k">in</span><span class="w"> </span>
 <img alt="Image nbody_006" class="img-fluid center mb-3" src="../../_images/nbody_006.png" />
 <p>Si nous changeons de manière insignifiante le nombre de particules (de 8192 à 8191), nous obtenons des performances très différentes :</p>
 <img alt="Image nbody_007" class="img-fluid center mb-3" src="../../_images/nbody_007.png" />
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #25 : lancement de `NBody.py` en mode `-g`</strong></p>
 <ul class="simple">
 <li><p>Exécutez le programme pour le meilleur des CPU sur 8192 particules</p></li>
@@ -1727,7 +1728,7 @@ TIME<span class="w"> </span>Page<span class="w"> </span>size<span class="w"> </s
 TIME<span class="w"> </span>Exit<span class="w"> </span>status:<span class="w"> </span><span class="m">0</span>
 </pre></div>
 </div>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #26 : appliquez les commandes ci-dessus</strong></p>
 <ul>
 <li><p>Préparez votre environnement</p>
@@ -1788,7 +1789,7 @@ TIME<span class="w"> </span>Exit<span class="w"> </span>status:<span class="w"> 
 <section id="integration-et-exploitation-du-code-gromacs">
 <h3>Intégration et exploitation du code Gromacs<a class="headerlink" href="#integration-et-exploitation-du-code-gromacs" title="Lien vers cette rubrique">¶</a></h3>
 <p>Nous allons tenter de reproduire une <a class="reference external" href="https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/gromacs/">expérience de Nvidia</a> vantant l’efficacité des GPGPU pour le logiciel de <a class="reference external" href="https://fr.wikipedia.org/wiki/Dynamique_mol%C3%A9culaire">dynamique moléculaire</a> <a class="reference external" href="http://www.gromacs.org/">Gromacs</a>.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #27 : appliquez la « recette » de Nvidia</strong></p>
 <ul>
 <li><p>La documentation offre ceci :</p>
@@ -1809,7 +1810,7 @@ TIME<span class="w"> </span>Exit<span class="w"> </span>status:<span class="w"> 
 </ul>
 </div>
 <p>En cas de difficultés, appliquez la <a class="reference internal" href="gromacsGPUexec.html#gromacsgpuexec"><span class="std std-ref">recette de Gromacs pour Debian Stretch</span></a> ;-)</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #28 : Exécutez l’exemple `1536`</strong></p>
 <ul class="simple">
 <li><p>Quel <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">Time</span></code> avez-vous pour l’exécution sur GPU (et CPU) ?</p></li>
@@ -1822,7 +1823,7 @@ TIME<span class="w"> </span>Exit<span class="w"> </span>status:<span class="w"> 
 <h3>Intégration et exploitation du code PKDGRAV3<a class="headerlink" href="#integration-et-exploitation-du-code-pkdgrav3" title="Lien vers cette rubrique">¶</a></h3>
 <p>Le code PKDGRAV3 est un logiciel de simulation hydrodynamique à la large couverture médiatique en juin 2017. Présenté comme exploitant massivement les GPU, il est disponible sur <a class="reference external" href="https://bitbucket.org/dpotter/pkdgrav3/">bitbucket</a>.</p>
 <p>Le code source est accessible par <code class="docutils literal notranslate"><span class="pre">git</span></code> à l’adresse : <a class="reference external" href="https://bitbucket.org/dpotter/pkdgrav3.git">https://bitbucket.org/dpotter/pkdgrav3.git</a></p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #29 : Récupérez et compilez le code suivant la documentation fournie</strong></p>
 <ul>
 <li><p>La documentation offre ceci :</p>
@@ -1850,7 +1851,7 @@ TIME<span class="w"> </span>Exit<span class="w"> </span>status:<span class="w"> 
 </ul>
 </div>
 <p>L’exécution du programme s’effectue en associant l’exécutable <code class="docutils literal notranslate"><span class="pre">pkdgrav3</span></code> au fichier de paramètres <code class="docutils literal notranslate"><span class="pre">cosmology.par</span></code> dans le dossiers <code class="docutils literal notranslate"><span class="pre">examples</span></code>.</p>
-<div class="note note-important docutils container">
+<div class="note note-warning docutils container">
 <p><strong>Exercice #30 : Exécutez l’exemple `cosmology.par`</strong></p>
 <ul class="simple">
 <li><p>Passez dans le dossier <code class="docutils literal notranslate"><span class="pre">examples</span></code></p></li>

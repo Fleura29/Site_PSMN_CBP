@@ -1,0 +1,313 @@
+.. _se2015:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Séminaires/Colloquium 2015
+==========================
+
+New wine into old wineskins: collisionless shocks in plasmas 
+------------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Centre de Recherche Astrophysique de Lyon** 
+
+11 décembre 2015 de 14h à 15h - Salle de Conférence, 1 place Ecole - Monod, ENS Lyon, France 
+
+**Antoine BRET**, Universidad Castilla La Mancha, ETSI Industriales, Espagne  
+
+**Organisateurs :**
+
+* Rolf Walder  (Centre de Recherche Astrophysique de Lyon, ENS de Lyon) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon, France) 
+
+**(19 participants)**
+
+In 1808, Poisson realized that the conservation equations of a fluid through an interface offer 2 solutions: one continuous, when nothing changes, and another one, discontinuous, where there is a jump in density, velocity and pressure. Nearly 70 years later, Mach proved the second option was more than a mathematical curiosity, by providing the first picture of a shock wave moving through a fluid.
+
+Of course, the real world does not display any mathematical discontinuity. Since binary collisions are the only microscopic mechanisms capable of altering the fluid properties, the shock transition region in a fluid is a few mean-free-path thick.
+
+How is it then that the Earth bow shock in the solar wind has its front about 100 km thick, while the mean-free-path at the same location is about the Sun-Earth distance? It just happens that plasmas, that is, charged fluids, can sustain shock waves through purely collective electromagnetic means, even in the absence of binary collisions. The talk will review our current knowledge of these entities, focusing in particular on the way they can be formed, and their fulfillment of the Rankine-Hugoniot conditions.
+
+Modelling a Multienzymatic Complex : Theoretical Strategies
+-----------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Laboratoires de Chimie** 
+
+30 octobre 2015 de 14h à 15h - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Serge ANTONCZAK**, Institut de Chimie de Nice- UMR CNRS, Université de Nice-Sophia Antipolis, Nice, France 
+
+**Organisateurs :**
+
+* Elise Dumont, Tangui Le Bahers (Laboratoire de Chimie, ENS de Lyon) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon, France) 
+
+**(28 participants)**
+
+In each living system, the concentration of functional biological entities (e.g. proteins,
+enzymes, peptides…) is incredibly high. Some transient complex-structures may appear and,
+depending on the affinity the protagonists exhibit for each other, may subsist during
+sufficiently long timescales that may lead to new functional systems called metabolons.
+Experiments have demonstrated that some metabolons, lie at the vicinity of the membrane. \\
+The product of an enzymatic reaction becoming the substrate for the neighbour
+enzyme, it only has to “jump” from an active site to the next one, diminishing unnecessary
+diffusion processes and loss of energy during solvation and desolvation processes, yielding to
+an enhanced catalytic efficiency. Being able to precisely describe the overall architecture of
+these macromolecular assemblies has then become a key to understand the underlying
+biological mechanisms and for developing new therapeutic strategies.\\
+So far, our investigations focused on an assembly composed by three enzymes
+considered as key steps in the biosynthesis of anthocyanins and condensed tannins, namely
+F3’H, DFR and LAR, in interaction with a model of membrane. In this presentation, will be
+discussed the theoretical strategies carried out i) to characterise the enzymatic reaction
+(QM/MM-MD simulations) ii) to define the way the substrates and the products enter in or are
+released from the active site (brut force MD, Umbrella Sampling protocols…) iii) to design an
+enzyme complex in interaction (ATTRACT docking protein/protein protocol) and to decipher
+the interaction of this assembly with a model of membrane (OPM protocol).
+
+Towards Climate-Dependent Sub-Grid-Scale Parameterizations in Atmospheric Models
+--------------------------------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Laboratoires de Physique** 
+
+12 octobre 2015 de 11h à 12h - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Ulrich ACHATZ**, Goethe-Universität Frankfurt am Main, Institute of Atmosphere and Environment Frankfurt am Main, Germany \\
+
+**Organisateurs :**
+
+* Antoine Venaille (Laboratoire de Physique, ENS de Lyon, France) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon, France) 
+
+**(52 participants)**
+
+Climate system models use a multitude of parameterization schemes for small-scale processes. These should respond to externally forced climate variability in an appropriate manner so as to reflect the response of the parameterized process to a changing climate. Indications are that they might not satisfy this condition to full satisfaction. The most attractive route to master the challenge of achieving such a behavior would be provided by theoretical understanding sufficiently deep to enable the à-priori design of climate-sensitive parameterization schemes.  An alternative path might be helpful when the parameter tuning involved in the development of a scheme is objective enough so that these parameters can be described as functions of the statistics of the climate system. Provided that the dynamics of the process yields a sufficiently smooth probability distribution, and that the external forcing is not too strong, the quasi-Gaussian fluctuation-dissipation theorem (qg-FDT, Risken 1984) might be a tool to predict from the statistics of a system (e.g. the atmosphere) how an objectively tuned parameterization should respond to external forcing (e.g. by anomalous sea-surface temperatures). First promising steps in following these strategies will be described in two parts of the talk. (1) The qg-FDT approach has been examined within the framework of a toy atmosphere, to be simulated by a low-order model (i.e. a toy atmosphere model) with realistic internal variability. At sufficiently weak (but yet realistic) forcing strength use of the qg-FDT is found to systematically improve the agreement between the responses of model and atmosphere, respectively (Achatz et al 2013). Encouraging results on the application of this technique to an increasingly complex atmospheric setting will be reported as well. (2) The application of stochastic-mode reduction (Majda et al 2003) to obtain local stochastic SGS schemes could be another interesting route. Starting from a high-resolution finite-difference discretization of the equations of a dynamical system, this approach is based on splitting the model variables into fast, small-scale and slow, large-scale modes by averaging over neighboring grid cells. After that, the fast modes are eliminated by applying a stochastic mode reduction procedure. The new parameterization has so far been applied to a one-dimensional turbulent-flow system (Burgers equation). It is shown to compare favorably to traditional approaches on SGS turbulence parameterizations (Dolaptchiev et al 2013a,b).
+ 
+* Achatz, U., U. Löbl, S. Dolaptchiev and A. Gritsun, 2013: Fluctuation-Dissipation Supplemented by Nonlinearity: A Climate-Dependent Sub-Grid-Scale Parameterization in Low-Order Climate Models. J. Atmos Sci., 70, 1833-1846 \\
+* Dolaptchiev, S.I., Achatz U. and I. Timofeyev , 2013a: Stochastic closure for local averages in the finite-difference discretization of the forced Burgers equation. Theor. Comput. Fluid Dyn. 27, 297-317 \\
+* Dolaptchiev, S.I., Timofeyev, I. and Achatz, U., 2013b: Subgrid-scale closure for the inviscid Burgers-Hopf equation, Commun. Math. Sci., 11, 757–777 \\
+* Majda, A., Timofeyev, I., and E. Vanden-Eijnden, 2003: Systematic strategies for stochastic mode reduction in climate. J. Atmos. Sci., 60, 1705–1722 \\
+* Risken, H., 1984: The Fokker-Plank Equation: Methods of Solution and Applications. Springer-Verlag, 474 pp
+
+Introduction aux pérovskites hybrides : aspects théoriques, applications photovoltaïques et optoélectroniques
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Laboratoire de Chimie** 
+
+19 juin 2015 de 14h à 15h00 - AMPHI C, ENS Lyon, France 
+
+**Jacky EVEN** (Fonctions Optiques pour les Technologies de l’information & INSA de Rennes) 
+
+**Mikaël KEPENEKIAN** (Institut des Sciences Chimiques de Rennes & CNRS) 
+
+**(27 participants)**
+
+**Organisateurs :**
+
+* Tangui Le Bahers, (Laboratoire de Chimie, ENS de Lyon,) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon) 
+
+Les pérovskites hybrides en couches ont longtemps occupé le devant de la scène en partie pour leurs propriétés optiques exceptionnelles, mais aussi pour la grande flexibilité offerte en termes d'élaboration, d'auto-assemblage et de synthèse chimique. L'histoire des pérovskites hybrides 3D pour le photovoltaïque s'accélère brutalement, après quelques résultats initiaux Japonais et Coréens, au milieu de l'année 2012 sous l'impulsion conjointe de deux équipes: l'équipe de l'EPFL et l'équipe d'Oxford. Les rendements photovoltaïques record obtenus atteignent très rapidement 10% (2012), 15% (2013) puis 20% (2014). Ces progrès reposent à la fois sur de nouveaux procédés d'élaboration et de dépôt des pérovskites hybrides, une meilleure compréhension des phénomènes fondamentaux, une meilleure maîtrise de la physico-chimie des matériaux, mais aussi sur de nouvelles architectures de cellules solaires ou de composants optoélectroniques. Le séminaire introduira le sujet des pérovskites hybrides et donnera quelques éléments sur les travaux théoriques développés par le groupe de physico-chimistes Rennais  (FOTON,UMR6082/ISCR,UMR6226) qui travaille sur le sujet depuis 2010.
+
+Analyse Hautes Fréquences des Ondes avec Potentiel: Contrôle et Reconstruction de Données 
+-----------------------------------------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Unité de Mathématiques Pures et Appliquées** 
+
+26 mai 2015 de 14h à 15h00 - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Belhassen DEHMAN**, Université de Tunis El Manar, (Tunisie)  
+
+**Organisateurs :**
+
+* Paul Vigneaux, Emmanuel Grenier,  Vincent Calvez, (Unité de Mathématiques Pures et Appliquées, ENS de Lyon,) 
+* Julien Vovelle (Institut Camille Jordan, Université Claude Bernard Lyon 1)
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon) 
+
+**(31 participants)**
+
+On s’intéresse dans ce travail à l'équation des ondes avec potentiel q(x)u, sur un ouvert de R^d.
+Plus précisément, on fait une étude en hautes fréquences de cette équation, axée autour de deux questions : la contrôlabilité exacte et l’assimilation des données. On montre qu’en hautes fréquences et avec un peu de régularité sur le potentiel q, le contrôle et la solution contrôlée ainsi que les données reconstruites dépendent de façon peu significative de q. La preuve repose essentiellement sur une analyse fine du crochet du potentiel q avec les opérateurs de troncature spectrale. On utiliseé également des techniques mi- crolocales, notamment des résultats de propagation des mesures de défaut et du front d’onde H 1 pour les ondes avec potentiel peu régulier. Ce travail a été r ́ealisé en collaboration avec S. Ervedoza ( Cnrs, Toulouse ).
+
+Ecoulements viscoplastiques peu profonds multi-regimes geophysiques: derivation de modeles et inversion numerique de proprietes basales
+---------------------------------------------------------------------------------------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Unité de Mathématiques Pures et Appliquées** 
+
+26 mai 2015 de 15h15 à 16h30 - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Jérôme MONNIER**, Prof, INSA Toulouse, (France) 
+
+http://www.math.univ-toulouse.fr/~jmonnie/ 
+
+Organisateurs :
+
+* Paul Vigneaux, Emmanuel Grenier,  Vincent Calvez, (Unité de Mathématiques Pures et Appliquées, ENS de Lyon,) 
+* Julien Vovelle (Institut Camille Jordan, Université Claude Bernard Lyon 1) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon) 
+
+**(31 participants)**
+
+L'objet de la présentation est l'etude de modeles mathematiques et numeriques pour des ecoulements surfaces libres multi-regimes. Le caractere multi-regime (en terme de nombres adimensionnels tels que Froude et Reynolds) provient de la gamme des conditions aux limites basales considérées : de l'adherence au pure glissement en passant par les niveaux de friction intermediaires. Une derivation formelle de modeles "shallow" est menee de maniere standard (developpements asymptotiques) mais dans ce contexte multi-regimes. Les differentes formulations de modeles obtenus sont unifiees au sens ou elles representent a-priori l'ensemble de la gamme des regimes vises. Dans une seconde partie, nous nous interessons aux potentialites d'inversions des proprietes basales (topographie et parametrisation de la friction) au vu des donnees de surface (hauteur et/ou vitesse de la surface libre). Les investigations numeriques sont menees dans le cas fortement visqueux (Stokes surface libre), avec la methode du modele adjoint (a precision ajustable en fonction du niveau de bruit sur les donneees) et d'eventuelles minimisations de fonction cout mesurant l'ecart du modele aux donnees (assimilation variationnelle). Dans le cas 2D vertical, les echelles de variations minimales percues par le modele sont mises en evidence, ainsi que d'eventuels problemes de separation du couple (topographie, friction). Ces travaux sont issus de plusieurs etudes, menees en collaboration avec N. Martin, M. Boutounet et J.-P. Vila.
+
+Temporal motifs in time-dependent networks 
+------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Laboratoire de Reproduction et Développement des plantes** 
+
+30 avril 2015 de 11h à 12h - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Márton KARSAI**, ENS Lyon-LIP, INRIA, IXXI (France) 
+
+**Organisateurs :**
+
+* Annamaria Kiss (Laboratoires Joliot-Curie, ENS de Lyon, France) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon) 
+
+**(39 participants)**
+
+Temporal networks are commonly used to represent systems where connections between elements are active only for restricted periods of time, such as telecommunication, neural signal processing, biochemical reaction and human social interaction networks. In this talk we introduce the framework of temporal motifs to study the mesoscale topological–temporal structure of temporal networks in which the events of nodes do not overlap in time. Temporal motifs are classes of similar event sequences, where the similarity refers not only to topology but also to the temporal order of the events. We provide a mapping from event sequences to coloured directed graphs that enables an efficient algorithm for identifying temporal motifs. We discuss some aspects of temporal motifs, including causality and null models, and present basic statistics of temporal motifs in a large mobile call network.\\ 
+
+* L. Kovanen, M. Karsai, K. Kaski, J. Kertész and J. Saramäki "Temporal motifs in time-dependent networks", J. Stat. Mech. (2011) P11005, arXiv:1107.5646\\ 
+
+Convection à petite échelle et efficacité du mélange convectif dans le manteau Terrestre.
+-----------------------------------------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Laboratoire de Géologie de Lyon - Terre, Planètes, Environnement** 
+
+16 mars 2015 de 14h à 15h - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Henri SAMUEL**, Institut de Recherche en Astrophysique et Planétologie, Toulouse, France 
+
+**Organisateurs :**
+
+* Stephane Labrosse, Caroline Fitoussi, Benoit Tauzin, Nicolas Coltice (Laboratoire de Géologie de Lyon - Terre, Planètes, Environnement) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon) 
+
+**(30 participants)**
+
+La diversité des compositions chimiques des basaltes à la surface de la Terre suggère que les roches du manteau Terrestre sont hétérogènes. Si une partie de ces hétérogénéités peut être attribuée à des processus constants de différenciation et de recyclage, certaines signatures géochimiques indiquent la préservation de matériel primordial sur plusieurs milliards d'années.
+La survie de différents types d'hétérogénéités dans un manteau en convection vigoureuse est directement liée à l'efficacité du mélange convectif au cours des temps géologiques. Un tel lien souligne l'importance de la compréhension des processus de mélange pour l'interprétation des données géochimiques.
+
+Il est généralement admis que le mouvement des plaques tectoniques à grande échelle constitue le mécanisme principal d’homogénéisation du manteau, pourtant la composition chimique des laves issues de différentes dorsales médio-océaniques s’avère considérablement variable. Cette variabilité est souvent faible aux endroits où les vitesses des plaques sont élevées (10 à 20 centimètres par an), ce qui est expliqué par un mélange efficace dû aux mouvements des plaques. Cependant, les dorsales océaniques lentes (vitesse d'écartement de l’ordre de quelques millimètres par an), comme la dorsale Sud-Ouest Indienne, sont également associées à une géochimie homogène, ce qui est incompatible avec un mélange issu de l’action des plaques tectoniques. 
+
+Je présenterai une suite d’expériences numériques visant à élucider ce paradoxe en étudiant systématiquement l’influence de l'écoulement mantellique en fonction de la taille et de la vitesse des plaques tectoniques sur l’efficacité du mélange géochimique à proximité des dorsales océaniques. Ces expériences ont mis en évidence le rôle central de la convection dite "à petite échelle" qui se développe progressivement sous les plaques tectoniques en mouvement dans le brassage des hétérogénéités mantelliques.
+
+Ces travaux illustreront également la contribution essentielle de l’outil numérique dont l’utilisation est particulièrement adaptée à l’étude des couplages entre les processus géodynamiques et les observations géochimiques. \\
+
+Gysela5D, Adapting a GYrokinetic SEmi-LAgrangian code for current architectures and towards Exascale
+----------------------------------------------------------------------------------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Laboratoire de l'Informatique du Parallélisme** 
+
+24 février 2015 de 14h à 15h - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Julien BIGOT**, CEA Saclay/Maison de la simulation, France 
+
+**Organisateurs :**
+
+* Christian Perez et Jean-Yves L'Excellent (Laboratoire de l'Informatique du Parallélisme, ENS de Lyon, France) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon, France) 
+
+**(31 participants)**
+
+In order to design and operates the future reactor for nuclear fusion 
+such as ITER (tokamaks), physicists need to better understand the 
+various types of instabilities that develop in the plasma and impact 
+the confinement of heat. Simulation of Ion Temperature Gradient (ITG) 
+instabilities based on the Vlasov equations require huge amounts of 
+computational power with a discretization of both the spacial and 
+velocity space (6D). The gyrokinetic approximation makes this kind of 
+simulation possible by reducing this to "only" 5D.
+
+Up to now, the semi-Lagrangian code Gysela5D has been used to perform 
+large simulations using a few thousands cores (8k to 16k cores 
+typically). These simulations make the hypothesis that electrons are 
+adiabatic but recent advances seem to indicate that some instabilities 
+could only be explained by simulating kinetic electrons. In order to do 
+that, the spacial mesh would have to be refined by a 60³ ratio and time 
+steps by a 60 ratio. Such simulations would require Exascale capable 
+machines.
+
+In this talk, I present some challenges identified in order to provide 
+an Exascale-ready code as well as solutions recently implemented and 
+work in progress to tackle these. I especially focus on three such 
+piece of work:
+
+* memory scalability optimization;
+*   I/O optimizations for both checkpoints and result writing;
+*   communication patterns optimization for big number of cores (Blue Gene/Q).
+I will also present recent results that show that the code scales with 
+good performance up to 1,835,008 threads (the complete Juqueen Blue 
+Gene/Q at Jülich).
+
+What's new under the Sun?
+-------------------------
+
+.. image:: ../../_static/Animations/WS/cbp_ens.jpeg
+    :class: img-float pe-2
+    :width: 140px
+    :alt: Logo CBP
+
+**COLLOQUIUM Centre Blaise Pascal-Laboratoires de Physique** 
+
+26 janvier 2015 de 11h à 12h - Grande salle du CBP (LR6 C 023), ENS Lyon, France 
+
+**Allan Sacha BRUN**, Laboratoire Dynamique des Etoiles et de leur Environnement, AIM/SAp, Cea Saclay, France 
+
+**Organisateurs :**
+
+* Antoine Venaille (Laboratoire de Physique, ENS de Lyon, France) 
+* Cerasela Calugaru (Centre Blaise Pascal, ENS de Lyon, France) 
+
+**(52 participants)**
+
+We will discuss our recent progress to model in 3-D the solar global interior dynamics using the anelastic spherical harmonic (ASH) code. We will show
+that the nonlinear mechanical and thermal coupling between a turbulent convective envelope and a stable radiative interior yields realistic rotation
+profile, with a differentially rotating convective envelope and a tachocline of shear at its base. We will further investigate the excitation and propagation of internal waves in the 
+deep radiative interior. Thanks to the use of a realistic seismically calibrated stratification (i.e solar-like Brunt-V\"ais\"al\"a frequency),  
+we observe a large spectrum of internal waves in our simulation. These modes are excited by the continuous pummeling of convective plumes. 
+When comparing with asymptotic formulations and an adiabatic oscillation code we find a good overall agreement and confirm that 
+those waves are indeed gravity waves. We then discuss their properties and visibility at the surface and compare with recent observations. \\

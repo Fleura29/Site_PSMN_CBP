@@ -255,7 +255,7 @@ Le script de batch `MyJob.slurm` est le suivant :
   srun echo "Hello world!"
   srun date
 
-.. container:: note note-imp
+.. container:: note note-important
 
   Suite de la documentation en construction</note>
 

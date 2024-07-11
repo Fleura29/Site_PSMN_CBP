@@ -21,8 +21,8 @@ Enquête sur les besoins de stockage dans les laboratoires de l'ENS-Lyon
 
 * pages projets :
 
-    * `Site Monod <#>`_,
-    * `Site Descartes & Pôle de diffusion des savoirs <#>`_
+    * :ref:`Site Monod <stockmonod>`,
+    * :ref:`Site Descartes & Pôle de diffusion des savoirs <stockdescartes>`
 * livrables :
 
     * pour le `Site Monod <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/ENSL-Storage4labs-100607.pdf>`_,

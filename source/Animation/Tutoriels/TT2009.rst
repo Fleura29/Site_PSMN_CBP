@@ -1,0 +1,47 @@
+.. _tt2009:
+
+* :ref:`Évènements scientifiques <eventsci>`
+
+Tutoriels 2009
+==============
+
+.. |br| raw:: html
+
+   <br>
+
+.. image:: ../../_static/Animations/Tutos/linux.jpg
+  :class: img-float pe-2
+  :width: 130px
+  :alt: Linux
+
+**Formation LINUX** |br|
+Location: Centre Blaise Pascal, ENS-Lyon, France |br|
+**Août 26 -Séptembre 01, 2009**
+
+* Tristan Albaret, University Lyon 1, France
+
+----
+
+.. image:: ../../_static/Animations/SE/mathematica.png
+  :class: img-float pe-2
+  :width: 120px
+  :alt: Mathematica
+
+**Formation MATHEMATICA 7** |br|
+Location: Centre Blaise Pascal, ENS-Lyon, France |br|
+**11 juin 2009**
+
+* Céline Lelièvre, Wolfram Education Group
+
+----
+
+.. image:: ../../_static/Animations/Tutos/paraview.png
+  :class: img-float pe-2
+  :width: 130px
+  :alt: Paraview
+
+**Formation Visualisation avec vtk et Paraview** |br|
+Location: Centre Blaise Pascal, ENS-Lyon, France |br|
+**12-13 mai 2009**
+
+* CIRA

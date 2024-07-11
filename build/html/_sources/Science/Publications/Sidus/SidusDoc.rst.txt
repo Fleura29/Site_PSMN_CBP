@@ -74,7 +74,7 @@ Les deux interfaces réseau du serveurs **sidus4labs** sont NATés. Pour accéde
 
 Chacun des systèmes proposés au démarrage dispose d'un environnement graphique comparable, XFCE, plutôt léger. D'autres environnements sont proposés, mais ils requièrent un matériel graphique conséquent. Il se peut donc que GNOME3, choisi comme environnement par défaut par certaines distributions, ne fonctionne pas correctement. XFCE fonctionne dans tous les cas.
 
-.. container:: note note-important 
+.. container:: note note-warning 
     
     Pour en savoir plus sur SIDUS, c'est là-dessous
 

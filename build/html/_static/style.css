@@ -38,6 +38,7 @@ body{
 .container-language{
     margin-left: 74%;
 }
+
 @media screen and (min-width:993px){
     .dropdown:hover > .dropdown-menu{
         display: block;
@@ -319,7 +320,7 @@ a.headerlink{
 
 /*---------- Note ----------*/
 
-.note{ /* rouge */
+.note{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -346,7 +347,7 @@ a.headerlink{
     text-align: initial;
 }*/
 
-.note-important{ /* rouge */
+.note-warning{ /* rouge */
     background-color: var(--bs-danger-bg-subtle);
 }
 
@@ -358,7 +359,7 @@ a.headerlink{
     background-color: var(--bs-success-bg-subtle);
 }
 
-.note-imp{ /* jaune */
+.note-important{ /* jaune */
     background-color: var(--bs-warning-bg-subtle);
 }
 
@@ -390,5 +391,9 @@ a.headerlink{
 }
 
 ul p{
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+ol{
+    padding-left: 1rem;
 }
