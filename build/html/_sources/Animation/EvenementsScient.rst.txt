@@ -63,7 +63,6 @@ Workshops
         * `Workshops 2010 <Workshops/WS2010.html>`_ 
         * `Workshops 2009 <Workshops/WS2009.html>`_ 
 
-
 Séminaires
 ----------
 

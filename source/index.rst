@@ -66,7 +66,7 @@ Le Centre Blaise Pascal - CBP
 -----------------------------
 
 .. image:: _static/nuage_cbp.png
-   :class: img-fluid img-float
+   :class: img-float pe-2
    :alt: nuage_CBP
 
 **Le Centre Blaise Pascal est une “maison de la modélisation”**, un lieu de conférences, de recherche et 

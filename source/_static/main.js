@@ -82,7 +82,7 @@ let laboratoires= [
 ];
 
 function Laboratoire(){
-    const selectLabo= document.querySelector('#inputLabo');
+    const selectLabo= document.querySelector("#inputLabo");
     laboratoires.map((o) => {
         const option= document.createElement("option");
         option.value= o;
@@ -177,24 +177,68 @@ function StatutAdmin(){
     })
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
     
-    if (document.querySelector('#inputHoraireDeb') && document.querySelector("#inputHoraireFin")) {
+    if (document.querySelector("#inputHoraireDeb") && document.querySelector("#inputHoraireFin")) {
         Horaire();
     }
-    if (document.querySelector('#inputLabo')) {
+    if (document.querySelector("#inputLabo")) {
         Laboratoire();
     }
-    if (document.querySelector('#inputDemande')) {
+    if (document.querySelector("#inputDemande")) {
         Demande();
     }
-    if (document.querySelector('#inputPlateau')) {
+    if (document.querySelector("#inputPlateau")) {
         Plateau();
     }
-    if (document.querySelector('#inputEntite')) {
+    if (document.querySelector("#inputEntite")) {
         Entité();
     }
-    if (document.querySelector('#inputStatutAdmin')) {
+    if (document.querySelector("#inputStatutAdmin")) {
         StatutAdmin();
     }
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    const toggleButton = document.querySelector("#theme");
+    const logo_cbp_light = document.querySelector("#logo_cbp_light");
+    const logo_cbp_dark = document.querySelector("#logo_cbp_dark");
+    const logo_ens_light = document.querySelector("#logo_ens_light");
+    const logo_ens_dark = document.querySelector("#logo_ens_dark");
+    const currentMode = localStorage.getItem("dark") || "light";
+    document.body.classList.add(currentMode);
+
+    if (document.body.classList.contains("light")) {
+        logo_cbp_light.style.display = "block";
+        logo_cbp_dark.style.display = "none";
+        logo_ens_light.style.display = "block";
+        logo_ens_dark.style.display = "none";
+    } else{
+        logo_cbp_light.style.display = "none";
+        logo_cbp_dark.style.display = "block";
+        logo_ens_light.style.display = "none";
+        logo_ens_dark.style.display = "block";
+    }
+
+    toggleButton.addEventListener("click", () => {
+        if (document.body.classList.contains("dark")) {
+            document.body.classList.remove("dark");
+            document.body.classList.add("light");
+            localStorage.setItem("dark", "light");
+            toggleButton.innerHTML = "&#9789";
+            logo_cbp_light.style.display = "block";
+            logo_cbp_dark.style.display = "none";
+            logo_ens_light.style.display = "block";
+            logo_ens_dark.style.display = "none";
+        } else {
+            document.body.classList.remove("light");
+            document.body.classList.add("dark");
+            localStorage.setItem("dark", "dark");
+            toggleButton.innerHTML = "&#9788";
+            logo_cbp_light.style.display = "none";
+            logo_cbp_dark.style.display = "block";
+            logo_ens_light.style.display = "none";
+            logo_ens_dark.style.display = "block";
+        }
+    });
 });

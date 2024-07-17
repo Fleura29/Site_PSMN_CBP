@@ -223,7 +223,7 @@ Bureau M7-1H07 avec capacité 3D
 
 * **un cluster 64 bits** de 156 noeuds permanents et sa frontale
 
-    * accès par **cocyte.cbp.ens-lyon.fr** avec soumission par :ref:`Slurm <slurm>`
+    * accès par **cocyte.cbp.ens-lyon.fr** avec soumission par :ref:`Slurm <slurms>`
 
 * **24 stations d'intégration :**
 

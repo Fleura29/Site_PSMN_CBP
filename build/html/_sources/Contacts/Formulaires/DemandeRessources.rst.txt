@@ -3,19 +3,19 @@ Demande d'accès aux ressources du PSMN
 
 .. container:: text-center 
 
-    .. container:: bg-danger-subtle pt-2 pb-1 mb-3 rounded fs-13
+    .. container:: note note-warning w-100
 
         Les ressources du PSMN ne sont pas ouvertes au grand public. Vous devez justifier d'une 
         appartenance, ou collaboration, à un laboratoire membre ou partenaire du PSMN.
         Seuls les emails **professionnels**, en relation avec les laboratoires membres, sont acceptés 
         (les adresses en gmail, hotmail, yahoo… **SERONT REFUSÉES !!**).
 
-    .. container:: bg-warning-subtle pt-2 pb-1 mb-3 rounded fs-13
+    .. container:: note note-important w-100
 
         Les comptes sont effacés régulièrement, **sans avertissements**, lorsque nous n'avons plus de moyens 
         de contacts avec l'utilisateur (email, collaboration).
 
-    .. container:: bg-success-subtle pt-2 pb-1 mb-3 rounded fs-13
+    .. container:: note note-tip w-100
 
         Fermeture pour raison de sécurité : Un compte peut être bloqué, fermé ou banni, à tout moment et 
         sans préavis sur décision de la Direction du PSMN et/ou du RSSI de l'ENS de Lyon. 

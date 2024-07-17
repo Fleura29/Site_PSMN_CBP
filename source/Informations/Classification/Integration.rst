@@ -1,3 +1,5 @@
+.. _integ:
+
 Intégration
 ===========
 
@@ -84,7 +86,7 @@ Logiciels de Calcul Scientifique
 
         * intégration à l'environnement Debian Squeeze
         * intégration à l'environnement Debian Wheezy
-        * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_ 
+        * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
 
 * **intégration de CP2K dans un environnement Debian**
 
@@ -102,13 +104,13 @@ Logiciels de Calcul Scientifique
 
 * intégration de Amber9 sous Debian Squeeze, `Wheezy <#>`_, `Jessie <#>`_
 
-* intégration de BigDFT sous Debian `Squeeze <#>`_ et `Wheezy <#>`_ 
+* intégration de BigDFT sous Debian `Squeeze <#>`_ et `Wheezy <#>`_
 
 * intégration de MolMod sous Debian `Wheezy <#>`_
 
 * intégration de OpenBLAS sous Debian `Squeeze <#>`_
 
-* intégration de EkoPath sous `Debian Squeeze <#>`_
+* intégration de EkoPath sous `Debian Squeeze <#>`_ 
 
 * intégration de XCrySDen sous `Debian Wheezy <#>`_
 
@@ -119,38 +121,38 @@ Technologies avancées
 
 * **intégration d'un Xeon Phi dans un environnement Debian** 
     
-    * Par Emmanuel Quémener 
-    * Pour l'industrie : Intel
-    * Actions :
+  * Par Emmanuel Quémener 
+  * Pour l'industrie : Intel
+  * Actions :
 
-      * adaptation à l'environnement Debian (2013T4)
-      * exécution de tests de comparaison sous OpenCL (2014T1)
-      * rédaction de documentation d'installation sous Debian (2014T1) `Wheezy <#>`_
+    * adaptation à l'environnement Debian (2013T4)
+    * exécution de tests de comparaison sous OpenCL (2014T1)
+    * rédaction de documentation d'installation sous Debian (2014T1) `Wheezy <#>`_
 
 * **intégration de CUDA dans un environnement Debian** 
 
-    * Par Emmanuel Quémener 
-    * Pour la recherche : laboratoire de Chimie, le LBMC
-    * Actions :
+  * Par Emmanuel Quémener 
+  * Pour la recherche : laboratoire de Chimie, le LBMC
+  * Actions :
 
-        * adaptation à l'environnement Debian
-        * mise à disposition de stations de travail dédiées
-        * intégration à un environnement Diskless (2011T4)
-        * intégration à l'environnement SIDUS (2012T3)
-        * intégration de CUDA 5 à l'environnement Debian Wheezy
-        * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
+      * adaptation à l'environnement Debian
+      * mise à disposition de stations de travail dédiées
+      * intégration à un environnement Diskless (2011T4)
+      * intégration à l'environnement SIDUS (2012T3)
+      * intégration de CUDA 5 à l'environnement Debian Wheezy
+      * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
 
 * **intégration du SDK ATI dans un environnement Debian**
 
-    * Par Emmanuel Quémener 
-    * Pour la formation
-    * Actions :
+  * Par Emmanuel Quémener 
+  * Pour la formation
+  * Actions :
 
-        * adaptation à l'environnement Debian
-        * mise à disposition de stations de travail dédiées
-        * intégration à un environnement Diskless (2011T4)
-        * intégration à l'environnement SIDUS (2012T3)
-        * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
+      * adaptation à l'environnement Debian
+      * mise à disposition de stations de travail dédiées
+      * intégration à un environnement Diskless (2011T4)
+      * intégration à l'environnement SIDUS (2012T3)
+      * rédaction de documentation d'installation sous Debian `Squeeze <#>`_ & `Wheezy <#>`_
 
 * intégration de PyFFT sous `Debian Squeeze <#>`_
 

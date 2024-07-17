@@ -1,4 +1,4 @@
-.. _slurm:
+.. _slurms:
 
 Utilisation de Cluster@CBP avec Slurm au Centre Blaise Pascal
 =============================================================

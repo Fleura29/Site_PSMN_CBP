@@ -9,23 +9,23 @@ PSMN
 Statistiques des journaux
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. container:: row 
+.. container:: row mb-2
 
-    .. container:: col col-lg-4 text-center
+    .. container:: col col-lg-6 col-xl-4 text-center
 
         * `H index des journaux <http://www.scimagojr.com/help.php#rank_journals>`_
 
         .. image:: ../../_static/img_publications/plot_2014_hindex-1.png
             :alt: Graphique plot_2014_hindex-1
 
-    .. container:: col col-lg-4 text-center
+    .. container:: col col-lg-6 col-xl-4 text-center
 
         * `Facteur d'impact des journaux. <https://www.scijournal.org/>`_
 
         .. image:: ../../_static/img_publications/plot_2014_if-1.png
             :alt: Graphique plot_2014_if-1
 
-    .. container:: col col-lg-4 text-center
+    .. container:: col  col-lg-12 col-xl-4 text-center
 
         * `Scientific Journal Ranking. <http://www.scimagojr.com/help.php#rank_journals>`_
 

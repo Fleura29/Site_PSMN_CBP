@@ -19,7 +19,7 @@ Projets d'infrastructure
     :class: img-float pe-3
     :alt: Image houches
 
-:ref:`Computational Physics : Computational Astrophysics <houches>` |br|
+:ref:`Computational Physics : Computational Astrophysics <houches2016>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----
