@@ -5,11 +5,11 @@ Réservation de la salle de TP numériques du CBP
 
 `Calendrier de disponibilité de la salle de TP numériques du CBP <calendrier>`_ 
 
-.. container:: note note-info text-center
+.. container:: note note-info
 
     N'oubliez pas de consulter le :ref:`calendrier de disponibilité de la salle <calendrier>` avant de réserver
 
-.. container:: border-form
+.. container:: border-form mb-3
     
     .. raw:: html
 
@@ -80,7 +80,7 @@ Réservation de la salle de TP numériques du CBP
                 <label for="textAreaAutre">Autres renseignements</label>
             </div>
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
-                <div class="container note note-important mb-2">
+                <div class="note note-important mb-3 w-100">
                     <p>
                         Toute réservation dans la salle de formation suppose l'acceptation et le respect 
                         des <a href="../../Plateformes/Autres/Conditions.html">Conditions Générales d'Utilisation</a>.
@@ -99,6 +99,4 @@ Réservation de la salle de TP numériques du CBP
             </div>    
         </form>          
 
-.. container:: note note-important text-center mt-3 
-
-    L'équipement de la salle M1H19 a été réalisé dans le cadre du programme COMESUP avec le concours financier de la `Région Auvergne-Rhône-Alpes <https://www.auvergnerhonealpes.fr/>`_ .  
+L'équipement de la salle M1H19 a été réalisé dans le cadre du programme COMESUP avec le concours financier de la `Région Auvergne-Rhône-Alpes <https://www.auvergnerhonealpes.fr/>`_ .  

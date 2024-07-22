@@ -7,23 +7,23 @@ Quelques erreurs se sont glissées dans l'`article <http://www.linuxjournal.com/
 
 Si vous suivez pas à pas la :ref:`documentation complète <sidusdoc>`  de SIDUS, ces erreurs sont corrigées.
 
-''Next-Server'' page 102
-------------------------
+'Next-Server' page 102
+----------------------
 
-Page 102, il est proposé comme adresse de serveur TFTP ''172.16.20.251''. Elle est incohérente avec le reste de l'article.
+Page 102, il est proposé comme adresse de serveur TFTP ``172.16.20.251``. Elle est incohérente avec le reste de l'article.
 
-Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le ''next-server'', dans ''/etc/dhcp/dhcpd.conf'' est à remplacer comme suit : 
+Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le ``next-server``, dans ``/etc/dhcp/dhcpd.conf`` est à remplacer comme suit : 
 
 .. code-block:: bash
-    
+
     next-server 10.13.20.13;
 
 MyInclude & MyExclude page 104
 ------------------------------
 
-Page 104, il est proposé d'utiliser les variables ''MyInclude'' et ''MyExclude'' pour installer dès le `debootstrap <https://wiki.debian.org/Debootstrap>`_ un certain nombre de paquets. 
+Page 104, il est proposé d'utiliser les variables ``MyInclude`` et ``MyExclude`` pour installer dès le `debootstrap <https://wiki.debian.org/Debootstrap>`_ un certain nombre de paquets. 
 
-Certains sont installés "de base" par ''debootstrap''. SIDUS exige le noyau (''linux-image-3.2.0-4-amd64'' pour architecture AMD64) et les outils initrd (''initramfs-tools''). D'autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.
+Certains sont installés "de base" par ``debootstrap``. SIDUS exige le noyau (``linux-image-3.2.0-4-amd64`` pour architecture AMD64) et les outils initrd (``initramfs-tools``). D'autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.
 
 Voici ce que nous proposons pour MyInclude :
 
@@ -39,17 +39,17 @@ Voici ce que nous proposons pour MyExclude :
 
     export MyExclude="nano,exim,mysql-server,mysql-server-5.5,mysql-server-core-5.5,network-manager,apache2,apache2-mpm-worker,apache2-utils,apache2.2-bin,apache2.2-common,libapache2-mod-dnssd,libapache2-mod-php5,r-cran-fecofin,libmpich1.0gf,gerris,gspiceui,qucs,ktimetrace,kseg,ghdl,earth3d,libopenigtlink1,qtdmm,scilab-overload,gmsh,klogic,g++-doc,openturns-wrapper,xorsa,r-cran-rpvm,labplot,zygrib,libteem1,magnus,libcomplearn-dev,libtorque2,torque-common,torque-server,gridengine-client,gridengine-exec,gridengine-master,gridengine-qmon,gnuplot,gnuplot-nox,rtai,rtai-doc,libhdf5-dev,libhdf5-1.8,libgd2-xpm"
 
-Hook ''policy-rc.d'' page 104
------------------------------
+Hook 'policy-rc.d' page 104
+---------------------------
 
-Page 104, il est proposé de supprimer après l'installation complète le *hook* ''${SIDUS}/usr/sbin/policy-rc.d''. 
+Page 104, il est proposé de supprimer après l'installation complète le *hook* ``${SIDUS}/usr/sbin/policy-rc.d``. 
 
 Il peut être utile de le conserver pour éviter qu'à l'installation d'un nouveau service, l'installeur ne le démarre pas.
 
-''rootaufs'' page 106
----------------------
+'rootaufs' page 106
+-------------------
 
-Page 106, le ''wget'' proposé pour télécharger et installer *coeur* de démarrage de SIDUS dans le ''initrd'' est incomplet. De plus, le mettre exécutable est un plus !
+Page 106, le ``wget`` proposé pour télécharger et installer *coeur* de démarrage de SIDUS dans le ``initrd`` est incomplet. De plus, le mettre exécutable est un plus !
 
 Il faut remplacer cette ligne par :
 
@@ -58,10 +58,10 @@ Il faut remplacer cette ligne par :
     wget -O ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs http://www.cbp.ens-lyon.fr/sidus/rootaufs
     chmod 755 ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs
 
-''vmlinux-Sidus'' et ''initrd-Sidus'' page 107
-----------------------------------------------
+'vmlinux-Sidus' et 'initrd-Sidus' page 107
+------------------------------------------
 
-Page 107, il y a une référence à ''vmlinux-Sidus'' et ''initrd-Sidus'' pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du ''/srv/tftp/pxelinux.cfg/default''.
+Page 107, il y a une référence à ``vmlinux-Sidus`` et ``initrd-Sidus`` pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du ``/srv/tftp/pxelinux.cfg/default``.
 
 Il faut remplacer cette ligne par :
 

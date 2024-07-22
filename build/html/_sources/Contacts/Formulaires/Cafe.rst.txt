@@ -48,7 +48,7 @@ Nous vous attendons dans les bureaux du PSMN (M7 1H02 et/ou 1H03), préférentie
 
             <div class="d-flex justify-content-center">
                 <label class="me-2" for="human" id="human-question"></label>
-                <input id="human-answer" type="text"/> 
+                <input class="captcha fs-13" id="human-answer" type="text"/> 
             </div>
             <div id="bloc" class="text-center"></div>
             <script src="../../_static/Formulaires/Formulaires.js"></script>

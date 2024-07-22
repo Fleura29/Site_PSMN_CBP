@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="../../../_static/style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../../search.html" />
-    <link rel="next" title="Publications 2012" href="../Publications2012.html" />
-    <link rel="prev" title="Errata de l’article dans Linux Journal sur SIDUS" href="SidusFR.html" /> 
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
   </head><body>  
 
     <div class="document">
@@ -35,7 +33,7 @@
             </a>
         </div>
         <div class="wid-header">
-            <button class="btn-theme" id="theme">&#9789</button>
+            <button class="btn-theme" id="theme"></button>
             <a href="https://www.ens-lyon.fr/">
                 <img id="logo_ens_light" class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon2.png" alt="logo ENS de Lyon">
                 <img id="logo_ens_dark" class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon_dark.png" alt="logo ENS de Lyon">
@@ -58,7 +56,7 @@
                             <ul>
                                 <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
                                 <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
-                                <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Évènements CBP</a></li>
                                 <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
                                 <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
                                 <li class="nav-item dropend">
@@ -236,7 +234,7 @@
 <p>Some errors occured in Linux Journal <a class="reference external" href="http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration">article</a> of November 2013 about SIDUS.</p>
 <p>If you follow step-by-step the <a class="reference internal" href="SidusDoc.html#sidusdoc"><span class="std std-ref">documentation complète</span></a> about SIDUS, these errors are corrected.</p>
 <section id="next-server-page-102">
-<h2>“”Next-Server”” page 102<a class="headerlink" href="#next-server-page-102" title="Lien vers cette rubrique">¶</a></h2>
+<h2>“Next-Server” page 102<a class="headerlink" href="#next-server-page-102" title="Lien vers cette rubrique">¶</a></h2>
 <p>On page 102, we purpose as IP address for TFTP server 172.16.20.251. It’s incoherent with the rest of the article.</p>
 <p>If we place the TFTP server on the same machine as NFSroot serveur, the line next-server in /etc/dhcp/dhcpd.conf file has to replaced by :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>next-server<span class="w"> </span><span class="m">10</span>.13.20.13<span class="p">;</span>
@@ -258,12 +256,12 @@
 </div>
 </section>
 <section id="hook-policy-rc-d-page-104">
-<h2>Hook “”policy-rc.d”” page 104<a class="headerlink" href="#hook-policy-rc-d-page-104" title="Lien vers cette rubrique">¶</a></h2>
+<h2>Hook “policy-rc.d” page 104<a class="headerlink" href="#hook-policy-rc-d-page-104" title="Lien vers cette rubrique">¶</a></h2>
 <p>On page 104, we purpose to delete after installation process the hook ${SIDUS}/usr/sbin/policy-rc.d.</p>
 <p>It can be useful to keep it for administration process in order not to launch service just after installation.</p>
 </section>
 <section id="rootaufs-page-106">
-<h2>“”rootaufs”” page 106<a class="headerlink" href="#rootaufs-page-106" title="Lien vers cette rubrique">¶</a></h2>
+<h2>“rootaufs” page 106<a class="headerlink" href="#rootaufs-page-106" title="Lien vers cette rubrique">¶</a></h2>
 <p>On page 106, we purpose a wget to download and install the core of SIDUS boot. It’s incomplete. It’s already necessary to add some execution rights on it !</p>
 <p>Please replace the lines by :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-O<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/etc/initramfs-tools/scripts/init-bottom/rootaufs<span class="w"> </span>http://www.cbp.ens-lyon.fr/sidus/rootaufs
@@ -272,7 +270,7 @@ chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><
 </div>
 </section>
 <section id="vmlinux-sidus-et-initrd-sidus-page-107">
-<h2>“”vmlinux-Sidus”” et “”initrd-Sidus”” page 107<a class="headerlink" href="#vmlinux-sidus-et-initrd-sidus-page-107" title="Lien vers cette rubrique">¶</a></h2>
+<h2>“vmlinux-Sidus” et “initrd-Sidus” page 107<a class="headerlink" href="#vmlinux-sidus-et-initrd-sidus-page-107" title="Lien vers cette rubrique">¶</a></h2>
 <p>On page 107, there are references on a vmlinux-Sidus and a initrd-Sidus to copy the kernel and the initrd in TFTP folder. The filenames are incoherent with the definition in /srv/tftp/pxelinux.cfg/default.</p>
 <p>Please replace the lines by:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/vmlinuz<span class="w"> </span>/srv/tftp/vmlinuz-Sidus
@@ -288,16 +286,6 @@ cp<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span
               <!--
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
-  <div>
-    <h4>Sujet précédent</h4>
-    <p class="topless"><a href="SidusFR.html"
-                          title="Chapitre précédent">Errata de l’article dans Linux Journal sur SIDUS</a></p>
-  </div>
-  <div>
-    <h4>Sujet suivant</h4>
-    <p class="topless"><a href="../Publications2012.html"
-                          title="Chapitre suivant">Publications 2012</a></p>
-  </div>
   <div role="note" aria-label="source link">
     <ul class="this-page-menu">
       <li><a href="../../../_sources/Science/Publications/Sidus/SidusEN.rst.txt"

@@ -53,16 +53,16 @@ Suggérer une entrée de F.A.Q.
                 </div>
 
                 <div class="form-floating mt-2">
-                    <textarea class="form-control textArea" id="textAreaResol" name="resolution" required></textarea>
+                    <textarea class="form-control textarea" id="textAreaResol" name="resolution" required></textarea>
                     <label for="textAreaResol">Résolution proposée :*</label>
                 </div>
             </div>
-            
+
             <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
 
             <div class="d-flex justify-content-center">
                 <label class="me-2" for="human" id="human-question"></label>
-                <input id="human-answer" type="text"/> 
+                <input class="captcha fs-13" id="human-answer" type="text"/> 
             </div>
 
             <div id="bloc" class="text-center"></div>
@@ -72,5 +72,3 @@ Suggérer une entrée de F.A.Q.
                 <button type="submit" class="btn mb-4" style="border-color: #E69645;">Soumettre</button>
             </div>
         </form>   
-
-        

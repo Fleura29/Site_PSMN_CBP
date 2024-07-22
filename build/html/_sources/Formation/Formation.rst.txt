@@ -1,15 +1,6 @@
 Formation universitaire
 =======================
 
-.. container:: disp
-   
-    .. toctree::
-        :maxdepth: 1
-        :caption: Table des matières
-
-        Stage
-        Stage/SIB3D
-
 .. image:: ../_static/students_0708_2.jpg
     :class: img-fluid img-float pe-3
     :alt: Image students_0708_2

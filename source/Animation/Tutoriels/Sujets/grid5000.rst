@@ -9,7 +9,7 @@ Grid'5000: Summer school 2014
 
    <br>
 
-.. image:: ../../_static/Animations/Tutos/grid_logo.png
+.. image:: ../../../_static/Animations/Tutos/grid_logo.png
   :class: img-float pe-2
   :width: 140px
   :alt: Logo Grid

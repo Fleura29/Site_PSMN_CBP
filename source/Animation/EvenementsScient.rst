@@ -120,5 +120,3 @@ Tutoriels & Formations
         * :ref:`Tutoriels/Formations 2011 <tt2011>`
         * :ref:`Tutoriels/Formations 2010 <tt2010>`
         * :ref:`Tutoriels/Formations 2009 <tt2009>`
-
-

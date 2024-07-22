@@ -7,8 +7,8 @@ Some errors occured in Linux Journal `article <http://www.linuxjournal.com/conte
 
 If you follow step-by-step the :ref:`documentation complète <sidusdoc>` about SIDUS, these errors are corrected. 
 
-''Next-Server'' page 102
-------------------------
+'Next-Server' page 102
+----------------------
 
 On page 102, we purpose as IP address for TFTP server 172.16.20.251. It's incoherent with the rest of the article.
 
@@ -39,15 +39,15 @@ We purpose as MyExclude :
 
     export MyExclude="nano,exim,mysql-server,mysql-server-5.5,mysql-server-core-5.5,network-manager,apache2,apache2-mpm-worker,apache2-utils,apache2.2-bin,apache2.2-common,libapache2-mod-dnssd,libapache2-mod-php5,r-cran-fecofin,libmpich1.0gf,gerris,gspiceui,qucs,ktimetrace,kseg,ghdl,earth3d,libopenigtlink1,qtdmm,scilab-overload,gmsh,klogic,g++-doc,openturns-wrapper,xorsa,r-cran-rpvm,labplot,zygrib,libteem1,magnus,libcomplearn-dev,libtorque2,torque-common,torque-server,gridengine-client,gridengine-exec,gridengine-master,gridengine-qmon,gnuplot,gnuplot-nox,rtai,rtai-doc,libhdf5-dev,libhdf5-1.8,libgd2-xpm"
 
-Hook ''policy-rc.d'' page 104
------------------------------
+Hook 'policy-rc.d' page 104
+---------------------------
 
 On page 104, we purpose to delete after installation process the hook ${SIDUS}/usr/sbin/policy-rc.d.
 
 It can be useful to keep it for administration process in order not to launch service just after installation.
 
-''rootaufs'' page 106
----------------------
+'rootaufs' page 106
+-------------------
 
 On page 106, we purpose a wget to download and install the core of SIDUS boot. It's incomplete. It's already necessary to add some execution rights on it !
 
@@ -58,8 +58,8 @@ Please replace the lines by :
     wget -O ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs http://www.cbp.ens-lyon.fr/sidus/rootaufs
     chmod 755 ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs
 
-''vmlinux-Sidus'' et ''initrd-Sidus'' page 107
-----------------------------------------------
+'vmlinux-Sidus' et 'initrd-Sidus' page 107
+------------------------------------------
 
 On page 107, there are references on a vmlinux-Sidus and a initrd-Sidus to copy the kernel and the initrd in TFTP folder. The filenames are incoherent with the definition in /srv/tftp/pxelinux.cfg/default.
 

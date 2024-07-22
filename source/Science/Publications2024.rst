@@ -1,28 +1,6 @@
 Publications 2023-2024
 ======================
 
-.. container:: disp
-   
-   .. toctree::
-      :maxdepth: 1
-      :caption: Table des matières
-      
-      Publications/Publications2022
-      Publications/Publications2021
-      Publications/Publications2020
-      Publications/Publications2019
-      Publications/Publications2018
-      Publications/Publications2017
-      Publications/Publications2016
-      Publications/Publications2015
-      Publications/Publications2014
-      Publications/Publications2013
-      Publications/Publications2012
-      Publications/Publications2011
-      Publications/Publications2010
-      Publications/Publications2009
-      Publications/Publications2008
-
 2024
 ----
 

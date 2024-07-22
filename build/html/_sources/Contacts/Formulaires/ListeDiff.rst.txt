@@ -38,7 +38,7 @@ Si vous souhaitez vous **inscrire** à la liste de diffusion du Centre Blaise Pa
 
             <div class="d-flex justify-content-center">
                 <label class="me-2" for="human" id="human-question"></label>
-                <input id="human-answer" type="text"/> 
+                <input class="captcha fs-13" id="human-answer" type="text"/> 
             </div>
 
             <div id="bloc" class="text-center"></div>
@@ -66,7 +66,7 @@ Si vous souhaitez vous **désinscrire**, merci de valider le formulaire suivant 
 
             <div class="d-flex justify-content-center">
                 <label class="me-2" for="human" id="human-questio2"></label>
-                <input id="human-answer2" type="text"/> 
+                <input class="captcha fs-13" id="human-answer2" type="text"/> 
             </div>
 
             <div id="bloc2" class="text-center"></div>

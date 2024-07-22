@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="wid-header">
-            <button class="btn-theme" id="theme">&#9789</button>
+            <button class="btn-theme" id="theme"></button>
             <a href="https://www.ens-lyon.fr/">
                 <img id="logo_ens_light" class="img-fluid" src="../../_static/header/Logo_ENS_Lyon2.png" alt="logo ENS de Lyon">
                 <img id="logo_ens_dark" class="img-fluid" src="../../_static/header/Logo_ENS_Lyon_dark.png" alt="logo ENS de Lyon">
@@ -56,7 +56,7 @@
                             <ul>
                                 <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
                                 <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
-                                <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Évènements CBP</a></li>
                                 <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
                                 <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
                                 <li class="nav-item dropend">
@@ -509,10 +509,10 @@ Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w"
 </dd>
 </dl>
 <p>Ces unités de traitement disposent (autant pour les GPU que les CPU) d’unités arithmétiques et logiques (<em>Arithmetic and Login Unit</em>) lesquelles sont <em>vraiment</em> en charge du traitement des opérations.</p>
-<p>Ainsi, le nombre d’ALU dans chaque <em>Compute Unit</em> varie de 64 à 192 selon les générations de GPU. Ainsi, pour le GPU ci-dessus GTX 1080 Ti, le nombre de <em>Compute Unit</em> mentionné est 28, et le nombre d’ALU (appelé également <em>cuda core</em> par Nvidia) est de 3584 soit 28*128. Le schéma du constructeur du circuit GP102 suivant est trompeur : en fait, il dispose de 30 unités SM, mais sur un GP102, seuls 28 sont activés.
-{{ :formation:gp102-block-diagram.jpg?direct&amp;400 <a href="#id1"><span class="problematic" id="id2">|</span></a>GP102}}</p>
+<p>Ainsi, le nombre d’ALU dans chaque <em>Compute Unit</em> varie de 64 à 192 selon les générations de GPU. Ainsi, pour le GPU ci-dessus GTX 1080 Ti, le nombre de <em>Compute Unit</em> mentionné est 28, et le nombre d’ALU (appelé également <em>cuda core</em> par Nvidia) est de 3584 soit 28*128. Le schéma du constructeur du circuit GP102 suivant est trompeur : en fait, il dispose de 30 unités SM, mais sur un GP102, seuls 28 sont activés.</p>
+<img alt="GP102" class="img-fluid center mb-3" src="../../_images/gp102-block-diagram.jpg" />
 <div class="note note-warning docutils container">
-<p><a href="#id3"><span class="problematic" id="id4">**</span></a>Exercice #7 : récupérez les informations à l’aide de deux commandes précédentes utilisant “clinfo” **</p>
+<p><strong>Exercice #7 : récupérez les informations à l’aide de deux commandes précédentes utilisant “clinfo”</strong></p>
 <ul class="simple">
 <li><p>Comparez les informations entre les implémentations CPU. Pourquoi ces différences ?</p></li>
 <li><p>Comparez le nombre d’unités de traitement des CPU avec celles du Web : <a class="reference external" href="https://ark.intel.com/fr">Ark d’Intel</a></p></li>
@@ -851,11 +851,11 @@ Error<span class="w"> </span><span class="m">0</span>.0000000000
 </div>
 <p>Nous pouvons également constater que certains périphériques ne « passent » pas en OpenCL et que les performances sont très variables.</p>
 <p>Voici un synoptique des performances pour les différentes implémentations et les différents GPU en simple précision. Les performances ont été placées en log. Les GPU présentent des performances incroyablement supérieures au processeur (autour d’un facteur 20 pour la GTX 1080 Ti face à la meilleure des implémentations pour CPU).</p>
-<img alt="Diagramme xgemm_sp" class="img-fluid center" src="_static/Plateformes/xgemm_sp.jpg" />
+<img alt="Diagramme xgemm_sp" class="img-fluid center" src="../../_images/xgemm_sp.png" />
 <p>Lors du passage en double précision, les GPU se rapprochent des CPU en performance.</p>
-<img alt="Diagramme xgemm_dp" class="img-fluid center" src="_static/Plateformes/xgemm_dp.jpg" />
+<img alt="Diagramme xgemm_dp" class="img-fluid center" src="../../_images/xgemm_dp.png" />
 <p>Le ratio entre performances en simple sur double précision illustre la grosse différence entre CPU et GPU.</p>
-<img alt="Diagramme xgemm_ratio_spdp" class="img-fluid center" src="_static/Plateformes/xgemm_ratio_spdp.jpg" />
+<img alt="Diagramme xgemm_ratio_spdp" class="img-fluid center" src="../../_images/xgemm_ratio_spdp.png" />
 <div class="note note-warning docutils container">
 <p><strong>Exercice #10 : lancez les “xGEMM_&lt;precision&gt;_&lt;implementation&gt;” avec une taille de 1000</strong></p>
 <ul class="simple">
@@ -871,7 +871,7 @@ Error<span class="w"> </span><span class="m">0</span>.0000000000
 </ul>
 </div>
 <p>Il est aussi intéressant de constater que la performance dépend non seulement de l’implémentation, du périphérique mais aussi de sa sollicitation. Voici la performance pour l’implémentation CPU avec OpenBLAS et les implémentations cuBLAS et <em>Thunking</em> sur la GTX 1080 Ti.</p>
-<img alt="Diagramme xgemm_sp_size" class="img-fluid center" src="_static/Plateformes/xgemm_sp_size.jpg" />
+<img alt="Diagramme xgemm_sp_size" class="img-fluid center" src="../../_images/xgemm_sp_size.png" />
 <div class="note note-warning docutils container">
 <p><strong>Exercice #11 : lancez les programmes précédents pour différentes tailles</strong></p>
 <ul class="simple">
@@ -1074,7 +1074,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 </tr>
 </tbody>
 </table>
-<img alt="Diagramme opencluster2_qpu1" class="img-fluid center" src="_static/Plateformes/opencluster2_qpu1.jpg" />
+<img alt="Diagramme opencluster2_qpu1" class="img-fluid center" src="../../_images/opencluster2_qpu1.png" />
 <p>Il est assez intéressant que les implémentations CPU offrent quasiment la même performance. Par contre les GPU offrent une performance bien moindre (6x moins pour la GTX 1080 Ti et presque 30x moins pour la Quadro K420).</p>
 <p>Il est aussi intéressant qu’étrange que le nombre de « coups » à l’intérieur du quadrant d’exploration ne soit pas le même pour toutes les implémentations. C’est un artéfact lié à la multiplication du <em>RNG</em> par la constante pour le placer entre 0 et 1.</p>
 <div class="note note-warning docutils container">
@@ -1123,7 +1123,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 </tr>
 </tbody>
 </table>
-<img alt="Diagramme opencluster2_qpu1024" class="img-fluid center" src="_static/Plateformes/opencluster2_qpu1024.jpg" />
+<img alt="Diagramme opencluster2_qpu1024" class="img-fluid center" src="../../_images/opencluster2_qpu1024.png" />
 <p>Cette seconde expérience montre de manière assez spectaculaire que les GPU ne dévoilent leur puissance « que » pour des régimes de parallélisme élevé. Notons aussi que les implémentations sur CPU ont des performances très très disparates.</p>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #15 : exécution sur tous les périphériques pour un PR=1024</strong></p>
@@ -1157,7 +1157,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 </tr>
 </tbody>
 </table>
-<img alt="Diagramme opencluster2_epu" class="img-fluid center" src="_static/Plateformes/opencluster2_epu.jpg" />
+<img alt="Diagramme opencluster2_epu" class="img-fluid center" src="../../_images/opencluster2_epu.png" />
 <p>Ce graphique montre sans ambiguité la puissance « brute » qu’offre un GPU de gamer en comparaison de CPU traditionnel (33x dans la meilleure implémentation CPU, celle d’Intel). Notons également que GPU n’est pas synonyme de puissance brute : la « petite » Quadro K420, bien que « professionnelle » présente des performances 77x inférieures.</p>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #16 : exécution sur tous les périphériques pour un PR optimal</strong></p>
@@ -1207,7 +1207,7 @@ Device<span class="w"> </span><span class="o">(</span><span class="m">3</span>,0
 </tr>
 </tbody>
 </table>
-<img alt="Diagramme piopencl_dp" class="img-fluid center" src="_static/Plateformes/piopencl_dp.jpg" />
+<img alt="Diagramme piopencl_dp" class="img-fluid center" src="../../_images/piopencl_dp.png" />
 <p>Nous avons présenté dans le cours qu’un mauvais choix de régime de parallélisme pouvait largement influencer la performance.</p>
 <p>Par exemple, regardons pour la meilleure implémentation de CPU et pour le GPU le plus puissant, quelle influence a le choix du régime de parallélisme autour du régime de parallélisme optimal.</p>
 <div class="note note-warning docutils container">
@@ -1339,7 +1339,7 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 </pre></div>
 </div>
 <p>Il existe un bouton d’export du graphique en image au format PNG ou SVG. Nous obtenons le suivant :</p>
-<img alt="Diagramme amd_opencluster2_insa" class="img-fluid center" src="_static/Plateformes/amd_opencluster2_insa.jpg" />
+<img alt="Diagramme amd_opencluster2_insa" class="img-fluid center" src="../../_images/amd_opencluster2_insa.png" />
 <p>Nous observons que la scalabilité pour un code aussi simple n’est pas si triviale que cela à analyser. Il n’y a pas continuité en fonction de PR croissant. Notons une pseudo-période correspondant au nombre de coeurs physiques, avec des maximums locaux pour les multiples de cette valeur (le <em>handsaw curve effect</em>).</p>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #19 : étude de la scalabilité d’une implémentation CPU</strong></p>
@@ -1354,7 +1354,7 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 </pre></div>
 </div>
 <p>Nous obtenons pour notre GTX 1080 Ti les résultats suivants :</p>
-<img alt="Diagramme gtx1080ti_opencluster2_insa" class="img-fluid center" src="_static/Plateformes/gtx1080ti_opencluster2_insa.jpg" />
+<img alt="Diagramme gtx1080ti_opencluster2_insa" class="img-fluid center" src="../../_images/gtx1080ti_opencluster2_insa.png" />
 <p>Nous pouvons constater que la scalabilité est très peu continue, encore moins que pour la scalabilité étudiée des CPU. Nous constatons également que des pseudo-lignes se chevauchent. Le PR optimal était autour de 4x le nombre de <em>cuda cores</em> et offrait une performance de <strong>268 Gitops</strong>.</p>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #20 : étude de la scalabilité d’un GPU</strong></p>
@@ -1384,7 +1384,7 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">2</span><span class="w"> </span>-b<span class="w"> </span><span class="k">$((</span><span class="m">3584</span><span class="o">*</span><span class="m">4</span><span class="o">-</span><span class="m">16</span><span class="k">))</span><span class="w"> </span>-e<span class="w"> </span><span class="k">$((</span><span class="m">3584</span><span class="o">*</span><span class="m">4</span><span class="o">+</span><span class="m">16</span><span class="k">))</span><span class="w"> </span>-r<span class="w"> </span><span class="m">3</span><span class="w"> </span>-i<span class="w"> </span><span class="m">100000000000</span>
 </pre></div>
 </div>
-<img alt="Diagramme gtx1080ti_aroundepu_opencluster2_insa" class="img-fluid center" src="_static/Plateformes/gtx1080ti_aroundepu_opencluster2_insa.jpg" />
+<img alt="Diagramme gtx1080ti_aroundepu_opencluster2_insa" class="img-fluid center" src="../../_images/gtx1080ti_aroundepu_opencluster2_insa.png" />
 <p>Alors que l’optimum de performance est atteint autour d’un PR de 14336 avec <strong>258 Gitops</strong>, nous n’obtenons un Itops que de <strong>8.5 Gitops</strong> (soit 30x moins) sur 5 valeurs particulières : 14321, 14323, 14327, 14341, 14347. Le point commun entre ces valeurs de PR est à rechercher sur le site <a class="reference external" href="http://www.math.com/students/calculators/source/prime-number.htm">de mathématiques</a></p>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #22 : étude de valeurs particulières de PR</strong></p>
@@ -1494,6 +1494,8 @@ Squertz<span class="w"> </span><span class="k">in</span><span class="w"> </span>
 </pre></div>
 </div>
 <p>Les éléments de sortie sont les statistiques de chaque itération, exprimées en <strong>squertz</strong>, contraction de <strong>square</strong> (pour « carré ») avec <strong>Hertz</strong>. En effet, le nombre de calculs élémentaires évolue suivant une loi en <strong>N(N-1)</strong> (chaque particule parmi <strong>N</strong> intéragit avec les <strong>N-1</strong> autres particules).</p>
+<section id="analyse-du-programme">
+<h3>Analyse du programme<a class="headerlink" href="#analyse-du-programme" title="Lien vers cette rubrique">¶</a></h3>
 <p>Lors de l’initialisation du « système N-Corps », plusieurs opérations sont effectuées :</p>
 <ul class="simple">
 <li><p>l’initialisation de la position des particules</p></li>
@@ -1543,9 +1545,9 @@ Squertz<span class="w"> </span><span class="k">in</span><span class="w"> </span>
 </tr>
 </tbody>
 </table>
-<img alt="Diagramme nbody_opencluster2" class="img-fluid center" src="_static/Plateformes/nbody_opencluster2.jpg" />
+<img alt="Diagramme nbody_opencluster2" class="img-fluid center" src="../../_images/nbody_opencluster2.png" />
 <p>La figure ci-dessus illustre l’écrasante performance de la GTX 1080 Ti en comparaison de toutes les autres implémentations : plus d’un facteur 22 en simple précision et presque un facteur 2 en double précision pour la meilleure des implémentations CPU.</p>
-<img alt="Diagramme nbody_log_opencluster2" class="img-fluid center" src="_static/Plateformes/nbody_log_opencluster2.jpg" />
+<img alt="Diagramme nbody_log_opencluster2" class="img-fluid center" src="../../_images/nbody_log_opencluster2.png" />
 <p>Seule une représentation en log permet de ne pas trop écraser les performances des implémentations CPU.</p>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #24 : lancement de “NBody.py” pour 32768 particules</strong></p>
@@ -1582,6 +1584,7 @@ Squertz<span class="w"> </span><span class="k">in</span><span class="w"> </span>
 <li><p>Pourquoi un tel ratio ?</p></li>
 </ul>
 </div>
+</section>
 </section>
 <section id="exploration-de-codes-metiers">
 <h2>Exploration de « codes métiers »<a class="headerlink" href="#exploration-de-codes-metiers" title="Lien vers cette rubrique">¶</a></h2>

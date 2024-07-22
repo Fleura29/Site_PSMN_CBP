@@ -52,11 +52,11 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
             </div>
             
             <div class="form-floating mt-2">
-                <textarea class="form-control textArea" id="textAreaDescr" name="descriptif"></textarea>
+                <textarea class="form-control textarea" id="textAreaDescr" name="descriptif"></textarea>
                 <label for="textAreaDescr">Descriptif du domaine</label>
             </div>
             <div class="form-floating mt-3"> 
-                <textarea class="form-control textArea" id="textAreaLogiciels" name="logiciels"></textarea>     
+                <textarea class="form-control textarea" id="textAreaLogiciels" name="logiciels"></textarea>     
                 <label for="textAreaLogiciels">Logiciels ou bibliothèques utilisés</label>
             </div>
 
@@ -64,7 +64,7 @@ Ensuite, il est nécessaire de remplir la demande d'ouverture de compte suivante
 
             <div class="d-flex justify-content-center">
                 <label class="me-2" for="human" id="human-question"></label>
-                <input id="human-answer" type="text"/> 
+                <input class="captcha fs-13" id="human-answer" type="text"/> 
             </div>
 
             <div id="bloc" class="text-center"></div>

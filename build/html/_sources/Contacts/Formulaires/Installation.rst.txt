@@ -106,7 +106,7 @@ Il reste à la charge de la personne, de l'équipe ou du laboratoire demandeur, 
 
             <div class="d-flex justify-content-center">
                 <label class="me-2" for="human" id="human-question"></label>
-                <input id="human-answer" type="text"/> 
+                <input class="captcha fs-13" id="human-answer" type="text"/> 
             </div>
 
             <div id="bloc" class="text-center"></div>

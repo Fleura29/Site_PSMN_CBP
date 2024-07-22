@@ -88,12 +88,12 @@ Demande d'accès aux ressources du PSMN
             </div>
 
             <div class="form-floating mt-2">
-                <textarea class="form-control textArea" id="textAreaDescr" name="descriptif"></textarea>
+                <textarea class="form-control textarea" id="textAreaDescr" name="descriptif"></textarea>
                 <label for="textAreaDescr">Descriptif du domaine scientifique :</label>
             </div>
             <p class="mt-2" style="margin-bottom: 0;">Pour les membres des laboratoires hors du site de Gerland: </p>
-            <div class="form-floating " style="overflow-x: auto;"> 
-                <textarea class="form-control textArea" id="textAreaJust" name="justifier"></textarea>     
+            <div class="form-floating "> 
+                <textarea class="form-control textarea" id="textAreaJust" name="justifier"></textarea>     
                 <label for="textAreaJust">justifier cette demande</label>
             </div>
 
@@ -117,7 +117,7 @@ Demande d'accès aux ressources du PSMN
 
             <div class="d-flex justify-content-center">
                 <label class="me-2" for="human" id="human-question"></label>
-                <input id="human-answer" type="text"/> 
+                <input class="captcha fs-13" id="human-answer" type="text"/> 
             </div>
 
             <div id="bloc" class="text-center"></div>

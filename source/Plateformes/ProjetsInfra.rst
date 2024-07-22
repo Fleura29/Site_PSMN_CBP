@@ -103,7 +103,7 @@ Maitrise d'oeuvre : Emmanuel Quemener
     :class: img-float pe-3
     :alt: Logo umpa
 
-:ref:`Evolution de l'infrastructure informatique de l'UMPA <umpa>` |br|
+:ref:`Evolution de l'infrastructure informatique de l'UMPA <umpaProj>` |br|
 Maitrise d'oeuvre : Emmanuel Quemener
 
 ----

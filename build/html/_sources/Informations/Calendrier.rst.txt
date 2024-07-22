@@ -38,7 +38,7 @@ Infrastructures
     
 **Automne 2022**
 
-.. container:: bg-danger-subtle pt-3 pb-2 rounded fs-13 mb-2 text-center 
+.. container:: note note-warning
 
     **IMPORTANT NEWS**
     Debian9/SGE has been shutdown definitely Friday 21th of October 2022

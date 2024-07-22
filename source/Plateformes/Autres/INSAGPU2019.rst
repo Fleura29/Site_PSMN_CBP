@@ -1362,7 +1362,7 @@ Par défaut, une invocation sans option offre la sortie suivante :
 Les éléments de sortie sont les statistiques de chaque itération, exprimées en **squertz**, contraction de **square** avec **Hertz**. En effet, le nombre de calculs élémentaires évolue suivant une loi en **N(N-1)** (chaque particule parmi **N** intéragit avec les **N-1** autres particules).
 
 Analyse du programme 
-""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~
 
 Lors de l'initialisation du "système N-Corps", plusieurs opérations sont effectuées : 
 

@@ -14,7 +14,19 @@ Accueil
       Accueil/Evenements
       Accueil/Liens
       Accueil/Services
-      Accueil/Partenaires
+      Accueil/Formations/form2018
+      Accueil/Formations/form2019
+      Accueil/Formations/form2020
+      Animation/Appels/CECAMFlag2021
+      Animation/Appels/PrixBull
+      Animation/Ateliers/ABC
+      Animation/Ateliers/ACT
+      Animation/Ateliers/AHN
+      Animation/Ateliers/Guides
+      Animation/Ateliers/Thematiques
+      Animation/EvenementsScient
+      Animation/Media
+      Animation/PAS
       Science/Projets
       Science/Publications2024
       Science/Theses
@@ -25,7 +37,7 @@ Accueil
       Informations/Arrets
       Informations/Calendrier
       Plateformes/DataCenter
-      Plateformes/ProjetInfra
+      Plateformes/ProjetsInfra
       Plateformes/Autres/x2go
       Plateformes/Autres/listex2go
       Plateformes/Autres/Conditions
@@ -117,8 +129,6 @@ mis en place une de première “maisons de la modélisation” en France avec u
 numérique (salle TP, serveurs, forge logiciel, outils de travail collaboratif,etc), des bureaux 
 et de salles de séminaire et conférences et une mission de soutien pour la recherche, la 
 formation et l'animation scientifique dans le domaine. 
-
-
 
 .. PSMN-CBP documentation master file, created by
    sphinx-quickstart on Wed May 15 11:38:37 2024.

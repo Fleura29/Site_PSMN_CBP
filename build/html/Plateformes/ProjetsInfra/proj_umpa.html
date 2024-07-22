@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../_static/cbpsmn_logo.png" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Evolution de l’infrastructure de l’UMPA &#8212; Documentation PSMN-CBP </title>
+    <script src="../../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=bf059b8c"></script>
+    <link href="../../_static/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="orange-border"></div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            <div class="container contenu">
+              <header class="list-inline-item" >
+    <div class="d-flex justify-content-between">
+        <div class="wid-header pt-3">
+            <a href="../../index.html">
+                <img id="logo_cbp_light" class="img-fluid" src="../../_static/header/cbpsmn_logo.png" alt="logo CBPsmn">
+                <img id="logo_cbp_dark" class="img-fluid" src="../../_static/header/cbpsmn_logo_dark.png" alt="logo CBPsmn">
+            </a>
+        </div>
+        <div class="wid-header">
+            <button class="btn-theme" id="theme"></button>
+            <a href="https://www.ens-lyon.fr/">
+                <img id="logo_ens_light" class="img-fluid" src="../../_static/header/Logo_ENS_Lyon2.png" alt="logo ENS de Lyon">
+                <img id="logo_ens_dark" class="img-fluid" src="../../_static/header/Logo_ENS_Lyon_dark.png" alt="logo ENS de Lyon">
+            </a>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-current="page">Accueil</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
+                                <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
+                                <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Évènements CBP</a></li>
+                                <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
+                                <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="../../Accueil/Laboratoires/ENS.html">Les laboratoires ENS Lyon</a></li> 
+                                            <li><a class="dropdown-item" href="../../Accueil/Laboratoires/Udl.html">Les laboratoires Udl</a></li>
+                                            <li><a class="dropdown-item" href="../../Accueil/Laboratoires/AURA.html">Les laboratoires région AURA</a></li>
+                                            <li><a class="dropdown-item" href="../../Accueil/Laboratoires/CdC.html">Les Centres de Calculs</a></li>
+                                            <li><a class="dropdown-item" href="../../Accueil/Laboratoires/PP.html">Les partenaires privés</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Informations/News.html">Fil des news</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Arrets.html">Les arrêts prévus</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Absences.html">Les absences des opérateurs</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/StatsUtil.html">Statistiques d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Calendrier.html">Calendrier des évolutions</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Adaptation.html">Adaptation aux nouveaux besoins</a></li>
+                                <li><a class="dropdown-item" href="../../Informations/Calculer.html">Pour calculer</a></li>
+                                <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                    <div class="dropdown-menu">
+                                        <ul> 
+                                            <li><a class="dropdown-item" href="../../Informations/Realisations/Logiciels.html">Logiciels</a></li> 
+                                            <li><a class="dropdown-item" href="../../Informations/Realisations/Outils.html">Outils système</a></li> 
+                                            <li><a class="dropdown-item" href="../../Informations/Realisations/Materiel.html">Matériel</a></li> 
+                                            <li><a class="dropdown-item" href="../../Informations/Realisations/Reseaux.html">Réseaux</a></li> 
+                                            <li><a class="dropdown-item" href="../../Informations/Realisations/Plateaux.html">Plateaux techniques</a></li> 
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                    <div class="dropdown-menu">
+                                        <ul> 
+                                            <li><a class="dropdown-item" href="../../Informations/Classification/Etudes.html">Etudes</a></li> 
+                                            <li><a class="dropdown-item" href="../../Informations/Classification/Integration.html">Intégration</a></li> 
+                                            <li><a class="dropdown-item" href="../../Informations/Classification/Qualification.html">Qualification</a></li> 
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>       
+                        </div>
+                    </li> 
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../DataCenter.html">Data Center</a></li>
+                                <li><a class="dropdown-item" href="https://www.ens-lyon.fr/PSMN/Documentation/">Documentations</a></li>
+                                <li><a class="dropdown-item" href="../ClustersServeurs.html">Les clusters et les serveurs</a></li>
+                                <li><a class="dropdown-item" href="../EquipInfo.html">Equipements informatique</a></li>
+                                <li><a class="dropdown-item" href="../ProjetsInfra.html">Projets d'infrastructure</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                    <div class="dropdown-menu">
+                                        <ul>   
+                                            <li><a class="dropdown-item" href="../Supports/RCS.html">Recherche en calcul scientifique</a></li> 
+                                            <li><a class="dropdown-item" href="../Supports/RIS.html">Recherche en informatique scientifique</a></li>
+                                            <li><a class="dropdown-item" href="../Supports/HN.html">En humanités numériques</a></li>
+                                            <li><a class="dropdown-item" href="../Supports/AFJ.html">Administratif, financier et juridique</a></li>
+                                        </ul>                                        
+                                    </div>
+                                </li>  
+                            </ul>   
+                        </div>
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Formation/Formation.html">Formation</a></li>
+                                <li><a class="dropdown-item" href="../../Formation/Stage.html">Propositions de stage</a></li>
+                            </ul>   
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Science</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item" href="../../Science/Publications2024.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Theses.html">Thèses</a></li>
+                                <li><a class="dropdown-item" href="../../Science/CreationsMulti.html">Créations multimédia</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Chercheurs.html">Chercheurs associés</a></li>
+                                <li><a class="dropdown-item" href="../../Science/Projets.html">Projets scientifiques + Projets utilisateurs</a></li>
+                            </ul>   
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Animation/EvenementsScient.html">Évènements scientifiques</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/Services.html">Services proposés aux organisateurs</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/PAS.html">Projets d'animation scientifique</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/Appels.html">Appel à projets</a></li>
+                                <li><a class="dropdown-item" href="../../Animation/Media.html">Médias</a></li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="../../Animation/Ateliers/AHN.html">Humanités Numériques (AHN)</a></li> 
+                                            <li><a class="dropdown-item" href="../../Animation/Ateliers/ABC.html">Biologie Computationnelle (ABC)</a></li>
+                                            <li><a class="dropdown-item" href="../../Animation/Ateliers/ACT.html">Chimie Théorique</a></li>
+                                            <li><a class="dropdown-item" href="https://groupes.renater.fr/wiki/apn-shs/index">Pratiques Numériques en SHS (ED483)</a></li>
+                                            <li><a class="dropdown-item" href="../../Animation/Ateliers/Guides.html">Guides et Tutoriels</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/CECAM.html">CECAM-FR-RA</a></li> 
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/FLMSN.html">FLMSN</a></li>
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/IXXI.html">IXXI</a></li>
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/PBIL.html">Pôle Bioinformatique Lyonnais</a></li>
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/CIRA.html">CIRA: Calcul intensif en Rhône-Alpes</a></li>
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/GDR.html">GDR Calcul</a></li>
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/LC.html">LyonCalcul</a></li>
+                                <li><a class="dropdown-item" href="../../R%C3%A9seaux/Sierra.html">Sierra</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="../../Contacts/Acces.html ">Accès aux sites</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Equipe.html">Équipe / Staff</a></li>                                        
+                                <li><a class="dropdown-item" href="../../Contacts/Calendrier.html">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="../../Contacts/Formulaires.html">Formulaires</a></li>
+                            </ul>   
+                        </div>
+                    </li>  
+                </ul>
+            </div>
+            <div class="container w-25">
+
+<search id="searchbox" role="search">
+    <form class="d-flex" style="height: 35px;" action="../../search.html" method="get">
+      <input class="form-control me-2 input-search" type="text" name="q" placeholder="Rechercher" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input class="btn btn-search" type="submit" value="Go" />
+    </form>
+</search>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+              <div class="pt-4 border-top border-secondary" id="contenu">
+                
+  <ul class="simple" id="umpaproj">
+<li><p><a class="reference internal" href="../ProjetsInfra.html#projinfra"><span class="std std-ref">Projets d’infrastructure</span></a></p></li>
+</ul>
+<section id="evolution-de-l-infrastructure-de-l-umpa">
+<h1>Evolution de l’infrastructure de l’UMPA<a class="headerlink" href="#evolution-de-l-infrastructure-de-l-umpa" title="Lien vers cette rubrique">¶</a></h1>
+<div class="d-flex docutils container">
+<img alt="Image umpa" src="../../_images/umpa.gif" />
+<p>Maîtrise d’oeuvre : Emmanuel Quemener, CBP, ENS-Lyon</p>
+</div>
+<section id="projet">
+<h2>Projet<a class="headerlink" href="#projet" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’Unité de Mathématiques Pures et Appliquées, suite à l’indisponibilité de son informaticien, nécessite une reprise en profondeur de son infrastructure informatique, allant de la distribution de son réseau jusqu’aux services proposés à ses utilisateurs.</p>
+</section>
+<section id="contribution-du-centre-blaise-pascal-a-ce-projet">
+<h2>Contribution du Centre Blaise Pascal à ce projet<a class="headerlink" href="#contribution-du-centre-blaise-pascal-a-ce-projet" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’objectif est de faire revenir l’UMPA sur un « standard » de laboratoire Monod auprès de la DSI avec les 4 chantiers suivants :</p>
+<ul>
+<li><p>Exploitation du SI global : brève échéance (opérationnel en septembre 2013)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Où en est-on ? Des comptes locaux permettent l’accès aux ressources propres. L’accès à ces ressources est séparé entre le secrétariat et le reste du laboratoire.</p></li>
+<li><p>Où va-t-on ? Le SI global sera le socle d’identification et d’authentification. Cela comprend l’usage de Ldap (pour cette partie, pas de souci) mais également la gestion des groupes intégrés à la gestion des groupes de la DSI (comme pour le LJC et l’IGFL). L’usage du Ldap est « libre ». La gestion des groupes « Samba » via l’ENT semble être une exclusivité pour le LJC et l’IGFL.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Migration des réseaux privés vers le réseau public de l’ENS-Lyon : brève échéance (opérationnel en septembre 2013)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Où en est-on ? la distribution du réseau est réalisée par l’usage de réseaux Ethernet séparés et des classes non routées.</p></li>
+<li><p>Où va-t-on ? Passer toutes la distribution sur un unique réseau</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Passage de l’UMPA sur la dorsale réseau 10G du site Monod :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Où en est-on : l’interconnexion se réalise avec deux câbles en paires torsadées, en Gigabit Ethernet</p></li>
+<li><p>Où va-t-on : pour que l’UMPA soit considéré comme tout autre laboratoire de Monod, elle nécessiterait une arrivée 10G directement connectée sur la dorsale de l’établissement (via vraisemblablement le 3eme étage).</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Fiabilisation du réseau informatique : phase 1 en septembre 2013, phase 2 à évaluer avec la DSI</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Où en est-on ? La distribution du réseau repose sur 5 commutateurs de 12 à 48 ports 3com dont 4 distribuent du GE. Les 5 sont hors garantie. La distribution exploite massivement des duplicateurs de ports (4 paires -&gt; 2x2 paires) et ne permet une interconnexion qu’en Fast Ethernet.</p></li>
+<li><p>Où va-t-on ? La gestion des commutateurs de distribution revient sous la responsabilité de la DSI. Le Gigabit Ethernet est proposé à la prise terminal. Les duplicateurs de ports sont éradiqués.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              <!--
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/Plateformes/ProjetsInfra/proj_umpa.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+
+        </div>
+      </div>-->
+            </div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="clearer"></div>
+    </div>
+<div class="orange-border right"></div>
+  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+    <p class="fs-11 mt-1">
+    Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
+    Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 
+</p>
+      <p class="fs-13">
+    &#169; Copyright 2024, PSMN&#39;s Staff.
+          Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+      </p>
+  </footer>
+  <script src="../../_static/main.js"></script>
+  <script src="../../_static/jquery.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_bundle.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_popper.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap_cdn.min.js"></script>
+  <script src="../../_static/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

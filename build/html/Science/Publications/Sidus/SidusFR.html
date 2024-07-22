@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="../../../_static/style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../../search.html" />
-    <link rel="next" title="Errata for Linux Journal article about SIDUS" href="SidusEN.html" />
-    <link rel="prev" title="SIDUS : « avec SIDUS, n’installe plus, démarre seulement tes machines ! »" href="SidusDoc.html" /> 
+    <link rel="search" title="Recherche" href="../../../search.html" /> 
   </head><body>  
 
     <div class="document">
@@ -35,7 +33,7 @@
             </a>
         </div>
         <div class="wid-header">
-            <button class="btn-theme" id="theme">&#9789</button>
+            <button class="btn-theme" id="theme"></button>
             <a href="https://www.ens-lyon.fr/">
                 <img id="logo_ens_light" class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon2.png" alt="logo ENS de Lyon">
                 <img id="logo_ens_dark" class="img-fluid" src="../../../_static/header/Logo_ENS_Lyon_dark.png" alt="logo ENS de Lyon">
@@ -58,7 +56,7 @@
                             <ul>
                                 <li><a class="dropdown-item" href="../../../Accueil/Actualites.html">Actualités PSMN</a></li>
                                 <li><a class="dropdown-item" href="../../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
-                                <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                <li><a class="dropdown-item" href="../../../Accueil/Evenements.html">Évènements CBP</a></li>
                                 <li><a class="dropdown-item" href="../../../Accueil/Liens.html">Liens</a></li>
                                 <li><a class="dropdown-item" href="../../../Accueil/Services.html">Services</a></li>
                                 <li class="nav-item dropend">
@@ -236,17 +234,17 @@
 <p>Quelques erreurs se sont glissées dans l”<a class="reference external" href="http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration">article</a> de Linux Journal de novembre 2013 sur SIDUS.</p>
 <p>Si vous suivez pas à pas la <a class="reference internal" href="SidusDoc.html#sidusdoc"><span class="std std-ref">documentation complète</span></a>  de SIDUS, ces erreurs sont corrigées.</p>
 <section id="next-server-page-102">
-<h2>“”Next-Server”” page 102<a class="headerlink" href="#next-server-page-102" title="Lien vers cette rubrique">¶</a></h2>
-<p>Page 102, il est proposé comme adresse de serveur TFTP “”172.16.20.251””. Elle est incohérente avec le reste de l’article.</p>
-<p>Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le “”next-server””, dans “”/etc/dhcp/dhcpd.conf”” est à remplacer comme suit :</p>
+<h2>“Next-Server” page 102<a class="headerlink" href="#next-server-page-102" title="Lien vers cette rubrique">¶</a></h2>
+<p>Page 102, il est proposé comme adresse de serveur TFTP <code class="docutils literal notranslate"><span class="pre">172.16.20.251</span></code>. Elle est incohérente avec le reste de l’article.</p>
+<p>Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le <code class="docutils literal notranslate"><span class="pre">next-server</span></code>, dans <code class="docutils literal notranslate"><span class="pre">/etc/dhcp/dhcpd.conf</span></code> est à remplacer comme suit :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>next-server<span class="w"> </span><span class="m">10</span>.13.20.13<span class="p">;</span>
 </pre></div>
 </div>
 </section>
 <section id="myinclude-myexclude-page-104">
 <h2>MyInclude &amp; MyExclude page 104<a class="headerlink" href="#myinclude-myexclude-page-104" title="Lien vers cette rubrique">¶</a></h2>
-<p>Page 104, il est proposé d’utiliser les variables “”MyInclude”” et “”MyExclude”” pour installer dès le <a class="reference external" href="https://wiki.debian.org/Debootstrap">debootstrap</a> un certain nombre de paquets.</p>
-<p>Certains sont installés « de base » par “”debootstrap””. SIDUS exige le noyau (“”linux-image-3.2.0-4-amd64”” pour architecture AMD64) et les outils initrd (“”initramfs-tools””). D’autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.</p>
+<p>Page 104, il est proposé d’utiliser les variables <code class="docutils literal notranslate"><span class="pre">MyInclude</span></code> et <code class="docutils literal notranslate"><span class="pre">MyExclude</span></code> pour installer dès le <a class="reference external" href="https://wiki.debian.org/Debootstrap">debootstrap</a> un certain nombre de paquets.</p>
+<p>Certains sont installés « de base » par <code class="docutils literal notranslate"><span class="pre">debootstrap</span></code>. SIDUS exige le noyau (<code class="docutils literal notranslate"><span class="pre">linux-image-3.2.0-4-amd64</span></code> pour architecture AMD64) et les outils initrd (<code class="docutils literal notranslate"><span class="pre">initramfs-tools</span></code>). D’autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.</p>
 <p>Voici ce que nous proposons pour MyInclude :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">MyInclude</span><span class="o">=</span><span class="s2">&quot;adduser,apt,apt-utils,aptitude,aptitude-common,aspell,aspell-en,aufs-tools,bsdmainutils,btrfs-tools,busybox,ca-certificates,clusterssh,console-setup,cpio,cron,cups-pdf,debian-archive-keyring,dmidecode,dselect,emacs,environment-modules,ethtool,firmware-bnx2,firmware-linux,firmware-linux-nonfree,gnupg,gpgv,groff-base,htop,hwinfo,hwloc,iftop,ifupdown,info,initramfs-tools,install-info,iotop,iperf,ipmitool,iproute,iptables,iputils-ping,isc-dhcp-client,isc-dhcp-common,kmod,ldap-utils,less,libapt-inst1.5,libapt-pkg4.12,libboost-iostreams1.49.0,libcwidget3,libept1.4.12,libgcrypt11,libgdbm3,libgnutls26,libgpg-error0,libidn11,libkmod2,libncursesw5,libnet-ldap-perl,libnewt0.52,libnfnetlink0,libnss-ldap,libp11-kit0,libpam-ldap,libpipeline1,libpopt0,libprocps0,libreadline6,libsigc++-2.0-0c2a,libsqlite3-0,libssl1.0.0,libstdc++6,libtasn1-3,libudev0,libusb-0.1-4,libxapian22,linux-headers-3.2.0-4-amd64,linux-image-3.2.0-4-amd64,locales,logrotate,lsof,man-db,manpages,mbw,mtr,mutt,nano,net-tools,netbase,netcat-traditional,nfs-common,nscd,ntpdate,open-iscsi,openssh-server,pciutils,procps,python-ldap,readline-common,rsyslog,screen,scsitools,sdparm,ssh,ssmtp,sudo,tasksel,tasksel-data,tmux,traceroute,tshark,udev,usbutils,vim,wget,whiptail,xinit,python-html2text&quot;</span>
 </pre></div>
@@ -258,13 +256,13 @@
 </div>
 </section>
 <section id="hook-policy-rc-d-page-104">
-<h2>Hook “”policy-rc.d”” page 104<a class="headerlink" href="#hook-policy-rc-d-page-104" title="Lien vers cette rubrique">¶</a></h2>
-<p>Page 104, il est proposé de supprimer après l’installation complète le <em>hook</em> “”${SIDUS}/usr/sbin/policy-rc.d””.</p>
+<h2>Hook “policy-rc.d” page 104<a class="headerlink" href="#hook-policy-rc-d-page-104" title="Lien vers cette rubrique">¶</a></h2>
+<p>Page 104, il est proposé de supprimer après l’installation complète le <em>hook</em> <code class="docutils literal notranslate"><span class="pre">${SIDUS}/usr/sbin/policy-rc.d</span></code>.</p>
 <p>Il peut être utile de le conserver pour éviter qu’à l’installation d’un nouveau service, l’installeur ne le démarre pas.</p>
 </section>
 <section id="rootaufs-page-106">
-<h2>“”rootaufs”” page 106<a class="headerlink" href="#rootaufs-page-106" title="Lien vers cette rubrique">¶</a></h2>
-<p>Page 106, le “”wget”” proposé pour télécharger et installer <em>coeur</em> de démarrage de SIDUS dans le “”initrd”” est incomplet. De plus, le mettre exécutable est un plus !</p>
+<h2>“rootaufs” page 106<a class="headerlink" href="#rootaufs-page-106" title="Lien vers cette rubrique">¶</a></h2>
+<p>Page 106, le <code class="docutils literal notranslate"><span class="pre">wget</span></code> proposé pour télécharger et installer <em>coeur</em> de démarrage de SIDUS dans le <code class="docutils literal notranslate"><span class="pre">initrd</span></code> est incomplet. De plus, le mettre exécutable est un plus !</p>
 <p>Il faut remplacer cette ligne par :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-O<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/etc/initramfs-tools/scripts/init-bottom/rootaufs<span class="w"> </span>http://www.cbp.ens-lyon.fr/sidus/rootaufs
 chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/etc/initramfs-tools/scripts/init-bottom/rootaufs
@@ -272,8 +270,8 @@ chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><
 </div>
 </section>
 <section id="vmlinux-sidus-et-initrd-sidus-page-107">
-<h2>“”vmlinux-Sidus”” et “”initrd-Sidus”” page 107<a class="headerlink" href="#vmlinux-sidus-et-initrd-sidus-page-107" title="Lien vers cette rubrique">¶</a></h2>
-<p>Page 107, il y a une référence à “”vmlinux-Sidus”” et “”initrd-Sidus”” pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du “”/srv/tftp/pxelinux.cfg/default””.</p>
+<h2>“vmlinux-Sidus” et “initrd-Sidus” page 107<a class="headerlink" href="#vmlinux-sidus-et-initrd-sidus-page-107" title="Lien vers cette rubrique">¶</a></h2>
+<p>Page 107, il y a une référence à <code class="docutils literal notranslate"><span class="pre">vmlinux-Sidus</span></code> et <code class="docutils literal notranslate"><span class="pre">initrd-Sidus</span></code> pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du <code class="docutils literal notranslate"><span class="pre">/srv/tftp/pxelinux.cfg/default</span></code>.</p>
 <p>Il faut remplacer cette ligne par :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/vmlinuz<span class="w"> </span>/srv/tftp/vmlinuz-Sidus
 cp<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span><span class="si">}</span>/srv/nfsroot/boot/initrd<span class="w"> </span>/srv/tftp/initrd.img-Sidus
@@ -287,16 +285,6 @@ cp<span class="w"> </span><span class="si">${</span><span class="nv">SIDUS</span
               <!--
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper mt-4 d-flex justify-content-between">
-  <div>
-    <h4>Sujet précédent</h4>
-    <p class="topless"><a href="SidusDoc.html"
-                          title="Chapitre précédent">SIDUS : « avec SIDUS, n’installe plus, démarre seulement tes machines ! »</a></p>
-  </div>
-  <div>
-    <h4>Sujet suivant</h4>
-    <p class="topless"><a href="SidusEN.html"
-                          title="Chapitre suivant">Errata for Linux Journal article about SIDUS</a></p>
-  </div>
   <div role="note" aria-label="source link">
     <ul class="this-page-menu">
       <li><a href="../../../_sources/Science/Publications/Sidus/SidusFR.rst.txt"

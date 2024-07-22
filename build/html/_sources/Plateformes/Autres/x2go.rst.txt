@@ -81,7 +81,7 @@ Voici quelques liens pour les platesformes les plus courantes :
 Paramétrage du client x2go
 --------------------------
 
-.. container:: bg-warning-subtle pt-2 pb-1 mb-2 rounded fs-14 text-center
+.. container:: note note-important
 
     Le nom de machine, illustré par **mastation** doit être remplacé impérativement par le nom de la 
     machine. La liste des machines de la salle de formation est disponible sur 

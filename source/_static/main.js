@@ -201,10 +201,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const toggleButton = document.querySelector("#theme");
+    
     const logo_cbp_light = document.querySelector("#logo_cbp_light");
     const logo_cbp_dark = document.querySelector("#logo_cbp_dark");
     const logo_ens_light = document.querySelector("#logo_ens_light");
     const logo_ens_dark = document.querySelector("#logo_ens_dark");
+
     const currentMode = localStorage.getItem("dark") || "light";
     document.body.classList.add(currentMode);
 
@@ -213,11 +215,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         logo_cbp_dark.style.display = "none";
         logo_ens_light.style.display = "block";
         logo_ens_dark.style.display = "none";
+        toggleButton.innerHTML = "&#9789";
     } else{
         logo_cbp_light.style.display = "none";
         logo_cbp_dark.style.display = "block";
         logo_ens_light.style.display = "none";
         logo_ens_dark.style.display = "block";
+        toggleButton.innerHTML = "&#9788";
     }
 
     toggleButton.addEventListener("click", () => {

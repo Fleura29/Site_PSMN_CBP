@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="wid-header">
-            <button class="btn-theme" id="theme">&#9789</button>
+            <button class="btn-theme" id="theme"></button>
             <a href="https://www.ens-lyon.fr/">
                 <img id="logo_ens_light" class="img-fluid" src="../../_static/header/Logo_ENS_Lyon2.png" alt="logo ENS de Lyon">
                 <img id="logo_ens_dark" class="img-fluid" src="../../_static/header/Logo_ENS_Lyon_dark.png" alt="logo ENS de Lyon">
@@ -56,7 +56,7 @@
                             <ul>
                                 <li><a class="dropdown-item" href="../../Accueil/Actualites.html">Actualités PSMN</a></li>
                                 <li><a class="dropdown-item" href="../../Accueil/Bureau.html">Bureau des Correspondants</a></li>
-                                <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Evènements CBP</a></li>
+                                <li><a class="dropdown-item" href="../../Accueil/Evenements.html">Évènements CBP</a></li>
                                 <li><a class="dropdown-item" href="../../Accueil/Liens.html">Liens</a></li>
                                 <li><a class="dropdown-item" href="../../Accueil/Services.html">Services</a></li>
                                 <li class="nav-item dropend">
@@ -396,7 +396,7 @@ drm<span class="w">                   </span><span class="m">360448</span><span 
 </div>
 <p>Nous voyons que 4 modules sont chargés. La dernière colonne (vide pour les deux premières lignes) liste les dépendances entre les modules. Ici <code class="docutils literal notranslate"><span class="pre">nvidia_modeset</span></code> and <code class="docutils literal notranslate"><span class="pre">nvidia_uvm</span></code> dépendent du module <code class="docutils literal notranslate"><span class="pre">nvidia</span></code>.</p>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #1.3 : récupérez les informations de l’hôte par la commande ``lsmod | grep nvidia``</strong></p>
+<p><strong>Exercice #1.3 : récupérez les informations de l’hôte par la commande `lsmod | grep nvidia` :</strong></p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Les informations sont-elles identiques à celles ci-dessus ? Caractère par caractère ?</p></li>
@@ -537,7 +537,7 @@ Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w"
 </ul>
 <p>Ces unités de traitement disposent (autant pour les GPU que les CPU) d’unités arithmétiques et logiques (<em>Arithmetic and Login Unit</em>) lesquelles sont <em>vraiment</em> en charge du traitement des opérations.</p>
 <p>Ainsi, le nombre d’ALU dans chaque <em>Compute Unit</em> varie de 64 à 192 selon les générations de GPU. Ainsi, pour le GPU ci-dessus GTX 1080 Ti, le nombre de <em>Compute Unit</em> mentionné est 28, et le nombre d’ALU (appelé également <em>cuda core</em> par Nvidia) est de 3584 soit 28*128. Le schéma du constructeur du circuit GP102 suivant est trompeur : en fait, il dispose de 30 unités SM, mais sur un GP102, seuls 28 sont activés.</p>
-<img alt="Diagramme gp102" class="img-fluid center" src="../../_images/gp102-block-diagram.jpg" />
+<img alt="Diagramme gp102" class="img-fluid center mb-3" src="../../_images/gp102-block-diagram.jpg" />
 <div class="note note-warning docutils container">
 <p><strong>Exercice #1.7 : récupérez les informations à l’aide de deux commandes précédentes utilisant “clinfo”</strong></p>
 <ul class="simple">
@@ -562,11 +562,11 @@ Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w"
 <span class="c1"># Exploiter les GPUs identifies #0 et #1 avec nvidia-smi</span>
 <span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span>,1<span class="w"> </span>&lt;MonProgramme&gt;
 <span class="c1"># N&#39;exploiter aucune GPU</span>
-<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="sb">``</span><span class="w"> </span>&lt;MonProgramme&gt;
+<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="w"> </span>&lt;MonProgramme&gt;
 </pre></div>
 </div>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #1.8 : récupérez les informations avec ``clinfo -l`` préfixée de CUDA_VISIBLE_DEVICES</strong></p>
+<p><strong>Exercice #1.8 : récupérez les informations avec `clinfo -l` préfixée de CUDA_VISIBLE_DEVICES</strong></p>
 <ul class="simple">
 <li><p>Mettez CUDA_VISIBLE_DEVICES=0 clinfo -l et observez la sortie</p></li>
 <li><p>Mettez CUDA_VISIBLE_DEVICES=1 clinfo -l et observez la sortie</p></li>
@@ -583,9 +583,9 @@ Max<span class="w"> </span>clock<span class="w"> </span>frequency<span class="w"
 <li><p>Détaillez à quoi servent les paramètres de sortie <code class="docutils literal notranslate"><span class="pre">c</span></code>, <code class="docutils literal notranslate"><span class="pre">i</span></code> et <code class="docutils literal notranslate"><span class="pre">m</span></code></p></li>
 <li><p>Ouvrez un terminal, tapez <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span> <span class="pre">dmon</span></code> et observez la sortie</p></li>
 <li><p>Détaillez à quoi sert l’option <code class="docutils literal notranslate"><span class="pre">dmon</span></code></p></li>
-<li><p>Arrêtez l``exécution de la précédente avec <code class="docutils literal notranslate"><span class="pre">&lt;Ctrl&gt;&lt;C&gt;</span></code></p></li>
+<li><p>Arrêtez l’exécution de la précédente avec <code class="docutils literal notranslate"><span class="pre">&lt;Ctrl&gt;&lt;C&gt;</span></code></p></li>
 <li><p>Relancez la commande précédente avec <code class="docutils literal notranslate"><span class="pre">-d</span> <span class="pre">0</span></code> ou <code class="docutils literal notranslate"><span class="pre">-d</span> <span class="pre">1</span></code></p></li>
-<li><p>Détaillez à quoi sert l’option <a href="#id1"><span class="problematic" id="id2">``</span></a>-d `` suivie d’un entier</p></li>
+<li><p>Détaillez à quoi sert l’option <code class="docutils literal notranslate"><span class="pre">-d</span></code> suivie d’un entier</p></li>
 </ul>
 </div>
 </section>
@@ -983,26 +983,30 @@ un <strong>nombre d’éléments</strong> sur lesquels s’exécutent les opéra
 <p>Cette fonction, nommée <code class="docutils literal notranslate"><span class="pre">MySillyFunction</span></code> devra être intégrée en Python natif et dans le noyau OpenCL. Lors de l’addition des deux vecteurs, nous appliquerons cette fonction aux éléments de <strong>a</strong> et <strong>b</strong> avant leur addition.</p>
 <p>De plus, de manière à juger plus finement des opérations nécessaires en OpenCL, nous allons intrumenter la fonction d’appel pour juger du temps passé à l’exécution dans chacune d’elle.</p>
 <p>Ainsi, les modifications du programme à effectuer sont les suivantes :</p>
-<ul class="simple">
+<ol class="arabic simple">
 <li><p>dans la fonction <code class="docutils literal notranslate"><span class="pre">OpenCLAddition</span></code>, rajouter des timers sur chaque opération</p></li>
 <li><p>dans la fonction précédente, préfixez l’appel du noyau OpenCL par la variable <code class="docutils literal notranslate"><span class="pre">CallCL</span></code></p></li>
 <li><p>dans la fonction précédente, rajoutez la ligne <code class="docutils literal notranslate"><span class="pre">CallCL.wait()</span></code> la ligne sous la ligne précédente</p></li>
 <li><p>intégrer la fonction <code class="docutils literal notranslate"><span class="pre">MySillyFunction</span></code> en python avec les 16 opérations suivant la liste ci-dessus</p></li>
-</ul>
-<ul class="simple">
+</ol>
+<blockquote>
+<div><ul class="simple">
 <li><p>exploiter au besoin la documentation Python de la librairie <a class="reference external" href="https://numpy.org/doc/stable/reference/routines.math.html">numpy</a></p></li>
 </ul>
-<ul class="simple">
+</div></blockquote>
+<ol class="arabic simple" start="5">
 <li><p>rajouter la fonction <code class="docutils literal notranslate"><span class="pre">NativeSillyAddition</span></code> appliquant <code class="docutils literal notranslate"><span class="pre">MySillyFunction</span></code> dans le programme</p></li>
 <li><p>intégrer la fonction <code class="docutils literal notranslate"><span class="pre">MySillyFunction</span></code> dans le noyau OpenCL avec les 16 opérations</p></li>
-</ul>
-<ul class="simple">
+</ol>
+<blockquote>
+<div><ul class="simple">
 <li><p>exploiter au besoin la <a class="reference external" href="https://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf">carte de référence</a> OpenCL</p></li>
 </ul>
-<ul class="simple">
+</div></blockquote>
+<ol class="arabic simple" start="7">
 <li><p>rajouter la fonction <code class="docutils literal notranslate"><span class="pre">sillysum</span></code> sur la base de <code class="docutils literal notranslate"><span class="pre">sum</span></code> dans le noyau OpenCL</p></li>
 <li><p>rajouter la fonction <code class="docutils literal notranslate"><span class="pre">OpenCLSillyAddition</span></code> sur la base de <code class="docutils literal notranslate"><span class="pre">OpenCLAddition</span></code> dans le programme</p></li>
-</ul>
+</ol>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #2.4 :</strong></p>
 <ul class="simple">
@@ -1723,7 +1727,7 @@ Precision:<span class="w">  </span><span class="m">6</span>.975449e-05<span clas
 </ul>
 </div></blockquote>
 </li>
-<li><p>appeler la fonction``NumpyDFT`` avec les mêmes arguments</p></li>
+<li><p>appeler la fonction <code class="docutils literal notranslate"><span class="pre">NumpyDFT</span></code> avec les mêmes arguments</p></li>
 <li><p>comparer les résultats entre les deux avec <code class="docutils literal notranslate"><span class="pre">linalg.norm</span></code></p></li>
 </ul>
 <div class="note note-warning docutils container">
@@ -2287,7 +2291,7 @@ Precision:<span class="w">  </span><span class="m">6</span>.966685e-05<span clas
 <li><p>Sélectionner une exécution sous OpenCL ou CUDA avec l’option <code class="docutils literal notranslate"><span class="pre">-g</span></code></p></li>
 </ul>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #5.2 : modification du programme ``MyDFT_6.py``</strong></p>
+<p><strong>Exercice #5.2 : modification du programme `MyDFT_6.py`</strong></p>
 <ul class="simple">
 <li><p>Supprimer la sélection initiale d’argument</p></li>
 <li><p>Inhiber pour l’instant l’exécution des fonctions</p></li>
@@ -2329,7 +2333,7 @@ Device<span class="w"> </span><span class="c1">#1 of type GPU : Quadro K420</spa
 </pre></div>
 </div>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #5.3 : modification du programme ``MyDFT_7.py``</strong></p>
+<p><strong>Exercice #5.3 : modification du programme `MyDFT_7.py`</strong></p>
 <ul class="simple">
 <li><p>Libérez pour l’appel à la fonction <code class="docutils literal notranslate"><span class="pre">OpenCLDFT</span></code></p></li>
 <li><p>Rajoutez le test exploitant la sélection OpenCL ou CUDA</p></li>
@@ -2503,7 +2507,7 @@ Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </
 <h4>Le source<a class="headerlink" href="#le-source" title="Lien vers cette rubrique">¶</a></h4>
 <p>Le programme source <code class="docutils literal notranslate"><span class="pre">xGEMM.c</span></code> a été conçu pour fonctionner avec n’importe quelle implémentation. Si vous l’éditez, vous réalisez qu’il n’est pas si simple d’avoir un programme qui s’exécute indifféremment quelle que soit la librairie. Même si les appels sont comparables (même nombre d’attributs dans les fonctions), leur nom change de librairie à librairie. Pour n’avoir qu’un seul source, les directives sont largement exploitées. C’est donc le <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> qui va permettre de ne compiler que telle ou telle portion du programme source.</p>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #6.1 : éditez le source du programme ``xGEMM.c`` et repérez les éléments suivants</strong></p>
+<p><strong>Exercice #6.1 : éditez le source du programme `xGEMM.c` et repérez les éléments suivants</strong></p>
 <ul class="simple">
 <li><p>Identifiez dans <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> quelles directives (précédées par <code class="docutils literal notranslate"><span class="pre">-D</span></code>) sont associées aux différentes implémentations</p></li>
 <li><p>Identifiez dans <code class="docutils literal notranslate"><span class="pre">xGEMM.c</span></code> les « directives » C à base de <code class="docutils literal notranslate"><span class="pre">#ifdef</span></code> utilisées pour séparer les différentes implémentations</p></li>
@@ -2567,10 +2571,10 @@ Using<span class="w"> </span>CBLAS:<span class="w"> </span><span class="m">10</s
 Duration<span class="w"> </span>of<span class="w"> </span>each<span class="w"> </span>cycle<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.0109249000<span class="w"> </span>s
 Number<span class="w"> </span>of<span class="w"> </span>GFlops<span class="w"> </span>:<span class="w"> </span><span class="m">365</span>.953
 Error<span class="w"> </span><span class="m">0</span>.0000000000
-&lt;/code&gt;
-
-Voici<span class="w"> </span>quelques<span class="w"> </span>exemples<span class="w"> </span>de<span class="w"> </span>lancement<span class="w"> </span>de<span class="w"> </span>ces<span class="w"> </span>exécutables<span class="w"> </span>sur<span class="w"> </span>une<span class="w"> </span>même<span class="w"> </span>machine,<span class="w"> </span>pour<span class="w"> </span>les<span class="w"> </span>GPU<span class="w"> </span>exclusivement<span class="w"> </span>:&lt;code&gt;
-$<span class="w"> </span>./xGEMM_SP_cublas<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="m">10</span>
+</pre></div>
+</div>
+<p>Voici quelques exemples de lancement de ces exécutables sur une même machine, pour les GPU exclusivement :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./xGEMM_SP_cublas<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="m">10</span>
 Using<span class="w"> </span>CuBLAS:<span class="w"> </span><span class="m">10</span><span class="w"> </span>iterations<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000x1000<span class="w"> </span>matrix
 
 Duration<span class="w"> </span>of<span class="w"> </span>memory<span class="w"> </span>allocation<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>.3678790000<span class="w"> </span>s
@@ -2751,13 +2755,13 @@ Error<span class="w"> </span><span class="m">0</span>.0000000000
 </div>
 <p>Nous pouvons également constater que certains périphériques ne « passent » pas en OpenCL et que les performances sont très variables.</p>
 <p>Voici un synoptique des performances pour les différentes implémentations et les différents GPU en simple précision. Les performances ont été placées en log. Les GPU présentent des performances incroyablement supérieures au processeur (autour d’un facteur 20 pour la GTX 1080 Ti face à la meilleure des implémentations pour CPU).</p>
-<img alt="Image xgemm_sp" class="img-fluid center" src="_static/xgemm_sp.png" />
+<img alt="Image xgemm_sp" class="img-fluid center" src="../../_images/xgemm_sp.png" />
 <p>Lors du passage en double précision, les GPU se rapprochent des CPU en performance.</p>
-<img alt="Image xgemm_dp" class="img-fluid center" src="_static/xgemm_dp.png" />
+<img alt="Image xgemm_dp" class="img-fluid center" src="../../_images/xgemm_dp.png" />
 <p>Le ratio entre performances en simple sur double précision illustre la grosse différence entre CPU et GPU.</p>
-<img alt="Image xgemm_ratio_spdp" class="img-fluid center" src="_static/xgemm_ratio_spdp.png" />
+<img alt="Image xgemm_ratio_spdp" class="img-fluid center" src="../../_images/xgemm_ratio_spdp.png" />
 <div class="note note-warning docutils container">
-<p><strong>Exercice #6.2 : lancez les ``xGEMM_&lt;precision&gt;_&lt;implementation&gt;`` avec une taille de 1000</strong></p>
+<p><strong>Exercice #6.2 : lancez les `xGEMM_&lt;precision&gt;_&lt;implementation&gt;` avec une taille de 1000</strong></p>
 <ul class="simple">
 <li><p>Variez le nombre d’itérations pour obtenir une durée d’exécution d’une dizaine de secondes ?</p></li>
 <li><p>Laquelle des implémentations CPU est la plus performante ?</p></li>
@@ -2771,7 +2775,7 @@ Error<span class="w"> </span><span class="m">0</span>.0000000000
 </ul>
 </div>
 <p>Il est aussi intéressant de constater que la performance dépend non seulement de l’implémentation, du périphérique mais aussi de sa sollicitation. Voici la performance pour l’implémentation CPU avec OpenBLAS et les implémentations cuBLAS et <em>Thunking</em> sur la GTX 1080 Ti.</p>
-<img alt="Image xgemm_sp_size" class="img-fluid center" src="_static/xgemm_sp_size.png" />
+<img alt="Image xgemm_sp_size" class="img-fluid center" src="../../_images/xgemm_sp_size.png" />
 <div class="note note-warning docutils container">
 <p><strong>Exercice #6.3 : lancez les programmes précédents pour différentes tailles</strong></p>
 <ul class="simple">
@@ -2871,7 +2875,7 @@ Pour cela, l’exemple de la base de <a class="reference external" href="https:/
 <p>De plus, ce programme est aussi parallélisé avec OpenMP : il va donc « aussi » exploiter les coeurs disponibles. Le souci, c’est que, par défaut, il va lancer pour chaque tâche MPI autant de sous-tâches OpenMP que de coeurs (même « virtuels ») disponibles sur la machine. Ainsi, en exécutant l’exemple <code class="docutils literal notranslate"><span class="pre">alad_water</span></code> sur une machine disposant de 8 coeurs Hyperthreadés (donc disposant au total de 16 coeurs logiques), il va lancer 4*16 soit 64 tâches pour seulement 8 « vrais » coeurs : de quoi surcharger la machine.</p>
 <p>Pour finir, dans comme ce programme est « aussi » <em>gépufié</em> (porté sur GPU), il risque d’y avoir un goulet d’étranglement pour l’accès au GPU pour les 64 tâches simultanées. Ainsi, les programmes « fortement » parallélisés exigent de choisir judicieusement les différents paramètres de parallélisation tout comme nous avons vue que, pour les GPU, il fallait découper la tâche en un nombre optimal de sous-tâches.</p>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #8.2 : Exécutez l’exemple ``alad_water``</strong></p>
+<p><strong>Exercice #8.2 : Exécutez l’exemple `alad_water`</strong></p>
 <ul class="simple">
 <li><p>Récupérez <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/alad_water.tgz">l’exemple d’exécution</a></p></li>
 <li><p>Décompressez l’archive dans <code class="docutils literal notranslate"><span class="pre">/local/$USER/GENESIS</span></code></p></li>
@@ -2926,7 +2930,7 @@ Pour cela, l’exemple de la base de <a class="reference external" href="https:/
 </div>
 <p>En cas de difficultés, appliquez la <a class="reference internal" href="gromacsGPU.html#gromacsgpu"><span class="std std-ref">recette de Gromacs pour Debian Buster</span></a> ;-)</p>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #9.2 : Exécutez l’exemple ``1536``</strong></p>
+<p><strong>Exercice #9.2 : Exécutez l’exemple `1536`</strong></p>
 <ul class="simple">
 <li><p>Quel <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">Time</span></code> avez-vous pour l’exécution sur GPU (et CPU) ?</p></li>
 <li><p>Quel <code class="docutils literal notranslate"><span class="pre">Elapsed</span> <span class="pre">Time</span></code> avez-vous pour l’exécution uniquement sur CPU ?</p></li>
@@ -3301,7 +3305,7 @@ Device<span class="w"> </span><span class="c1">#1 of type GPU : Quadro K420</spa
 <p>D’autres options :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">-g</span> <span class="pre">&lt;CUDA/OpenCL&gt;</span></code> : pour sélectionner l’utilisation de CUDA ou OpenCL</p></li>
-<li><p><a href="#id9"><span class="problematic" id="id10">``</span></a>-i &lt;Iterations&gt; `` : pour le nombre total d’itérations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-i</span> <span class="pre">&lt;Iterations&gt;</span></code> : pour le nombre total d’itérations</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-r</span> <span class="pre">&lt;RedoToImproveStats&gt;</span></code> : pour refaire plusieurs expériences en série</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-m</span> <span class="pre">&lt;SHR3/CONG/MWC/KISS&gt;</span></code> : pour sélectionner le type de <em>Random Number Generator</em> de Marsaglia</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">&lt;INT32/INT64/FP32/FP64&gt;</span></code> : pour sélectionner le type de variable à exploiter</p></li>
@@ -3367,7 +3371,10 @@ Pi<span class="w"> </span>estimation<span class="w"> </span><span class="m">3</s
 </section>
 <section id="exploitation-du-programme">
 <h3>Exploitation du programme<a class="headerlink" href="#exploitation-du-programme" title="Lien vers cette rubrique">¶</a></h3>
-<p>Ainsi, si nous voulons étudier la scalabilité du CPU en <em>Work items</em> de 1 à 16x le nombre de coeurs (ici 8 physiques) en exploitant l’implémentation AMD de OpenCL, nous appelons la commande : &lt;code&gt;python3 PiXPU.py -d 0 -b 1 -e $((8*16)) -r 10 -i 1000000000 &lt;/code&gt;</p>
+<p>Ainsi, si nous voulons étudier la scalabilité du CPU en <em>Work items</em> de 1 à 16x le nombre de coeurs (ici 8 physiques) en exploitant l’implémentation AMD de OpenCL, nous appelons la commande :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>PiXPU.py<span class="w"> </span>-d<span class="w"> </span><span class="m">0</span><span class="w"> </span>-b<span class="w"> </span><span class="m">1</span><span class="w"> </span>-e<span class="w"> </span><span class="k">$((</span><span class="m">8</span><span class="o">*</span><span class="m">16</span><span class="k">))</span><span class="w"> </span>-r<span class="w"> </span><span class="m">10</span><span class="w"> </span>-i<span class="w"> </span><span class="m">1000000000</span>
+</pre></div>
+</div>
 <p>Dans notre cas, nous avons les deux fichiers suivants à exploiter :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Pi_FP32_MWC_xPU_OpenCL_1_128_1_1_1000000000_Device0_InMetro_opencluster2.npz</span></code></p></li>
@@ -3408,9 +3415,15 @@ plot<span class="w"> </span><span class="s1">&#39;Pi_FP32_MWC_xPU_OpenCL_1_128_1
 <li><p>Identifiez pour quel PR la performance est maximale</p></li>
 </ul>
 </div>
-<p>Comme nous avons également la même implémentation en CUDA, lançons l’exploration avec CUDA pour le PR optimal, ici identifié à 4x le nombre de <em>cuda cores</em> :&lt;code&gt;python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -r 3 -i 10000000000&lt;/code&gt;</p>
+<p>Comme nous avons également la même implémentation en CUDA, lançons l’exploration avec CUDA pour le PR optimal, ici identifié à 4x le nombre de <em>cuda cores</em> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>PiXPU.py<span class="w"> </span>-g<span class="w"> </span>CUDA<span class="w"> </span>-d<span class="w"> </span><span class="m">0</span><span class="w"> </span>-b<span class="w"> </span><span class="k">$((</span><span class="m">3584</span><span class="o">*</span><span class="m">4</span><span class="k">))</span><span class="w"> </span>-e<span class="w"> </span><span class="k">$((</span><span class="m">3584</span><span class="o">*</span><span class="m">4</span><span class="k">))</span><span class="w"> </span>-r<span class="w"> </span><span class="m">3</span><span class="w"> </span>-i<span class="w"> </span><span class="m">10000000000</span>
+</pre></div>
+</div>
 <p>Comme résultat de cette implémentation CUDA, nous n’obtenons pas <strong>268 Gitops</strong>, mais seulement <strong>6 Gitops</strong> !</p>
-<p>La seule manière de retrouver une performance comparable en CUDA est de solliciter le second étage de parallélisme des GPU, les <em>Threads</em>. Avec la commande suivante, avec 1024 Threads, nous plafonnons à <strong>198 Gitops</strong> :&lt;code&gt;python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -f 1024 -l 1024 -r 3 -i 1000000000000&lt;/code&gt;</p>
+<p>La seule manière de retrouver une performance comparable en CUDA est de solliciter le second étage de parallélisme des GPU, les <em>Threads</em>. Avec la commande suivante, avec 1024 Threads, nous plafonnons à <strong>198 Gitops</strong> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>PiXPU.py<span class="w"> </span>-g<span class="w"> </span>CUDA<span class="w"> </span>-d<span class="w"> </span><span class="m">0</span><span class="w"> </span>-b<span class="w"> </span><span class="k">$((</span><span class="m">3584</span><span class="o">*</span><span class="m">4</span><span class="k">))</span><span class="w"> </span>-e<span class="w"> </span><span class="k">$((</span><span class="m">3584</span><span class="o">*</span><span class="m">4</span><span class="k">))</span><span class="w"> </span>-f<span class="w"> </span><span class="m">1024</span><span class="w"> </span>-l<span class="w"> </span><span class="m">1024</span><span class="w"> </span>-r<span class="w"> </span><span class="m">3</span><span class="w"> </span>-i<span class="w"> </span><span class="m">1000000000000</span>
+</pre></div>
+</div>
 <p>En relançant le calcul précédent, nous parvenons à <strong>271 Gitops</strong> soit plus que l’implémentation OpenCL.</p>
 <div class="note note-warning docutils container">
 <p><strong>Exercice #11.4 : étude de l’implémentation CUDA autour du PR optimal</strong></p>
@@ -3536,6 +3549,8 @@ Device<span class="w"> </span><span class="c1">#4 from Intel(R) Corporation of t
 </pre></div>
 </div>
 <p>Les éléments de sortie sont les statistiques de chaque itération, exprimées en <strong>squertz</strong>, contraction de <strong>square</strong> (pour « carré ») avec <strong>Hertz</strong>. En effet, le nombre de calculs élémentaires évolue suivant une loi en <strong>N(N-1)</strong> (chaque particule parmi <strong>N</strong> intéragit avec les <strong>N-1</strong> autres particules).</p>
+<section id="analyse-du-programme">
+<h3>Analyse du programme<a class="headerlink" href="#analyse-du-programme" title="Lien vers cette rubrique">¶</a></h3>
 <p>Lors de l’initialisation du « système N-Corps », plusieurs opérations sont effectuées :</p>
 <ul class="simple">
 <li><p>l’initialisation de la position des particules</p></li>
@@ -3545,7 +3560,7 @@ Device<span class="w"> </span><span class="c1">#4 from Intel(R) Corporation of t
 <li><p>l’évolution du système</p></li>
 </ul>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #12.1 : étude du source de ``NBody.py``</strong></p>
+<p><strong>Exercice #12.1 : étude du source de `NBody.py`</strong></p>
 <ul class="simple">
 <li><p>Editez le programme avec gedit</p></li>
 <li><p>Identifiez le bloc de noyaux OpenCL : lignes</p></li>
@@ -3590,7 +3605,7 @@ Device<span class="w"> </span><span class="c1">#4 from Intel(R) Corporation of t
 <img alt="Image nbody_log_opencluster2" class="img-fluid center" src="../../_images/nbody_log_opencluster2.png" />
 <p>Seule une représentation en log permet de ne pas trop écraser les performances des implémentations CPU.</p>
 <div class="note note-warning docutils container">
-<p><strong>Exercice #12.2 : lancement de ``NBody.py`` pour 32768 particules</strong></p>
+<p><strong>Exercice #12.2 : lancement de `NBody.py` pour 32768 particules</strong></p>
 <ul class="simple">
 <li><p>Exécutez le programme pour tous les périphériques détectés</p></li>
 <li><p>Ajoutez l’option pour un calcul en 64 bits et réexécutez</p></li>
@@ -3609,7 +3624,7 @@ Device<span class="w"> </span><span class="c1">#4 from Intel(R) Corporation of t
 <p>Si nous changeons de manière insignifiante le nombre de particules (de 8192 à 8191), nous obtenons des performances très différentes :</p>
 <img alt="Image nbody_007" class="img-fluid center" src="../../_images/nbody_007.png" />
 <div class="note note-warning docutils container">
-<p><strong>Exercice #12.3 : lancement de ``NBody.py`` en mode ``-g``</strong></p>
+<p><strong>Exercice #12.3 : lancement de `NBody.py` en mode `-g`</strong></p>
 <ul class="simple">
 <li><p>Exécutez le programme pour la meilleure implémentation sur CPU sur 8192 particules</p></li>
 <li><p>Appuyez sur <code class="docutils literal notranslate"><span class="pre">s</span></code> pour passer des positions aux vitesses</p></li>
@@ -3624,6 +3639,7 @@ Device<span class="w"> </span><span class="c1">#4 from Intel(R) Corporation of t
 <li><p>Pourquoi un tel ratio ?</p></li>
 </ul>
 </div>
+</section>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Lien vers cette rubrique">¶</a></h2>

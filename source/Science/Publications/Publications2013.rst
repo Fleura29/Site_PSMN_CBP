@@ -3,16 +3,6 @@
 Publications 2013
 =================
 
-.. container:: disp
-   
-   .. toctree::
-      :maxdepth: 1
-      :caption: Table des matières
-
-      Sidus/SidusDoc 
-      Sidus/SidusFR
-      Sidus/SidusEN
-
 PSMN
 ----
 

@@ -178,7 +178,7 @@ Nous voyons que 4 modules sont chargés. La dernière colonne (vide pour les deu
 
 .. container:: note note-warning
 
-    **Exercice #1.3 : récupérez les informations de l'hôte par la commande ``lsmod | grep nvidia``**
+    **Exercice #1.3 : récupérez les informations de l'hôte par la commande `lsmod | grep nvidia` :**
 
         * Les informations sont-elles identiques à celles ci-dessus ? Caractère par caractère ?
 
@@ -334,7 +334,7 @@ Ces unités de traitement disposent (autant pour les GPU que les CPU) d'unités 
 Ainsi, le nombre d'ALU dans chaque *Compute Unit* varie de 64 à 192 selon les générations de GPU. Ainsi, pour le GPU ci-dessus GTX 1080 Ti, le nombre de *Compute Unit* mentionné est 28, et le nombre d'ALU (appelé également *cuda core* par Nvidia) est de 3584 soit 28*128. Le schéma du constructeur du circuit GP102 suivant est trompeur : en fait, il dispose de 30 unités SM, mais sur un GP102, seuls 28 sont activés.
 
 .. image:: ../../_static/Plateformes/gp102-block-diagram.jpg
-    :class: img-fluid center
+    :class: img-fluid center mb-3
     :alt: Diagramme gp102
 
 .. container:: note note-warning
@@ -364,11 +364,11 @@ La commande 'nvidia-smi' offrait une liste de périphériques Nvidia identifiés
     # Exploiter les GPUs identifies #0 et #1 avec nvidia-smi
     CUDA_VISIBLE_DEVICES=0,1 <MonProgramme>
     # N'exploiter aucune GPU
-    CUDA_VISIBLE_DEVICES=`` <MonProgramme>
+    CUDA_VISIBLE_DEVICES='' <MonProgramme>
 
 .. container:: note note-warning
 
-    **Exercice #1.8 : récupérez les informations avec ``clinfo -l`` préfixée de CUDA_VISIBLE_DEVICES**
+    **Exercice #1.8 : récupérez les informations avec `clinfo -l` préfixée de CUDA_VISIBLE_DEVICES**
 
     * Mettez CUDA_VISIBLE_DEVICES=0 clinfo -l et observez la sortie
     * Mettez CUDA_VISIBLE_DEVICES=1 clinfo -l et observez la sortie
@@ -387,9 +387,9 @@ Durant toutes les séances de travaux pratiques, l'accent sera mis sur la sollic
     * Détaillez à quoi servent les paramètres de sortie ``c``, ``i`` et ``m``
     * Ouvrez un terminal, tapez ``nvidia-smi dmon`` et observez la sortie
     * Détaillez à quoi sert l'option ``dmon``
-    * Arrêtez l``exécution de la précédente avec ``<Ctrl><C>``
+    * Arrêtez l'exécution de la précédente avec ``<Ctrl><C>``
     * Relancez la commande précédente avec ``-d 0`` ou ``-d 1``
-    * Détaillez à quoi sert l'option ``-d `` suivie d'un entier
+    * Détaillez à quoi sert l'option ``-d`` suivie d'un entier
 
 Récupération des sources
 ------------------------
@@ -708,16 +708,18 @@ De plus, de manière à juger plus finement des opérations nécessaires en Open
 
 Ainsi, les modifications du programme à effectuer sont les suivantes :
 
-- dans la fonction ``OpenCLAddition``, rajouter des timers sur chaque opération
-- dans la fonction précédente, préfixez l'appel du noyau OpenCL par la variable ``CallCL``
-- dans la fonction précédente, rajoutez la ligne ``CallCL.wait()`` la ligne sous la ligne précédente
-- intégrer la fonction ``MySillyFunction`` en python avec les 16 opérations suivant la liste ci-dessus
-* exploiter au besoin la documentation Python de la librairie `numpy <https://numpy.org/doc/stable/reference/routines.math.html>`_
-- rajouter la fonction ``NativeSillyAddition`` appliquant ``MySillyFunction`` dans le programme
-- intégrer la fonction ``MySillyFunction`` dans le noyau OpenCL avec les 16 opérations
-* exploiter au besoin la `carte de référence <https://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf>`_ OpenCL
-- rajouter la fonction ``sillysum`` sur la base de ``sum`` dans le noyau OpenCL
-- rajouter la fonction ``OpenCLSillyAddition`` sur la base de ``OpenCLAddition`` dans le programme
+1. dans la fonction ``OpenCLAddition``, rajouter des timers sur chaque opération
+2. dans la fonction précédente, préfixez l'appel du noyau OpenCL par la variable ``CallCL``
+3. dans la fonction précédente, rajoutez la ligne ``CallCL.wait()`` la ligne sous la ligne précédente
+4. intégrer la fonction ``MySillyFunction`` en python avec les 16 opérations suivant la liste ci-dessus
+
+  * exploiter au besoin la documentation Python de la librairie `numpy <https://numpy.org/doc/stable/reference/routines.math.html>`_
+5. rajouter la fonction ``NativeSillyAddition`` appliquant ``MySillyFunction`` dans le programme
+6. intégrer la fonction ``MySillyFunction`` dans le noyau OpenCL avec les 16 opérations
+
+  * exploiter au besoin la `carte de référence <https://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf>`_ OpenCL
+7. rajouter la fonction ``sillysum`` sur la base de ``sum`` dans le noyau OpenCL
+8. rajouter la fonction ``OpenCLSillyAddition`` sur la base de ``OpenCLAddition`` dans le programme
 
 .. container:: note note-warning
 
@@ -1112,7 +1114,7 @@ Pour cela, il est proposé de :
     * produit de **cos(i*nj)** à **x**
     * addition des deux résultats précédents
     * somme de l'ensemble des éléments
-- appeler la fonction``NumpyDFT`` avec les mêmes arguments
+- appeler la fonction ``NumpyDFT`` avec les mêmes arguments
 - comparer les résultats entre les deux avec ``linalg.norm``
 
 .. container:: note note-warning
@@ -1469,7 +1471,7 @@ Une fois ces portions identifiées, la modification du programme ``MyDFT_6.py`` 
 
 .. container:: note note-warning
 
-  **Exercice #5.2 : modification du programme ``MyDFT_6.py``**
+  **Exercice #5.2 : modification du programme `MyDFT_6.py`**
 
   - Supprimer la sélection initiale d'argument
   - Inhiber pour l'instant l'exécution des fonctions
@@ -1516,7 +1518,7 @@ En regardant en détail la sélection du périphérique, elle est assez simple d
 
 .. container:: note note-warning
 
-  **Exercice #5.3 : modification du programme ``MyDFT_7.py``**
+  **Exercice #5.3 : modification du programme `MyDFT_7.py`**
 
   - Libérez pour l'appel à la fonction ``OpenCLDFT``
   - Rajoutez le test exploitant la sélection OpenCL ou CUDA
@@ -1715,7 +1717,7 @@ Le programme source ``xGEMM.c`` a été conçu pour fonctionner avec n'importe q
 
 .. container:: note note-warning
 
-  **Exercice #6.1 : éditez le source du programme ``xGEMM.c`` et repérez les éléments suivants**
+  **Exercice #6.1 : éditez le source du programme `xGEMM.c` et repérez les éléments suivants**
 
   * Identifiez dans ``Makefile`` quelles directives (précédées par ``-D``) sont associées aux différentes implémentations
   * Identifiez dans ``xGEMM.c`` les "directives" C à base de ``#ifdef`` utilisées pour séparer les différentes implémentations
@@ -1784,9 +1786,11 @@ Voici quelques exemples de lancement de ces exécutables sur une même machine, 
   Duration of each cycle : 0.0109249000 s
   Number of GFlops : 365.953 
   Error 0.0000000000
-  </code>
 
-  Voici quelques exemples de lancement de ces exécutables sur une même machine, pour les GPU exclusivement :<code>
+Voici quelques exemples de lancement de ces exécutables sur une même machine, pour les GPU exclusivement :
+
+.. code-block:: bash
+
   $ ./xGEMM_SP_cublas 1000 10
   Using CuBLAS: 10 iterations for 1000x1000 matrix
 
@@ -1990,25 +1994,25 @@ Nous pouvons également constater que certains périphériques ne "passent" pas 
 
 Voici un synoptique des performances pour les différentes implémentations et les différents GPU en simple précision. Les performances ont été placées en log. Les GPU présentent des performances incroyablement supérieures au processeur (autour d'un facteur 20 pour la GTX 1080 Ti face à la meilleure des implémentations pour CPU).
 
-.. image:: ../../_static/xgemm_sp.png
+.. image:: ../../_static/Plateformes/xgemm_sp.png
   :class: img-fluid center
   :alt: Image xgemm_sp
 
 Lors du passage en double précision, les GPU se rapprochent des CPU en performance. 
 
-.. image:: ../../_static/xgemm_dp.png
+.. image:: ../../_static/Plateformes/xgemm_dp.png
   :class: img-fluid center
   :alt: Image xgemm_dp
 
 Le ratio entre performances en simple sur double précision illustre la grosse différence entre CPU et GPU.
 
-.. image:: ../../_static/xgemm_ratio_spdp.png
+.. image:: ../../_static/Plateformes/xgemm_ratio_spdp.png
   :class: img-fluid center
   :alt: Image xgemm_ratio_spdp
 
 .. container:: note note-warning
 
-  **Exercice #6.2 : lancez les ``xGEMM_<precision>_<implementation>`` avec une taille de 1000**
+  **Exercice #6.2 : lancez les `xGEMM_<precision>_<implementation>` avec une taille de 1000**
 
   * Variez le nombre d'itérations pour obtenir une durée d'exécution d'une dizaine de secondes ?
   * Laquelle des implémentations CPU est la plus performante ?
@@ -2022,7 +2026,7 @@ Le ratio entre performances en simple sur double précision illustre la grosse d
 
 Il est aussi intéressant de constater que la performance dépend non seulement de l'implémentation, du périphérique mais aussi de sa sollicitation. Voici la performance pour l'implémentation CPU avec OpenBLAS et les implémentations cuBLAS et *Thunking* sur la GTX 1080 Ti.
 
-.. image:: ../../_static/xgemm_sp_size.png
+.. image:: ../../_static/Plateformes/xgemm_sp_size.png
   :class: img-fluid center
   :alt: Image xgemm_sp_size
 
@@ -2142,7 +2146,7 @@ Pour finir, dans comme ce programme est "aussi" *gépufié* (porté sur GPU), il
 
 .. container:: note note-warning
   
-  **Exercice #8.2 : Exécutez l'exemple ``alad_water``**
+  **Exercice #8.2 : Exécutez l'exemple `alad_water`**
 
   * Récupérez `l'exemple d'exécution <http://www.cbp.ens-lyon.fr/emmanuel.quemener/documents/alad_water.tgz>`_
   * Décompressez l'archive dans ``/local/$USER/GENESIS``
@@ -2193,7 +2197,7 @@ En cas de difficultés, appliquez la :ref:`recette de Gromacs pour Debian Buster
 
 .. container:: note note-warning
 
-  **Exercice #9.2 : Exécutez l'exemple ``1536``** 
+  **Exercice #9.2 : Exécutez l'exemple `1536`** 
 
   * Quel ``Elapsed Time`` avez-vous pour l'exécution sur GPU (et CPU) ?
   * Quel ``Elapsed Time`` avez-vous pour l'exécution uniquement sur CPU ?
@@ -2530,7 +2534,7 @@ Par exemple, pour explorer des régimes de parallélisme de 16 à 128 avec des p
 D'autres options :
 
 * ``-g <CUDA/OpenCL>`` : pour sélectionner l'utilisation de CUDA ou OpenCL
-* ``-i <Iterations> `` : pour le nombre total d'itérations
+* ``-i <Iterations>`` : pour le nombre total d'itérations
 * ``-r <RedoToImproveStats>`` : pour refaire plusieurs expériences en série
 * ``-m <SHR3/CONG/MWC/KISS>`` : pour sélectionner le type de *Random Number Generator* de Marsaglia
 * ``-v <INT32/INT64/FP32/FP64>`` : pour sélectionner le type de variable à exploiter
@@ -2601,7 +2605,11 @@ Examen du code source
 Exploitation du programme
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ainsi, si nous voulons étudier la scalabilité du CPU en *Work items* de 1 à 16x le nombre de coeurs (ici 8 physiques) en exploitant l'implémentation AMD de OpenCL, nous appelons la commande : <code>python3 PiXPU.py -d 0 -b 1 -e $((8*16)) -r 10 -i 1000000000 </code>
+Ainsi, si nous voulons étudier la scalabilité du CPU en *Work items* de 1 à 16x le nombre de coeurs (ici 8 physiques) en exploitant l'implémentation AMD de OpenCL, nous appelons la commande : 
+
+.. code-block:: bash
+  
+  python3 PiXPU.py -d 0 -b 1 -e $((8*16)) -r 10 -i 1000000000 
 
 Dans notre cas, nous avons les deux fichiers suivants à exploiter : 
 
@@ -2657,11 +2665,19 @@ Nous pouvons constater que la scalabilité est très peu continue, encore moins 
   * Tracez les résultats avec GNUplot
   * Identifiez pour quel PR la performance est maximale
 
-Comme nous avons également la même implémentation en CUDA, lançons l'exploration avec CUDA pour le PR optimal, ici identifié à 4x le nombre de *cuda cores* :<code>python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -r 3 -i 10000000000</code>
+Comme nous avons également la même implémentation en CUDA, lançons l'exploration avec CUDA pour le PR optimal, ici identifié à 4x le nombre de *cuda cores* :
+
+.. code-block:: bash
+  
+  python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -r 3 -i 10000000000
 
 Comme résultat de cette implémentation CUDA, nous n'obtenons pas **268 Gitops**, mais seulement **6 Gitops** !
 
-La seule manière de retrouver une performance comparable en CUDA est de solliciter le second étage de parallélisme des GPU, les *Threads*. Avec la commande suivante, avec 1024 Threads, nous plafonnons à **198 Gitops** :<code>python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -f 1024 -l 1024 -r 3 -i 1000000000000</code>
+La seule manière de retrouver une performance comparable en CUDA est de solliciter le second étage de parallélisme des GPU, les *Threads*. Avec la commande suivante, avec 1024 Threads, nous plafonnons à **198 Gitops** :
+
+.. code-block:: bash
+  
+  python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -f 1024 -l 1024 -r 3 -i 1000000000000
 
 En relançant le calcul précédent, nous parvenons à **271 Gitops** soit plus que l'implémentation OpenCL.
 
@@ -2803,7 +2819,7 @@ Par défaut, une invocation sans option offre la sortie suivante :
 Les éléments de sortie sont les statistiques de chaque itération, exprimées en **squertz**, contraction de **square** (pour "carré") avec **Hertz**. En effet, le nombre de calculs élémentaires évolue suivant une loi en **N(N-1)** (chaque particule parmi **N** intéragit avec les **N-1** autres particules).
 
 Analyse du programme
-""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~
 
 Lors de l'initialisation du "système N-Corps", plusieurs opérations sont effectuées : 
 
@@ -2815,7 +2831,7 @@ Lors de l'initialisation du "système N-Corps", plusieurs opérations sont effec
 
 .. container:: note note-warning
 
-  **Exercice #12.1 : étude du source de ``NBody.py``**
+  **Exercice #12.1 : étude du source de `NBody.py`**
 
   * Editez le programme avec gedit
   * Identifiez le bloc de noyaux OpenCL : lignes
@@ -2853,7 +2869,7 @@ Seule une représentation en log permet de ne pas trop écraser les performances
 
 .. container:: note note-warning
 
-  **Exercice #12.2 : lancement de ``NBody.py`` pour 32768 particules**
+  **Exercice #12.2 : lancement de `NBody.py` pour 32768 particules**
 
   * Exécutez le programme pour tous les périphériques détectés
   * Ajoutez l'option pour un calcul en 64 bits et réexécutez
@@ -2888,7 +2904,7 @@ Si nous changeons de manière insignifiante le nombre de particules (de 8192 à 
 
 .. container:: note note-warning
   
-  **Exercice #12.3 : lancement de ``NBody.py`` en mode ``-g``**
+  **Exercice #12.3 : lancement de `NBody.py` en mode `-g`**
 
   * Exécutez le programme pour la meilleure implémentation sur CPU sur 8192 particules
   * Appuyez sur ``s`` pour passer des positions aux vitesses

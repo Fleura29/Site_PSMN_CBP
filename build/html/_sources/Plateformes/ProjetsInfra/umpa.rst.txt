@@ -1,16 +1,16 @@
-.. _umpa:
+.. _umpaProj:
 
 * :ref:`Projets d'infrastructure <projinfra>`
 
 Evolution de l'infrastructure de l'UMPA
 =======================================
  
- .. image:: ../../_static/img_projets/umpa.gif
-    :class: img-float pe-2
-    :width: 90px
-    :alt: Image umpa 
+.. container:: d-flex
 
-Maîtrise d'oeuvre : Emmanuel Quemener, CBP, ENS-Lyon
+    .. image:: ../../_static/img_projets/umpa.gif
+        :alt: Image umpa 
+
+    Maîtrise d'oeuvre : Emmanuel Quemener, CBP, ENS-Lyon
 
 Projet
 ------

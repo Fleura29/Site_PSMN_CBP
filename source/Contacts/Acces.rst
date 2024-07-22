@@ -21,11 +21,9 @@ Accès
 
 Plan d'accès: 
 
-.. container:: text-center
-
-    .. image:: ../_static/map.png
-        :class: img-fluid
-        :alt: Plan d'accès
+.. image:: ../_static/map.png
+    :class: img-fluid center
+    :alt: Plan d'accès
 
 Pour se rendre à l'ENS-Lyon
 ---------------------------

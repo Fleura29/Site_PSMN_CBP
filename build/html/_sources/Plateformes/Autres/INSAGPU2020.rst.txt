@@ -313,11 +313,14 @@ La notion d'unité de traitement (*compute unit*) pour les CPU n'est pas la mêm
 Ces unités de traitement disposent (autant pour les GPU que les CPU) d'unités arithmétiques et logiques (*Arithmetic and Login Unit*) lesquelles sont *vraiment* en charge du traitement des opérations. 
 
 Ainsi, le nombre d'ALU dans chaque *Compute Unit* varie de 64 à 192 selon les générations de GPU. Ainsi, pour le GPU ci-dessus GTX 1080 Ti, le nombre de *Compute Unit* mentionné est 28, et le nombre d'ALU (appelé également *cuda core* par Nvidia) est de 3584 soit 28*128. Le schéma du constructeur du circuit GP102 suivant est trompeur : en fait, il dispose de 30 unités SM, mais sur un GP102, seuls 28 sont activés.
-{{ :formation:gp102-block-diagram.jpg?direct&400 |GP102}}
+
+.. image:: ../../_static/Plateformes/gp102-block-diagram.jpg
+    :class: img-fluid center mb-3
+    :alt: GP102
 
 .. container:: note note-warning
 
-    **Exercice #7 : récupérez les informations à l'aide de deux commandes précédentes utilisant 'clinfo' **
+    **Exercice #7 : récupérez les informations à l'aide de deux commandes précédentes utilisant 'clinfo'**
 
     * Comparez les informations entre les implémentations CPU. Pourquoi ces différences ?
     * Comparez le nombre d'unités de traitement des CPU avec celles du Web : `Ark d'Intel <https://ark.intel.com/fr>`_
@@ -708,19 +711,19 @@ Nous pouvons également constater que certains périphériques ne "passent" pas 
 
 Voici un synoptique des performances pour les différentes implémentations et les différents GPU en simple précision. Les performances ont été placées en log. Les GPU présentent des performances incroyablement supérieures au processeur (autour d'un facteur 20 pour la GTX 1080 Ti face à la meilleure des implémentations pour CPU).
 
-.. image:: ../../_static/Plateformes/xgemm_sp.jpg
+.. image:: ../../_static/Plateformes/xgemm_sp.png
     :class: img-fluid center
     :alt: Diagramme xgemm_sp
 
 Lors du passage en double précision, les GPU se rapprochent des CPU en performance. 
 
-.. image:: ../../_static/Plateformes/xgemm_dp.jpg
+.. image:: ../../_static/Plateformes/xgemm_dp.png
     :class: img-fluid center
     :alt: Diagramme xgemm_dp
 
 Le ratio entre performances en simple sur double précision illustre la grosse différence entre CPU et GPU.
 
-.. image:: ../../_static/Plateformes/xgemm_ratio_spdp.jpg
+.. image:: ../../_static/Plateformes/xgemm_ratio_spdp.png
     :class: img-fluid center
     :alt: Diagramme xgemm_ratio_spdp
 
@@ -740,7 +743,7 @@ Le ratio entre performances en simple sur double précision illustre la grosse d
 
 Il est aussi intéressant de constater que la performance dépend non seulement de l'implémentation, du périphérique mais aussi de sa sollicitation. Voici la performance pour l'implémentation CPU avec OpenBLAS et les implémentations cuBLAS et *Thunking* sur la GTX 1080 Ti.
 
-.. image:: ../../_static/Plateformes/xgemm_sp_size.jpg
+.. image:: ../../_static/Plateformes/xgemm_sp_size.png
     :class: img-fluid center
     :alt: Diagramme xgemm_sp_size
 
@@ -929,7 +932,7 @@ Par exemple, sur les périphériques ci-dessus :
 |  Intel        |  3.90   |  256424327 |  785423825|
 +---------------+---------+------------+-----------+
 
-.. image:: ../../_static/Plateformes/opencluster2_qpu1.jpg
+.. image:: ../../_static/Plateformes/opencluster2_qpu1.png
     :class: img-fluid center
     :alt: Diagramme opencluster2_qpu1
 
@@ -962,7 +965,7 @@ Nous pouvons maintenant explorer la réponse des périphériques, notamment pour
 |  Intel        |  1.25   |  7973063801 |  7853958630|
 +---------------+---------+-------------+------------+
 
-.. image:: ../../_static/Plateformes/opencluster2_qpu1024.jpg
+.. image:: ../../_static/Plateformes/opencluster2_qpu1024.png
     :class: img-fluid center
     :alt: Diagramme opencluster2_qpu1024
 
@@ -989,7 +992,7 @@ Dans notre exemple, la GTX 1080 Ti dispose de 3584 *cuda cores*. La Quadro K420 
 |  Quadro K420  |  290.03 |  3447937882  |  785398065372|
 +---------------+---------+--------------+--------------+
 
-.. image:: ../../_static/Plateformes/opencluster2_epu.jpg
+.. image:: ../../_static/Plateformes/opencluster2_epu.png
     :class: img-fluid center
     :alt: Diagramme opencluster2_epu
 
@@ -1023,7 +1026,7 @@ Pour les mêmes périphériques mais en passant en double précision, nous avons
 |  Intel        |  16.24    |  6156907937 |  78539995659|
 +---------------+-----------+-------------+-------------+
 
-.. image:: ../../_static/Plateformes/piopencl_dp.jpg
+.. image:: ../../_static/Plateformes/piopencl_dp.png
     :class: img-fluid center
     :alt: Diagramme piopencl_dp
 
@@ -1175,7 +1178,7 @@ Nous pouvons ensuite exploiter l'outil simple ``gnuplot`` pour afficher nos rés
 
 Il existe un bouton d'export du graphique en image au format PNG ou SVG. Nous obtenons le suivant :
 
-.. image:: ../../_static/Plateformes/amd_opencluster2_insa.jpg
+.. image:: ../../_static/Plateformes/amd_opencluster2_insa.png
     :class: img-fluid center
     :alt: Diagramme amd_opencluster2_insa
 
@@ -1197,7 +1200,7 @@ Nous pouvons également "explorer" la scalabilité des GPU forts de notre expér
 
 Nous obtenons pour notre GTX 1080 Ti les résultats suivants :
 
-.. image:: ../../_static/Plateformes/gtx1080ti_opencluster2_insa.jpg
+.. image:: ../../_static/Plateformes/gtx1080ti_opencluster2_insa.png
     :class: img-fluid center
     :alt: Diagramme gtx1080ti_opencluster2_insa
 
@@ -1238,7 +1241,7 @@ En lançant cette exploration suivante, nous obtenons :
 
     python3 PiXPU.py -d 2 -b $((3584*4-16)) -e $((3584*4+16)) -r 3 -i 100000000000
 
-.. image:: ../../_static/Plateformes/gtx1080ti_aroundepu_opencluster2_insa.jpg
+.. image:: ../../_static/Plateformes/gtx1080ti_aroundepu_opencluster2_insa.png
     :class: img-fluid center
     :alt: Diagramme gtx1080ti_aroundepu_opencluster2_insa
 
@@ -1358,7 +1361,7 @@ Par défaut, une invocation sans option offre la sortie suivante :
 Les éléments de sortie sont les statistiques de chaque itération, exprimées en **squertz**, contraction de **square** (pour "carré") avec **Hertz**. En effet, le nombre de calculs élémentaires évolue suivant une loi en **N(N-1)** (chaque particule parmi **N** intéragit avec les **N-1** autres particules).
 
 Analyse du programme
-""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~
 
 Lors de l'initialisation du "système N-Corps", plusieurs opérations sont effectuées : 
 
@@ -1394,13 +1397,13 @@ Pour un lancement sur 32768 particules et les différents périphériques (3 CPU
 |  Intel        |  4728894103  |  1444506859 |
 +---------------+--------------+-------------+
 
-.. image:: ../../_static/Plateformes/nbody_opencluster2.jpg
+.. image:: ../../_static/Plateformes/nbody_opencluster2.png
     :class: img-fluid center
     :alt: Diagramme nbody_opencluster2
 
 La figure ci-dessus illustre l'écrasante performance de la GTX 1080 Ti en comparaison de toutes les autres implémentations : plus d'un facteur 22 en simple précision et presque un facteur 2 en double précision pour la meilleure des implémentations CPU.
 
-.. image:: ../../_static/Plateformes/nbody_log_opencluster2.jpg
+.. image:: ../../_static/Plateformes/nbody_log_opencluster2.png
     :class: img-fluid center
     :alt: Diagramme nbody_log_opencluster2
 
