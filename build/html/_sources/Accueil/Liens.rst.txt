@@ -6,7 +6,7 @@ Liens
    <br>
 
 Principaux partenaires
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 * `Fédération Lyonnaise de Modélisation et Sciences Numériques (FLMSN) <http://www.flchp.univ-lyon1.fr>`_
 * `Pôle Scientifique de Modélisation Numérique (PSMN) <http://www.ens-lyon.fr/PSMN/doku.php>`_
@@ -20,7 +20,7 @@ Principaux partenaires
 * `LyonCalcul <http://lyoncalcul.univ-lyon1.fr/spip.php>`_
 
 Centres de calcul
-~~~~~~~~~~~~~~~~~
+-----------------
 
 * `Pôle de Compétence en Calcul Haute Performance Dédié (PCCHPD) <http://www.p2chpd.univ-lyon1.fr/>`_
 * `Pôle de Modélisation et de Calcul en Sciences de l'Ingénieur et de l'Information (PMCSII) <http://www.ec-lyon.fr/47342913/0/fiche___pagelibre/&RH=>`_
@@ -30,7 +30,7 @@ Centres de calcul
 * `PRACE (Partnership for Advanced Computing in Europe) <http://www.prace-ri.eu/?lang=en>`_
 
 Laboratoires
-~~~~~~~~~~~~
+------------
 
 .. image:: ../_static/Liens.jpg
     :class: img-float pe-2
@@ -64,7 +64,7 @@ La région Rhône-Alpes est le 2e pôle français de R&D. L'aglomération lyonna
 * `Le groupe Calcul <http://calcul.math.cnrs.fr/>`_
 
 Écoles doctorales
-~~~~~~~~~~~~~~~~~
+-----------------
 
 * `École doctorale Informatique et Mathématiques (InfoMaths) <http://math.univ-lyon1.fr/~kellendonk/MathIf/>`_
 * `École doctorale Physique et Astrophysique (PHAST) <http://phast.univ-lyon1.fr/>`_

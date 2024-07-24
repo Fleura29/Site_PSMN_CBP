@@ -12,7 +12,7 @@ Sujet: Segmentation d'images biologiques 3D en utilisant du calcul parallèle
 
 .. image:: ../../_static/equipe/eqltlanguages.png
     :height: 70px
-    :class: img-fluid img-float 
+    :class: img-float 
     :alt: Image drapeaux français et anglais
 
 Stagiaire H/F - 1 mois |br| 

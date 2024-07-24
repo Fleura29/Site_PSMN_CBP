@@ -3,7 +3,7 @@
 SIDUS : "avec SIDUS, n'installe plus, démarre seulement tes machines !"
 =======================================================================
 
-.. image:: ../../../_static/sidus-800.png
+.. image:: ../../../_static/Publications/sidus-800.png
     :class: img-max-width center
     :alt: Logo Sidus
 

@@ -615,13 +615,13 @@ net.ipv4.conf.all.proxy_arp<span class="w"> </span><span class="o">=</span><span
 <h4>Quels champs Ldap ?<a class="headerlink" href="#quels-champs-ldap" title="Lien vers cette rubrique">¶</a></h4>
 <p>L’examen des attributs d’un Ldap standard présente 2 possibilités :</p>
 <ul class="simple">
-<li><p>“”dialupAccess”” semble le plus approprié. Il est placé à “”TRUE”” pour un utilisateur disposant d’un accès ou “”FALSE”” dans le cas contraire.</p></li>
-<li><p>“”radiusFramedProtocol”” peut aussi être utilisé. Il est placé à “”PPP”” pour un ayant droit, et n’existe pas dans le cas contraire, pour ceux disposant d’un annuaire Radius configuré pour un accès PPP.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dialupAccess</span></code> semble le plus approprié. Il est placé à <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> pour un utilisateur disposant d’un accès ou <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> dans le cas contraire.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">radiusFramedProtocol</span></code> peut aussi être utilisé. Il est placé à <code class="docutils literal notranslate"><span class="pre">PPP</span></code> pour un ayant droit, et n’existe pas dans le cas contraire, pour ceux disposant d’un annuaire Radius configuré pour un accès PPP.</p></li>
 </ul>
 </section>
 <section id="comment-le-configurer">
 <h4>Comment le configurer ?<a class="headerlink" href="#comment-le-configurer" title="Lien vers cette rubrique">¶</a></h4>
-<p>Dans “”/etc/pam_ldap.conf””, il est seulement nécessaire de rajouter la ligne</p>
+<p>Dans <code class="docutils literal notranslate"><span class="pre">/etc/pam_ldap.conf</span></code>, il est seulement nécessaire de rajouter la ligne</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pam_filter<span class="w"> </span><span class="nv">radiusFramedProtocol</span><span class="o">=</span>PPP
 </pre></div>
 </div>
@@ -896,7 +896,7 @@ tar<span class="w"> </span>xvzf<span class="w"> </span>~/Downloads/OpenVPN-MacOS
       <div class="clearer"></div>
     </div>
 <div class="orange-border right"></div>
-  <footer class="container text-white bg-dark mt-5" style="text-align: center; width: 85%;">
+  <footer class="container text-white bg-dark mt-5">
     <p class="fs-11 mt-1">
     Centre Blaise Pascal et Pôle Scientifique de Modélisation Numérique, ENS de Lyon - 46, allée d'Italie - 69364 Lyon cedex 07 - France <br>
     Téléphone : +33 (0)4 72 72 86 37 - Email : cbp@ens-lyon.fr 

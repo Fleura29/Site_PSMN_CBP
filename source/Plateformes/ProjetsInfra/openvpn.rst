@@ -374,13 +374,13 @@ Quels champs Ldap ?
 
 L'examen des attributs d'un Ldap standard présente 2 possibilités :
 
-* ''dialupAccess'' semble le plus approprié. Il est placé à ''TRUE'' pour un utilisateur disposant d'un accès ou ''FALSE'' dans le cas contraire.
-* ''radiusFramedProtocol'' peut aussi être utilisé. Il est placé à ''PPP'' pour un ayant droit, et n'existe pas dans le cas contraire, pour ceux disposant d'un annuaire Radius configuré pour un accès PPP.
+* ``dialupAccess`` semble le plus approprié. Il est placé à ``TRUE`` pour un utilisateur disposant d'un accès ou ``FALSE`` dans le cas contraire.
+* ``radiusFramedProtocol`` peut aussi être utilisé. Il est placé à ``PPP`` pour un ayant droit, et n'existe pas dans le cas contraire, pour ceux disposant d'un annuaire Radius configuré pour un accès PPP.
 
 Comment le configurer ?
 """""""""""""""""""""""
 
-Dans ''/etc/pam_ldap.conf'', il est seulement nécessaire de rajouter la ligne 
+Dans ``/etc/pam_ldap.conf``, il est seulement nécessaire de rajouter la ligne 
 
 .. code-block:: bash
     

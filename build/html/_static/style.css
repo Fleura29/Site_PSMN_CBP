@@ -30,7 +30,7 @@ body{
 
 @media (min-width: 1700px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1520px;
+        max-width: 1620px;
     }
 }
 
@@ -446,4 +446,6 @@ ol{
 
 footer{
     border: 1px solid #FFF;
+    text-align: center; 
+    width: 85%;
 }

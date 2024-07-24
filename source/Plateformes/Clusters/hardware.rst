@@ -7,9 +7,9 @@ Description du matériel disponible dans les différents clusters du PSMN.
 
 .. container:: note note-important
 
-`New Documentation (Debian 11 / Slurm) <http://www.ens-lyon.fr/PSMN/Documentation/>`_
+  `New Documentation (Debian 11 / Slurm) <http://www.ens-lyon.fr/PSMN/Documentation/>`_
 
-See also our :ref:`Fil des news <news>` for up-to-date informations
+  See also our :ref:`Fil des news <news>` for up-to-date informations
 
 Tous les clusters utilisent le même OS, Debian 11 ainsi que le gestionnaire de job slurm.
 
@@ -33,7 +33,7 @@ Groupe s92
 Cluster Lake
 ------------
 
-Les machines de ce cluster partagent le même arbre Infiniband (pour OpenMPI), ainsi qu'un **scratch** commun (**''/scratch/Lake/''**)
+Les machines de ce cluster partagent le même arbre Infiniband (pour OpenMPI), ainsi qu'un **scratch** commun (**'/scratch/Lake/'**)
 
 * **13 472 coeurs au total**
 
@@ -113,7 +113,7 @@ r740bigmem
 Cluster E5
 ----------
 
-Les machines de ce cluster partagent le même arbre Infiniband (pour OpenMPI), ainsi qu'un **scratch** commun (**''/scratch/E5N/''**)
+Les machines de ce cluster partagent le même arbre Infiniband (pour OpenMPI), ainsi qu'un **scratch** commun (**'/scratch/E5N/'**)
 
 * **1664 coeurs au total**
 
@@ -155,11 +155,11 @@ Groupe c8220
 
 * 2 processeurs Intel E5-2670 **Sandy Bridge** octa-core 2,60 Ghz (16 cores)
 * **256 Go** de Mémoire (soit 16 GiB/coeur), ou **128 Go** (4 noeuds), ou **64 Go** (4 noeuds)
-* **/scratch local de 2 TiB (''/scratch/ssd/'')** (certains noeuds seulement)
+* **/scratch local de 2 TiB ('/scratch/ssd/')** (certains noeuds seulement)
 * interconnexion Infiniband FDR (56 Gb/s)
 
 Cloud\@PSMN (IFB)
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 Voir `meso-psmn-cirrus <https://biosphere.france-bioinformatique.fr/cloud/system_status/14/>`_
 

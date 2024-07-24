@@ -61,7 +61,7 @@ Partie émergée de toutes les `ressources <http://www.cbp.ens-lyon.fr/python/fo
   - L'usage de l'espace */local*, sur les gros volumes, tu préfères !
   - Sur l'espace *projects*, le travail en groupe, tu développes !
   - Les données temporaires, régulièrement, tu nettoies !
-  - De manière raisonnée l'espace utilisateurs ''$HOME'', tu exploites !
+  - De manière raisonnée l'espace utilisateurs ``$HOME``, tu exploites !
   - Les dysfonctionnements, au BOFH*, tu remontes !
 
   * RSSI : *Responsable en Securité des Systèmes d'Information*
