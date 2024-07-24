@@ -357,42 +357,42 @@
 <ol class="arabic">
 <li><p>Création du dossier de tests à la date du jour :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>/local/<span class="nv">$USER</span>/tests-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d&quot;</span><span class="k">)</span>&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>/local/<span class="nv">$USER</span>/tests-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d&quot;</span><span class="k">)</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Placement dans le dossier créé :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/local/<span class="nv">$USER</span>/tests-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d&quot;</span><span class="k">)</span>&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/local/<span class="nv">$USER</span>/tests-<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d&quot;</span><span class="k">)</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Récupération des entrées Gromacs pour le test :</p>
 <blockquote>
-<div><div class="highlight-bas notranslate"><div class="highlight"><pre><span></span>hwget ftp://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>hwget<span class="w"> </span>ftp://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Expansion de l’archive récupérée :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar<span class="w"> </span>xzf<span class="w"> </span>water_GMX50_bare.tar.gz&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar<span class="w"> </span>xzf<span class="w"> </span>water_GMX50_bare.tar.gz
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Passage dans le dossier de paramètres :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>water-cut1.0_GMX50_bare/1536&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>water-cut1.0_GMX50_bare/1536
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Paramétrage de l’environnement :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/GMXRC&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/GMXRC
 </pre></div>
 </div>
 </div></blockquote>
@@ -402,14 +402,14 @@
 <div><ol class="arabic">
 <li><p>Initialisation de GROMACS :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">$GMXINSTALL</span>/bin/gmx-mpi<span class="w"> </span>grompp<span class="w"> </span>-f<span class="w"> </span>pme.mdp&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">$GMXINSTALL</span>/bin/gmx-mpi<span class="w"> </span>grompp<span class="w"> </span>-f<span class="w"> </span>pme.mdp
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Lancement du calcul sur GPU :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/usr/bin/time<span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>mdrun<span class="w"> </span>-resethway<span class="w"> </span>-noconfout<span class="w"> </span>-nsteps<span class="w"> </span><span class="m">4000</span><span class="w"> </span>-v<span class="w"> </span>-gpu_id<span class="w"> </span><span class="m">0</span><span class="w"> </span>&gt;<span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="s1">&#39;_&#39;</span><span class="k">)</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span>.out<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/usr/bin/time<span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>mdrun<span class="w"> </span>-resethway<span class="w"> </span>-noconfout<span class="w"> </span>-nsteps<span class="w"> </span><span class="m">4000</span><span class="w"> </span>-v<span class="w"> </span>-gpu_id<span class="w"> </span><span class="m">0</span><span class="w"> </span>&gt;<span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="s1">&#39;_&#39;</span><span class="k">)</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span>.out<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -422,21 +422,21 @@
 <div><ol class="arabic">
 <li><p>Effacement des fichiers créés par la simulation sur GPU :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>.<span class="w"> </span>-mtime<span class="w"> </span>-1<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="s2">&quot;_&quot;</span><span class="k">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>rm<span class="w"> </span><span class="s1">&#39;{}&#39;</span>&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>.<span class="w"> </span>-mtime<span class="w"> </span>-1<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="s2">&quot;_&quot;</span><span class="k">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span>rm<span class="w"> </span><span class="s1">&#39;{}&#39;</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Initialisation de GROMACS :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>grompp<span class="w"> </span>-f<span class="w"> </span>pme.mdp&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>grompp<span class="w"> </span>-f<span class="w"> </span>pme.mdp
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>Lancement du calcul sur GPU :</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/usr/bin/time<span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>mdrun<span class="w"> </span>-resethway<span class="w"> </span>-noconfout<span class="w"> </span>-nsteps<span class="w"> </span><span class="m">4000</span><span class="w"> </span>-v<span class="w"> </span>-nb<span class="w"> </span>cpu<span class="w"> </span>&gt;<span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="s1">&#39;_&#39;</span><span class="k">)</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span>.out<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>&lt;/code&gt;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/usr/bin/time<span class="w"> </span><span class="nv">$GMXINSTALL</span>/bin/gmx<span class="w"> </span>mdrun<span class="w"> </span>-resethway<span class="w"> </span>-noconfout<span class="w"> </span>-nsteps<span class="w"> </span><span class="m">4000</span><span class="w"> </span>-v<span class="w"> </span>-nb<span class="w"> </span>cpu<span class="w"> </span>&gt;<span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="s1">&#39;_&#39;</span><span class="k">)</span>_<span class="k">$(</span>date<span class="w"> </span><span class="s2">&quot;+%Y%m%d-%H%M&quot;</span><span class="k">)</span>.out<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </pre></div>
 </div>
 </div></blockquote>

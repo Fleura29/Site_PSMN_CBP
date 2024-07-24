@@ -115,37 +115,37 @@ Exécution de l'exemple exploité par Nvidia dans l'environnement du CBP
 
     .. code-block:: bash
         
-        mkdir -p /local/$USER/tests-$(date "+%Y%m%d")</code>
+        mkdir -p /local/$USER/tests-$(date "+%Y%m%d")
 
 #. Placement dans le dossier créé :   
 
     .. code-block:: bash
         
-        cd /local/$USER/tests-$(date "+%Y%m%d")</code>
+        cd /local/$USER/tests-$(date "+%Y%m%d")
 
 #. Récupération des entrées Gromacs pour le test :  
 
-    .. code-block:: bas
+    .. code-block:: bash
         
-        hwget ftp://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz</code>
+        hwget ftp://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz
 
 #. Expansion de l'archive récupérée :   
 
     .. code-block:: bash
         
-        tar xzf water_GMX50_bare.tar.gz</code>
+        tar xzf water_GMX50_bare.tar.gz
 
 #. Passage dans le dossier de paramètres :   
 
     .. code-block:: bash
         
-        cd water-cut1.0_GMX50_bare/1536</code>
+        cd water-cut1.0_GMX50_bare/1536
 
 #. Paramétrage de l'environnement :   
 
     .. code-block:: bash
         
-        source $GMXINSTALL/bin/GMXRC</code>
+        source $GMXINSTALL/bin/GMXRC
 
 #. Lancement de l'exemple sur GPU :
 
@@ -153,13 +153,13 @@ Exécution de l'exemple exploité par Nvidia dans l'environnement du CBP
 
         .. code-block:: bash
         
-            $GMXINSTALL/bin/gmx-mpi grompp -f pme.mdp</code>
+            $GMXINSTALL/bin/gmx-mpi grompp -f pme.mdp
     
     #. Lancement du calcul sur GPU :   
 
         .. code-block:: bash
         
-            /usr/bin/time $GMXINSTALL/bin/gmx mdrun -resethway -noconfout -nsteps 4000 -v -gpu_id 0 >$(echo $PWD | tr '/' '_')_$(date "+%Y%m%d-%H%M").out 2>&1</code>
+            /usr/bin/time $GMXINSTALL/bin/gmx mdrun -resethway -noconfout -nsteps 4000 -v -gpu_id 0 >$(echo $PWD | tr '/' '_')_$(date "+%Y%m%d-%H%M").out 2>&1
 
 #. Lancement du code sur CPU :
 
@@ -167,18 +167,18 @@ Exécution de l'exemple exploité par Nvidia dans l'environnement du CBP
 
         .. code-block:: bash
             
-            find . -mtime -1 | grep -v $(echo $PWD | tr "/" "_") | grep '/' | xargs -I '{}' rm '{}'</code>
+            find . -mtime -1 | grep -v $(echo $PWD | tr "/" "_") | grep '/' | xargs -I '{}' rm '{}'
     
     #. Initialisation de GROMACS :   
 
         .. code-block:: bash
             
-            $GMXINSTALL/bin/gmx grompp -f pme.mdp</code>
+            $GMXINSTALL/bin/gmx grompp -f pme.mdp
     
     #. Lancement du calcul sur GPU :   
 
         .. code-block:: bash
         
-            /usr/bin/time $GMXINSTALL/bin/gmx mdrun -resethway -noconfout -nsteps 4000 -v -nb cpu >$(echo $PWD | tr '/' '_')_$(date "+%Y%m%d-%H%M").out 2>&1</code>
+            /usr/bin/time $GMXINSTALL/bin/gmx mdrun -resethway -noconfout -nsteps 4000 -v -nb cpu >$(echo $PWD | tr '/' '_')_$(date "+%Y%m%d-%H%M").out 2>&1
 
 Les deux fichiers de sortie en ``*.out`` donnent les informations sur les exécutions et la métrologie associée. Un ``grep`` sur le mot ``Elapsed`` extrait les temps d'exécution sur GPU et CPU.

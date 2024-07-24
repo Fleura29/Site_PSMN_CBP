@@ -1159,7 +1159,11 @@ Examen du code source
 Exploitation du programme
 """""""""""""""""""""""""
 
-Ainsi, si nous voulons étudier la scalabilité du CPU en *Work items* de 1 à 16x le nombre de coeurs (ici 8 physiques) en exploitant l'implémentation AMD de OpenCL, nous appelons la commande : <code>python3 PiXPU.py -d 0 -b 1 -e $((8*16)) -r 10 -i 1000000000 </code>
+Ainsi, si nous voulons étudier la scalabilité du CPU en *Work items* de 1 à 16x le nombre de coeurs (ici 8 physiques) en exploitant l'implémentation AMD de OpenCL, nous appelons la commande : 
+
+.. code-block:: bash
+    
+    python3 PiXPU.py -d 0 -b 1 -e $((8*16)) -r 10 -i 1000000000 
 
 Dans notre cas, nous avons les deux fichiers suivants à exploiter : 
   
@@ -1215,11 +1219,20 @@ Nous pouvons constater que la scalabilité est très peu continue, encore moins 
     * Tracez les résultats avec GNUplot
     * Identifiez pour quel PR la performance est maximale
 
-Comme nous avons également la même implémentation en CUDA, lançons l'exploration avec CUDA pour le PR optimal, ici identifié à 4x le nombre de *cuda cores* :<code>python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -r 3 -i 10000000000</code>
+Comme nous avons également la même implémentation en CUDA, lançons l'exploration avec CUDA pour le PR optimal, ici identifié à 4x le nombre de *cuda cores* :
+
+
+.. code-block:: bash
+    
+    python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -r 3 -i 10000000000
 
 Comme résultat de cette implémentation CUDA, nous n'obtenons pas **268 Gitops**, mais seulement **6 Gitops** !
 
-La seule manière de retrouver une performance comparable en CUDA est de solliciter le second étage de parallélisme des GPU, les *Threads*. Avec la commande suivante, avec 1024 Threads, nous plafonnons à **198 Gitops** :<code>python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -f 1024 -l 1024 -r 3 -i 1000000000000</code>
+La seule manière de retrouver une performance comparable en CUDA est de solliciter le second étage de parallélisme des GPU, les *Threads*. Avec la commande suivante, avec 1024 Threads, nous plafonnons à **198 Gitops** :
+
+.. code-block:: bash
+    
+    python3 PiXPU.py -g CUDA -d 0 -b $((3584*4)) -e $((3584*4)) -f 1024 -l 1024 -r 3 -i 1000000000000
 
 En relançant le calcul précédent, nous parvenons à **271 Gitops** soit plus que l'implémentation OpenCL.
 

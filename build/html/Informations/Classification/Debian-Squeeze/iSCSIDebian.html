@@ -284,114 +284,114 @@ C’est ce que nous allons voir</p>
 <li><p>le nom du LV à créer est MyLViSCSI <br> <br></p></li>
 <li><p><span class="underline">Création du volume LVM de 20G sur le VG Raid6</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>lvcreate -L 20G -n MyLViSCSI MyVG</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>lvcreate<span class="w"> </span>-L<span class="w"> </span>20G<span class="w"> </span>-n<span class="w"> </span>MyLViSCSI<span class="w"> </span>MyVG
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Formatage en Ext3</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>mkfs.ext3 -m 0 /dev/MyVG/MyLViSCSI</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkfs.ext3<span class="w"> </span>-m<span class="w"> </span><span class="m">0</span><span class="w"> </span>/dev/MyVG/MyLViSCSI
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Montage du volume sur le système hôte</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>mkdir /media/MyLViSCSI
-mount -o noatime /dev/MyVG/MyLViSCSI /media/MyLViSCSI</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/media/MyLViSCSI
+mount<span class="w"> </span>-o<span class="w"> </span>noatime<span class="w"> </span>/dev/MyVG/MyLViSCSI<span class="w"> </span>/media/MyLViSCSI
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Etablissement d’un label sur la partition</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>e2label /dev/MyVG/MyLViSCSI MyLViSCSI</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>e2label<span class="w"> </span>/dev/MyVG/MyLViSCSI<span class="w"> </span>MyLViSCSI
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Installation au besoin de debootstrap</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>apt-get install debootstrap</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt-get<span class="w"> </span>install<span class="w"> </span>debootstrap
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Installation du système de base Wheezy, architecture x86_64 ou i386</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p># pour une architecture x86_64
-debootstrap –arch amd64 wheezy /media/MyLViSCSI <a class="reference external" href="http://ftp.fr.debian.org/debian">http://ftp.fr.debian.org/debian</a>
-# pour une architecture i386
-debootstrap –arch i386 wheezy /media/MyLViSCSI <a class="reference external" href="http://ftp.fr.debian.org/debian">http://ftp.fr.debian.org/debian</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># pour une architecture x86_64</span>
+debootstrap<span class="w"> </span>--arch<span class="w"> </span>amd64<span class="w"> </span>wheezy<span class="w"> </span>/media/MyLViSCSI<span class="w"> </span>http://ftp.fr.debian.org/debian
+<span class="c1"># pour une architecture i386</span>
+debootstrap<span class="w"> </span>--arch<span class="w"> </span>i386<span class="w"> </span>wheezy<span class="w"> </span>/media/MyLViSCSI<span class="w"> </span>http://ftp.fr.debian.org/debian
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Passage dans l’environnement</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>chroot /media/MyLViSCSI</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chroot<span class="w"> </span>/media/MyLViSCSI
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Création d’une nouvelle liste de paquets</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>tee /etc/apt/sources.list &lt;&lt;EOF
-deb <a class="reference external" href="http://ftp.fr.debian.org/debian/">http://ftp.fr.debian.org/debian/</a> wheezy main contrib non-free
-deb-src <a class="reference external" href="http://ftp.fr.debian.org/debian/">http://ftp.fr.debian.org/debian/</a> sid main contrib non-free
-deb-src <a class="reference external" href="http://ftp.fr.debian.org/debian/">http://ftp.fr.debian.org/debian/</a> experimental main contrib non-free
-deb <a class="reference external" href="http://security.debian.org/">http://security.debian.org/</a> wheezy/updates main contrib non-free
-deb-src <a class="reference external" href="http://security.debian.org/">http://security.debian.org/</a> wheezy/updates main contrib non-free
-EOF</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tee<span class="w"> </span>/etc/apt/sources.list<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">deb http://ftp.fr.debian.org/debian/ wheezy main contrib non-free</span>
+<span class="s">deb-src http://ftp.fr.debian.org/debian/ sid main contrib non-free</span>
+<span class="s">deb-src http://ftp.fr.debian.org/debian/ experimental main contrib non-free</span>
+<span class="s">deb http://security.debian.org/ wheezy/updates main contrib non-free</span>
+<span class="s">deb-src http://security.debian.org/ wheezy/updates main contrib non-free</span>
+<span class="s">EOF</span>
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Mise à jour de la base des paquets :</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>apt-get update</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt-get<span class="w"> </span>update
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Montage du /proc pendant l’installation</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>mount -t proc none /proc</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mount<span class="w"> </span>-t<span class="w"> </span>proc<span class="w"> </span>none<span class="w"> </span>/proc
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Initialisation du mot de passe superutilisateur</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>echo « root:MyStrongPassword » | chpasswd</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;root:MyStrongPassword&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>chpasswd
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Installation de paquets nécessaires</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>apt-get -y install dhcp3-common openssh-server locales initramfs-tools dhcp3-client aufs-tools firmware-linux-nonfree firmware-linux firmware-bnx2 open-iscsi iftop htop iotop emacs mtr lsof tshark mbw memtest86 cpuburn bonnie dbench iozone3 console-setup less &amp;&amp; apt-get clean
-# Pour les architectures i686
-apt-get -y install linux-image-3.2.0-4-686-pae
-# Pour les architectures x86_64
-apt-get -y install linux-image-3.2.0-4-amd64</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt-get<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>dhcp3-common<span class="w"> </span>openssh-server<span class="w"> </span>locales<span class="w"> </span>initramfs-tools<span class="w"> </span>dhcp3-client<span class="w"> </span>aufs-tools<span class="w"> </span>firmware-linux-nonfree<span class="w"> </span>firmware-linux<span class="w"> </span>firmware-bnx2<span class="w"> </span>open-iscsi<span class="w"> </span>iftop<span class="w"> </span>htop<span class="w"> </span>iotop<span class="w"> </span>emacs<span class="w"> </span>mtr<span class="w"> </span>lsof<span class="w"> </span>tshark<span class="w"> </span>mbw<span class="w"> </span>memtest86<span class="w"> </span>cpuburn<span class="w"> </span>bonnie<span class="w"> </span>dbench<span class="w"> </span>iozone3<span class="w"> </span>console-setup<span class="w"> </span>less<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt-get<span class="w"> </span>clean
+<span class="c1"># Pour les architectures i686</span>
+apt-get<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>linux-image-3.2.0-4-686-pae
+<span class="c1"># Pour les architectures x86_64</span>
+apt-get<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>linux-image-3.2.0-4-amd64
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Purge des archives de paquets :</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>apt-get clean</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt-get<span class="w"> </span>clean
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Suppression du démarrage du démon iSCSI (en noyau 3.2, le script plante et empêche le démarrage)</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>insserv -r open-iscsi</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>insserv<span class="w"> </span>-r<span class="w"> </span>open-iscsi
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Paramétrage d’un boot iSCSI</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>touch /etc/iscsi/iscsi.initramfs
-update-initramfs -k all -u</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch<span class="w"> </span>/etc/iscsi/iscsi.initramfs
+update-initramfs<span class="w"> </span>-k<span class="w"> </span>all<span class="w"> </span>-u
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Vérification de la présence du support iSCSI “lsinitramfs /boot/initrd.img-* | grep « local-top/iscsi »” retourne :</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>scripts/local-top/iscsi
-scripts/local-top/iscsi</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scripts/local-top/iscsi
+scripts/local-top/iscsi
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Paramétrage de l’interface de démarrage iSCSI</span></p></li>
@@ -399,41 +399,41 @@ scripts/local-top/iscsi</p>
 <div class="note note-important docutils container">
 <p>En cas d’interfaces multiples, il est INDISPENSABLE de préciser l’interface de démarrage, sinon…</p>
 </div>
-<div class="border-dashed docutils container">
-<p>sed -i « s/DEVICE=/DEVICE=eth0/g » /etc/initramfs-tools/initramfs.conf</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;s/DEVICE\=/DEVICE\=eth0/g&quot;</span><span class="w"> </span>/etc/initramfs-tools/initramfs.conf
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Suppression du hostname pour le paramétrage automatique du HOST</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>rm /etc/hostname</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>/etc/hostname
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Définition de l’interface de loopback</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>tee /etc/network/interfaces &lt;&lt;EOF
-auto lo
-iface lo inet loopback
-EOF</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tee<span class="w"> </span>/etc/network/interfaces<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">auto lo</span>
+<span class="s">iface lo inet loopback</span>
+<span class="s">EOF</span>
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Démontage du /proc</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>umount /proc</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>umount<span class="w"> </span>/proc
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Sortie de l’environnement chrooté</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>exit</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Arrêt des services démarrés à l’installation</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>lsof | grep /media/MyLViSCSI | awk “{ print $2 }” | sort -u | xargs -I “{}” kill “{}”</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>lsof<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>/media/MyLViSCSI<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{ print $2 }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="s1">&#39;{}&#39;</span><span class="w"> </span><span class="nb">kill</span><span class="w"> </span><span class="s1">&#39;{}&#39;</span>
+</pre></div>
 </div>
 </section>
 <section id="configuration-du-demarrage-pxe">
@@ -443,31 +443,31 @@ EOF</p>
 <ul class="simple">
 <li><p><span class="underline">Copie des composants pour le PXE</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>cp /media/MyLViSCSI/boot/initrd.img-3.2.0-4-686-pae /root/initrd.img-3.2.0-4-686-pae-iSCSI
-cp /media/MyLViSCSI/boot/vmlinuz-3.2.0-4-686-pae /root/vmlinuz-3.2.0-4-686-pae-iSCSI
-cp /media/MyLViSCSI/boot/initrd.img-3.2.0-4-amd64 /root/initrd.img-3.2.0-4-amd64-iSCSI
-cp /media/MyLViSCSI/boot/vmlinuz-3.2.0-4-amd64 /root/vmlinuz-3.2.0-4-amd64-iSCSI</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span>/media/MyLViSCSI/boot/initrd.img-3.2.0-4-686-pae<span class="w"> </span>/root/initrd.img-3.2.0-4-686-pae-iSCSI
+cp<span class="w"> </span>/media/MyLViSCSI/boot/vmlinuz-3.2.0-4-686-pae<span class="w"> </span>/root/vmlinuz-3.2.0-4-686-pae-iSCSI
+cp<span class="w"> </span>/media/MyLViSCSI/boot/initrd.img-3.2.0-4-amd64<span class="w"> </span>/root/initrd.img-3.2.0-4-amd64-iSCSI
+cp<span class="w"> </span>/media/MyLViSCSI/boot/vmlinuz-3.2.0-4-amd64<span class="w"> </span>/root/vmlinuz-3.2.0-4-amd64-iSCSI
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Copie des clés autorisées</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>mkdir /media/MyLViSCSI/root/.ssh
-cp -a /root/.ssh/authorized_keys /media/MyLViSCSI/root/.ssh/</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/media/MyLViSCSI/root/.ssh
+cp<span class="w"> </span>-a<span class="w"> </span>/root/.ssh/authorized_keys<span class="w"> </span>/media/MyLViSCSI/root/.ssh/
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Démontage de la partition</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>umount /media/MyLViSCSI</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>umount<span class="w"> </span>/media/MyLViSCSI
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Copie des composants de démarrage sur le serveur PXE</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p># Le serveur TFTP/PXE est MyPXE:
-scp /root/<a href="#id1"><span class="problematic" id="id2">*</span></a>iSCSI PyPXE:/srv/tftp</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Le serveur TFTP/PXE est MyPXE:</span>
+scp<span class="w"> </span>/root/*iSCSI<span class="w"> </span>PyPXE:/srv/tftp
+</pre></div>
 </div>
 <ul>
 <li><p><span class="underline">Création d’un partage iSCSI nécessitant les paramètres</span></p>
@@ -482,31 +482,31 @@ scp /root/<a href="#id1"><span class="problematic" id="id2">*</span></a>iSCSI Py
 </li>
 <li><p><span class="underline">Paramétrage de la cible IET</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p># Renommage de l’ancien fichier de configuration
-cp /etc/iet/ietd.conf /etc/iet/ietd.conf-$(date +%Y%m%d)
-# Ajout de l’entree précedente
-tee -a /etc/iet/ietd.conf &lt;&lt;EOF
-Target iqn.2013-06.MySite.MyHost:MyLViSCSI
-IncomingUser inputname MyInputPwd
-Lun 0 Path=/dev/MyVG/MyLViSCSI,BlockSize=4096,Type=fileio
-EOF</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Renommage de l&#39;ancien fichier de configuration</span>
+cp<span class="w"> </span>/etc/iet/ietd.conf<span class="w"> </span>/etc/iet/ietd.conf-<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
+<span class="c1"># Ajout de l&#39;entree précedente</span>
+tee<span class="w"> </span>-a<span class="w"> </span>/etc/iet/ietd.conf<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">Target iqn.2013-06.MySite.MyHost:MyLViSCSI</span>
+<span class="s">IncomingUser inputname MyInputPwd</span>
+<span class="s">Lun 0 Path=/dev/MyVG/MyLViSCSI,BlockSize=4096,Type=fileio</span>
+<span class="s">EOF</span>
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Activation des partages</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>ietadm –op new –tid=100 –params Name=iqn.2013-06.MySite.MyHost:MyLViSCSI
-ietadm –op new –tid=100 –lun=0 –params Path=/dev/MyVG/MyLViSCSI,BlockSize=4096,Type=fileio
-ietadm –op new –tid=100 –lun=0 –user –params IncomingUser=inputname,Password=MyInputPwd</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ietadm<span class="w"> </span>--op<span class="w"> </span>new<span class="w"> </span>--tid<span class="o">=</span><span class="m">100</span><span class="w"> </span>--params<span class="w"> </span><span class="nv">Name</span><span class="o">=</span>iqn.2013-06.MySite.MyHost:MyLViSCSI
+ietadm<span class="w"> </span>--op<span class="w"> </span>new<span class="w"> </span>--tid<span class="o">=</span><span class="m">100</span><span class="w"> </span>--lun<span class="o">=</span><span class="m">0</span><span class="w"> </span>--params<span class="w"> </span><span class="nv">Path</span><span class="o">=</span>/dev/MyVG/MyLViSCSI,BlockSize<span class="o">=</span><span class="m">4096</span>,Type<span class="o">=</span>fileio
+ietadm<span class="w"> </span>--op<span class="w"> </span>new<span class="w"> </span>--tid<span class="o">=</span><span class="m">100</span><span class="w"> </span>--lun<span class="o">=</span><span class="m">0</span><span class="w"> </span>--user<span class="w"> </span>--params<span class="w"> </span><span class="nv">IncomingUser</span><span class="o">=</span>inputname,Password<span class="o">=</span>MyInputPwd
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Vérification des partages par la commande “cat /proc/net/iet/volume  | grep MyLViSCSI”</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>cat /proc/net/iet/volume  | grep MyLViSCSI
-tid:86 name:iqn.2013-03.MySite.MyHost:MyLViSCSI
-lun:0 state:0 iotype:fileio iomode:wt blocks:5242880 blocksize:4096 path:/dev/MyVG/MyLViSCSI</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>/proc/net/iet/volume<span class="w">  </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>MyLViSCSI
+tid:86<span class="w"> </span>name:iqn.2013-03.MySite.MyHost:MyLViSCSI
+lun:0<span class="w"> </span>state:0<span class="w"> </span>iotype:fileio<span class="w"> </span>iomode:wt<span class="w"> </span>blocks:5242880<span class="w"> </span>blocksize:4096<span class="w"> </span>path:/dev/MyVG/MyLViSCSI
+</pre></div>
 </div>
 </section>
 <section id="sur-le-serveur-tftp-de-boot-pxe">
@@ -514,8 +514,8 @@ lun:0 state:0 iotype:fileio iomode:wt blocks:5242880 blocksize:4096 path:/dev/My
 <ul class="simple">
 <li><p><span class="underline">Déplacement dans le dossier de configuration TFTP, anciennement “/srv/tftp”, maintenant</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>cd /srv/tftp/pxelinux.cfg</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/srv/tftp/pxelinux.cfg
+</pre></div>
 </div>
 <ul>
 <li><p><span class="underline">Déclaration de l’entrée TFTP pour notre entrée</span></p>
@@ -531,22 +531,24 @@ lun:0 state:0 iotype:fileio iomode:wt blocks:5242880 blocksize:4096 path:/dev/My
 </div></blockquote>
 </li>
 </ul>
-<div class="border-dashed docutils container">
-<p>tee iscsi &lt;&lt;EOF
-DEFAULT linux64</p>
-<p>LABEL linux64
-KERNEL vmlinuz-3.2.0-4-amd64-iSCSI
-APPEND console=tty1 initrd=initrd.img-3.2.0-4-amd64-iSCSI ip=dhcp rw ISCSI_TARGET_NAME=iqn.2013-06.MySite.MyHost:MyLViSCSI ISCSI_TARGET_IP=MyHost ISCSI_INITIATOR=iqn.2013-06.MySite.MyHost:default ISCSI_USERNAME=inputname ISCSI_TARGET_GROUP=1 ISCSI_PASSWORD=MyInputPwd root=LABEL=MyLViSCSI rootflags=data=journal</p>
-<p>LABEL linux32
-KERNEL vmlinuz-3.2.0-4-686-pae-iSCSI
-APPEND console=tty1 initrd=initrd.img-3.2.0-4-686-pae-iSCSI ip=dhcp rw ISCSI_TARGET_NAME=iqn.2013-06.MySite.MyHost:MyLViSCSI ISCSI_TARGET_IP=MyHost ISCSI_INITIATOR=iqn.2013-06.MySite.MyHost:default ISCSI_USERNAME=inputname ISCSI_TARGET_GROUP=1 ISCSI_PASSWORD=MyInputPwd root=LABEL=MyLViSCSI rootflags=data=journal
-EOF</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tee<span class="w"> </span>iscsi<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">DEFAULT linux64</span>
+
+<span class="s">LABEL linux64</span>
+<span class="s">KERNEL vmlinuz-3.2.0-4-amd64-iSCSI</span>
+<span class="s">APPEND console=tty1 initrd=initrd.img-3.2.0-4-amd64-iSCSI ip=dhcp rw ISCSI_TARGET_NAME=iqn.2013-06.MySite.MyHost:MyLViSCSI ISCSI_TARGET_IP=MyHost ISCSI_INITIATOR=iqn.2013-06.MySite.MyHost:default ISCSI_USERNAME=inputname ISCSI_TARGET_GROUP=1 ISCSI_PASSWORD=MyInputPwd root=LABEL=MyLViSCSI rootflags=data=journal</span>
+
+<span class="s">LABEL linux32</span>
+<span class="s">KERNEL vmlinuz-3.2.0-4-686-pae-iSCSI</span>
+<span class="s">APPEND console=tty1 initrd=initrd.img-3.2.0-4-686-pae-iSCSI ip=dhcp rw ISCSI_TARGET_NAME=iqn.2013-06.MySite.MyHost:MyLViSCSI ISCSI_TARGET_IP=MyHost ISCSI_INITIATOR=iqn.2013-06.MySite.MyHost:default ISCSI_USERNAME=inputname ISCSI_TARGET_GROUP=1 ISCSI_PASSWORD=MyInputPwd root=LABEL=MyLViSCSI rootflags=data=journal</span>
+<span class="s">EOF</span>
+</pre></div>
 </div>
 <ul class="simple">
 <li><p><span class="underline">Création des liens pour chaque machine spécifique. L’adresse MAC de la forme : « 00:AA:BB:CC:DD:EE » doit être écrite sous la forme 01-00-aa-bb-cc-dd-ee en MINUSCULE !</span></p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>ln -sf iscsi 01-00-aa-bb-cc-dd-ee</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln<span class="w"> </span>-sf<span class="w"> </span>iscsi<span class="w"> </span><span class="m">01</span>-00-aa-bb-cc-dd-ee
+</pre></div>
 </div>
 <p><a class="reference external" href="mailto:emmanuel&#46;quemener&#37;&#52;&#48;ens-lyon&#46;fr">Emmanuel Quemener</a> <em>2013/06/13 06:05</em></p>
 </section>

@@ -75,10 +75,11 @@ GPU are normally considered as Input/Output devices. As mainly peripherals insta
 To get the list of PCI devices, use ``lspci -nn`` command. Inside this huge list appear some **VGA** or **3D** devices. These are GPU or GPGPU devices.
 
 This is an output of ``lspci -nn | egrep '(VGA|3D)'`` command
-<code>
-06:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Fiji [Radeon R9 FURY / NANO Series] (rev ca)
-82:00.0 VGA compatible controller: NVIDIA Corporation Device 1b06 (rev a1)
-</code>
+
+.. code-block:: bash
+
+    06:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Fiji [Radeon R9 FURY / NANO Series] (rev ca)
+    82:00.0 VGA compatible controller: NVIDIA Corporation Device 1b06 (rev a1)
 
 Exercice #1: get the list of (GP)GPU devices
 """"""""""""""""""""""""""""""""""""""""""""
@@ -383,7 +384,7 @@ Exploration with dummie codes
 Pi Monte Carlo, a Compute Bound Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``PiXPU.py`` code is a implementation of PiMC Pi Dart Dash on GPU, on OpenCL and CUDA devices. It's useful to evaluate que compute power of *PU devices as, CPU, GPU (both Nvidia, AMD and Intel), and CPU through the 3 implementations. 
+The ``PiXPU.py`` code is a implementation of PiMC Pi Dart Dash on GPU, on OpenCL and CUDA devices. It's useful to evaluate que compute power of \*PU devices as, CPU, GPU (both Nvidia, AMD and Intel), and CPU through the 3 implementations.
 
 It's available on:
 

@@ -3,10 +3,6 @@
 Installation de Gaussian sous Debian Wheezy
 ===========================================
 
-.. |br| raw:: html
-
-   <br>
-
 .. container:: note note-important
 
     Modification le 5 février 2014 : compilation de la version G09 D01. 
@@ -26,63 +22,63 @@ Les notes qui vont suivre permettent pas à pas, moyennant des opérations assez
 
 Pour son utilisation, vous pouvez consulter le `"pied à l'étrier" <http://www.cbp.ens-lyon.fr/emmanuel.quemener/dokuwiki/doku.php?id=tools4test>`_ rédigé pour les applications scientifiques installées dans le cadre de la formation Atosim.
 
-#. Installation de quelques paquets Debian et leurs dépendances :
+\1. Installation de quelques paquets Debian et leurs dépendances :
 
-.. container:: border-dashed
+.. code-block:: bash
 
-    # Installation du compilateur, des libraries OpenMP, Atlas/BLAS, tcsh |br|
-    sudo apt-get install gfortran libgomp1 libatlas-base-dev tcsh patch |br|
-    # Cette commande est INDISPENSABLE, sinon le CSH par defaut fait planter la compilation |br|
+    # Installation du compilateur, des libraries OpenMP, Atlas/BLAS, tcsh 
+    sudo apt-get install gfortran libgomp1 libatlas-base-dev tcsh patch 
+    # Cette commande est INDISPENSABLE, sinon le CSH par defaut fait planter la compilation 
     sudo update-alternatives --set csh /bin/tcsh
 
-#. Configuration de l'environnement des sources à compiler :
+\2. Configuration de l'environnement des sources à compiler :
 
     * il est supposé que le CDROM des sources de Gaussian09 est monté sur /media/cdrom
     * le répertoire d'installation par défaut est /opt
     * les sources sont extraites du fichier TGZ
     * par défaut, il faut utiliser le CSH pour la compilation :
 
-.. container:: border-dashed
+.. code-block:: bash
 
-    tcsh |br|
-    setenv basedir "/media/cdrom/" |br|
-    setenv g09root "/opt" |br|
-    cd $g09root |br|
+    tcsh 
+    setenv basedir "/media/cdrom/" 
+    setenv g09root "/opt" 
+    cd $g09root 
     gunzip -c $basedir/tar/\*.tgz | tar xvf -
 
-#. Récupération du *patch* et son application pour compiler avec GFortran :
+\3. Récupération du *patch* et son application pour compiler avec GFortran :
 
-.. container:: border-dashed
+.. code-block:: bash
 
-    cd g09 |br|
-    # pour une distribution Debian Squeeze sous 64 bits :  |br|
+    cd g09 
+    # pour une distribution Debian Squeeze sous 64 bits :  
     wget http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/Gaussian/g09.wheezy64
 
-    # La ligne suivante s'applique a la version pour la Debian Squeeze 64 bits |br|
+    # La ligne suivante s'applique a la version pour la Debian Squeeze 64 bits 
     patch -p 1 -i ./g09.wheezy64
 
 * La sortie doit présenter les lignes suivantes :
 
-.. container:: border-dashed
+.. code-block:: bash
 
-    patching file bsd/i386.make |br|
-    patching file bsd/mdutil.c |br|
-    patching file bsd/mdutil.F |br|
-    patching file bsd/set-mflags |br|
+    patching file bsd/i386.make 
+    patching file bsd/mdutil.c 
+    patching file bsd/mdutil.F 
+    patching file bsd/set-mflags 
 
-#. Préparation de la compilation et lancement :
+\4. Préparation de la compilation et lancement :
 
-.. container:: border-dashed
+.. code-block:: bash
 
-    cd $g09root/g09 |br|
-    ./bsd/install |br|
-    source $g09root/g09/bsd/g09.login |br|
-    # Compilation |br|
+    cd $g09root/g09 
+    ./bsd/install 
+    source $g09root/g09/bsd/g09.login 
+    # Compilation 
     bsd/bldg09 >& $g09root/g09/build-`date "+%Y%m%d%H%M"`
 
-#. Positionnement des droits pour toute l'arborescence (ici, tous les utilisateurs du groupe users ont accès) : 
+\5. Positionnement des droits pour toute l'arborescence (ici, tous les utilisateurs du groupe users ont accès) : 
 
-.. container:: border-dashed
+.. code-block:: bash
     
     chown -R root.users .
 
@@ -93,27 +89,27 @@ Par défaut, le source de Gaussian comprend les résultats de tests sur architec
 
 Pour exécuter tous les tests, voici la commande 
 
-.. container:: border-dashed
+.. code-block:: bash
 
-    # A rajouter à la fin de son .bashrc |br|
-    export g09root=/opt |br|
-    export GAUSS_SCRDIR=/tmp |br|
+    # A rajouter à la fin de son .bashrc 
+    export g09root=/opt 
+    export GAUSS_SCRDIR=/tmp 
     . $g09root/g09/bsd/g09.profile
 
 Lancement de tous les tests :
 
-.. container:: border-dashed
+.. code-block:: bash
 
-    mkdir $HOME/Gaussian |br|
-    cp $g09root/g09/tests/com/test*[0-9][0-9].com $HOME/Gaussian |br|
-    cd $HOME/Gaussian |br|
-    i=0 |br|
-    while [ $i -le 1044 ] |br|
-    do |br|
-    if [ -f test$(printf "%04d" $i).com ]; then |br|
-    { /usr/bin/time g09 test$(printf "%04d" $i).com ; } 2> test$(printf "%04d" $i).time |br|
-    fi |br|
-    i=$(($i+1)) |br|
+    mkdir $HOME/Gaussian 
+    cp $g09root/g09/tests/com/test*[0-9][0-9].com $HOME/Gaussian 
+    cd $HOME/Gaussian 
+    i=0 
+    while [ $i -le 1044 ] 
+    do 
+    if [ -f test$(printf "%04d" $i).com ]; then 
+    { /usr/bin/time g09 test$(printf "%04d" $i).com ; } 2> test$(printf "%04d" $i).time 
+    fi 
+    i=$(($i+1)) 
     done
 
 Commandes annexes
@@ -121,6 +117,6 @@ Commandes annexes
 
 Pour établir les patchs à appliquer par rapport à l'archive de sources originelle, la commande suivante a été utilisée :
 
-.. container:: border-dashed
+.. code-block:: bash
     
     diff -crB g09 g09.work > g09.wheezy64

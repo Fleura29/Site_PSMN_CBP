@@ -166,7 +166,6 @@ La commande  fournit en sortie :
     x41z1.cluster.zone      lx26-amd64      8     -   31.5G       -     0.0       -
     ... <snip><snip>
     x41z9.cluster.zone      lx26-amd64      8  2.16   13.7G  286.5M     0.0     0.0
-    </code>
 
 "qhost <noeud>" pour un noeud unique
 """"""""""""""""""""""""""""""""""""
@@ -179,9 +178,8 @@ Par exemple, la commande `qhost x41z7.cluster.zone` pour examiner les ressources
     -------------------------------------------------------------------------------
     global                  -               -     -       -       -       -       -
     x41z7.cluster.zone      lx26-amd64      8  0.05   31.5G  342.7M     0.0     0.0
-    </code>
 
-    Donc, le noeud x41z7 offre 8 CPU et une mémoire vive de 31.5 Go.
+Donc, le noeud x41z7 offre 8 CPU et une mémoire vive de 31.5 Go.
 
 qconf pour lister toutes les grappes
 """"""""""""""""""""""""""""""""""""

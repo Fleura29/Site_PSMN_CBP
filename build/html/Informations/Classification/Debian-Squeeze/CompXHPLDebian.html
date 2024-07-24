@@ -238,8 +238,8 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique">¶</a></h2>
 <p>Le logiciel <a class="reference external" href="http://www.netlib.org/benchmark/hpl/">hpl</a> est une implémentation du fameux Linpack utilisé pour estimer la puissance des machines, notamment pour le <a class="reference external" href="www.top500.org">classement Top500</a> des machines les plus puissantes de la planète.</p>
 <p>La dernière version, la <a class="reference external" href="http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz">2.0</a> date du 10 septembre 2008 :</p>
-<div class="border-dashed docutils container">
-<p>wget <a class="reference external" href="http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz">http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz
+</pre></div>
 </div>
 </section>
 <section id="installation-des-prerequis">
@@ -250,13 +250,13 @@
 <li><p>ensemble Atlas pour les librairies d’algèbre linéaire</p></li>
 <li><p>ensemble OpenMPI pour la distribution des calculs sur les noeuds</p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>sudo apt-get install gcc gfortran <br>
-sudo apt-get install openmpi-bin openmpi-common libopenmpi-dev <br>
-# Sur une architecture i386 <br>
-sudo apt-get install libatlas-test libatlas3gf-base libatlas-headers libatlas-base-dev libatlas-sse2-dev libatlas3gf-sse2 <br>
-# Sur une architecture amd64 <br>
-sudo apt-get install libatlas-test libatlas3gf-base libatlas-headers libatlas-base-dev</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>gcc<span class="w"> </span>gfortran
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>openmpi-bin<span class="w"> </span>openmpi-common<span class="w"> </span>libopenmpi-dev
+<span class="c1"># Sur une architecture i386</span>
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>libatlas-test<span class="w"> </span>libatlas3gf-base<span class="w"> </span>libatlas-headers<span class="w"> </span>libatlas-base-dev<span class="w"> </span>libatlas-sse2-dev<span class="w"> </span>libatlas3gf-sse2
+<span class="c1"># Sur une architecture amd64</span>
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>libatlas-test<span class="w"> </span>libatlas3gf-base<span class="w"> </span>libatlas-headers<span class="w"> </span>libatlas-base-dev
+</pre></div>
 </div>
 </section>
 <section id="compilation">
@@ -264,12 +264,12 @@ sudo apt-get install libatlas-test libatlas3gf-base libatlas-headers libatlas-ba
 <ul class="simple">
 <li><p>Préparation de l’archive : (plutôt à la racine de l’utilisateur)</p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>cd $HOME <br>
-wget <a class="reference external" href="http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz">http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz</a> <br>
-tar xzf hpl-2.0.tar.gz <br>
-ln -s hpl-2.0 hpl <br>
-cd hpl</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+wget<span class="w"> </span>http://www.netlib.org/benchmark/hpl/hpl-2.0.tar.gz
+tar<span class="w"> </span>xzf<span class="w"> </span>hpl-2.0.tar.gz
+ln<span class="w"> </span>-s<span class="w"> </span>hpl-2.0<span class="w"> </span>hpl
+<span class="nb">cd</span><span class="w"> </span>hpl
+</pre></div>
 </div>
 <ul>
 <li><p>Compilation :</p>
@@ -281,24 +281,24 @@ cd hpl</p>
 </div></blockquote>
 </li>
 </ul>
-<div class="border-dashed docutils container">
-<p>wget <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_BLAS_gm">http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_BLAS_gm</a> <br>
-wget <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_CBLAS_gm">http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_CBLAS_gm</a> <br>
-wget <a class="reference external" href="http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_FBLAS_gm">http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_FBLAS_gm</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_BLAS_gm
+wget<span class="w"> </span>http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_CBLAS_gm
+wget<span class="w"> </span>http://www.cbp.ens-lyon.fr/emmanuel.quemener/software/HPL/Make.Debian_FBLAS_gm
+</pre></div>
 </div>
 <ul class="simple">
 <li><p>importer ces documents et les placer à la racine de HPL :</p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>mv Make.Debian_* $HOME/hpl</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv<span class="w"> </span>Make.Debian_*<span class="w"> </span><span class="nv">$HOME</span>/hpl
+</pre></div>
 </div>
 <ul class="simple">
 <li><p>compiler les différents <em>Makefile</em> :</p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>make arch=Debian_BLAS_gm <br>
-make arch=Debian_CBLAS_gm <br>
-make arch=Debian_FBLAS_gm</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>Debian_BLAS_gm
+make<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>Debian_CBLAS_gm
+make<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>Debian_FBLAS_gm
+</pre></div>
 </div>
 </section>
 <section id="execution-des-benchs">
@@ -308,118 +308,122 @@ make arch=Debian_FBLAS_gm</p>
 <ol class="upperalpha simple">
 <li><p>se déplacer dans l’un des répertoires, au choix :</p></li>
 </ol>
-<div class="border-dashed docutils container">
-<p>cd $HOME/hpl/bin/Debian_BLAS_gm <br>
-cd $HOME/hpl/bin/Debian_CBLAS_gm <br>
-cd $HOME/hpl/bin/Debian_FBLAS_gm</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/hpl/bin/Debian_BLAS_gm
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/hpl/bin/Debian_CBLAS_gm
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/hpl/bin/Debian_FBLAS_gm
+</pre></div>
 </div>
 <ol class="upperalpha simple" start="2">
 <li><p>paramétrer le fichier de configuration HPL.dat :</p></li>
 </ol>
-<div class="border-dashed docutils container">
-<p>HPLinpack benchmark input file <br>
-Innovative Computing Laboratory, University of Tennessee <br>
-HPL.out      output file name (if any) <br>
-file         device out (6=stdout,7=stderr,file) <br>
-1            # of problems sizes (N) <br>
-2560         Ns <br>
-1            # of NBs <br>
-256          NBs <br>
-0            PMAP process mapping (0=Row-,1=Column-major) <br>
-1            # of process grids (P x Q) <br>
-1            Ps <br>
-2            Qs <br>
--16.0        threshold <br>
-3            # of panel fact <br>
-0 1 2        PFACTs (0=left, 1=Crout, 2=Right) <br>
-2            # of recursive stopping criterium <br>
-2 4          NBMINs (&gt;= 1) <br>
-1            # of panels in recursion <br>
-2            NDIVs <br>
-3            # of recursive panel fact. <br>
-0 1 2        RFACTs (0=left, 1=Crout, 2=Right) <br>
-1            # of broadcast <br>
-0            BCASTs (0=1rg,1=1rM,2=2rg,3=2rM,4=Lng,5=LnM) <br>
-1            # of lookahead depth <br>
-0            DEPTHs (&gt;=0) <br>
-2            SWAP (0=bin-exch,1=long,2=mix) <br>
-64           swapping threshold <br>
-0            L1 in (0=transposed,1=no-transposed) form <br>
-0            U  in (0=transposed,1=no-transposed) form <br>
-1            Equilibration (0=no,1=yes) <br>
-16           memory alignment in double (&gt; 0)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>HPLinpack<span class="w"> </span>benchmark<span class="w"> </span>input<span class="w"> </span>file
+Innovative<span class="w"> </span>Computing<span class="w"> </span>Laboratory,<span class="w"> </span>University<span class="w"> </span>of<span class="w"> </span>Tennessee
+HPL.out<span class="w">      </span>output<span class="w"> </span>file<span class="w"> </span>name<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span>any<span class="o">)</span>
+file<span class="w">         </span>device<span class="w"> </span>out<span class="w"> </span><span class="o">(</span><span class="nv">6</span><span class="o">=</span>stdout,7<span class="o">=</span>stderr,file<span class="o">)</span>
+<span class="m">1</span><span class="w">            </span><span class="c1"># of problems sizes (N)</span>
+<span class="m">2560</span><span class="w">         </span>Ns
+<span class="m">1</span><span class="w">            </span><span class="c1"># of NBs</span>
+<span class="m">256</span><span class="w">          </span>NBs
+<span class="m">0</span><span class="w">            </span>PMAP<span class="w"> </span>process<span class="w"> </span>mapping<span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>Row-,1<span class="o">=</span>Column-major<span class="o">)</span>
+<span class="m">1</span><span class="w">            </span><span class="c1"># of process grids (P x Q)</span>
+<span class="m">1</span><span class="w">            </span>Ps
+<span class="m">2</span><span class="w">            </span>Qs
+-16.0<span class="w">        </span>threshold
+<span class="m">3</span><span class="w">            </span><span class="c1"># of panel fact</span>
+<span class="m">0</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w">        </span>PFACTs<span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>left,<span class="w"> </span><span class="nv">1</span><span class="o">=</span>Crout,<span class="w"> </span><span class="nv">2</span><span class="o">=</span>Right<span class="o">)</span>
+<span class="m">2</span><span class="w">            </span><span class="c1"># of recursive stopping criterium</span>
+<span class="m">2</span><span class="w"> </span><span class="m">4</span><span class="w">          </span>NBMINs<span class="w"> </span><span class="o">(</span>&gt;<span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">)</span>
+<span class="m">1</span><span class="w">            </span><span class="c1"># of panels in recursion</span>
+<span class="m">2</span><span class="w">            </span>NDIVs
+<span class="m">3</span><span class="w">            </span><span class="c1"># of recursive panel fact.</span>
+<span class="m">0</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w">        </span>RFACTs<span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>left,<span class="w"> </span><span class="nv">1</span><span class="o">=</span>Crout,<span class="w"> </span><span class="nv">2</span><span class="o">=</span>Right<span class="o">)</span>
+<span class="m">1</span><span class="w">            </span><span class="c1"># of broadcast</span>
+<span class="m">0</span><span class="w">            </span>BCASTs<span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>1rg,1<span class="o">=</span>1rM,2<span class="o">=</span>2rg,3<span class="o">=</span>2rM,4<span class="o">=</span>Lng,5<span class="o">=</span>LnM<span class="o">)</span>
+<span class="m">1</span><span class="w">            </span><span class="c1"># of lookahead depth</span>
+<span class="m">0</span><span class="w">            </span>DEPTHs<span class="w"> </span><span class="o">(</span>&gt;<span class="o">=</span><span class="m">0</span><span class="o">)</span>
+<span class="m">2</span><span class="w">            </span>SWAP<span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>bin-exch,1<span class="o">=</span>long,2<span class="o">=</span>mix<span class="o">)</span>
+<span class="m">64</span><span class="w">           </span>swapping<span class="w"> </span>threshold
+<span class="m">0</span><span class="w">            </span>L1<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>transposed,1<span class="o">=</span>no-transposed<span class="o">)</span><span class="w"> </span>form
+<span class="m">0</span><span class="w">            </span>U<span class="w">  </span><span class="k">in</span><span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>transposed,1<span class="o">=</span>no-transposed<span class="o">)</span><span class="w"> </span>form
+<span class="m">1</span><span class="w">            </span>Equilibration<span class="w"> </span><span class="o">(</span><span class="nv">0</span><span class="o">=</span>no,1<span class="o">=</span>yes<span class="o">)</span>
+<span class="m">16</span><span class="w">           </span>memory<span class="w"> </span>alignment<span class="w"> </span><span class="k">in</span><span class="w"> </span>double<span class="w"> </span><span class="o">(</span>&gt;<span class="w"> </span><span class="m">0</span><span class="o">)</span>
+</pre></div>
 </div>
 <ol class="upperalpha simple" start="3">
 <li><p>Lancer le bench :</p></li>
 </ol>
-<div class="border-dashed docutils container">
-<p>orterun -np 2 ./xhpl</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>orterun<span class="w"> </span>-np<span class="w"> </span><span class="m">2</span><span class="w"> </span>./xhpl
+</pre></div>
 </div>
 <ul class="simple">
 <li><p>en sortie, même si les résultats sont consignés dans un fichier HPL.out, on obtient :</p></li>
 </ul>
-<div class="border-dashed docutils container">
-<p>================================================================================  <br>
-HPLinpack 2.0  –  High-Performance Linpack benchmark  –   September 10, 2008 <br>
-Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK <br>
-Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK <br>
-Modified by Julien Langou, University of Colorado Denver <br>
-================================================================================</p>
-<p>An explanation of the input/output parameters follows: <br>
-T/V    : Wall time / encoded variant. <br>
-N      : The order of the coefficient matrix A. <br>
-NB     : The partitioning blocking factor. <br>
-P      : The number of process rows. <br>
-Q      : The number of process columns. <br>
-Time   : Time in seconds to solve the linear system. <br>
-Gflops : Rate of execution for solving the linear system. <br></p>
-<p>The following parameter values will be used:</p>
-<p>N      :    2560  <br>
-NB     :     256  <br>
-PMAP   : Row-major process mapping <br>
-P      :       1  <br>
-Q      :       2  <br>
-PFACT  :    Left    Crout    Right  <br>
-NBMIN  :       2        4 <br>
-NDIV   :       2  <br>
-RFACT  :    Left    Crout    Right  <br>
-BCAST  :   1ring  <br>
-DEPTH  :       0  <br>
-SWAP   : Mix (threshold = 64) <br>
-L1     : transposed form <br>
-U      : transposed form <br>
-EQUIL  : yes <br>
-ALIGN  : 16 double precision words <br></p>
-<p>================================================================================ <br>
-T/V                N    NB     P     Q               Time                 Gflops <br>
--——————————————————————————- <br>
-WR00L2L2        2560   256     1     2               4.29              2.612e+00 <br>
-WR00L2L4        2560   256     1     2               4.23              2.648e+00 <br>
-WR00L2C2        2560   256     1     2               4.26              2.628e+00 <br>
-WR00L2C4        2560   256     1     2               4.22              2.652e+00 <br>
-WR00L2R2        2560   256     1     2               4.24              2.638e+00 <br>
-WR00L2R4        2560   256     1     2               4.23              2.643e+00 <br>
-WR00C2L2        2560   256     1     2               4.26              2.630e+00 <br>
-WR00C2L4        2560   256     1     2               4.24              2.642e+00 <br>
-WR00C2C2        2560   256     1     2               4.25              2.637e+00 <br>
-WR00C2C4        2560   256     1     2               4.24              2.639e+00 <br>
-WR00C2R2        2560   256     1     2               4.26              2.631e+00 <br>
-WR00C2R4        2560   256     1     2               4.22              2.655e+00 <br>
-WR00R2L2        2560   256     1     2               4.26              2.629e+00 <br>
-WR00R2L4        2560   256     1     2               4.21              2.656e+00 <br>
-WR00R2C2        2560   256     1     2               4.26              2.628e+00 <br>
-WR00R2C4        2560   256     1     2               4.21              2.660e+00 <br>
-WR00R2R2        2560   256     1     2               4.23              2.646e+00 <br>
-WR00R2R4        2560   256     1     2               4.23              2.645e+00 <br>
-================================================================================</p>
-<dl class="simple">
-<dt>Finished     18 tests with the following results: <br></dt><dd><p>18 tests completed without checking, <br>
-0 tests skipped because of illegal input values. <br></p>
-</dd>
-</dl>
-<p>——————————————————————————– <br></p>
-<p>End of Tests. <br>
-================================================================================</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="se">\=</span><span class="o">===============================================================================</span>
+HPLinpack<span class="w"> </span><span class="m">2</span>.0<span class="w">  </span>--<span class="w">  </span>High-Performance<span class="w"> </span>Linpack<span class="w"> </span>benchmark<span class="w">  </span>--<span class="w">   </span>September<span class="w"> </span><span class="m">10</span>,<span class="w"> </span><span class="m">2008</span>
+Written<span class="w"> </span>by<span class="w"> </span>A.<span class="w"> </span>Petitet<span class="w"> </span>and<span class="w"> </span>R.<span class="w"> </span>Clint<span class="w"> </span>Whaley,<span class="w">  </span>Innovative<span class="w"> </span>Computing<span class="w"> </span>Laboratory,<span class="w"> </span>UTK
+Modified<span class="w"> </span>by<span class="w"> </span>Piotr<span class="w"> </span>Luszczek,<span class="w"> </span>Innovative<span class="w"> </span>Computing<span class="w"> </span>Laboratory,<span class="w"> </span>UTK
+Modified<span class="w"> </span>by<span class="w"> </span>Julien<span class="w"> </span>Langou,<span class="w"> </span>University<span class="w"> </span>of<span class="w"> </span>Colorado<span class="w"> </span>Denver
+<span class="se">\=</span><span class="o">===============================================================================</span>
+
+An<span class="w"> </span>explanation<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>input/output<span class="w"> </span>parameters<span class="w"> </span>follows:
+T/V<span class="w">    </span>:<span class="w"> </span>Wall<span class="w"> </span><span class="nb">time</span><span class="w"> </span>/<span class="w"> </span>encoded<span class="w"> </span>variant.
+N<span class="w">      </span>:<span class="w"> </span>The<span class="w"> </span>order<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>coefficient<span class="w"> </span>matrix<span class="w"> </span>A.
+NB<span class="w">     </span>:<span class="w"> </span>The<span class="w"> </span>partitioning<span class="w"> </span>blocking<span class="w"> </span>factor.
+P<span class="w">      </span>:<span class="w"> </span>The<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>process<span class="w"> </span>rows.
+Q<span class="w">      </span>:<span class="w"> </span>The<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>process<span class="w"> </span>columns.
+Time<span class="w">   </span>:<span class="w"> </span>Time<span class="w"> </span><span class="k">in</span><span class="w"> </span>seconds<span class="w"> </span>to<span class="w"> </span>solve<span class="w"> </span>the<span class="w"> </span>linear<span class="w"> </span>system.
+Gflops<span class="w"> </span>:<span class="w"> </span>Rate<span class="w"> </span>of<span class="w"> </span>execution<span class="w"> </span><span class="k">for</span><span class="w"> </span>solving<span class="w"> </span>the<span class="w"> </span>linear<span class="w"> </span>system.
+
+The<span class="w"> </span>following<span class="w"> </span>parameter<span class="w"> </span>values<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>used:
+
+N<span class="w">      </span>:<span class="w">    </span><span class="m">2560</span>
+NB<span class="w">     </span>:<span class="w">     </span><span class="m">256</span>
+PMAP<span class="w">   </span>:<span class="w"> </span>Row-major<span class="w"> </span>process<span class="w"> </span>mapping
+P<span class="w">      </span>:<span class="w">       </span><span class="m">1</span>
+Q<span class="w">      </span>:<span class="w">       </span><span class="m">2</span>
+PFACT<span class="w">  </span>:<span class="w">    </span>Left<span class="w">    </span>Crout<span class="w">    </span>Right
+NBMIN<span class="w">  </span>:<span class="w">       </span><span class="m">2</span><span class="w">        </span><span class="m">4</span>
+NDIV<span class="w">   </span>:<span class="w">       </span><span class="m">2</span>
+RFACT<span class="w">  </span>:<span class="w">    </span>Left<span class="w">    </span>Crout<span class="w">    </span>Right
+BCAST<span class="w">  </span>:<span class="w">   </span>1ring
+DEPTH<span class="w">  </span>:<span class="w">       </span><span class="m">0</span>
+SWAP<span class="w">   </span>:<span class="w"> </span>Mix<span class="w"> </span><span class="o">(</span><span class="nv">threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">64</span><span class="o">)</span>
+L1<span class="w">     </span>:<span class="w"> </span>transposed<span class="w"> </span>form
+U<span class="w">      </span>:<span class="w"> </span>transposed<span class="w"> </span>form
+EQUIL<span class="w">  </span>:<span class="w"> </span>yes
+ALIGN<span class="w">  </span>:<span class="w"> </span><span class="m">16</span><span class="w"> </span>double<span class="w"> </span>precision<span class="w"> </span>words
+
+<span class="se">\=</span><span class="o">===============================================================================</span>
+T/V<span class="w">                </span>N<span class="w">    </span>NB<span class="w">     </span>P<span class="w">     </span>Q<span class="w">               </span>Time<span class="w">                 </span>Gflops
+<span class="se">\-</span>-------------------------------------------------------------------------------
+WR00L2L2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.29<span class="w">              </span><span class="m">2</span>.612e+00
+WR00L2L4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.23<span class="w">              </span><span class="m">2</span>.648e+00
+WR00L2C2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.26<span class="w">              </span><span class="m">2</span>.628e+00
+WR00L2C4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.22<span class="w">              </span><span class="m">2</span>.652e+00
+WR00L2R2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.24<span class="w">              </span><span class="m">2</span>.638e+00
+WR00L2R4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.23<span class="w">              </span><span class="m">2</span>.643e+00
+WR00C2L2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.26<span class="w">              </span><span class="m">2</span>.630e+00
+WR00C2L4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.24<span class="w">              </span><span class="m">2</span>.642e+00
+WR00C2C2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.25<span class="w">              </span><span class="m">2</span>.637e+00
+WR00C2C4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.24<span class="w">              </span><span class="m">2</span>.639e+00
+WR00C2R2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.26<span class="w">              </span><span class="m">2</span>.631e+00
+WR00C2R4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.22<span class="w">              </span><span class="m">2</span>.655e+00
+WR00R2L2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.26<span class="w">              </span><span class="m">2</span>.629e+00
+WR00R2L4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.21<span class="w">              </span><span class="m">2</span>.656e+00
+WR00R2C2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.26<span class="w">              </span><span class="m">2</span>.628e+00
+WR00R2C4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.21<span class="w">              </span><span class="m">2</span>.660e+00
+WR00R2R2<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.23<span class="w">              </span><span class="m">2</span>.646e+00
+WR00R2R4<span class="w">        </span><span class="m">2560</span><span class="w">   </span><span class="m">256</span><span class="w">     </span><span class="m">1</span><span class="w">     </span><span class="m">2</span><span class="w">               </span><span class="m">4</span>.23<span class="w">              </span><span class="m">2</span>.645e+00
+<span class="se">\=</span><span class="o">===============================================================================</span>
+
+Finished<span class="w">     </span><span class="m">18</span><span class="w"> </span>tests<span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>results:
+<span class="w">            </span><span class="m">18</span><span class="w"> </span>tests<span class="w"> </span>completed<span class="w"> </span>without<span class="w"> </span>checking,
+<span class="w">            </span><span class="m">0</span><span class="w"> </span>tests<span class="w"> </span>skipped<span class="w"> </span>because<span class="w"> </span>of<span class="w"> </span>illegal<span class="w"> </span>input<span class="w"> </span>values.
+--------------------------------------------------------------------------------
+
+End<span class="w"> </span>of<span class="w"> </span>Tests.
+<span class="se">\=</span><span class="o">===============================================================================</span>
+</pre></div>
 </div>
 <ul class="simple">
 <li><p>on remarque que ce vieux Pentium 4 HT a une puissance de 2.6 GFps</p></li>

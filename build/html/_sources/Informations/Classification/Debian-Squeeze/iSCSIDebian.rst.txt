@@ -66,38 +66,38 @@ Il est supposé que la machine MyHost dispose d'une infrastructure LVM :
 
 * :underline:`Création du volume LVM de 20G sur le VG Raid6`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     lvcreate -L 20G -n MyLViSCSI MyVG
 
 * :underline:`Formatage en Ext3`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     mkfs.ext3 -m 0 /dev/MyVG/MyLViSCSI
 
 * :underline:`Montage du volume sur le système hôte`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     mkdir /media/MyLViSCSI
     mount -o noatime /dev/MyVG/MyLViSCSI /media/MyLViSCSI
 
 * :underline:`Etablissement d'un label sur la partition`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     e2label /dev/MyVG/MyLViSCSI MyLViSCSI
 
 * :underline:`Installation au besoin de debootstrap`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     apt-get install debootstrap
 
 * :underline:`Installation du système de base Wheezy, architecture x86_64 ou i386`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     # pour une architecture x86_64
     debootstrap --arch amd64 wheezy /media/MyLViSCSI http://ftp.fr.debian.org/debian
@@ -106,13 +106,13 @@ Il est supposé que la machine MyHost dispose d'une infrastructure LVM :
 
 * :underline:`Passage dans l'environnement`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     chroot /media/MyLViSCSI
 
 * :underline:`Création d'une nouvelle liste de paquets`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     tee /etc/apt/sources.list <<EOF
     deb http://ftp.fr.debian.org/debian/ wheezy main contrib non-free
@@ -124,25 +124,25 @@ Il est supposé que la machine MyHost dispose d'une infrastructure LVM :
 
 * :underline:`Mise à jour de la base des paquets :`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     apt-get update 
   
 * :underline:`Montage du /proc pendant l'installation`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     mount -t proc none /proc
 
 * :underline:`Initialisation du mot de passe superutilisateur`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     echo "root:MyStrongPassword" | chpasswd
 
 * :underline:`Installation de paquets nécessaires`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     apt-get -y install dhcp3-common openssh-server locales initramfs-tools dhcp3-client aufs-tools firmware-linux-nonfree firmware-linux firmware-bnx2 open-iscsi iftop htop iotop emacs mtr lsof tshark mbw memtest86 cpuburn bonnie dbench iozone3 console-setup less && apt-get clean
     # Pour les architectures i686
@@ -152,26 +152,26 @@ Il est supposé que la machine MyHost dispose d'une infrastructure LVM :
 
 * :underline:`Purge des archives de paquets :`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     apt-get clean
 
 * :underline:`Suppression du démarrage du démon iSCSI (en noyau 3.2, le script plante et empêche le démarrage)`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     insserv -r open-iscsi
 
 * :underline:`Paramétrage d'un boot iSCSI`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     touch /etc/iscsi/iscsi.initramfs
     update-initramfs -k all -u
 
 * :underline:`Vérification de la présence du support iSCSI 'lsinitramfs /boot/initrd.img-* | grep "local-top/iscsi"' retourne :` 
 
-.. container:: border-dashed
+.. code-block:: bash
 
     scripts/local-top/iscsi
     scripts/local-top/iscsi
@@ -182,19 +182,19 @@ Il est supposé que la machine MyHost dispose d'une infrastructure LVM :
 
     En cas d'interfaces multiples, il est INDISPENSABLE de préciser l'interface de démarrage, sinon...
 
-.. container:: border-dashed
+.. code-block:: bash
 
     sed -i "s/DEVICE\=/DEVICE\=eth0/g" /etc/initramfs-tools/initramfs.conf
 
 * :underline:`Suppression du hostname pour le paramétrage automatique du HOST`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     rm /etc/hostname
 
 * :underline:`Définition de l'interface de loopback`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     tee /etc/network/interfaces <<EOF
     auto lo
@@ -203,19 +203,19 @@ Il est supposé que la machine MyHost dispose d'une infrastructure LVM :
 
 * :underline:`Démontage du /proc`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     umount /proc
 
 * :underline:`Sortie de l'environnement chrooté`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     exit
 
 * :underline:`Arrêt des services démarrés à l'installation`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     lsof | grep /media/MyLViSCSI | awk '{ print $2 }' | sort -u | xargs -I '{}' kill '{}' 
 
@@ -227,7 +227,7 @@ Sur le porteur de cibles iSCSI
 
 * :underline:`Copie des composants pour le PXE`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     cp /media/MyLViSCSI/boot/initrd.img-3.2.0-4-686-pae /root/initrd.img-3.2.0-4-686-pae-iSCSI
     cp /media/MyLViSCSI/boot/vmlinuz-3.2.0-4-686-pae /root/vmlinuz-3.2.0-4-686-pae-iSCSI
@@ -236,20 +236,20 @@ Sur le porteur de cibles iSCSI
 
 * :underline:`Copie des clés autorisées`
 
-.. container:: border-dashed
+.. code-block:: bash
     
     mkdir /media/MyLViSCSI/root/.ssh
     cp -a /root/.ssh/authorized_keys /media/MyLViSCSI/root/.ssh/
 
 * :underline:`Démontage de la partition`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     umount /media/MyLViSCSI
 
 * :underline:`Copie des composants de démarrage sur le serveur PXE`
 
-.. container:: border-dashed
+.. code-block:: bash
         
     # Le serveur TFTP/PXE est MyPXE:
     scp /root/*iSCSI PyPXE:/srv/tftp
@@ -263,7 +263,7 @@ Sur le porteur de cibles iSCSI
 
 * :underline:`Paramétrage de la cible IET`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     # Renommage de l'ancien fichier de configuration
     cp /etc/iet/ietd.conf /etc/iet/ietd.conf-$(date +%Y%m%d)
@@ -276,7 +276,7 @@ Sur le porteur de cibles iSCSI
 
 * :underline:`Activation des partages`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     ietadm --op new --tid=100 --params Name=iqn.2013-06.MySite.MyHost:MyLViSCSI
     ietadm --op new --tid=100 --lun=0 --params Path=/dev/MyVG/MyLViSCSI,BlockSize=4096,Type=fileio
@@ -284,7 +284,7 @@ Sur le porteur de cibles iSCSI
 
 * :underline:`Vérification des partages par la commande 'cat /proc/net/iet/volume  | grep MyLViSCSI'`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     cat /proc/net/iet/volume  | grep MyLViSCSI
     tid:86 name:iqn.2013-03.MySite.MyHost:MyLViSCSI
@@ -295,7 +295,7 @@ Sur le serveur TFTP de boot PXE
 
 * :underline:`Déplacement dans le dossier de configuration TFTP, anciennement '/srv/tftp', maintenant`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     cd /srv/tftp/pxelinux.cfg
 
@@ -308,7 +308,7 @@ Sur le serveur TFTP de boot PXE
     * ISCSI_PASSWORD : mot de passe
     * ISCSI_TARGET_GROUP : groupe, généralement 1
 
-.. container:: border-dashed
+.. code-block:: bash
 
     tee iscsi <<EOF
     DEFAULT linux64
@@ -324,7 +324,7 @@ Sur le serveur TFTP de boot PXE
 
 * :underline:`Création des liens pour chaque machine spécifique. L'adresse MAC de la forme : "00:AA:BB:CC:DD:EE" doit être écrite sous la forme 01-00-aa-bb-cc-dd-ee en MINUSCULE !`
 
-.. container:: border-dashed
+.. code-block:: bash
 
     ln -sf iscsi 01-00-aa-bb-cc-dd-ee
 
