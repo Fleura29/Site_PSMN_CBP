@@ -1,17 +1,19 @@
-const contenu= document.querySelector("#contenu");
-const li= document.querySelectorAll("li.nav-item.dropdown");
+const contenu = document.querySelector("#contenu");
+const li = document.querySelectorAll("li.nav-item.dropdown");
 
-li.forEach((o) => {
-    o.addEventListener("mouseenter", () => {
-        contenu.style.opacity = "0.5"; 
+if (window.matchMedia("(min-width: 992px)").matches) {
+    li.forEach((o) => {
+        o.addEventListener("mouseenter", () => {
+            contenu.style.opacity = "0.5"; 
+        });
+        o.addEventListener("mouseleave", () => {
+            contenu.style.opacity = "1"; 
+        });
     });
+}
 
-    o.addEventListener("mouseleave", () => {
-        contenu.style.opacity = "1"; 
-    });
-});
 
-let horaires= [
+let horaires = [
     "09:00",
     "09:30",
     "10:00",
@@ -36,23 +38,23 @@ let horaires= [
 ];
 
 function Horaire(){
-    const selectHoraireDebut= document.querySelector("#inputHoraireDeb");
-    const selectHoraireFin= document.querySelector("#inputHoraireFin");
+    const selectHoraireDebut = document.querySelector("#inputHoraireDeb");
+    const selectHoraireFin = document.querySelector("#inputHoraireFin");
     horaires.map((o) => {
-        const option= document.createElement("option");
-        option.value= o;
+        const option = document.createElement("option");
+        option.value = o;
         option.textContent= o;
         selectHoraireDebut.appendChild(option);
     });
     horaires.map((o) => {
-        const option= document.createElement("option");
-        option.value= o;
-        option.textContent= o;
+        const option = document.createElement("option");
+        option.value = o;
+        option.textContent = o;
         selectHoraireFin.appendChild(option);
     })
 }
 
-let laboratoires= [
+let laboratoires = [
     "CIRI - U1111 UMR5308",
     "CRAL - UMR 5574",
     "EVS - UMR 5600",
@@ -82,16 +84,16 @@ let laboratoires= [
 ];
 
 function Laboratoire(){
-    const selectLabo= document.querySelector("#inputLabo");
+    const selectLabo = document.querySelector("#inputLabo");
     laboratoires.map((o) => {
-        const option= document.createElement("option");
-        option.value= o;
-        option.textContent= o;
+        const option = document.createElement("option");
+        option.value = o;
+        option.textContent = o;
         selectLabo.appendChild(option);
     })
 }
 
-const demandes=[
+const demandes =[
     "Accès général aux ressources",
     "Création d'un espace projet",
     "Création d'un groupe d'utilisateurs",
@@ -108,16 +110,16 @@ const demandes=[
 ];
 
 function Demande(){
-    const selectDemande= document.querySelector("#inputDemande");
+    const selectDemande = document.querySelector("#inputDemande");
     demandes.map((o) => {
-        const option= document.createElement("option");
-        option.value= o;
-        option.textContent= o;
+        const option = document.createElement("option");
+        option.value = o;
+        option.textContent = o;
         selectDemande.appendChild(option);
     })
 }
 
-const plateaux=[
+const plateaux =[
     "multi-noeuds (MPI)",
     "multi-coeurs (MPI,OpenMP,OpenCL)",
     "multi-shaders (GPU avec CUDA, OpenCL, Kokkos, OpenACC)",
@@ -129,16 +131,16 @@ const plateaux=[
 ];
 
 function Plateau(){
-    const selectPlateau= document.querySelector("#inputPlateau");
+    const selectPlateau = document.querySelector("#inputPlateau");
     plateaux.map((o) => {
-        const option= document.createElement("option");
-        option.value= o;
-        option.textContent= o;
+        const option = document.createElement("option");
+        option.value = o;
+        option.textContent = o;
         selectPlateau.appendChild(option);
     })
 }
 
-const entités=[
+const entités = [
     "Laboratoire Monod",
     "Laboratoire Descartes",
     "Département Monod",
@@ -147,16 +149,16 @@ const entités=[
 ];
 
 function Entité(){
-    const selectEntité= document.querySelector("#inputEntite");
+    const selectEntité = document.querySelector("#inputEntite");
     entités.map((o) => {
-        const option= document.createElement("option");
-        option.value= o;
-        option.textContent= o;
+        const option = document.createElement("option");
+        option.value = o;
+        option.textContent = o;
         selectEntité.appendChild(option);
     })
 }
 
-const statutAdmins=[
+const statutAdmins =[
     "Professeur",
     "MCF",
     "DR",
@@ -168,11 +170,11 @@ const statutAdmins=[
 ];
 
 function StatutAdmin(){
-    const selectStatut= document.querySelector("#inputStatutAdmin");
+    const selectStatut = document.querySelector("#inputStatutAdmin");
     statutAdmins.map((o) => {
-        const option= document.createElement("option");
-        option.value= o;
-        option.textContent= o;
+        const option = document.createElement("option");
+        option.value = o;
+        option.textContent = o;
         selectStatut.appendChild(option);
     })
 }
@@ -245,4 +247,63 @@ document.addEventListener("DOMContentLoaded", (event) => {
             logo_ens_dark.style.display = "block";
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdowns_menu = document.querySelectorAll('.dropdown-menu');
+
+    dropdowns_menu.forEach(function(dropdown) {
+        dropdown.addEventListener('click', function(event) {
+            event.stopPropagation();
+            var parent = this.closest('.dropdown-menu');
+            if (parent) {
+                parent.classList.add('show');
+                parent.parentElement.querySelector('.nav-link').setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var navItemsDropdown = document.querySelectorAll('.nav-item.dropdown');
+    var navItemsDropend = document.querySelectorAll('.nav-item.dropend');
+
+    navItemsDropdown.forEach(function(navItem) {
+        gestionDrop(navItem, navItemsDropdown);
+    });
+
+    navItemsDropend.forEach(function(navItem) {
+        gestionDrop(navItem, navItemsDropend);
+    });
+
+    function gestionDrop(navItem, nav) {
+        var dropdown_menu = navItem.querySelector('.dropdown-menu');
+
+        if (dropdown_menu) {
+            navItem.addEventListener('mouseleave', function() {
+                    closeAll(nav);
+            });
+
+            dropdown_menu.addEventListener('mouseleave', function() {
+                    closeAll(nav);
+            });
+
+            navItem.addEventListener('click', function(event) {
+                event.stopPropagation();
+                closeAll(nav);
+                dropdown_menu.classList.toggle('show');
+                dropdown_menu.setAttribute("aria-expanded", dropdown_menu.classList.contains('show'));
+            });
+        }
+    }
+
+    function closeAll(drop) {
+        drop.forEach(function(navItem) {
+            var dropdown_menu = navItem.querySelector('.dropdown-menu');
+            if (dropdown_menu) {
+                dropdown_menu.classList.remove('show');
+                dropdown_menu.setAttribute("aria-expanded", false);
+            }
+        });
+    }
 });

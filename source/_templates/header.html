@@ -9,7 +9,7 @@
         <div class="wid-header">
             <button class="btn-theme" id="theme"></button>
             <a href="https://www.ens-lyon.fr/">
-                <img id="logo_ens_light" class="img-fluid" src="{{ pathto('_static/header/Logo_ENS_Lyon2.png', 1) }}" alt="logo ENS de Lyon">
+                <img id="logo_ens_light" class="img-fluid" src="{{ pathto('_static/header/Logo_ENS_Lyon.png', 1) }}" alt="logo ENS de Lyon">
                 <img id="logo_ens_dark" class="img-fluid" src="{{ pathto('_static/header/Logo_ENS_Lyon_dark.png', 1) }}" alt="logo ENS de Lyon">
             </a>
         </div>
@@ -25,7 +25,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" aria-current="page">Accueil</a>
+                        <a class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accueil</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item" href="{{ pathto('Accueil/Actualites') }}">Actualités PSMN</a></li>
@@ -34,7 +34,7 @@
                                 <li><a class="dropdown-item" href="{{ pathto('Accueil/Liens') }}">Liens</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Accueil/Services') }}">Services</a></li>
                                 <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#">Partenaires</a>
+                                    <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partenaires</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item" href="{{ pathto('Accueil/Laboratoires/ENS') }}">Les laboratoires ENS Lyon</a></li> 
@@ -50,7 +50,7 @@
                     </li>
                 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Informations</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Informations</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item" href="{{ pathto('Informations/News') }}">Fil des news</a></li>
@@ -62,7 +62,7 @@
                                 <li><a class="dropdown-item" href="{{ pathto('Informations/Calculer') }}">Pour calculer</a></li>
                                 <li><a class="dropdown-item" href="#">F.A.Q.</a></li>
                                 <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#">Réalisations et solutions</a>
+                                    <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Réalisations et solutions</a>
                                     <div class="dropdown-menu">
                                         <ul> 
                                             <li><a class="dropdown-item" href="{{ pathto('Informations/Realisations/Logiciels')}}">Logiciels</a></li> 
@@ -74,7 +74,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#">Classification par activités</a>
+                                    <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Classification par activités</a>
                                     <div class="dropdown-menu">
                                         <ul> 
                                             <li><a class="dropdown-item" href="{{ pathto('Informations/Classification/Etudes')}}">Etudes</a></li> 
@@ -88,7 +88,7 @@
                     </li> 
                 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Plateformes</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plateformes</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item" href="{{ pathto('Plateformes/DataCenter')}}">Data Center</a></li>
@@ -97,7 +97,7 @@
                                 <li><a class="dropdown-item" href="{{ pathto('Plateformes/EquipInfo')}}">Equipements informatique</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Plateformes/ProjetsInfra')}}">Projets d'infrastructure</a></li>
                                 <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#">Supports</a>
+                                    <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Supports</a>
                                     <div class="dropdown-menu">
                                         <ul>   
                                             <li><a class="dropdown-item" href="{{ pathto('Plateformes/Supports/RCS')}}">Recherche en calcul scientifique</a></li> 
@@ -112,7 +112,7 @@
                     </li>
                 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Formation</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formation</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item" href="{{ pathto('Formation/Formation')}}">Formation</a></li>
@@ -122,20 +122,20 @@
                     </li>
                     
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Science</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Science</a>
                         <div class="dropdown-menu">
                             <ul> 
                                 <li><a class="dropdown-item" href="{{ pathto('Science/Publications2024') }}">Publications</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Science/Theses') }}">Thèses</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Science/CreationsMulti') }}">Créations multimédia</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Science/Chercheurs') }}">Chercheurs associés</a></li>
-                                <li><a class="dropdown-item" href="{{ pathto('Science/Projets') }}">Projets scientifiques + Projets utilisateurs</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Science/Projets') }}">Projets scientifiques + utilisateurs</a></li>
                             </ul>   
                         </div>
                     </li>
                     
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Animation</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item" href="{{ pathto('Animation/EvenementsScient') }}">Évènements scientifiques</a></li>
@@ -144,7 +144,7 @@
                                 <li><a class="dropdown-item" href="{{ pathto('Animation/Appels') }}">Appel à projets</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Animation/Media') }}">Médias</a></li>
                                 <li class="nav-item dropend">
-                                    <a class="dropdown-toggle dropdown-item" href="#">Ateliers HM / PN-SHS</a>
+                                    <a class="dropdown-toggle dropdown-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ateliers HM / PN-SHS</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item" href="{{ pathto('Animation/Ateliers/AHN') }}">Humanités Numériques (AHN)</a></li> 
@@ -159,7 +159,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Réseaux</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Réseaux</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item" href="{{ pathto('Réseaux/CECAM') }}">CECAM-FR-RA</a></li> 
@@ -173,14 +173,14 @@
                             </ul>
                         </div>
                     </li>
-                    
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Contacts</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item" href="{{ pathto('Contacts/Acces') }} ">Accès aux sites</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Contacts/Equipe') }}">Équipe / Staff</a></li>                                        
-                                <li><a class="dropdown-item" href="{{ pathto('Contacts/Calendrier') }}">Calendrier & réservations de la salle TP</a></li>
+                                <li><a class="dropdown-item" href="{{ pathto('Contacts/Calendrier') }}">Calendrier de la salle TP</a></li>
                                 <li><a class="dropdown-item" href="{{ pathto('Contacts/Formulaires') }}">Formulaires</a></li>
                             </ul>   
                         </div>
