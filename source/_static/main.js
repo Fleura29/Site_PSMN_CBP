@@ -221,12 +221,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         logo_ens_light.style.display = "block";
         logo_ens_dark.style.display = "none";
         toggleButton.innerHTML = "&#9789";
+        toggleButton.style.paddingLeft = "8px";
     } else{
         logo_cbp_light.style.display = "none";
         logo_cbp_dark.style.display = "block";
         logo_ens_light.style.display = "none";
         logo_ens_dark.style.display = "block";
         toggleButton.innerHTML = "&#9788";
+        toggleButton.style.paddingLeft = "3px";
     }
 
     toggleButton.addEventListener("click", () => {
@@ -235,6 +237,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             document.body.classList.add("light");
             localStorage.setItem("dark", "light");
             toggleButton.innerHTML = "&#9789";
+            toggleButton.style.paddingLeft = "8px";
             logo_cbp_light.style.display = "block";
             logo_cbp_dark.style.display = "none";
             logo_ens_light.style.display = "block";
@@ -244,6 +247,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             document.body.classList.add("dark");
             localStorage.setItem("dark", "dark");
             toggleButton.innerHTML = "&#9788";
+            toggleButton.style.paddingLeft = "3px";
             logo_cbp_light.style.display = "none";
             logo_cbp_dark.style.display = "block";
             logo_ens_light.style.display = "none";
@@ -303,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 navItem.addEventListener('click', function(event) {
                     event.stopPropagation();
-                    closeAll(nav); // Fermer tous les menus avant d'ouvrir le nouveau
+                    closeAll(nav); 
                     dropdown_toggle.classList.toggle('show');
                     dropdown_menu.classList.toggle('show');
                     dropdown_menu.setAttribute("aria-expanded", dropdown_menu.classList.contains('show'));
